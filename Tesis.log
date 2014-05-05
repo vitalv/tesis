@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  5 MAY 2014 14:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  5 MAY 2014 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,11 +588,11 @@ oUCM.pdf>] [2] [3]) [4]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write6
 \openout6 = `Tesis.toc'.
@@ -630,7 +630,10 @@ LaTeX Info: Redefining \% on input line 1.
 \openout2 = `Introduccion/Introduccion.aux'.
 
  (./Introduccion/Introduccion.tex
-Cap\'itulo 1.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 27.
+
 ) [3
 
 
@@ -646,7 +649,7 @@ Cap\'itulo 1.
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
  (./Capitulos/01Capitulo1.tex
-Cap\'itulo 2.
+Cap\'itulo 1.
 ) [7
 
 
@@ -654,7 +657,13 @@ Cap\'itulo 2.
 ]
 \openout2 = `Capitulos/02Capitulo2.aux'.
 
- (./Capitulos/02Capitulo2.tex) [8
+ (./Capitulos/02Capitulo2.tex [8
+
+
+
+]
+Cap\'itulo 2.
+) [9] [10
 
 
 ]
@@ -675,22 +684,15 @@ LaTeX Info: Redefining \% on input line 23.
 (./Cascaras/bibliografia.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
-
-
-Package rerunfilecheck Warning: File `Tesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Tesis.out':
-(rerunfilecheck)             Before: 20EE029AA19834826B022638EC620541;1160
-(rerunfilecheck)             After:  7373841663838635C98090D305B7B5DD;1180.
+Package rerunfilecheck Info: File `Tesis.out' has not changed.
+(rerunfilecheck)             Checksum: 16D56C3A522FEE648B3BAB509F5AD47A;1337.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 10044 strings out of 495059
- 145086 string characters out of 3182030
- 240338 words of memory out of 3000000
- 12731 multiletter control sequences out of 15000+200000
+ 10046 strings out of 495059
+ 145062 string characters out of 3182030
+ 240325 words of memory out of 3000000
+ 12730 multiletter control sequences out of 15000+200000
  17609 words of font info for 38 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
  55i,10n,47p,262b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -705,10 +707,10 @@ ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.60
 mf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/font
 s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (20 pages, 417966 bytes).
+Output written on Tesis.pdf (22 pages, 426611 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
  150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
