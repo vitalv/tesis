@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  5 MAY 2014 11:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  5 MAY 2014 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,10 +453,11 @@ Copyright Marco Antonio and Pedro Pablo Gomez Martin
 (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (./Cascaras/dedicatoria.aux)
-(./Cascaras/agradecimientos.aux) (./Cascaras/resumen.aux)
-(./TeXiS/TeXiS_toc.aux) (./Capitulos/Parte1.aux) (./Capitulos/01Capitulo1.aux)
-(./Cascaras/bibliografia.aux) (./TeXiS/TeXiS_acron.aux) (./Cascaras/fin.aux))
+ (./Cascaras/resumen.aux)
+(./TeXiS/TeXiS_toc.aux)
+No file Capitulos/Parte1.aux.
+(./Introduccion/Introduccion.aux) (./Cascaras/bibliografia.aux)
+(./TeXiS/TeXiS_acron.aux) (./Cascaras/fin.aux))
 \openout1 = `Tesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
@@ -540,7 +541,7 @@ e
 \oddsidemarginOriginal=\skip73
 \longTitulo=\skip74
 
-<Imagenes/Vectorial/escudoUCM.pdf, id=58, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=50, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/escudoUCM.pdf>
@@ -587,11 +588,11 @@ oUCM.pdf>] [2] [3]) [4]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write6
 \openout6 = `Tesis.toc'.
@@ -619,35 +620,35 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 ]
-\openout2 = `Capitulos/Parte1.aux'.
+\openout2 = `Introduccion/Parte1.aux'.
 
- (./Capitulos/Parte1.tex
+ (./Introduccion/Parte1.tex
 [1
 
 
 ] [2])
-\openout2 = `Capitulos/01Capitulo1.aux'.
+\openout2 = `Introduccion/Introduccion.aux'.
 
- (./Capitulos/01Capitulo1.tex
+ (./Introduccion/Introduccion.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 26.
+(hyperref)                than one, level fixed on input line 25.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 35.
+(hyperref)                be the same. Added a new anchor on input line 36.
 
 
-Package natbib Warning: Citation `ldesc2e' on page 3 undefined on input line 38
+Package natbib Warning: Citation `ldesc2e' on page 3 undefined on input line 39
 .
 
-
-Package glosstex Warning: Term `CVS' is not defined on input line 42.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 44.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-))
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+)
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
  [3
@@ -680,66 +681,47 @@ No file Tesis.glx
 
 ] [7])
 
-Package glosstex Warning: There were undefined terms.
-(glosstex)                You should (re)run GlossTeX.
-
-
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
  (./Cascaras/resumen.aux)
-(./TeXiS/TeXiS_toc.aux) (./Capitulos/Parte1.aux) (./Capitulos/01Capitulo1.aux)
-(./Cascaras/bibliografia.aux) (./TeXiS/TeXiS_acron.aux) (./Cascaras/fin.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
-
-
-Package rerunfilecheck Warning: File `Tesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Tesis.out':
-(rerunfilecheck)             Before: D74ECDDD1210844E7B1A507EF22ADBA5;823
-(rerunfilecheck)             After:  FFA2DD8E4A30E917E93C5FAE026FBF52;720.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+(./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
+(./Introduccion/Introduccion.aux) (./Cascaras/bibliografia.aux)
+(./TeXiS/TeXiS_acron.aux) (./Cascaras/fin.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package rerunfilecheck Info: File `Tesis.out' has not changed.
+(rerunfilecheck)             Checksum: 88219786D2784FF329C69E694BEA9797;736.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 10087 strings out of 495059
- 145738 string characters out of 3182030
- 237804 words of memory out of 3000000
- 12778 multiletter control sequences out of 15000+200000
- 17923 words of font info for 39 fonts, out of 3000000 for 9000
+ 10066 strings out of 495059
+ 145130 string characters out of 3182030
+ 236305 words of memory out of 3000000
+ 12767 multiletter control sequences out of 15000+200000
+ 17609 words of font info for 38 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
- 55i,10n,47p,386b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{dedicatoria.0} has been referenced but does not exi
-st, replaced by a fixed one
-
- </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/vit
-al/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/vital/.texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf-var/fonts/pk
-/ljfour/jknappen/ec/eccc1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-rm1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
-k> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/v
-ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/vital/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx2074.600pk>
-Output written on Tesis.pdf (19 pages, 433393 bytes).
+ 55i,10n,47p,253b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/v
+ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home/vital/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.60
+0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home
+/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb>
+Output written on Tesis.pdf (19 pages, 432865 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
