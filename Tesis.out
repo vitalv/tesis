@@ -5,8 +5,14 @@
 \BOOKMARK [1][-]{indice de figuras.1}{\315ndice de figuras}{indices.0}% 5
 \BOOKMARK [1][-]{indice de tablas.1}{\315ndice de tablas}{indices.0}% 6
 \BOOKMARK [-1][-]{part.1}{I Introducci\363n}{}% 7
-\BOOKMARK [0][-]{section.0.1}{Proteomica. Conceptos Generales}{part.1}% 8
-\BOOKMARK [1][-]{section*.5}{Notas bibliogr\341ficas}{section.0.1}% 9
-\BOOKMARK [1][-]{section*.5}{En el pr\363ximo cap\355tulo}{section.0.1}% 10
-\BOOKMARK [0][-]{section*.5}{Lista de acr\363nimos}{part.1}% 11
-\BOOKMARK [-1][-]{fin.-1}{Fin}{}% 12
+\BOOKMARK [0][-]{chapter.1}{}{part.1}% 8
+\BOOKMARK [1][-]{section.1.1}{Proteomica. Conceptos Basicos}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Espectrometria de masas. Conceptos Basicos}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.3}{Proteomica en gel}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Proteomica shotgun}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Asignacion Peptido-Espectro}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.6}{Proteomica dirigida}{chapter.1}% 14
+\BOOKMARK [-1][-]{part.2}{II Desarrollo de una aplicacion web para datos de prote\363mica shotgun de Candida albicans}{}% 15
+\BOOKMARK [0][-]{chapter.2}{Introduccion}{part.2}% 16
+\BOOKMARK [1][-]{section.2.1}{capitulo1}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{capitulo2}{chapter.2}% 18
