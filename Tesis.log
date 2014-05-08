@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  5 MAY 2014 16:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  7 MAY 2014 12:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,38 +448,35 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \@input{constantes.aux}
 \openout2 = `constantes.aux'.
 
-(./constantes.tex)
-Copyright Marco Antonio and Pedro Pablo Gomez Martin
-(./Tesis.aux (./Cascaras/cover.aux)
+(./constantes.tex) (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (./Cascaras/resumen.aux)
-(./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
+ (./Cascaras/resumen.aux) (./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
 (./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
 (./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
 (./Cascaras/bibliografia.aux))
 \openout1 = `Tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
 
 No file Tesis.glx
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 106.
+Package hyperref Info: Link coloring OFF on input line 105.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -488,9 +485,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
 
 (./Tesis.out) (./Tesis.out)
 \@outlinefile=\write5
@@ -541,7 +538,7 @@ e
 \oddsidemarginOriginal=\skip73
 \longTitulo=\skip74
 
-<Imagenes/Vectorial/escudoUCM.pdf, id=76, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=80, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/escudoUCM.pdf>
@@ -588,11 +585,11 @@ oUCM.pdf>] [2] [3]) [4]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
+(Font)              <10.95> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 5.
 )
 \tf@toc=\write6
 \openout6 = `Tesis.toc'.
@@ -630,10 +627,7 @@ LaTeX Info: Redefining \% on input line 1.
 \openout2 = `Introduccion/Introduccion.aux'.
 
  (./Introduccion/Introduccion.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 27.
-
+Cap\'itulo 1.
 ) [3
 
 
@@ -649,7 +643,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
  (./Capitulos/01Capitulo1.tex
-Cap\'itulo 1.
+Cap\'itulo 2.
 ) [7
 
 
@@ -662,7 +656,7 @@ Cap\'itulo 1.
 
 
 ]
-Cap\'itulo 2.
+Cap\'itulo 3.
 ) [9] [10
 
 
@@ -672,8 +666,8 @@ Cap\'itulo 2.
  (./Cascaras/bibliografia.tex
 No file Tesis.bbl.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -682,17 +676,24 @@ LaTeX Info: Redefining \% on input line 23.
 (./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
 (./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
 (./Cascaras/bibliografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
-Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 16D56C3A522FEE648B3BAB509F5AD47A;1337.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+
+
+Package rerunfilecheck Warning: File `Tesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Tesis.out':
+(rerunfilecheck)             Before: F4E8917BC64EDB47D5417AE794613C3A;1372
+(rerunfilecheck)             After:  6DD723FF83D169C5F257384FB707C401;1384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 10046 strings out of 495059
- 145062 string characters out of 3182030
- 240325 words of memory out of 3000000
- 12730 multiletter control sequences out of 15000+200000
+ 10047 strings out of 495059
+ 145072 string characters out of 3182030
+ 240339 words of memory out of 3000000
+ 12731 multiletter control sequences out of 15000+200000
  17609 words of font info for 38 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
  55i,10n,47p,262b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -707,10 +708,10 @@ ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.60
 mf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/font
 s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (22 pages, 426611 bytes).
+Output written on Tesis.pdf (22 pages, 426966 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
+ 518 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
  45 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

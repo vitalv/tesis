@@ -142,9 +142,11 @@
 % cuando el capítulo YA HA TERMINADO, y se ha empezado el siguiente, o
 % forzando final de página con \newpage (\newpage\restauracabecera).
 \newcommand{\cabeceraEspecial}[1]{
-\fancyhead[LO]{\textsc{#1}}
-\fancyhead[RE]{\textsc{#1}}
+\fancyhead[RO]{\textsc{#1}}
+\fancyhead[LE]{\textsc{#1}}
 }
+
+
 
 % La forma  "*" de  chapters y  sections NO llaman  a los  comandos de
 % marca (chaptermark y sectionmark) que son los que finalmente alteran
