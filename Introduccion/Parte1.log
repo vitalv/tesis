@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  30 APR 2014 13:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  8 MAY 2014 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,13 +8,13 @@ entering extended mode
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
-./Parte1.tex:40: Undefined control sequence.
-l.40 \partname
-              *{}
+./Parte1.tex:38: Undefined control sequence.
+l.38 \partTitle
+               *{Introducción}
 ? 
-./Parte1.tex:40: Emergency stop.
-l.40 \partname
-              *{}
+./Parte1.tex:38: Emergency stop.
+l.38 \partTitle
+               *{Introducción}
 End of file on the terminal!
 
  
@@ -25,5 +25,5 @@ Here is how much of TeX's memory you used:
  3288 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 5i,0n,1p,90b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
-./Parte1.tex:40:  ==> Fatal error occurred, no output PDF file produced!
+ 5i,0n,1p,83b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+./Parte1.tex:38:  ==> Fatal error occurred, no output PDF file produced!

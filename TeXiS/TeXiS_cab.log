@@ -1,0 +1,38 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  7 MAY 2014 12:13
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**TeXiS_cab.tex
+(./TeXiS_cab.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+
+./TeXiS_cab.tex:102: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \usepackage{
+                  fancyhdr}
+? 
+./TeXiS_cab.tex:102: Emergency stop.
+ ...                                              
+                                                  
+l.102 \usepackage{
+                  fancyhdr}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+ 
+Here is how much of TeX's memory you used:
+ 6 strings out of 495059
+ 283 string characters out of 3182030
+ 45057 words of memory out of 3000000
+ 3288 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,5p,86b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+./TeXiS_cab.tex:102:  ==> Fatal error occurred, no output PDF file produced!
