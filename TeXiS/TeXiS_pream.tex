@@ -252,7 +252,7 @@
 % empieza a numerarse así).
 
 \ifpdf
-   \RequirePackage[pdfborder=0,colorlinks,hyperindex,pdfpagelabels]{hyperref}
+   \RequirePackage[pdfborder=0,colorlinks=true,hyperindex,pdfpagelabels]{hyperref}
    \def\pdfBorderAttrs{/Border [0 0 0] } % Ningún borde en los enlaces
 \fi
 
@@ -262,10 +262,12 @@
 % al comando anterior. Si no se está en pdf, se incluye directamente
 \ifpdf
 \else
-\usepackage{hyperref}
+\usepackage[colorlinks=true]{hyperref}
 \fi
 
 \hypersetup{colorlinks=false}
+
+
 
 
 % Durante  la infancia  de TeXiS  (es decir,  cuando estábamos  en las

@@ -15,18 +15,27 @@ indent_mode=2
 [project]
 name=TeXiS
 base_path=/home/vital/TeXiS-v1.0-ManualSrc/TeXiS
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=4482;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
-FILE_NAME_1=0;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fcover.tex;0;4
-FILE_NAME_2=437;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fresumen.tex;0;4
-FILE_NAME_3=1490;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FParte1.tex;0;4
-FILE_NAME_4=195;LaTeX;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
+current_page=0
+FILE_NAME_0=5369;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
+FILE_NAME_1=2740;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
+FILE_NAME_2=2776;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fcover.tex;0;4
+FILE_NAME_3=437;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fresumen.tex;0;4
+FILE_NAME_4=1549;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FParte1.tex;0;4
+FILE_NAME_5=676;LaTeX;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
+FILE_NAME_6=3224;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_part.tex;0;4
+FILE_NAME_7=0;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F01Capitulo1.tex;0;4
+FILE_NAME_8=3818;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cab.tex;0;4
+FILE_NAME_9=2803;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
+FILE_NAME_10=0;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F02Capitulo2.tex;0;4
+FILE_NAME_11=1634;LaTeX;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte3.tex;0;4
+FILE_NAME_12=1664;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte2.tex;0;4
 
 [VTE]
 last_dir=/home/vital

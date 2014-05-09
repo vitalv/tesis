@@ -147,8 +147,9 @@
 % Sirve para marcar los resúmenes que aparecen al principio de cada
 % capítulo.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newenvironment{resumen}{%
-\begin{quotation}\noindent\begin{small}\textbf{\textsc{Resumen:}}%
+\newenvironment{resumen}{% Comentar si no quiero que aparezca "Resumen"
+\begin{quotation}\noindent\noindent\begin{small}
+%\begin{quotation}\noindent\begin{small}\textbf{\textsc{Resumen:}}
 }%
 {%
 \end{small}\end{quotation}%
