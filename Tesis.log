@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  9 MAY 2014 16:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  9 MAY 2014 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,7 +641,7 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 70.
 
 
-Overfull \hbox (10.41597pt too wide) in paragraph at lines 80--80
+Overfull \hbox (10.41597pt too wide) in paragraph at lines 84--84
 |\T1/cmr/bx/n/14.4 Espectrometria de masas en tan-dem. Pro-teom-i-ca shot-
  []
 
@@ -696,28 +696,29 @@ Package rerunfilecheck Info: File `Tesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 10042 strings out of 495059
- 145023 string characters out of 3182030
- 242353 words of memory out of 3000000
+ 10043 strings out of 495059
+ 145025 string characters out of 3182030
+ 242328 words of memory out of 3000000
  12731 multiletter control sequences out of 15000+200000
- 17609 words of font info for 38 fonts, out of 3000000 for 9000
+ 18298 words of font info for 39 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
  55i,10n,47p,262b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/v
-ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf
--var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home/vital/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.60
-0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home
-/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (22 pages, 454473 bytes).
+ </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/v
+ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/vital/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/eccc1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecrm1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.60
+0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home
+/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/vital/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx2074.600pk>
+Output written on Tesis.pdf (22 pages, 457709 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
+ 612 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
  40 named destinations out of 1000 (max. 500000)
  150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
