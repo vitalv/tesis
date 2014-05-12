@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  9 MAY 2014 17:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  12 MAY 2014 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,7 +454,11 @@ LaTeX Info: Redefining \% on input line 23.
  (./Cascaras/resumen.aux) (./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
 (./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
 (./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
-(./Cascaras/bibliografia.aux))
+(./Capitulos/Parte3.aux) (./Capitulos/03Capitulo3.aux
+
+LaTeX Warning: Label `cap2:sec:' multiply defined.
+
+) (./Cascaras/bibliografia.aux))
 \openout1 = `Tesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -538,7 +542,7 @@ e
 \oddsidemarginOriginal=\skip73
 \longTitulo=\skip74
 
-<Imagenes/Vectorial/escudoUCM.pdf, id=72, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=99, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/escudoUCM.pdf>
@@ -585,26 +589,29 @@ oUCM.pdf>] [2] [3]) [4]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
+(Font)              <10.95> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 5.
 )
 \tf@toc=\write6
 \openout6 = `Tesis.toc'.
 
  [7]
-[8
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
 
-] (./Tesis.lof
+[8] (./Tesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write7
 \openout7 = `Tesis.lof'.
 
- [9] [10
+ [9
+
+] [10
 
 ] (./Tesis.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -628,24 +635,14 @@ LaTeX Info: Redefining \% on input line 1.
 
  (./Introduccion/Introduccion.tex
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 48.
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 48.
 
 [3
 
 
 
-]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 70.
-
-
-Overfull \hbox (10.41597pt too wide) in paragraph at lines 84--84
-|\T1/cmr/bx/n/14.4 Espectrometria de masas en tan-dem. Pro-teom-i-ca shot-
- []
-
-) [4]
+]) [4]
 \openout2 = `Capitulos/Parte2.aux'.
 
  (./Capitulos/Parte2.tex [5
@@ -670,7 +667,23 @@ Cap\'itulo 1.
 
 ]
 Cap\'itulo 2.
-) [9] [10
+) [9]
+\openout2 = `Capitulos/Parte3.aux'.
+
+ (./Capitulos/Parte3.tex [10
+
+
+
+] [11] [12])
+\openout2 = `Capitulos/03Capitulo3.aux'.
+
+ (./Capitulos/03Capitulo3.tex
+Cap\'itulo 3.
+) [13
+
+
+
+] [14
 
 
 ]
@@ -679,8 +692,8 @@ Cap\'itulo 2.
  (./Cascaras/bibliografia.tex
 No file Tesis.bbl.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -688,21 +701,26 @@ LaTeX Info: Redefining \% on input line 23.
 (./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
 (./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
 (./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
+(./Capitulos/Parte3.aux) (./Capitulos/03Capitulo3.aux)
 (./Cascaras/bibliografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 766136866658EE8579C0A711A2B6E97F;1380.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+(rerunfilecheck)             Checksum: BE2A907B6D9FCB3EB770CC3526D2315F;2001.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 10043 strings out of 495059
- 145025 string characters out of 3182030
- 242328 words of memory out of 3000000
- 12731 multiletter control sequences out of 15000+200000
+ 10099 strings out of 495059
+ 145741 string characters out of 3182030
+ 243440 words of memory out of 3000000
+ 12766 multiletter control sequences out of 15000+200000
  18298 words of font info for 39 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
- 55i,10n,47p,262b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,10n,47p,264b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/v
 ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/vital/.texmf
 -var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf-var/fonts/
@@ -715,10 +733,10 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.texmf-var/font
 s/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
 c/ecbx2074.600pk>
-Output written on Tesis.pdf (22 pages, 457709 bytes).
+Output written on Tesis.pdf (26 pages, 465908 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
