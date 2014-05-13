@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  12 MAY 2014 17:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  13 MAY 2014 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,55 +641,55 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 
 
-]) [4]
+] [4]) [5]
 \openout2 = `Capitulos/Parte2.aux'.
 
- (./Capitulos/Parte2.tex [5
+ (./Capitulos/Parte2.tex [6
 
 
 
-] [6])
+] [7] [8])
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
  (./Capitulos/01Capitulo1.tex
 Cap\'itulo 1.
-) [7
+) [9
 
 
 
 ]
 \openout2 = `Capitulos/02Capitulo2.aux'.
 
- (./Capitulos/02Capitulo2.tex [8
+ (./Capitulos/02Capitulo2.tex [10
 
 
 
 ]
 Cap\'itulo 2.
-) [9]
+) [11]
 \openout2 = `Capitulos/Parte3.aux'.
 
- (./Capitulos/Parte3.tex [10
+ (./Capitulos/Parte3.tex [12
 
 
 
-] [11] [12])
+] [13] [14])
 \openout2 = `Capitulos/03Capitulo3.aux'.
 
  (./Capitulos/03Capitulo3.tex
 Cap\'itulo 3.
-) [13
+) [15
 
 
 
 ]
 \openout2 = `Capitulos/Parte4.aux'.
 
- (./Capitulos/Parte4.tex [14
+ (./Capitulos/Parte4.tex [16
 
 
 
-] [15] [16])
+] [17] [18])
 \openout2 = `Cascaras/bibliografia.aux'.
 
  (./Cascaras/bibliografia.tex
@@ -709,7 +709,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 552A39B0609B66AAED0FAD30632C14E2;2114.
+(rerunfilecheck)             Checksum: FF8EF6E74BB1A3D3862FE71619361ACD;2095.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -717,29 +717,32 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 10111 strings out of 495059
- 145920 string characters out of 3182030
+ 10121 strings out of 495059
+ 146034 string characters out of 3182030
  243947 words of memory out of 3000000
- 12768 multiletter control sequences out of 15000+200000
- 18298 words of font info for 39 fonts, out of 3000000 for 9000
+ 12772 multiletter control sequences out of 15000+200000
+ 21100 words of font info for 43 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
- 55i,10n,51p,264b,593s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/v
-ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1095.600pk> </home/vital/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/vital/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/eccc1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecrm1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.60
-0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home
-/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/vital/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx2074.600pk>
-Output written on Tesis.pdf (28 pages, 468452 bytes).
+ 55i,11n,51p,264b,593s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi2488.600pk> </home/v
+ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/vital/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/vital/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecti1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecxc1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.60
+0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home
+/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/vital/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/vital/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecti1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.
+600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
+me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk>
+Output written on Tesis.pdf (30 pages, 488748 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
+ 52 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

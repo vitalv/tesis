@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  12 MAY 2014 15:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  13 MAY 2014 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,11 +10,11 @@ Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
 ./Introduccion.tex:7: Undefined control sequence.
 l.7 \chapter
-            *{Introducci'on}
+            *{Introducción}
 ? 
 ./Introduccion.tex:7: Emergency stop.
 l.7 \chapter
-            *{Introducci'on}
+            *{Introducción}
 End of file on the terminal!
 
  
