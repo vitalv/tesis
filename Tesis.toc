@@ -13,11 +13,10 @@
 \contentsline {section}{Candida albicans como organismo modelo}{4}{section*.6}
 \contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{5}{section*.6}
 \contentsline {part}{II\hspace {1em}Desarrollo de una aplicacion web para datos de prote\'omica shotgun de \textit {Candida albicans}}{7}{part.2}
-\contentsline {chapter}{\numberline {1}Proteopathogen, a protein identifications database to study Candida albicans - host interaction}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}}{9}{section.1.1}
-\contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}}{11}{section.2.1}
-\contentsline {part}{III\hspace {1em}Creaci\'on de un PeptideAtlas de \textit {Candida albicans}}{13}{part.3}
-\contentsline {chapter}{\numberline {3}A \textit {Candida albicans} PeptideAtlas}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}}{15}{section.3.1}
-\contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{17}{part.4}
+\contentsline {chapter}{\numberline {1}Proteopathogen, a protein database for studying \textit {Candida albicans} - host interaction}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}}{17}{section.2.1}
+\contentsline {part}{III\hspace {1em}Creaci\'on de un PeptideAtlas de \textit {Candida albicans}}{19}{part.3}
+\contentsline {chapter}{\numberline {3}A \textit {Candida albicans} PeptideAtlas}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}}{29}{section.3.1}
+\contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{31}{part.4}
