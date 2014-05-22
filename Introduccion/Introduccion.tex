@@ -18,9 +18,9 @@ Theodosius Dobzhansky
 \end{FraseCelebre}
 
 \begin{resumen}
-Tradicionalmente, el gen se ha concebido como la unidad -el átomo- de la
+Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- de la
  vida, sometida a la acción de la selección natural. Así definió Richard
- Dawkins en el Gen Egoísta a la molécula autorreplicante, mientras que 
+ Dawkins en el Gen Egoísta al ADN, la molécula autorreplicante, mientras que 
  los individuos y sus conductas son meras \textit{máquinas de supervivencia}. 
  Sin embargo, es el fenotipo y no el genotipo lo que interactúa con el
  ambiente y con otros organismos. Las proteínas, los \textit{ladrillos} 
@@ -38,7 +38,7 @@ Tradicionalmente, el gen se ha concebido como la unidad -el átomo- de la
  función de la demanda en investigación. De la misma manera, la
  Proteómica Computacional, la parte de la Bioinformática mas cercana a
  la Proteómica, evoluciona para facilitar el análisis de los datos que
- los investigadores requieren, pero también se beneficia de la incesante
+ los investigadores requieren, pero también se beneficia de la incesante,
  creciente capacidad de procesamiento en las computadoras actuales.  
 
 \end{resumen}
@@ -47,13 +47,13 @@ Tradicionalmente, el gen se ha concebido como la unidad -el átomo- de la
 %-------------------------------------------------------------------
 \phantomsection %Note that if you use PDF bookmarks you will need to 
 %add a phantom section so that bookmark will lead to the correct place in the document
-\section*{Proteómica. Conceptos generales} % * hace que no la seccion no esté numerada. Esta sería 0.1
-\addcontentsline{toc}{section}{Proteomica. Conceptos generales}
+\section*{Proteómica. Conceptos generales} % * hace que la seccion no esté numerada. Esta sería 0.1
+\addcontentsline{toc}{section}{Proteómica. Conceptos generales}
 %-------------------------------------------------------------------
 \label{cap1:sec:Proteomica. Conceptos generales}
 
 El concepto de Proteómica, acuñado originalmente por Marc Wilkins en 
-1994, ha evolucionado, desde esta definición inicial entendida como \emph{el
+1994 \citep{Vialas2013}, ha evolucionado, desde esta definición inicial entendida como \emph{el
  conjunto total de proteínas expresadas por los genes de una célula, 
  tejido u organismo}, hasta definiciones más específicas que dependen del
  momento, orgánulo celular y otros niveles adicionales de complejidad 
@@ -61,10 +61,10 @@ El concepto de Proteómica, acuñado originalmente por Marc Wilkins en
 Así, podemos hablar del proteoma (o fosfo-proteoma) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
 ambientales definidas por los nutrientes disponibles, posiblemente sometida a
- condiciones de estrés, etc... 
-Es importante además tener en cuenta que el grado de complejidad 
+ condiciones de estrés, etc... \citet{Nesvizhskii2005}
+Es importante, además, tener en cuenta que el grado de complejidad 
 biológica desde la unidad de información, es decir, el gen, hasta la
- unidad funcional, la proteína, aumenta exponencialmente.
+ unidad funcional, la proteína, aumenta exponencialmente. \cite{Deutsch2010d}
 
 
 %-------------------------------------------------------------------
@@ -78,10 +78,37 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
 biológicas, además de valer el Nobel a John Fenn y Koichi Tanaka,
 permitió sentar las bases de la Espectrometría de Masas aplicada a la 
-Proteómica
+Proteómica. Las técnicas de ionización ESI (Ionización por ElectroSpray)
+y MALDI (Desorción/Ionización Láser Asistida por Matriz) permitieron que 
+las grandes y frágiles moléculas biológicas como las proteínas puedieran 
+ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas
+
+En \textbf{ESI}, micro-gotas de muestra altamente cargadas son evaporadas desde 
+un capilar sometido a un campo eléctrico de forma que los iones de las moléculas,
+en fase gaseosa son introducidos en el espectrómetro de masas.
+Esta técnica, aunque concebida en los años 60, (Malcolm Dole of Northwestern University, Evanston)
+fue puesta en práctica en los 80 por el profesor John Fenn de la Universidad de Yale.
+
+La técnica \textbf{MALDI}, ideada paralela e independientemente por Franz Hillenkamp y
+Michael Karas en Frankfurt, Alemania y por Koichi Tanaka en Kyoto, Japón,
+consiste en embeber la muestra en una matriz líquida con alta capacidad de
+absorber luz UV sobre la que inciden pulsos de luz láser, lo que permite 
+que las moléculas sean ionizadas y volatilizadas.
 
 
+Un espectrómetro de masas es, en esencia, una balanza molecular capaz
+de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la carga)
+de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
 
+\begin{itemize}
+
+\item Fuente de iones
+
+\item Analizador de masas
+
+\item Detector
+
+\end{itemize}
 
 %-------------------------------------------------------------------
 \phantomsection
