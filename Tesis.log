@@ -1,8 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  23 MAY 2014 12:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  23 MAY 2014 16:02
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**Tesis
+**Tesis.tex
 (./Tesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -669,24 +670,28 @@ LaTeX Info: Redefining \% on input line 1.
 ] [4]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 140.
+(hyperref)                be the same. Added a new anchor on input line 149.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 161.
+(hyperref)                be the same. Added a new anchor on input line 170.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 184.
+(hyperref)                be the same. Added a new anchor on input line 193.
 
-) [5]
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6]
 \openout2 = `Capitulos/Parte2.aux'.
 
- (./Capitulos/Parte2.tex [6
+ (./Capitulos/Parte2.tex [7
 
 
 
-] [7] [8])
+] [8])
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
  (./Capitulos/01Capitulo1.tex
@@ -696,7 +701,7 @@ Cap\'itulo 1.
 
 
 ]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=298, page=1, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=297, page=1, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -742,7 +747,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age1 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [10 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=340, page=2, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=339, page=2, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -766,7 +771,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age2 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [11 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=350, page=3, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=349, page=3, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -798,7 +803,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age3 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [12 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=360, page=4, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=359, page=4, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -822,7 +827,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age4 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [13 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=366, page=5, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=365, page=5, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -895,7 +900,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=402, page=1, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=401, page=1, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -940,7 +945,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=461, page=2, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=460, page=2, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -969,7 +974,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=471, page=3, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=470, page=3, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1000,7 +1005,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=481, page=4, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=480, page=4, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1029,7 +1034,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=491, page=5, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=490, page=5, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1060,7 +1065,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=497, page=6, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=496, page=6, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1089,7 +1094,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=502, page=7, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=501, page=7, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1163,13 +1168,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 11242 strings out of 495059
- 163585 string characters out of 3182030
+ 11243 strings out of 495059
+ 163596 string characters out of 3182030
  269175 words of memory out of 3000000
  13824 multiletter control sequences out of 15000+200000
  21100 words of font info for 43 fonts, out of 3000000 for 9000
- 252 hyphenation exceptions out of 8191
- 55i,19n,51p,260b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 253 hyphenation exceptions out of 8191
+ 55i,19n,51p,264b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi2488.600pk> </home/v
 ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/vital/.texmf
 -var/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/vital/.texmf-var/fonts/
@@ -1185,10 +1190,10 @@ c/ecti1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.
 600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
 me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (47 pages, 1578219 bytes).
+Output written on Tesis.pdf (47 pages, 1578461 bytes).
 PDF statistics:
- 1149 PDF objects out of 1200 (max. 8388607)
- 499 compressed objects within 5 object streams
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 498 compressed objects within 5 object streams
  88 named destinations out of 1000 (max. 500000)
  358 words of extra memory for PDF output out of 10000 (max. 10000000)
 
