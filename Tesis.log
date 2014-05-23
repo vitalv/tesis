@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  22 MAY 2014 17:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  23 MAY 2014 12:51
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**Tesis.tex
+**Tesis
 (./Tesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -43,7 +42,14 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \@input{TeXiS/TeXiS_pream.aux}
 \openout2 = `TeXiS/TeXiS_pream.aux'.
 
-(./TeXiS/TeXiS_pream.tex
+(./TeXiS/TeXiS_pream.tex (/usr/share/texmf/tex/latex/glosstex/glosstex.sty
+Package: glosstex 1997/12/13 0.4 GlossTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+Using the standard configuration file glosstex.std
+(/usr/share/texmf/tex/latex/glosstex/glosstex.std))
 (/usr/share/texlive/texmf-dist/tex/latex/base/shortvrb.sty
 Package: shortvrb 2010/02/04 v2.1e Standard LaTeX documentation package (FMi)
 )
@@ -217,6 +223,11 @@ Package hyperref Info: Option `colorlinks' set `false' on input line 268.
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
+\@indexfile=\write4
+\openout4 = `Tesis.idx'.
+
+
+Writing index file Tesis.idx
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count102
@@ -405,9 +416,6 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2012/04/03 v0.4s Insert pages of external PDF documents (AM)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
 
@@ -473,11 +481,10 @@ File: pppdftex.def 2012/04/03 v0.4s Pdfpages driver for pdfTeX (AM)
 (./constantes.tex) (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (./Cascaras/resumen.aux) (./Introduccion/Parte1.aux) (./Introduccion/Introducc
-ion.aux)
-(./Capitulos/Parte2.aux) (./Capitulos/01Capitulo1.aux)
-(./Capitulos/02Capitulo2.aux) (./Capitulos/Parte3.aux)
-(./Capitulos/03Capitulo3.aux
+ (./Cascaras/resumen.aux) (./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
+(./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
+(./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
+(./Capitulos/Parte3.aux) (./Capitulos/03Capitulo3.aux
 
 LaTeX Warning: Label `cap2:sec:' multiply defined.
 
@@ -498,12 +505,13 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
+
+(./Tesis.glx)
 LaTeX Info: Redefining \. on input line 105.
 LaTeX Info: Redefining \% on input line 105.
 \AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring OFF on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -516,8 +524,8 @@ LaTeX Info: Redefining \pageref on input line 105.
 LaTeX Info: Redefining \nameref on input line 105.
 
 (./Tesis.out) (./Tesis.out)
-\@outlinefile=\write4
-\openout4 = `Tesis.out'.
+\@outlinefile=\write5
+\openout5 = `Tesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -564,7 +572,7 @@ e
 \oddsidemarginOriginal=\skip73
 \longTitulo=\skip74
 
-<Imagenes/Vectorial/escudoUCM.pdf, id=117, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=137, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/escudoUCM.pdf>
@@ -600,57 +608,85 @@ oUCM.pdf>] [2] [3]) [4]
 
 
 
-] [6
+]
+\openout2 = `TeXiS/TeXiS_toc.aux'.
+
+ (./TeXiS/TeXiS_toc.tex [6
+
+
+
+] (./Tesis.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+ [7])
+\tf@toc=\write6
+\openout6 = `Tesis.toc'.
+
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+
+[8] (./Tesis.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write7
+\openout7 = `Tesis.lof'.
+
+ [9
+
+] [10
+
+] (./Tesis.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write8
+\openout8 = `Tesis.lot'.
+
+ [11]) [12
 
 
 ]
 \openout2 = `Introduccion/Parte1.aux'.
 
- (./Introduccion/Parte1.tex [1
+ (./Introduccion/Parte1.tex
+[1
 
 
 ] [2])
 \openout2 = `Introduccion/Introduccion.aux'.
 
-
-(./Introduccion/Introduccion.tex
-
-Package natbib Warning: Citation `Vialas2013' on page 3 undefined on input line
- 56.
-
-
-Package natbib Warning: Citation `Nesvizhskii2005' on page 3 undefined on input
- line 64.
-
-
-Package natbib Warning: Citation `Deutsch2010d' on page 3 undefined on input li
-ne 67.
-
-[3
+ (./Introduccion/Introduccion.tex [3
 
 
 
 ] [4]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 126.
+(hyperref)                be the same. Added a new anchor on input line 140.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 147.
+(hyperref)                be the same. Added a new anchor on input line 161.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 170.
+(hyperref)                be the same. Added a new anchor on input line 184.
 
-) [5] [6]
+) [5]
 \openout2 = `Capitulos/Parte2.aux'.
 
- (./Capitulos/Parte2.tex [7
+ (./Capitulos/Parte2.tex [6
 
 
 
-] [8])
+] [7] [8])
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
  (./Capitulos/01Capitulo1.tex
@@ -660,38 +696,38 @@ Cap\'itulo 1.
 
 
 ]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=203, page=1, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=298, page=1, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 1>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age1 used on input line 11.
+age1 used on input line 12.
 (pdftex.def)             Requested size: 597.50682pt x 796.67543pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 1>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age1 used on input line 11.
+age1 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 1>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age1 used on input line 11.
+age1 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 1>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age1 used on input line 11.
+age1 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -703,51 +739,51 @@ File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 1>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age1 used on input line 11.
+age1 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [10 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=245, page=2, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=340, page=2, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 2>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age2 used on input line 11.
+age2 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 2>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age2 used on input line 11.
+age2 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 2>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age2 used on input line 11.
+age2 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [11 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=255, page=3, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=350, page=3, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 3>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age3 used on input line 11.
+age3 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 3>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age3 used on input line 11.
+age3 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -759,51 +795,51 @@ File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 3>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age3 used on input line 11.
+age3 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [12 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=265, page=4, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=360, page=4, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 4>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age4 used on input line 11.
+age4 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 4>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age4 used on input line 11.
+age4 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 4>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age4 used on input line 11.
+age4 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [13 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=271, page=5, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=366, page=5, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 5>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age5 used on input line 11.
+age5 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 5>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age5 used on input line 11.
+age5 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -815,7 +851,7 @@ File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
 <use Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, page 5>
 Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
-age5 used on input line 11.
+age5 used on input line 12.
 (pdftex.def)             Requested size: 507.88443pt x 677.17897pt.
  [14 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]) [15]
 \openout2 = `Capitulos/02Capitulo2.aux'.
@@ -859,7 +895,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=307, page=1, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=402, page=1, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -904,7 +940,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=366, page=2, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=461, page=2, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -933,7 +969,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=376, page=3, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=471, page=3, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -964,7 +1000,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=386, page=4, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=481, page=4, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -993,7 +1029,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=396, page=5, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=491, page=5, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1024,7 +1060,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=402, page=6, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=497, page=6, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1053,7 +1089,7 @@ pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=407, page=7, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=502, page=7, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1092,36 +1128,34 @@ LaTeX Info: Redefining \% on input line 143.
 ] [31] [32])
 \openout2 = `Cascaras/bibliografia.aux'.
 
- (./Cascaras/bibliografia.tex
-No file Tesis.bbl.
-)
+ (./Cascaras/bibliografia.tex (./Tesis.bbl)) [33
+
+
+
+
+]
 \openout2 = `Cascaras/fin.aux'.
 
- (./Cascaras/fin.tex [33
+
+(./Cascaras/fin.tex [34
 
 
-
-
-
-] [34])
-
-Package natbib Warning: There were undefined citations.
-
+] [35])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
-(./Tesis.aux (./Cascaras/cover.aux)
+ (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (./Cascaras/resumen.aux)
-(./Introduccion/Parte1.aux) (./Introduccion/Introduccion.aux)
-(./Capitulos/Parte2.aux) (./Capitulos/01Capitulo1.aux)
-(./Capitulos/02Capitulo2.aux) (./Capitulos/Parte3.aux)
-(./Capitulos/03Capitulo3.aux) (./Capitulos/Parte4.aux)
+
+(./Cascaras/resumen.aux) (./TeXiS/TeXiS_toc.aux) (./Introduccion/Parte1.aux)
+(./Introduccion/Introduccion.aux) (./Capitulos/Parte2.aux)
+(./Capitulos/01Capitulo1.aux) (./Capitulos/02Capitulo2.aux)
+(./Capitulos/Parte3.aux) (./Capitulos/03Capitulo3.aux) (./Capitulos/Parte4.aux)
 (./Cascaras/bibliografia.aux) (./Cascaras/fin.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: FCE800B48F8A7379A770FAF0864E78E9;2321.
+(rerunfilecheck)             Checksum: 9394B039621B11FB32D1FE4F7A1BC682;2654.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1129,31 +1163,32 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 10999 strings out of 495059
- 160417 string characters out of 3182030
- 261491 words of memory out of 3000000
- 13638 multiletter control sequences out of 15000+200000
- 17943 words of font info for 34 fonts, out of 3000000 for 9000
+ 11242 strings out of 495059
+ 163585 string characters out of 3182030
+ 269175 words of memory out of 3000000
+ 13824 multiletter control sequences out of 15000+200000
+ 21100 words of font info for 43 fonts, out of 3000000 for 9000
  252 hyphenation exceptions out of 8191
- 55i,19n,51p,264b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,19n,51p,260b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi2488.600pk> </home/v
-ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/vital/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/vital/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/eccc1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
+ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/vital/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/vital/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecti1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.60
-0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home
-/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/vital/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/vital/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecti1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.
-600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </ho
-me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (40 pages, 1547190 bytes).
+ecxc1095.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.60
+0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home
+/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/vital/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/vital/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecti1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.
+600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
+me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk>
+Output written on Tesis.pdf (47 pages, 1578219 bytes).
 PDF statistics:
- 961 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 67 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1149 PDF objects out of 1200 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

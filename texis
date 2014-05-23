@@ -16,6 +16,7 @@ indent_mode=2
 name=TeXiS
 base_path=/home/vital/TeXiS-v1.0-ManualSrc/TeXiS
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
@@ -23,15 +24,15 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=4923;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
+FILE_NAME_0=5092;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
 FILE_NAME_1=2740;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
 FILE_NAME_2=6004;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cab.tex;0;4
 FILE_NAME_3=2776;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fcover.tex;0;4
 FILE_NAME_4=359;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fresumen.tex;0;4
 FILE_NAME_5=2329;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FParte1.tex;0;4
-FILE_NAME_6=6355;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
+FILE_NAME_6=3994;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
 FILE_NAME_7=3224;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_part.tex;0;4
-FILE_NAME_8=424;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F01Capitulo1.tex;0;4
+FILE_NAME_8=325;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F01Capitulo1.tex;0;4
 FILE_NAME_9=2803;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
 FILE_NAME_10=280;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F02Capitulo2.tex;0;4
 FILE_NAME_11=1545;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte2.tex;0;4
@@ -42,6 +43,21 @@ FILE_NAME_15=5356;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS.sty;0;
 FILE_NAME_16=1494;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte3.tex;0;4
 FILE_NAME_17=239;LaTeX;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F03Capitulo3.tex;0;4
 FILE_NAME_18=1424;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte4.tex;0;4
+FILE_NAME_19=1774;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_bib.tex;0;4
+FILE_NAME_20=2910;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fbibliografia.tex;0;4
+FILE_NAME_21=1414;Make;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FMakefile;0;4
 
 [VTE]
 last_dir=/home/vital
+
+[build-menu]
+LaTeXFT_02_LB=
+LaTeXFT_02_CM=
+LaTeXFT_02_WD=
+filetypes=LaTeX;
+NF_01_LB=make
+NF_01_CM=make 
+NF_01_WD=
+NF_03_LB=
+NF_03_CM=
+NF_03_WD=
