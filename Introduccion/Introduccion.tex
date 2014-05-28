@@ -125,9 +125,9 @@ en un proceso recursivo, hasta el punto en que las moléculas de analito se repel
 suficiente para superar la tensión superficial y liberarse del solvente (explosión de Coulomb)
 quedando iones de analito en suspensión que son introducidos en un sistema vacío hacia el espectrómetro.
 
-\item \textbf{MALDI} consiste en embeber la muestra en una matriz líquida con alta capacidad de
-absorber luz UV sobre la que inciden pulsos de luz láser, lo que permite 
-que las moléculas sean ionizadas y volatilizadas.
+\item \textbf{MALDI} consiste en embeber la muestra en una matriz líquida 
+con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
+láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
 
 \end{itemize}
 
@@ -164,19 +164,49 @@ Así se describe por orden. 2D-PAGE, MALDI, Huella Peptídica }
 \addcontentsline{toc}{section}{Proteómica \textit{shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
+La proteómica \textit{shotgun} es la técnica de elección para la mayoría
+de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
+de una analogía con las técnicas clásicas de secuenciación genómica donde el ADN es 
+fragmentado en secuencias mas pequeñas que posteriormente son ensambladas.
+En la proteómica shotgun las proteínas son fragmentadas en péptidos a 
+partir de los cuales se infiere finalmente la proteína original.
+
+
 \todo{
+
 Describir aquí lo mas general que puedas de shotgun, que se llama 
 así por analogía con la secuenciación genómica donde se primero se obtienen
  pequeños fragmentos o secuencias a partir de los cuales luego se infiere
-la secuencia mayor (gen, proteína)
+la secuencia mayor (gen, proteína).
+La técnica de \textit{shotgun} implica varios pasos descritos a continuación
 } 
  
-\subsection*{Separación de péptidos y proteinas}
-\addcontentsline{toc}{subsection}{Separación de péptidos y proteinas}
+\subsection*{Digestión de proteínas. Separación de péptidos}
+\addcontentsline{toc}{subsection}{Digestión de proteínas. Separación de péptidos}
 
-\todo {En esta subsección y siguientes, al igual que en Proteomica en
- gel y Huella Peptídica, se describe lo que es la técnica.
- Primero lo que es cromatografía, multidimensional, etc...) }
+El primer paso, esencial, es la digestión o rotura de proteínas en 
+péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
+para esto tripsina, que rompe la secuencia aminoacídica a continuación de
+ Arginina(R) o Lisina (K) a menos que exista una Prolina (P) adyacente.
+Los péptidos generados por acción de la tripsina, llamados péptidos
+\emph{trípticos}, tienen un tamaño adecuado para el análisis por espectrometría
+de masas lo que explica la popularidad de esta proteasa. 
+Así, a partir de cada proteína presente en la muestra, se generan múltiples
+péptidos trípticos, lo que implica que el grado de complejidad de 
+la muestra aumenta enormemente tras la digestión.
+Por este motivo, para evitar que la mezcla de péptidos sea extremadamente 
+compleja, generalmente se realiza una separación previa de las proteínas
+para reducir el grado de complejidad. Esta separación puede realizarse de
+varias maneras, por ejemplo por electroforesis en un gel mono-dimensional 
+(1D-SDS-PAGE), por fraccionamientos sub-celulares correspondientes a distintos 
+orgánulos, etc... 
+Pero además de esta separación a nivel de proteína 
+se hace también una separación a nivel de péptido 
+
+Pero , entonces, ¿por qué hacer una digestión que aumenta el grado de 
+complejidad de la muestra y que supone el problema añadido de la inferencia
+de la proteína original a partir de sus péptidos constituyentes?, o
+, dicho de otra manera ¿es necesario el paso intermedio de digestión en péptidos?
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
 \addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}

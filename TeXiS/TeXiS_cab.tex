@@ -111,7 +111,16 @@
 % Hacemos un poco más alta la cabecera, ya que el valor por defecto
 % (12) no es suficiente para el tipo de letra y contenido de cabecera
 % elegido, lo que provoca warnings contínuos en la compilación
-\addtolength{\headheight}{2pt}
+%\addtolength{\headheight}{2pt}
+
+%nota Vital: (comento el headheight anterior y fijo el siguiente:
+\setlength{\headheight}{26pt}
+%para evitar los warning en la compilacion
+% Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+% Make it at least 25.22652pt.
+% We now make it that large for the rest of the document.
+% This may cause the page layout to be inconsistent, however.
+
 
 % Establecemos el resto de parámetros de apariencia
 \newcommand{\restauraCabecera}{
@@ -123,7 +132,7 @@
 \renewcommand{\chaptermark}[1]{%
 \markboth{\textsc{\chaptertitlename\ \thechapter.}\ #1}{}%
 }
-\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
 \fancyhf{}
 \restauraCabecera
 \fancyhead[RO,LE]{\thepage}
