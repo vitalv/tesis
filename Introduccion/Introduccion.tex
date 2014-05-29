@@ -20,7 +20,8 @@ Theodosius Dobzhansky
 \begin{resumen}
 Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- de la
  vida, sometida a la acción de la selección natural. Así definió Richard
- Dawkins en el Gen Egoísta al ADN, la molécula autorreplicante, mientras que 
+ Dawkins en el Gen Egoísta al gen, la unidad indivisible auto-replicante,
+ mientras que 
  los individuos y sus conductas eran meras \textit{máquinas de supervivencia}. 
  Sin embargo, es el fenotipo y no el genotipo lo que interactúa con el
  ambiente y con otros organismos. Las proteínas, los \textit{ladrillos} 
@@ -145,17 +146,36 @@ láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
 \label{cap1:sec:Proteómica en gel}
 
 La separación bidimensional de proteínas en geles de poli-acrilamida 
-(2D-PAGE) consiste en
-\todo{2D Gel still have a niche in Proteomics, Roepstorff says, so I cite him
+(PAGE, \textit{Polyacrilamide Gel Electrophoresis}) consiste en separar
+proteinas presentes en una muestra inicial en base a sus propiedades
+fisico-químicas diferenciadoras como su tamaño y/o su punto isoeléctrico.
+En función del número de estas propiedades a las que se llamamos dimensiones
+se distinguen básicamente dos tipos de PAGE
+\begin{itemize}
+  \item Geles monodimensionales. 1D-PAGE
+  \item Geles bidimensionales. 2D-PAGE
+\end{itemize}
+
+\todo{2D GE still have a niche in Proteomics, Roepstorff says, so I cite him
 En esta seccion, Proteómica en gel, defino en que consiste 2D-PAGE, como
 se separan las proteínas etc.}
 
 \subsection*{Huella Peptídica}
 \addcontentsline{toc}{subsection}{Huella Peptídica}
 
-\todo{Y en esta subsección se describe la técnica, 
-complementaria del 2DPAGE,  de la Huella Peptídica
-Así se describe por orden. 2D-PAGE, MALDI, Huella Peptídica }
+\subsubsection*{Digestión de proteínas}
+El primer paso, esencial, (también como se explica más adelante 
+en la proteómica de alto rendimiento o \textit{shotgun})
+es la digestión o rotura de proteínas en 
+péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
+para esto tripsina, que rompe la secuencia aminoacídica a continuación, 
+en el lado carboxilo-, de
+ Arginina(R) o Lisina (K) a menos que exista una Prolina (P) adyacente.
+Los péptidos generados por acción de la tripsina, llamados péptidos
+\emph{trípticos}, tienen un tamaño adecuado, dada la frecuencia media de R y K, 
+para el análisis por espectrometría de masas lo que explica la popularidad 
+de esta proteasa.
+
 
 
 %-------------------------------------------------------------------
@@ -166,47 +186,33 @@ Así se describe por orden. 2D-PAGE, MALDI, Huella Peptídica }
 
 La proteómica \textit{shotgun} es la técnica de elección para la mayoría
 de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
-de una analogía con las técnicas clásicas de secuenciación genómica donde el ADN es 
-fragmentado en secuencias mas pequeñas que posteriormente son ensambladas.
-En la proteómica shotgun las proteínas son fragmentadas en péptidos a 
-partir de los cuales se infiere finalmente la proteína original.
+de una analogía con las técnicas clásicas de secuenciación genómica donde 
+el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
+ensambladas. En la proteómica \textit{shotgun} las proteínas son 
+fragmentadas en péptidos a partir de los cuales se infiere finalmente 
+la proteína original. Implica varios pasos que se detallan a continuación
 
+\subsection*{Separación multidimensional de péptidos}
+\addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
 
-\todo{
-
-Describir aquí lo mas general que puedas de shotgun, que se llama 
-así por analogía con la secuenciación genómica donde se primero se obtienen
- pequeños fragmentos o secuencias a partir de los cuales luego se infiere
-la secuencia mayor (gen, proteína).
-La técnica de \textit{shotgun} implica varios pasos descritos a continuación
-} 
- 
-\subsection*{Digestión de proteínas. Separación de péptidos}
-\addcontentsline{toc}{subsection}{Digestión de proteínas. Separación de péptidos}
-
-El primer paso, esencial, es la digestión o rotura de proteínas en 
-péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
-para esto tripsina, que rompe la secuencia aminoacídica a continuación de
- Arginina(R) o Lisina (K) a menos que exista una Prolina (P) adyacente.
-Los péptidos generados por acción de la tripsina, llamados péptidos
-\emph{trípticos}, tienen un tamaño adecuado para el análisis por espectrometría
-de masas lo que explica la popularidad de esta proteasa. 
-Así, a partir de cada proteína presente en la muestra, se generan múltiples
-péptidos trípticos, lo que implica que el grado de complejidad de 
-la muestra aumenta enormemente tras la digestión.
-Por este motivo, para evitar que la mezcla de péptidos sea extremadamente 
-compleja, generalmente se realiza una separación previa de las proteínas
-para reducir el grado de complejidad. Esta separación puede realizarse de
+A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
+(en mayor o menor grado) aislada, en \textit{shotgun}, se parte de una mezcla
+más compleja de proteínas. Este hecho es importante porque, 
+si contamos con que a partir de cada proteína
+ presente en la muestra, se generan múltiples
+péptidos trípticos, el grado de complejidad de aumenta
+ enormemente tras la digestión.
+Por este motivo, para evitar que la mezcla de péptidos sea demasiado 
+compleja (para la resolución en el análisis MS),
+opcionalmente se puede realizar una separación previa de las proteinas
+que reduzca el grado de complejidad. Esta separación puede realizarse de
 varias maneras, por ejemplo por electroforesis en un gel mono-dimensional 
 (1D-SDS-PAGE), por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos, etc... 
-Pero además de esta separación a nivel de proteína 
-se hace también una separación a nivel de péptido 
-
-Pero , entonces, ¿por qué hacer una digestión que aumenta el grado de 
-complejidad de la muestra y que supone el problema añadido de la inferencia
-de la proteína original a partir de sus péptidos constituyentes?, o
-, dicho de otra manera ¿es necesario el paso intermedio de digestión en péptidos?
+Pero además de esta separación a nivel de proteína se hace también una 
+separación a nivel de péptido en este caso, generalmente, por cromatografía
+líquida o alternativamente colocando los péptidos en solución en gotas 
+sobre una placa de MALDI.
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
 \addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
