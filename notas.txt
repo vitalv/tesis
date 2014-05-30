@@ -1,4 +1,5 @@
-
+A lo mejor puedo hacer una sección "como se hizo" o "side notes"
+"notas en el margen"
 
 Pero entonces, ¿por qué hacer una digestión que aumenta el grado de 
 complejidad de la muestra y que supone el problema añadido de la inferencia
@@ -6,7 +7,7 @@ de la proteína original a partir de sus péptidos constituyentes?, o
  dicho de otra manera ¿es necesario el paso intermedio de digestión en 
 péptidos para luego inferir las proteínas originales?
 
-La respuesta a estas preguntas tiene que ver fundamentalmente con 
+Creo que la respuesta a estas preguntas que me hago tiene que ver fundamentalmente con 
 limitaciones técnicas y con el objeto de estudio. 
 Sí es posible analizar proteínas intactas por espectrometría de masas. 
 Desde el inicio, la ionización ESI se demostró útil para la ionización
