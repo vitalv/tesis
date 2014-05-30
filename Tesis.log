@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  29 MAY 2014 17:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.24)  30 MAY 2014 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,26 +674,23 @@ ut line 72.
  [4]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 164.
+(hyperref)                be the same. Added a new anchor on input line 179.
 
 [5]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 196.
+(hyperref)                be the same. Added a new anchor on input line 221.
 
+[6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 234.
+(hyperref)                be the same. Added a new anchor on input line 270.
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-[7] [8 <./Imagenes/Vectorial/proteome_complexity.pdf>]
+) [7] [8 <./Imagenes/Vectorial/proteome_complexity.pdf>]
 \openout2 = `Capitulos/Parte2.aux'.
 
- (./Capitulos/Parte2.tex
-[9
+
+(./Capitulos/Parte2.tex [9
 
 
 
@@ -1107,10 +1104,10 @@ Package rerunfilecheck Info: File `Tesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 11257 strings out of 495059
- 163950 string characters out of 3182030
- 269265 words of memory out of 3000000
- 13834 multiletter control sequences out of 15000+200000
+ 11258 strings out of 495059
+ 163968 string characters out of 3182030
+ 270265 words of memory out of 3000000
+ 13835 multiletter control sequences out of 15000+200000
  21100 words of font info for 43 fonts, out of 3000000 for 9000
  253 hyphenation exceptions out of 8191
  55i,19n,51p,260b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1129,9 +1126,9 @@ c/ecti1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.
 600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
 me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk>
-Output written on Tesis.pdf (49 pages, 1607143 bytes).
+Output written on Tesis.pdf (49 pages, 1609173 bytes).
 PDF statistics:
- 1200 PDF objects out of 1200 (max. 8388607)
+ 1201 PDF objects out of 1440 (max. 8388607)
  539 compressed objects within 6 object streams
  91 named destinations out of 1000 (max. 500000)
  363 words of extra memory for PDF output out of 10000 (max. 10000000)

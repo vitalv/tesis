@@ -122,7 +122,7 @@ que las micro-gotas en el ápice del capilar, una vez que la carga supera
 un límite, adquieren una forma cónica y forman un aerosol. Se produce
 entonces la desolvatación por evaporación del solvente. Así, las micro-gotas
 del aerosol disminuyen su tamaño, reagrupándose en gotas más estables y pequeñas
-en un proceso recursivo, hasta el punto en que las moléculas de analito se repelen con la fuerza
+en un proceso reiterativo, hasta el punto en que las moléculas de analito se repelen con la fuerza
 suficiente para superar la tensión superficial y liberarse del solvente (explosión de Coulomb)
 quedando iones de analito en suspensión que son introducidos en un sistema vacío hacia el espectrómetro.
 
@@ -149,23 +149,48 @@ La separación bidimensional de proteínas en geles de poli-acrilamida
 (PAGE, \textit{Polyacrilamide Gel Electrophoresis}) consiste en separar
 proteinas presentes en una muestra inicial en base a sus propiedades
 fisico-químicas diferenciadoras como su tamaño y/o su punto isoeléctrico.
-En función del número de estas propiedades a las que se llamamos dimensiones
+En función del número de estas propiedades que se aprovechan para separar,
+ en mayor o menor grado, las proteinas de una muestra
 se distinguen básicamente dos tipos de PAGE
 \begin{itemize}
-  \item Geles monodimensionales. 1D-PAGE
-  \item Geles bidimensionales. 2D-PAGE
+  \item Geles monodimensionales, 1D-PAGE. En este tipo de geles las 
+  proteinas se separan en función de su peso molecular. La electroforesis
+  hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
+  mas lejos en el gel, sometido a una diferencia de potencial.
+  \item Geles bidimensionales. 2D-PAGE. En este caso, las proteínas 
+  se separan en una primera dimensión en función de su punto isoeléctrico.
+  Las proteinas se desplazan sobre una tira con un gradiente de pH hasta
+  situarse en un punto donde su carga neta se equilibra con la de su 
+  entorno. A continuación la tira se coloca en la cabecera de un gel y se
+  aplica la segunda dimensión, de modo que se las proteínas se separan 
+  más, en este caso por peso molecular, al igual que en un gel 1D.
+  
 \end{itemize}
 
-\todo{2D GE still have a niche in Proteomics, Roepstorff says, so I cite him
-En esta seccion, Proteómica en gel, defino en que consiste 2D-PAGE, como
-se separan las proteínas etc.}
+La proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
+en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
+el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
+o que el número de proteínas identificables a partir de un gel difícilmente
+pueda superar el millar. Pero sin embargo, este tipo de estudios sigue 
+teniendo un nicho en la Proteómica actual (Roepstorff)
+
 
 \subsection*{Huella Peptídica}
 \addcontentsline{toc}{subsection}{Huella Peptídica}
 
+La Huella Peptídica de una proteína se refiere al hecho de que el 
+patrón de fragmentación de una proteína en sus péptidos constituyentes
+utilizando una enzima proteolítica determinada, es muy específico de la
+proteína original y el espectro que generan puede ser utilizado para identificarla. 
+Sin embargo
+existe una altísima variedad de posibles péptidos generados a partir de 
+las proteínas y pueden tener masas muy similares. Por ese motivo,
+ esta técnica requiere que la proteína se encuentre previamente aislada, 
+ generalmente a partir de una mancha o \textit{spot} proteico de 2D-PAGE
+
 \subsubsection*{Digestión de proteínas}
-El primer paso, esencial, (también como se explica más adelante 
-en la proteómica de alto rendimiento o \textit{shotgun})
+El primer paso, esencial, como se explicará también 
+en la proteómica de alto rendimiento o \textit{shotgun},
 es la digestión o rotura de proteínas en 
 péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
 para esto tripsina, que rompe la secuencia aminoacídica a continuación, 
@@ -200,19 +225,30 @@ A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuent
 más compleja de proteínas. Este hecho es importante porque, 
 si contamos con que a partir de cada proteína
  presente en la muestra, se generan múltiples
-péptidos trípticos, el grado de complejidad de aumenta
+péptidos trípticos, el grado de complejidad de la muestra aumenta
  enormemente tras la digestión.
 Por este motivo, para evitar que la mezcla de péptidos sea demasiado 
 compleja (para la resolución en el análisis MS),
 opcionalmente se puede realizar una separación previa de las proteinas
 que reduzca el grado de complejidad. Esta separación puede realizarse de
-varias maneras, por ejemplo por electroforesis en un gel mono-dimensional 
-(1D-SDS-PAGE), por fraccionamientos sub-celulares correspondientes a distintos 
+varias maneras, por ejemplo la separación puede compenzar a nivel 
+de proteína por electroforesis en un gel 1D-PAGE,
+ por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos, etc... 
-Pero además de esta separación a nivel de proteína se hace también una 
-separación a nivel de péptido en este caso, generalmente, por cromatografía
-líquida o alternativamente colocando los péptidos en solución en gotas 
-sobre una placa de MALDI.
+\medskip
+Pero además de este separación a nivel de proteína se hace también un 
+fraccionamiento a nivel de péptido en este caso, generalmente, por cromatografía
+líquida.
+Al igual que en las técnicas basadas en gel, en cromatografía se habla de 
+dimensiones de separación en función de las propiedades fisico-químicas
+que se aprovechan para el fraccionamiento. Además frecuentemente son combinables
+y pueden emplearse secuencialmente. Algunas de los tipos de LC más utilizados
+se describen a continuación.
+Cromatografía líquida en fase reversa (RP-LC):
+Cromatografía de intercambio catiónico: 
+
+(o alternativamente colocando los péptidos en solución en gotas 
+sobre una placa de MALDI.)
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
 \addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
