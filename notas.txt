@@ -1,3 +1,36 @@
+A diferencia de Genoma, (éste es uno en todos las células y tejidos del organismo)
+Proteoma es un concepto mas variable, ya que las proteínas se expresan bajo 
+diferentes condiciones, según la célula, tejido, estadío del desarrollo, etc..
+Por eso el término Proteoma depende de 
+
+
+
+
+mientras que el Genoma es uno en todas las células del organismo en todo
+momento, el Proteoma es un concepto mas variable. Lo es a varios niveles.
+
+En un nivel estructural, el proteoma es variable en el sentido de que 
+solo algunos genes se expresan en función del tejido en que se encuentren 
+las células. Es esto precisamente lo que permite que a partir de un único
+genoma puedan surgir tejidos y células diferentes en un organismo. También
+a nivel subcelular, cada orgánulo es una estructura especializada
+
+A nivel de estadío del desarrollo del organismo, el proteoma también 
+puede sufrir cambios radicales. Esto puede entenderse bien en el caso
+de insectos, organismos que se transforman radicalmente desde el estadío
+de larva al estadío adulto.
+
+Además existen niveles adicionales en el transcurso de la información gen-proteína:
+El Splicing alternativo implica que a partir de un solo gen pueden generarse
+múltiples proteínas diferentes en función de como se corten y unan los exones.
+Las modificaciones Post-Traduccionales, 
+
+
+
+
+
+
+
 A lo mejor puedo hacer una sección "como se hizo" o "side notes"
 "notas en el margen"
 
@@ -21,3 +54,5 @@ Pero en el caso de un estudio de proteómica a gran escala, una mezcla muy compl
 proteínas generaría en el detector un espectro demasiado complejo, 
 de forma que el instrumento no alcancaría la resolución necesaria para
 discernir las masas de las proteínas (en relación a sus cargas) 
+
+

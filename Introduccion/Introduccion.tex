@@ -29,7 +29,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
  a la selección natural.
  Por otra parte, el clásico dogma central de la Biología Molecular caducó hace ya 
  tiempo y hoy lo recordamos, más bien, como una sobresimplificación.
- Actualmente, el emergente campo de la Proteogenómica da cuenta de la intricada 
+ Actualmente, el emergente campo de la Proteogenómica da cuenta de la intrincada 
  red de procesos regulatorios de transferencia de información entre el gen y la proteína.
  La Proteómica por su parte, le debe a la Genómica el reconocimiento y agradecimiento
  de haber abierto camino en la Biotecnología moderna. 
@@ -54,17 +54,35 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
 %-------------------------------------------------------------------
 \label{cap1:sec:Proteómica. Conceptos generales}
 
-El concepto de Proteoma, acuñado originalmente por Marc Wilkins en 
-1994, ha evolucionado, desde esta definición inicial entendida como \emph{el
- conjunto total de proteínas expresadas por los genes de una célula, 
- tejido u organismo}, hasta definiciones más específicas que dependen del
- momento, orgánulo celular y otros niveles adicionales de complejidad 
- como por ejemplo modificaciones post-traduccionales.
+El concepto de Proteoma, fue acuñado originalmente por Marc Wilkins en 
+1994 en analogía al concepto de Genoma. 
+Si el Genoma es la dotación génica de una célula u organismo, 
+el Proteoma es entendido como \emph{el conjunto total de proteínas 
+expresadas por los genes de una célula, tejido u organismo}. 
+Sin embargo, mientras que el Genoma permanece constante en todas las 
+células del organismo, el Proteoma es un concepto mas variable. 
+Los genes se expresan en función de las condiciones en que se encuentra
+la célula, según el orgánulo, el tejido, y
+estadío del desarrollo entre otros factores. Además existen niveles de complejidad
+adicional en el curso de información desde el gen a la proteína 
+como el \textit{splicing} alternativo y las modificaciones post-traduccionales.
+Por eso el término Proteoma puede diversificarse, para ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
 ambientales definidas por los nutrientes disponibles, posiblemente sometida a
  condiciones de estrés, etc... 
-Es importante, además, tener en cuenta que el grado de complejidad 
+
+Proteómica es, por tanto, el estudio del proteoma, independientemente
+del conjunto o subconjunto de proteínas objeto de estudio. 
+Pero además Proteómica se refiere a las tecnologías utilizadas para ello.
+
+El establecimiento de la espectrometría de masas aplicada a moléculas
+biológicas a finales de los años 80 y el desarrollo de técnicas de 
+separación de péptidos y proteínas como la electroforesis PAGE y la 
+cromatografía líquida permitieron que la Proteómica se 
+consolidara y extendiera como disciplina científica.
+
+La Figura \label{fig:proteome_complexity} ilustra como el grado de complejidad 
 biológica desde la unidad de información, es decir, el gen, hasta la
  unidad funcional, la proteína, aumenta exponencialmente. 
 
@@ -103,15 +121,16 @@ de proteínas hasta la publicación del trabajo de Tanaka, actualmente
 
 \medskip %Produces a medium-sized space between paragraphs.
 
-Un espectrómetro de masas es, en esencia, una balanza molecular capaz
+Un espectrómetro de masas es, en esencia, una balanza de precisión molecular capaz
 de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la carga)
 de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
 
 \begin{enumerate}
 
-\item Fuente de iones
+\item \textbf{Fuente de iones}:
 Las macromoléculas biológicas, como proteínas y péptidos, no son volátiles
-
+El desarrollo de las técnicas de ionización \textit{suave} permitió que
+péptidos y proteínas ionizados relativamente intactos
 
 \begin{itemize}
 
@@ -132,66 +151,125 @@ láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
 
 \end{itemize}
 
-\item Analizador de masas
+\item \textbf{Analizador de masas}
+El analizador de masas es la parte del instrumento en la que los iones
+se separan. Esta separación se produce en base a la relación entre la masa y la
+carga (m/z) de los iones. Existen varios tipos de analizadores de masas,
+que pueden combinarse y es el elemento que se usa generalmente 
+para definir el tipo de instrumento.
+
+\begin{itemize}
+
+\item  \textbf{Analizadores de sector}
+
+\item \textbf{Analizadores por Tiempo de Vuelo}
+
+\item \textbf{Cuadrupolos}
+
+\item \textbf{Trampas Iónicas}
+
+\end{itemize}
 
 \item Detector
 
 \end{enumerate}
 
+Dos parámetros importantes en un espectrómetro de masas son su
+\textit{sensibilidad} y su \textit{resolución} ya que determinan 
+notablemente la cantidad y calidad de información del espectro generado,
+lo que a su vez, es esencial para identificar el péptido que origina el 
+espectro. 
+
+La \textit{sensibilidad} de un espectrómetro de masas es la 
+capacidad para detectar masas muy pequeñas, y puede llegar a ser de hasta
+unas pocas partes por millon (ppm) en el caso de instrumentos de alta
+precisión como LTQ-Orbitrap, pero requiere un ajuste óptimo de múltiples
+parámetros como la calibración del instrumento, temperatura, etc...
+
+La \textit{resolución} es la capacidad para discernir señales que realmente 
+corresponden a diferentes iones dentro de una ventana o margen de valores m/z
+Esto es esencial para evitar la co-fragmentación, es decir, obtener 
+fragmentos de iones precursores diferentes con similares m/z.
+
+\subsection*{Espectrometría de masas en Tandem. MS/MS}
+\addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
+
+
+Los péptidos, separados en el espectrómetro de masas en base a su relación
+m/z generan señales cuyas intensidades son medidas en el detector produciendo un espectro. 
+Por otra parte, para organismos que estén secuenciados, existen 
+bases de datos de las secuencias de sus proteínas.
+La elección de la mejor proteína candidata (o péptido candidato) que ha generado ese espectro,
+como se explicará en detalle más adelante, consiste, en esencia, en 
+medir el grado de similitud entre los valores de m/z empíricos obtenidos
+en el espectro y los valores de m/z que teóricamente se producen a
+partir de una digestion \textit{in silico} de las secuencias
+presentes en la base de datos 
+
+En ocasiones, cuando la proteína original se encuentra relativamente
+aislada, el espectro que generan los péptidos que se detectan en el 
+instrumento, es suficientemente específico de la proteína original y 
+ésta puede ser identificada. Este es el principio de la técnica conocida
+como Huella Peptídica, descrita en detalle en una sección posterior.
+Sin embargo, esta técnica requiere que la proteína se encuentre aislada
+y el rendimiento que ofrece, por tanto, es limitado. 
+
+En la espectrometría de masas en tandem (MS/MS), los péptidos, una vez
+ionizados y dentro del espectrómetro, vuelven a ser sometido a una 
+fragmentación adicional (en la cámara de colisión).
+Los péptidos se fragmentan,  generando iones
+lo que hace que el patrón de fragmentación sea más específico de la 
+secuencia original.
+Esto permite aumentar el poder de resolución, permitiendo distinguir
+ péptidos con masas parecidas, y por tanto permite que en la muestra 
+ puedan co-existir mezclas proteicas mas complejas aumentando así el 
+ rendimiento del experimento.
+
+
 
 %-------------------------------------------------------------------
 \phantomsection
-\section*{Proteómica en gel}
-\addcontentsline{toc}{section}{Proteómica en gel}
-\label{cap1:sec:Proteómica en gel}
+\section*{Digestión de proteínas en péptidos}
+\addcontentsline{toc}{section}{Digestión de proteínas en péptidos}
+%\label{cap1:sec:Proteómica en gel}
 
-La separación bidimensional de proteínas en geles de poli-acrilamida 
-(PAGE, \textit{Polyacrilamide Gel Electrophoresis}) consiste en separar
-proteinas presentes en una muestra inicial en base a sus propiedades
-fisico-químicas diferenciadoras como su tamaño y/o su punto isoeléctrico.
-En función del número de estas propiedades que se aprovechan para separar,
- en mayor o menor grado, las proteinas de una muestra
-se distinguen básicamente dos tipos de PAGE
-\begin{itemize}
-  \item Geles monodimensionales, 1D-PAGE. En este tipo de geles las 
-  proteinas se separan en función de su peso molecular. La electroforesis
-  hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
-  mas lejos en el gel, sometido a una diferencia de potencial.
-  \item Geles bidimensionales. 2D-PAGE. En este caso, las proteínas 
-  se separan en una primera dimensión en función de su punto isoeléctrico.
-  Las proteinas se desplazan sobre una tira con un gradiente de pH hasta
-  situarse en un punto donde su carga neta se equilibra con la de su 
-  entorno. A continuación la tira se coloca en la cabecera de un gel y se
-  aplica la segunda dimensión, de modo que se las proteínas se separan 
-  más, en este caso por peso molecular, al igual que en un gel 1D.
-  
-\end{itemize}
+Tras la obtención de una muestra de proteínas, ya sea una mezcla compleja
+de éstas o una proteína mas o menos aislada y purificada, el primer
+paso consiste en someter a las proteínas a la acción de una enzima proteasa
+que corta en puntos específicos de la secuencia y que las digiere en 
+un conjunto de péptidos. Pero, sabiendo que los espectrómetros de masas 
+sí pueden medir masas de proteínas intactas,
+ 
+\emph{¿por qué hacer una digestión que aumenta el grado de 
+complejidad de la muestra y que supone el problema añadido de la inferencia
+de la proteína originaria a partir de sus péptidos constituyentes?}
 
-La proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
-en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
-el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
-o que el número de proteínas identificables a partir de un gel difícilmente
-pueda superar el millar. Pero sin embargo, este tipo de estudios sigue 
-teniendo un nicho en la Proteómica actual (Roepstorff)
+o dicho de otra manera 
 
+\emph{¿es necesario el paso intermedio de digestión en 
+péptidos para luego inferir las proteínas originales?}
 
-\subsection*{Huella Peptídica}
-\addcontentsline{toc}{subsection}{Huella Peptídica}
+La respuesta a estas preguntas tiene que ver, sobre todo, con limitaciones
+técnicas. Las proteínas intactas pueden ser difíciles de manipular,
+algunas, como las proteínas de membrana son insolubles en condiciones en
+que otras sí lo son. Muchos detergentes comunmente usados interfieren en
+MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
+proporción a las proteínas. Además la sensibilidad de los espectrómetros
+es menor para proteínas intactas que para péptidos. La cantidad de 
+posibles formas en que una proteína es procesada, incluyendo modificaciones
+post-traduccionales en sus péptidos, y variaciones conformacionales entre
+otras hace que la combinación de isoformas posibles y sus masas sean 
+imposibles de discernir por MS. Por otra parte, para identificar a la
+proteína originaria se requiere información de la secuencia y para esto
+los espectrómetros son mas eficientes si se analizan secuencias de un 
+tamaño de unos 20 aminoácidos aproximadamente.
 
-La Huella Peptídica de una proteína se refiere al hecho de que el 
-patrón de fragmentación de una proteína en sus péptidos constituyentes
-utilizando una enzima proteolítica determinada, es muy específico de la
-proteína original y el espectro que generan puede ser utilizado para identificarla. 
-Sin embargo
-existe una altísima variedad de posibles péptidos generados a partir de 
-las proteínas y pueden tener masas muy similares. Por ese motivo,
- esta técnica requiere que la proteína se encuentre previamente aislada, 
- generalmente a partir de una mancha o \textit{spot} proteico de 2D-PAGE
+A pesar de esto, los espectrómetros sí permiten inferir, al menos parcialmente,
+secuencias a partir de proteínas intactas y con ello identificarlas.
+Este es el objetivo de la llamada Proteómica \textit{top-down}
 
 %\subsubsection*{Digestión de proteínas}
-El primer paso para una Huella Peptídica, esencial, como se explicará también 
-en la proteómica de alto rendimiento o \textit{shotgun},
-es la digestión o rotura de proteínas en 
+La digestión consiste en la rotura de proteínas en 
 péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
 para esto tripsina, que rompe la secuencia aminoacídica a continuación, 
 en el lado carboxilo-, de
@@ -201,10 +279,96 @@ Los péptidos generados por acción de la tripsina, llamados péptidos
 para el análisis por espectrometría de masas lo que explica la popularidad 
 de esta proteasa.
 
-Los péptidos generan una señal en el espectrómetro de masas que es cuantificada
-en el detector produciendo un espectro. En el espectro los valores de m/z
-de cada péptido bla bla son comparados con los valores de m/z que teóricamente
-se producen a partir de una digestion in silico y bla bla bla bla  
+También es posible la utilización de otras proteasas siempre que se 
+conozca su patrón de corte. Es de hecho una aproximación inevitable
+para aquellos casos en que la tripsina no sea útil, por ejemplo, debido a
+una baja frecuencia de R y K que no generen peptidos del tamaño adecuado.
+
+
+
+
+%-------------------------------------------------------------------
+\phantomsection
+\section*{Proteómica en gel}
+\addcontentsline{toc}{section}{Proteómica en gel}
+%\label{cap1:sec:Proteómica en gel}
+
+La separación de proteínas en geles de poli-acrilamida 
+(PAGE, \textit{Polyacrilamide Gel Electrophoresis}), es una técnica, 
+o serie de técnicas con variantes, que consiste en separar
+proteínas presentes en una muestra inicial en base a sus propiedades
+fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
+En función del número de estas propiedades que se aprovechan para separar,
+ en mayor o menor grado, las proteínas de una muestra
+se distinguen básicamente dos tipos de PAGE
+\begin{itemize}
+  \item Geles monodimensionales, 1D-PAGE. En este tipo de geles las 
+  proteínas se separan en función de su peso molecular. La electroforesis
+  hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
+  mas lejos en el gel, sometido a una diferencia de potencial.
+  \item Geles bidimensionales. 2D-PAGE. En este caso, las proteínas 
+  se separan en una primera dimensión en función de su punto isoeléctrico.
+  Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
+  situarse en un punto donde su carga neta se equilibra con la de su 
+  entorno. A continuación la tira se coloca en la cabecera de un gel y se
+  aplica la segunda dimensión, de modo que se las proteínas se separan 
+  más, en este caso por peso molecular, al igual que en un gel 1D.
+\end{itemize}
+
+Otra clasificación posible de las técnicas PAGE puede establecerse en
+función de si se usan condiciones desnaturalizantes o no
+\begin{itemize}
+  \item Geles desnaturalizantes.
+  SDS-PAGE
+  \item Condiciones nativas o no desnaturalizantes
+  Blue Native
+\end{itemize}
+
+La proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
+en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
+el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
+o que el número de proteínas identificables a partir de un gel difícilmente
+pueda superar el millar. Sin embargo, este tipo de estudios sigue 
+teniendo un nicho en la Proteómica actual \citep{Rogowska-Wrzesinska2013}
+como en el caso de que el organismo de estudio no tenga su genoma secuenciado,
+ 
+\textit{Most importantly, it allows the visualisation, identification 
+and quantitation of intact proteins. The particular ability to separate
+ proteins with small changes in their pI allows for efficient separation
+  and subsequent identification of protein isoforms and proteins 
+  modified by for example glycosylation or proteolytic cleavage. 
+  Combined with dedicated visualisation methods, 2D gels support 
+  detection of modified protein for which no efficient enrichment 
+  method currently exists.}
+
+\phantomsection
+\subsection*{Huella Peptídica}
+\addcontentsline{toc}{subsection}{Huella Peptídica}
+%The anchor of a bookmark and its parent's must not be the same. Added a new anchor
+
+La Huella Peptídica de una proteína se refiere al hecho de que el 
+patrón de fragmentación de una proteína en los péptidos que la constituyen
+utilizando una enzima proteolítica determinada, es muy específico de la
+proteína originaria (siempre y cuando se conozca el patrón de corte de la 
+enzima, como es el caso de la tripsina)
+y el espectro que generan puede ser utilizado para identificarla. 
+Sin embargo, a pesar de esta especificidad, la altísima variedad de
+proteínas implica una mayor aun variedad de posibles péptidos generados a partir de 
+ellas que pueden tener masas muy similares. Por ese motivo,
+ esta técnica requiere que la proteína se encuentre previamente aislada, 
+ generalmente a partir de una mancha o \textit{spot} proteico de 2D-PAGE
+
+Generalmente la técnica de la Huella Peptídica se lleva a cabo por 
+espectrometría MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
+péptidos correspondientes a la proteína del \textit{spot}, éstos se situan
+en una matriz MALDI, donde son ionizados e introducidos en un analizador
+de Tiempo de Vuelo (TOF).
+
+Una vez obtenido el espectro patrón de masas peptídicas, la identificación
+del péptido se realiza comparando los valores de m/z del espectro 
+obtenido empíricamente con los valores de m/z calculados a partir
+de las secuencias de peptidos trípticos teóricos.
+
 
 
 
@@ -212,7 +376,7 @@ se producen a partir de una digestion in silico y bla bla bla bla
 \phantomsection
 \section*{Proteómica \textit{shotgun}}
 \addcontentsline{toc}{section}{Proteómica \textit{shotgun}}
-\label{cap1:sec:Proteómica shotgun}
+%\label{cap1:sec:Proteómica shotgun}
 
 La proteómica \textit{shotgun} es la técnica de elección para la mayoría
 de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
@@ -220,47 +384,43 @@ de una analogía con las técnicas clásicas de secuenciación genómica donde
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
 ensambladas. En la proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
-la proteína original. Implica varios pasos que se detallan a continuación
+la proteína original. Implica varios pasos descritos a continuación.
 
+\phantomsection
 \subsection*{Separación multidimensional de péptidos}
 \addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
 
 A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
-(en mayor o menor grado) aislada, en \textit{shotgun}, se parte de una mezcla
-más compleja de proteínas. Este hecho es importante porque, 
+(en mayor o menor grado) aislada, en la Proteómica de alto rendimiento o
+\textit{shotgun}, dado que el objetivo es detectar el máximo número de 
+proteínas en un solo experimento, se parte de una mezcla
+más compleja. Este hecho es importante porque, 
 si contamos con que a partir de cada proteína
  presente en la muestra, se generan múltiples
-péptidos trípticos, el grado de complejidad de la muestra aumenta
+péptidos trípticos, el grado de complejidad aumenta
  enormemente tras la digestión.
 Por este motivo, para evitar que la mezcla de péptidos sea demasiado 
 compleja (para la resolución en el análisis MS),
-opcionalmente se puede realizar una separación previa de las proteinas
+opcionalmente se puede realizar una separación previa de las proteínas
 que reduzca el grado de complejidad. Esta separación puede realizarse de
 varias maneras, por ejemplo la separación puede compenzar a nivel 
 de proteína por electroforesis en un gel 1D-PAGE,
  por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos, etc... 
-\medskip
-Pero además de este separación a nivel de proteína se hace también un 
+
+Pero además de esta separación a nivel de proteína se hace también un 
 fraccionamiento a nivel de péptido en este caso, generalmente, por cromatografía
 líquida.
 Al igual que en las técnicas basadas en gel, en cromatografía se habla de 
 dimensiones de separación en función de las propiedades fisico-químicas
 que se aprovechan para el fraccionamiento. Además frecuentemente son combinables
-y pueden emplearse secuencialmente. Algunas de los tipos de LC más utilizados
+y pueden emplearse secuencialmente. Algunos de los tipos de LC más utilizados
 se describen a continuación.
-Cromatografía líquida en fase reversa (RP-LC):
-Cromatografía de intercambio catiónico: 
+\begin{itemize}
+  \item Cromatografía líquida en fase reversa (RP-LC)
+  \item Cromatografía de intercambio catiónico
+\end{itemize}
 
-(o alternativamente colocando los péptidos en solución en gotas 
-sobre una placa de MALDI.)
-
-\subsection*{Espectrometría de masas en Tandem. MS/MS}
-\addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
-
-\todo {En esta otra subsección hablar de que un espectro de un péptido
-se puede volver a fragmentar porque a veces no da una identificacion 
-inequívoca y porque en el shotgun está to mezclao y es mas difícil qu en PMF }
 
 %-------------------------------------------------------------------
 \phantomsection
@@ -271,16 +431,21 @@ inequívoca y porque en el shotgun está to mezclao y es mas difícil qu en PMF }
 \todo { Correlación psms, scoring, bla bla }
 
 
+\phantomsection
 \subsection*{Búsqueda basada en secuencia}
 \addcontentsline{toc}{subsection}{Búsqueda basada en secuencia}
 
 \todo { bla }
  
+ 
+\phantomsection
 \subsection*{Búsqueda basada en bibliotecas de espectros}
 \addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
 
 \todo { bla } 
- 
+
+
+\phantomsection 
 \subsection*{Identificación por secuenciación \textit{de novo}}
 \addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
 
