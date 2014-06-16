@@ -3,22 +3,22 @@
 \contentsline {part}{I\hspace {1em}Introducci\'on}{1}{part.1}
 \contentsline {chapter}{Introducci\'on}{3}{chapter*.5}
 \contentsline {section}{Prote\'omica. Conceptos generales}{3}{section*.6}
-\contentsline {section}{Espectrometr\IeC {\'\i }a de masas}{4}{section*.8}
+\contentsline {section}{Espectrometr\IeC {\'\i }a de masas}{5}{section*.8}
 \contentsline {subsection}{Espectrometr\IeC {\'\i }a de masas en Tandem. MS/MS}{6}{Item.3}
 \contentsline {section}{Digesti\'on de prote\IeC {\'\i }nas en p\'eptidos}{7}{section*.9}
 \contentsline {section}{Prote\'omica en gel}{8}{section*.10}
 \contentsline {subsection}{Huella Pept\IeC {\'\i }dica}{9}{section*.11}
 \contentsline {section}{Prote\'omica \textit {shotgun}}{9}{section*.12}
-\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{9}{section*.13}
-\contentsline {section}{Asignaci\'on P\'eptido-Espectro}{10}{section*.14}
-\contentsline {subsection}{B\'usqueda basada en secuencia}{10}{section*.15}
-\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{10}{section*.16}
-\contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{10}{section*.17}
-\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{10}{section*.18}
-\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{10}{section*.19}
-\contentsline {section}{Proteomica dirigida. SRM/MRM}{10}{section*.20}
-\contentsline {section}{Candida albicans como organismo modelo}{10}{section*.21}
-\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{10}{section*.22}
+\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{10}{section*.13}
+\contentsline {section}{Asignaci\'on P\'eptido-Espectro}{11}{section*.14}
+\contentsline {subsection}{B\'usqueda basada en secuencia}{11}{section*.15}
+\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{11}{section*.16}
+\contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{11}{section*.17}
+\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{11}{section*.18}
+\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{11}{section*.19}
+\contentsline {section}{Proteomica dirigida. SRM/MRM}{11}{section*.20}
+\contentsline {section}{Candida albicans como organismo modelo}{11}{section*.21}
+\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{11}{section*.22}
 \contentsline {part}{II\hspace {1em}Desarrollo de una aplicacion web para datos de prote\'omica shotgun de \textit {Candida albicans}}{13}{part.2}
 \contentsline {chapter}{\numberline {1}Proteopathogen, a protein database for studying \textit {Candida albicans} - host interaction}{15}{chapter.1}
 \contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{23}{chapter.2}

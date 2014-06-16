@@ -55,4 +55,5 @@ proteínas generaría en el detector un espectro demasiado complejo,
 de forma que el instrumento no alcancaría la resolución necesaria para
 discernir las masas de las proteínas (en relación a sus cargas) 
 
-
+  Ver XYZs and ABCs of Peptide sequencing, Nature, Mann:
+  Why are peptides, and not proteins, sequenced?
