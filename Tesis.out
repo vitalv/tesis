@@ -9,20 +9,20 @@
 \BOOKMARK [1][-]{section*.6}{Prote\363mica. Conceptos generales}{chapter*.5}% 9
 \BOOKMARK [1][-]{section*.8}{Espectrometr\355a de masas}{chapter*.5}% 10
 \BOOKMARK [2][-]{Item.3}{Espectrometr\355a de masas en Tandem. MS/MS}{section*.8}% 11
-\BOOKMARK [1][-]{section*.9}{Digesti\363n de prote\355nas en p\351ptidos}{chapter*.5}% 12
-\BOOKMARK [1][-]{section*.10}{Prote\363mica en gel}{chapter*.5}% 13
-\BOOKMARK [2][-]{section*.11}{Huella Pept\355dica}{section*.10}% 14
-\BOOKMARK [1][-]{section*.12}{Prote\363mica shotgun}{chapter*.5}% 15
-\BOOKMARK [2][-]{section*.13}{Separaci\363n multidimensional de p\351ptidos}{section*.12}% 16
-\BOOKMARK [1][-]{section*.14}{Asignaci\363n P\351ptido-Espectro}{chapter*.5}% 17
-\BOOKMARK [2][-]{section*.15}{B\372squeda basada en secuencia}{section*.14}% 18
-\BOOKMARK [2][-]{section*.16}{B\372squeda basada en bibliotecas de espectros}{section*.14}% 19
-\BOOKMARK [2][-]{section*.17}{Identificaci\363n por secuenciaci\363n de novo}{section*.14}% 20
-\BOOKMARK [1][-]{section*.18}{Inferencia de prote\355nas a partir de p\351ptidos}{chapter*.5}% 21
-\BOOKMARK [1][-]{section*.19}{Evaluaci\363n estad\355stica de los resultados}{chapter*.5}% 22
-\BOOKMARK [1][-]{section*.20}{Proteomica dirigida. SRM/MRM}{chapter*.5}% 23
-\BOOKMARK [1][-]{section*.21}{Candida albicans como organismo modelo}{chapter*.5}% 24
-\BOOKMARK [1][-]{section*.22}{Repositorios publicos de prote\363mica shotgun y dirigida}{chapter*.5}% 25
+\BOOKMARK [1][-]{section*.10}{Digesti\363n de prote\355nas en p\351ptidos}{chapter*.5}% 12
+\BOOKMARK [1][-]{section*.11}{Prote\363mica en gel}{chapter*.5}% 13
+\BOOKMARK [2][-]{section*.12}{Huella Pept\355dica}{section*.11}% 14
+\BOOKMARK [1][-]{section*.13}{Prote\363mica shotgun}{chapter*.5}% 15
+\BOOKMARK [2][-]{section*.14}{Separaci\363n multidimensional de p\351ptidos}{section*.13}% 16
+\BOOKMARK [1][-]{section*.15}{Asignaci\363n P\351ptido-Espectro}{chapter*.5}% 17
+\BOOKMARK [2][-]{section*.16}{B\372squeda basada en secuencia}{section*.15}% 18
+\BOOKMARK [2][-]{section*.17}{B\372squeda basada en bibliotecas de espectros}{section*.15}% 19
+\BOOKMARK [2][-]{section*.18}{Identificaci\363n por secuenciaci\363n de novo}{section*.15}% 20
+\BOOKMARK [1][-]{section*.19}{Inferencia de prote\355nas a partir de p\351ptidos}{chapter*.5}% 21
+\BOOKMARK [1][-]{section*.20}{Evaluaci\363n estad\355stica de los resultados}{chapter*.5}% 22
+\BOOKMARK [1][-]{section*.21}{Proteomica dirigida. SRM/MRM}{chapter*.5}% 23
+\BOOKMARK [1][-]{section*.22}{Candida albicans como organismo modelo}{chapter*.5}% 24
+\BOOKMARK [1][-]{section*.23}{Repositorios publicos de prote\363mica shotgun y dirigida}{chapter*.5}% 25
 \BOOKMARK [-1][-]{part.2}{II Desarrollo de una aplicacion web para datos de prote\363mica shotgun de Candida albicans}{}% 26
 \BOOKMARK [0][-]{chapter.1}{Proteopathogen, a protein database for studying Candida albicans - host interaction}{part.2}% 27
 \BOOKMARK [0][-]{chapter.2}{Proteopathogen 2, adaptaci\363n al formato est\341ndar de identificaciones .mzIdentML}{part.2}% 28
@@ -31,5 +31,5 @@
 \BOOKMARK [0][-]{chapter.3}{A Candida albicans PeptideAtlas}{part.3}% 31
 \BOOKMARK [1][-]{section.3.1}{}{chapter.3}% 32
 \BOOKMARK [-1][-]{part.4}{IV Desarrollo de una base de datos para datos de Prote\363mica Dirigida \(MRM\)}{}% 33
-\BOOKMARK [-1][-]{chapter*.23}{Bibliograf\355a}{}% 34
+\BOOKMARK [-1][-]{chapter*.24}{Bibliograf\355a}{}% 34
 \BOOKMARK [-1][-]{fin.-1}{Fin}{}% 35

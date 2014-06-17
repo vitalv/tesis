@@ -82,7 +82,7 @@ separación de péptidos y proteínas como la electroforesis PAGE y la
 cromatografía líquida permitieron que la Proteómica se 
 consolidara y extendiera como disciplina científica.
 
-La Figura \label{fig:proteome_complexity} ilustra como el grado de complejidad 
+La figura~\ref{fig:proteome_complexity} ilustra como el grado de complejidad 
 biológica desde la unidad de información, es decir, el gen, hasta la
  unidad funcional, la proteína, aumenta exponencialmente. 
 
@@ -102,8 +102,8 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
 biológicas a finales de los años 80, además de valer el Nobel a John Fenn y Koichi Tanaka, 
 permitió sentar las bases de la Espectrometría de Masas aplicada a la 
-Proteómica. Las técnicas de ionización ESI (Ionización por ElectroSpray) \citep{Fenn1989a}
-y SLD (Desorción Suave por Láser) \citep{Tanaka1988} permitieron que 
+Proteómica. Las técnicas de Ionización por ElectroSpray (ESI) \citep{Fenn1989a}
+y Desorción Suave por Láser (SLD) \citep{Tanaka1988} permitieron que 
 las grandes y frágiles moléculas biológicas como las proteínas pudieran 
 ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas.
 
@@ -113,8 +113,8 @@ muy similares. Así, el desarrollo de SLD que valió el Nobel a K. Tanaka,
 tuvo un precedente unos años antes.
 Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
 discutiblemente no galardonados) habían ideado una técnica similar que,
-en este caso, denominaron MALDI (Desorción/Ionización Láser Asistida por
-Matriz) \citep{Karas1988} Aunque MALDI no fue aplicado a la ionización 
+en este caso, denominaron Desorción/Ionización Láser Asistida por
+Matriz (MALDI) \citep{Karas1988} Aunque MALDI no fue aplicado a la ionización 
 de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
 éste es el acrónimo que se ha impuesto y es, de hecho, una técnica muy
  extendida en laboratorios de espectrometría de masas.
@@ -154,7 +154,7 @@ láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
 \item \textbf{Analizador de masas}
 El analizador de masas es la parte del instrumento en la que los iones
 se separan. Esta separación se produce en base a la relación entre la masa y la
-carga (m/z) de los iones. Existen varios tipos de analizadores de masas,
+carga (\mz) de los iones. Existen varios tipos de analizadores de masas,
 que pueden combinarse y es el elemento que se usa generalmente 
 para definir el tipo de instrumento.
 
@@ -184,46 +184,92 @@ La \textit{sensibilidad} de un espectrómetro de masas es la
 capacidad para detectar masas muy pequeñas, y puede llegar a ser de hasta
 unas pocas partes por millon (ppm) en el caso de instrumentos de alta
 precisión como LTQ-Orbitrap, pero requiere un ajuste óptimo de múltiples
-parámetros como la calibración del instrumento, temperatura, etc...
+parámetros como la calibración del instrumento o la temperatura entre
+otros.
 
 La \textit{resolución} es la capacidad para discernir señales que realmente 
-corresponden a diferentes iones dentro de una ventana o margen de valores m/z
-Esto es esencial para evitar la co-fragmentación, es decir, obtener 
-fragmentos de iones precursores diferentes con similares m/z.
+corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
+ Esto es esencial para evitar la co-fragmentación, es decir, obtener 
+fragmentos de iones precursores diferentes con similares \mz.
+{}
+
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
 \addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
 
 
-Los péptidos, separados en el espectrómetro de masas en base a su relación
-m/z generan señales cuyas intensidades son medidas en el detector produciendo un espectro. 
+Los péptidos, separados en el espectrómetro de masas en base a su 
+relación \mz , generan señales cuyas intensidades son registradas en el 
+detector e interpretadas como un espectro. 
+
 Por otra parte, para organismos que estén secuenciados, existen 
 bases de datos de las secuencias de sus proteínas.
-La elección de la mejor proteína candidata (o péptido candidato) que ha generado ese espectro,
+La elección de la mejor proteína candidata (o péptido candidato) que ha 
+generado ese espectro,
 como se explicará en detalle más adelante, consiste, en esencia, en 
-medir el grado de similitud entre los valores de m/z empíricos obtenidos
-en el espectro y los valores de m/z que teóricamente se producen a
-partir de una digestion \textit{in silico} de las secuencias
-presentes en la base de datos 
+medir el grado de similitud entre los valores \mz  empíricos obtenidos
+en el espectro y los valores de \mz  que teóricamente se producen a
+partir de una digestión predicha computacionalmente de las secuencias
+presentes en la base de datos.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
-instrumento, es suficientemente específico de la proteína original y 
+instrumento es suficientemente específico de la proteína original y 
 ésta puede ser identificada. Este es el principio de la técnica conocida
-como Huella Peptídica, descrita en detalle en una sección posterior.
+como Huella Peptídica, descrita en una sección posterior.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece, por tanto, es limitado. 
 
-En la espectrometría de masas en tandem (MS/MS), los péptidos, una vez
-ionizados y dentro del espectrómetro, vuelven a ser sometido a una 
+En la espectrometría de masas en tandem (abreviada MS/MS o MS\textsuperscript{2}),
+ los péptidos, una vez
+ionizados y dentro del espectrómetro, vuelven a ser sometidos a una 
 fragmentación adicional (en la cámara de colisión).
-Los péptidos se fragmentan,  generando iones
+Los péptidos se fragmentan,  generando iones más pequeños
 lo que hace que el patrón de fragmentación sea más específico de la 
 secuencia original.
-Esto permite aumentar el poder de resolución, permitiendo distinguir
- péptidos con masas parecidas, y por tanto permite que en la muestra 
- puedan co-existir mezclas proteicas mas complejas aumentando así el 
- rendimiento del experimento.
+Esto aumenta el poder de resolución del análisis, ya que permite 
+distinguir péptidos que, intactos, tendrían masas muy similares,
+pero cuyos patrones de fragmentación MS/MS son diferentes.
+Y esto posibilita además partir de muestras con mezclas de proteínas 
+más complejas aumentando así el rendimiento del experimento.
+
+El proceso de adquisición de datos conlleva varias etapas.
+En primer lugar el instrumento escanea todos los peptidos ionizados
+introducidos en el espectrómetro y registra los llamados espectros 
+MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
+para cada ion.
+A continuación, en función de la intensidad registrada en 
+MS\textsuperscript{1}, se seleccionan algunos de estos iones, llamados 
+iones o péptidos \emph{precursores}, para ser rotos en péptidos más 
+pequeños -\emph{fragmentos}- en la cámara de colisión del espectrómetro.
+El espectro MS\textsuperscript{2} adquirido o espectro de fragmentación,
+registra los valores \mz e intensidades de los fragmentos de cada
+uno de los péptidos precursores aislados y fragmentados. 
+El patrón de fragmentación codificado en los espectros MS\textsuperscript{2}
+contiene la información necesaria para deducir la secuencia aminoacídica
+del péptido que lo origina. 
+
+La fragmentación se produce generalmente
+por un proceso denominado Disociación Inducida por Colisión (CID), aunque
+existen también otros tipos de fragmentación como la Disociación por 
+Transferencia Electrónica (ETD) o Disociación por Alta Energía de Colisión (HCD).
+
+\textit{Por último, algunos espectrómetros tienen la capacidad de producir 
+fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
+sucesivas. SO WHAT? }
+
+\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
+{Nomenclatura de Roepstorff para los fragmentos en MS/MS}
+
+Los fragmentos originados a partir del péptido, según la nomenclatura
+de Roepstorff \citep{Roepstorff1984}, se clasifican en las denominadas
+series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
+extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
+carga permanece en el extremo N-terminal. Además se añade un sub-índice
+que indica el numero de residuos en el fragmento. (Figura~\ref{fig:peptide_fragmentation})
+
+
+
 
 
 
@@ -258,17 +304,20 @@ proporción a las proteínas. Además la sensibilidad de los espectrómetros
 es menor para proteínas intactas que para péptidos. La cantidad de 
 posibles formas en que una proteína es procesada, incluyendo modificaciones
 post-traduccionales en sus péptidos, y variaciones conformacionales entre
-otras hace que la combinación de isoformas posibles y sus masas sean 
+otras, hace que la combinación de isoformas posibles y sus masas sean 
 imposibles de discernir por MS. Por otra parte, para identificar a la
 proteína originaria se requiere información de la secuencia y para esto
 los espectrómetros son mas eficientes si se analizan secuencias de un 
 tamaño de unos 20 aminoácidos aproximadamente.
 
-A pesar de esto, los espectrómetros sí permiten inferir, al menos parcialmente,
+A pesar de estas limitaciones los espectrómetros sí permiten inferir, 
+al menos parcialmente,
 secuencias a partir de proteínas intactas y con ello identificarlas.
 Este es el objetivo de la llamada Proteómica \textit{top-down}
 
-%\subsubsection*{Digestión de proteínas}
+Sin embargo la proteómica \textit{bottom-up} (\textit{de abajo arriba}),
+en la que se infiere la presencia de proteínas a partir de sus péptidos,
+es la técnica más extendida.
 La digestión consiste en la rotura de proteínas en 
 péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
 para esto tripsina, que rompe la secuencia aminoacídica a continuación, 
@@ -282,7 +331,7 @@ de esta proteasa.
 También es posible la utilización de otras proteasas siempre que se 
 conozca su patrón de corte. Es de hecho una aproximación inevitable
 para aquellos casos en que la tripsina no sea útil, por ejemplo, debido a
-una baja frecuencia de R y K que no generen peptidos del tamaño adecuado.
+una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 
 
 
@@ -365,8 +414,8 @@ en una matriz MALDI, donde son ionizados e introducidos en un analizador
 de Tiempo de Vuelo (TOF).
 
 Una vez obtenido el espectro patrón de masas peptídicas, la identificación
-del péptido se realiza comparando los valores de m/z del espectro 
-obtenido empíricamente con los valores de m/z calculados a partir
+del péptido se realiza comparando los valores de \mz del espectro 
+obtenido empíricamente con los valores de \mz calculados a partir
 de las secuencias de peptidos trípticos teóricos.
 
 
@@ -435,8 +484,55 @@ se describen a continuación.
 \subsection*{Búsqueda basada en secuencia}
 \addcontentsline{toc}{subsection}{Búsqueda basada en secuencia}
 
-\todo { bla }
- 
+La búsqueda basada en secuencia es el principal y más usado método
+de asignación de una secuencia peptídica a un espectro MS/MS.
+Existen una gran variedad de herramientas computacionales para realizar
+esta tarea. 
+
+\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
+
+Los motores de búsqueda son un tipo de programas informáticos a los que
+se les suministra una lista de espectros empíricos MS/MS y una serie de
+parámetros que tener en cuenta, como se detallará más adelante. 
+El programa compara estos espectros reales registrados con espectros
+teóricos obtenidos mediante una predicción de las masas de los
+péptidos y fragmentos que se generarían teniendo en cuenta el patrón
+de corte de la enzima proteolítica utilizada y las secuencias de las 
+proteínas en una base de datos.
+En el proceso de búsqueda se selecciona una lista de péptidos posibles, 
+(candidatos que cumplen una serie de criterios), que han generado el 
+espectro MS/MS y a continuación se ordenan utilizando una puntuación que
+es una función del grado de similitud entre el espectro empírico y el teórico.
+
+\subsubsection*{Construcción de una lista de péptidos candidatos}
+
+Para reducir el espacio de búsqueda entre todos los posibles péptidos
+candidatos que han generado el espectro MS/MS, y así reducir el coste 
+computacional, el motor de búsqueda requiere una serie de parámetros:
+
+\begin{itemize}
+
+\item La selección de la enzima proteolítica utilizada
+limita la digestión \textit{in silico} a aquellos péptidos que cumplan
+el patrón de corte filtrando otros muchos posibles péptidos.
+
+\item Puntos de corte no efectuado permitidos dentro de la secuencia del
+precursor. La eficiencia de las enzimas proteolíticas no es del 100\%, 
+por tanto
+
+\item El establecimiento de un rango o ventana
+de tolerancia de masas tanto a nivel de péptido precursor, como a nivel
+de fragmentos. Filtrando aquellos péptidos y fragmentos que se encuentren
+fuera de dicho rango se reduce más aún el espacio de búsqueda de candidatos.
+
+\item Tipo de iones fragmento permitidos (solo y y b por ejemplo)
+
+
+\item Modificaciones post-traduccionales y otras modificaciones permitidas.
+
+\end{itemize}
+
+
  
 \phantomsection
 \subsection*{Búsqueda basada en bibliotecas de espectros}
