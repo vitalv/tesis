@@ -128,9 +128,14 @@ de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
 \begin{enumerate}
 
 \item \textbf{Fuente de iones}:
-Las macromoléculas biológicas, como proteínas y péptidos, no son volátiles
+Las macromoléculas biológicas, como proteínas y péptidos, no son 
+fácilmente volatilizadas.
 El desarrollo de las técnicas de ionización \textit{suave} permitió que
-péptidos y proteínas ionizados relativamente intactos
+péptidos y proteínas ionizados relativamente intactos pudieran ser 
+introducidos, en fase gaseosa, en un sistema de vacío en los 
+espectrómetro de masas para ser analizados. La ionización ESI y MALDI
+son las más comunes en Proteómica aunque existen también otros tipos 
+menos utilizados.
 
 \begin{itemize}
 
@@ -149,7 +154,20 @@ quedando iones de analito en suspensión que son introducidos en un sistema vacío
 con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
 láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
 
+\item \textbf{FAB}, \textit{Fast Atom Bombardment} o Bombardeo Rápido 
+Atómico consiste en hacer incidir
+un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
+el analito
+
+\item \textbf{FD}, \textit{Field Desorption} o Desorción en Campo Eléctrico
+
+\item \textbf{PD}, \textit{Plasma Desorption} o Desorción por Plasma
+
 \end{itemize}
+
+\figura{Bitmap/maldi_y_esi}{width=.80\textwidth}{fig:maldi_y_esi}%
+{Ionización MALDI y ESI}
+
 
 \item \textbf{Analizador de masas}
 El analizador de masas es la parte del instrumento en la que los iones
@@ -162,15 +180,42 @@ para definir el tipo de instrumento.
 
 \item  \textbf{Analizadores de sector}
 
-\item \textbf{Analizadores por Tiempo de Vuelo}
+\item \textbf{Analizadores TOF}, \textit{Time Of Flight}, Tiempo de Vuelo.
+Este tipo de analizador
+usa un campo eléctrico para acelerar los iones de analito. La separación
+se produce por la diferencia en el tiempo que éstos invierten en 
+recorrer una distancia en el vacío en el interior del analizador, el
+llamado \textit{Tiempo de Vuelo}. La aceleración y por tanto
+el Tiempo de Vuelo es una función de la relación \mz de los iones
+que impactan en el detector a diferentes tiempos. Para iones con la misma
+carga, la aceleración depende solo de la masa, los más ligeros 
+llegan al detector antes y los más pesados después.
+Por su carácter dependiente de la diemsión tiempo, los analizadors TOF
+se usan generalmente en combinación con ionización MALDI, que introduce
+iones en el analizador en pulsos de láser.
 
-\item \textbf{Cuadrupolos}
+
+\item \textbf{Cuadrupolos}. Los analizadores de tipo Cuadrupolo 
+reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
+en pares llamados polos con cargas opuestas.
+Sobre estos pares, además del potencial eléctrico, se aplica también una
+radiofrecuencia.
+ Esta conformación permite crear un campo eléctrico oscilante controlado
+ que estabiliza (o desestabiliza) selectivamente los iones pasan a través 
+y de esta forma solo los iones con una \mz determinada podrán llegar a 
+impactar en el detector mientras que el resto son desviados y filtrados.
+Una conformación frecuente cosnsite utilizar tres cuadrupolos consecutivos.
+\textit{bla bla etapas de filtrado, mrm, bla bla}
 
 \item \textbf{Trampas Iónicas}
 
 \end{itemize}
 
-\item Detector
+\item \textbf{Detector}
+El detector es elemento final de un espectrómetro de masas. Registra la
+corriente producida por el haz de iones que incide sobre él convirtiéndola
+en una señal medible. Consiste
+generalmente en un tipo de multiplicador de iones que amplifica la señal
 
 \end{enumerate}
 
@@ -234,7 +279,7 @@ Y esto posibilita además partir de muestras con mezclas de proteínas
 más complejas aumentando así el rendimiento del experimento.
 
 El proceso de adquisición de datos conlleva varias etapas.
-En primer lugar el instrumento escanea todos los peptidos ionizados
+En primer lugar el instrumento escanea todos los péptidos ionizados
 introducidos en el espectrómetro y registra los llamados espectros 
 MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
 para cada ion.
@@ -267,9 +312,6 @@ series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
 extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
 carga permanece en el extremo N-terminal. Además se añade un sub-índice
 que indica el numero de residuos en el fragmento. (Figura~\ref{fig:peptide_fragmentation})
-
-
-
 
 
 
@@ -416,7 +458,7 @@ de Tiempo de Vuelo (TOF).
 Una vez obtenido el espectro patrón de masas peptídicas, la identificación
 del péptido se realiza comparando los valores de \mz del espectro 
 obtenido empíricamente con los valores de \mz calculados a partir
-de las secuencias de peptidos trípticos teóricos.
+de las secuencias de péptidos trípticos teóricos.
 
 
 
@@ -493,16 +535,16 @@ esta tarea.
 
 Los motores de búsqueda son un tipo de programas informáticos a los que
 se les suministra una lista de espectros empíricos MS/MS y una serie de
-parámetros que tener en cuenta, como se detallará más adelante. 
+parámetros que tener en cuenta para acotar la búsqueda. 
 El programa compara estos espectros reales registrados con espectros
 teóricos obtenidos mediante una predicción de las masas de los
-péptidos y fragmentos que se generarían teniendo en cuenta el patrón
+péptidos y fragmentos que se generarían conociendo el patrón
 de corte de la enzima proteolítica utilizada y las secuencias de las 
 proteínas en una base de datos.
 En el proceso de búsqueda se selecciona una lista de péptidos posibles, 
-(candidatos que cumplen una serie de criterios), que han generado el 
-espectro MS/MS y a continuación se ordenan utilizando una puntuación que
-es una función del grado de similitud entre el espectro empírico y el teórico.
+(candidatos que cumplen unos criterios determinados), que han generado el 
+espectro MS/MS y a continuación se ordenan utilizando una puntuación 
+función del grado de similitud entre el espectro empírico y el teórico.
 
 \subsubsection*{Construcción de una lista de péptidos candidatos}
 
