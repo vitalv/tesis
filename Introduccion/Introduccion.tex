@@ -247,15 +247,14 @@ Los péptidos, separados en el espectrómetro de masas en base a su
 relación \mz , generan señales cuyas intensidades son registradas en el 
 detector e interpretadas como un espectro. 
 
-Por otra parte, para organismos que estén secuenciados, existen 
+Por otra parte, para organismos cuyos genomas estén secuenciados, existen 
 bases de datos de las secuencias de sus proteínas.
-La elección de la mejor proteína candidata (o péptido candidato) que ha 
-generado ese espectro,
-como se explicará en detalle más adelante, consiste, en esencia, en 
-medir el grado de similitud entre los valores \mz  empíricos obtenidos
-en el espectro y los valores de \mz  que teóricamente se producen a
+La elección de la mejor proteína candidata, o péptido candidato, que ha 
+generado ese espectro, consiste, en esencia, en 
+estimar el grado de similitud entre los valores \mz empíricos obtenidos
+en el espectro y los valores \mz calculados que teóricamente se producen a
 partir de una digestión predicha computacionalmente de las secuencias
-presentes en la base de datos.
+en la base de datos.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
@@ -477,6 +476,10 @@ ensambladas. En la proteómica \textit{shotgun} las proteínas son
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
 la proteína original. Implica varios pasos descritos a continuación.
 
+\figura{Bitmap/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+{Etapas en un experimento de Proteómica \textit{Shotgun}}
+
+
 \phantomsection
 \subsection*{Separación multidimensional de péptidos}
 \addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
@@ -549,30 +552,61 @@ función del grado de similitud entre el espectro empírico y el teórico.
 \subsubsection*{Construcción de una lista de péptidos candidatos}
 
 Para reducir el espacio de búsqueda entre todos los posibles péptidos
-candidatos que han generado el espectro MS/MS, y así reducir el coste 
-computacional, el motor de búsqueda requiere una serie de parámetros:
+candidatos que han generado el espectro MS/MS y así reducir el coste 
+computacional, el motor de búsqueda requiere, como estrategia heurística,
+una serie de parámetros proporcionados por el usuario. Éstos, básicamente, reflejan
+conocimiento previo sobre el experimento y pueden ser entendidos como
+información auxiliar para facilitar la distinción entre identificaciones
+auténticas o reales e identificaciones falsas.
+Los más importantes de estos parámetros son la enzima utilizada y el rango
+de masas en el que debe encontrarse el ion precursor.
 
-\begin{itemize}
+La selección de la enzima proteolítica utilizada
+limita la digestión predicha computacionalmente a aquellos péptidos que cumplan
+el patrón de corte conocido, filtrando otros muchos posibles péptidos. 
+Con esto se reduce enormemente el número de comparaciones que el motor
+de búsqueda debe realizar y, por tanto, el tiempo empleado para ello.
 
-\item La selección de la enzima proteolítica utilizada
-limita la digestión \textit{in silico} a aquellos péptidos que cumplan
-el patrón de corte filtrando otros muchos posibles péptidos.
+El establecimiento de un rango o ventana
+de tolerancia de masas, tanto a nivel de péptido precursor como a nivel
+de fragmentos, permite filtrar aquellos péptidos y fragmentos que se encuentren
+fuera de dicho rango reduciendo así también el espacio de búsqueda de candidatos.
 
-\item Puntos de corte no efectuado permitidos dentro de la secuencia del
+Otros parámetros que se proporcionan al \textit{software} y que afectan 
+notablemente a la creación de la lista de candidatos y por tanto también
+al coste computacional son:
+
+El número de puntos de corte no efectuado permitidos dentro de la secuencia del
 precursor. La eficiencia de las enzimas proteolíticas no es del 100\%, 
-por tanto
+por tanto, este parámetro hace que el motor de búsqueda tenga también en
+cuenta péptidos con K y/o R dentro de su secuencia.
 
-\item El establecimiento de un rango o ventana
-de tolerancia de masas tanto a nivel de péptido precursor, como a nivel
-de fragmentos. Filtrando aquellos péptidos y fragmentos que se encuentren
-fuera de dicho rango se reduce más aún el espacio de búsqueda de candidatos.
+Modificaciones post-traduccionales y otras modificaciones permitidas 
+que ocurren en el proceso experimental.
 
-\item Tipo de iones fragmento permitidos (solo y y b por ejemplo)
+Los péptidos digeridos, frecuentemente sufren oxidaciones en las 
+metioninas (M), por lo que generalmente se permite un desfase de masa 
+equivalente a la adición de un átomo de oxígeno sumado a la masa de M 
 
 
-\item Modificaciones post-traduccionales y otras modificaciones permitidas.
+ Tipo de iones fragmento permitidos (solo y y b por ejemplo)
 
-\end{itemize}
+
+La fijación de estos valores tiene consecuencias muy notables en los
+resultados de identificación de péptidos y en consecuencia de proteínas.
+Por ejemplo, restingir a un rango de tolerancia muy pequeño el valor
+posible de masa del precursor, aunque puede ser útil para obtener 
+espectros de gran calidad en instrumentos muy sensibles, puede dejar 
+fuera secuencias válidas. Una aproximación sensata puede consistir en
+(disponiendo de recursos computacionales suficientes) realizar una búsqueda
+muy abierta y posteriormente  
+
+ 
+\subsubsection*{Funciones de puntuación}
+
+Buscar apuntes del curso de Bioestadística de Diciembre de 2010 de
+Jesus Vazquez y Cía, en la UAM, un día llevaba la guitarra de Guitar Hero
+
 
 
  
