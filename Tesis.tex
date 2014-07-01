@@ -35,8 +35,8 @@
 %Parece ser que tiene que ser before the document declaration
 
 
-\documentclass[11pt,a4paper,twoside]{book}
-%\documentclass[10pt,b5paper,twoside]{book}
+%\documentclass[11pt,a4paper,twoside]{book}
+\documentclass[10pt,b5paper,twoside]{book}
 
 %
 % Definimos  el   comando  \compilaCapitulo,  que   luego  se  utiliza
@@ -138,12 +138,10 @@ constantes,guionado,Cascaras/bibliografia,config%
 % páginas) y ponemos la cabecera normal
 \mainmatter
 
-
+%\restauraCabecera
 
 \include{Introduccion/Parte1}
 \include{Introduccion/Introduccion}
-
-\restauraCabecera
 
 \include{Capitulos/Parte2}
 \include{Capitulos/01Capitulo1}

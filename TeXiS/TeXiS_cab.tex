@@ -132,10 +132,12 @@
 \renewcommand{\chaptermark}[1]{%
 \markboth{\textsc{\chaptertitlename\ \thechapter.}\ #1}{}%
 }
-%\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
-\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\fancyhf{} %clears all header and footer fields
 \restauraCabecera
-\fancyhead[RO,LE]{\thepage}
+
+%\fancyhead[RO,LE]{\thepage}
+\fancyfoot[C]{\thepage}
 
 % Para los capítulos que no tienen numeración en el índice ni tienen
 % secciones, se debe cambiar la cabecera, para que no aparezca algo

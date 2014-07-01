@@ -3,10 +3,13 @@
 %                         Introduccion
 %---------------------------------------------------------------------
 
-
 \chapter*{Introducción}
+%mirar problema con fancyheader y secciones no numeradas, pagina 21-22 del manual
+\fancyhead[RO,LE]{\sc{Introducción}}
+
 \addcontentsline{toc}{chapter}{Introducción}
-\cabeceraEspecial{Introducción}
+%\cabeceraEspecial{Introducción}
+
 
 \begin{FraseCelebre}
 \begin{Frase}
@@ -537,10 +540,11 @@ esta tarea.
 \textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
 Los motores de búsqueda son un tipo de programas informáticos a los que
-se les suministra una lista de espectros empíricos MS/MS y una serie de
+se les suministra como entrada datos correspondientes a una lista de 
+espectros MS/MS empíricos y una serie de
 parámetros que tener en cuenta para acotar la búsqueda. 
 El programa compara estos espectros reales registrados con espectros
-teóricos obtenidos mediante una predicción de las masas de los
+teóricos obtenidos mediante una predicción de los valores \mz de los
 péptidos y fragmentos que se generarían conociendo el patrón
 de corte de la enzima proteolítica utilizada y las secuencias de las 
 proteínas en una base de datos.
