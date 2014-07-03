@@ -57,3 +57,49 @@ discernir las masas de las proteínas (en relación a sus cargas)
 
   Ver XYZs and ABCs of Peptide sequencing, Nature, Mann:
   Why are peptides, and not proteins, sequenced?
+
+
+Analytical features of protein quantification techniques. Assay 
+development indicates the facility of generating a quantitative assay
+ for the protein(s) of interest, in terms of time, cost and labor. 
+ 
+ Specificity of  a  protein  quantification  method  is  its  ability 
+  to  discriminate  and  quantify  a particular protein sequence in a 
+  mixture without interferences from the other components. 
+  
+  Limit of quantification (LOQ) is the minimal concentration or amount 
+  of a protein that can be  confidently  quantified.  The  related  
+  term,  limit  of  detection  (LOD),  is  the  smallest concentration 
+  or amount of a protein that can be confidently detected.
+ 
+ 
+  Precision  of a protein quantification method is the degree to which repeated
+  measurements of the target protein(s) under unchanged conditions 
+  (instrument settings, operator, apparatus and laboratory)  show  the 
+  same  results,  within  a  short  interval  of  time.  
+  Precision  is  affected  by random  errors,  and  unpredictable  fluctuations  
+  around  the  true  value.Precision  can  be expressed  ascoefficient
+  of  variation  (CV)which  corresponds  to  the  standard  deviation
+  of repeated  measurements  divided  by  the  mean,  with  results  
+  typically  expressed  asper  cent (%CV). The CV represents
+  therefore a standardization of the standard deviation that allows to
+  compare   the   variability   of   the   measurement   regardless   of
+  the   magnitude   of   analyte concentration, in the working range of the assay.
+  
+  
+  Accuracy of a protein quantification method refers to how close the
+  average results are to the true quantity value. It is affected by 
+  systematic biases that consistently affect the measurement in the same
+  direction.  
+  
+  Single cell indicates the capability of the method to measure 
+  the amount of a target protein at the  level  of  single  cells,  as
+  opposed  to  the  measurement  of  the  average  protein  amount  in  a cell population.
+  
+  Localization  indicates  the  capability of the method to provide information
+  on the (sub)cellular localization of the target protein. 
+  
+  Sample throughput is the number of specimens (samples) that can be 
+  screened, over a given period of time, for the presence and/or the amount of the target protein
+  
+  
