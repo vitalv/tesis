@@ -23,8 +23,8 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=8
-FILE_NAME_0=3690;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
+current_page=0
+FILE_NAME_0=3603;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
 FILE_NAME_1=9532;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
 FILE_NAME_2=2195;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
 FILE_NAME_3=31243;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_pream.tex;0;4
@@ -46,10 +46,10 @@ FILE_NAME_18=1424;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte4.t
 FILE_NAME_19=1774;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_bib.tex;0;4
 FILE_NAME_20=2910;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fbibliografia.tex;0;4
 FILE_NAME_21=5312;Make;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FMakefile;0;4
-FILE_NAME_22=1345;None;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2Fnotas.txt;0;4
-FILE_NAME_23=665;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2Fconstantes.tex;0;4
-FILE_NAME_24=1586;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fagradecimientos.tex;0;4
-FILE_NAME_25=0;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_acron.tex;0;4
+FILE_NAME_22=665;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2Fconstantes.tex;0;4
+FILE_NAME_23=1586;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fagradecimientos.tex;0;4
+FILE_NAME_24=0;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_acron.tex;0;4
+FILE_NAME_25=0;None;0;16;1;1;1;%2Fhome%2Fvital%2FTeXiS%2Fnotas.txt;0;4
 
 [VTE]
 last_dir=/home/vital
