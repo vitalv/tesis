@@ -238,7 +238,7 @@ otros.
 La \textit{resolución} es la capacidad para discernir señales que realmente 
 corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
  Esto es esencial para evitar la co-fragmentación, es decir, obtener 
-fragmentos de iones precursores diferentes con similares \mz.
+fragmentos de iones precursores diferentes con valores \mz similares.
 {}
 
 
@@ -249,15 +249,13 @@ fragmentos de iones precursores diferentes con similares \mz.
 Los péptidos, separados en el espectrómetro de masas en base a su 
 relación \mz , generan señales cuyas intensidades son registradas en el 
 detector e interpretadas como un espectro. 
-
-Por otra parte, para organismos cuyos genomas estén secuenciados, existen 
-bases de datos de las secuencias de sus proteínas.
-La elección de la mejor proteína candidata, o péptido candidato, que ha 
-generado ese espectro, consiste, en esencia, en 
-estimar el grado de similitud entre los valores \mz empíricos obtenidos
-en el espectro y los valores \mz calculados que teóricamente se producen a
-partir de una digestión predicha computacionalmente de las secuencias
-en la base de datos.
+La estrategia general en Proteómica consiste en la elección del mejor
+péptido candidato, y por extensión la inferencia de la proteína originaria, 
+responsable de los espectros obtenidos.  La aproximación general, en esencia,
+consiste en estimar el grado de similitud entre los valores \mz empíricos 
+obtenidos en el espectro y los valores \mz calculados que teóricamente
+se producen a partir de una digestión calculada computacionalmente de las
+secuencias en la base de datos.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
@@ -269,8 +267,8 @@ y el rendimiento que ofrece, por tanto, es limitado.
 
 En la espectrometría de masas en tandem (abreviada MS/MS o MS\textsuperscript{2}),
  los péptidos, una vez
-ionizados y dentro del espectrómetro, vuelven a ser sometidos a una 
-fragmentación adicional (en la cámara de colisión).
+ionizados y dentro del espectrómetro, son sometidos a una 
+fragmentación adicional en la cámara de colisión.
 Los péptidos se fragmentan,  generando iones más pequeños
 lo que hace que el patrón de fragmentación sea más específico de la 
 secuencia original.
@@ -286,8 +284,8 @@ introducidos en el espectrómetro y registra los llamados espectros
 MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
 para cada ion.
 A continuación, en función de la intensidad registrada en 
-MS\textsuperscript{1}, se seleccionan algunos de estos iones, llamados 
-iones o péptidos \emph{precursores}, para ser rotos en péptidos más 
+MS\textsuperscript{1}, se seleccionan algunos de estos iones -\emph{precursores}-
+ para ser fragmentados en péptidos más 
 pequeños -\emph{fragmentos}- en la cámara de colisión del espectrómetro.
 El espectro MS\textsuperscript{2} adquirido o espectro de fragmentación,
 registra los valores \mz e intensidades de los fragmentos de cada
@@ -301,9 +299,9 @@ por un proceso denominado Disociación Inducida por Colisión (CID), aunque
 existen también otros tipos de fragmentación como la Disociación por 
 Transferencia Electrónica (ETD) o Disociación por Alta Energía de Colisión (HCD).
 
-\textit{Por último, algunos espectrómetros tienen la capacidad de producir 
+Algunos espectrómetros tienen la capacidad de producir 
 fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
-sucesivas. SO WHAT? }
+sucesivas, útiles en ocasiones en que se requiere un alto poder de resolución.
 
 \figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
 {Nomenclatura de Roepstorff para los fragmentos en MS/MS}
@@ -325,10 +323,12 @@ que indica el número de residuos en el fragmento. (Figura~\ref{fig:peptide_fragm
 
 Tras la obtención de una muestra de proteínas, ya sea una mezcla compleja
 o una proteína más o menos aislada y purificada, el primer
-paso consiste en someter a las proteínas a la acción de una enzima proteasa
+paso en un experimento de Proteómica consiste en someter a las proteínas
+a la acción de una enzima proteasa
 que corta en puntos específicos de la secuencia y que las digiere en 
-un conjunto de péptidos. Pero, sabiendo que los espectrómetros de masas 
-sí pueden medir masas de proteínas intactas,
+un conjunto de péptidos. 
+Sin embargo, ciertos espectrómetros de masas tienen la capacidad de medir
+masas de proteínas intactas. Sabiendo esto, podemos preguntarnos
  
 \emph{¿por qué hacer una digestión que aumenta el grado de 
 complejidad de la muestra y que supone el problema añadido de la inferencia
@@ -342,7 +342,7 @@ péptidos para luego inferir las proteínas originales?}
 La respuesta a estas preguntas tiene que ver, sobre todo, con limitaciones
 técnicas. Las proteínas intactas pueden ser difíciles de manipular,
 algunas, como las proteínas de membrana son insolubles en condiciones en
-que otras sí lo son. Muchos detergentes comunment usados interfieren en
+que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
 proporción a las proteínas. Además la sensibilidad de los espectrómetros
 es menor para proteínas intactas que para péptidos. La cantidad de 
@@ -352,7 +352,7 @@ otras, hace que la combinación de isoformas posibles y sus masas sean
 imposibles de discernir por MS. Por otra parte, para identificar a la
 proteína originaria se requiere información de la secuencia y para esto
 los espectrómetros son mas eficientes si se analizan secuencias de un 
-tamaño de unos 20 aminoácidos aproximadamente.
+tamaño limitado en número de aminoácidos.
 
 A pesar de estas limitaciones los espectrómetros sí permiten inferir, 
 al menos parcialmente,
@@ -525,7 +525,26 @@ se describen a continuación.
 \addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 \label{cap1:sec:Asignación Péptido-Espectro}
 
-\todo { Correlación psms, scoring, bla bla }
+En un experimento típico de espectrometría de masas en tándem pueden 
+generarse miles de espectros por hora. La interpretación manual, por lo
+tanto no es una opción práctica. Diversas aproximaciones computacionales
+y herramientas de \textit{software} se han desarrollado para facilitar 
+esta tarea
+de asignación de secuencias peptídicas a los espectros MS/MS. Las 
+estrategias utilizadas básicamente pueden clasificarse en tres tipos.
+La estrategia más extendida es la búsqueda basada en secuencia,
+consistente en establecer una correlación entre
+el espectro MS/MS obtenido empíricamente y espectros teóricos predichos 
+a partir de base de datos de secuencias. 
+Otra estrategia, usada en casos en que el genoma del 
+organismo objeto de estudio no está (o sólo parcialmente) secuenciado, es la secuenciación 
+\textit{de novo} en la que la secuencia se infiere directamente del espectro
+sin ayuda de una base de datos de referencia.
+El tercer tipo de aproximación, la búsqueda basada en bibliotecas de 
+espectros, requiere una recopilación, lo más extensa posible, de
+espectros MS/MS adquiridos previamente y ya asignados a péptidos,
+que son comparados directamente
+con los nuevos espectros adquiridos en el experimento.
 
 
 \phantomsection
@@ -536,8 +555,6 @@ La búsqueda basada en secuencia es el principal y más usado método
 de asignación de una secuencia peptídica a un espectro MS/MS.
 Existen una gran variedad de herramientas computacionales para realizar
 esta tarea. 
-
-\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
 Los motores de búsqueda son un tipo de programas informáticos a los que
 se les suministra como entrada datos correspondientes a una lista de 
@@ -552,6 +569,13 @@ En el proceso de búsqueda se selecciona una lista de péptidos posibles,
 (candidatos que cumplen unos criterios determinados), que han generado el 
 espectro MS/MS y a continuación se ordenan utilizando una puntuación 
 función del grado de similitud entre el espectro empírico y el teórico.
+
+SEQUEST{ref} y Mascot{ref} son algunos de los primeros motores de búsqueda, muy
+populares, pero existe una gran variedad de este tipo de software, 
+disponible tanto en aplicaciones libres como comerciales.
+
+
+\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
 \subsubsection*{Construcción de una lista de péptidos candidatos}
 
