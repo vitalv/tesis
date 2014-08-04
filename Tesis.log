@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  4 AUG 2014 11:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  4 AUG 2014 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,14 +754,14 @@ File: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf Graphic file (typ
 e pdf)
  <use Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pd
-f used on input line 309.
+f used on input line 307.
 (pdftex.def)             Requested size: 276.00105pt x 133.55318pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10 <./Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>] [11] [12]
-<Imagenes/Bitmap/overview_of_shotgun_proteomics.png, id=371, 572.01704pt x 405.
+<Imagenes/Bitmap/overview_of_shotgun_proteomics.png, id=370, 572.01704pt x 405.
 07335pt>
 File: Imagenes/Bitmap/overview_of_shotgun_proteomics.png Graphic file (type png
 )
@@ -770,16 +770,16 @@ Package pdftex.def Info: Imagenes/Bitmap/overview_of_shotgun_proteomics.png use
 d on input line 483.
 (pdftex.def)             Requested size: 341.5519pt x 241.8715pt.
  [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7981) has occurred while \output is active []
 
- [14 <./Imagenes/Bitmap/overview_of_shotgun_proteomics.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16])
-[17]
+ [14 <./Imagenes/Bitmap/overview_of_shotgun_proteomics.png>] [15] [16]
+! Missing } inserted.
+<inserted text> 
+                }
+l.643 \end{itemize}
+                   
+? 
+) [17]
 \openout2 = `Capitulos/Parte2.aux'.
 
  (./Capitulos/Parte2.tex [18
@@ -796,7 +796,7 @@ Cap\'itulo 1.
 
 
 ]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=414, page=1, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=413, page=1, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -834,7 +834,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age1 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [22 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=457, page=2, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=456, page=2, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -858,7 +858,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age2 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [23 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=468, page=3, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=467, page=3, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -882,7 +882,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age3 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [24 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=478, page=4, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=477, page=4, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -906,7 +906,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age4 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [25 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=483, page=5, 597.50829
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=482, page=5, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -956,7 +956,7 @@ Cap\'itulo 3.
 
 
 ]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=519, page=1, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=518, page=1, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -994,7 +994,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge1 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [34 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=577, page=2, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=576, page=2, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1018,7 +1018,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge2 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [35 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=588, page=3, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=587, page=3, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1042,7 +1042,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge3 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [36 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=599, page=4, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=598, page=4, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1066,7 +1066,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge4 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [37 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=608, page=5, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=607, page=5, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1090,7 +1090,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge5 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [38 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=614, page=6, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=613, page=6, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1114,7 +1114,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge6 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [39 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=619, page=7, 597.50829p
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=618, page=7, 597.50829p
 t x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1179,36 +1179,35 @@ Package rerunfilecheck Info: File `Tesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 11883 strings out of 494997
- 171798 string characters out of 3180092
+ 11881 strings out of 494997
+ 171777 string characters out of 3180092
  282799 words of memory out of 3000000
- 14427 multiletter control sequences out of 15000+200000
- 20252 words of font info for 38 fonts, out of 3000000 for 9000
+ 14426 multiletter control sequences out of 15000+200000
+ 19565 words of font info for 37 fonts, out of 3000000 for 9000
  279 hyphenation exceptions out of 8191
  55i,19n,51p,260b,624s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi2488.600pk> </home/v
 ital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/vital/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecti0700.600pk> </home/vital/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbi1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbi1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.60
-0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1000.600pk> </home
-/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/vital/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/vital/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecti0900.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1000.
-600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </ho
-me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/vital/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb>
-Output written on Tesis.pdf (61 pages, 1909287 bytes).
+-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/vital/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecbi1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbi1200.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecti1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1000.60
+0pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home
+/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/vital/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/vital/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/vital/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx2488.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/eccc1000.600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.
+600pk> </home/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </ho
+me/vital/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/vital/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb>
+Output written on Tesis.pdf (61 pages, 1909028 bytes).
 PDF statistics:
- 1330 PDF objects out of 1440 (max. 8388607)
- 605 compressed objects within 7 object streams
+ 1323 PDF objects out of 1440 (max. 8388607)
+ 601 compressed objects within 7 object streams
  111 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
 
