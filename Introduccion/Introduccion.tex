@@ -529,9 +529,10 @@ En un experimento típico de espectrometría de masas en tándem pueden
 generarse miles de espectros por hora. La interpretación manual, por lo
 tanto no es una opción práctica. Diversas aproximaciones computacionales
 y herramientas de \textit{software} se han desarrollado para facilitar 
-esta tarea
-de asignación de secuencias peptídicas a los espectros MS/MS. Las 
-estrategias utilizadas básicamente pueden clasificarse en tres tipos.
+esta tarea de asignación de secuencias peptídicas a los espectros MS/MS. 
+Cada par péptido-espectro se denomina generalmente PSM (\textit{Peptide
+Spectrum Match})
+Las estrategias utilizadas básicamente pueden clasificarse en tres tipos.
 La estrategia más extendida es la búsqueda basada en secuencia,
 consistente en establecer una correlación entre
 el espectro MS/MS obtenido empíricamente y espectros teóricos predichos 
@@ -614,6 +615,8 @@ así, para equipos de alta resolución tipo Orbitrap o FTICR se puede ajustar
 a valores inferiores a 1 Da.
 }
 
+\medskip
+
 Otros parámetros que se proporcionan al \textit{software} y que afectan 
 notablemente a la creación de la lista de candidatos y por tanto también
 al coste computacional son:
@@ -638,12 +641,13 @@ equivalente a la adición de un átomo de oxígeno sumado a la masa de M
 }
 
 \item{
-Tipo de iones fragmento permitidos (solo y y b por ejemplo)
-}
+Tipo de iones fragmento permitidos. (solo y y b por ejemplo)
+} 
+
 
 \end{itemize}
 
-La fijación de estos valores tiene consecuencias muy notables en los
+El establecimiento de estos valores tiene consecuencias muy notables en los
 resultados de identificación de péptidos y en consecuencia de proteínas.
 Por ejemplo, restingir a un rango de tolerancia muy pequeño el valor
 posible de masa del precursor, aunque puede ser útil para obtener 
@@ -653,16 +657,85 @@ fuera secuencias válidas. Una aproximación sensata puede consistir en
 muy abierta y posteriormente  
 
 
-\subsubsection*{Distribución de Espectro Individual y Distribución Promedio}
+\subsubsection*{Distribuciones de Espectro Individual y Promedio}
+
+\emph{Distribución de espectro individual}.
+Cuando un espectro MS/MS es comparado con los
+péptidos candidatos presentes en la base de datos de referencia, la
+salida del \textit{software} es una lista de péptidos ordenados en función 
+de la puntuación otorgada que mide el grado de similitud entre el espectro
+empírico, adquirido y el teórico, predicho a partir de las secuencias.
+La función de puntuación es un valor dependiente del motor de búsqueda
+utilizado, por eso, frecuentemente este valor se convierte a una medida
+estadística más generalizable, el \emph{p-valor} o el \emph{e-valor}.
+Para ello, en primer lugar se selecciona el mejor péptido candidato
+asignado a un espectro. La \emph{hipótesis nula} se estima construyendo
+una distribución de las puntuaciones de todos los péptidos comparados
+con el espectro exceptuando el mejor candidato. El \emph{p-valor} se calcula 
+entonces relacionando la puntuación del mejor péptido con respecto a la
+distribución (aleatoria) del resto de puntuaciones. Cuanto más alejada 
+se sitúa la mejor puntuación del centro de la distrubución que representa la 
+hipótesis nula mayor es la significatividad estadística, la calidad del PSM
+
+El \emph{p-valor}, es por tanto, una medida de la probabilidad de que el
+mejor péptido candidato seleccionado sea asignado por azar al espectro.
+Así, un \emph{p-valor} bajo indicará una baja probabilidad de que el
+PSM haya sido asignado de forma incorrecta, es decir, es probablemente correcto.
+
+El \emph{e-valor} también se usa frecuentemente como medida de calidad
+en aproximaciones de espectro individual. Esá relacionado con el \emph{p-valor}
+pero se interpreta como el número esperado de péptidos con puntuaciones
+igual o superior a la del mejor péptido candidato. Se calcula como el 
+área bajo la curva 
+
+
+\medskip
+
+\emph{Distribución promedio}.
+En un experimento generalmente se obtienen miles de espectros MS/MS. Las
+distribuciones promedio modelan las mejores puntuaciones de todos los PSM
+de un experimento.
+Al igual que los estadísticos p-valor y e-valor evalúan la calidad en las
+distribuciones de espectro individual, la calidad del experimento a nivel
+global se mide, utilizando las distribuciones promedio, mediante la 
+\emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)}
+
+\medskip
+
+Es importante destacar que las aproximaciones que usan distribuciones de
+espectro individual son compatibles con las que usan distribuciones promedio,
+es decir, se puede realizar un análisis FDR global para un conjunto de
+PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
+
+
 
  
 \subsubsection*{Funciones de puntuación}
 
-\begin{itemize}
+De forma general se pueden distinguir dos tipos de sistemas de puntuación
+de la calidad de una asignación péptido-espectro. Los sistemas en que 
+cada PSM se evalúa de forma independiente y aquellos 
+que cada PSM se sitúa en referencia a la distribución de muchas puntuaciones
 
-\item{
+\medskip
 
-\end{itemize}
+\emph{Puntuaciones basadas en factores paramétricos}.
+Para cada asignación péptido-espectro se establece una puntuación de 
+forma independiente.
+
+\medskip
+
+\emph{Puntuaciones basadas en distribuciones de espectro individual}.
+Este tipo de puntuación consiste en evaluar la distrubución de todas las
+puntuaciones de todos los péptidos candidatos que se comparan con cada
+espectro obtenido.
+
+\medskip
+
+\emph{Puntuaciones basadas en distribuciones promedio}. Estas puntuaciones
+analizan la distribución de las mejores puntuaciones de todos los espectros
+de un experimento.
+
 
 
 
