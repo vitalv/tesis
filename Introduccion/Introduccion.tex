@@ -622,7 +622,17 @@ notablemente a la creación de la lista de candidatos y por tanto también
 al coste computacional son:
 
 \item {
-Masa mono-isotópica o Masa media
+Masa mono-isotópica o Masa promedio.
+A partir de un espectro MS se puede obtiene el valor \mz del péptido y
+a su vez, a partir de este valor, se puede inferir la masa. Sin embargo
+este de valor masa del péptido puede aproximarse más a la masa mono-isotópica,
+aquella en la que se considera que todos los átomos de C se encuentran 
+en su forma \textsuperscript{12}C
+o bien, puede considera que existe una proporción variable de isótopos 
+\textsuperscript{13}C, y calcularse una masa promedio. Generalmente
+para espectros de alta resolución la masa del péptido calculada suele
+acercarse más al valor mono-isotópico, mientras que para instrumentos 
+de baja resolución suele elegirse el valor de masa promedio.
 }
 
 \item {
@@ -641,7 +651,15 @@ equivalente a la adición de un átomo de oxígeno sumado a la masa de M
 }
 
 \item{
-Tipo de iones fragmento permitidos. (solo y y b por ejemplo)
+Tipo de iones fragmento permitidos. 
+Los espectros de fragmentación teóricos son calculados a partir de las 
+secuencias de péptidos (trípticos) en la base de datos de referencia. 
+Es importante que, en función del tipo de instrumento y de fragmentación,
+se generan más fragmentos de un tipo u de otro. (Ref)
+Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
+híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
+series y-, y b-
+
 } 
 
 
@@ -660,11 +678,11 @@ muy abierta y posteriormente
 \subsubsection*{Distribuciones de Espectro Individual y Promedio}
 
 \emph{Distribución de espectro individual}.
-Cuando un espectro MS/MS es comparado con los
+Cuando un espectro MS/MS es comparado con los espectros teóricos de los
 péptidos candidatos presentes en la base de datos de referencia, la
 salida del \textit{software} es una lista de péptidos ordenados en función 
-de la puntuación otorgada que mide el grado de similitud entre el espectro
-empírico, adquirido y el teórico, predicho a partir de las secuencias.
+de la puntuación obtenida que mide el grado de similitud entre el espectro
+empírico adquirido y el teórico, calculado a partir de las secuencias.
 La función de puntuación es un valor dependiente del motor de búsqueda
 utilizado, por eso, frecuentemente este valor se convierte a una medida
 estadística más generalizable, el \emph{p-valor} o el \emph{e-valor}.
@@ -674,7 +692,7 @@ una distribución de las puntuaciones de todos los péptidos comparados
 con el espectro exceptuando el mejor candidato. El \emph{p-valor} se calcula 
 entonces relacionando la puntuación del mejor péptido con respecto a la
 distribución (aleatoria) del resto de puntuaciones. Cuanto más alejada 
-se sitúa la mejor puntuación del centro de la distrubución que representa la 
+se sitúa la mejor puntuación del centro de la distribución que representa la 
 hipótesis nula mayor es la significatividad estadística, la calidad del PSM
 
 El \emph{p-valor}, es por tanto, una medida de la probabilidad de que el
@@ -686,10 +704,22 @@ El \emph{e-valor} también se usa frecuentemente como medida de calidad
 en aproximaciones de espectro individual. Esá relacionado con el \emph{p-valor}
 pero se interpreta como el número esperado de péptidos con puntuaciones
 igual o superior a la del mejor péptido candidato. Se calcula como el 
-área bajo la curva 
+área bajo la curva situada hacia el extremo de la distribución desde el
+punto de máxima puntuación.
+
+Ambos parámetros estadísticos, el \emph{p-valor} y el \emph{e-valor},
+a diferencia del valor de puntuación original calculado por el motor de búsqueda,
+son independientes de la función de puntuación utilizada y por tanto 
+suponen una medida más general de la calidad de cada PSM y son comparables
+en ensayos usando distintos instrumentos o diferentes motores de búsqueda o parámetros.
+
+\medskip{}
+
+\figura{Vectorial/single_spectrum_and_average_distributions}{width=.99\textwidth}{fig:single_spectrum_and_average_distributions}%
+{Distribuciones de Espectro Individual y Promedio}
 
 
-\medskip
+
 
 \emph{Distribución promedio}.
 En un experimento generalmente se obtienen miles de espectros MS/MS. Las
