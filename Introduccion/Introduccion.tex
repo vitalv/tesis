@@ -130,15 +130,15 @@ de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
 
 \begin{enumerate}
 
-\item \textbf{Fuente de iones}:
+\item \textbf{Fuente de iones}:%FUENTES DE IONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Las macromoléculas biológicas, como proteínas y péptidos, no son 
 fácilmente volatilizadas.
 El desarrollo de las técnicas de ionización \textit{suave} permitió que
 péptidos y proteínas ionizados relativamente intactos pudieran ser 
 introducidos, en fase gaseosa, en un sistema de vacío en los 
-espectrómetro de masas para ser analizados. La ionización ESI y MALDI
-son las más comunes en Proteómica aunque existen también otros tipos 
-menos utilizados.
+espectrómetros de masas para ser analizados. La ionización ESI y MALDI
+son las más comunes en Proteómica aunque existen también otros métodos
+un poco menos utilizados.
 
 \begin{itemize}
 
@@ -153,18 +153,35 @@ en un proceso reiterativo, hasta el punto en que las moléculas de analito se rep
 suficiente para superar la tensión superficial y liberarse del solvente (explosión de Coulomb)
 quedando iones de analito en suspensión que son introducidos en un sistema vacío hacia el espectrómetro.
 
-\item \textbf{MALDI} consiste en embeber la muestra en una matriz líquida 
+\item \textbf{MALDI} consiste en embeber la muestra en una matriz líquida, 
+que posteriormente se seca,
 con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
-láser, lo que permite que las moléculas sean ionizadas y volatilizadas.
+láser UV. Al absorber la energía del láser las moléculas que conforman la
+matriz son ionizadas por adición de protones que son luego transferidos
+al analito. Generalmente la ionización MALDI, por su carácter pulsante,
+se usa acoplada a analizadores de tipo Tiempo de Vuelo (TOF) que miden
+el tiempo que tardan los analitos ionizados en llegar al detector a través
+del vacío.
+
 
 \item \textbf{FAB}, \textit{Fast Atom Bombardment} o Bombardeo Rápido 
 Atómico consiste en hacer incidir
 un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
-el analito
+el analito provocando de esa forma su ionización.
 
-\item \textbf{FD}, \textit{Field Desorption} o Desorción en Campo Eléctrico
+\item En la ionización por \textbf{FD}, \textit{Field Desorption} o Desorción en Campo Eléctrico
+la muestra se encuentra sometida a un campo eléctrico creado en una 
+superficie, generalmente un filamento, llamado \emph{emisor}. Al superar 
+un umbral de diferencia de potencial se produce la desorción e ionización
+del analito.
 
-\item \textbf{PD}, \textit{Plasma Desorption} o Desorción por Plasma
+\item \textbf{PD}, \textit{Plasma Desorption} o Desorción por Plasma 
+consiste en hacer uso de un isótopo radiactivo \textsuperscript{252}Cf que
+al sufrir su fisión espontánea produce dos partículas de alta energía
+con trayectorias opuestas, 
+(generalmente \textsuperscript{144}Cs y y \textsuperscript{108}Tc)
+que impactan sobre la muestra provocando su desorción e ionización.
+
 
 \end{itemize}
 
@@ -172,16 +189,19 @@ el analito
 {Ionización MALDI y ESI}
 
 
-\item \textbf{Analizador de masas}
+\item \textbf{Analizador de masas}%ANALIZADORES DE MASAS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 El analizador de masas es la parte del instrumento en la que los iones
-se separan. Esta separación se produce en base a la relación entre la masa y la
-carga (\mz) de los iones. Existen varios tipos de analizadores de masas,
-que pueden combinarse y es el elemento que se usa generalmente 
+se separan en base su relación entre la masa y carga (\mz). 
+Existen varios tipos de analizadores de masas,
+que pueden combinarse. Es el elemento que se usa generalmente 
 para definir el tipo de instrumento.
 
 \begin{itemize}
 
-\item  \textbf{Analizadores de sector}
+\item Los \textbf{Analizadores de sector} (magnético o eléctrico)
+aceleran los iones de analito que al atravesar el sector son sometidos
+a un campo con fuerza ortogonal a la trayectoria del ion lo que provoca
+que se desvíen en función de su  relación \mz
 
 \item \textbf{Analizadores TOF}, \textit{Time Of Flight}, Tiempo de Vuelo.
 Este tipo de analizador
@@ -193,24 +213,43 @@ el Tiempo de Vuelo es una función de la relación \mz de los iones
 que impactan en el detector a diferentes tiempos. Para iones con la misma
 carga, la aceleración depende solo de la masa, los más ligeros 
 llegan al detector antes y los más pesados después.
-Por su carácter dependiente de la diemsión tiempo, los analizadors TOF
+Por su carácter dependiente de la dimensión tiempo, los analizadores TOF
 se usan generalmente en combinación con ionización MALDI, que introduce
 iones en el analizador en pulsos de láser.
-
 
 \item \textbf{Cuadrupolos}. Los analizadores de tipo Cuadrupolo 
 reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
 en pares llamados polos con cargas opuestas.
-Sobre estos pares, además del potencial eléctrico, se aplica también una
-radiofrecuencia.
+Sobre estos pares, además del potencial eléctrico de corriente continua,
+se aplica también una radiofrecuencia.
  Esta conformación permite crear un campo eléctrico oscilante controlado
- que estabiliza (o desestabiliza) selectivamente los iones pasan a través 
-y de esta forma solo los iones con una \mz determinada podrán llegar a 
+ que estabiliza (o desestabiliza) selectivamente los iones que pasan a través 
+y de esta forma solo los iones con ciertos valores \mz  podrán llegar a 
 impactar en el detector mientras que el resto son desviados y filtrados.
 Una conformación frecuente cosnsite utilizar tres cuadrupolos consecutivos.
 \textit{bla bla etapas de filtrado, mrm, bla bla}
 
-\item \textbf{Trampas Iónicas}
+\item Las \textbf{Trampas Iónicas} funcionan bajo el mismo principio
+físico que los cuadrupolos, pero la conformación en forma de cámara de las
+trampas iónicas permite confinar y acumular los iones que luego son 
+liberados selectivamente.
+
+\subitem Las \textbf{Trampas Iónicas Tridimensionales, QIT}
+constan de  dos electrodos metálicos de sección hiperbólica enfrentados 
+y un electrodo toroidal que conforman una cámara donde se acumulan los iones
+de analito. En el interior los iones orbitan
+en el vacío. El ajuste de la radiofrecuencia permite filtrar selectivamente
+los iones, estabilizando aquellos con determinados valores \mz y desestabilizando
+el resto que colisionan con el electrodo y no llegan al detector.
+
+\subitem En las \textbf{Trampas Iónicas Lineales, LIT o LTQ} los iones
+de analito son confinados en dos dimensiones: radialmente
+por medio de un campo de radiofrecuencia y a lo largo de un eje por acción
+de los potenciales aplicados a los electrodos.
+
+\subitem \textbf{Orbitrap}
+
+\subitem \textbf{FTICR}
 
 \end{itemize}
 
@@ -222,8 +261,9 @@ generalmente en un tipo de multiplicador de iones que amplifica la señal
 
 \end{enumerate}
 
-Dos parámetros importantes en un espectrómetro de masas son su
-\textit{sensibilidad} y su \textit{resolución} ya que determinan 
+La \textit{sensibilidad}, \textit{resolución} y \textit{precisión}
+son parámetros importantes en un espectrómetro de masas son su
+ ya que determinan 
 notablemente la cantidad y calidad de información del espectro generado,
 lo que a su vez, es esencial para identificar el péptido que origina el 
 espectro. 
@@ -239,7 +279,11 @@ La \textit{resolución} es la capacidad para discernir señales que realmente
 corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
  Esto es esencial para evitar la co-fragmentación, es decir, obtener 
 fragmentos de iones precursores diferentes con valores \mz similares.
-{}
+
+
+La \textit{exactitud} o \textit{precisión} de la medida de la masa molecular 
+es la diferencia entre la masa medida y la calculada, teórica.
+
 
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
@@ -467,13 +511,13 @@ de las secuencias de péptidos trípticos teóricos.
 
 %-------------------------------------------------------------------
 \phantomsection
-\section*{Proteómica \textit{shotgun}}
-\addcontentsline{toc}{section}{Proteómica \textit{shotgun}}
+\section*{Proteómica de alto rendimiento (\textit{shotgun})}
+\addcontentsline{toc}{section}{Proteómica de alto rendimiento (\textit{shotgun})}
 %\label{cap1:sec:Proteómica shotgun}
 
-La proteómica \textit{shotgun} es la técnica de elección para la mayoría
+La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
 de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
-de una analogía con las técnicas clásicas de secuenciación genómica donde 
+de una analogía con las técnicas de secuenciación genómica donde 
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
 ensambladas. En la proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
