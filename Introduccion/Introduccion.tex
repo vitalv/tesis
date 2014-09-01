@@ -622,10 +622,10 @@ se les suministra como entrada datos correspondientes a una lista de
 espectros MS/MS empíricos y una serie de
 parámetros que tener en cuenta para acotar la búsqueda. 
 El programa compara estos espectros reales registrados con espectros
-teóricos obtenidos mediante una predicción de los valores \mz de los
-péptidos y fragmentos que se generarían conociendo el patrón
-de corte de la enzima proteolítica utilizada y las secuencias de las 
-proteínas en una base de datos.
+teóricos que se obtienen mediante la predicción de los valores \mz de los
+péptidos y fragmentos que se generan teóricamente conociendo el patrón
+de corte de la enzima proteolítica utilizada, las masas de cada aminoácido,
+y las secuencias de las proteínas en una base de datos.
 En el proceso de búsqueda se selecciona una lista de péptidos posibles, 
 (candidatos que cumplen unos criterios determinados), que han generado el 
 espectro MS/MS y a continuación se ordenan utilizando una puntuación 
@@ -667,9 +667,9 @@ proteasas contaminantes presentes en la muestra)
 \item{
 El establecimiento de un rango o ventana
 de tolerancia de masas, tanto a nivel de péptido precursor como a nivel
-de fragmentos, permite filtrar aquellos péptidos y fragmentos que se encuentren
-fuera de dicho rango. Solo aquellos péptidos que cumplen este requisito
-son comparados con el espectro obtenido y puntuados en base a su similitud.
+de fragmentos, permite excluir aquellos péptidos y fragmentos que se encuentren
+fuera de dicho rango. Solo los espectros teóricos de aquellos péptidos que 
+cumplen este requisito son comparados con el espectro empírico y  puntuados en base a su similitud.
 La elección de esta tolerancia depende del tipo de espectrómetro utilizado, 
 así, para equipos de alta resolución tipo Orbitrap o FTICR se puede ajustar
 a valores inferiores a 1 Da.
@@ -688,7 +688,7 @@ a su vez, a partir de este valor, se puede inferir la masa. Sin embargo
 este de valor masa del péptido puede aproximarse más a la masa mono-isotópica,
 aquella en la que se considera que todos los átomos de C se encuentran 
 en su forma \textsuperscript{12}C
-o bien, puede considera que existe una proporción variable de isótopos 
+o bien, puede considerarse que existe una proporción variable de isótopos 
 \textsuperscript{13}C, y calcularse una masa promedio. Generalmente
 para espectros de alta resolución la masa del péptido calculada suele
 acercarse más al valor mono-isotópico, mientras que para instrumentos 
@@ -714,11 +714,12 @@ equivalente a la adición de un átomo de oxígeno sumado a la masa de M
 Tipo de iones fragmento permitidos. 
 Los espectros de fragmentación teóricos son calculados a partir de las 
 secuencias de péptidos (trípticos) en la base de datos de referencia. 
-Es importante que, en función del tipo de instrumento y de fragmentación,
+Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
+abundantes sino que, en función del tipo de instrumento y de fragmentación,
 se generan más fragmentos de un tipo u de otro. (Ref)
 Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
 híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
-series y-, y b-
+series \emph{y-}, y \emph{b-}
 
 } 
 
@@ -732,12 +733,15 @@ posible de masa del precursor, aunque puede ser útil para obtener
 espectros de gran calidad en instrumentos muy sensibles, puede dejar 
 fuera secuencias válidas. Una aproximación sensata puede consistir en
 (disponiendo de recursos computacionales suficientes) realizar una búsqueda
-muy abierta y posteriormente  
+muy abierta y posteriormente refinarla 
+
+\emph{bla, bla, bla}
 
 
 \subsubsection*{Distribuciones de Espectro Individual y Promedio}
 
 \emph{Distribución de espectro individual}.
+
 Cuando un espectro MS/MS es comparado con los espectros teóricos de los
 péptidos candidatos presentes en la base de datos de referencia, la
 salida del \textit{software} es una lista de péptidos ordenados en función 
@@ -782,13 +786,16 @@ en ensayos usando distintos instrumentos o diferentes motores de búsqueda o pará
 
 
 \emph{Distribución promedio}.
+
 En un experimento generalmente se obtienen miles de espectros MS/MS. Las
 distribuciones promedio modelan las mejores puntuaciones de todos los PSM
 de un experimento.
-Al igual que los estadísticos p-valor y e-valor evalúan la calidad en las
+Al igual que los estadísticos \emph{p-valor} y \emph{e-valor} evalúan la calidad en las
 distribuciones de espectro individual, la calidad del experimento a nivel
 global se mide, utilizando las distribuciones promedio, mediante la 
 \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)}
+
+\emph{ bla, bla , bla}
 
 \medskip
 
@@ -869,21 +876,44 @@ de un experimento.
 La proteómica \textit{shotgun}, cuyo objetivo es detectar
 la mayor cantidad posible de proteínas en una muestra, se denomina
 en ocasiones por ello, proteómica \textit{de descubrimiento}. 
-
-La proteómica dirigida se distingue de las técnicas de \textit{shotgun},
-esencialmente, en el objetivo. Esta metodología no pretende identificar
+En esto, esencialmente, la \emph{proteómica dirigida} se distingue de las 
+técnicas de \textit{shotgun}, en el objetivo. Esta metodología no pretende identificar
 una gran cantidad de proteínas diferentes en la muestra, sino que intenta 
 identificar y, opcionalmente también cuantificar, una proteína o un grupo
 de proteínas de interés seleccionadas \textit{a priori}.
 De ahí el nombre proteómica \textit{dirigida}. 
 
-La tecnología que se utiliza para llevar a cabo experimentos de proteómica
+La técnica que se utiliza para llevar a cabo experimentos de proteómica
 dirigida se denomina \textit{SRM, Selected Reaction Monitoring} o también,
-frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}
+frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}.
 
-Las técnicas de proteómica dirigida basadas en SRM están actualmente 
+
+Las proteómica dirigida, basadas en técnicas SRM, están actualmente 
 emergiendo y popularizándose como un complemento ideal de las técnicas 
-de \textit{shotgun}.
+de \textit{shotgun}. 
+
+Básicamente, SRM proporciona unas características muy interesantes en
+experimentos en que se requiere que un grupo de proteínas, por ejemplo biomarcadores o
+proteínas constituyentes de una red o ruta particular, sean detectadas
+y cuantificadas de una forma precisa y reproducible en diferentes muestras
+que se quiere comparar.
+
+Originalmente desarrollada para detectar y cuantificar
+pequeñas moléculas como metabolitos o drogas (Referencia), las
+primeras aplicaciones de SRM al campo de la proteómica comenzaron en 
+2003 \citep{Gerber2003}, 2004 \citep{Kuhn2004}.
+
+El principio fundamental en el que se basa la técnica SRM consiste en
+aprovechar la capacidad de espectrómetros de masas de tipo triple cuadrupolo
+para actuar como filtros de masas de analitos a dos niveles consecutivos, 
+el de un péptido precursor, y el de los fragmentos que se generan tras ser éste
+fragmentado. Este doble filtro es, idealmente, muy representativo del
+péptido, y por extensión, de la proteína originaria.
+
+La señal que se genera en el instrumento al medir la cantidad
+de estos fragmentos, junto con la información del tiempo de retención
+cromatográfica permite reconstruir un pe
+
 
  
 
