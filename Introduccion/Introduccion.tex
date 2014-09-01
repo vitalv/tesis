@@ -506,19 +506,20 @@ proteína originaria (siempre y cuando se conozca el patrón de corte de la
 enzima, como es el caso de la tripsina)
 y el espectro que generan puede ser utilizado para identificarla. 
 Sin embargo, a pesar de esta especificidad, la altísima variedad de
-proteínas implica una mayor aun variedad de posibles péptidos generados a partir de 
+proteínas implica una mayor aún variedad de posibles péptidos generados a partir de 
 ellas que pueden tener masas muy similares. Por ese motivo,
  esta técnica requiere que la proteína se encuentre previamente aislada, 
  generalmente a partir de una mancha o \textit{spot} proteico de 2D-PAGE
 
 Generalmente la técnica de la Huella Peptídica se lleva a cabo por 
-espectrometría MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
-péptidos correspondientes a la proteína del \textit{spot}, éstos se situan
+espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
+péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
 en una matriz MALDI, donde son ionizados e introducidos en un analizador
 de Tiempo de Vuelo (TOF).
 
 Una vez obtenido el espectro patrón de masas peptídicas, la identificación
-del péptido se realiza comparando los valores de \mz del espectro 
+del péptido se realiza utilizando un motor de búsqueda, 
+que compara los valores de \mz del espectro 
 obtenido empíricamente con los valores de \mz calculados a partir
 de las secuencias de péptidos trípticos teóricos.
 
@@ -578,6 +579,17 @@ se describen a continuación.
   \item Cromatografía de intercambio catiónico
 \end{itemize}
 
+
+\medskip{}
+
+A continuación, tras la adquisición empírica de los espectros, el paso
+siguiente en un experimento de proteómica \textit{shotgun} implica el
+análisis computacional de esos espectros cuyo objetivo final es la 
+obtención de una lista de proteínas que presumiblemente se encuentran en 
+la muestra. Este análisis bioinformático, a su vez, consta de varios procesos 
+secuenciales, principalmente la asignación de secuencias peptídicas a cada
+espectro, la inferencia de las proteínas a partir de esos péptidos y una
+evaluación estadística que aporta medidas de fiablidad a la identificación.
 
 %-------------------------------------------------------------------
 \phantomsection
@@ -738,13 +750,110 @@ muy abierta y posteriormente refinarla
 \emph{bla, bla, bla}
 
 
+
+ 
+\subsubsection*{Motores de búsqueda. Funciones de puntuación}
+
+\textit{(mirar 3.1.2 Scoring functions en Neszvhi review en JOP)}
+\textit{(mirar Statistics for Proteomics course, J.Vazquez)}
+
+En Proteómica, un motor de búsqueda es una herramienta bioinformática 
+que asigna a cada espectro obtenido un péptido, el mejor candidato de una lista de los
+posibles péptidos que han generado ese espectro, con una cierta medida
+de fiabilidad de la asignación. 
+
+La estrategia general consiste en realizar una digestión teórica a nivel
+de péptido y de fragmento, teniendo en cuenta los parámetros especificados.
+Así, para cada espectro observado, el motor de búsqueda recorre las secuencias 
+en una base de datos (un archivo FASTA) seleccionando aquellos péptidos
+con valores \mz similares al del ion precursor en el espectro empírico y
+que se encuentran dentro del rango de tolerancia permitido. A continuación
+se establece el grado de similitud de cada espectro con los espectros teóricos
+de cada uno de los péptidos candidatos, es decir, se evalúa la calidad de cada PSM.
+
+
+Los motores de búsqueda realizan esta comparación de diferentes maneras,
+usando distintas funciones de puntuación.
+
+De forma general se pueden distinguir dos tipos de sistemas de puntuación
+de la calidad de una asignación péptido-espectro. Los sistemas en que 
+cada PSM se evalúa de forma independiente y aquellos 
+que cada PSM se sitúa en referencia a la distribución de muchas puntuaciones
+
+\medskip
+
+\emph{Puntuaciones basadas en factores paramétricos}.
+Para cada asignación péptido-espectro se establece una puntuación de 
+forma independiente.
+
+\medskip
+
+\emph{Puntuaciones basadas en distribuciones de espectro individual}.
+Este tipo de puntuación consiste en evaluar la distrubución de todas las
+puntuaciones de todos los péptidos candidatos que se comparan con cada
+espectro obtenido.
+
+\medskip
+
+\emph{Puntuaciones basadas en distribuciones promedio}. Estas puntuaciones
+analizan la distribución de las mejores puntuaciones de todos los espectros
+de un experimento.
+
+
+
+
+
+ 
+\phantomsection
+\subsection*{Búsqueda basada en bibliotecas de espectros}
+\addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
+
+\todo { bla } 
+
+
+\phantomsection 
+\subsection*{Identificación por secuenciación \textit{de novo}}
+\addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
+
+\todo { bla }
+
+%-------------------------------------------------------------------
+\phantomsection
+\section*{Inferencia de proteínas a partir de péptidos}
+\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
+\label{cap1:sec:Inferencia de proteínas a partir de péptidos}
+
+
+
+%-------------------------------------------------------------------
+\phantomsection
+\section*{Evaluación estadística de los resultados}
+\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
+\label{cap1:sec:Evaluación estadística de los resultados}
+%Esta parte de las distribuciones antes la tenia justo antes de las 
+%funciones de puntuación , porque ahí hablo también de estas distribuciones
+
+Frecuentemente en un solo experimento de proteómica \textit{shotgun}
+se generan decenas de miles de espectros MS/MS. El procesamiento
+bioinformático automatizado de estos datos es por tanto un aspecto 
+fundamental para la interpretación de los resultados.
+Por otra parte, no a todos los espectros MS/MS generados se
+les asigna un péptido, y a su vez, de todo el conjunto de PSMs sólo
+una fracción son ciertos, es decir corresponden realmente a la secuencia
+asignada. De hecho, en algunos experimentos realizados en instrumentos
+de baja resolución, los PSMs incorrectos pueden llegar a suponer la mayoría.
+
+Por eso, el desarrollo de métodos de evaluación de la calidad, en términos
+de confianza estadística, es una tarea crucial para filtrar los resultados
+generados.
+
 \subsubsection*{Distribuciones de Espectro Individual y Promedio}
 
 \emph{Distribución de espectro individual}.
 
 Cuando un espectro MS/MS es comparado con los espectros teóricos de los
-péptidos candidatos presentes en la base de datos de referencia, la
-salida del \textit{software} es una lista de péptidos ordenados en función 
+péptidos candidatos presentes en la base de datos de referencia, 
+el \textit{software} permite obtener una lista de péptidos ordenados en función 
 de la puntuación obtenida que mide el grado de similitud entre el espectro
 empírico adquirido y el teórico, calculado a partir de las secuencias.
 La función de puntuación es un valor dependiente del motor de búsqueda
@@ -806,65 +915,6 @@ PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
 
 
 
- 
-\subsubsection*{Funciones de puntuación}
-
-De forma general se pueden distinguir dos tipos de sistemas de puntuación
-de la calidad de una asignación péptido-espectro. Los sistemas en que 
-cada PSM se evalúa de forma independiente y aquellos 
-que cada PSM se sitúa en referencia a la distribución de muchas puntuaciones
-
-\medskip
-
-\emph{Puntuaciones basadas en factores paramétricos}.
-Para cada asignación péptido-espectro se establece una puntuación de 
-forma independiente.
-
-\medskip
-
-\emph{Puntuaciones basadas en distribuciones de espectro individual}.
-Este tipo de puntuación consiste en evaluar la distrubución de todas las
-puntuaciones de todos los péptidos candidatos que se comparan con cada
-espectro obtenido.
-
-\medskip
-
-\emph{Puntuaciones basadas en distribuciones promedio}. Estas puntuaciones
-analizan la distribución de las mejores puntuaciones de todos los espectros
-de un experimento.
-
-
-
-
-
- 
-\phantomsection
-\subsection*{Búsqueda basada en bibliotecas de espectros}
-\addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
-
-\todo { bla } 
-
-
-\phantomsection 
-\subsection*{Identificación por secuenciación \textit{de novo}}
-\addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
-
-\todo { bla }
-
-%-------------------------------------------------------------------
-\phantomsection
-\section*{Inferencia de proteínas a partir de péptidos}
-\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
-\label{cap1:sec:Inferencia de proteínas a partir de péptidos}
-
-
-
-%-------------------------------------------------------------------
-\phantomsection
-\section*{Evaluación estadística de los resultados}
-\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
-\label{cap1:sec:Evaluación estadística de los resultados}
-
 
 
 %-------------------------------------------------------------------
@@ -872,6 +922,8 @@ de un experimento.
 \section*{Proteómica dirigida. SRM/MRM}
 \addcontentsline{toc}{section}{Proteomica dirigida. SRM/MRM}
 \label{cap1:sec:Proteomica dirigida. SRM/MRM}
+
+\todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
 
 La proteómica \textit{shotgun}, cuyo objetivo es detectar
 la mayor cantidad posible de proteínas en una muestra, se denomina
@@ -888,11 +940,11 @@ dirigida se denomina \textit{SRM, Selected Reaction Monitoring} o también,
 frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}.
 
 
-Las proteómica dirigida, basadas en técnicas SRM, están actualmente 
+La proteómica dirigida, basada en técnicas SRM, está actualmente 
 emergiendo y popularizándose como un complemento ideal de las técnicas 
 de \textit{shotgun}. 
 
-Básicamente, SRM proporciona unas características muy interesantes en
+Básicamente, SRM proporciona unas propiedades muy interesantes en
 experimentos en que se requiere que un grupo de proteínas, por ejemplo biomarcadores o
 proteínas constituyentes de una red o ruta particular, sean detectadas
 y cuantificadas de una forma precisa y reproducible en diferentes muestras
@@ -915,7 +967,8 @@ de estos fragmentos, junto con la información del tiempo de retención
 cromatográfica permite reconstruir un pe
 
 
- 
+\figura{Vectorial/esquema_srm}{width=.99\textwidth}{fig:esquema_srm}%
+{Adquisición y reconstrucción de la señal en un experimento SRM} 
 
 
 
