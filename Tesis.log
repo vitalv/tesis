@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  12 SEP 2014 11:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  12 SEP 2014 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,7 +759,7 @@ File: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf Graphic file (typ
 e pdf)
  <use Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pd
-f used on input line 373.
+f used on input line 376.
 (pdftex.def)             Requested size: 276.00105pt x 133.55318pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -772,7 +772,7 @@ File: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf Graphic file (type
 pdf)
  <use Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf 
-used on input line 550.
+used on input line 552.
 (pdftex.def)             Requested size: 341.5519pt x 227.15497pt.
 
 [15] [16 <./Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>] [17]
@@ -780,7 +780,7 @@ used on input line 550.
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
  [19]
-Overfull \hbox (4.10246pt too wide) in paragraph at lines 791--794
+Overfull \hbox (4.10246pt too wide) in paragraph at lines 794--797
 []\T1/cmr/m/it/10 Puntuaciones ba-sa-das en fac-to-res pa-ra-mé-tri-cos\T1/cmr/
 m/n/10 . Pa-ra ca-da asig-na-ción péptido-
  []
@@ -797,7 +797,7 @@ file (type pdf)
 
 <use Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/single_spectrum_and_average_distrib
-utions.pdf used on input line 940.
+utions.pdf used on input line 943.
 (pdftex.def)             Requested size: 341.5519pt x 222.18776pt.
  [23 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>]
 <Imagenes/Vectorial/esquema_srm.pdf, id=582, 552.38873pt x 272.54321pt>
@@ -805,7 +805,7 @@ File: Imagenes/Vectorial/esquema_srm.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/esquema_srm.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/esquema_srm.pdf used on input line 
-1019.
+1022.
 (pdftex.def)             Requested size: 341.5519pt x 168.52173pt.
 ) [24] [25 <./Imagenes/Vectorial/esquema_srm.pdf>]
 \openout2 = `Capitulos/Parte2.aux'.
@@ -1204,7 +1204,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0C3FFCF4F778F5547CEAED84A5E6790F;2782.
+(rerunfilecheck)             Checksum: 92D0F306A890BC046436B716626E9004;2793.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
@@ -1233,9 +1233,9 @@ exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/vital/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb>
-Output written on Tesis.pdf (70 pages, 1825494 bytes).
+Output written on Tesis.pdf (70 pages, 1824986 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
+ 1675 PDF objects out of 1728 (max. 8388607)
  866 compressed objects within 9 object streams
  125 named destinations out of 1000 (max. 500000)
  401 words of extra memory for PDF output out of 10000 (max. 10000000)

@@ -558,25 +558,25 @@ la proteína original. Implica varios pasos descritos a continuación.
 
 A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
 relativamente aislada, en la Proteómica de alto rendimiento o
-\textit{shotgun}, dado que el objetivo es identificar el máximo número de 
-proteínas en un solo experimento, se parte de una mezcla
-más compleja. Este hecho es importante porque, 
-si contamos con que a partir de cada proteína
- presente en la muestra, se generan múltiples
+\textit{shotgun}, puesto que el objetivo es identificar el máximo número de 
+proteínas en un solo experimento, se parte de una muestra
+más compleja. Esto es importante porque, 
+contando con que a partir de cada proteína, se generan múltiples
 péptidos trípticos, el grado de complejidad aumenta
  enormemente tras la digestión.
 Por este motivo, para evitar que la mezcla de péptidos sea demasiado 
-compleja (para la resolución en el análisis MS),
-opcionalmente se puede realizar una separación previa de las proteínas
-que reduzca el grado de complejidad. Esta separación puede realizarse de
-varias maneras, por ejemplo la separación puede compenzar a nivel 
-de proteína por electroforesis en un gel 1D-PAGE,
- por fraccionamientos sub-celulares correspondientes a distintos 
+compleja para la resolución en el análisis MS,
+previamente a la introducción de los péptidos en el espectrómetro, se 
+realiza una cromatografía que permite separar los péptidos para que 
+sean ionizados y lleguen al analizador de masas gradualmente.
+
+Opcionalmente esta separación puede comenzar a nivel de proteína por
+electroforesis en un gel 1D-PAGE,
+por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos, etc... 
 
-Pero además de esta separación a nivel de proteína se hace también un 
-fraccionamiento a nivel de péptido, en este caso, generalmente, por cromatografía
-líquida.
+Pero el fraccionamiento más importante se hace a nivel de péptido, por cromatografía
+líquida generalmente.
 Al igual que en las técnicas basadas en gel, en cromatografía se habla de 
 dimensiones de separación en función de las propiedades fisico-químicas
 que se aprovechan para el fraccionamiento. Además frecuentemente son combinables
@@ -705,7 +705,7 @@ al coste computacional son:
 Masa mono-isotópica o Masa promedio.
 A partir de un espectro MS se puede obtiene el valor \mz del péptido y
 a su vez, a partir de este valor, se puede inferir la masa. Sin embargo
-este de valor masa del péptido puede aproximarse más a la masa mono-isotópica,
+este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
 aquella en la que se considera que todos los átomos de C se encuentran 
 en su forma \textsuperscript{12}C
 o bien, puede considerarse que existe una proporción variable de isótopos 
@@ -736,7 +736,7 @@ Los espectros de fragmentación teóricos son calculados a partir de las
 secuencias de péptidos (trípticos) en la base de datos de referencia. 
 Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
 abundantes sino que, en función del tipo de instrumento y de fragmentación,
-se generan más fragmentos de un tipo u de otro. (Ref)
+se generan más fragmentos de un tipo o de otro. (Ref)
 Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
 híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
 series \emph{y-}, y \emph{b-}
@@ -753,7 +753,8 @@ posible de masa del precursor, aunque puede ser útil para obtener
 espectros de gran calidad en instrumentos muy sensibles, puede dejar 
 fuera secuencias válidas. Una aproximación sensata puede consistir en
 (disponiendo de recursos computacionales suficientes) realizar una búsqueda
-muy abierta y posteriormente refinarla 
+muy abierta y posteriormente refinarla.
+
 
 \emph{bla, bla, bla}
 
@@ -768,7 +769,7 @@ muy abierta y posteriormente refinarla
 En Proteómica, un motor de búsqueda es una herramienta bioinformática 
 que asigna a cada espectro obtenido un péptido, el mejor candidato de una lista de los
 posibles péptidos que han generado ese espectro, con una cierta medida
-de fiabilidad de la asignación. 
+de puntuación función del grado de similitud entre espectro empírico y teórico. 
 
 La estrategia general consiste en realizar una digestión teórica a nivel
 de péptido y de fragmento, teniendo en cuenta los parámetros especificados.
@@ -826,8 +827,8 @@ Un nuevo espectro adquirido puede ser comparado directamente con los
 espectros de la biblioteca (que se encuentren dentro de un rango de tolerancia
 de masa permitida) y determinar así cual es la mejor coincidencia.
 
-Al igual en el caso de los motores de búsqueda basados en secuencia, 
-existe un tipo de específico de \textit{software} que permite crear 
+Al igual que en el caso de los motores de búsqueda basados en secuencia, 
+existe un tipo específico de \textit{software} que permite crear 
 bibliotecas de espectros y realizar búsquedas usándolas como SpectraST (Referencia), Bibliospec( )
 
 Este tipo de aproximación supera a la búsqueda basada en secuencia en 

@@ -1745,9 +1745,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="289.03106"
-     inkscape:cy="234.608"
+     inkscape:zoom="0.54828398"
+     inkscape:cx="-35.100586"
+     inkscape:cy="14.248166"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
@@ -1770,7 +1770,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5939,7 +5939,7 @@
          id="tspan10226"
          sodipodi:role="line">2.5</tspan></text>
     <g
-       transform="matrix(1.3144901,0,0,1.6366442,-55.827655,-133.17259)"
+       transform="matrix(1.3144901,0,0,1.6366442,-55.827655,-133.17257)"
        id="g10691">
       <rect
          ry="1.6944969"
@@ -6215,7 +6215,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(1.3144901,0,0,1.6366442,-48.871444,-111.3467)"
+       transform="matrix(1.3144901,0,0,1.6366442,-49.748229,-111.30926)"
        id="g10761">
       <rect
          style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.33952773;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -6492,7 +6492,7 @@
     </g>
     <g
        id="g10831"
-       transform="matrix(1.3144901,0,0,1.6366442,-42.846239,-89.725396)">
+       transform="matrix(1.3144901,0,0,1.6366442,-43.668803,-89.44595)">
       <rect
          ry="1.6944969"
          rx="2.8782578"
@@ -6767,7 +6767,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(1.3144901,0,0,1.6366442,-37.589382,-67.582625)"
+       transform="matrix(1.3144901,0,0,1.6366442,-37.589381,-67.582628)"
        id="g6394">
       <rect
          style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.33952773;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
