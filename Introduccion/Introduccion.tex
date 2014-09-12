@@ -130,7 +130,8 @@ de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
 
 \begin{enumerate}
 
-\item \textbf{Fuente de iones}:%FUENTES DE IONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Fuente de iones}%FUENTES DE IONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Las macromoléculas biológicas, como proteínas y péptidos, no son 
 fácilmente volatilizadas.
 El desarrollo de las técnicas de ionización \textit{suave} permitió que
@@ -185,16 +186,21 @@ que impactan sobre la muestra provocando su desorción e ionización.
 
 \end{itemize}
 
-\figura{Bitmap/maldi_y_esi}{width=.80\textwidth}{fig:maldi_y_esi}%
+\figura{Vectorial/maldi_y_esi}{width=.80\textwidth}{fig:maldi_y_esi}%
 {Ionización MALDI y ESI}
 
 
 \item \textbf{Analizador de masas}%ANALIZADORES DE MASAS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 El analizador de masas es la parte del instrumento en la que los iones
 se separan en base su relación entre la masa y carga (\mz). 
-Existen varios tipos de analizadores de masas,
-que pueden combinarse. Es el elemento que se usa generalmente 
-para definir el tipo de instrumento.
+Es el elemento que se usa generalmente para definir el tipo de instrumento.
+Existen varios tipos,
+que pueden combinarse en los llamados espectrómetros híbridos. Así, 
+un analizador tipo \emph{cuadrupolo} puede encontrarse acoplado con un analizador
+de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un QTOF
+o QTRAP respectivamente.
+
 
 \begin{itemize}
 
@@ -240,7 +246,7 @@ y un electrodo toroidal que conforman una cámara donde se acumulan los iones
 de analito. En el interior los iones orbitan
 en el vacío. El ajuste de la radiofrecuencia permite filtrar selectivamente
 los iones, estabilizando aquellos con determinados valores \mz y desestabilizando
-el resto que colisionan con el electrodo y no llegan al detector.
+el resto, que colisionan con el electrodo y no llegan al detector.
 
 \subitem Las \textbf{Trampas Iónicas Lineales, LIT o LTQ} consisten
 en un sistema de cuadrupolo, que sitúa los iones en un eje radial, y
@@ -273,19 +279,19 @@ generalmente en un tipo de multiplicador de iones que amplifica la señal
 \end{enumerate}
 
 
-\figura{Bitmap/Q_QIT_OT.png}{width=.99\textwidth}{fig:Analizadores de masas}%
+\figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
 {Analizadores de masas. Cuadrupolo, Trampa Iónica Tridimensional(QIT) y Orbitrap}
 
 
 La \textit{sensibilidad}, \textit{resolución} y \textit{precisión}
-son parámetros importantes en un espectrómetro de masas son su
+son parámetros importantes en un espectrómetro de masas 
  ya que determinan 
 notablemente la cantidad y calidad de información del espectro generado,
 lo que a su vez, es esencial para identificar el péptido que origina el 
 espectro. 
 
 La \textit{sensibilidad} de un espectrómetro de masas es la 
-capacidad para detectar masas muy pequeñas, y puede llegar a ser de hasta
+capacidad para detectar masas muy pequeñas. Puede llegar a ser de hasta
 unas pocas partes por millon (ppm) en el caso de instrumentos de alta
 precisión como LTQ-Orbitrap, pero requiere un ajuste óptimo de múltiples
 parámetros como la calibración del instrumento o la temperatura entre
@@ -309,34 +315,37 @@ es la diferencia entre la masa medida y la calculada, teórica.
 Los péptidos, separados en el espectrómetro de masas en base a su 
 relación \mz , generan señales cuyas intensidades son registradas en el 
 detector e interpretadas como un espectro. 
-La estrategia general en Proteómica consiste en la elección del mejor
+La estrategia básica en Proteómica consiste en la elección del mejor
 péptido candidato, y por extensión la inferencia de la proteína originaria, 
 responsable de los espectros obtenidos.  La aproximación general, en esencia,
 consiste en estimar el grado de similitud entre los valores \mz empíricos 
 obtenidos en el espectro y los valores \mz calculados que teóricamente
-se producen a partir de una digestión calculada computacionalmente de las
-secuencias en la base de datos.
+se producen a partir de una digestión predicha computacionalmente de las
+secuencias en una base de datos de referencia.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
 instrumento es suficientemente específico de la proteína original y 
 ésta puede ser identificada. Este es el principio de la técnica conocida
-como Huella Peptídica, descrita en una sección posterior.
+como Huella Peptídica, descrita detalladamente en una sección posterior.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece, por tanto, es limitado. 
 
 En la espectrometría de masas en tandem (abreviada MS/MS o MS\textsuperscript{2}),
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
-fragmentación adicional en la cámara de colisión.
-Los péptidos se fragmentan,  generando iones más pequeños
+fragmentación adicional.
+%\begin{itemize}
+%\item En la \emph{Disociación Inducida por Colisión}, CID
+%\end{itemize}
+Los péptidos se fragmentan, generando iones más pequeños
 lo que hace que el patrón de fragmentación sea más específico de la 
 secuencia original.
 Esto aumenta el poder de resolución del análisis, ya que permite 
 distinguir péptidos que, intactos, tendrían masas muy similares,
 pero cuyos patrones de fragmentación MS/MS son diferentes.
-Y esto posibilita además partir de muestras con mezclas de proteínas 
-más complejas aumentando así el rendimiento del experimento.
+Esto posibilita además partir de muestras con mezclas de proteínas 
+más complejas incrementando así el rendimiento del experimento.
 
 El proceso de adquisición de datos conlleva varias etapas.
 En primer lugar el instrumento escanea todos los péptidos ionizados
@@ -355,9 +364,9 @@ contiene la información necesaria para deducir la secuencia aminoacídica
 del péptido que lo origina. 
 
 La fragmentación se produce generalmente
-por un proceso denominado Disociación Inducida por Colisión (CID), aunque
-existen también otros tipos de fragmentación como la Disociación por 
-Transferencia Electrónica (ETD) o Disociación por Alta Energía de Colisión (HCD).
+por un proceso denominado \emph{Disociación Inducida por Colisión} (CID), aunque
+existen también otros tipos de fragmentación como la \emph{Disociación por 
+Transferencia Electrónica} (ETD) o \emph{Disociación por Alta Energía de Colisión} (HCD).
 
 Algunos espectrómetros tienen la capacidad de producir 
 fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
@@ -367,7 +376,8 @@ sucesivas, útiles en ocasiones en que se requiere un alto poder de resolución.
 {Nomenclatura de Roepstorff para los fragmentos en MS/MS}
 
 Los fragmentos originados a partir del péptido, según la nomenclatura
-de Roepstorff \citep{Roepstorff1984}, se clasifican en las denominadas
+de Roepstorff \citep{Roepstorff1984}, se clasifican, según el punto en
+donde se produce la ruptura, en las denominadas
 series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
 extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
 carga permanece en el extremo N-terminal. Además se añade un sub-índice
@@ -387,8 +397,8 @@ paso en un experimento de Proteómica consiste en someter a las proteínas
 a la acción de una enzima proteasa
 que corta en puntos específicos de la secuencia y que las digiere en 
 un conjunto de péptidos. 
-Sin embargo, ciertos espectrómetros de masas tienen la capacidad de medir
-masas de proteínas intactas. Sabiendo esto, podemos preguntarnos
+Sin embargo, sabiendo que ciertos espectrómetros de masas tienen la capacidad de medir
+masas de proteínas intactas, podemos preguntarnos
  
 \emph{¿por qué hacer una digestión que aumenta el grado de 
 complejidad de la muestra y que supone el problema añadido de la inferencia
@@ -422,11 +432,12 @@ Este es el objetivo de la llamada Proteómica \textit{top-down}
 Sin embargo la proteómica \textit{bottom-up} (\textit{de abajo arriba}),
 en la que se infiere la presencia de proteínas a partir de sus péptidos,
 es la técnica más extendida.
+
 La digestión consiste en la rotura de proteínas en 
 péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
-para esto tripsina, que rompe la secuencia aminoacídica a continuación, 
+para esto \emph{tripsina}, que rompe la secuencia aminoacídica a continuación, 
 en el lado carboxilo-, de
- Arginina(R) o Lisina (K) a menos que exista una Prolina (P) adyacente.
+ Arginina (R) o Lisina (K) a menos que exista una Prolina (P) adyacente.
 Los péptidos generados por acción de la tripsina, llamados péptidos
 \emph{trípticos}, tienen un tamaño adecuado, dada la frecuencia media de R y K, 
 para el análisis por espectrometría de masas lo que explica la popularidad 
@@ -482,17 +493,14 @@ en laboratorios de todo el mundo. Tiene algunas limitaciones, como
 el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
 o que el número de proteínas identificables a partir de un gel difícilmente
 pueda superar el millar. Sin embargo, este tipo de estudios sigue 
-teniendo un nicho en la Proteómica actual \citep{Rogowska-Wrzesinska2013}
-como en el caso de que el organismo de estudio no tenga su genoma secuenciado,
- 
-\textit{Most importantly, it allows the visualisation, identification 
-and quantitation of intact proteins. The particular ability to separate
- proteins with small changes in their pI allows for efficient separation
-  and subsequent identification of protein isoforms and proteins 
-  modified by for example glycosylation or proteolytic cleavage. 
-  Combined with dedicated visualisation methods, 2D gels support 
-  detection of modified protein for which no efficient enrichment 
-  method currently exists.}
+teniendo un nicho en la Proteómica actual \citep{Rogowska-Wrzesinska2013}.
+Notablemente, permite la visualización, identificación y cuantificación 
+de proteínas intactas. La particular capacidad de la proteómica en gel para
+separar proteínas con pequeños cambios en sus puntos isoeléctricos, \emph{pI},
+permite discernir entre isoformas de proteínas, o versiones de la misma 
+proteína con modificaciones post-traduccionales, lo que difícilmente se puede
+conseguir con otro tipo de aproximaciones.
+
 
 \phantomsection
 \subsection*{Huella Peptídica}
@@ -504,8 +512,8 @@ patrón de fragmentación de una proteína en los péptidos que la constituyen
 utilizando una enzima proteolítica determinada, es muy específico de la
 proteína originaria (siempre y cuando se conozca el patrón de corte de la 
 enzima, como es el caso de la tripsina)
-y el espectro que generan puede ser utilizado para identificarla. 
-Sin embargo, a pesar de esta especificidad, la altísima variedad de
+de forma que el espectro que generan puede ser utilizado para identificarla. 
+Sin embargo, a pesar de esta especificidad, la enorme variedad de
 proteínas implica una mayor aún variedad de posibles péptidos generados a partir de 
 ellas que pueden tener masas muy similares. Por ese motivo,
  esta técnica requiere que la proteína se encuentre previamente aislada, 
@@ -528,8 +536,8 @@ de las secuencias de péptidos trípticos teóricos.
 
 %-------------------------------------------------------------------
 \phantomsection
-\section*{Proteómica de alto rendimiento (\textit{shotgun})}
-\addcontentsline{toc}{section}{Proteómica de alto rendimiento (\textit{shotgun})}
+\section*{Proteómica de alto rendimiento. Proteómica \textit{Shotgun}}
+\addcontentsline{toc}{section}{Proteómica de alto rendimiento. Proteómica \textit{Shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
 La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
@@ -540,7 +548,7 @@ ensambladas. En la proteómica \textit{shotgun} las proteínas son
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
 la proteína original. Implica varios pasos descritos a continuación.
 
-\figura{Bitmap/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
 {Etapas en un experimento de Proteómica \textit{Shotgun}}
 
 
@@ -808,14 +816,48 @@ de un experimento.
 \subsection*{Búsqueda basada en bibliotecas de espectros}
 \addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
 
-\todo { bla } 
+Una alternativa posible a la búsqueda de espectros MS/MS usando espectros
+teóricos predichos computacionalmente a partir de bases de datos de 
+secuencias consiste en buscar mediante comparación directa con otros espectros
+ya almacenados en una biblioteca de espectros. Estas bibliotecas se crean
+mediante la recopilación de espectros MS/MS observados e identificados
+en experimentos previos. 
+Un nuevo espectro adquirido puede ser comparado directamente con los
+espectros de la biblioteca (que se encuentren dentro de un rango de tolerancia
+de masa permitida) y determinar así cual es la mejor coincidencia.
+
+Al igual en el caso de los motores de búsqueda basados en secuencia, 
+existe un tipo de específico de \textit{software} que permite crear 
+bibliotecas de espectros y realizar búsquedas usándolas como SpectraST (Referencia), Bibliospec( )
+
+Este tipo de aproximación supera a la búsqueda basada en secuencia en 
+términos de velocidad, tasa de error y sensibilidad en la identificación
+de péptidos (Referencia)
+Además, a los resultados obtenidos también se les puede aplicar los 
+modelos de validación estadística desarrollados para las búsquedas 
+basadas en secuencia.
+
+Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
+ que hayan sido previamente identificados y que se encuentren en la 
+ biblioteca de espectros
 
 
 \phantomsection 
 \subsection*{Identificación por secuenciación \textit{de novo}}
 \addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
 
-\todo { bla }
+La secuenciación \textit{de novo}, a diferencia de las otras aproximaciones
+para interpretar espectros MS/MS, no requiere información adicional como
+las secuencias de las proteínas o espectros recopilados en experimentos previos.
+Por este motivo, las interpretación de espectros \textit{de novo} es útil
+para detectar proteínas de organismos no secuenciados o procedentes de 
+muestras de origen desconocido.
+
+Existe también para este tipo de aproximación \textit{software} que
+automatiza el proceso. Sin embargo su uso no se encuentra muy extendido
+ya que, para la gran cantidad de espectros obtenidos en un experimento 
+típico de \textit{shotgun}, el proceso es computacionalmente muy exhaustivo
+y requiere espectros MS/MS de gran calidad.
 
 %-------------------------------------------------------------------
 \phantomsection
@@ -823,6 +865,14 @@ de un experimento.
 \addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
 \label{cap1:sec:Inferencia de proteínas a partir de péptidos}
 
+\todo{Mirar paper de Aebersold:
+Interpretation of shotgun proteomic data: the protein inference problem}
+
+En un experimento de proteómica shotgun, desde el momento de la digestión
+de las proteínas en péptidos aparece el problema de la trazabilidad en el 
+sentido inverso, es decir inferir la presencia de la proteína originaria
+de los péptidos que son identificados a partir de los espectros.
+Esta trazabilidad
 
 
 %-------------------------------------------------------------------
