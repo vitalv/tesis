@@ -274,17 +274,16 @@ es compensada por la fuerza centrífuga.
 El detector es elemento final de un espectrómetro de masas. Registra la
 corriente producida por el haz de iones que incide sobre él convirtiéndola
 en una señal medible. Consiste
-generalmente en un tipo de multiplicador de iones que amplifica la señal
-
-\textit{utiliza la energía cinética de los ionesque inciden sobre una 
+generalmente en un tipo de multiplicador de iones que amplifica la señal.
+Utiliza la energía cinética de los iones que inciden sobre una 
 placa que tiene su superficie recubierta por óxidos de tierras raras; al 
-chocarlos iones contra la placa, ésta emite una corriente de electrones 
-que son acelerados hacia unasegunda placa, de la que vuelven a arrancar 
-electrones que son acelerados hacia una tercera placay asi sucesivamente. 
+chocar los iones contra la placa, ésta emite una corriente de electrones 
+que son acelerados hacia una segunda placa, de la que vuelven a arrancar 
+electrones que son acelerados hacia una tercera placa y así sucesivamente. 
 En principio, pueden utilizarse tantas placas como se quiera, aunque 
 generalmente se utilizan entre 10 y 16. Por medio de este detector, se 
 consiguen amplificaciones dela corriente iónica con factores de 
-multiplicación de 10^6 o mayores
+multiplicación de 10\textsuperscript{6} o mayores
 
 \end{enumerate}
 
@@ -546,8 +545,8 @@ de las secuencias de péptidos trípticos teóricos.
 
 %-------------------------------------------------------------------
 \phantomsection
-\section*{Proteómica de alto rendimiento. Proteómica \textit{Shotgun}}
-\addcontentsline{toc}{section}{Proteómica de alto rendimiento. Proteómica \textit{Shotgun}}
+\section*{Proteómica de alto rendimiento \textit{Shotgun}}
+\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
 La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
@@ -615,7 +614,7 @@ evaluación estadística que aporta medidas de fiablidad a la identificación.
 \addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 \label{cap1:sec:Asignación Péptido-Espectro}
 
-En un experimento típico de espectrometría de masas en tándem pueden 
+En un experimento típico de proteómica \textit{shotgun} pueden 
 generarse miles de espectros por hora. La interpretación manual, por lo
 tanto no es una opción práctica. Diversas aproximaciones computacionales
 y herramientas de \textit{software} se han desarrollado para facilitar 
@@ -661,12 +660,12 @@ En el proceso de búsqueda se selecciona una lista de péptidos posibles,
 espectro MS/MS y a continuación se ordenan utilizando una puntuación 
 función del grado de similitud entre el espectro empírico y el teórico.
 
-SEQUEST (ref) y Mascot (ref) son algunos de los primeros motores de búsqueda, muy
-populares, pero existe una gran variedad de este tipo de software, 
-disponible tanto en aplicaciones libres como comerciales.
+%SEQUEST (ref) y Mascot (ref) son algunos de los primeros motores de búsqueda, muy
+%populares, pero existe una gran variedad de este tipo de software, 
+%disponible tanto en aplicaciones libres como comerciales.
 
 
-\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
+%\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
 \subsubsection*{Construcción de una lista de péptidos candidatos}
 
@@ -879,11 +878,17 @@ y requiere espectros MS/MS de gran calidad.
 \todo{Mirar paper de Aebersold:
 Interpretation of shotgun proteomic data: the protein inference problem}
 
-En un experimento de proteómica shotgun, desde el momento de la digestión
+En un experimento de proteómica \textit{shotgun}, desde el momento de la digestión
 de las proteínas en péptidos aparece el problema de la trazabilidad en el 
 sentido inverso, es decir inferir la presencia de la proteína originaria
 de los péptidos que son identificados a partir de los espectros.
-Esta trazabilidad
+%Esta trazabilidad
+
+%\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+%{Etapas en un experimento de Proteómica \textit{Shotgun}}
+
+\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+{Inferencia de proteinas. Agrupamiento dirigido de péptidos en proteínas}
 
 
 %-------------------------------------------------------------------
@@ -981,7 +986,7 @@ PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
 %-------------------------------------------------------------------
 \phantomsection
 \section*{Proteómica dirigida. SRM/MRM}
-\addcontentsline{toc}{section}{Proteomica dirigida. SRM/MRM}
+\addcontentsline{toc}{section}{Proteómica dirigida. SRM/MRM}
 \label{cap1:sec:Proteomica dirigida. SRM/MRM}
 
 \todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}

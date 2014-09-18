@@ -14,7 +14,7 @@
    id="svg3456"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="single_spectrum_and_average_distributions.svg"
+   sodipodi:docname="single_spectrum_and_average_distributions.pdf"
    inkscape:export-filename="/home/vital/TeXiS/Imagenes/Fuentes/single_spectrum_and_average_distributions.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
@@ -1745,9 +1745,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.54828398"
-     inkscape:cx="-35.100586"
-     inkscape:cy="14.248166"
+     inkscape:zoom="1.5507813"
+     inkscape:cx="386.23833"
+     inkscape:cy="209.93623"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
@@ -1761,7 +1761,11 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid14298" />
+  </sodipodi:namedview>
   <metadata
      id="metadata4">
     <rdf:RDF>
@@ -1770,7 +1774,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2577,10 +2581,10 @@
          id="tspan9735"
          sodipodi:role="line">puntuación</tspan></text>
     <path
-       sodipodi:nodetypes="czc"
+       sodipodi:nodetypes="ccc"
        inkscape:connector-curvature="0"
        id="path9729"
-       d="m 496.3373,338.10158 c 34.21641,-11.62367 23.24966,-82.93104 51.21168,-82.78864 27.962,0.14241 9.8785,70.90505 51.21166,82.78864"
+       d="m 496.3373,338.10158 c 39.68803,-12.53561 23.24966,-82.93104 51.21168,-82.78864 27.962,0.14241 9.8785,70.90505 51.21166,82.78864"
        style="fill:#ffb380;fill-opacity:0.63380283;stroke:#333333;stroke-width:1.32874024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     <path
        style="fill:#008080;fill-opacity:0.5070422;stroke:#333333;stroke-width:1.32874012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
