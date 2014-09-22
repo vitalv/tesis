@@ -67,10 +67,12 @@ TeXiS/TeXiS_part%
 \newcommand{\ficherosBasicosTexto}{%
 constantes,guionado,Cascaras/bibliografia,config%
 }
+\newcommand{\compilaIntro}[1]{%
+\includeonly{\ficherosBasicosTeXiS,\ficherosBasicosTexto, Introduccion/}%
+}
 \newcommand{\compilaCapitulo}[1]{%
 \includeonly{\ficherosBasicosTeXiS,\ficherosBasicosTexto,Capitulos/#1}%
 }
-
 \newcommand{\compilaApendice}[1]{%
 \includeonly{\ficherosBasicosTeXiS,\ficherosBasicosTexto,Apendices/#1}%
 }
@@ -98,7 +100,7 @@ constantes,guionado,Cascaras/bibliografia,config%
 %
 \ifpdf\hypersetup{%
     pdftitle = {\titulo},
-    pdfsubject = {Plantilla de Tesis},
+    pdfsubject = {Memoria de Tesis Doctoral},
     pdfkeywords = {Tesis, Bioinformática, Proteómica},
     pdfauthor = {\textcopyright\ \autor},
     pdfcreator = {\LaTeX\ con el paquete \flqq hyperref\frqq},
@@ -123,9 +125,9 @@ constantes,guionado,Cascaras/bibliografia,config%
 
 \include{Cascaras/cover}
 
-%\include{Cascaras/dedicatoria}
+\include{Cascaras/dedicatoria}
 
-%\include{Cascaras/agradecimientos}
+\include{Cascaras/agradecimientos}
 
 \include{Cascaras/resumen}
 
@@ -142,6 +144,8 @@ constantes,guionado,Cascaras/bibliografia,config%
 
 \include{Introduccion/Parte1}
 \include{Introduccion/Introduccion}
+
+
 
 \include{Capitulos/Parte2}
 \include{Capitulos/01Capitulo1}

@@ -57,7 +57,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
 %-------------------------------------------------------------------
 \label{cap1:sec:Proteómica. Conceptos generales}
 
-El concepto de Proteoma, fue acuñado originalmente por Marc Wilkins en 
+El concepto de Proteoma fue acuñado originalmente por Marc Wilkins en 
 1994 en analogía al concepto de Genoma. 
 Si el Genoma es la dotación génica de una célula u organismo, 
 el Proteoma es entendido como \emph{el conjunto total de proteínas 
@@ -70,12 +70,12 @@ estadío del desarrollo entre otros factores. Además existen niveles de complejid
 adicional en el curso de información desde el gen a la proteína 
 como el \textit{splicing} alternativo y las modificaciones post-traduccionales.
 Por eso el término Proteoma puede diversificarse, para ajustarse a definiciones mas específicas.
-Así, podemos hablar del proteoma (o fosfo-proteoma) de un orgánulo
+Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
 ambientales definidas por los nutrientes disponibles, posiblemente sometida a
- condiciones de estrés, etc... 
+ condiciones de estrés, etc...
 
-Proteómica es, por tanto, el estudio del proteoma, independientemente
+Proteómica es, por tanto, el estudio del Proteoma, independientemente
 del conjunto o subconjunto de proteínas objeto de estudio. 
 Pero además Proteómica se refiere a las tecnologías utilizadas para ello.
 
@@ -119,23 +119,38 @@ discutiblemente no galardonados) habían ideado una técnica similar que,
 en este caso, denominaron Desorción/Ionización Láser Asistida por
 Matriz (MALDI) \citep{Karas1988} Aunque MALDI no fue aplicado a la ionización 
 de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
-éste es el acrónimo que se ha impuesto y es, de hecho, una técnica muy
- extendida en laboratorios de espectrometría de masas.
+éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
+ de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
 
 \medskip %Produces a medium-sized space between paragraphs.
 
 Un espectrómetro de masas es, en esencia, una balanza de precisión molecular capaz
 de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la carga)
-de moléculas (ionizadas). Consta básicamente de tres partes o secciones:
+de moléculas (ionizadas). Consta básicamente de cuatro partes o secciones:
+
+\bigskip{}
 
 \begin{enumerate}
+
+\item \textbf{Sistema de entrada}%SISTEMA DE ENTRADA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Explicar aquí el acoplameinto Cromatografía-Espectrometría de masas
+
+Generalmente los espectrómetros de masas se encuentran acoplados con 
+sistemas cromatográficos de alta resolución que permiten que los analitos
+de una muestra inicialmente muy compleja sean separados e introducidos
+gradualmente. Este acoplamiento requiere una interfaz, una 
+conexión física y funcional entre el sistema de cromatografía y el espectrómetro,
+que consiste generalmente en una columna capilar de caudal controlado.
+En ocasiones, como es en el caso del ESI, el sistema
+de entrada y la fuente de iones forman parte de un único componente.
+
 
 \item \textbf{Fuente de iones}%FUENTES DE IONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Las macromoléculas biológicas, como proteínas y péptidos, no son 
 fácilmente volatilizadas.
 El desarrollo de las técnicas de ionización \textit{suave} permitió que
-péptidos y proteínas ionizados relativamente intactos pudieran ser 
+péptidos y proteínas ionizados y relativamente intactos pudieran ser 
 introducidos, en fase gaseosa, en un sistema de vacío en los 
 espectrómetros de masas para ser analizados. La ionización ESI y MALDI
 son las más comunes en Proteómica aunque existen también otros métodos
@@ -172,7 +187,8 @@ el analito provocando de esa forma su ionización.
 
 \item En la ionización por \textbf{FD}, \textit{Field Desorption} o Desorción en Campo Eléctrico
 la muestra se encuentra sometida a un campo eléctrico creado en una 
-superficie, generalmente un filamento, llamado \emph{emisor}. Al superar 
+superficie, generalmente un filamento de tungsteno, llamado \emph{emisor}.
+ Al superar 
 un umbral de diferencia de potencial se produce la desorción e ionización
 del analito.
 
@@ -227,7 +243,7 @@ iones en el analizador en pulsos de láser.
 reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
 en pares llamados polos con cargas opuestas.
 Sobre estos pares, además del potencial eléctrico de corriente continua,
-se aplica también una radiofrecuencia.
+se aplica también una corriente alterna de radiofrecuencia.
  Esta conformación permite crear un campo eléctrico oscilante controlado
  que estabiliza (o desestabiliza) selectivamente los iones que pasan a través 
 y de esta forma solo los iones con ciertos valores \mz  podrán llegar a 
@@ -273,9 +289,9 @@ es compensada por la fuerza centrífuga.
 \item \textbf{Detector}
 El detector es elemento final de un espectrómetro de masas. Registra la
 corriente producida por el haz de iones que incide sobre él convirtiéndola
-en una señal medible. Consiste
-generalmente en un tipo de multiplicador de iones que amplifica la señal.
-Utiliza la energía cinética de los iones que inciden sobre una 
+en una señal eléctrica medible. Los detectores mas utilizados en 
+espectrometría de masas son los \emph{multiplicadores de electrones}.
+Este tipo de detector utiliza la energía cinética de los iones que inciden sobre una 
 placa que tiene su superficie recubierta por óxidos de tierras raras; al 
 chocar los iones contra la placa, ésta emite una corriente de electrones 
 que son acelerados hacia una segunda placa, de la que vuelven a arrancar 

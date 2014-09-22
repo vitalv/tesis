@@ -1,24 +1,25 @@
 \select@language {spanish}
-\contentsline {chapter}{Resumen}{\es@scroman {vii}}{chapter*.1}
+\contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{chapter*.1}
+\contentsline {chapter}{Resumen}{\es@scroman {xi}}{chapter*.2}
 \contentsline {part}{I\hspace {1em}Introducci\'on}{1}{part.1}
-\contentsline {chapter}{Introducci\'on}{3}{chapter*.5}
-\contentsline {section}{Prote\'omica. Conceptos generales}{4}{section*.6}
-\contentsline {section}{Espectrometr\IeC {\'\i }a de masas}{4}{section*.8}
-\contentsline {subsection}{Espectrometr\IeC {\'\i }a de masas en Tandem. MS/MS}{10}{figure.caption.10}
-\contentsline {section}{Digesti\'on de prote\IeC {\'\i }nas en p\'eptidos}{12}{section*.12}
-\contentsline {section}{Prote\'omica en gel}{13}{section*.13}
-\contentsline {subsection}{Huella Pept\IeC {\'\i }dica}{14}{section*.14}
-\contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{15}{section*.15}
-\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{15}{section*.17}
-\contentsline {section}{Asignaci\'on P\'eptido-Espectro}{17}{section*.18}
-\contentsline {subsection}{B\'usqueda basada en secuencia}{17}{section*.19}
-\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{20}{section*.20}
-\contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{21}{section*.21}
-\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{21}{section*.22}
-\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{22}{section*.24}
-\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{24}{section*.26}
-\contentsline {section}{Candida albicans como organismo modelo}{25}{section*.28}
-\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{25}{section*.29}
+\contentsline {chapter}{Introducci\'on}{3}{chapter*.6}
+\contentsline {section}{Prote\'omica. Conceptos generales}{4}{section*.7}
+\contentsline {section}{Espectrometr\IeC {\'\i }a de masas}{4}{section*.9}
+\contentsline {subsection}{Espectrometr\IeC {\'\i }a de masas en Tandem. MS/MS}{11}{figure.caption.11}
+\contentsline {section}{Digesti\'on de prote\IeC {\'\i }nas en p\'eptidos}{13}{section*.13}
+\contentsline {section}{Prote\'omica en gel}{14}{section*.14}
+\contentsline {subsection}{Huella Pept\IeC {\'\i }dica}{15}{section*.15}
+\contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{15}{section*.16}
+\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{16}{section*.18}
+\contentsline {section}{Asignaci\'on P\'eptido-Espectro}{17}{section*.19}
+\contentsline {subsection}{B\'usqueda basada en secuencia}{18}{section*.20}
+\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{21}{section*.21}
+\contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{21}{section*.22}
+\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{22}{section*.23}
+\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{22}{section*.25}
+\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{25}{section*.27}
+\contentsline {section}{Candida albicans como organismo modelo}{26}{section*.29}
+\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{26}{section*.30}
 \contentsline {part}{II\hspace {1em}Desarrollo de una aplicacion web para datos de prote\'omica shotgun de \textit {Candida albicans}}{27}{part.2}
 \contentsline {chapter}{\numberline {1}Proteopathogen, a protein database for studying \textit {Candida albicans} - host interaction}{29}{chapter.1}
 \contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{37}{chapter.2}
@@ -27,4 +28,4 @@
 \contentsline {chapter}{\numberline {3}A \textit {Candida albicans} PeptideAtlas}{41}{chapter.3}
 \contentsline {section}{\numberline {3.1}}{49}{section.3.1}
 \contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{51}{part.4}
-\contentsline {part}{Bibliograf\IeC {\'\i }a}{53}{chapter*.30}
+\contentsline {part}{Bibliograf\IeC {\'\i }a}{53}{chapter*.31}
