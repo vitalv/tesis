@@ -414,31 +414,44 @@ extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la
 carga permanece en el extremo N-terminal. Además se añade un sub-índice
 que indica el número de residuos en el fragmento. (Figura~\ref{fig:peptide_fragmentation})
 
+\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
+{Nomenclatura de Roepstorff para los fragmentos en MS/MS} 
+
+
+
 \subsubsection*{Tipos de fragmentación}
 
 Uno de los métodos de fragmentación más frecuentemente utilizados en
-espectrometría de masas es la \emph{Disociación Inducida por Colisión} (CID),
-que consiste en hacer chocar a las moléculas de analito con átomos o moléculas
-de gases nobles, Argón o Xenón en triples cuadrupolos o Helio, en las trampas iónicas.
+espectrometría de masas para Proteómica es la \emph{Disociación Inducida por Colisión} (CID),
+que consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
+de gases nobles, químicamente inertes. Argón o Xenón 
+son generealmente usados en triples cuadrupolos y Helio en las trampas iónicas.
+La colisión provoca que parte de la energía cinética del ion sea transformada
+en energía vibracional lo que provoca la ruptura del esqueleto peptídico.
 La fragmentación tipo CID genera una elevada proporción de iones de las 
-series \emph{-b} e \emph{-y}
+series \emph{b-} e \emph{y-}
 
-Sin embargo, existen también otros tipos de fragmentación como la \emph{Disociación por 
-Transferencia Electrónica} (ETD), en  el  que se  utilizan  radicales  
-aniónicos  capaces  de  interaccionar con los iones con carga positiva 
-del péptido y  transferirles  un  electrón  produciendo  un  tipo  de 
-fragmentación parecido al de ECD, rico en iones c y z (Syka et al., 2004; Chi et al., 2007).
+%Sin embargo, existen también otros tipos de fragmentación. 
 
- o \emph{Disociación por Alta Energía de Colisión} (HCD).
-
-Algunos espectrómetros tienen la capacidad de producir 
-fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
-sucesivas, útiles en ocasiones en que se requiere un alto poder de resolución.
-
-\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
-{Nomenclatura de Roepstorff para los fragmentos en MS/MS}
+En la \emph{Disociación por 
+Transferencia Electrónica} (ETD), \citep{Syka2004}, los iones de analito
+con carga positiva interaccionan con aniones que les transfieren un 
+electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}
 
 
+En la \emph{Disociación por captura Electrónica} (ECD) \citep{Zubarev1998},
+como en ETD, los electrones son suministrados por aniones y transferidos 
+hacia los cationes de analito. ECD se usa generalmente en espectrómetros
+tipo FTICR y en trampas iónicas y genera abundantes fragmentos de series
+\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{a-}
+
+Otro tipo de fragmentación es la \emph{Disociación por Alta Energía de Colisión} (HCD)
+usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que CID
+genera iones \emph{b-} e \emph{y-}, si bien, debido a la mayor energía de
+activación, los iones \emph{b-} sufren fragmentaciones adicionales generando
+iones \emph{a-} y otras especies de menor tamaño. Este tipo de espectros
+de fragmentación son más informativos, pero a cambio, requieren analizadores de alta
+precisión.
 
 
 
