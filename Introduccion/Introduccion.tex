@@ -90,7 +90,7 @@ biológica desde la unidad de información, es decir, el gen, hasta la
  unidad funcional, la proteína, aumenta exponencialmente. 
 
 \figura{Vectorial/proteome_complexity}{width=.99\textwidth}{fig:proteome_complexity}%
-{La complejidad del proteoma aumenta exponencialmente y bla}
+{Aumento de complejidad desde el genoma hacia el proteoma}
 
 
 
@@ -129,6 +129,11 @@ de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la 
 de moléculas (ionizadas). Consta básicamente de cuatro partes o secciones:
 
 \bigskip{}
+
+\figura{Vectorial/esquema_espectrometro_masas}{width=.99\textwidth}{fig:esquema_espectrometro_masas}%
+{Esquema de un espectrómetro de masas}
+
+
 
 \begin{enumerate}
 
@@ -305,7 +310,7 @@ multiplicación de 10\textsuperscript{6} o mayores
 
 
 \figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
-{Analizadores de masas. Cuadrupolo, Trampa Iónica Tridimensional(QIT) y Orbitrap}
+{Cuadrupolo, Trampa Iónica Tridimensional(QIT) y Orbitrap}
 
 
 La \textit{sensibilidad}, \textit{resolución} y \textit{precisión}
@@ -340,7 +345,7 @@ es la diferencia entre la masa medida y la calculada, teórica.
 Los péptidos, separados en el espectrómetro de masas en base a su 
 relación \mz , generan señales cuyas intensidades son registradas en el 
 detector e interpretadas como un espectro. 
-La estrategia básica en Proteómica consiste en la elección del mejor
+El objetivo básico en Proteómica consiste en la elección del mejor
 péptido candidato, y por extensión la inferencia de la proteína originaria, 
 responsable de los espectros obtenidos.  La aproximación general, en esencia,
 consiste en estimar el grado de similitud entre los valores \mz empíricos 
@@ -356,6 +361,9 @@ como Huella Peptídica, descrita detalladamente en una sección posterior.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece, por tanto, es limitado. 
 
+\figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
+{Espectrometría de masas en Tandem. MS/MS}
+
 En la espectrometría de masas en tandem (abreviada MS/MS o MS\textsuperscript{2}),
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
@@ -367,12 +375,12 @@ Los péptidos se fragmentan, generando iones más pequeños
 lo que hace que el patrón de fragmentación sea más específico de la 
 secuencia original.
 Esto aumenta el poder de resolución del análisis, ya que permite 
-distinguir péptidos que, intactos, tendrían masas muy similares,
+distinguir péptidos que, intactos, tienen masas muy similares,
 pero cuyos patrones de fragmentación MS/MS son diferentes.
 Esto posibilita además partir de muestras con mezclas de proteínas 
 más complejas incrementando así el rendimiento del experimento.
 
-El proceso de adquisición de datos conlleva varias etapas.
+El proceso que conduce a la adquisición de espectros conlleva varias etapas.
 En primer lugar el instrumento escanea todos los péptidos ionizados
 introducidos en el espectrómetro y registra los llamados espectros 
 MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
@@ -386,19 +394,17 @@ registra los valores \mz e intensidades de los fragmentos de cada
 uno de los péptidos precursores aislados y fragmentados. 
 El patrón de fragmentación codificado en los espectros MS\textsuperscript{2}
 contiene la información necesaria para deducir la secuencia aminoacídica
-del péptido que lo origina. 
+del péptido que lo origina.
 
-La fragmentación se produce generalmente
-por un proceso denominado \emph{Disociación Inducida por Colisión} (CID), aunque
-existen también otros tipos de fragmentación como la \emph{Disociación por 
-Transferencia Electrónica} (ETD) o \emph{Disociación por Alta Energía de Colisión} (HCD).
+En algunos análisis pueden ser necesario realizar fragmentaciones adicionales
+que permitan un mayor aún poder de resolución. Estos análisis
+se conocen como MS\textsuperscript{n}, donde \emph{n} es el número de 
+etapas de análisis de masas.
 
-Algunos espectrómetros tienen la capacidad de producir 
-fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
-sucesivas, útiles en ocasiones en que se requiere un alto poder de resolución.
-
-\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
-{Nomenclatura de Roepstorff para los fragmentos en MS/MS}
+A este método de adquisición de espectros de fragmentación, en el que
+el péptido precursor es seleccionado para ser fragmentado en base a la 
+intensidad en el espectro MS\textsuperscript{1} se denomina por eso
+Adquisición Dependiente de Datos (\emph{Data Dependent Acquisition, DDA})
 
 Los fragmentos originados a partir del péptido, según la nomenclatura
 de Roepstorff \citep{Roepstorff1984}, se clasifican, según el punto en
@@ -407,6 +413,32 @@ series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
 extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
 carga permanece en el extremo N-terminal. Además se añade un sub-índice
 que indica el número de residuos en el fragmento. (Figura~\ref{fig:peptide_fragmentation})
+
+\subsubsection*{Tipos de fragmentación}
+
+Uno de los métodos de fragmentación más frecuentemente utilizados en
+espectrometría de masas es la \emph{Disociación Inducida por Colisión} (CID),
+que consiste en hacer chocar a las moléculas de analito con átomos o moléculas
+de gases nobles, Argón o Xenón en triples cuadrupolos o Helio, en las trampas iónicas.
+La fragmentación tipo CID genera una elevada proporción de iones de las 
+series \emph{-b} e \emph{-y}
+
+Sin embargo, existen también otros tipos de fragmentación como la \emph{Disociación por 
+Transferencia Electrónica} (ETD), en  el  que se  utilizan  radicales  
+aniónicos  capaces  de  interaccionar con los iones con carga positiva 
+del péptido y  transferirles  un  electrón  produciendo  un  tipo  de 
+fragmentación parecido al de ECD, rico en iones c y z (Syka et al., 2004; Chi et al., 2007).
+
+ o \emph{Disociación por Alta Energía de Colisión} (HCD).
+
+Algunos espectrómetros tienen la capacidad de producir 
+fragmentaciones adicionales que se denominan MS\textsuperscript{3} y 
+sucesivas, útiles en ocasiones en que se requiere un alto poder de resolución.
+
+\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
+{Nomenclatura de Roepstorff para los fragmentos en MS/MS}
+
+
 
 
 
@@ -428,13 +460,13 @@ masas de proteínas intactas, podemos preguntarnos
 \emph{¿por qué hacer una digestión que aumenta el grado de 
 complejidad de la muestra y que supone el problema añadido de la inferencia
 de la proteína originaria a partir de sus péptidos constituyentes?}
-
+%% VER ABC's and XYZ's of peptide sequencing de Mann M
 o dicho de otra manera 
-
+%% Why are peptides, and not proteins, sequenced?
 \emph{¿es necesario el paso intermedio de digestión en 
 péptidos para luego inferir las proteínas originales?}
 
-La respuesta a estas preguntas tiene que ver, sobre todo, con limitaciones
+La respuesta a estas preguntas, revisada en \citep{Steen2004}, tiene que ver, sobre todo, con limitaciones
 técnicas. Las proteínas intactas pueden ser difíciles de manipular,
 algunas, como las proteínas de membrana son insolubles en condiciones en
 que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
@@ -635,10 +667,11 @@ generarse miles de espectros por hora. La interpretación manual, por lo
 tanto no es una opción práctica. Diversas aproximaciones computacionales
 y herramientas de \textit{software} se han desarrollado para facilitar 
 esta tarea de asignación de secuencias peptídicas a los espectros MS/MS. 
-Cada par péptido-espectro se denomina generalmente PSM (\textit{Peptide
-Spectrum Match})
-Las estrategias utilizadas básicamente pueden clasificarse en tres tipos.
-La estrategia más extendida es la búsqueda basada en secuencia,
+A cada una de estas asignaciones compuestas por un par péptido-espectro 
+se les denomina generalmente PSM (\textit{Peptide Spectrum Match})
+
+Las estrategias utilizadas para la asignación de PSMs básicamente pueden
+ clasificarse en tres tipos. La más extendida es la búsqueda basada en secuencia,
 consistente en establecer una correlación entre
 el espectro MS/MS obtenido empíricamente y espectros teóricos predichos 
 a partir de base de datos de secuencias. 
@@ -662,16 +695,18 @@ de asignación de una secuencia peptídica a un espectro MS/MS.
 Existen una gran variedad de herramientas computacionales para realizar
 esta tarea. 
 
-Los motores de búsqueda son un tipo de programas informáticos a los que
+Los motores de búsqueda, descritos en detalle en una sección posterior,
+ son un tipo de programas informáticos a los que
 se les suministra como entrada datos correspondientes a una lista de 
 espectros MS/MS empíricos y una serie de
-parámetros que tener en cuenta para acotar la búsqueda. 
+parámetros que tener en cuenta para restringir la búsqueda. 
 El programa compara estos espectros reales registrados con espectros
 teóricos que se obtienen mediante la predicción de los valores \mz de los
 péptidos y fragmentos que se generan teóricamente conociendo el patrón
 de corte de la enzima proteolítica utilizada, las masas de cada aminoácido,
-y las secuencias de las proteínas en una base de datos.
-En el proceso de búsqueda se selecciona una lista de péptidos posibles, 
+y las secuencias de las proteínas en una base de datos de referncia.
+En el proceso, el espacio de búsqueda se acota mediante la selección
+de una lista de péptidos posibles, 
 (candidatos que cumplen unos criterios determinados), que han generado el 
 espectro MS/MS y a continuación se ordenan utilizando una puntuación 
 función del grado de similitud entre el espectro empírico y el teórico.
@@ -791,11 +826,10 @@ muy abierta y posteriormente refinarla.
 \textit{(mirar 3.1.2 Scoring functions en Neszvhi review en JOP)}
 \textit{(mirar Statistics for Proteomics course, J.Vazquez)}
 
-En Proteómica, un motor de búsqueda es una herramienta bioinformática 
-que asigna a cada espectro obtenido un péptido, el mejor candidato de una lista de los
+Los motores de búsqueda se encargan de 
+asignar a cada espectro obtenido un péptido, el mejor candidato de una lista de los
 posibles péptidos que han generado ese espectro, con una cierta medida
 de puntuación función del grado de similitud entre espectro empírico y teórico. 
-
 La estrategia general consiste en realizar una digestión teórica a nivel
 de péptido y de fragmento, teniendo en cuenta los parámetros especificados.
 Así, para cada espectro observado, el motor de búsqueda recorre las secuencias 
@@ -805,34 +839,85 @@ que se encuentran dentro del rango de tolerancia permitido. A continuación
 se establece el grado de similitud de cada espectro con los espectros teóricos
 de cada uno de los péptidos candidatos, es decir, se evalúa la calidad de cada PSM.
 
+\figura{Vectorial/spectrum_identification}{width=.99\textwidth}{fig:spectrum_identification}%
+{Estrategia básica de identificación. Correlación espectro MS/MS - secuencia aminoacídica}
+
 
 Los motores de búsqueda realizan esta comparación de diferentes maneras,
-usando distintas funciones de puntuación.
+usando distintas funciones de puntuación. Algunos incluso calculan más de
+un tipo de puntuación. Existen una gran variedad de estrategias de puntuación
+descritas profusamente en la bibliografía, basadas en funciones de
+correlación entre espectros, basadas en contar el número de fragmentos compartidos,
+en alineamiento de espectros o usando reglas derivadas más complejas.
 
-De forma general se pueden distinguir dos tipos de sistemas de puntuación
-de la calidad de una asignación péptido-espectro. Los sistemas en que 
-cada PSM se evalúa de forma independiente y aquellos 
-que cada PSM se sitúa en referencia a la distribución de muchas puntuaciones
+SEQUEST \citep{Eng1994} fue la primera herramienta descrita que correlacionaba
+espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
+uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
+calcula la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
+para todos los candidatos con los que se ha comparado.
+En primer lugar se crea un espectro procesado (espectro X) en el que los picos de baja 
+intensidad son elimnados y el resto de valores \mz son redondeados al valor
+entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
+usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr}
+es calculado como una funcion de correlación \emph{Corr(t)} (el producto 
+entre los vectores X e Y, con Y desplazado \textit{t} unidades de masa 
+respecto a X a lo largo del eje \mz )
 
-\medskip
 
-\emph{Puntuaciones basadas en factores paramétricos}.
-Para cada asignación péptido-espectro se establece una puntuación de 
-forma independiente.
+\begin{equation}
+\label{eq:sequest_corr}
+\begin{split}
+Corr(t) = \sum_{i} \ x_{i} \ y_{i+1}\\
+Xcorr = Corr(0)\ - < Corr(t) >_{i}
+\end{split}
+\end{equation}
 
-\medskip
+Básicamente, \emph{Xcorr} contabiliza el numero de fragmentos coincidentes
+entre el espectro empírico (procesado) y el espectro teórico permitiendo
+pequeños desplazamientos. Además la puntuación se corrige sustrayendo el valor 
+medio de \textit{Corr(t)}, que representa una estimación del número de
+coincidencias aleatorias.
 
-\emph{Puntuaciones basadas en distribuciones de espectro individual}.
-Este tipo de puntuación consiste en evaluar la distrubución de todas las
-puntuaciones de todos los péptidos candidatos que se comparan con cada
-espectro obtenido.
+Pero además, SEQUEST proporciona un valor de puntuación adicional, 
+$\Delta$\emph{Cn}, que indica la diferencia entre el valor \emph{Xcorr}
+del mejor candidato y el del segundo mejor candidato.
 
-\medskip
+Ambos valores son por tanto indicativos de la calidad de cada PSM que será
+mejor cuanto mas altas sean estas puntuaciones.
 
-\emph{Puntuaciones basadas en distribuciones promedio}. Estas puntuaciones
-analizan la distribución de las mejores puntuaciones de todos los espectros
-de un experimento.
 
+Otro motor de búsqueda frecuentemente utilizado es X!Tandem \citep{Craig2004},
+que calcula una puntuación llamada \emph{hyperscore}. Ésta también se basa
+en contar el numero de picos compartidos entre los espectros teórico y empírico,
+pero en este caso se tiene en cuenta si los iones coincidentes pertenecen
+a las series \emph{b-} e \emph{y-}
+
+
+
+%De forma general se pueden distinguir dos tipos de sistemas de puntuación
+%de la calidad de una asignación péptido-espectro. Los sistemas en que 
+%cada PSM se evalúa de forma independiente y aquellos 
+%que cada PSM se sitúa en referencia a la distribución de muchas puntuaciones
+%
+%\medskip
+%
+%\emph{Puntuaciones basadas en factores paramétricos}.
+%Para cada asignación péptido-espectro se establece una puntuación de 
+%forma independiente.
+%
+%\medskip
+%
+%\emph{Puntuaciones basadas en distribuciones de espectro individual}.
+%Este tipo de puntuación consiste en evaluar la distrubución de todas las
+%puntuaciones de todos los péptidos candidatos que se comparan con cada
+%espectro obtenido.
+%
+%\medskip
+%
+%\emph{Puntuaciones basadas en distribuciones promedio}. Estas puntuaciones
+%analizan la distribución de las mejores puntuaciones de todos los espectros
+%de un experimento.
+%
 
 
 
@@ -904,7 +989,7 @@ de los péptidos que son identificados a partir de los espectros.
 %{Etapas en un experimento de Proteómica \textit{Shotgun}}
 
 \figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
-{Inferencia de proteinas. Agrupamiento dirigido de péptidos en proteínas}
+{Agrupamiento no aleatorio de péptidos en proteínas}
 
 
 %-------------------------------------------------------------------

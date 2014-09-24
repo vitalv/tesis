@@ -1,14 +1,17 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces La complejidad del proteoma aumenta exponencialmente y bla\relax }}{5}{figure.caption.8}
-\contentsline {figure}{\numberline {2}{\ignorespaces Ionizaci\'on MALDI y ESI\relax }}{8}{figure.caption.10}
-\contentsline {figure}{\numberline {3}{\ignorespaces Analizadores de masas. Cuadrupolo, Trampa I\'onica Tridimensional(QIT) y Orbitrap\relax }}{10}{figure.caption.11}
-\contentsline {figure}{\numberline {4}{\ignorespaces Nomenclatura de Roepstorff para los fragmentos en MS/MS\relax }}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {5}{\ignorespaces Etapas en un experimento de Prote\'omica \textit {Shotgun}\relax }}{16}{figure.caption.17}
-\contentsline {figure}{\numberline {6}{\ignorespaces Inferencia de proteinas. Agrupamiento dirigido de p\'eptidos en prote\IeC {\'\i }nas\relax }}{23}{figure.caption.24}
-\contentsline {figure}{\numberline {7}{\ignorespaces Distribuciones de Espectro Individual y Promedio\relax }}{24}{figure.caption.26}
-\contentsline {figure}{\numberline {8}{\ignorespaces Adquisici\'on y reconstrucci\'on de la se\~nal en un experimento SRM\relax }}{26}{figure.caption.28}
+\contentsline {figure}{\numberline {1}{\ignorespaces Aumento de complejidad desde el genoma hacia el proteoma\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces Esquema de un espectr\'ometro de masas\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ionizaci\'on MALDI y ESI\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Cuadrupolo, Trampa I\'onica Tridimensional(QIT) y Orbitrap\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {5}{\ignorespaces Espectrometr\IeC {\'\i }a de masas en Tandem. MS/MS\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Nomenclatura de Roepstorff para los fragmentos en MS/MS\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Etapas en un experimento de Prote\'omica \textit {Shotgun}\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {8}{\ignorespaces Estrategia b\'asica de identificaci\'on. Correlaci\'on espectro MS/MS - secuencia aminoac\IeC {\'\i }dica\relax }}{22}{figure.caption.23}
+\contentsline {figure}{\numberline {9}{\ignorespaces Agrupamiento no aleatorio de p\'eptidos en prote\IeC {\'\i }nas\relax }}{25}{figure.caption.27}
+\contentsline {figure}{\numberline {10}{\ignorespaces Distribuciones de Espectro Individual y Promedio\relax }}{26}{figure.caption.29}
+\contentsline {figure}{\numberline {11}{\ignorespaces Adquisici\'on y reconstrucci\'on de la se\~nal en un experimento SRM\relax }}{28}{figure.caption.31}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
