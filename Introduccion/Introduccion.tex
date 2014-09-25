@@ -836,8 +836,8 @@ muy abierta y posteriormente refinarla.
  
 \subsubsection*{Motores de búsqueda. Funciones de puntuación}
 
-\textit{(mirar 3.1.2 Scoring functions en Neszvhi review en JOP)}
-\textit{(mirar Statistics for Proteomics course, J.Vazquez)}
+%\textit{(mirar 3.1.2 Scoring functions en Neszvhi review en JOP)}
+%\textit{(mirar Statistics for Proteomics course, J.Vazquez)}
 
 Los motores de búsqueda se encargan de 
 asignar a cada espectro obtenido un péptido, el mejor candidato de una lista de los
@@ -863,6 +863,8 @@ descritas profusamente en la bibliografía, basadas en funciones de
 correlación entre espectros, basadas en contar el número de fragmentos compartidos,
 en alineamiento de espectros o usando reglas derivadas más complejas.
 
+
+%SEQUEST%%%
 SEQUEST \citep{Eng1994} fue la primera herramienta descrita que correlacionaba
 espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
@@ -875,35 +877,53 @@ usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr
 es calculado como una funcion de correlación \emph{Corr(t)} (el producto 
 entre los vectores X e Y, con Y desplazado \textit{t} unidades de masa 
 respecto a X a lo largo del eje \mz )
-
-
-\begin{equation}
-\label{eq:sequest_corr}
-\begin{split}
-Corr(t) = \sum_{i} \ x_{i} \ y_{i+1}\\
-Xcorr = Corr(0)\ - < Corr(t) >_{i}
-\end{split}
-\end{equation}
-
-Básicamente, \emph{Xcorr} contabiliza el numero de fragmentos coincidentes
+%\begin{equation}
+%\label{eq:sequest_corr}
+%\begin{split}
+%Corr(t) = \sum_{i} \ x_{i} \ y_{i+1}\\
+%Xcorr = Corr(0)\ - < Corr(t) >_{i}
+%\end{split}
+%\end{equation}
+Básicamente, \emph{Xcorr} contabiliza el número de fragmentos coincidentes
 entre el espectro empírico (procesado) y el espectro teórico permitiendo
-pequeños desplazamientos. Además la puntuación se corrige sustrayendo el valor 
-medio de \textit{Corr(t)}, que representa una estimación del número de
-coincidencias aleatorias.
-
+pequeños desplazamientos. %Además la puntuación se corrige sustrayendo el valor 
+%medio de \textit{Corr(t)}, que representa una estimación del número de
+%coincidencias aleatorias.
+Además la puntuación se corrige teniendo en cuenta una estimación del número
+de coincidencias entre picos aleatorias.
 Pero además, SEQUEST proporciona un valor de puntuación adicional, 
 $\Delta$\emph{Cn}, que indica la diferencia entre el valor \emph{Xcorr}
 del mejor candidato y el del segundo mejor candidato.
-
 Ambos valores son por tanto indicativos de la calidad de cada PSM que será
 mejor cuanto mas altas sean estas puntuaciones.
 
-
+%X!TANDEM%%%
 Otro motor de búsqueda frecuentemente utilizado es X!Tandem \citep{Craig2004},
 que calcula una puntuación llamada \emph{hyperscore}. Ésta también se basa
-en contar el numero de picos compartidos entre los espectros teórico y empírico,
+en contar el número de picos compartidos entre los espectros teórico y empírico,
 pero en este caso se tiene en cuenta si los iones coincidentes pertenecen
 a las series \emph{b-} e \emph{y-}
+
+%MASCOT%%%
+Mascot es quizá el más popular de los motores de búsqueda, calcula una 
+puntuación expresada en términos probabilísticos llamada \emph{ion score} 
+que indica la probabilidad de que un número de coincidencias de picos
+hayan ocurrido aleatoriamente dado el número total de picos en el espectro
+y dada una distribución calculada de los valores \mz predichos para los candidatos 
+
+
+%the probability of that number of matches occurring by chance given the
+%number of peaks in the searched spectrum and the cumulative distribution of
+%m/z values of predicted ions for all candidate peptides in the database. At the
+%end, the probability that the match is random is converted into a more conven-
+%ient scale by taking the logarithm. The ion score is less sensitive to such param-
+%eters as the peptide molecular weight and the charge state of the precursor ion
+%than Xcorr, but not completely independent. Unfortunately, the details of the
+%Mascot scoring scheme remain unpublished, which prevents a comprehensive
+%and independent assessment of this tool.
+%A more recently developed database sea
+
+
 
 
 
@@ -1040,7 +1060,9 @@ La función de puntuación es un valor dependiente del motor de búsqueda
 utilizado, por eso, frecuentemente este valor se convierte a una medida
 estadística más generalizable, el \emph{p-valor} o el \emph{e-valor}.
 Para ello, en primer lugar se selecciona el mejor péptido candidato
-asignado a un espectro. La \emph{hipótesis nula} se estima construyendo
+asignado a un espectro, es decir aquel con la mejor puntuación,
+%. La \emph{hipótesis nula} se estima construyendo
+y a continuación, se construye
 una distribución de las puntuaciones de todos los péptidos comparados
 con el espectro exceptuando el mejor candidato. El \emph{p-valor} se calcula 
 entonces relacionando la puntuación del mejor péptido con respecto a la
@@ -1066,6 +1088,13 @@ son independientes de la función de puntuación utilizada y por tanto
 suponen una medida más general de la calidad de cada PSM y son comparables
 en ensayos usando distintos instrumentos o diferentes motores de búsqueda o parámetros.
 
+
+%SALVA:
+%Los E-value se incluyen en los resultados de
+%motores de búsqueda como Mascot, OMSSA o X!Tandem e indican el número de veces que se
+%espera observar el PSM con una cierta puntuación x por azar.
+
+
 \medskip{}
 
 \figura{Vectorial/single_spectrum_and_average_distributions}{width=.99\textwidth}{fig:single_spectrum_and_average_distributions}%
@@ -1073,18 +1102,46 @@ en ensayos usando distintos instrumentos o diferentes motores de búsqueda o pará
 
 
 
-
 \emph{Distribución promedio}.
 
 En un experimento generalmente se obtienen miles de espectros MS/MS. Las
 distribuciones promedio modelan las mejores puntuaciones de todos los PSM
-de un experimento.
-Al igual que los estadísticos \emph{p-valor} y \emph{e-valor} evalúan la calidad en las
-distribuciones de espectro individual, la calidad del experimento a nivel
-global se mide, utilizando las distribuciones promedio, mediante la 
-\emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)}
+de un experimento. En este caso, las medidas estadísticas de las distribuciones
+de espectro individual no son suficientes. Incluso en el caso de que se requiera
+un \emph{p-valor} muy bajo, (lo que implicaría una confianza estadística muy alta
+para un PSM en concreto) si se evalúan miles de espectros MS/MS podrían 
+ocurrir PSMs con \emph{p-valores} igualmente bajos solo por azar. Por este
+motivo se utilizan estrategias de \emph{corrección de tests múltiples} 
+(\emph{multiple test correction}) que re-ajustan los \emph{p-valores}.
+Una aproximación muy utilizada, aunque produce resultados conservadores,
+  es la corrección de Bonferroni(\citep), que simplemente
+divide el \emph{p-valor} por el número de veces que se repite el test.
+Así para un PSM con \emph{p-valor} = 0,05 en un experimento en el que hay
+otros 10.000 PSMs, el \emph{p-valor} original habría de reajustarse a
+0,05/10.000 = 5·10\textsuperscript{-6}.
 
-\emph{ bla, bla , bla}
+Las distribuciones promedio, como muestra la (Figura~\ref{fig:single_spectrum_and_average_distributions}), 
+son distribuciones de las mejores puntuaciones
+de todos los PSMs de un experimento y permiten por tanto estimar otros parámetros
+estadísticos adicionales a nivel global, como la Tasa de Falsos Positivos, FDR
+y la Probabilidad de Error Posterior, PEP.
+
+
+\subsubsection*{Tasa de Falsos Positivos, FDR y Probabilidad de Error Posterior, PEP}
+
+En el caso de experimentos de alto rendimiento en los que se producen
+miles de espectros, la evaluación estadística mas ampliamente utilizada
+es la \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)} \citep{Benjamini1995}.
+Básicamente, el concepto FDR, se refiere a la proporción de falsos positivos
+que se aceptan en todo el conjunto de PSMs de un experimento para un umbral
+de puntuación (o de \emph{p-valor}) fijado.
+
+%Al igual que los estadísticos \emph{p-valor} y \emph{e-valor} evalúan la calidad en las
+%distribuciones de espectro individual, la calidad del experimento a nivel
+%global se mide, utilizando las distribuciones promedio, mediante la 
+%\emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)}
+%
+%\emph{ bla, bla , bla}
 
 \medskip
 
@@ -1093,7 +1150,17 @@ espectro individual son compatibles con las que usan distribuciones promedio,
 es decir, se puede realizar un análisis FDR global para un conjunto de
 PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
 
-
+%
+%SALVA:
+%Algunos motores de búsqueda como X!Tandem, Phenyx, o Mascot
+%utilizan una
+%distribución individual formada por la distribución de las puntuaciones de un espectro
+%experimental enfrentado con todos los posibles candidatos en la base de datos. Sin embargo, en
+%la Proteómica de segunda generación, en la que se generan cientos de miles de espectros en un
+%mismo experimento, es esencial conocer también la distribución global de las asignaciones de
+%todos los espectros en la base de datos para así poder estimar una tasa de error global sobre el
+%número de identificaciones obtenido.
+%
 
 
 
@@ -1165,6 +1232,81 @@ cromatográfica permite reconstruir un pe
 \section*{Repositorios publicos de proteómica shotgun y dirigida}
 \addcontentsline{toc}{section}{Repositorios publicos de proteómica shotgun y dirigida}
 \label{cap1:sec:Repositorios publicos de proteómica shotgun y dirigida}
+
+
+\phantomsection
+\section*{Formatos de archivos usados en espectrometría de masas y proteómica}
+\addcontentsline{toc}{section}{Formatos de archivos usados en espectrometría de masas y proteómica}
+%\label{cap1:sec:Formatos en Proteómica}
+
+En el proceso de análisis de datos que sigue a la adquisición 
+experimental de espectros se requiere un uso intensivo de \textit{software},
+desde la asignación de secuencias peptídicas a los espectros hasta la
+elaboracion de listas de proteínas identificadas y evaluación estadística
+de los resultados.
+Existe una gran variedad de este tipo de programas, que sirven de apoyo
+a cada uno de estos pasos en el proceso de análisis
+
+En términos muy generales se puede distinguir \textit{software} abierto,
+que la comunidad bioinformática ha desarrollado en respuesta a las necesidades
+de compartir, inspeccionar y generar ficheros sin las restricciones que imponen
+las licencias; y \textit{software} privativo desarrollado \textit{ad hoc} por las 
+compañías fabricantes de espectrómetros de masas para sus instrumentos.
+
+La iniciativa HUPO-PSI tiene un papel muy importante en la elaboración
+y adopción de formatos abiertos que puedan servir de estándar para toda
+la comunidad. En esta tarea de estandarización están implicados representantes
+de las compañías fabricantes de equipos, editores de revistas, y desarrolladores
+de código del ámbito académico para revisar y proporcionar formatos que 
+recojan toda la información necesaria (MIAPE)
+
+En una clasificacion más precisa, el software puede clasificarse en función
+de la etapa del análisis al que sirven de ayuda.
+
+\begin{itemize}
+
+\item \emph{Formatos que recogen la salida de los espectrómetros de masas}
+
+Este es un tipo de formatos muy diverso. Depende básicamente, de la forma
+en que el instrumento registra los espectros.
+
+Cuando la frecuencia en que %ver File Formats commonly used in MS . Deutsch E
+se escanea cada fragmento es superior a la resolución del instrumento la 
+señal se registra como picos con una forma y anchura precisas. Este tipo 
+de adquisición es el \emph{modo continuo o perfil}. 
+Los datos perfil permiten ver la forma de los picos del espectro de masas. %Copiado de TSQ_Series_Hardware_es.pdf
+Cada unidad de masa atómica se divide en muchos intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+La intensidad de la corriente iónica se determina en cada uno de los %Copiado de TSQ_Series_Hardware_es.pdf
+intervalos de muestreo. Este tipo de datos muestra la intensidad en  %Copiado de TSQ_Series_Hardware_es.pdf
+cada uno de los intervalos de muestreo con las intensidades %Copiado de TSQ_Series_Hardware_es.pdf
+conectadas por una línea continua. %Copiado de TSQ_Series_Hardware_es.pdf
+En otras ocasiones, con el 
+objetivo de ahorrar espacio, solo se registra la señal cuando se supera un
+cierto umbral de intensidad que discierne la señal real del ruido. Este tipo de
+espectros es similar a los adquiridos en modo continuo pero los valles
+entre picos no quedan registrados.
+
+Los instrumentos registran los espectros en modo continuo de forma predeterminada,
+pero frecuentemente son sometidos
+a un procesamiento por un algoritmo que extrae los picos detectados como 
+parejas de valores \mz e intensidad. Estos son los datos centroide, 
+muestran el espectro de masas como un gráfico de barras y suman las %Copiado de TSQ_Series_Hardware_es.pdf
+intensidades de cada conjunto de varios intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+Esta suma se muestra frente al centrado integral de masa de los intervalos %Copiado de TSQ_Series_Hardware_es.pdf
+de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+
+
+\item \emph{Formatos que recogen el resultado de las búsquedas}
+
+\item \emph{Formatos que almacenan bibliotecas de espectros}
+
+\item \emph{Formatos que almacenan secuencias}
+
+\item \emph{Formatos específicos para proteómica dirigida}
+
+
+\end{itemize}
+
 
 
 
