@@ -396,10 +396,10 @@ El patrón de fragmentación codificado en los espectros MS\textsuperscript{2}
 contiene la información necesaria para deducir la secuencia aminoacídica
 del péptido que lo origina.
 
-En algunos análisis pueden ser necesario realizar fragmentaciones adicionales
+En algunos análisis puede ser necesario realizar fragmentaciones adicionales
 que permitan un mayor aún poder de resolución. Estos análisis
 se conocen como MS\textsuperscript{n}, donde \emph{n} es el número de 
-etapas de análisis de masas.
+fragmentaciones y etapas de análisis de masas consiguientes.
 
 A este método de adquisición de espectros de fragmentación, en el que
 el péptido precursor es seleccionado para ser fragmentado en base a la 
@@ -421,9 +421,10 @@ que indica el número de residuos en el fragmento. (Figura~\ref{fig:peptide_fragm
 
 \subsubsection*{Tipos de fragmentación}
 
-Uno de los métodos de fragmentación más frecuentemente utilizados en
-espectrometría de masas para Proteómica es la \emph{Disociación Inducida por Colisión} (CID),
-que consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
+La \emph{Disociación Inducida por Colisión} (CID) 
+es uno de los métodos de fragmentación más frecuentemente utilizados en
+espectrometría de masas para Proteómica.
+Consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
 de gases nobles, químicamente inertes. Argón o Xenón 
 son generealmente usados en triples cuadrupolos y Helio en las trampas iónicas.
 La colisión provoca que parte de la energía cinética del ion sea transformada
@@ -436,14 +437,25 @@ series \emph{b-} e \emph{y-}
 En la \emph{Disociación por 
 Transferencia Electrónica} (ETD), \citep{Syka2004}, los iones de analito
 con carga positiva interaccionan con aniones que les transfieren un 
-electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}
+electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
+Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
+y para péptidos largos e incluso para proteínas enteras. Además produce
+una fragmentación en la que las cadenas laterales y modificaciones 
+post-traduccionales quedan intactas.
+Estas cualidades hacen ETD interesante para proteómica \emph{top-down},
+que intenta identificar proteínas intactas, y también
+para experimentos orientados a la deteccion de péptidos con modificaciones
+post-traduccionales.
 
 
 En la \emph{Disociación por captura Electrónica} (ECD) \citep{Zubarev1998},
-como en ETD, los electrones son suministrados por aniones y transferidos 
-hacia los cationes de analito. ECD se usa generalmente en espectrómetros
+como en ETD, la fragmentación se produce por la interacción del analito
+con electrones que, en este caso, son suministrados por introducción directa.
+ ECD se usa generalmente en espectrómetros
 tipo FTICR y en trampas iónicas y genera abundantes fragmentos de series
-\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{a-}
+\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}
+Al igual que ECD, es particularmente efectivo para el estudio de péptidos
+con modificaciones post-traduccionales
 
 Otro tipo de fragmentación es la \emph{Disociación por Alta Energía de Colisión} (HCD)
 usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que CID
@@ -530,7 +542,7 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 La separación de proteínas en geles de poli-acrilamida 
 (PAGE, \textit{Polyacrilamide Gel Electrophoresis}), es una técnica, 
 o serie de técnicas con variantes, que consiste en separar
-proteínas presentes en una muestra inicial en base a sus propiedades
+proteínas presentes en una muestra inicial en base a propiedades
 fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
 En función del número de estas propiedades que se aprovechan para separar,
  en mayor o menor grado, las proteínas de una muestra
@@ -776,7 +788,7 @@ al coste computacional son:
 
 \item {
 Masa mono-isotópica o Masa promedio.
-A partir de un espectro MS se puede obtiene el valor \mz del péptido y
+A partir de un espectro MS se obtiene el valor \mz del péptido y
 a su vez, a partir de este valor, se puede inferir la masa. Sin embargo
 este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
 aquella en la que se considera que todos los átomos de C se encuentran 
@@ -798,9 +810,16 @@ tenga también en cuenta péptidos con K y/o R en su secuencia.
 \item{
 Modificaciones post-traduccionales y otras modificaciones permitidas 
 que ocurren en el proceso experimental.
-Los péptidos digeridos, frecuentemente sufren oxidaciones en las 
-metioninas (M), por lo que generalmente se permite un desfase de masa 
-equivalente a la adición de un átomo de oxígeno sumado a la masa de M 
+Algunas de éstas ocurren con una frecuencia variable, como las
+oxidaciones que se pueden producir en las metioninas (M).
+Otro tipo de modificaciones son las llamadas fijas, como la carbamidometilación
+en las cisteínas (C), un artefacto que se produce siempre 
+para evitar la formación de puentes di-sulfuro.
+La selección de este tipo de modificaciones permite que el motor de búsqueda
+pueda tener en cuenta un posible desfase de masa en el péptido, equivalente,
+por ejemplo, a un átomo de oxígeno o un grupo carbamido-metil.
+
+
 }
 
 \item{
@@ -824,12 +843,18 @@ resultados de identificación de péptidos y en consecuencia de proteínas.
 Por ejemplo, restingir a un rango de tolerancia muy pequeño el valor
 posible de masa del precursor, aunque puede ser útil para obtener 
 espectros de gran calidad en instrumentos muy sensibles, puede dejar 
-fuera secuencias válidas. Una aproximación sensata puede consistir en
+fuera secuencias válidas. 
+
+%También es posible 
+%flexibilizar la especificidad de corte de la enzima proteolítica e 
+%incluir una lista exhaustiva de posibles modificaciones post-traduccionales, 
+%una aproximación utilizada en \citep{Creasy2002}
+%Nota, esta referencia es una  especie de plugin para mascot
+
+
+Una aproximación sensata puede consistir en
 (disponiendo de recursos computacionales suficientes) realizar una búsqueda
-muy abierta y posteriormente refinarla.
-
-
-\emph{bla, bla, bla}
+muy abierta y posteriormente refinarla. %\citep{Creasy2002}
 
 
 

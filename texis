@@ -23,23 +23,23 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=20
-FILE_NAME_0=4491;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
+current_page=8
+FILE_NAME_0=6526;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
 FILE_NAME_1=11311;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
 FILE_NAME_2=2195;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
 FILE_NAME_3=31243;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_pream.tex;0;4
 FILE_NAME_4=6147;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cab.tex;0;4
 FILE_NAME_5=1555;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fcover.tex;0;4
 FILE_NAME_6=359;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fresumen.tex;0;4
-FILE_NAME_7=2329;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FParte1.tex;0;4
-FILE_NAME_8=22703;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
+FILE_NAME_7=393;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FParte1.tex;0;4
+FILE_NAME_8=43711;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
 FILE_NAME_9=3224;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_part.tex;0;4
 FILE_NAME_10=339;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F01Capitulo1.tex;0;4
 FILE_NAME_11=618;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F02Capitulo2.tex;0;4
 FILE_NAME_12=1545;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte2.tex;0;4
 FILE_NAME_13=2757;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2Fconfig.tex;0;4
 FILE_NAME_14=10313;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS-v1.0-ManualSrc%2FTeXiS%2FTeXiS_pream.tex;0;4
-FILE_NAME_15=12343;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS.sty;0;4
+FILE_NAME_15=6275;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS.sty;0;4
 FILE_NAME_16=1494;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte3.tex;0;4
 FILE_NAME_17=700;LaTeX;0;16;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F03Capitulo3.tex;0;4
 FILE_NAME_18=1424;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FParte4.tex;0;4
@@ -48,10 +48,11 @@ FILE_NAME_20=3128;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fbibliogra
 FILE_NAME_21=5312;Make;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FMakefile;0;4
 FILE_NAME_22=1470;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2Fconstantes.tex;0;4
 FILE_NAME_23=1730;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fagradecimientos.tex;0;4
-FILE_NAME_24=0;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_acron.tex;0;4
+FILE_NAME_24=2339;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_acron.tex;0;4
 FILE_NAME_25=1308;None;0;16;1;1;1;%2Fhome%2Fvital%2FTeXiS%2Fnotas.txt;0;4
 FILE_NAME_26=0;Make;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FMakefile;0;4
 FILE_NAME_27=1728;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fdedicatoria.tex;0;4
+FILE_NAME_28=0;None;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2Facronimos.gdf;0;4
 
 [VTE]
 last_dir=/home/vital
