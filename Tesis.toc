@@ -12,12 +12,12 @@
 \contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{17}{section*.18}
 \contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{17}{section*.20}
 \contentsline {section}{Asignaci\'on P\'eptido-Espectro}{19}{section*.21}
-\contentsline {subsection}{B\'usqueda basada en secuencia}{19}{section*.22}
+\contentsline {subsection}{B\'usqueda basada en secuencia}{20}{section*.22}
 \contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{24}{section*.24}
 \contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{24}{section*.25}
 \contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{25}{section*.26}
-\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{26}{section*.28}
-\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{28}{section*.30}
+\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{25}{section*.28}
+\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{29}{section*.30}
 \contentsline {section}{Candida albicans como organismo modelo}{30}{section*.32}
 \contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{30}{section*.33}
 \contentsline {section}{Formatos de archivos usados en espectrometr\IeC {\'\i }a de masas y prote\'omica}{30}{section*.34}

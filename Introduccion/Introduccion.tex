@@ -386,7 +386,7 @@ introducidos en el espectrómetro y registra los llamados espectros
 MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
 para cada ion.
 A continuación, en función de la intensidad registrada en 
-MS\textsuperscript{1}, se seleccionan algunos de estos iones -\emph{precursores}-
+MS\textsuperscript{1}, se seleccionan y aislan algunos de estos iones -\emph{precursores}-
  para ser fragmentados en péptidos más 
 pequeños -\emph{fragmentos}- en la cámara de colisión del espectrómetro.
 El espectro MS\textsuperscript{2} adquirido o espectro de fragmentación,
@@ -406,27 +406,48 @@ el péptido precursor es seleccionado para ser fragmentado en base a la
 intensidad en el espectro MS\textsuperscript{1} se denomina por eso
 Adquisición Dependiente de Datos (\emph{Data Dependent Acquisition, DDA})
 
+%En la fragmentación, la estructura del esqueleto peptídico se rompe en
+%los enlaces peptídicos, el punto de menor energía de la estructura
+
 Los fragmentos originados a partir del péptido, según la nomenclatura
-de Roepstorff \citep{Roepstorff1984}, se clasifican, según el punto en
+de Roepstorff \citep{Roepstorff1984}, se clasifican, en función del punto 
 donde se produce la ruptura, en las denominadas
 series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
-extremo C-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
-carga permanece en el extremo N-terminal. Además se añade un sub-índice
-que indica el número de residuos en el fragmento. (Figura~\ref{fig:peptide_fragmentation})
+extremo carboxilo-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
+carga permanece en el extremo amino-terminal. Además se añade un sub-índice
+que indica el número de residuos en el fragmento (Figura~\ref{fig:peptide_fragmentation})
+Los iones más abundantes e informativos son los \emph{b-} e \emph{y-},
+ generados por la fragmentación en el enlace peptídico entre aminoácidos, 
+el punto de menor energía de la estructura.
+En analizadores tipo cuadrupolo o cuadrupolo-TOF predominan los iones \emph{y-},
+mientras que en las trampas iónicas se generan igualmente \emph{b-} e \emph{y-}
+\citep{Steen2004}
+
 
 \figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
 {Nomenclatura de Roepstorff para los fragmentos en MS/MS} 
 
 
+%Doubly charged tryptic peptides mainly yield singly charged y- and b-ions.
+%In addition, a-ions (loss of a C=O group or a mass difference of 27.9949 Da 
+%relative to the b-ion) can occur, but this is normally only observed for 
+%the b2-ion, which gives rise to the characteristic a2/b2-fragment ion 
+%pair in the lower mass range72 (see figure, part b). Apart from the ion 
+%types shown, 'satellite' fragment ions due to the further loss of NH3 or
+%H2O can be produced. These ions are designated, for example, am - NH3 or
+%y (n-m) - H2O. Fragmentation both amino-terminal to and carboxy-terminal 
+%of the same amino acid produces immonium ions, which are diagnostic of 
+%modified amino acids such as phosphotyrosine and/or hydroxyproline73.
 
-\subsubsection*{Tipos de fragmentación}
+
+\subsubsection*{Técnicas de fragmentación}
 
 La \emph{Disociación Inducida por Colisión} (CID) 
 es uno de los métodos de fragmentación más frecuentemente utilizados en
 espectrometría de masas para Proteómica.
 Consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
 de gases nobles, químicamente inertes. Argón o Xenón 
-son generealmente usados en triples cuadrupolos y Helio en las trampas iónicas.
+son generalmente usados en triples cuadrupolos y Helio en las trampas iónicas.
 La colisión provoca que parte de la energía cinética del ion sea transformada
 en energía vibracional lo que provoca la ruptura del esqueleto peptídico.
 La fragmentación tipo CID genera una elevada proporción de iones de las 
@@ -448,14 +469,14 @@ para experimentos orientados a la deteccion de péptidos con modificaciones
 post-traduccionales.
 
 
-En la \emph{Disociación por captura Electrónica} (ECD) \citep{Zubarev1998},
+En la \emph{Disociación por Captura Electrónica} (ECD) \citep{Zubarev1998},
 como en ETD, la fragmentación se produce por la interacción del analito
 con electrones que, en este caso, son suministrados por introducción directa.
  ECD se usa generalmente en espectrómetros
 tipo FTICR y en trampas iónicas y genera abundantes fragmentos de series
-\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}
+\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}.
 Al igual que ECD, es particularmente efectivo para el estudio de péptidos
-con modificaciones post-traduccionales
+con modificaciones post-traduccionales.
 
 Otro tipo de fragmentación es la \emph{Disociación por Alta Energía de Colisión} (HCD)
 usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que CID
@@ -599,7 +620,7 @@ Sin embargo, a pesar de esta especificidad, la enorme variedad de
 proteínas implica una mayor aún variedad de posibles péptidos generados a partir de 
 ellas que pueden tener masas muy similares. Por ese motivo,
  esta técnica requiere que la proteína se encuentre previamente aislada, 
- generalmente a partir de una mancha o \textit{spot} proteico de 2D-PAGE
+ generalmente a partir de una \textit{mancha} o \textit{spot} proteico de 2D-PAGE
 
 Generalmente la técnica de la Huella Peptídica se lleva a cabo por 
 espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
@@ -607,10 +628,13 @@ péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
 en una matriz MALDI, donde son ionizados e introducidos en un analizador
 de Tiempo de Vuelo (TOF).
 
-Una vez obtenido el espectro patrón de masas peptídicas, la identificación
-del péptido se realiza utilizando un motor de búsqueda, 
+Una vez obtenido el espectro patrón de masas peptídicas, el proceso 
+de análisis consiguiente es similar al que se hace en la
+proteómica de alto rendimiento o \textit{shotgun}. Como se describe a
+continuación, la identificación
+del péptido responsable del espectro se realiza utilizando un motor de búsqueda, 
 que compara los valores de \mz del espectro 
-obtenido empíricamente con los valores de \mz calculados a partir
+obtenidos empíricamente con los valores de \mz calculados a partir
 de las secuencias de péptidos trípticos teóricos.
 
 
@@ -644,7 +668,7 @@ relativamente aislada, en la Proteómica de alto rendimiento o
 proteínas en un solo experimento, se parte de una muestra
 más compleja. Esto es importante porque, 
 contando con que a partir de cada proteína, se generan múltiples
-péptidos trípticos, el grado de complejidad aumenta
+péptidos trípticos, el grado de complejidad de la muestra aumenta
  enormemente tras la digestión.
 Por este motivo, para evitar que la mezcla de péptidos sea demasiado 
 compleja para la resolución en el análisis MS,
@@ -788,8 +812,8 @@ al coste computacional son:
 
 \item {
 Masa mono-isotópica o Masa promedio.
-A partir de un espectro MS se obtiene el valor \mz del péptido y
-a su vez, a partir de este valor, se puede inferir la masa. Sin embargo
+A partir de un espectro MS se obtiene el valor \mz y con ello
+la masa del péptido. Sin embargo
 este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
 aquella en la que se considera que todos los átomos de C se encuentran 
 en su forma \textsuperscript{12}C
@@ -811,13 +835,14 @@ tenga también en cuenta péptidos con K y/o R en su secuencia.
 Modificaciones post-traduccionales y otras modificaciones permitidas 
 que ocurren en el proceso experimental.
 Algunas de éstas ocurren con una frecuencia variable, como las
-oxidaciones que se pueden producir en las metioninas (M).
+oxidaciones que se pueden producir en algunas de las metioninas (M).
 Otro tipo de modificaciones son las llamadas fijas, como la carbamidometilación
-en las cisteínas (C), un artefacto que se produce siempre 
+en las cisteínas (C), un artefacto que se produce en todas las C
 para evitar la formación de puentes di-sulfuro.
 La selección de este tipo de modificaciones permite que el motor de búsqueda
-pueda tener en cuenta un posible desfase de masa en el péptido, equivalente,
-por ejemplo, a un átomo de oxígeno o un grupo carbamido-metil.
+pueda tener en cuenta un posible desfase de masa en el péptido, equivalente
+por ejemplo, a un átomo de oxígeno o un grupo carbamido-metil en el
+caso de las modificaciones descritas.
 
 
 }
@@ -828,10 +853,14 @@ Los espectros de fragmentación teóricos son calculados a partir de las
 secuencias de péptidos (trípticos) en la base de datos de referencia. 
 Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
 abundantes sino que, en función del tipo de instrumento y de fragmentación,
-se generan más fragmentos de un tipo o de otro. (Ref)
-Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
-híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
-series \emph{y-}, y \emph{b-}
+se generan más fragmentos de un tipo o de otro. 
+Así, en instrumentos de tipo cuadrupolo o híbridos cuadrupolo-TOF,
+la fragmentación genera abundantes iones de la serie \emph{y-}, en las
+trampas iónicas además se producen igualmente abundantes iones \emph{b-}.
+
+%Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
+%híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
+%series \emph{y-}, y \emph{b-}
 
 } 
 
@@ -855,6 +884,7 @@ fuera secuencias válidas.
 Una aproximación sensata puede consistir en
 (disponiendo de recursos computacionales suficientes) realizar una búsqueda
 muy abierta y posteriormente refinarla. %\citep{Creasy2002}
+%Mirar 4.4.1 en NeszhviReview
 
 
 
@@ -886,11 +916,11 @@ usando distintas funciones de puntuación. Algunos incluso calculan más de
 un tipo de puntuación. Existen una gran variedad de estrategias de puntuación
 descritas profusamente en la bibliografía, basadas en funciones de
 correlación entre espectros, basadas en contar el número de fragmentos compartidos,
-en alineamiento de espectros o usando reglas derivadas más complejas.
+en alineamiento de espectros o en el uso de reglas derivadas más complejas.
 
 
 %SEQUEST%%%
-SEQUEST \citep{Eng1994} fue la primera herramienta descrita que correlacionaba
+SEQUEST \citep{Eng1994} fue la primera herramienta descrita para correlacionar
 espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
 calcula la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
@@ -916,21 +946,23 @@ pequeños desplazamientos. %Además la puntuación se corrige sustrayendo el valor
 %coincidencias aleatorias.
 Además la puntuación se corrige teniendo en cuenta una estimación del número
 de coincidencias entre picos aleatorias.
-Pero además, SEQUEST proporciona un valor de puntuación adicional, 
-$\Delta$\emph{Cn}, que indica la diferencia entre el valor \emph{Xcorr}
+SEQUEST también proporciona un valor de puntuación adicional, 
+$\Delta$\emph{Cn} , que indica la diferencia entre el valor \emph{Xcorr}
 del mejor candidato y el del segundo mejor candidato.
 Ambos valores son por tanto indicativos de la calidad de cada PSM que será
-mejor cuanto mas altas sean estas puntuaciones.
+mejor cuanto más altas sean ambas puntuaciones.
 
 %X!TANDEM%%%
-Otro motor de búsqueda frecuentemente utilizado es X!Tandem \citep{Craig2004},
+Otro motor de búsqueda frecuentemente utilizado es \emph{X!Tandem} \citep{Craig2004},
 que calcula una puntuación llamada \emph{hyperscore}. Ésta también se basa
 en contar el número de picos compartidos entre los espectros teórico y empírico,
 pero en este caso se tiene en cuenta si los iones coincidentes pertenecen
-a las series \emph{b-} e \emph{y-}
+a las series \emph{b-} e \emph{y-}.
 
 %MASCOT%%%
-Mascot es quizá el más popular de los motores de búsqueda, calcula una 
+\emph{Mascot} es quizá el más popular de los motores de búsqueda a 
+pesar de que el algoritmo de correlación que usa nunca fue publicado.
+El programa calcula una 
 puntuación expresada en términos probabilísticos llamada \emph{ion score} 
 que indica la probabilidad de que un número de coincidencias de picos
 hayan ocurrido aleatoriamente dado el número total de picos en el espectro
@@ -1064,7 +1096,7 @@ bioinformático automatizado de estos datos es por tanto un aspecto
 fundamental para la interpretación de los resultados.
 Por otra parte, no a todos los espectros MS/MS generados se
 les asigna un péptido, y a su vez, de todo el conjunto de PSMs sólo
-una fracción son ciertos, es decir corresponden realmente a la secuencia
+una fracción son correctos, es decir corresponden realmente a la secuencia
 asignada. De hecho, en algunos experimentos realizados en instrumentos
 de baja resolución, los PSMs incorrectos pueden llegar a suponer la mayoría.
 
@@ -1077,23 +1109,24 @@ generados.
 \emph{Distribución de espectro individual}.
 
 Cuando un espectro MS/MS es comparado con los espectros teóricos de los
-péptidos candidatos presentes en la base de datos de referencia, 
+péptidos en la lista de candidatos creada a partir de la base de datos de referencia, 
 el \textit{software} permite obtener una lista de péptidos ordenados en función 
 de la puntuación obtenida que mide el grado de similitud entre el espectro
-empírico adquirido y el teórico, calculado a partir de las secuencias.
+empírico adquirido y el teórico.
 La función de puntuación es un valor dependiente del motor de búsqueda
 utilizado, por eso, frecuentemente este valor se convierte a una medida
 estadística más generalizable, el \emph{p-valor} o el \emph{e-valor}.
-Para ello, en primer lugar se selecciona el mejor péptido candidato
-asignado a un espectro, es decir aquel con la mejor puntuación,
+Para ello, en primer lugar se selecciona el mejor péptido 
+asignado a un espectro, es decir aquel candidato con la mejor puntuación,
 %. La \emph{hipótesis nula} se estima construyendo
-y a continuación, se construye
+y a continuación se construye
 una distribución de las puntuaciones de todos los péptidos comparados
 con el espectro exceptuando el mejor candidato. El \emph{p-valor} se calcula 
 entonces relacionando la puntuación del mejor péptido con respecto a la
 distribución (aleatoria) del resto de puntuaciones. Cuanto más alejada 
-se sitúa la mejor puntuación del centro de la distribución que representa la 
-hipótesis nula mayor es la significatividad estadística, la calidad del PSM
+se sitúa la mejor puntuación del centro de la distribución %que representa la hipótesis nula 
+mayor es la significatividad estadística de la asignación PSM.
+
 
 El \emph{p-valor}, es por tanto, una medida de la probabilidad de que el
 mejor péptido candidato seleccionado sea asignado por azar al espectro.
@@ -1152,14 +1185,46 @@ estadísticos adicionales a nivel global, como la Tasa de Falsos Positivos, FDR
 y la Probabilidad de Error Posterior, PEP.
 
 
-\subsubsection*{Tasa de Falsos Positivos, FDR y Probabilidad de Error Posterior, PEP}
+\subsubsection*{Bases de datos señuelo, Tasa de Falsos Descubrimientos (FDR)
+y Probabilidad de Error Posterior (PEP)}
 
 En el caso de experimentos de alto rendimiento en los que se producen
-miles de espectros, la evaluación estadística mas ampliamente utilizada
-es la \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)} \citep{Benjamini1995}.
-Básicamente, el concepto FDR, se refiere a la proporción de falsos positivos
+miles de espectros, la evaluación estadística más ampliamente utilizada
+es un tipo de corrección de tests múltiples, 
+la \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)} \citep{Benjamini1995}.
+Básicamente, el concepto de tasa FDR se refiere a la proporción de PSMs incorrectos
 que se aceptan en todo el conjunto de PSMs de un experimento para un umbral
-de puntuación (o de \emph{p-valor}) fijado.
+de puntuación (o de parámetro estadístico como el \emph{p-valor}) fijado.
+
+Para la estimación de la tasa FDR, la estrategia utilizada generalmente
+consiste en utilizar una base de datos señuelo \citep{Elias2007}.
+Es una aproximación sencilla y efectiva que requiere que los espectros MS/MS
+sean comparados con secuencias llamadas \emph{señuelo} o 
+\emph{decoy}, que pueden ser construidas de varias formas pero que, en cualquier
+caso, son secuencias que no existen, no corresponden a ninguna proteína. 
+Para ello, se puede añadir a la base de datos de secuencias reales 
+(secuencias \emph{target})
+un número equivalente de secuencias \emph{señuelo} y hacer que el motor de búsqueda
+use esta base de datos concatenada (\emph{target-decoy}) del doble de tamaño que la original.
+ O bien se pueden realizar dos búsquedas consecutivas, una utilizando las 
+secuencias \emph{reales} y otra a continuación utilizando las \emph{señuelo}.
+
+El objetivo de la creación de estas secuencias \emph{señuelo} es % permiten %por tanto
+recrear una hipótesis nula. Sabemos que los resultados
+correspondientes a proteínas señuelo (dado que están claramente etiquetadas
+en el fichero fasta) son identificaciones incorrectas.
+
+Con esta hipótesis nula, la estrategia asume una idea básica central: la frecuencia con que los
+espectros MS/MS son asignados a secuencias \emph{señuelo} sigue la 
+misma distribución que la frecuencia con que los espectros son asignados
+incorrectamente a secuencias \emph{reales}. 
+
+%Dice Elias Gygi que "Separate searching overestimates FP rates by underestimationg low-scoring correct PSMs
+%Pero la estrategia de J. Vazquez son búsquedas separadas
+
+
+
+%Elias Gygi, Nat Method \citep{Elias2007}
 
 %Al igual que los estadísticos \emph{p-valor} y \emph{e-valor} evalúan la calidad en las
 %distribuciones de espectro individual, la calidad del experimento a nivel

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  29 SEP 2014 17:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  2 OCT 2014 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,7 +797,7 @@ Package pdftex.def Info: Imagenes/Vectorial/maldi_y_esi.pdf used on input line
 211.
 (pdftex.def)             Requested size: 276.00105pt x 263.43214pt.
  [7] [8 <./Imagenes/Vectorial/maldi_y_esi.pdf>] [9]
-<Imagenes/Vectorial/Q_QIT_OT.pdf, id=472, 559.2677pt x 347.27087pt>
+<Imagenes/Vectorial/Q_QIT_OT.pdf, id=469, 559.2677pt x 347.27087pt>
 File: Imagenes/Vectorial/Q_QIT_OT.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/Q_QIT_OT.pdf>
@@ -805,7 +805,7 @@ Package pdftex.def Info: Imagenes/Vectorial/Q_QIT_OT.pdf used on input line 313
 .
 (pdftex.def)             Requested size: 341.5519pt x 212.08397pt.
  [10]
-<Imagenes/Vectorial/tandem_ms.pdf, id=478, 309.25539pt x 189.87616pt>
+<Imagenes/Vectorial/tandem_ms.pdf, id=475, 309.25539pt x 189.87616pt>
 File: Imagenes/Vectorial/tandem_ms.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/tandem_ms.pdf>
@@ -814,96 +814,102 @@ Package pdftex.def Info: Imagenes/Vectorial/tandem_ms.pdf used on input line 36
 (pdftex.def)             Requested size: 341.5519pt x 209.70752pt.
  [11 <./Imagenes/Vectorial/Q_QIT_OT.pdf>] [12 <./Imagenes/Vectorial/tandem_ms.p
 df>]
-<Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf, id=544, 391.40767pt x
+<Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf, id=537, 391.40767pt x
  205.1981pt>
 File: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf Graphic file (typ
 e pdf)
  <use Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pd
-f used on input line 418.
+f used on input line 428.
 (pdftex.def)             Requested size: 276.00105pt x 144.69284pt.
 
-[13 <./Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>] [14]
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+ [13 <./Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
 [16]
-<Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf, id=594, 572.06221pt x 3
+<Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf, id=588, 572.06221pt x 3
 80.44633pt>
 File: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf Graphic file (type 
 pdf)
  <use Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf 
-used on input line 634.
+used on input line 658.
 (pdftex.def)             Requested size: 341.5519pt x 227.15497pt.
 
 [17]
 Underfull \vbox (badness 4505) has occurred while \output is active []
 
  [18 <./Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>] [19] [20] [21]
-<Imagenes/Vectorial/spectrum_identification.pdf, id=655, 570.93298pt x 263.3589
+Overfull \hbox (3.19641pt too wide) in paragraph at lines 884--888
+[]\T1/cmr/m/n/10 Una apro-xi-ma-ción sen-sa-ta pue-de con-sis-tir en (dis-po-ni
+en-do de re-cur-sos compu-
+ []
+
+
+<Imagenes/Vectorial/spectrum_identification.pdf, id=651, 570.93298pt x 263.3589
 pt>
 File: Imagenes/Vectorial/spectrum_identification.pdf Graphic file (type pdf)
  <use Imagenes/Vectorial/spectrum_identification.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/spectrum_identification.pdf used on
- input line 872.
+ input line 911.
 (pdftex.def)             Requested size: 341.5519pt x 157.55443pt.
  [22]
-Underfull \vbox (badness 1314) has occurred while \output is active []
+Underfull \vbox (badness 2173) has occurred while \output is active []
 
  [23 <./Imagenes/Vectorial/spectrum_identification.pdf>] [24]
-<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=728, 
+<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=725, 
 455.14671pt x 372.44254pt>
 File: Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf Grap
 hic file (type pdf)
 
 <use Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/protein_inference_non_random_peptid
-e_grouping.pdf used on input line 1041.
+e_grouping.pdf used on input line 1082.
 (pdftex.def)             Requested size: 341.5519pt x 279.49602pt.
 
-Underfull \vbox (badness 7722) has occurred while \output is active []
-
- [25 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>] 
-[26]
-<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=746, 527.
+[25] [26 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pd
+f>]
+<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=743, 527.
 36072pt x 343.05548pt>
 File: Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf Graphic 
 file (type pdf)
 
 <use Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/single_spectrum_and_average_distrib
-utions.pdf used on input line 1117.
+utions.pdf used on input line 1158.
 (pdftex.def)             Requested size: 341.5519pt x 222.18776pt.
 
 
-Package natbib Warning: Citation `)' on page 27 undefined on input line 1133.
+Package natbib Warning: Citation `)' on page 27 undefined on input line 1174.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1137
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1178
 .
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1137.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1178.
 
  [27 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>] [28]
-
-<Imagenes/Vectorial/esquema_srm.pdf, id=786, 552.38873pt x 272.54321pt>
+ [29]
+<Imagenes/Vectorial/esquema_srm.pdf, id=793, 552.38873pt x 272.54321pt>
 File: Imagenes/Vectorial/esquema_srm.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/esquema_srm.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/esquema_srm.pdf used on input line 
-1234.
+1307.
 (pdftex.def)             Requested size: 341.5519pt x 168.52173pt.
- [29 <./Imagenes/Vectorial/esquema_srm.pdf>] [30]) [31]
+ [30 <./Imagenes/Vectorial/esquema_srm.pdf>] [31]) [32]
 \openout2 = `Capitulos/Parte2.aux'.
 
- (./Capitulos/Parte2.tex [32
+ (./Capitulos/Parte2.tex [33
 
 
 
-] [33] [34])
+] [34])
 \openout2 = `Capitulos/01Capitulo1.aux'.
 
 
@@ -1302,8 +1308,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
  12412 strings out of 494997
- 179643 string characters out of 3180092
- 286430 words of memory out of 3000000
+ 179639 string characters out of 3180092
+ 286422 words of memory out of 3000000
  14864 multiletter control sequences out of 15000+200000
  21659 words of font info for 46 fonts, out of 3000000 for 9000
  279 hyphenation exceptions out of 8191
@@ -1328,10 +1334,10 @@ ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on Tesis.pdf (80 pages, 1903836 bytes).
+Output written on Tesis.pdf (80 pages, 1907425 bytes).
 PDF statistics:
- 1914 PDF objects out of 2073 (max. 8388607)
- 1056 compressed objects within 11 object streams
+ 1917 PDF objects out of 2073 (max. 8388607)
+ 1058 compressed objects within 11 object streams
  151 named destinations out of 1000 (max. 500000)
  445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
