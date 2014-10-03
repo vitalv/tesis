@@ -720,10 +720,11 @@ A cada una de estas asignaciones compuestas por un par péptido-espectro
 se les denomina generalmente PSM (\textit{Peptide Spectrum Match})
 
 Las estrategias utilizadas para la asignación de PSMs básicamente pueden
- clasificarse en tres tipos. La más extendida es la búsqueda basada en secuencia,
+ clasificarse en tres tipos. La más extendida es la búsqueda utilizando
+bases de datos de secuencias,
 consistente en establecer una correlación entre
 el espectro MS/MS obtenido empíricamente y espectros teóricos predichos 
-a partir de base de datos de secuencias. 
+a partir de secuencias. 
 Otra estrategia, usada en casos en que el genoma del 
 organismo objeto de estudio no está (o sólo parcialmente) secuenciado, es la secuenciación 
 \textit{de novo} en la que la secuencia se infiere directamente del espectro
@@ -736,10 +737,11 @@ con los nuevos espectros adquiridos en el experimento.
 
 
 \phantomsection
-\subsection*{Búsqueda basada en secuencia}
-\addcontentsline{toc}{subsection}{Búsqueda basada en secuencia}
+\subsection*{Búsqueda con bases de datos de secuencias}
+\addcontentsline{toc}{subsection}{Búsqueda con bases de datos de secuencias}
 
-La búsqueda basada en secuencia es el principal y más usado método
+La búsqueda utilizando bases de datos de secuencias es el principal y más
+ extendido método
 de asignación de una secuencia peptídica a un espectro MS/MS.
 Existen una gran variedad de herramientas computacionales para realizar
 esta tarea. 
@@ -1096,13 +1098,17 @@ bioinformático automatizado de estos datos es por tanto un aspecto
 fundamental para la interpretación de los resultados.
 Por otra parte, no a todos los espectros MS/MS generados se
 les asigna un péptido, y a su vez, de todo el conjunto de PSMs sólo
-una fracción son correctos, es decir corresponden realmente a la secuencia
-asignada. De hecho, en algunos experimentos realizados en instrumentos
+una fracción son correctos, es decir el espectro corresponde realmente a
+la secuencia asignada. De hecho, en algunos experimentos realizados en instrumentos
 de baja resolución, los PSMs incorrectos pueden llegar a suponer la mayoría.
 
 Por eso, el desarrollo de métodos de evaluación de la calidad, en términos
 de confianza estadística, es una tarea crucial para filtrar los resultados
-generados.
+generados. Para hacer este tipo de análisis estadístico de los resultados
+es importante conocer la distribucion de puntuaciones de los péptidos 
+candidatos que pueden asignarse a cada espectro individual y, una vez seleccionado
+el mejor candidato, la distribucion de todas esas mejores puntuaciones de 
+todos los PSMs en el conjunto del experimento.
 
 \subsubsection*{Distribuciones de Espectro Individual y Promedio}
 
@@ -1110,7 +1116,7 @@ generados.
 
 Cuando un espectro MS/MS es comparado con los espectros teóricos de los
 péptidos en la lista de candidatos creada a partir de la base de datos de referencia, 
-el \textit{software} permite obtener una lista de péptidos ordenados en función 
+se puede obtener una lista de péptidos ordenados en función 
 de la puntuación obtenida que mide el grado de similitud entre el espectro
 empírico adquirido y el teórico.
 La función de puntuación es un valor dependiente del motor de búsqueda
@@ -1120,16 +1126,17 @@ Para ello, en primer lugar se selecciona el mejor péptido
 asignado a un espectro, es decir aquel candidato con la mejor puntuación,
 %. La \emph{hipótesis nula} se estima construyendo
 y a continuación se construye
-una distribución de las puntuaciones de todos los péptidos comparados
-con el espectro exceptuando el mejor candidato. El \emph{p-valor} se calcula 
-entonces relacionando la puntuación del mejor péptido con respecto a la
+una distribución de las puntuaciones de todo el resto de péptidos comparados
+con el espectro. Esta distribución 
+representa la hipótesis nula, una asignación PSM por azar.
+El \emph{p-valor} se calcula 
+entonces relacionando la puntuación del mejor péptido con respecto a esta
 distribución (aleatoria) del resto de puntuaciones. Cuanto más alejada 
 se sitúa la mejor puntuación del centro de la distribución %que representa la hipótesis nula 
-mayor es la significatividad estadística de la asignación PSM.
-
-
-El \emph{p-valor}, es por tanto, una medida de la probabilidad de que el
-mejor péptido candidato seleccionado sea asignado por azar al espectro.
+mayor es la significatividad estadística del PSM.% la asignación péptido-espectro.
+El \emph{p-valor}, es por tanto, una medida de la probabilidad 
+% de observar por azar un PSM con una cierta puntuación o mayor (asumiendo que se cumple la hipotesis nula
+de que el mejor péptido candidato seleccionado sea asignado por azar al espectro.
 Así, un \emph{p-valor} bajo indicará una baja probabilidad de que el
 PSM haya sido asignado de forma incorrecta, es decir, es probablemente correcto.
 
@@ -1181,7 +1188,7 @@ otros 10.000 PSMs, el \emph{p-valor} original habría de reajustarse a
 Las distribuciones promedio, como muestra la (Figura~\ref{fig:single_spectrum_and_average_distributions}), 
 son distribuciones de las mejores puntuaciones
 de todos los PSMs de un experimento y permiten por tanto estimar otros parámetros
-estadísticos adicionales a nivel global, como la Tasa de Falsos Positivos, FDR
+estadísticos adicionales a nivel global, como la Tasa de Falsos Descubrimientos, FDR
 y la Probabilidad de Error Posterior, PEP.
 
 

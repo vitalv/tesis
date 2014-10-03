@@ -17,7 +17,7 @@
 \BOOKMARK [1][-]{section*.18}{Prote\363mica de alto rendimiento Shotgun}{chapter*.6}% 17
 \BOOKMARK [2][-]{section*.20}{Separaci\363n multidimensional de p\351ptidos}{section*.18}% 18
 \BOOKMARK [1][-]{section*.21}{Asignaci\363n P\351ptido-Espectro}{chapter*.6}% 19
-\BOOKMARK [2][-]{section*.22}{B\372squeda basada en secuencia}{section*.21}% 20
+\BOOKMARK [2][-]{section*.22}{B\372squeda con bases de datos de secuencias}{section*.21}% 20
 \BOOKMARK [2][-]{section*.24}{B\372squeda basada en bibliotecas de espectros}{section*.21}% 21
 \BOOKMARK [2][-]{section*.25}{Identificaci\363n por secuenciaci\363n de novo}{section*.21}% 22
 \BOOKMARK [1][-]{section*.26}{Inferencia de prote\355nas a partir de p\351ptidos}{chapter*.6}% 23
@@ -33,6 +33,8 @@
 \BOOKMARK [-1][-]{part.3}{III Creaci\363n de un PeptideAtlas de Candida albicans}{}% 33
 \BOOKMARK [0][-]{chapter.3}{A Candida albicans PeptideAtlas}{part.3}% 34
 \BOOKMARK [1][-]{section.3.1}{}{chapter.3}% 35
-\BOOKMARK [-1][-]{part.4}{IV Desarrollo de una base de datos para datos de Prote\363mica Dirigida \(MRM\)}{}% 36
-\BOOKMARK [-1][-]{chapter*.35}{Bibliograf\355a}{}% 37
-\BOOKMARK [-1][-]{fin.-1}{Fin}{}% 38
+\BOOKMARK [0][-]{chapter.4}{Incremento en la cobertura del proteoma en el PeptideAtlas de Candida albicans}{part.3}% 36
+\BOOKMARK [1][-]{section.4.1}{}{chapter.4}% 37
+\BOOKMARK [-1][-]{part.4}{IV Desarrollo de una base de datos para datos de Prote\363mica Dirigida \(MRM\)}{}% 38
+\BOOKMARK [-1][-]{chapter*.35}{Bibliograf\355a}{}% 39
+\BOOKMARK [-1][-]{fin.-1}{Fin}{}% 40
