@@ -1187,8 +1187,12 @@ Ambos parámetros estadísticos, el \emph{p-valor} y el \emph{e-valor},
 a diferencia del valor de puntuación original calculado por el motor de búsqueda,
 son independientes de la función de puntuación utilizada y por tanto 
 suponen una medida más general de la calidad de cada PSM y son comparables
-en ensayos usando distintos instrumentos o diferentes motores de búsqueda o parámetros.
+en ensayos que usan distintos instrumentos, diferentes motores de búsqueda y parámetros.
 
+Algunos motores de búsqueda, además de su función de puntuación propia,
+como \textit{hyperscore} en el caso de \textit{X!Tandem} o \textit{ion score}
+en el caso de \textit{Mascot} también hacen uso de una distribución de
+espectro individual para calcular y proporcionar un \textit{e-valor} para cada PSM. 
 
 %SALVA:
 %Los E-value se incluyen en los resultados de
@@ -1201,14 +1205,14 @@ en ensayos usando distintos instrumentos o diferentes motores de búsqueda o pará
 
 \emph{Distribución promedio}.
 
-En un experimento generalmente se obtienen miles de espectros MS/MS. Las
-distribuciones promedio modelan las mejores puntuaciones de todos los PSM
-de un experimento. En este caso, las medidas estadísticas de las distribuciones
-de espectro individual no son suficientes. Incluso en el caso de que se requiera
+En los experimento \textit{shotgun} generalmente se obtienen miles de espectros MS/MS.
+Las medidas estadísticas de las distribuciones de espectro individual
+por tanto, no son suficientes.
+Incluso en el caso de que se requiera
 un \emph{p-valor} muy bajo, (lo que implicaría una confianza estadística muy alta
 para un PSM en concreto) si se evalúan miles de espectros MS/MS podrían 
 ocurrir PSMs con \emph{p-valores} igualmente bajos solo por azar. Por este
-motivo se utilizan estrategias de \emph{corrección de tests múltiples} 
+motivo se utilizan estrategias de \emph{corrección de test múltiples} 
 (\emph{multiple test correction}) que re-ajustan los \emph{p-valores}.
 Una aproximación muy utilizada, aunque produce resultados conservadores,
   es la corrección de Bonferroni(\citep), que simplemente
@@ -1225,56 +1229,111 @@ y la Probabilidad de Error Posterior, PEP.
 
 \medskip
 
-%
-%SALVA:
-%Algunos motores de búsqueda como X!Tandem, Phenyx, o Mascot
-%utilizan una
-%distribución individual formada por la distribución de las puntuaciones de un espectro
-%experimental enfrentado con todos los posibles candidatos en la base de datos. Sin embargo, en
-%la Proteómica de segunda generación, en la que se generan cientos de miles de espectros en un
-%mismo experimento, es esencial conocer también la distribución global de las asignaciones de
-%todos los espectros en la base de datos para así poder estimar una tasa de error global sobre el
-%número de identificaciones obtenido.
-%
+Es importante destacar que las aproximaciones que usan distribuciones de
+espectro individual son compatibles con las que usan distribuciones promedio,
+es decir, se puede realizar un análisis FDR global para un conjunto de
+PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
+
 
 
 
 \subsubsection*{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
 
-En el caso de experimentos de alto rendimiento en los que se producen
-miles de espectros, la evaluación estadística más ampliamente utilizada
-es un tipo de corrección de tests múltiples, 
+El tipo de evaluación estadística más ampliamente utilizada en experimentos
+de proteómica \textit{shotgun} es un tipo de corrección de test múltiples, 
 la \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)} \citep{Benjamini1995}.
 Básicamente, el concepto de tasa FDR se refiere a la proporción de PSMs incorrectos
 que se aceptan en todo el conjunto de PSMs de un experimento para un umbral
 de puntuación (o de parámetro estadístico como el \emph{p-valor}) fijado.
 
-Para la estimación de la tasa FDR, la estrategia utilizada generalmente
-consiste en utilizar una base de datos señuelo \citep{Elias2007}.
-Es una aproximación sencilla y efectiva que requiere que los espectros MS/MS
-sean comparados con secuencias llamadas \emph{señuelo} o 
+Para la estimación de la tasa FDR (Figura~\ref{fig:single_spectrum_and_average_distributions}),
+la estrategia utilizada consiste
+esencialmente en utilizar una base de datos señuelo \citep{Elias2007}.
+Es una aproximación sencilla pero efectiva que requiere que los espectros MS/MS
+sean comparados con espectros teóricos derivados de secuencias llamadas \emph{señuelo} o 
 \emph{decoy}, que pueden ser construidas de varias formas pero que, en cualquier
 caso, son secuencias que no existen, no corresponden a ninguna proteína. 
 Para ello, se puede añadir a la base de datos de secuencias reales 
 (secuencias \emph{target})
 un número equivalente de secuencias \emph{señuelo} y hacer que el motor de búsqueda
 use esta base de datos concatenada (\emph{target-decoy}) del doble de tamaño que la original.
- O bien se pueden realizar dos búsquedas consecutivas, una utilizando las 
-secuencias \emph{reales} y otra a continuación utilizando las \emph{señuelo}.
+ O bien se pueden realizar dos búsquedas consecutivas, una utilizando la
+base de datos de secuencias \emph{reales} y otra a continuación utilizando
+la de secuencias \emph{señuelo}.
 
+\figura{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
+{Construcción de una base de datos señuelo}
 El objetivo de la creación de estas secuencias \emph{señuelo} es % permiten %por tanto
-recrear una hipótesis nula. Sabemos que los resultados
-correspondientes a proteínas señuelo (dado que están claramente etiquetadas
-en el fichero fasta) son identificaciones incorrectas.
-
-Con esta hipótesis nula, la estrategia asume una idea básica central: la frecuencia con que los
+recrear una hipótesis nula. Sabemos que los resultados de identificaciones
+correspondientes a secuencias \emph{señuelo}, claramente etiquetadas
+en el fichero fasta, son identificaciones incorrectas. Con esta hipótesis nula, la estrategia asume una idea básica central: la frecuencia con que los
 espectros MS/MS son asignados a secuencias \emph{señuelo} sigue la 
 misma distribución que la frecuencia con que los espectros son asignados
-incorrectamente a secuencias \emph{reales}. 
+incorrectamente a secuencias \emph{target}. 
 
+Así, de forma general y dado que las bases de datos de secuencias 
+\textit{target} y \textit{señuelo}
+tienen el mismo tamaño, el número de PSMs incorrectos
+(N\textsubscript{inc}, aquellos espectros a los que se ha asignado
+incorrectamente una secuencia \textit{target})
+puede ser considerado equivalente al número de PSMs \emph{señuelo} 
+(N\textsubscript{d}, espectros a los que se ha asginado una secuencia \emph{señuelo})
+Con esto se puede estimar la tasa FDR como
+ N\textsubscript{d}/N\textsubscript{t},
+esto es, la proporción de PSMs \textit{señuelo}, N\textsubscript{d} como sustituto
+conocido de N\textsubscript{inc}, 
+entre el total de secuencias \textit{target} con puntuaciones superiores
+al umbral fijado, N\textsubscript{t}. 
+En ocasiones, de forma alternativa, la tasa FDR también puede calcularse como 
+2N\textsubscript{d}/(N\textsubscript{t}+N\textsubscript{d})
+
+Esta estimación genérica puede tener variantes.
+En el caso de que se realicen dos búsquedas independientes, una sobre
+la base de datos \textit{target} y a continuación sobre la equivalente \textit{señuelo},
+la estimación de FDR como 
+N\textsubscript{d}/N\textsubscript{t}
+resulta conservadora ya que N\textsubscript{d} puede considerarse una sobre-estimación
+de N\textsubscript{inc}. Esto se debe a que toda la población de espectros
+se compara con las secuencias \textit{señuelo} a pesar de que algunos de los
+espectros podrían asignarse correctamente a una secuencia \textit{target}.
+
+Una forma de corregir esto consiste en estimar una aproximación 
+previa de la fracción N\textsubscript{inc} dentro de N\textsubscript{t} \citep{Kall2008}.  
+Así se puede incluir en la tasa FDR un factor de corrección definido
+por el porcentaje estimado de PSMs \textit{target} incorrectos (PIT): Si en 
+N\textsubscript{t} el 80\% de los PSMs son incorrectos, la tasa FDR 
+calculada como N\textsubscript{d}/N\textsubscript{t}, se multiplica por 0.8
+para obtener un valor FDR más preciso (Por cada 100 PSMs \textit{señuelo}
+en el conjunto de PSMs aceptado se estiman 80 PSMs \textit{target} incorrectos) 
+
+Otra forma de corregir la sobre-estimación de de N\textsubscript{inc}
+usando búsquedas separadas consiste en e
+
+Cuando se hacen búsquedas utilizando una base de datos concatenada 
+\textit{target-decoy} también se produce un resultado conservador. En este caso
+se debe al efecto de competición entre secuencias \textit{target} y señuelo.
+Esto significa que a algunos espectros se les puede asignar una secuencia
+señuelo con una puntuación mayor a la que se obtiene al asignarles la
+secuencia \textit{target} real. En tal caso se produce una reducción del
+número de PSMs correcto y por tanto un incremento de FDR
+
+
+%This PIT is equivalent to the ratio of the area under the dotted black line (the incorrect target PSMs) to the area under the solid black line (the decoy PSMs).
+%The PIT is important because it allows us to reduce the estimated FDR associated with a given set of accepted target PSMs. In our simulation, if we accept X decoy PSMs with scores above a certain threshold, then we expect to find 0.8 X incorrect target PSMs above the same theshold. A more accurate estimate of the FDR, therefore, is to multiply the previous estimate -the ratio of the number of decoy PSMs versus target PSMs above a threshold- by the PIT.
+
+
+
+%En cuanto a la forma en que se construyen estas secuencias señuelo
 
 \figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
 {Distribuciones de Espectro Individual y Promedio}
+
+
+
+\textit{
+IMPORTANTE:
+Mencionar MAYU, explicar en que consiste un poquito por lo menos
+}
 
 
 \textit{
@@ -1282,12 +1341,6 @@ Dice Elias Gygi que "Separate searching overestimates FP rates by underestimatio
 Pero la estrategia de J. Vazquez son búsquedas separadas
 }
 
-\textit{
-Es importante destacar que las aproximaciones que usan distribuciones de
-espectro individual son compatibles con las que usan distribuciones promedio,
-es decir, se puede realizar un análisis FDR global para un conjunto de
-PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
-}
 
 
 
