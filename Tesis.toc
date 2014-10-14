@@ -12,23 +12,25 @@
 \contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{20}{section*.18}
 \contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{21}{section*.20}
 \contentsline {section}{Asignaci\'on P\'eptido-Espectro}{22}{section*.21}
-\contentsline {subsection}{B\'usqueda con bases de datos de secuencias}{23}{section*.22}
+\contentsline {subsection}{B\'usqueda en bases de datos de secuencias}{23}{section*.22}
 \contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{28}{section*.24}
 \contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{29}{section*.25}
-\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{30}{section*.26}
-\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{31}{section*.28}
-\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{35}{section*.30}
-\contentsline {section}{Candida albicans como organismo modelo}{36}{section*.32}
-\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{36}{section*.33}
-\contentsline {section}{Formatos de archivos usados en espectrometr\IeC {\'\i }a de masas y prote\'omica}{36}{section*.34}
-\contentsline {part}{II\hspace {1em}Desarrollo de una aplicacion web para datos de prote\'omica shotgun de \textit {Candida albicans}}{39}{part.2}
-\contentsline {chapter}{\numberline {1}Proteopathogen, a protein database for studying \textit {Candida albicans} - host interaction}{41}{chapter.1}
-\contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{49}{chapter.2}
-\contentsline {section}{\numberline {2.1}}{49}{section.2.1}
-\contentsline {part}{III\hspace {1em}Creaci\'on de un PeptideAtlas de \textit {Candida albicans}}{51}{part.3}
-\contentsline {chapter}{\numberline {3}A \textit {Candida albicans} PeptideAtlas}{53}{chapter.3}
-\contentsline {section}{\numberline {3.1}}{61}{section.3.1}
-\contentsline {chapter}{\numberline {4}Incremento en la cobertura del proteoma en el PeptideAtlas de Candida albicans}{63}{chapter.4}
-\contentsline {section}{\numberline {4.1}}{63}{section.4.1}
-\contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{65}{part.4}
-\contentsline {part}{Bibliograf\IeC {\'\i }a}{67}{chapter*.35}
+\contentsline {subsection}{B\'usqueda mediante etiquetas de secuencia}{30}{section*.26}
+\contentsline {subsection}{B\'usquedas tolerantes y multi-etapa}{30}{section*.27}
+\contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{30}{section*.28}
+\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{30}{section*.30}
+\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{36}{section*.32}
+\contentsline {section}{Candida albicans como organismo modelo}{37}{section*.34}
+\contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{37}{section*.35}
+\contentsline {section}{Formatos de archivos usados en espectrometr\IeC {\'\i }a de masas y prote\'omica}{37}{section*.36}
+\contentsline {part}{II\hspace {1em}Desarrollo de una aplicacion web para datos de prote\'omica shotgun de \textit {Candida albicans}}{41}{part.2}
+\contentsline {chapter}{\numberline {1}Proteopathogen, a protein database for studying \textit {Candida albicans} - host interaction}{43}{chapter.1}
+\contentsline {chapter}{\numberline {2}Proteopathogen 2, adaptaci\'on al formato est\'andar de identificaciones .mzIdentML}{51}{chapter.2}
+\contentsline {section}{\numberline {2.1}}{51}{section.2.1}
+\contentsline {part}{III\hspace {1em}Creaci\'on de un PeptideAtlas de \textit {Candida albicans}}{53}{part.3}
+\contentsline {chapter}{\numberline {3}A \textit {Candida albicans} PeptideAtlas}{55}{chapter.3}
+\contentsline {section}{\numberline {3.1}}{63}{section.3.1}
+\contentsline {chapter}{\numberline {4}Incremento en la cobertura del proteoma en el PeptideAtlas de Candida albicans}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}}{65}{section.4.1}
+\contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{67}{part.4}
+\contentsline {part}{Bibliograf\IeC {\'\i }a}{69}{chapter*.37}

@@ -737,8 +737,8 @@ con los nuevos espectros adquiridos en el experimento.
 
 
 \phantomsection
-\subsection*{Búsqueda con bases de datos de secuencias}
-\addcontentsline{toc}{subsection}{Búsqueda con bases de datos de secuencias}
+\subsection*{Búsqueda en bases de datos de secuencias}
+\addcontentsline{toc}{subsection}{Búsqueda en bases de datos de secuencias}
 
 La búsqueda utilizando bases de datos de secuencias es el principal y más
  extendido método
@@ -1012,8 +1012,6 @@ y dada una distribución calculada de los valores \mz predichos para los candidat
 %
 
 
-
-
  
 \phantomsection
 \subsection*{Búsqueda basada en bibliotecas de espectros}
@@ -1062,6 +1060,42 @@ ya que, para la gran cantidad de espectros obtenidos en un experimento
 típico de \textit{shotgun}, el proceso es computacionalmente muy exhaustivo
 y requiere espectros MS/MS de gran calidad.
 
+
+
+
+
+\phantomsection
+\subsection*{Búsqueda mediante etiquetas de secuencia}
+\addcontentsline{toc}{subsection}{Búsqueda mediante etiquetas de secuencia}
+
+\textit{Mirar Hybrid approaches (3.4) en Nesvizhskii review,
+también -Computational and Statistical Analysis of Protein Mass Spectrometry Data- 
+de MacCoss}
+
+\textit{
+Tag-based methods occupy an appealing middle ground between database search
+and de novo methods. Here, the basic idea is to use de novo analysis to 
+identify a collection of subpeptides (tags) that are hypothesized to occur
+in the sequence, and then extract candidates from a database that contain
+the tags. Tag-based methods can be quite fast, and retain the ability to
+partially identify spectra for which the corresponding peptide is not in
+the database
+}
+
+\textit{
+Nesviz: -Hybrid approaches are particularly useful for the identification
+of post-translationally or chemically modified peptides-
+}
+
+
+\phantomsection
+\subsection*{Búsquedas tolerantes y multi-etapa}
+\addcontentsline{toc}{subsection}{Búsquedas tolerantes y multi-etapa}
+
+\textit{Mirar Strategies for more comprehensive... (4) en Nesvizhskii review}
+
+
+
 %-------------------------------------------------------------------
 \phantomsection
 \section*{Inferencia de proteínas a partir de péptidos}
@@ -1083,6 +1117,8 @@ de los péptidos que son identificados a partir de los espectros.
 \figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
 {Agrupamiento no aleatorio de péptidos en proteínas}
 
+
+\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
 
 %-------------------------------------------------------------------
 \phantomsection
@@ -1162,10 +1198,6 @@ en ensayos usando distintos instrumentos o diferentes motores de búsqueda o pará
 
 \medskip{}
 
-\figura{Vectorial/single_spectrum_and_average_distributions}{width=.99\textwidth}{fig:single_spectrum_and_average_distributions}%
-{Distribuciones de Espectro Individual y Promedio}
-
-
 
 \emph{Distribución promedio}.
 
@@ -1185,15 +1217,29 @@ Así para un PSM con \emph{p-valor} = 0,05 en un experimento en el que hay
 otros 10.000 PSMs, el \emph{p-valor} original habría de reajustarse a
 0,05/10.000 = 5·10\textsuperscript{-6}.
 
-Las distribuciones promedio, como muestra la (Figura~\ref{fig:single_spectrum_and_average_distributions}), 
+Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
 son distribuciones de las mejores puntuaciones
 de todos los PSMs de un experimento y permiten por tanto estimar otros parámetros
 estadísticos adicionales a nivel global, como la Tasa de Falsos Descubrimientos, FDR
 y la Probabilidad de Error Posterior, PEP.
 
+\medskip
 
-\subsubsection*{Bases de datos señuelo, Tasa de Falsos Descubrimientos (FDR)
-y Probabilidad de Error Posterior (PEP)}
+%
+%SALVA:
+%Algunos motores de búsqueda como X!Tandem, Phenyx, o Mascot
+%utilizan una
+%distribución individual formada por la distribución de las puntuaciones de un espectro
+%experimental enfrentado con todos los posibles candidatos en la base de datos. Sin embargo, en
+%la Proteómica de segunda generación, en la que se generan cientos de miles de espectros en un
+%mismo experimento, es esencial conocer también la distribución global de las asignaciones de
+%todos los espectros en la base de datos para así poder estimar una tasa de error global sobre el
+%número de identificaciones obtenido.
+%
+
+
+
+\subsubsection*{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
 
 En el caso de experimentos de alto rendimiento en los que se producen
 miles de espectros, la evaluación estadística más ampliamente utilizada
@@ -1226,40 +1272,42 @@ espectros MS/MS son asignados a secuencias \emph{señuelo} sigue la
 misma distribución que la frecuencia con que los espectros son asignados
 incorrectamente a secuencias \emph{reales}. 
 
-%Dice Elias Gygi que "Separate searching overestimates FP rates by underestimationg low-scoring correct PSMs
-%Pero la estrategia de J. Vazquez son búsquedas separadas
+
+\figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
+{Distribuciones de Espectro Individual y Promedio}
 
 
+\textit{
+Dice Elias Gygi que "Separate searching overestimates FP rates by underestimationg low-scoring correct PSMs
+Pero la estrategia de J. Vazquez son búsquedas separadas
+}
 
-%Elias Gygi, Nat Method \citep{Elias2007}
-
-%Al igual que los estadísticos \emph{p-valor} y \emph{e-valor} evalúan la calidad en las
-%distribuciones de espectro individual, la calidad del experimento a nivel
-%global se mide, utilizando las distribuciones promedio, mediante la 
-%\emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)}
-%
-%\emph{ bla, bla , bla}
-
-\medskip
-
+\textit{
 Es importante destacar que las aproximaciones que usan distribuciones de
 espectro individual son compatibles con las que usan distribuciones promedio,
 es decir, se puede realizar un análisis FDR global para un conjunto de
 PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
-
-%
-%SALVA:
-%Algunos motores de búsqueda como X!Tandem, Phenyx, o Mascot
-%utilizan una
-%distribución individual formada por la distribución de las puntuaciones de un espectro
-%experimental enfrentado con todos los posibles candidatos en la base de datos. Sin embargo, en
-%la Proteómica de segunda generación, en la que se generan cientos de miles de espectros en un
-%mismo experimento, es esencial conocer también la distribución global de las asignaciones de
-%todos los espectros en la base de datos para así poder estimar una tasa de error global sobre el
-%número de identificaciones obtenido.
-%
+}
 
 
+
+\subsubsection*{Modelos mixtos de probabilidad. Probabilidad de Error Posterior (PEP). PeptideProphet}
+
+%Modelos mixtos de evaluación de la confianza estadística
+
+La estrategia de las bases de datos señuelo permite una estimación global
+de la tasa FDR pero no proporciona un valor de confianza estadística para 
+cada PSM individual. % en el conjunto de todos los PSMs del experimento.
+Esto se puede calcular mediante la \emph{Probabilidad de Error Posterior, PEP},
+de un PSM, que se define como la fracción
+estimada de PSMs correctos entre una colección de PSMs con puntuaciones 
+(o p-valores / e-valores) similares. %5.2 Nesviz review
+Este tipo de análisis, propuesto por \citep{Keller2002} e implementado 
+en la herramienta \emph{PeptideProphet}, se basa en asumir que la distribución
+promedio de puntuaciones de todos los PSMs del experimento es una combinación
+de distribuciones, un modelo mixto de probabilidad, que integra la 
+distribución de los PSMs incorrectos y la distribución de los PSMs correctos.
+(Figura~\ref{fig:single_spectrum_and_average_distributions})
 
 %-------------------------------------------------------------------
 \phantomsection
