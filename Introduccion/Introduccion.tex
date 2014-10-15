@@ -926,7 +926,7 @@ SEQUEST \citep{Eng1994} fue la primera herramienta descrita para correlacionar
 espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
 calcula la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
-para todos los candidatos con los que se ha comparado.
+para todos los candidatos con los que es comparado.
 En primer lugar se crea un espectro procesado (espectro X) en el que los picos de baja 
 intensidad son elimnados y el resto de valores \mz son redondeados al valor
 entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
@@ -971,6 +971,8 @@ hayan ocurrido aleatoriamente dado el número total de picos en el espectro
 y dada una distribución calculada de los valores \mz predichos para los candidatos 
 
 
+%COMET ?!
+\textit{ Ya que se usa en PeptideAtlas2... nombrarlo al menos??}
 %the probability of that number of matches occurring by chance given the
 %number of peaks in the searched spectrum and the cumulative distribution of
 %m/z values of predicted ions for all candidate peptides in the database. At the
@@ -1212,7 +1214,7 @@ Incluso en el caso de que se requiera
 un \emph{p-valor} muy bajo, (lo que implicaría una confianza estadística muy alta
 para un PSM en concreto) si se evalúan miles de espectros MS/MS podrían 
 ocurrir PSMs con \emph{p-valores} igualmente bajos solo por azar. Por este
-motivo se utilizan estrategias de \emph{corrección de test múltiples} 
+motivo se utilizan estrategias de \emph{corrección de test múltiple} 
 (\emph{multiple test correction}) que re-ajustan los \emph{p-valores}.
 Una aproximación muy utilizada, aunque produce resultados conservadores,
   es la corrección de Bonferroni(\citep), que simplemente
@@ -1232,7 +1234,7 @@ y la Probabilidad de Error Posterior, PEP.
 Es importante destacar que las aproximaciones que usan distribuciones de
 espectro individual son compatibles con las que usan distribuciones promedio,
 es decir, se puede realizar un análisis FDR global para un conjunto de
-PSMs que han sido ordenados por p-valores o e-valores obtenidos individualmente.
+PSMs que han sido ordenados por \textit{p-valores} o \textit{e-valores} obtenidos individualmente.
 
 
 
@@ -1264,16 +1266,17 @@ la de secuencias \emph{señuelo}.
 \figura{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
 {Construcción de una base de datos señuelo}
 El objetivo de la creación de estas secuencias \emph{señuelo} es % permiten %por tanto
-recrear una hipótesis nula. Sabemos que los resultados de identificaciones
-correspondientes a secuencias \emph{señuelo}, claramente etiquetadas
-en el fichero fasta, son identificaciones incorrectas. Con esta hipótesis nula, la estrategia asume una idea básica central: la frecuencia con que los
-espectros MS/MS son asignados a secuencias \emph{señuelo} sigue la 
-misma distribución que la frecuencia con que los espectros son asignados
-incorrectamente a secuencias \emph{target}. 
+recrear una hipótesis nula. Se puede tener la certeza de que los resultados 
+de identificaciones correspondientes a secuencias \emph{señuelo}, claramente 
+etiquetadas en el fichero fasta, son identificaciones incorrectas. 
+Con esta hipótesis nula, la estrategia asume una idea básica central:
+la frecuencia con que los espectros MS/MS son asignados a secuencias 
+\emph{señuelo} sigue la misma distribución que la frecuencia con que los
+espectros son asignados incorrectamente a secuencias \emph{target}. 
 
 Así, de forma general y dado que las bases de datos de secuencias 
 \textit{target} y \textit{señuelo}
-tienen el mismo tamaño, el número de PSMs incorrectos
+tienen el mismo tamaño, el número de PSMs incorrectos o Falsos Positivos
 (N\textsubscript{inc}, aquellos espectros a los que se ha asignado
 incorrectamente una secuencia \textit{target})
 puede ser considerado equivalente al número de PSMs \emph{señuelo} 
@@ -1287,7 +1290,7 @@ al umbral fijado, N\textsubscript{t}.
 En ocasiones, de forma alternativa, la tasa FDR también puede calcularse como 
 2N\textsubscript{d}/(N\textsubscript{t}+N\textsubscript{d})
 
-Esta estimación genérica puede tener variantes.
+Esta estimación general puede tener variantes.
 En el caso de que se realicen dos búsquedas independientes, una sobre
 la base de datos \textit{target} y a continuación sobre la equivalente \textit{señuelo},
 la estimación de FDR como 
@@ -1296,25 +1299,37 @@ resulta conservadora ya que N\textsubscript{d} puede considerarse una sobre-esti
 de N\textsubscript{inc}. Esto se debe a que toda la población de espectros
 se compara con las secuencias \textit{señuelo} a pesar de que algunos de los
 espectros podrían asignarse correctamente a una secuencia \textit{target}.
-
-Una forma de corregir esto consiste en estimar una aproximación 
-previa de la fracción N\textsubscript{inc} dentro de N\textsubscript{t} \citep{Kall2008}.  
+Además, la mayoría de las funciones de puntuación tienden a otorgar
+puntuaciones más altas a PSMs \textit{señuelo} que a PSMs \textit{target}
+incorrectos \citep{Navarro2009a} por lo que la distribución de puntuaciones
+\textit{señuelo} no es un reflejo preciso de la distribución de puntuaciones
+de los PSMs incorrectos.
+Una forma de corregir este efecto consiste en estimar una aproximación 
+previa de la fracción N\textsubscript{inc} dentro de N\textsubscript{t} 
+considerando que la mayoría de los PSMs con puntuaciones bajas son 
+probablemente incorrectos \citep{Kall2008}
 Así se puede incluir en la tasa FDR un factor de corrección definido
 por el porcentaje estimado de PSMs \textit{target} incorrectos (PIT): Si en 
 N\textsubscript{t} el 80\% de los PSMs son incorrectos, la tasa FDR 
-calculada como N\textsubscript{d}/N\textsubscript{t}, se multiplica por 0.8
+calculada como N\textsubscript{d}/N\textsubscript{t} se multiplica por 0.8
 para obtener un valor FDR más preciso (Por cada 100 PSMs \textit{señuelo}
 en el conjunto de PSMs aceptado se estiman 80 PSMs \textit{target} incorrectos) 
 
-Otra forma de corregir la sobre-estimación de de N\textsubscript{inc}
-usando búsquedas separadas consiste en e
+%Otra forma de corregir la sobre-estimación de de N\textsubscript{inc}
+%usando búsquedas separadas consiste en e %refined FDR (J. Vazquez)
 
-Cuando se hacen búsquedas utilizando una base de datos concatenada 
-\textit{target-decoy} también se produce un resultado conservador. En este caso
-se debe al efecto de competición entre secuencias \textit{target} y señuelo.
-Esto significa que a algunos espectros se les puede asignar una secuencia
+Las búsquedas utilizando una base de datos concatenada 
+\textit{target-decoy} son menos sensibles al efecto de sobre-estimación de 
+N\textsubscript{d}, sin embargo también producen un resultado FDR conservador.
+En este caso ya no se compara todo el conjunto de espectros con las 
+secuencias \textit{target} y \textit{señuelo} por separado sino simultáneamente
+lo que produce un efecto de competición.
+Se puede considerar que las secuencias \textit{target} y \textit{señuelo}
+compiten por el espectro.
+Pero esto implica que a algunos espectros se les puede asignar una secuencia
 señuelo con una puntuación mayor a la que se obtiene al asignarles la
-secuencia \textit{target} real. En tal caso se produce una reducción del
+secuencia \textit{target} correcta. En tal caso se produce un aumento 
+de N\textsubscript{d} y una consiguiente reducción del
 número de PSMs correcto y por tanto un incremento de FDR
 
 
@@ -1333,6 +1348,7 @@ número de PSMs correcto y por tanto un incremento de FDR
 \textit{
 IMPORTANTE:
 Mencionar MAYU, explicar en que consiste un poquito por lo menos
+(Y quiza tambien Percolator
 }
 
 

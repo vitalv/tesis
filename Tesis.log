@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  14 OCT 2014 18:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  15 OCT 2014 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,13 +933,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1222.
 
  [33]
-<Imagenes/Vectorial/target_and_decoy_dbs.pdf, id=814, 517.28253pt x 425.16342pt
->
+<Imagenes/Vectorial/target_and_decoy_dbs.pdf, id=814, 517.18219pt x 303.1325pt>
 File: Imagenes/Vectorial/target_and_decoy_dbs.pdf Graphic file (type pdf)
- <use Imagenes/Vectorial/target_and_decoy_dbs.pdf>
+<use Imagenes/Vectorial/target_and_decoy_dbs.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/target_and_decoy_dbs.pdf used on in
 put line 1265.
-(pdftex.def)             Requested size: 341.5519pt x 280.7255pt.
+(pdftex.def)             Requested size: 341.5519pt x 200.19757pt.
 
 Underfull \vbox (badness 2213) has occurred while \output is active []
 
@@ -947,26 +946,29 @@ Underfull \vbox (badness 2213) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <./Imagenes/Vectorial/target_and_decoy_dbs.pdf>]
-<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=885, 636.
+<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=887, 636.
 14923pt x 407.50357pt>
 File: Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf Graphic 
 file (type pdf)
 
 <use Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/single_spectrum_and_average_distrib
-utions.pdf used on input line 1329.
+utions.pdf used on input line 1342.
 (pdftex.def)             Requested size: 345.0pt x 221.00621pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-[37 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>]
-[38] <Imagenes/Vectorial/esquema_srm.pdf, id=957, 552.38873pt x 272.54321pt>
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+ [37 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>] [38]
+
+<Imagenes/Vectorial/esquema_srm.pdf, id=960, 552.38873pt x 272.54321pt>
 File: Imagenes/Vectorial/esquema_srm.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/esquema_srm.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/esquema_srm.pdf used on input line 
-1416.
+1430.
 (pdftex.def)             Requested size: 341.5519pt x 168.52173pt.
  [39 <./Imagenes/Vectorial/esquema_srm.pdf>] [40]) [41]
 \openout2 = `Capitulos/Parte2.aux'.
@@ -986,7 +988,7 @@ Cap\'itulo 1.
 
 
 ]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1119, page=1, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1122, page=1, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1024,7 +1026,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age1 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [46 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1161, page=2, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1164, page=2, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1048,7 +1050,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age2 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [47 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1172, page=3, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1175, page=3, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1072,7 +1074,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age3 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [48 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1182, page=4, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1185, page=4, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1096,7 +1098,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age4 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [49 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1187, page=5, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1190, page=5, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1146,7 +1148,7 @@ Cap\'itulo 3.
 
 
 ]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1223, page=1, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1226, page=1, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1184,7 +1186,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge1 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [58 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1282, page=2, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1285, page=2, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1208,7 +1210,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge2 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [59 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1293, page=3, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1296, page=3, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1232,7 +1234,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge3 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [60 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1303, page=4, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1306, page=4, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1256,7 +1258,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge4 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [61 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1312, page=5, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1315, page=5, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1280,7 +1282,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge5 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [62 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1318, page=6, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1321, page=6, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1304,7 +1306,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge6 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [63 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1323, page=7, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1326, page=7, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1383,10 +1385,10 @@ Package rerunfilecheck Info: File `Tesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 12487 strings out of 494997
- 180817 string characters out of 3180092
- 286779 words of memory out of 3000000
- 14906 multiletter control sequences out of 15000+200000
+ 12491 strings out of 494997
+ 180894 string characters out of 3180092
+ 287819 words of memory out of 3000000
+ 14909 multiletter control sequences out of 15000+200000
  21659 words of font info for 46 fonts, out of 3000000 for 9000
  279 hyphenation exceptions out of 8191
  55i,19n,53p,501b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1410,10 +1412,10 @@ ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on Tesis.pdf (95 pages, 1968334 bytes).
+Output written on Tesis.pdf (95 pages, 1969901 bytes).
 PDF statistics:
- 2118 PDF objects out of 2487 (max. 8388607)
- 1194 compressed objects within 12 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 2123 PDF objects out of 2487 (max. 8388607)
+ 1197 compressed objects within 12 object streams
+ 174 named destinations out of 1000 (max. 500000)
  482 words of extra memory for PDF output out of 10000 (max. 10000000)
 
