@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="esquema_espectrometro_masas.pdf">
+   sodipodi:docname="esquema_espectrometro_masas.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0851103"
-     inkscape:cx="296.69176"
-     inkscape:cy="205.5949"
+     inkscape:zoom="2.3797943"
+     inkscape:cx="598.05316"
+     inkscape:cy="163.30497"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -485,6 +485,26 @@
        x2="362.47745"
        y2="277.58917"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4499"
+       id="linearGradient6782"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95311023,0,0,0.95311023,15.995231,10.619001)"
+       x1="560.72864"
+       y1="540.31055"
+       x2="715.05237"
+       y2="540.31055" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4394"
+       id="linearGradient6788"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.94114182,0,0,0.95311023,22.943479,10.619001)"
+       x1="579.79907"
+       y1="482.4346"
+       x2="695.98193"
+       y2="482.4346" />
   </defs>
   <metadata
      id="metadata7">
@@ -494,7 +514,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -697,50 +717,46 @@
        inkscape:original-d="m 626.71085,381.96989 0,28.88008 3.97783,0 -7.95577,13.96395 -7.95566,-13.96395 3.97778,0 0,-28.88008 z"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
-    <g
-       id="g5360"
-       transform="matrix(0.95311023,0,0,0.95311023,15.995231,22.915947)">
-      <path
-         sodipodi:nodetypes="sssssssss"
-         id="path4420"
-         d="m 590.33682,435.42034 95.32225,0 c 6.9699,0 9.57286,-0.69573 9.57286,8.5361 l 0,51.31391 c 0,9.23185 -2.60296,8.36496 -9.57286,8.36496 l -95.32225,0 c -6.96991,0 -9.78775,0.86689 -9.78775,-8.36496 l 0,-51.31391 c 0,-9.23183 2.81784,-8.5361 9.78775,-8.5361 z"
-         style="fill:url(#linearGradient5571);fill-opacity:1;stroke:#808080;stroke-width:1.57379484;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-size:14.26609325px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
-         x="598.20526"
-         y="456.48883"
-         id="text4422"
-         sodipodi:linespacing="125%"
-         transform="scale(0.98032998,1.0200647)"><tspan
-           sodipodi:role="line"
-           x="598.20526"
-           y="456.48883"
-           id="tspan4424"
-           style="fill:#000000;stroke:none">Procesamiento</tspan><tspan
-           id="tspan4438"
-           sodipodi:role="line"
-           x="598.20526"
-           y="474.32144"
-           style="fill:#000000;stroke:none">de la señal</tspan></text>
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         inkscape:original-d="m 561.62865,547.54853 152.5237,0 -23.26477,-40.27974 -107.3446,0 z"
-         inkscape:path-effect="#path-effect4442"
-         id="path4440"
-         d="m 561.62865,547.54853 152.5237,0 -23.26477,-40.27974 -107.3446,0 -21.91433,40.27974"
-         style="fill:url(#linearGradient5573);fill-opacity:1;stroke:#808080;stroke-width:1.88855362;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         style="fill:#f2f2f2;fill-opacity:1;stroke:#b3b3b3;stroke-width:1.88855362;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 575.81293,542.06935 124.15514,0 -17.11443,-30.93291 -90.3841,0 -16.65661,30.93291"
-         id="path4471"
-         inkscape:path-effect="#path-effect4473"
-         inkscape:original-d="m 575.81293,542.06935 124.15514,0 -17.11443,-30.93291 -90.3841,0 z"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient6788);fill-opacity:1;stroke:#808080;stroke-width:1.49055231;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 578.53414,437.91953 89.71176,0 c 6.55967,0 9.00942,-0.66311 9.00942,8.13584 l 0,48.90781 c 0,8.79897 -2.44975,7.97273 -9.00942,7.97273 l -89.71176,0 c -6.55967,0 -9.21166,0.82624 -9.21166,-7.97273 l 0,-48.90781 c 0,-8.79895 2.65199,-8.13584 9.21166,-8.13584 z"
+       id="path4420"
+       sodipodi:nodetypes="sssssssss" />
+    <text
+       transform="scale(0.98032998,1.0200647)"
+       sodipodi:linespacing="125%"
+       id="text4422"
+       y="457.54938"
+       x="586.47174"
+       style="font-size:13.59715939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+       xml:space="preserve"><tspan
+         style="fill:#000000;stroke:none"
+         id="tspan4424"
+         y="457.54938"
+         x="586.47174"
+         sodipodi:role="line">Procesamiento</tspan><tspan
+         style="fill:#000000;stroke:none"
+         y="474.54581"
+         x="586.47174"
+         sodipodi:role="line"
+         id="tspan4438">de la señal</tspan></text>
+    <path
+       style="fill:url(#linearGradient6782);fill-opacity:1;stroke:#808080;stroke-width:1.79999983;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 551.28924,544.79005 145.3719,0 -22.17389,-38.39103 -102.31124,0 -20.88677,38.39103"
+       id="path4440"
+       inkscape:path-effect="#path-effect4442"
+       inkscape:original-d="m 551.28924,544.79005 145.3719,0 -22.17389,-38.39103 -102.31124,0 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 564.80843,539.56779 118.33353,0 -16.31194,-29.48247 -86.14601,0 z"
+       inkscape:path-effect="#path-effect4473"
+       id="path4471"
+       d="m 564.80843,539.56779 118.33353,0 -16.31194,-29.48247 -86.14601,0 -15.87558,29.48247"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#b3b3b3;stroke-width:1.79999983;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <g
        id="g5310"
        transform="matrix(0.95311023,0,0,0.95311023,-45.218292,20.188627)">

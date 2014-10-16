@@ -1250,26 +1250,51 @@ de puntuación (o de parámetro estadístico como el \emph{p-valor}) fijado.
 
 Para la estimación de la tasa FDR (Figura~\ref{fig:single_spectrum_and_average_distributions}),
 la estrategia utilizada consiste
-esencialmente en utilizar una base de datos señuelo \citep{Elias2007}.
+esencialmente en utilizar una base de datos llamada \emph{señuelo} 
+o \emph{decoy} \citep{Elias2007}.
 Es una aproximación sencilla pero efectiva que requiere que los espectros MS/MS
-sean comparados con espectros teóricos derivados de secuencias llamadas \emph{señuelo} o 
-\emph{decoy}, que pueden ser construidas de varias formas pero que, en cualquier
-caso, son secuencias que no existen, no corresponden a ninguna proteína. 
-Para ello, se puede añadir a la base de datos de secuencias reales 
-(secuencias \emph{target})
+sean comparados con espectros teóricos derivados de secuencias \emph{señuelo},
+que pueden ser generadas de varias formas pero que, en cualquier
+caso, son secuencias que no existen, no corresponden a ninguna proteína
+(Figura~\ref{fig:target_and_decoy_dbs}) 
+La asignación de espectros MS/MS a
+estas secuencias \emph{señuelo} permite %es % permiten %por tanto
+recrear una hipótesis nula. Se puede tener la certeza de que los resultados 
+de identificaciones correspondientes a secuencias \emph{señuelo}, claramente 
+etiquetadas en el fichero fasta, son identificaciones incorrectas.
+A continuación, para hacer las búsquedas, se puede añadir a la base de 
+datos de secuencias reales (secuencias \emph{target})
 un número equivalente de secuencias \emph{señuelo} y hacer que el motor de búsqueda
 use esta base de datos concatenada (\emph{target-decoy}) del doble de tamaño que la original.
  O bien se pueden realizar dos búsquedas consecutivas, una utilizando la
-base de datos de secuencias \emph{reales} y otra a continuación utilizando
+base de datos de secuencias \emph{target} y otra a continuación utilizando
 la de secuencias \emph{señuelo}.
 
 \figura{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
 {Construcción de una base de datos señuelo}
-El objetivo de la creación de estas secuencias \emph{señuelo} es % permiten %por tanto
-recrear una hipótesis nula. Se puede tener la certeza de que los resultados 
-de identificaciones correspondientes a secuencias \emph{señuelo}, claramente 
-etiquetadas en el fichero fasta, son identificaciones incorrectas. 
-Con esta hipótesis nula, la estrategia asume una idea básica central:
+
+%VER Target-Decoy Search Strategy for Mass Spectrometry-Based Proteomics Elias, Gygi 2010 M Mol Bio
+Las secuencias \emph{señuelo} pueden obtenerse mediante
+varios métodos \citep{Elias2007,Kall2008}
+La inversión de la secuencia de la proteína es un método sencillo que 
+conserva la frecuencia media de cada aminoácido y permite generar siempre
+las mismas secuencias \textit{señuelo} para sucesivas búsquedas. A cambio, 
+el hecho de que no sea un orden aleatorio puede implicar
+que la población \textit{señuelo} no refleje exactamente una hipótesis nula.
+También se pueden generar las secuencias de cada proteína de forma aleatoria.
+Esto también conserva las frecuencias de los aminoácidos, pero por otra parte,
+se elimina toda redundancia y se generarán por tanto un mayor número de 
+péptidos \textit{señuelo}.
+Otra opción es, en lugar de generar nuevas secuencias para cada proteína,
+crear péptidos \textit{señuelo} de cada proteína dado el patrón de corte
+conocido de la enzima proteolítica utilizada. Esta opción tiene la ventaja
+de que los péptidos creados serán el mismo número y tendrán exactamente 
+las mismas masas que las secuencias reales.
+
+
+%El objetivo de la creación  
+%Con la hipótesis nula que proporcionan las asignaciones a secuencias \textit{señuelo}
+Una vez establecida esta hipótesis nula, la estrategia asume una idea básica central:
 la frecuencia con que los espectros MS/MS son asignados a secuencias 
 \emph{señuelo} sigue la misma distribución que la frecuencia con que los
 espectros son asignados incorrectamente a secuencias \emph{target}. 
@@ -1476,6 +1501,10 @@ recojan toda la información necesaria (MIAPE)
 
 En una clasificacion más precisa, el software puede clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
+
+\figura{Vectorial/formats}{width=.99\textwidth}{fig:formats_in_proteomics}%
+{Visión general de formatos comunmente usados en cada etapa de un experimento de proteómica}
+
 
 \begin{itemize}
 
