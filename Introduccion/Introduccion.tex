@@ -367,7 +367,7 @@ y el rendimiento que ofrece, por tanto, es limitado.
 En la espectrometría de masas en tandem (abreviada MS/MS o MS\textsuperscript{2}),
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
-fragmentación adicional.
+fragmentación adicional. (Figura~\ref{fig:Espectrometría de masas en Tandem. MS/MS})
 %\begin{itemize}
 %\item En la \emph{Disociación Inducida por Colisión}, CID
 %\end{itemize}
@@ -530,9 +530,10 @@ tamaño limitado en número de aminoácidos.
 A pesar de estas limitaciones los espectrómetros sí permiten inferir, 
 al menos parcialmente,
 secuencias a partir de proteínas intactas y con ello identificarlas.
-Este es el objetivo de la llamada Proteómica \textit{top-down}
+Este es el objetivo de la llamada Proteómica \textit{top-down} (de 
+arriba a abajo)
 
-Sin embargo la proteómica \textit{bottom-up} (\textit{de abajo arriba}),
+Sin embargo la proteómica \textit{bottom-up} (\textit{de abajo a arriba}),
 en la que se infiere la presencia de proteínas a partir de sus péptidos,
 es la técnica más extendida.
 
@@ -648,7 +649,7 @@ de las secuencias de péptidos trípticos teóricos.
 
 La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
 de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
-de una analogía con las técnicas de secuenciación genómica donde 
+de una analogía con las técnicas clásicas de secuenciación genómica donde 
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
 ensambladas. En la proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
@@ -700,7 +701,7 @@ A continuación, tras la adquisición experimental de los espectros, el paso
 siguiente en un experimento de proteómica \textit{shotgun} implica el
 análisis computacional de esos espectros cuyo objetivo final es la 
 obtención de una lista de proteínas que presumiblemente se encuentran en 
-la muestra. Este análisis bioinformático, a su vez, consta de varios procesos 
+la muestra. Este análisis computacional, a su vez, consta de varios procesos 
 secuenciales, principalmente la asignación de secuencias peptídicas a cada
 espectro, la inferencia de las proteínas a partir de esos péptidos y una
 evaluación estadística que aporta medidas de fiablidad a la identificación.
@@ -755,7 +756,7 @@ El programa compara estos espectros reales registrados con espectros
 teóricos que se obtienen mediante la predicción de los valores \mz de los
 péptidos y fragmentos que se generan teóricamente conociendo el patrón
 de corte de la enzima proteolítica utilizada, las masas de cada aminoácido,
-y las secuencias de las proteínas en una base de datos de referncia.
+y las secuencias de las proteínas en una base de datos de referencia.
 En el proceso, el espacio de búsqueda se acota mediante la selección
 de una lista de péptidos posibles, 
 (candidatos que cumplen unos criterios determinados), que han generado el 
@@ -769,7 +770,7 @@ función del grado de similitud entre el espectro empírico y el teórico.
 
 %\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
-\subsubsection*{Construcción de una lista de péptidos candidatos}
+\subsubsection*{Elaboración de una lista de péptidos candidatos}
 
 Para reducir el espacio de búsqueda entre todos los posibles péptidos
 candidatos que explican el espectro MS/MS y así reducir el coste 
@@ -791,7 +792,7 @@ Con esto se reduce enormemente el número de comparaciones que el motor
 de búsqueda debe realizar y, por tanto, el tiempo empleado para ello. Sin
 embargo, al restringir el tipo de enzima, se imposibilita la identificación
 de péptidos con rupturas inespecíficas (por ejemplo el procesamiento post-
-traduccional que provoca la liberación del péptido señal o por enzimas 
+traduccional que provoca la liberación del péptido señal o por 
 proteasas contaminantes presentes en la muestra)
 }
 
@@ -910,7 +911,8 @@ se establece el grado de similitud de cada espectro con los espectros teóricos
 de cada uno de los péptidos candidatos, es decir, se evalúa la calidad de cada PSM.
 
 \figura{Vectorial/spectrum_identification}{width=.99\textwidth}{fig:spectrum_identification}%
-{Estrategia básica de identificación. Correlación espectro MS/MS - secuencia aminoacídica}
+{Estrategia básica de identificación. Selección de péptidos candidatos. 
+Correlación espectro MS/MS - secuencia aminoacídica}
 
 
 Los motores de búsqueda realizan esta comparación de diferentes maneras,
@@ -927,7 +929,7 @@ espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
 calcula la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
 para todos los candidatos con los que es comparado.
-En primer lugar se crea un espectro procesado (espectro X) en el que los picos de baja 
+En primer lugar se crea un espectro empírico procesado (espectro X) en el que los picos de baja 
 intensidad son elimnados y el resto de valores \mz son redondeados al valor
 entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
 usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr}
@@ -972,7 +974,7 @@ y dada una distribución calculada de los valores \mz predichos para los candidat
 
 
 %COMET ?!
-\textit{ Ya que se usa en PeptideAtlas2... nombrarlo al menos??}
+\textit{COMET ?! Ya que se usa en PeptideAtlas2... nombrarlo al menos??}
 %the probability of that number of matches occurring by chance given the
 %number of peaks in the searched spectrum and the cumulative distribution of
 %m/z values of predicted ions for all candidate peptides in the database. At the
@@ -1312,7 +1314,9 @@ esto es, la proporción de PSMs \textit{señuelo}, N\textsubscript{d} como sustitu
 conocido de N\textsubscript{inc}, 
 entre el total de secuencias \textit{target} con puntuaciones superiores
 al umbral fijado, N\textsubscript{t}. 
-En ocasiones, de forma alternativa, la tasa FDR también puede calcularse como 
+En ocasiones, cuando las búsquedas se hacen sobre la base de datos concatenada,
+para tener en cuenta que el tamaño es el doble que la original,
+la tasa FDR también puede calcularse como 
 2N\textsubscript{d}/(N\textsubscript{t}+N\textsubscript{d})
 
 Esta estimación general puede tener variantes.
@@ -1326,7 +1330,8 @@ se compara con las secuencias \textit{señuelo} a pesar de que algunos de los
 espectros podrían asignarse correctamente a una secuencia \textit{target}.
 Además, la mayoría de las funciones de puntuación tienden a otorgar
 puntuaciones más altas a PSMs \textit{señuelo} que a PSMs \textit{target}
-incorrectos \citep{Navarro2009a} por lo que la distribución de puntuaciones
+incorrectos %\citep{Navarro2009a}
+por lo que la distribución de puntuaciones
 \textit{señuelo} no es un reflejo preciso de la distribución de puntuaciones
 de los PSMs incorrectos.
 Una forma de corregir este efecto consiste en estimar una aproximación 
@@ -1340,8 +1345,6 @@ calculada como N\textsubscript{d}/N\textsubscript{t} se multiplica por 0.8
 para obtener un valor FDR más preciso (Por cada 100 PSMs \textit{señuelo}
 en el conjunto de PSMs aceptado se estiman 80 PSMs \textit{target} incorrectos) 
 
-%Otra forma de corregir la sobre-estimación de de N\textsubscript{inc}
-%usando búsquedas separadas consiste en e %refined FDR (J. Vazquez)
 
 Las búsquedas utilizando una base de datos concatenada 
 \textit{target-decoy} son menos sensibles al efecto de sobre-estimación de 
@@ -1358,28 +1361,21 @@ de N\textsubscript{d} y una consiguiente reducción del
 número de PSMs correcto y por tanto un incremento de FDR
 
 
-%This PIT is equivalent to the ratio of the area under the dotted black line (the incorrect target PSMs) to the area under the solid black line (the decoy PSMs).
-%The PIT is important because it allows us to reduce the estimated FDR associated with a given set of accepted target PSMs. In our simulation, if we accept X decoy PSMs with scores above a certain threshold, then we expect to find 0.8 X incorrect target PSMs above the same theshold. A more accurate estimate of the FDR, therefore, is to multiply the previous estimate -the ratio of the number of decoy PSMs versus target PSMs above a threshold- by the PIT.
+Otra forma de mejorar la estimación de FDR es un algoritmo refinado \citep{Navarro2009a}
+que consiste en una búsqueda en bases de datos separadas
+teniendo en cuenta en conjunto las distribuciones
+de poblaciones de PSMs \textit{target} y PSMs \textit{decoy} y corrige
+el efecto de competición de las búsquedas en bases de datos concatenadas.
 
-
-
-%En cuanto a la forma en que se construyen estas secuencias señuelo
 
 \figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
 {Distribuciones de Espectro Individual y Promedio}
-
 
 
 \textit{
 IMPORTANTE:
 Mencionar MAYU, explicar en que consiste un poquito por lo menos
 (Y quiza tambien Percolator
-}
-
-
-\textit{
-Dice Elias Gygi que "Separate searching overestimates FP rates by underestimationg low-scoring correct PSMs
-Pero la estrategia de J. Vazquez son búsquedas separadas
 }
 
 
@@ -1402,6 +1398,15 @@ promedio de puntuaciones de todos los PSMs del experimento es una combinación
 de distribuciones, un modelo mixto de probabilidad, que integra la 
 distribución de los PSMs incorrectos y la distribución de los PSMs correctos.
 (Figura~\ref{fig:single_spectrum_and_average_distributions})
+
+En un principio, este modelo mixto para el cálculo de las PEPs
+ajustaba un modelo paramétrico
+a la distribución de puntuaciones de los PSMs de forma no supervisada
+y no requería secuencias \textit{señuelo}
+ %Salva
+Pero con la incorporación de PSMs \textit{señuelo}
+
+\textit{The Probability Ratio Method, Navarro et al}
 
 %-------------------------------------------------------------------
 \phantomsection
