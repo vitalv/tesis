@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="732.64874"
-   height="349.48148"
+   width="732.59375"
+   height="323.21875"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="esquema_espectrometro_masas.svg">
+   sodipodi:docname="esquema_espectrometro_masas.pdf">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3797943"
-     inkscape:cx="598.05316"
-     inkscape:cy="163.30497"
+     inkscape:zoom="1.3048031"
+     inkscape:cx="511.9078"
+     inkscape:cy="203.75789"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,7 +39,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     borderlayer="true" />
   <defs
      id="defs4">
     <linearGradient
@@ -514,7 +515,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -522,14 +523,14 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Capa 1"
-     transform="translate(-7.0682396,-227.9313)">
+     transform="translate(-1.21875,-239.96875)">
     <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke:#ffffff;stroke-width:1.50300145;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.44531679;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect5458"
        width="731.14575"
-       height="347.97849"
+       height="321.78049"
        x="1.9549345"
-       y="230.63774"
+       y="240.67961"
        rx="14.767337"
        ry="18.902945" />
     <rect
@@ -540,7 +541,7 @@
        height="144.86932"
        width="682.58875"
        id="rect2985"
-       style="fill:url(#linearGradient7672);fill-opacity:1;stroke:#808080;stroke-width:1.50000011999999994;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.00000005999999964, 6.00000005999999964;stroke-dashoffset:0" />
+       style="fill:url(#linearGradient7672);fill-opacity:1;stroke:#808080;stroke-width:1.50000012;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.00000006, 6.00000006;stroke-dashoffset:0" />
     <path
        style="fill:url(#linearGradient5954);fill-opacity:1;stroke:#808080;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 67.938101,291.15797 c -12.183086,0 -22.078587,18.79258 -22.078587,42.04338 0,23.2508 9.895501,42.04339 22.078587,42.04339 0.474286,0 0.943569,0.0563 1.410422,0 0.459313,0.0632 0.937555,-10e-5 1.410422,0 l 267.462225,0.0555 c 7.10081,0.001 12.18173,-7.31248 12.18173,-16.39058 l 0,-51.41647 c 0,-9.0781 -5.08092,-16.39126 -12.18173,-16.38981 l -267.462225,0.0547 c -0.472867,1e-4 -0.951109,-0.0632 -1.410422,0 -0.466853,-0.0562 -0.936136,0 -1.410422,0 z"
@@ -737,7 +738,7 @@
          x="586.47174"
          sodipodi:role="line">Procesamiento</tspan><tspan
          style="fill:#000000;stroke:none"
-         y="474.54581"
+         y="474.54584"
          x="586.47174"
          sodipodi:role="line"
          id="tspan4438">de la señal</tspan></text>

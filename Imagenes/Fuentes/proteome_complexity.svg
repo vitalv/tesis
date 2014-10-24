@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="2568.875"
-   height="2906.1875"
+   width="1917.8632"
+   height="1158.929"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="proteome_complexity.pdf">
+   sodipodi:docname="proteome_complexity.svg">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -459,14 +459,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3535534"
-     inkscape:cx="668.403"
-     inkscape:cy="1998.7145"
+     inkscape:zoom="0.27414199"
+     inkscape:cx="516.63276"
+     inkscape:cy="116.52586"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
-     inkscape:window-height="751"
+     inkscape:window-height="971"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -481,8 +481,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="-2775.4062px"
-       originy="1265.2003px" />
+       originx="-2914.9215px"
+       originy="-339.87074px" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -492,7 +492,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -500,7 +500,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-2775.4063,588.625)">
+     transform="translate(-2914.9216,446.4375)">
     <text
        sodipodi:linespacing="125%"
        id="text12606"
@@ -513,13 +513,14 @@
          id="tspan12608"
          sodipodi:role="line" /></text>
     <rect
-       style="fill:#f9f9f9;stroke:#808080;stroke-width:7.12956047;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;stroke:none"
        id="rect12708"
        width="1917.8632"
        height="1158.929"
        x="2914.9216"
        y="-446.4375"
-       ry="22.201704" />
+       ry="22.201704"
+       rx="22.201704" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -1415,5 +1416,6 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Capa" />
+     inkscape:label="Capa"
+     transform="translate(-139.51533,-142.1875)" />
 </svg>
