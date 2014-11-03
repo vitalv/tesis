@@ -23,7 +23,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=30
+current_page=29
 FILE_NAME_0=5283;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
 FILE_NAME_1=11311;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
 FILE_NAME_2=2195;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
