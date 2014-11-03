@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  3 NOV 2014 14:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  3 NOV 2014 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,16 +917,21 @@ Package pdftex.def Info: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf
 used on input line 659.
 (pdftex.def)             Requested size: 341.5519pt x 227.15497pt.
 
-[20] [21 <./Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>]
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-[23]
-Underfull \vbox (badness 1688) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 6032) has occurred while \output is active []
 
  [24]
 [25]
-Overfull \hbox (3.19641pt too wide) in paragraph at lines 909--913
+Overfull \hbox (3.19641pt too wide) in paragraph at lines 917--921
 []\T1/cmr/m/n/10 Una apro-xi-ma-ción sen-sa-ta pue-de con-sis-tir en (dis-po-ni
 en-do de re-cur-sos compu-
  []
@@ -937,92 +942,90 @@ pt>
 File: Imagenes/Vectorial/spectrum_identification.pdf Graphic file (type pdf)
  <use Imagenes/Vectorial/spectrum_identification.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/spectrum_identification.pdf used on
- input line 937.
+ input line 945.
 (pdftex.def)             Requested size: 341.5519pt x 157.55443pt.
-
-
-Package natbib Warning: Citation `Eng1994' on page 27 undefined on input line 9
-49.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [27 <./Imagenes/Vectorial/spectrum_identification.pdf>]
 
+Package natbib Warning: Citation `Eng1994' on page 28 undefined on input line 9
+57.
+
+
 Package natbib Warning: Citation `Craig2004' on page 28 undefined on input line
- 982.
+ 990.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-[29]
-Overfull \hbox (3.86903pt too wide) in paragraph at lines 1099--1100
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Overfull \hbox (3.86903pt too wide) in paragraph at lines 1107--1108
 []\T1/cmr/m/it/10 Mirar Hy-brid ap-proa-ches (3.4) en Nes-vizhs-kii re-view, ta
 m-bién -Computational
  []
 
 
-<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=759, 
+Underfull \vbox (badness 7012) has occurred while \output is active []
+
+ [30]
+<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=763, 
 455.14671pt x 372.44254pt>
 File: Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf Grap
 hic file (type pdf)
 
 <use Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/protein_inference_non_random_peptid
-e_grouping.pdf used on input line 1144.
+e_grouping.pdf used on input line 1152.
 (pdftex.def)             Requested size: 341.5519pt x 279.49602pt.
 
-Underfull \vbox (badness 4608) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-[31 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>]
-Underfull \vbox (badness 2213) has occurred while \output is active []
+ [31 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>] 
+[32]
 
- [32]
+Package natbib Warning: Citation `)' on page 33 undefined on input line 1252.
 
-Package natbib Warning: Citation `)' on page 33 undefined on input line 1244.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1248
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1256
 .
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1248.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1256.
 
 
-Underfull \vbox (badness 6461) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
 
 Package natbib Warning: Citation `Benjamini1995' on page 34 undefined on input 
-line 1270.
+line 1278.
 
 
 Package natbib Warning: Citation `Elias2007' on page 34 undefined on input line
- 1278.
+ 1286.
 
 [34]
 <Imagenes/Vectorial/target_and_decoy_dbs.pdf, id=792, 517.18219pt x 303.1325pt>
 File: Imagenes/Vectorial/target_and_decoy_dbs.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/target_and_decoy_dbs.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/target_and_decoy_dbs.pdf used on in
-put line 1298.
+put line 1306.
 (pdftex.def)             Requested size: 341.5519pt x 200.19757pt.
 
 
 Package natbib Warning: Citation `Elias2007' on page 35 undefined on input line
- 1302.
+ 1310.
 
 
 Package natbib Warning: Citation `Kall2008' on page 35 undefined on input line 
-1302.
+1310.
 
 [35 <./Imagenes/Vectorial/target_and_decoy_dbs.pdf>]
 
 Package natbib Warning: Citation `Kall2008' on page 36 undefined on input line 
-1362.
+1370.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1030,7 +1033,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [36]
 
 Package natbib Warning: Citation `Navarro2009a' on page 37 undefined on input l
-ine 1386.
+ine 1394.
 
 
 <Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=859, 636.
@@ -1040,38 +1043,44 @@ file (type pdf)
 
 <use Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/single_spectrum_and_average_distrib
-utions.pdf used on input line 1394.
+utions.pdf used on input line 1402.
 (pdftex.def)             Requested size: 345.0pt x 221.00621pt.
 
 
 Package natbib Warning: Citation `Keller2002' on page 37 undefined on input lin
-e 1417.
+e 1425.
 
-[37]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 1924) has occurred while \output is active []
 
  [38 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>]
 
 Package natbib Warning: Citation `Gerber2003' on page 39 undefined on input lin
-e 1469.
+e 1477.
 
 
 Package natbib Warning: Citation `Kuhn2004' on page 39 undefined on input line 
-1469.
+1477.
 
-<Imagenes/Vectorial/esquema_srm.pdf, id=903, 552.38873pt x 272.54321pt>
+[39] <Imagenes/Vectorial/esquema_srm.pdf, id=907, 552.38873pt x 272.54321pt>
 File: Imagenes/Vectorial/esquema_srm.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/esquema_srm.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/esquema_srm.pdf used on input line 
-1484.
+1492.
 (pdftex.def)             Requested size: 341.5519pt x 168.52173pt.
- [39] [40 <./Imagenes/Vectorial/esquema_srm.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./Imagenes/Vectorial/esquema_srm.pdf>]
 <Imagenes/Vectorial/formats.pdf, id=1040, 537.98488pt x 502.10085pt>
 File: Imagenes/Vectorial/formats.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/formats.pdf>
-Package pdftex.def Info: Imagenes/Vectorial/formats.pdf used on input line 1533
+Package pdftex.def Info: Imagenes/Vectorial/formats.pdf used on input line 1541
 .
 (pdftex.def)             Requested size: 341.5519pt x 318.77686pt.
  [41]) [42] [43 <./Imagenes/Vectorial/formats.pdf>]
@@ -1523,7 +1532,7 @@ ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on Tesis.pdf (95 pages, 1995152 bytes).
+Output written on Tesis.pdf (95 pages, 1995432 bytes).
 PDF statistics:
  2114 PDF objects out of 2487 (max. 8388607)
  1224 compressed objects within 13 object streams
