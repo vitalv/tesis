@@ -23,7 +23,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=29
+current_page=28
 FILE_NAME_0=5283;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTesis.tex;0;4
 FILE_NAME_1=11311;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_cover.tex;0;4
 FILE_NAME_2=2195;LaTeX;0;0;1;1;0;%2Fhome%2Fvital%2FTeXiS%2FTeXiS%2FTeXiS_toc.tex;0;4
@@ -52,7 +52,7 @@ FILE_NAME_24=1308;None;0;16;1;1;1;%2Fhome%2Fvital%2FTeXiS%2Fnotas.txt;0;4
 FILE_NAME_25=0;Make;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2FMakefile;0;4
 FILE_NAME_26=1728;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCascaras%2Fdedicatoria.tex;0;4
 FILE_NAME_27=1272;None;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2Facronimos.gdf;0;4
-FILE_NAME_28=8644;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
+FILE_NAME_28=36580;LaTeX;0;0;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FIntroduccion%2FIntroduccion.tex;0;4
 FILE_NAME_29=431;LaTeX;0;16;1;1;1;%2Fhome%2Fvital%2FTeXiS%2FCapitulos%2F04Capitulo4.tex;0;4
 
 [VTE]
