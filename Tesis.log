@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  12 DEC 2014 11:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.6.26)  15 DEC 2014 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,6 +538,8 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \openout2 = `constantes.aux'.
 
 (./constantes.tex)
+Package hyperref Info: Option `colorlinks' set `true' on input line 126.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
@@ -577,25 +579,25 @@ LaTeX Info: Redefining \% on input line 23.
 (./Cascaras/bibliografia.aux) (./Cascaras/fin.aux))
 \openout1 = `Tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
  (./Tesis.glx)
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 130.
+Package hyperref Info: Link coloring ON on input line 148.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -605,9 +607,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 148.
+LaTeX Info: Redefining \pageref on input line 148.
+LaTeX Info: Redefining \nameref on input line 148.
 
 (./Tesis.out) (./Tesis.out)
 \@outlinefile=\write5
@@ -784,7 +786,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 ]
-<Imagenes/Vectorial/proteome_complexity.pdf, id=364, 1540.04411pt x 930.61998pt
+<Imagenes/Vectorial/proteome_complexity.pdf, id=365, 1540.04411pt x 930.61998pt
 >
 File: Imagenes/Vectorial/proteome_complexity.pdf Graphic file (type pdf)
  <use Imagenes/Vectorial/proteome_complexity.pdf>
@@ -798,7 +800,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 6995) has occurred while \output is active []
 
  [5 <./Imagenes/Vectorial/proteome_complexity.pdf>]
-<Imagenes/Vectorial/esquema_espectrometro_masas.pdf, id=396, 588.2728pt x 259.5
+<Imagenes/Vectorial/esquema_espectrometro_masas.pdf, id=397, 588.2728pt x 259.5
 4466pt>
 File: Imagenes/Vectorial/esquema_espectrometro_masas.pdf Graphic file (type pdf
 )
@@ -807,7 +809,7 @@ Package pdftex.def Info: Imagenes/Vectorial/esquema_espectrometro_masas.pdf use
 d on input line 134.
 (pdftex.def)             Requested size: 341.5519pt x 150.69441pt.
  [6 <./Imagenes/Vectorial/esquema_espectrometro_masas.pdf>] [7]
-<Imagenes/Vectorial/maldi_y_esi.pdf, id=443, 450.75488pt x 430.23155pt>
+<Imagenes/Vectorial/maldi_y_esi.pdf, id=444, 450.75488pt x 430.23155pt>
 File: Imagenes/Vectorial/maldi_y_esi.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/maldi_y_esi.pdf>
@@ -818,15 +820,18 @@ Package pdftex.def Info: Imagenes/Vectorial/maldi_y_esi.pdf used on input line
 Underfull \vbox (badness 2538) has occurred while \output is active []
 
  [9 <./Imagenes/Vectorial/maldi_y_esi.pdf>] [10]
-<Imagenes/Vectorial/Q_QIT_OT.pdf, id=509, 559.2677pt x 347.27087pt>
+<Imagenes/Vectorial/Q_QIT_OT.pdf, id=510, 559.2677pt x 347.27087pt>
 File: Imagenes/Vectorial/Q_QIT_OT.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/Q_QIT_OT.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/Q_QIT_OT.pdf used on input line 313
 .
 (pdftex.def)             Requested size: 341.5519pt x 212.08397pt.
- [11] [12 <./Imagenes/Vectorial/Q_QIT_OT.pdf>] <Imagenes/Vectorial/tandem_ms.pd
-f, id=557, 309.25539pt x 189.87616pt>
+ [11]
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+ [12 <./Imagenes/Vectorial/Q_QIT_OT.pdf>]
+<Imagenes/Vectorial/tandem_ms.pdf, id=558, 309.25539pt x 189.87616pt>
 File: Imagenes/Vectorial/tandem_ms.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/tandem_ms.pdf>
@@ -834,13 +839,13 @@ Package pdftex.def Info: Imagenes/Vectorial/tandem_ms.pdf used on input line 36
 5.
 (pdftex.def)             Requested size: 341.5519pt x 209.70752pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1142) has occurred while \output is active []
 
  [13]
-Underfull \vbox (badness 1931) has occurred while \output is active []
+Underfull \vbox (badness 3019) has occurred while \output is active []
 
  [14 <./Imagenes/Vectorial/tandem_ms.pdf>]
-<Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf, id=584, 391.40767pt x
+<Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf, id=585, 391.40767pt x
  205.1981pt>
 File: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf Graphic file (typ
 e pdf)
@@ -849,136 +854,127 @@ Package pdftex.def Info: Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pd
 f used on input line 428.
 (pdftex.def)             Requested size: 276.00105pt x 144.69284pt.
 
-[15 <./Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Imagenes/Vectorial/Roepstorff_peptide_fragmentation.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-Underfull \vbox (badness 5388) has occurred while \output is active []
-
- [17]
-[18] [19]
-<Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf, id=638, 572.06221pt x 3
+[17] [18] [19]
+<Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf, id=639, 572.06221pt x 3
 80.44633pt>
 File: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf Graphic file (type 
 pdf)
  <use Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf 
-used on input line 659.
+used on input line 657.
 (pdftex.def)             Requested size: 341.5519pt x 227.15497pt.
 
-[20]
+Underfull \vbox (badness 5446) has occurred while \output is active []
+
+ [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./Imagenes/Vectorial/overview_of_shotgun_proteomics.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \vbox (badness 6032) has occurred while \output is active []
-
- [24]
-[25]
-Overfull \hbox (3.19641pt too wide) in paragraph at lines 917--921
+[23] [24] [25] [26]
+Overfull \hbox (3.19641pt too wide) in paragraph at lines 924--928
 []\T1/cmr/m/n/10 Una apro-xi-ma-ción sen-sa-ta pue-de con-sis-tir en (dis-po-ni
 en-do de re-cur-sos compu-
  []
 
-[26]
-<Imagenes/Vectorial/spectrum_identification.pdf, id=710, 570.93298pt x 263.3589
+
+<Imagenes/Vectorial/spectrum_identification.pdf, id=724, 570.93298pt x 263.3589
 pt>
 File: Imagenes/Vectorial/spectrum_identification.pdf Graphic file (type pdf)
  <use Imagenes/Vectorial/spectrum_identification.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/spectrum_identification.pdf used on
- input line 945.
+ input line 954.
 (pdftex.def)             Requested size: 341.5519pt x 157.55443pt.
- [27 <./Imagenes/Vectorial/spectrum_identification.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1838) has occurred while \output is active []
 
- [29]
-Overfull \hbox (3.86903pt too wide) in paragraph at lines 1107--1108
+ [27]
+[28 <./Imagenes/Vectorial/spectrum_identification.pdf>] [29]
+Overfull \hbox (3.86903pt too wide) in paragraph at lines 1118--1119
 []\T1/cmr/m/it/10 Mirar Hy-brid ap-proa-ches (3.4) en Nes-vizhs-kii re-view, ta
 m-bién -Computational
  []
 
-
-Underfull \vbox (badness 7012) has occurred while \output is active []
-
- [30]
-<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=801, 
+[30]
+<Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf, id=816, 
 455.14671pt x 372.44254pt>
 File: Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf Grap
 hic file (type pdf)
 
 <use Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/protein_inference_non_random_peptid
-e_grouping.pdf used on input line 1152.
+e_grouping.pdf used on input line 1163.
 (pdftex.def)             Requested size: 341.5519pt x 279.49602pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[31]
+Underfull \vbox (badness 1540) has occurred while \output is active []
 
- [31 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>] 
-[32]
+ [32 <./Imagenes/Vectorial/protein_inference_non_random_peptide_grouping.pdf>]
 
-Package natbib Warning: Citation `)' on page 33 undefined on input line 1252.
+Package natbib Warning: Citation `)' on page 33 undefined on input line 1263.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1256
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1267
 .
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1256.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1267.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
 [34]
-<Imagenes/Vectorial/target_and_decoy_dbs.pdf, id=838, 517.18219pt x 303.1325pt>
+<Imagenes/Vectorial/target_and_decoy_dbs.pdf, id=850, 517.18219pt x 303.1325pt>
 File: Imagenes/Vectorial/target_and_decoy_dbs.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/target_and_decoy_dbs.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/target_and_decoy_dbs.pdf used on in
-put line 1306.
+put line 1317.
 (pdftex.def)             Requested size: 341.5519pt x 200.19757pt.
- [35 <./Imagenes/Vectorial/target_and_decoy_dbs.pdf>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=914, 636.
+ [35]
+[36 <./Imagenes/Vectorial/target_and_decoy_dbs.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+<Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf, id=934, 636.
 14923pt x 407.50357pt>
 File: Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf Graphic 
 file (type pdf)
 
 <use Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/single_spectrum_and_average_distrib
-utions.pdf used on input line 1402.
+utions.pdf used on input line 1413.
 (pdftex.def)             Requested size: 345.0pt x 221.00621pt.
+ [38 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>] [39]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-[38 <./Imagenes/Vectorial/single_spectrum_and_average_distributions.pdf>]
-[39] <Imagenes/Vectorial/esquema_srm.pdf, id=976, 552.38873pt x 272.54321pt>
+<Imagenes/Vectorial/esquema_srm.pdf, id=986, 552.38873pt x 272.54321pt>
 File: Imagenes/Vectorial/esquema_srm.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/esquema_srm.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/esquema_srm.pdf used on input line 
-1492.
+1503.
 (pdftex.def)             Requested size: 341.5519pt x 168.52173pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40 <./Imagenes/Vectorial/esquema_srm.pdf>]
-<Imagenes/Vectorial/formats.pdf, id=1112, 537.98488pt x 502.10085pt>
+<Imagenes/Vectorial/formats.pdf, id=1122, 537.98488pt x 502.10085pt>
 File: Imagenes/Vectorial/formats.pdf Graphic file (type pdf)
 
 <use Imagenes/Vectorial/formats.pdf>
-Package pdftex.def Info: Imagenes/Vectorial/formats.pdf used on input line 1541
+Package pdftex.def Info: Imagenes/Vectorial/formats.pdf used on input line 1552
 .
 (pdftex.def)             Requested size: 341.5519pt x 318.77686pt.
  [41]) [42] [43 <./Imagenes/Vectorial/formats.pdf>]
@@ -998,7 +994,7 @@ Cap\'itulo 1.
 
 
 ]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1244, page=1, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1254, page=1, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1036,7 +1032,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age1 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [48 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1286, page=2, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1296, page=2, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1060,7 +1056,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age2 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [49 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1296, page=3, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1306, page=3, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1084,7 +1080,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age3 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [50 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1306, page=4, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1316, page=4, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1108,7 +1104,7 @@ Package pdftex.def Info: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, p
 age4 used on input line 16.
 (pdftex.def)             Requested size: 501.19238pt x 668.25624pt.
  [51 <./Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf>]
-<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1311, page=5, 597.5082
+<Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf, id=1321, page=5, 597.5082
 9pt x 796.67737pt>
 File: Capitulos/Vialas_2009_Proteopathogen_Proteomics.pdf Graphic file (type pd
 f)
@@ -1158,7 +1154,7 @@ Cap\'itulo 3.
 
 
 ]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1348, page=1, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1359, page=1, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1196,7 +1192,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge1 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [60 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1407, page=2, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1417, page=2, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1220,7 +1216,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge2 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [61 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1417, page=3, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1427, page=3, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1244,7 +1240,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge3 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [62 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1427, page=4, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1437, page=4, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1268,7 +1264,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge4 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [63 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1436, page=5, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1446, page=5, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1292,7 +1288,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge5 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [64 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1442, page=6, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1452, page=6, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1316,7 +1312,7 @@ Package pdftex.def Info: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, pa
 ge6 used on input line 11.
 (pdftex.def)             Requested size: 478.00728pt x 637.34277pt.
  [65 <./Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf>]
-<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1448, page=7, 597.50829
+<Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf, id=1458, page=7, 597.50829
 pt x 796.67737pt>
 File: Capitulos/Vialas_2013_PeptideAtlas_JProteomics.pdf Graphic file (type pdf
 )
@@ -1375,8 +1371,8 @@ Cap\'itulo 4.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
 (./Tesis.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -1388,17 +1384,17 @@ LaTeX Info: Redefining \% on input line 23.
 (./Capitulos/Parte3.aux) (./Capitulos/03Capitulo3.aux)
 (./Capitulos/04Capitulo4.aux) (./Capitulos/Parte4.aux)
 (./Cascaras/bibliografia.aux) (./Cascaras/fin.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 22EAE90B36607E7DE7D26441D4467DFB;3362.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+(rerunfilecheck)             Checksum: 728BA75248EEAE5FE54D64C53A0B2639;3362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 12496 strings out of 494997
- 181051 string characters out of 3180092
- 286979 words of memory out of 3000000
- 14910 multiletter control sequences out of 15000+200000
+ 12506 strings out of 494997
+ 181269 string characters out of 3180092
+ 287312 words of memory out of 3000000
+ 14919 multiletter control sequences out of 15000+200000
  21659 words of font info for 46 fonts, out of 3000000 for 9000
  279 hyphenation exceptions out of 8191
  55i,19n,53p,315b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1422,10 +1418,10 @@ ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on Tesis.pdf (97 pages, 2017188 bytes).
+Output written on Tesis.pdf (97 pages, 2019030 bytes).
 PDF statistics:
- 2246 PDF objects out of 2487 (max. 8388607)
- 1305 compressed objects within 14 object streams
- 177 named destinations out of 1000 (max. 500000)
+ 2256 PDF objects out of 2487 (max. 8388607)
+ 1315 compressed objects within 14 object streams
+ 178 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

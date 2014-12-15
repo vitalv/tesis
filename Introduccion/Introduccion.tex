@@ -68,7 +68,7 @@ Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
 estadío del desarrollo entre otros factores. Además existen niveles de complejidad
 adicional en el curso de información desde el gen a la proteína 
-como el \textit{splicing} alternativo y las modificaciones post-traduccionales.
+como el \textit{splicing} alternativo y las modificaciones post-traduccionales (PTMs).
 Por eso el término Proteoma puede diversificarse, para ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
@@ -289,6 +289,54 @@ es compensada por la fuerza centrífuga.
 
 \subitem \textbf{FTICR}
 
+\textit{ Ver Abian Introduccion MS :}
+
+\textit{
+El centro del analizador FT-ICR es una trampa
+de Penning, que consiste en un campo eléctrico cua-
+drupolar combinado con un campo magnético homo-
+géneo que permite confinar los iones en su interior
+(el campo cuadrupolar confina los iones axialmente 
+mientras que el campo magnético lo hace radialmen- 
+ te). Esta celda ICR puede tomar diferentes formas 
+ (cúbicas, hiperbólicas, abiertas de segmentos cilín- 
+    dricos...) con un número variable de electrodos 
+La FT-ICR se basa en la utilización del proceso 
+ de resonancia ciclotrónica para la determinación de 
+la masa de un ión. Una partícula cargada en movi- 
+miento perpendicular a un campo magnético adquie- 
+re una trayectoria circular de una frecuencia de giro 
+(frecuencia ciclotrónica) que depende de su relación 
+m/z y del valor del campo. La aplicación de una 
+señal eléctrica de frecuencia igual a la frecuencia 
+de giro de la partícula hace que esta absorba energía 
+de forma resonante y aumente su radio de giro. En 
+las celdas ICR originales, este aumento del radio 
+de giro permitía a la partícula alcanzar un detector 
+con el que colisionaba (Figura 2). Estas celdas eran 
+por tanto destructivas. En los sistemas FT-ICR, en 
+cambio, la frecuencia de giro puede medirse a partir 
+de la señal imagen inducida capacitativamente por 
+la carga durante su giro en unos electrodos y a partir 
+de ella determinar la masa del ión. En la práctica, 
+cuando se trata de una mezcla de iones, el conjunto 
+se excita durante unos milisegundos con una señal 
+de frecuencia variable lo que sitúa a todos los iones 
+en órbitas cercanas a las placas detectoras que co- 
+lectan el correspondiente interferograma. Tal como
+se describió en el caso del Orbitrap, esta señal puede
+ entonces deconvolucionarse en sus componentes
+mediante su análisis de FT para generar el corres-
+pondiente espectro de masas
+El FT-ICR utiliza imanes superconductores para
+generar campos de entre 2 y 14 Teslas y que de-
+terminan el grado de resolución alcanzable en la
+medida. Como en el caso del orbitrap, el FT-ICR se
+utiliza acoplado a un sistema de inyección de iones,
+generalmente una trampa LIT o QIT
+}
+
+
 \end{itemize}
 
 \item \textbf{Detector}
@@ -310,7 +358,7 @@ multiplicación de 10\textsuperscript{6} o mayores
 
 
 \figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
-{Cuadrupolo, Trampa Iónica Tridimensional(QIT) y Orbitrap}
+{Analizadores de masas tipo Cuadrupolo, Trampa Iónica Tridimensional (QIT) y Orbitrap}
 
 
 La \textit{sensibilidad}, \textit{resolución} y \textit{precisión}
@@ -355,11 +403,11 @@ secuencias en una base de datos de referencia.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
-instrumento es suficientemente específico de la proteína original y 
+instrumento es suficientemente informativo y específico de la proteína original y 
 ésta puede ser identificada. Este es el principio de la técnica conocida
 como Huella Peptídica, descrita detalladamente en una sección posterior.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
-y el rendimiento que ofrece, por tanto, es limitado. 
+y el rendimiento que ofrece es, por tanto, limitado. 
 
 \figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
 {Espectrometría de masas en Tandem. MS/MS}
@@ -377,7 +425,7 @@ secuencia original.
 Esto aumenta el poder de resolución del análisis, ya que permite 
 distinguir péptidos que, intactos, tienen masas muy similares,
 pero cuyos patrones de fragmentación MS/MS son diferentes.
-Esto posibilita además partir de muestras con mezclas de proteínas 
+Esto posibilita, además, partir de muestras con mezclas de proteínas 
 más complejas incrementando así el rendimiento del experimento.
 
 El proceso que conduce a la adquisición de espectros conlleva varias etapas.
@@ -402,8 +450,8 @@ se conocen como MS\textsuperscript{n}, donde \emph{n} es el número de
 fragmentaciones y etapas de análisis de masas consiguientes.
 
 A este método de adquisición de espectros de fragmentación, en el que
-el péptido precursor es seleccionado para ser fragmentado en base a la 
-intensidad en el espectro MS\textsuperscript{1} se denomina por eso
+los péptidos precursores son seleccionados para ser fragmentados en base 
+las intensidades en el espectro MS\textsuperscript{1} se denomina por eso
 Adquisición Dependiente de Datos (\emph{Data Dependent Acquisition, DDA})
 
 %En la fragmentación, la estructura del esqueleto peptídico se rompe en
@@ -416,7 +464,7 @@ series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
 extremo carboxilo-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
 carga permanece en el extremo amino-terminal. Además se añade un sub-índice
 que indica el número de residuos en el fragmento (Figura~\ref{fig:peptide_fragmentation})
-Los iones más abundantes e informativos son los \emph{b-} e \emph{y-},
+Generalmente, los iones más abundantes e informativos son los \emph{b-} e \emph{y-},
  generados por la fragmentación en el enlace peptídico entre aminoácidos, 
 el punto de menor energía de la estructura.
 En analizadores tipo cuadrupolo o cuadrupolo-TOF predominan los iones \emph{y-},
@@ -461,12 +509,10 @@ con carga positiva interaccionan con aniones que les transfieren un
 electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
 Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
 y para péptidos largos e incluso para proteínas enteras. Además produce
-una fragmentación en la que las cadenas laterales y modificaciones 
-post-traduccionales quedan intactas.
+una fragmentación en la que las cadenas laterales y PTMs quedan intactas.
 Estas cualidades hacen ETD interesante para proteómica \emph{top-down},
 que intenta identificar proteínas intactas, y también
-para experimentos orientados a la deteccion de péptidos con modificaciones
-post-traduccionales.
+para experimentos orientados a la deteccion de péptidos con PTMs.
 
 
 En la \emph{Disociación por Captura Electrónica} (ECD) \citep{Zubarev1998},
@@ -476,7 +522,7 @@ con electrones que, en este caso, son suministrados por introducción directa.
 tipo FTICR y en trampas iónicas y genera abundantes fragmentos de series
 \emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}.
 Al igual que ECD, es particularmente efectivo para el estudio de péptidos
-con modificaciones post-traduccionales.
+con PTMs
 
 Otro tipo de fragmentación es la \emph{Disociación por Alta Energía de Colisión} (HCD)
 usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que CID
@@ -519,8 +565,8 @@ que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
 proporción a las proteínas. Además la sensibilidad de los espectrómetros
 es menor para proteínas intactas que para péptidos. La cantidad de 
-posibles formas en que una proteína es procesada, incluyendo modificaciones
-post-traduccionales en sus péptidos, y variaciones conformacionales entre
+posibles formas en que una proteína es procesada, incluyendo PTMs 
+en sus péptidos, y variaciones conformacionales entre
 otras, hace que la combinación de isoformas posibles y sus masas sean 
 imposibles de discernir por MS. Por otra parte, para identificar a la
 proteína originaria se requiere información de la secuencia y para esto
@@ -561,7 +607,7 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 \addcontentsline{toc}{section}{Proteómica en gel}
 %\label{cap1:sec:Proteómica en gel}
 
-La separación de proteínas en geles de poli-acrilamida 
+La separación de proteínas por Electroforesis en Geles de Poli-Acrilamida 
 (PAGE, \textit{Polyacrilamide Gel Electrophoresis}), es una técnica, 
 o serie de técnicas con variantes, que consiste en separar
 proteínas presentes en una muestra inicial en base a propiedades
@@ -579,8 +625,8 @@ se distinguen básicamente dos tipos de PAGE
   Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
   situarse en un punto donde su carga neta se equilibra con la de su 
   entorno. A continuación la tira se coloca en la cabecera de un gel y se
-  aplica la segunda dimensión, de modo que se las proteínas se separan 
-  más, en este caso por peso molecular, al igual que en un gel 1D.
+  aplica la segunda dimensión, de modo que se las proteínas se someten a
+  una separación adicional, en este caso por peso molecular, al igual que en un gel 1D.
 \end{itemize}
 
 Otra clasificación posible de las técnicas PAGE puede establecerse en
@@ -602,7 +648,7 @@ Notablemente, permite la visualización, identificación y cuantificación
 de proteínas intactas. La particular capacidad de la proteómica en gel para
 separar proteínas con pequeños cambios en sus puntos isoeléctricos, \emph{pI},
 permite discernir entre isoformas de proteínas, o versiones de la misma 
-proteína con modificaciones post-traduccionales, lo que difícilmente se puede
+proteína con PTMs, lo que difícilmente se puede
 conseguir con otro tipo de aproximaciones.
 
 
@@ -631,8 +677,8 @@ de Tiempo de Vuelo (TOF).
 
 Una vez obtenido el espectro patrón de masas peptídicas, el proceso 
 de análisis consiguiente es similar al que se hace en la
-proteómica de alto rendimiento o \textit{shotgun}. Como se describe a
-continuación, la identificación
+proteómica de alto rendimiento o \textit{shotgun}. Como se describe en las
+secciones siguientes, la identificación
 del péptido responsable del espectro se realiza utilizando un motor de búsqueda, 
 que compara los valores de \mz del espectro 
 obtenidos empíricamente con los valores de \mz calculados a partir
@@ -732,15 +778,17 @@ siguiente en un experimento de proteómica \textit{shotgun} implica el
 análisis computacional de esos espectros cuyo objetivo final es la 
 obtención de una lista de proteínas que presumiblemente se encuentran en 
 la muestra. Este análisis computacional, a su vez, consta de varios procesos 
-secuenciales, principalmente la asignación de secuencias peptídicas a cada
-espectro, la inferencia de las proteínas a partir de esos péptidos y una
-evaluación estadística que aporta medidas de fiablidad a la identificación.
+secuenciales, principalmente la 
+\hyperref[cap1:sec:Asignación Péptido-Espectro]{asignación de secuencias peptídicas a cada espectro},
+\hyperref[cap1:sec:Inferencia de proteínas a partir de péptidos]{la inferencia de las proteínas a partir de esos péptidos}
+y una \hyperref[cap1:sec:Evaluación estadística de los resultados]{evaluación estadística que aporta medidas de fiablidad a la identificación}
 
 %-------------------------------------------------------------------
 \phantomsection
 \section*{Asignación Péptido-Espectro}
-\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 \label{cap1:sec:Asignación Péptido-Espectro}
+\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
+
 
 En un experimento típico de proteómica \textit{shotgun} pueden 
 generarse miles de espectros por hora. La interpretación manual, por lo
@@ -751,24 +799,26 @@ A cada una de estas asignaciones compuestas por un par péptido-espectro
 se les denomina generalmente PSM (\textit{Peptide Spectrum Match})
 
 Las estrategias utilizadas para la asignación de PSMs básicamente pueden
- clasificarse en tres tipos. La más extendida es la búsqueda utilizando
-bases de datos de secuencias,
+ clasificarse en tres tipos. La más extendida es la 
+\hyperref[cap1:subsec:búsqueda secuencia]{búsqueda utilizando bases de datos de secuencias},
 consistente en establecer una correlación entre
 el espectro MS/MS obtenido empíricamente y espectros teóricos predichos 
 a partir de secuencias. 
 Otra estrategia, usada en casos en que el genoma del 
-organismo objeto de estudio no está (o sólo parcialmente) secuenciado, es la secuenciación 
-\textit{de novo} en la que la secuencia se infiere directamente del espectro
+organismo objeto de estudio no está (o sólo parcialmente) secuenciado, es 
+\hyperref[cap1:subsec:búsqueda de novo]{la secuenciación 
+\textit{de novo}} en la que la secuencia se infiere directamente del espectro
 sin ayuda de una base de datos de referencia.
-El tercer tipo de aproximación, la búsqueda basada en bibliotecas de 
-espectros, requiere una recopilación, lo más extensa posible, de
+El tercer tipo de aproximación, la 
+\hyperref[cap1:subsec:búsqueda espectral]{búsqueda basada en bibliotecas de 
+espectros}, requiere una recopilación, lo más extensa posible, de
 espectros MS/MS adquiridos previamente y ya asignados a péptidos,
-que son comparados directamente
-con los nuevos espectros adquiridos en el experimento.
+que son comparados directamente con los espectros empíricos adquiridos.
 
 
 \phantomsection
 \subsection*{Búsqueda en bases de datos de secuencias}
+\label{cap1:subsec:búsqueda secuencia}
 \addcontentsline{toc}{subsection}{Búsqueda en bases de datos de secuencias}
 
 La búsqueda utilizando bases de datos de secuencias es el principal y más
@@ -777,7 +827,8 @@ de asignación de una secuencia peptídica a un espectro MS/MS.
 Existen una gran variedad de herramientas computacionales para realizar
 esta tarea. 
 
-Los motores de búsqueda, descritos en detalle en una sección posterior,
+Los 
+\hyperref[cap1:subsubsec:motores de búsqueda]{motores de búsqueda}
  son un tipo de programas informáticos a los que
 se les suministra como entrada datos correspondientes a una lista de 
 espectros MS/MS empíricos y una serie de
@@ -846,8 +897,8 @@ al coste computacional son:
 \item {
 Masa mono-isotópica o Masa promedio.
 A partir de un espectro MS se obtiene el valor \mz y con ello
-la masa del péptido. Sin embargo
-este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
+la masa del péptido. 
+Este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
 aquella en la que se considera que todos los átomos de C se encuentran 
 en su forma \textsuperscript{12}C
 o bien, puede considerarse que existe una proporción variable de isótopos 
@@ -861,31 +912,35 @@ de baja resolución suele elegirse el valor de masa promedio.
 El número de puntos de corte no efectuado permitidos dentro de la 
 secuencia del precursor. La eficiencia de las enzimas proteolíticas 
 no es del 100\%, por tanto, este parámetro hace que el motor de búsqueda
-tenga también en cuenta péptidos con K y/o R en su secuencia.
+tenga también en cuenta péptidos con K y/o R en su secuencia (en el caso
+de una digestión con tripsina)
 }
 
 \item{
 Modificaciones post-traduccionales y otras modificaciones permitidas 
 que ocurren en el proceso experimental.
-Algunas de éstas ocurren con una frecuencia variable, como las
-oxidaciones que se pueden producir en algunas de las metioninas (M).
-Otro tipo de modificaciones son las llamadas fijas, como la carbamidometilación
-en las cisteínas (C), un artefacto que se produce en todas las C
-para evitar la formación de puentes di-sulfuro.
-La selección de este tipo de modificaciones permite que el motor de búsqueda
-pueda tener en cuenta un posible desfase de masa en el péptido, equivalente
-por ejemplo, a un átomo de oxígeno o un grupo carbamido-metil en el
-caso de las modificaciones descritas.
-
-
+Algunas modificaciones ocurren como consecuencia de la manipulación 
+experimental, como la carbamidometilación en las cisteínas (C), un 
+artefacto que se produce (por reducción y alquilación por acción de 
+Iodoacetamida) en todas las C para evitar la formación de puentes di-sulfuro. 
+Otro tipo de modificaciones son las PTMs que ocurren
+en la célula naturalmente y que suponen transformaciones estructurales y/o funcionales
+en las proteínas, como las fosforilaciones que implican un desplazamiento 
+en masa promedio de 79.979 Da sobre residuos de serina (S), treonina (T) o tirosina(Y);
+o las glicosilaciones que implican la adición de oligosacáridos sobre grupos
+amino de asparagina (N) o glutamina (Q) (N-glicosilación); o hidroxilo (O-glicosilación) 
+en serinas (S) o treoninas (T)
+Además puede considerarse que las modificaciones ocurren siempre en todos
+los residuos objetivo de la modificación o bien de forma variable para que el
+motor de búsqueda considere también la masa del aminoácido sin modificación.
 }
 
 \item{
 Tipo de iones fragmento permitidos. 
 Los espectros de fragmentación teóricos son calculados a partir de las 
-secuencias de péptidos (trípticos) en la base de datos de referencia. 
+secuencias de péptidos (trípticos) obtenidos de la base de datos de referencia. 
 Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
-abundantes sino que, en función del tipo de instrumento y de fragmentación,
+abundantes sino que, en función del tipo de fragmentación,
 se generan más fragmentos de un tipo o de otro. 
 Así, en instrumentos de tipo cuadrupolo o híbridos cuadrupolo-TOF,
 la fragmentación genera abundantes iones de la serie \emph{y-}, en las
@@ -921,23 +976,26 @@ muy abierta y posteriormente refinarla. %\citep{Creasy2002}
 
 
 
- 
+\phantomsection %para poder referenciarla en "Busqueda en bases de datos de secuencias"
 \subsubsection*{Motores de búsqueda. Funciones de puntuación}
+\label{cap1:subsubsec:motores de búsqueda}
+
 
 %\textit{(mirar 3.1.2 Scoring functions en Neszvhi review en JOP)}
 %\textit{(mirar Statistics for Proteomics course, J.Vazquez)}
 
 Los motores de búsqueda se encargan de 
-asignar a cada espectro obtenido un péptido, el mejor candidato de una lista de los
+asignar a cada espectro empírico obtenido un péptido, el mejor candidato de una lista de los
 posibles péptidos que han generado ese espectro, con una cierta medida
 de puntuación función del grado de similitud entre espectro empírico y teórico. 
-La estrategia general consiste en realizar una digestión teórica a nivel
-de péptido y de fragmento, teniendo en cuenta los parámetros especificados.
+La estrategia general consiste en realizar una digestión teórica de las
+secuencias de proteínas de referencia, teniendo en cuenta los parámetros especificados.
 Así, para cada espectro observado, el motor de búsqueda recorre las secuencias 
 en una base de datos (un archivo FASTA) seleccionando aquellos péptidos
 con valores \mz similares al del ion precursor en el espectro empírico y
-que se encuentran dentro del rango de tolerancia permitido. A continuación
-se establece el grado de similitud de cada espectro con los espectros teóricos
+que se encuentran dentro del rango de tolerancia permitido obteniendo un
+espectro teórico para cada uno. A continuación
+se establece el grado de similitud de cada espectro adquirido con los espectros teóricos
 de cada uno de los péptidos candidatos, es decir, se evalúa la calidad de cada PSM.
 
 \figura{Vectorial/spectrum_identification}{width=.99\textwidth}{fig:spectrum_identification}%
@@ -957,7 +1015,7 @@ en alineamiento de espectros o en el uso de reglas derivadas más complejas.
 SEQUEST \citep{Eng1994} fue la primera herramienta descrita para correlacionar
 espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
-calcula la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
+calcula de manera independiente la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
 para todos los candidatos con los que es comparado.
 En primer lugar se crea un espectro empírico procesado (espectro X) en el que los picos de baja 
 intensidad son elimnados y el resto de valores \mz son redondeados al valor
@@ -1049,6 +1107,7 @@ y dada una distribución calculada de los valores \mz predichos para los candidat
  
 \phantomsection
 \subsection*{Búsqueda basada en bibliotecas de espectros}
+\label{cap1:subsec:búsqueda espectral}
 \addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
 
 Una alternativa posible a la búsqueda de espectros MS/MS usando espectros
@@ -1079,6 +1138,7 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 
 \phantomsection 
 \subsection*{Identificación por secuenciación \textit{de novo}}
+\label{cap1:subsec:búsqueda de novo}
 \addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
 
 La secuenciación \textit{de novo}, a diferencia de las otras aproximaciones
@@ -1216,6 +1276,10 @@ pero se interpreta como el número esperado de péptidos con puntuación
 igual o superior a la del mejor péptido candidato. Se calcula como el 
 área bajo la curva situada hacia el extremo de la distribución desde el
 punto de máxima puntuación.
+
+\textit{ O NO Exactamente}
+
+\textit{Ver ppt Interpreting MS-MS proteomics results}
 
 Ambos parámetros estadísticos, el \emph{p-valor} y el \emph{e-valor},
 a diferencia del valor de puntuación original calculado por el motor de búsqueda,
@@ -1424,7 +1488,7 @@ estimada de PSMs correctos entre una colección de PSMs con puntuaciones
 (o p-valores / e-valores) similares. %5.2 Nesviz review
 Este tipo de análisis, propuesto por \citep{Keller2002} e implementado 
 en la herramienta \emph{PeptideProphet}, se basa en asumir que la distribución
-promedio de puntuaciones de todos los PSMs del experimento es una combinación
+promedio de las mejores puntuaciones de todos los PSMs del experimento es una combinación
 de distribuciones, un modelo mixto de probabilidad, que integra la 
 distribución de los PSMs incorrectos y la distribución de los PSMs correctos.
 (Figura~\ref{fig:single_spectrum_and_average_distributions})
