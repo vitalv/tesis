@@ -68,7 +68,7 @@ Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
 estadío del desarrollo entre otros factores. Además existen niveles de complejidad
 adicional en el curso de información desde el gen a la proteína 
-como el \textit{splicing} alternativo y las modificaciones post-traduccionales (PTMs).
+como el \textit{splicing} alternativo y las \ac{PTM}.
 Por eso el término Proteoma puede diversificarse, para ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
@@ -81,8 +81,8 @@ Pero además Proteómica se refiere a las tecnologías utilizadas para ello.
 
 El establecimiento de la espectrometría de masas aplicada a moléculas
 biológicas a finales de los años 80 y el desarrollo de técnicas de 
-separación de péptidos y proteínas como la electroforesis PAGE y la 
-cromatografía líquida permitieron que la Proteómica se 
+separación de péptidos y proteínas como \acl{PAGE} y \ac{HPLC}
+ permitieron que la Proteómica se 
 consolidara y extendiera como disciplina científica.
 
 La figura~\ref{fig:proteome_complexity} ilustra como el grado de complejidad 
@@ -105,19 +105,20 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
 biológicas a finales de los años 80, además de valer el Nobel a John Fenn y Koichi Tanaka, 
 permitió sentar las bases de la Espectrometría de Masas aplicada a la 
-Proteómica. Las técnicas de Ionización por ElectroSpray (ESI) \citep{Fenn1989a}
-y Desorción Suave por Láser (SLD) \citep{Tanaka1988} permitieron que 
+Proteómica. Las técnicas de \ac{ESI} \citep{Fenn1989a}
+y \ac{SLD} 
+\citep{Tanaka1988} permitieron que 
 las grandes y frágiles moléculas biológicas como las proteínas pudieran 
 ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas.
 
 Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
 independientemente habían surgido en distintas partes del mundo ideas
-muy similares. Así, el desarrollo de SLD que valió el Nobel a K. Tanaka,
+muy similares. Así, el desarrollo de \ac{SLD} que valió el Nobel a K. Tanaka,
 tuvo un precedente unos años antes.
 Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
 discutiblemente no galardonados) habían ideado una técnica similar que,
-en este caso, denominaron Desorción/Ionización Láser Asistida por
-Matriz (MALDI) \citep{Karas1988} Aunque MALDI no fue aplicado a la ionización 
+en este caso, denominaron \ac{MALDI} 
+ \citep{Karas1988} Aunque \ac{MALDI} no fue aplicado a la ionización 
 de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
 éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
  de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
@@ -146,7 +147,7 @@ de una muestra inicialmente muy compleja sean separados e introducidos
 gradualmente. Este acoplamiento requiere una interfaz, una 
 conexión física y funcional entre el sistema de cromatografía y el espectrómetro,
 que consiste generalmente en una columna capilar de caudal controlado.
-En ocasiones, como es en el caso del ESI, el sistema
+En ocasiones, como es en el caso del \ac{ESI}, el sistema
 de entrada y la fuente de iones forman parte de un único componente.
 
 
@@ -157,13 +158,13 @@ fácilmente volatilizadas.
 El desarrollo de las técnicas de ionización \textit{suave} permitió que
 péptidos y proteínas ionizados y relativamente intactos pudieran ser 
 introducidos, en fase gaseosa, en un sistema de vacío en los 
-espectrómetros de masas para ser analizados. La ionización ESI y MALDI
+espectrómetros de masas para ser analizados. La ionización \ac{ESI} y \ac{MALDI}
 son las más comunes en Proteómica aunque existen también otros métodos
 un poco menos utilizados.
 
 \begin{itemize}
 
-\item En \textbf{ESI}, el analito se encuentra en fase líquida en un solvente
+\item En \textbf{\ac{ESI}}, el analito se encuentra en fase líquida en un solvente
  orgánico volátil como metanol o acetonitrilo. Esta solución
 es conducida a través de un capilar sometido a un campo eléctrico de forma
 que las micro-gotas en el ápice del capilar, una vez que la carga supera
@@ -174,30 +175,29 @@ en un proceso reiterativo, hasta el punto en que las moléculas de analito se rep
 suficiente para superar la tensión superficial y liberarse del solvente (explosión de Coulomb)
 quedando iones de analito en suspensión que son introducidos en un sistema vacío hacia el espectrómetro.
 
-\item \textbf{MALDI} consiste en embeber la muestra en una matriz líquida, 
+\item \textbf{\ac{MALDI}} consiste en embeber la muestra en una matriz líquida, 
 que posteriormente se seca,
 con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
 láser UV. Al absorber la energía del láser las moléculas que conforman la
 matriz son ionizadas por adición de protones que son luego transferidos
-al analito. Generalmente la ionización MALDI, por su carácter pulsante,
+al analito. Generalmente la ionización \ac{MALDI}, por su carácter pulsante,
 se usa acoplada a analizadores de tipo Tiempo de Vuelo (TOF) que miden
 el tiempo que tardan los analitos ionizados en llegar al detector a través
 del vacío.
 
 
-\item \textbf{FAB}, \textit{Fast Atom Bombardment} o Bombardeo Rápido 
-Atómico consiste en hacer incidir
+\item \ac{FAB} consiste en hacer incidir
 un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
 el analito provocando de esa forma su ionización.
 
-\item En la ionización por \textbf{FD}, \textit{Field Desorption} o Desorción en Campo Eléctrico
+\item En la ionización por \ac{FD},
 la muestra se encuentra sometida a un campo eléctrico creado en una 
 superficie, generalmente un filamento de tungsteno, llamado \emph{emisor}.
  Al superar 
 un umbral de diferencia de potencial se produce la desorción e ionización
 del analito.
 
-\item \textbf{PD}, \textit{Plasma Desorption} o Desorción por Plasma 
+\item \ac{PD} 
 consiste en hacer uso de un isótopo radiactivo \textsuperscript{252}Cf que
 al sufrir su fisión espontánea produce dos partículas de alta energía
 con trayectorias opuestas, 
@@ -241,7 +241,7 @@ que impactan en el detector a diferentes tiempos. Para iones con la misma
 carga, la aceleración depende solo de la masa, los más ligeros 
 llegan al detector antes y los más pesados después.
 Por su carácter dependiente de la dimensión tiempo, los analizadores TOF
-se usan generalmente en combinación con ionización MALDI, que introduce
+se usan generalmente en combinación con ionización \ac{MALDI}, que introduce
 iones en el analizador en pulsos de láser.
 
 \item \textbf{Cuadrupolos}. Los analizadores de tipo Cuadrupolo 
@@ -509,10 +509,10 @@ con carga positiva interaccionan con aniones que les transfieren un
 electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
 Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
 y para péptidos largos e incluso para proteínas enteras. Además produce
-una fragmentación en la que las cadenas laterales y PTMs quedan intactas.
+una fragmentación en la que las cadenas laterales y \ac{PTM} quedan intactas.
 Estas cualidades hacen ETD interesante para proteómica \emph{top-down},
 que intenta identificar proteínas intactas, y también
-para experimentos orientados a la deteccion de péptidos con PTMs.
+para experimentos orientados a la deteccion de péptidos con \ac{PTM}.
 
 
 En la \emph{Disociación por Captura Electrónica} (ECD) \citep{Zubarev1998},
@@ -522,7 +522,7 @@ con electrones que, en este caso, son suministrados por introducción directa.
 tipo FTICR y en trampas iónicas y genera abundantes fragmentos de series
 \emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}.
 Al igual que ECD, es particularmente efectivo para el estudio de péptidos
-con PTMs
+con \ac{PTM}
 
 Otro tipo de fragmentación es la \emph{Disociación por Alta Energía de Colisión} (HCD)
 usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que CID
@@ -565,7 +565,7 @@ que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
 proporción a las proteínas. Además la sensibilidad de los espectrómetros
 es menor para proteínas intactas que para péptidos. La cantidad de 
-posibles formas en que una proteína es procesada, incluyendo PTMs 
+posibles formas en que una proteína es procesada, incluyendo \ac{PTM} 
 en sus péptidos, y variaciones conformacionales entre
 otras, hace que la combinación de isoformas posibles y sus masas sean 
 imposibles de discernir por MS. Por otra parte, para identificar a la
@@ -607,20 +607,19 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 \addcontentsline{toc}{section}{Proteómica en gel}
 %\label{cap1:sec:Proteómica en gel}
 
-La separación de proteínas por Electroforesis en Geles de Poli-Acrilamida 
-(PAGE, \textit{Polyacrilamide Gel Electrophoresis}), es una técnica, 
+La separación de proteínas por \acl{PAGE}, es una técnica, 
 o serie de técnicas con variantes, que consiste en separar
 proteínas presentes en una muestra inicial en base a propiedades
 fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
 En función del número de estas propiedades que se aprovechan para separar,
  en mayor o menor grado, las proteínas de una muestra
-se distinguen básicamente dos tipos de PAGE
+se distinguen básicamente dos tipos de \ac{PAGE}
 \begin{itemize}
-  \item Geles monodimensionales, 1D-PAGE. En este tipo de geles las 
+  \item \ac{1DPAGE}. En este tipo de geles las 
   proteínas se separan en función de su peso molecular. La electroforesis
   hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
   mas lejos en el gel, sometido a una diferencia de potencial.
-  \item Geles bidimensionales. 2D-PAGE. En este caso, las proteínas 
+  \item \ac{2DPAGE}. En este caso, las proteínas 
   se separan en una primera dimensión en función de su punto isoeléctrico.
   Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
   situarse en un punto donde su carga neta se equilibra con la de su 
@@ -648,7 +647,7 @@ Notablemente, permite la visualización, identificación y cuantificación
 de proteínas intactas. La particular capacidad de la proteómica en gel para
 separar proteínas con pequeños cambios en sus puntos isoeléctricos, \emph{pI},
 permite discernir entre isoformas de proteínas, o versiones de la misma 
-proteína con PTMs, lo que difícilmente se puede
+proteína con \ac{PTM}, lo que difícilmente se puede
 conseguir con otro tipo de aproximaciones.
 
 
@@ -667,12 +666,12 @@ Sin embargo, a pesar de esta especificidad, la enorme variedad de
 proteínas implica una mayor aún variedad de posibles péptidos generados a partir de 
 ellas que pueden tener masas muy similares. Por ese motivo,
  esta técnica requiere que la proteína se encuentre previamente aislada, 
- generalmente a partir de una \textit{mancha} o \textit{spot} proteico de 2D-PAGE
+ generalmente a partir de una \textit{mancha} o \textit{spot} proteico de \ac{2DPAGE}
 
 Generalmente la técnica de la Huella Peptídica se lleva a cabo por 
 espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
 péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
-en una matriz MALDI, donde son ionizados e introducidos en un analizador
+en una matriz \ac{MALDI}, donde son ionizados e introducidos en un analizador
 de Tiempo de Vuelo (TOF).
 
 Una vez obtenido el espectro patrón de masas peptídicas, el proceso 
@@ -724,7 +723,7 @@ realiza una cromatografía que permite separar los péptidos para que
 sean ionizados y lleguen al analizador de masas gradualmente.
 
 Opcionalmente esta separación puede comenzar a nivel de proteína por
-electroforesis en un gel 1D-PAGE, o por ejemplo,
+electroforesis en un gel \ac{1DPAGE}, o por ejemplo,
 por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos.
 
@@ -923,7 +922,7 @@ Algunas modificaciones ocurren como consecuencia de la manipulación
 experimental, como la carbamidometilación en las cisteínas (C), un 
 artefacto que se produce (por reducción y alquilación por acción de 
 Iodoacetamida) en todas las C para evitar la formación de puentes di-sulfuro. 
-Otro tipo de modificaciones son las PTMs que ocurren
+Otro tipo de modificaciones son las \ac{PTM} que ocurren
 en la célula naturalmente y que suponen transformaciones estructurales y/o funcionales
 en las proteínas, como las fosforilaciones que implican un desplazamiento 
 en masa promedio de 79.979 Da sobre residuos de serina (S), treonina (T) o tirosina(Y);

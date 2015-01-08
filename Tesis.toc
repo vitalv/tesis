@@ -9,17 +9,17 @@
 \contentsline {section}{Digesti\'on de prote\IeC {\'\i }nas en p\'eptidos}{18}{section*.15}
 \contentsline {section}{Prote\'omica en gel}{19}{section*.16}
 \contentsline {subsection}{Huella Pept\IeC {\'\i }dica}{21}{section*.17}
-\contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{21}{section*.18}
-\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{22}{section*.20}
+\contentsline {section}{Prote\'omica de alto rendimiento \textit {Shotgun}}{22}{section*.18}
+\contentsline {subsection}{Separaci\'on multidimensional de p\'eptidos}{23}{section*.20}
 \contentsline {section}{Asignaci\'on P\'eptido-Espectro}{24}{section*.21}
 \contentsline {subsection}{B\'usqueda en bases de datos de secuencias}{25}{section*.22}
-\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{30}{section*.25}
+\contentsline {subsection}{B\'usqueda basada en bibliotecas de espectros}{31}{section*.25}
 \contentsline {subsection}{Identificaci\'on por secuenciaci\'on \textit {de novo}}{31}{section*.26}
-\contentsline {subsection}{B\'usqueda mediante etiquetas de secuencia}{31}{section*.27}
+\contentsline {subsection}{B\'usqueda mediante etiquetas de secuencia}{32}{section*.27}
 \contentsline {subsection}{B\'usquedas tolerantes y multi-etapa}{32}{section*.28}
 \contentsline {section}{Inferencia de prote\IeC {\'\i }nas a partir de p\'eptidos}{32}{section*.29}
-\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{32}{section*.31}
-\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{40}{section*.34}
+\contentsline {section}{Evaluaci\'on estad\IeC {\'\i }stica de los resultados}{33}{section*.31}
+\contentsline {section}{Prote\'omica dirigida. SRM/MRM}{41}{section*.34}
 \contentsline {section}{Candida albicans como organismo modelo}{42}{section*.36}
 \contentsline {section}{Repositorios publicos de prote\'omica shotgun y dirigida}{42}{section*.37}
 \contentsline {section}{Formatos de archivos usados en espectrometr\IeC {\'\i }a de masas y prote\'omica}{42}{section*.38}
@@ -34,3 +34,4 @@
 \contentsline {section}{\numberline {4.1}}{71}{section.4.1}
 \contentsline {part}{IV\hspace {1em}Desarrollo de una base de datos para datos de Prote\'omica Dirigida (MRM)}{73}{part.4}
 \contentsline {part}{Bibliograf\IeC {\'\i }a}{75}{chapter*.40}
+\contentsline {chapter}{Lista de acr\'onimos}{78}{section*.41}
