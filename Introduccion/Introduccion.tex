@@ -331,62 +331,31 @@ como un cuadrupolo
 
 
 \subitem \emph{Orbitrap} es un tipo de trampa iónica, relativamente
-reciente, desarrollado a finales de los años 90 del s.XX (Referencia Makarov)
+reciente, desarrollado a finales de los años 90 del s.XX (Referencia Makarov, pagina 333 del Manual)
 Consiste en un electrodo en un eje interno rodeado por un electrodo externo
 cilíndrico. Los iones son introducidos tangencialmente desde la fuente 
 de ionización y, al ajustar la diferencia de potencial, son atrapados en
 órbitas elípticas longitudinales, en las que la atracción hacia el eje interno 
-es compensada por la fuerza centrífuga.
+es compensada por la fuerza centrífuga. La relación \mz se determina a partir 
+de la frecuencia angular de la oscilacion de los iones en torno al 
+electrodo longitudinal interno.
 
 
-\subitem \textbf{FTICR}
-
-\textit{ Ver Abian Introduccion MS :}
-
-\textit{
-El centro del analizador FT-ICR es una trampa
-de Penning, que consiste en un campo eléctrico cua-
-drupolar combinado con un campo magnético homo-
-géneo que permite confinar los iones en su interior
-(el campo cuadrupolar confina los iones axialmente 
-mientras que el campo magnético lo hace radialmen- 
- te). Esta celda ICR puede tomar diferentes formas 
- (cúbicas, hiperbólicas, abiertas de segmentos cilín- 
-    dricos...) con un número variable de electrodos 
-La FT-ICR se basa en la utilización del proceso 
- de resonancia ciclotrónica para la determinación de 
-la masa de un ión. Una partícula cargada en movi- 
-miento perpendicular a un campo magnético adquie- 
-re una trayectoria circular de una frecuencia de giro 
-(frecuencia ciclotrónica) que depende de su relación 
-m/z y del valor del campo. La aplicación de una 
-señal eléctrica de frecuencia igual a la frecuencia 
-de giro de la partícula hace que esta absorba energía 
-de forma resonante y aumente su radio de giro. En 
-las celdas ICR originales, este aumento del radio 
-de giro permitía a la partícula alcanzar un detector 
-con el que colisionaba (Figura 2). Estas celdas eran 
-por tanto destructivas. En los sistemas FT-ICR, en 
-cambio, la frecuencia de giro puede medirse a partir 
-de la señal imagen inducida capacitativamente por 
-la carga durante su giro en unos electrodos y a partir 
-de ella determinar la masa del ión. En la práctica, 
-cuando se trata de una mezcla de iones, el conjunto 
-se excita durante unos milisegundos con una señal 
-de frecuencia variable lo que sitúa a todos los iones 
-en órbitas cercanas a las placas detectoras que co- 
-lectan el correspondiente interferograma. Tal como
-se describió en el caso del Orbitrap, esta señal puede
- entonces deconvolucionarse en sus componentes
-mediante su análisis de FT para generar el corres-
-pondiente espectro de masas
-El FT-ICR utiliza imanes superconductores para
-generar campos de entre 2 y 14 Teslas y que de-
-terminan el grado de resolución alcanzable en la
-medida. Como en el caso del orbitrap, el FT-ICR se
-utiliza acoplado a un sistema de inyección de iones,
-generalmente una trampa LIT o QIT
-}
+\subitem Los analizadores de tipo \ac{FTICR} se basan en confinar los iones
+en un campo magnético homogéneo de forma que son sometidos a seguir una trayectoria
+circular. La Fuerza de Lorentz obliga a que un ion con un vector de velocidad
+ortogonal al campo magnético experimente una fuerza ortogonal al plano 
+definido por la velocidad y el campo magnético. Esto provoca que las 
+partículas describan movimientos circulares con una frecuencia de rotación
+característica de cada relación \mz y del valor del campo. Al aplicar
+un campo eléctrico de igual frecuencia a la frecuencia de rotación, la 
+partícula es excitada para seguir una trayectoria más larga aumentando
+el radio de giro. En la celda ICR, el conjunto de iones es excitado 
+durante unos milisegundos de forma que los iones adquieren diferentes
+órbitas de movimiento ciclotrónico que alcanzan las placas de detección.
+La señal formada por la mezcla de las frecuencias de todos los iones
+es entonces deconvolucionada mediante la transfomada de Fourier que
+ permite la detección simultánea de todas las frecuencias
 
 
 \end{itemize}
@@ -413,12 +382,11 @@ multiplicación de 10\textsuperscript{6} o mayores
 {Analizadores de masas tipo Cuadrupolo, Trampa Iónica Tridimensional (QIT) y Orbitrap}
 
 
-La \textit{sensibilidad}, \textit{resolución} y \textit{precisión}
-son parámetros importantes en un espectrómetro de masas 
- ya que determinan 
-notablemente la cantidad y calidad de información del espectro generado,
-lo que a su vez, es esencial para identificar el péptido que origina el 
-espectro. 
+La \textit{sensibilidad}, \textit{resolución}, \textit{precisión} y 
+\textit{exactitud} son parámetros importantes en espectrometría de masas 
+ya que determinan notablemente la cantidad y calidad de información
+del espectro generado, lo que a su vez, es esencial para identificar
+el péptido que origina el espectro. 
 
 La \textit{sensibilidad} de un espectrómetro de masas es la 
 capacidad para detectar masas muy pequeñas. Puede llegar a ser de hasta
@@ -427,15 +395,39 @@ precisión como \ac{LTQ}-Orbitrap, pero requiere un ajuste óptimo de múltiples
 parámetros como la calibración del instrumento o la temperatura entre
 otros.
 
+
 La \textit{resolución} es la capacidad para discernir señales que realmente 
 corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
- Esto es esencial para evitar la co-fragmentación, es decir, obtener 
-fragmentos de iones precursores diferentes con valores \mz similares.
+Esto es esencial para evitar la co-fragmentación, es decir, obtener 
+fragmentos de iones precursores diferentes con valores \mz similares o cuando
+se requiere conocer la distribución isotópica de un ion.
+La resolución se define como la diferencia entre las masas de dos picos
+adyacentes que están resueltos
 
+\begin{equation}
+\label{eq:resolucion}
+R = \frac{M}{\Delta{M}}
+\end{equation}
 
-La \textit{exactitud} o \textit{precisión} de la medida de la masa molecular 
-es la diferencia entre la masa medida y la calculada, teórica.
+donde M es el valor entero más próximo de masa del primer pico y $\Delta${M}
+es el incremento de \mz a una determinada altura del pico. Frecuentemente
+se usa un 50\% de altura del pico, el parámetro en ese caso es \ac{FWHM}
 
+La resolución es un parámetro específico del espectrómetro de masas. Otros
+parámetros, relacionados aunque no específicos del instrumento son la exactitud
+y la precisión
+
+La \textit{exactitud} de la medida de la masa molecular 
+es la diferencia entre el valor \mz obtenido para un ion y su valor real.
+Se expresa generalmente en partes por millón (ppm) y representa el error 
+del valor \mz obtenido con respecto al valor verdadero.
+
+La \textit{precision} es una medida de la dispersión de una serie de 
+mediciones obtenidas para un analito determinado (en condiciones
+experimentales equiparables) con respecto a un valor
+promedio de referencia. El parámetro que se emplea generalmente como medida
+de precisión es la desviación estándar $\sigma$, equivalente a la raíz
+cuadrada de la varianza.
 
 
 \subsection*{Espectrometría de masas en Tandem. MS/MS}
@@ -464,7 +456,7 @@ y el rendimiento que ofrece es, por tanto, limitado.
 \figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
 {Espectrometría de masas en Tandem. MS/MS}
 
-En la \ac{MSMS} o MS\textsuperscript{2},
+En \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
 fragmentación adicional. (Figura~\ref{fig:tandem_ms})
@@ -780,7 +772,7 @@ orgánulos.
 
 Pero el fraccionamiento más importante se hace a nivel de péptido, tras 
 la digestión de las proteinas, 
-por \ac{HPLC}
+por \ac{HPLC}.
 El funcionamiento básico general en HPLC consiste en hacer pasar la muestra
 a través de una fase estacionaria en el interior de una columna mediante 
 el bombeo a alta presión de una fase móvil. De esta forma los componentes 

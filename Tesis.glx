@@ -12,13 +12,15 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}, Disociación por Transferencia Electrónica}{}{acr}{a}{\GlossTeXPage{n}{18}}
+\GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}, Disociación por Transferencia Electrónica}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FAB}{FAB}{\emph{Fast Atom Bombardment}, Bombardeo Rápido Atómico}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FD}{FD}{\emph{Field Desorption}, Desorción en Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{19}}
+\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{13}}
+\GlossTeXNull{0}
+\GlossTeXEntry{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
 \GlossTeXEntry{HCD}{HCD}{\emph{Higher Energy Collision Dissociation}, Disociación por Colisión de Alta Energía}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
@@ -30,7 +32,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{16}}
+\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{17}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
