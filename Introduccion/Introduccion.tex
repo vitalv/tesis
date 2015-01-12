@@ -30,8 +30,8 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
  ambiente y con otros organismos. Las proteínas, los \textit{ladrillos} 
  con que se construye la vida, sí son visibles, a diferencia de los genes,
  a la selección natural.
- Por otra parte, el clásico dogma central de la Biología Molecular caducó hace ya 
- tiempo y hoy lo recordamos, más bien, como una sobresimplificación.
+ Por otra parte, el clásico dogma central de la Biología Molecular \textit{un gen, una proteína}
+ caducó hace ya tiempo y hoy lo recordamos, más bien, como una sobresimplificación.
  Actualmente, el emergente campo de la Proteogenómica da cuenta de la intrincada 
  red de procesos regulatorios de transferencia de información entre el gen y la proteína.
  La Proteómica por su parte, le debe a la Genómica el reconocimiento y agradecimiento
@@ -62,7 +62,7 @@ El concepto de Proteoma fue acuñado originalmente por Marc Wilkins en
 Si el Genoma es la dotación génica de una célula u organismo, 
 el Proteoma es entendido como \emph{el conjunto total de proteínas 
 expresadas por los genes de una célula, tejido u organismo}. 
-Sin embargo, mientras que el Genoma permanece constante en todas las 
+Sin embargo, mientras que el Genoma es el mismo en todas las 
 células del organismo, el Proteoma es un concepto más variable. 
 Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
@@ -81,7 +81,7 @@ Pero además Proteómica se refiere a las tecnologías utilizadas para ello.
 
 El establecimiento de la espectrometría de masas aplicada a moléculas
 biológicas a finales de los años 80 y el desarrollo de técnicas de 
-separación de péptidos y proteínas como \acl{PAGE} y \ac{HPLC}
+separación de péptidos y proteínas como \ac{PAGE} y \ac{HPLC}
  permitieron que la Proteómica se 
 consolidara y extendiera como disciplina científica.
 
@@ -91,6 +91,49 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 
 \figura{Vectorial/proteome_complexity}{width=.99\textwidth}{fig:proteome_complexity}%
 {Aumento de complejidad desde el genoma hacia el proteoma}
+
+\subsection*{Consideraciones sobre unidades empleadas en espectrometría de masas}
+\addcontentsline{toc}{subsection}{Unidades empleadas en espectrometría de masas}
+
+La unidad fundamental de masa usada en física y química, empleada en la
+medida de masas atómicas y moleculares, es la llamada \textit{Unidad de Masa Atómica}, \textbf{u}, o \textbf{uma}
+también denominada \textit{Dalton}, \textbf{Da}. 
+La escala de unidades de masa atómica es una escala relativa donde la referencia es el átomo de carbono.
+El valor de una \emph{uma} o \emph{dalton} se define como la doceava parte
+de la masa de un átomo neutro de \textsuperscript{12}C, el isótopo más frecuente de carbono.
+Así, la masa de un átomo de  \textsuperscript{12}C es de 12 u. Y 1 u es aproximadamente
+equivalente a la masa de un átomo de hidrógeno o la masa de un protón.
+
+\begin{equation}
+\label{eq:uma_definition}
+\begin{split}
+1 Da &= 1 u = 1/12 \cdot \left(\frac{12g\ \ce{^{12}C}}{mol\ \ce{^{12}C}}\right)\\
+\textup{}\\
+1 Da &= 1 u = 1/12 \cdot \left(\frac{6.0221\times10^{23} atomos\ \ce{^{12}C}}{mol\ \ce{^{12}C}}\right)\\
+\textup{}\\
+1 Da &= 1 u = 1.66054\times10^{-24}g/atomo\ \ce{^{12}C} = 1.66054\times10^{-24}kg/ atomo\ \ce{^{12}C}
+\end{split}
+\end{equation}
+
+
+Sin embargo los analizadores (espectrómetros) de masas no miden la masa 
+de los analitos ionizados sino la relación entre masa y carga \mz , donde
+m es la masa molecular del analito y z un múltiplo entero del número de 
+cargas del ion. La unidad empleada para medir esta relación es el \textit{Thomson},
+\textbf{Th}. Un thomsom equivale a 1 Da / e.
+En general, para iones monocargados y solo en ese caso, la masa en Da
+es equivalente a su valor en thomsons.
+
+Además, en espectrometría de masas es interesante medir la masa exacta de los isótopos
+de los elementos que componen las moléculas. En este sentido es importante
+diferenciar entre las masas mono-isotopica y masa promedio
+
+La \emph{masa promedio} es equivalente a una media de las masas atómicas de todos
+los átomos de los elementos que componen el ion ponderados por abundancia
+isotópica.
+Mientras que la \emph{masa mono-isotópica} es qquella en la que se 
+considera que todos los átomos de C se encuentran en su forma \textsuperscript{12}C
+
 
 
 
@@ -103,7 +146,7 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 %\label{cap1:sec:Espectrometría de masas}
 
 El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
-biológicas a finales de los años 80, además de valer el Nobel a John Fenn y Koichi Tanaka, 
+biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
 permitió sentar las bases de la Espectrometría de Masas aplicada a la 
 Proteómica. Las técnicas de \ac{ESI} \citep{Fenn1989a}
 y \ac{SLD} 
@@ -123,7 +166,16 @@ de proteínas hasta la publicación del trabajo de Tanaka, actualmente
 éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
  de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
 
-\medskip %Produces a medium-sized space between paragraphs.
+
+
+
+
+
+
+
+%\medskip %Produces a medium-sized space between paragraphs.
+\subsection*{Componentes de un espectrómetro de masas}
+\addcontentsline{toc}{subsection}{Componentes de un espectrómetro de masas}
 
 Un espectrómetro de masas es, en esencia, una balanza de precisión molecular capaz
 de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la carga)
@@ -812,6 +864,16 @@ espectros MS/MS adquiridos previamente y ya asignados a péptidos,
 que son comparados directamente con los espectros empíricos adquiridos.
 
 
+
+\figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
+{Interpretación de espectros MS/MS. Identificación de novo}
+
+
+\figura{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
+{Interpretación de automática espectros MS/MS}
+
+
+
 \phantomsection
 \subsection*{Búsqueda en bases de datos de secuencias}
 \label{cap1:subsec:búsqueda secuencia}
@@ -846,6 +908,7 @@ función del grado de similitud entre el espectro empírico y el teórico.
 
 
 %\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
+
 
 \subsubsection*{Elaboración de una lista de péptidos candidatos}
 
