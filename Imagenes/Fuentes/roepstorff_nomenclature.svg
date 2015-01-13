@@ -13,8 +13,8 @@
    height="255.53937"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="Documento nuevo 1">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="roepstorff_nomenclature.svg">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -125,9 +125,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.76759756"
-     inkscape:cx="61.541554"
-     inkscape:cy="85.456578"
+     inkscape:zoom="1.0855469"
+     inkscape:cx="359.48792"
+     inkscape:cy="111.20768"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -135,10 +135,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1280"
-     inkscape:window-height="971"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="1280"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -148,7 +148,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -158,7 +158,7 @@
      id="layer1"
      transform="translate(-175.12341,-242.5945)">
     <rect
-       style="opacity:0.3;fill:#f9f9f9;fill-opacity:1;stroke:#f9f9f9;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.29999999999999999;fill:#ffffff;fill-opacity:1;stroke:#f9f9f9;stroke-width:1.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4349"
        width="485.93173"
        height="254.03937"
