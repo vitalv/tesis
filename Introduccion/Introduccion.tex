@@ -118,7 +118,7 @@ equivalente a la masa de un átomo de hidrógeno o la masa de un protón.
 
 Sin embargo los analizadores (espectrómetros) de masas no miden la masa 
 de los analitos ionizados sino la relación entre masa y carga \mz , donde
-m es la masa molecular del analito y z un múltiplo entero del número de 
+\emph{m} es la masa molecular del analito y \emph{z} un múltiplo entero del número de 
 cargas del ion. La unidad empleada para medir esta relación es el \textit{Thomson},
 \textbf{Th}. Un thomsom equivale a 1 Da / e.
 En general, para iones monocargados y solo en ese caso, la masa en Da
@@ -1062,7 +1062,7 @@ correlación entre espectros, basadas en contar el número de fragmentos compartid
 en alineamiento de espectros o en el uso de reglas derivadas más complejas.
 
 
-%SEQUEST%%%
+%SEQUEST%%% Mirar libro proteomics bioinformatics Capitulo Nesviz
 SEQUEST \citep{Eng1994} fue la primera herramienta descrita para correlacionar
 espectros MS/MS con secuencias de aminoácidos y actualmente sigue siendo
 uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
@@ -1075,13 +1075,13 @@ usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr
 es calculado como una funcion de correlación \emph{Corr(t)} (el producto 
 entre los vectores X e Y, con Y desplazado \textit{t} unidades de masa 
 respecto a X a lo largo del eje \mz )
-%\begin{equation}
-%\label{eq:sequest_corr}
-%\begin{split}
-%Corr(t) = \sum_{i} \ x_{i} \ y_{i+1}\\
-%Xcorr = Corr(0)\ - < Corr(t) >_{i}
-%\end{split}
-%\end{equation}
+\begin{equation}
+\label{eq:sequest_corr}
+\begin{split}
+Corr(t) = \sum_{i} \ x_{i} \ y_{i+t}\\
+Xcorr = Corr(0)\ - < Corr(t) >_{i}
+\end{split}
+\end{equation}
 Básicamente, \emph{Xcorr} contabiliza el número de fragmentos coincidentes
 entre el espectro empírico (procesado) y el espectro teórico permitiendo
 pequeños desplazamientos. %Además la puntuación se corrige sustrayendo el valor 
@@ -1096,11 +1096,23 @@ Ambos valores son por tanto indicativos de la calidad de cada \ac{PSM} que será
 mejor cuanto más altas sean ambas puntuaciones.
 
 %X!TANDEM%%%
-Otro motor de búsqueda frecuentemente utilizado es \emph{X!Tandem} \citep{Craig2004},
+Otro motor de búsqueda frecuentemente utilizado es \emph{X!Tandem} \citep{Fenyo2003},
 que calcula una puntuación llamada \emph{hyperscore}. Ésta también se basa
 en contar el número de picos compartidos entre los espectros teórico y empírico,
-pero en este caso se tiene en cuenta si los iones coincidentes pertenecen
+pero en este caso, en la versión original del software, se tiene en cuenta si los iones coincidentes pertenecen
 a las series \emph{b-} e \emph{y-}.
+
+\begin{equation}
+\label{eq:xtandem_hyperscore}
+\begin{split}
+by-Score &= \sum \ Intensidad\ picos\ coincidentes\ b\ e  y- \\
+hyperscore &= (by-Score) \cdot N_{y}!\ \cdot N_{b}!
+\end{split}
+\end{equation}
+
+
+\textit{ Buscar que mejora era lo del k-score}
+
 
 %MASCOT%%%
 \emph{Mascot} es quizá el más popular de los motores de búsqueda a 
@@ -1154,12 +1166,16 @@ y dada una distribución calculada de los valores \mz predichos para los candidat
 %de un experimento.
 %
 
-
- 
 \phantomsection
-\subsection*{Búsqueda basada en bibliotecas de espectros}
-\label{cap1:subsec:búsqueda espectral}
-\addcontentsline{toc}{subsection}{Búsqueda basada en bibliotecas de espectros}
+\subsection*{Otras estrategias de asignación péptido-espectro}
+\label{cap1:subsec:otras estrategias de asignación péptido-espectro}
+\addcontentsline{toc}{subsection}{Otras estrategias de asignación péptido-espectro}
+
+
+\phantomsection 
+\subsubsection*{Búsqueda basada en bibliotecas de espectros}
+\label{cap1:subsubsec:Búsqueda basada en bibliotecas de espectros}
+ 
 
 Una alternativa posible a la búsqueda de espectros MS/MS usando espectros
 teóricos predichos computacionalmente a partir de bases de datos de 
@@ -1188,9 +1204,8 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 
 
 \phantomsection 
-\subsection*{Identificación por secuenciación \textit{de novo}}
-\label{cap1:subsec:búsqueda de novo}
-\addcontentsline{toc}{subsection}{Identificación por secuenciación \textit{de novo}}
+\subsubsection*{Identificación por secuenciación \textit{de novo}}
+\label{cap1:subsubsec:búsqueda de novo}
 
 La secuenciación \textit{de novo}, a diferencia de las otras aproximaciones
 para interpretar espectros MS/MS, no requiere información adicional como
@@ -1206,12 +1221,9 @@ típico de \textit{shotgun}, el proceso es computacionalmente muy exhaustivo
 y requiere espectros MS/MS de gran calidad.
 
 
-
-
-
 \phantomsection
-\subsection*{Búsqueda mediante etiquetas de secuencia}
-\addcontentsline{toc}{subsection}{Búsqueda mediante etiquetas de secuencia}
+\subsubsection*{Búsqueda mediante etiquetas de secuencia}
+\label{cap1:subsubsec:Búsqueda mediante etiquetas de secuencia}
 
 \textit{Mirar Hybrid approaches (3.4) en Nesvizhskii review,
 también -Computational and Statistical Analysis of Protein Mass Spectrometry Data- 
@@ -1234,8 +1246,8 @@ of post-translationally or chemically modified peptides-
 
 
 \phantomsection
-\subsection*{Búsquedas tolerantes y multi-etapa}
-\addcontentsline{toc}{subsection}{Búsquedas tolerantes y multi-etapa}
+\subsubsection*{Búsquedas tolerantes y multi-etapa}
+\label{cap1:subsec:Búsquedas tolerantes y multi-etapa}
 
 \textit{Mirar Strategies for more comprehensive... (4) en Nesvizhskii review}
 
@@ -1293,23 +1305,24 @@ todos los \ac{PSM} en el conjunto del experimento.
 
 \subsubsection*{Distribuciones de Espectro Individual y Promedio}
 
-\emph{Distribución de espectro individual}.
+\emph{Distribución de espectro individual}
 
-Cuando un espectro MS/MS es comparado con los espectros teóricos de los
-péptidos en la lista de candidatos creada a partir de la base de datos de referencia, 
-se puede obtener una lista de péptidos ordenados en función 
-de la puntuación obtenida que mide el grado de similitud entre el espectro
-empírico adquirido y el teórico.
-La función de puntuación es un valor dependiente del motor de búsqueda
-utilizado, por eso, frecuentemente este valor se convierte a una medida
-estadística más generalizable, el \emph{p-valor} o el \emph{e-valor}.
-Para ello, en primer lugar se selecciona el mejor péptido 
-asignado a un espectro, es decir aquel candidato con la mejor puntuación,
-%. La \emph{hipótesis nula} se estima construyendo
-y a continuación se construye
-una distribución de las puntuaciones de todo el resto de péptidos comparados
-con el espectro. Esta distribución 
-representa la hipótesis nula, una asignación \ac{PSM} por azar.
+Generalmente los motores de búsqueda aportan varios tipos de puntuación para
+cada PSM. Un tipo de puntuaciones se refiere a la calidad de cada asignación 
+en particular, evalúa el grado de similitud entre el espectro empírico y 
+el péptido asignado, el mejor de la lista de candidatos.
+(\emph{Xcorr} en Sequest, \emph{hyperscore} en X!Tandem o \emph{ionScore} en Mascot)
+Pero además, a veces, aportan una puntuación indicativa de la calidad del PSM en relación a otros,
+al segundo mejor candidato ($\Delta$\emph{Cn} de Sequest); o con respecto
+a una población del resto de candidatos que obtuvieron puntuaciones inferiores 
+utilizando los parámetros estadísticos \emph{e-valor} y \emph{p-valor}.
+
+Para ello, en primer lugar se selecciona el mejor péptido asignado a un 
+espectro, es decir aquel candidato con la mejor puntuación, y a continuación
+se construye una distribución de las puntuaciones del resto de péptidos 
+comparados con el espectro. Esta distribución 
+representa la hipótesis nula, la población de asignaciones \ac{PSM} incorrectas.
+
 El \emph{p-valor} se calcula 
 entonces relacionando la puntuación del mejor péptido con respecto a esta
 distribución (aleatoria) del resto de puntuaciones. Cuanto más alejada 
@@ -1317,26 +1330,32 @@ se sitúa la mejor puntuación del centro de la distribución %que representa la hi
 mayor es la significatividad estadística del PSM.% la asignación péptido-espectro.
 El \emph{p-valor}, es por tanto, una medida de la probabilidad 
 % de observar por azar un PSM con una cierta puntuación o mayor (asumiendo que se cumple la hipotesis nula
-de que el mejor péptido candidato seleccionado sea asignado por azar al espectro.
+de que el mejor péptido candidato seleccionado sea asignado incorrectamente al espectro.
 Así, un \emph{p-valor} bajo indicará una baja probabilidad de que el
 \ac{PSM} haya sido asignado de forma incorrecta, es decir, es probablemente correcto.
 
 El \emph{e-valor} también se usa frecuentemente como medida de calidad
 en aproximaciones de espectro individual. Esá relacionado con el \emph{p-valor}
 pero se interpreta como el número esperado de péptidos con puntuación
-igual o superior a la del mejor péptido candidato. Se calcula como el 
-área bajo la curva situada hacia el extremo de la distribución desde el
-punto de máxima puntuación.
+igual o superior a la del mejor péptido candidato. 
+X!Tandem calcula un \emph{e-valor} obtenido a partir de la distribución
+de espectro individual para cada PSM (Figura~\ref{fig:evalue_estimation})
 
-\textit{ O NO Exactamente}
+\figura{Vectorial/evalue_estimation}{width=.95\textwidth}{fig:evalue_estimation}%
+{Estimación del e-valor}
 
-\textit{Ver ppt Interpreting MS-MS proteomics results}
 
 Ambos parámetros estadísticos, el \emph{p-valor} y el \emph{e-valor},
 a diferencia del valor de puntuación original calculado por el motor de búsqueda,
 son independientes de la función de puntuación utilizada y por tanto 
 suponen una medida más general de la calidad de cada \ac{PSM} y son comparables
 en ensayos que usan distintos instrumentos, diferentes motores de búsqueda y parámetros.
+
+\textit{ O NO Exactamente, ambos p y e val son probab que el psm sea incorrecto
+y la poblacion de psms incorrecta sí depende del experimento. Para eso está 
+el discriminant score y la prob de peptprophet que sí es una medida de que el psm sea correcto
+y es por tanto independiente del experimento. Ver ppt Interpreting }
+
 
 Algunos motores de búsqueda, además de su función de puntuación propia,
 como \textit{hyperscore} en el caso de \textit{X!Tandem} o \textit{ion score}
@@ -1352,7 +1371,7 @@ espectro individual para calcular y proporcionar un \textit{e-valor} para cada P
 \medskip{}
 
 
-\emph{Distribución promedio}.
+\emph{Distribución promedio}
 
 En los experimento \textit{shotgun} generalmente se obtienen miles de espectros MS/MS.
 Las medidas estadísticas de las distribuciones de espectro individual
