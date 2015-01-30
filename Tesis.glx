@@ -10,7 +10,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}, Disociación por Captura Electrónica}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}, Disociación por Transferencia Electrónica}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
@@ -18,7 +18,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{FD}{FD}{\emph{Field Desorption}, Desorción en Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{13}}
+\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
@@ -30,9 +30,9 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{LTQ}{LTQ}{\emph{Linear Trap Quadrupole}, Trampa Iónica Cuadrupolar}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{6}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{17}}
+\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -50,7 +50,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alto Rendimiento en Fase Reversa}{}{acr}{a}{\GlossTeXPage{n}{25}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SLD}{SLD}{\emph{Soft Laser Desorption}, Desorción Suave por Láser}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{SLD}{SLD}{\emph{Soft Laser Desorption}, Desorción Suave por Láser}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
 \GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}, Tiempo de Vuelo}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}

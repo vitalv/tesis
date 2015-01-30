@@ -6,7 +6,6 @@
 \chapter*{Introducción}
 %mirar problema con fancyheader y secciones no numeradas, pagina 21-22 del manual
 \fancyhead[RO,LE]{\sc{Introducción}}
-
 \addcontentsline{toc}{chapter}{Introducción}
 %\cabeceraEspecial{Introducción}
 
@@ -48,12 +47,16 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
 
 \end{resumen}
 
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
 
+
+\setcounter{chapter}{1}
 %-------------------------------------------------------------------
-\phantomsection %Note that if you use PDF bookmarks you will need to 
+%\phantomsection %Note that if you use PDF bookmarks you will need to 
 %add a phantom section so that bookmark will lead to the correct place in the document
-\section*{Proteómica. Conceptos generales} % * hace que la seccion no esté numerada. Esta sería 0.1
-\addcontentsline{toc}{section}{Proteómica. Conceptos generales}
+\section{Proteómica. Conceptos generales} % * hace que la seccion no esté numerada. Esta sería 0.1
+%\addcontentsline{toc}{section}{Proteómica. Conceptos generales}
 %-------------------------------------------------------------------
 \label{cap1:sec:Proteómica. Conceptos generales}
 
@@ -92,8 +95,45 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 \figura{Vectorial/proteome_complexity}{width=.99\textwidth}{fig:proteome_complexity}%
 {Aumento de complejidad desde el genoma hacia el proteoma}
 
-\subsection*{Consideraciones sobre unidades empleadas en espectrometría de masas}
-\addcontentsline{toc}{subsection}{Unidades empleadas en espectrometría de masas}
+
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+%\phantomsection %Note that if you use PDF bookmarks you will need to 
+%add a phantom section so that bookmark will lead to the correct place in the document
+\section{Espectrometría de masas}
+%\addcontentsline{toc}{section}{Espectrometría de masas}
+%-------------------------------------------------------------------
+%\label{cap1:sec:Espectrometría de masas}
+
+El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
+biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
+permitió sentar las bases de la Espectrometría de Masas aplicada a la 
+Proteómica. Las técnicas de \ac{ESI} \citep{Fenn1989a}
+y \ac{SLD} 
+\citep{Tanaka1988} permitieron que 
+las grandes y frágiles moléculas biológicas como las proteínas pudieran 
+ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas.
+
+Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
+independientemente habían surgido en distintas partes del mundo ideas
+muy similares. Así, el desarrollo de \ac{SLD} que valió el Nobel a K. Tanaka,
+tuvo un precedente unos años antes.
+Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
+discutiblemente no galardonados) habían ideado una técnica similar que,
+en este caso, denominaron \ac{MALDI} 
+ \citep{Karas1988} Aunque \ac{MALDI} no fue aplicado a la ionización 
+de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
+éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
+ de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+
+\subsection{Consideraciones sobre unidades empleadas en espectrometría de masas}
+%\addcontentsline{toc}{subsection}{Unidades empleadas en espectrometría de masas}
 
 La unidad fundamental de masa usada en física y química, empleada en la
 medida de masas atómicas y moleculares, es la llamada \textit{Unidad de Masa Atómica}, \textbf{u}, o \textbf{uma}
@@ -135,47 +175,13 @@ Mientras que la \emph{masa mono-isotópica} es qquella en la que se
 considera que todos los átomos de C se encuentran en su forma \textsuperscript{12}C
 
 
-
-
-%-------------------------------------------------------------------
-\phantomsection %Note that if you use PDF bookmarks you will need to 
-%add a phantom section so that bookmark will lead to the correct place in the document
-\section*{Espectrometría de masas}
-\addcontentsline{toc}{section}{Espectrometría de masas}
-%-------------------------------------------------------------------
-%\label{cap1:sec:Espectrometría de masas}
-
-El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
-biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
-permitió sentar las bases de la Espectrometría de Masas aplicada a la 
-Proteómica. Las técnicas de \ac{ESI} \citep{Fenn1989a}
-y \ac{SLD} 
-\citep{Tanaka1988} permitieron que 
-las grandes y frágiles moléculas biológicas como las proteínas pudieran 
-ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas.
-
-Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
-independientemente habían surgido en distintas partes del mundo ideas
-muy similares. Así, el desarrollo de \ac{SLD} que valió el Nobel a K. Tanaka,
-tuvo un precedente unos años antes.
-Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
-discutiblemente no galardonados) habían ideado una técnica similar que,
-en este caso, denominaron \ac{MALDI} 
- \citep{Karas1988} Aunque \ac{MALDI} no fue aplicado a la ionización 
-de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
-éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
- de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
-
-
-
-
-
-
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
 
 
 %\medskip %Produces a medium-sized space between paragraphs.
-\subsection*{Componentes de un espectrómetro de masas}
-\addcontentsline{toc}{subsection}{Componentes de un espectrómetro de masas}
+\subsection{Componentes de un espectrómetro de masas}
+%\addcontentsline{toc}{subsection}{Componentes de un espectrómetro de masas}
 
 Un espectrómetro de masas es, en esencia, una balanza de precisión molecular capaz
 de medir, hasta un determinado límite de sensiblidad, la masa (en relación a la carga)
@@ -430,8 +436,12 @@ de precisión es la desviación estándar $\sigma$, equivalente a la raíz
 cuadrada de la varianza.
 
 
-\subsection*{Espectrometría de masas en Tandem. MS/MS}
-\addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+
+
+\subsection{Espectrometría de masas en Tandem. MS/MS}
+%\addcontentsline{toc}{subsection}{Espectrometría de masas en Tandem. MS/MS}
 
 
 Los péptidos, separados en el espectrómetro de masas en base a su 
@@ -575,12 +585,14 @@ de fragmentación son más informativos, pero a cambio, requieren analizadores de 
 precisión.
 
 
-
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Digestión de proteínas en péptidos}
-\addcontentsline{toc}{section}{Digestión de proteínas en péptidos}
-%\label{cap1:sec:Proteómica en gel}
+%-------------------------------------------------------------------
+
+
+%\phantomsection
+\section{Digestión de proteínas en péptidos}
+%\addcontentsline{toc}{section}{Digestión de proteínas en péptidos}
+%\label{cap1:sec:Digestión de proteínas en péptidos}
 
 Tras la obtención de una muestra de proteínas, ya sea una mezcla compleja
 o una proteína más o menos aislada y purificada, el primer
@@ -642,11 +654,13 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 
 
 
-
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Proteómica en gel}
-\addcontentsline{toc}{section}{Proteómica en gel}
+%-------------------------------------------------------------------
+
+
+%\phantomsection
+\section{Proteómica en gel}
+%\addcontentsline{toc}{section}{Proteómica en gel}
 %\label{cap1:sec:Proteómica en gel}
 
 La separación de proteínas por \acl{PAGE}, es una técnica, 
@@ -693,9 +707,12 @@ proteína con \ac{PTM}, lo que difícilmente se puede
 conseguir con otro tipo de aproximaciones.
 
 
-\phantomsection
-\subsection*{Huella Peptídica}
-\addcontentsline{toc}{subsection}{Huella Peptídica}
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
+
+%\phantomsection
+\subsection{Huella Peptídica}
+%\addcontentsline{toc}{subsection}{Huella Peptídica}
 %The anchor of a bookmark and its parent's must not be the same. Added a new anchor
 
 La Huella Peptídica de una proteína se refiere al hecho de que el 
@@ -726,11 +743,12 @@ de las secuencias de péptidos trípticos teóricos.
 
 
 
-
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Proteómica de alto rendimiento \textit{Shotgun}}
-\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Proteómica a gran escala}
+%\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
 La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
@@ -745,9 +763,13 @@ la proteína original. Implica varios pasos descritos a continuación.
 {Etapas en un experimento de Proteómica \textit{Shotgun}}
 
 
-\phantomsection
-\subsection*{Separación multidimensional de péptidos}
-\addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
+
+
+%\phantomsection
+\subsection{Separación de péptidos y proteínas}
+%\addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
 
 A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
 relativamente aislada, en la Proteómica de alto rendimiento o
@@ -811,7 +833,7 @@ hidrofóbicos son retenidos durante más tiempo.
 %  \item Cromatografía de intercambio catiónico
 %\end{itemize}
 
-\medskip{}
+\bigskip{}
 
 A continuación, tras la adquisición experimental de los espectros, el paso
 siguiente en un experimento de proteómica \textit{shotgun} implica el
@@ -823,11 +845,15 @@ secuenciales, principalmente la
 \hyperref[cap1:sec:Inferencia de proteínas a partir de péptidos]{la inferencia de las proteínas a partir de esos péptidos}
 y una \hyperref[cap1:sec:Evaluación estadística de los resultados]{evaluación estadística que aporta medidas de fiablidad a la identificación}
 
+
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Asignación Péptido-Espectro}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Asignación Péptido-Espectro}
+%NOTA: esto no es una subseccion de proteómica a gran escala porque puede ser igual para proteomica en gel, ya tal
 \label{cap1:sec:Asignación Péptido-Espectro}
-\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
+%\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 
 
 En un experimento típico de proteómica \textit{shotgun} pueden 
@@ -865,11 +891,13 @@ que son comparados directamente con los espectros empíricos adquiridos.
 {Interpretación de automática espectros MS/MS}
 
 
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
-\phantomsection
-\subsection*{Búsqueda en bases de datos de secuencias}
+%\phantomsection
+\subsection{Búsqueda en bases de datos de secuencias}
 \label{cap1:subsec:búsqueda secuencia}
-\addcontentsline{toc}{subsection}{Búsqueda en bases de datos de secuencias}
+%\addcontentsline{toc}{subsection}{Búsqueda en bases de datos de secuencias}
 
 La búsqueda utilizando bases de datos de secuencias es el principal y más
  extendido método
@@ -901,6 +929,9 @@ función del grado de similitud entre el espectro empírico y el teórico.
 
 %\textit{TABLA LISTA MOTORES DE BÚSQUEDA}.
 
+
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \subsubsection*{Elaboración de una lista de péptidos candidatos}
 
@@ -1025,6 +1056,8 @@ Una aproximación sensata puede consistir en
 muy abierta y posteriormente refinarla. %\citep{Creasy2002}
 %Mirar 4.4.1 en NeszhviReview
 
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 
 \phantomsection %para poder referenciarla en "Busqueda en bases de datos de secuencias"
@@ -1166,11 +1199,21 @@ y dada una distribución calculada de los valores \mz predichos para los candidat
 %de un experimento.
 %
 
-\phantomsection
-\subsection*{Otras estrategias de asignación péptido-espectro}
-\label{cap1:subsec:otras estrategias de asignación péptido-espectro}
-\addcontentsline{toc}{subsection}{Otras estrategias de asignación péptido-espectro}
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
+%\phantomsection
+\subsection{Otras estrategias de asignación péptido-espectro}
+\label{cap1:subsec:otras estrategias de asignación péptido-espectro}
+%\addcontentsline{toc}{subsection}{Otras estrategias de asignación péptido-espectro}
+
+
+
+
+
+
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \phantomsection 
 \subsubsection*{Búsqueda basada en bibliotecas de espectros}
@@ -1202,6 +1245,8 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
  que hayan sido previamente identificados y que se encuentren en la 
  biblioteca de espectros
 
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \phantomsection 
 \subsubsection*{Identificación por secuenciación \textit{de novo}}
@@ -1220,6 +1265,8 @@ ya que, para la gran cantidad de espectros obtenidos en un experimento
 típico de \textit{shotgun}, el proceso es computacionalmente muy exhaustivo
 y requiere espectros MS/MS de gran calidad.
 
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \phantomsection
 \subsubsection*{Búsqueda mediante etiquetas de secuencia}
@@ -1244,6 +1291,8 @@ Nesviz: -Hybrid approaches are particularly useful for the identification
 of post-translationally or chemically modified peptides-
 }
 
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \phantomsection
 \subsubsection*{Búsquedas tolerantes y multi-etapa}
@@ -1252,11 +1301,13 @@ of post-translationally or chemically modified peptides-
 \textit{Mirar Strategies for more comprehensive... (4) en Nesvizhskii review}
 
 
-
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Inferencia de proteínas a partir de péptidos}
-\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
+%-------------------------------------------------------------------
+
+
+%\phantomsection
+\section{Inferencia de proteínas a partir de péptidos}
+%\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
 \label{cap1:sec:Inferencia de proteínas a partir de péptidos}
 
 \todo{Mirar paper de Aebersold:
@@ -1279,10 +1330,13 @@ de los péptidos que son identificados a partir de los espectros.
 
 \textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
 
+
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Evaluación estadística de los resultados}
-\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Evaluación estadística de los resultados}
+%\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
 \label{cap1:sec:Evaluación estadística de los resultados}
 %Esta parte de las distribuciones antes la tenia justo antes de las 
 %funciones de puntuación , porque ahí hablo también de estas distribuciones
@@ -1577,10 +1631,13 @@ Pero con la incorporación de \ac{PSM} \textit{señuelo}
 
 \textit{The Probability Ratio Method, Navarro et al}
 
+
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Proteómica dirigida. SRM/MRM}
-\addcontentsline{toc}{section}{Proteómica dirigida. SRM/MRM}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Proteómica dirigida. SRM/MRM}
+%\addcontentsline{toc}{section}{Proteómica dirigida. SRM/MRM}
 \label{cap1:sec:Proteomica dirigida. SRM/MRM}
 
 \todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
@@ -1633,23 +1690,33 @@ cromatográfica permite reconstruir un pe
 
 
 
+
 %-------------------------------------------------------------------
-\phantomsection
-\section*{\textit{Candida albicans} como organismo modelo}
-\addcontentsline{toc}{section}{Candida albicans como organismo modelo}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{\textit{Candida albicans} como organismo modelo}
+%\addcontentsline{toc}{section}{Candida albicans como organismo modelo}
 \label{cap1:sec:Candida albicans como organismo modelo}
 
 
+
 %-------------------------------------------------------------------
-\phantomsection
-\section*{Repositorios publicos de proteómica shotgun y dirigida}
-\addcontentsline{toc}{section}{Repositorios publicos de proteómica shotgun y dirigida}
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Repositorios publicos de proteómica shotgun y dirigida}
+%\addcontentsline{toc}{section}{Repositorios publicos de proteómica shotgun y dirigida}
 \label{cap1:sec:Repositorios publicos de proteómica shotgun y dirigida}
 
 
-\phantomsection
-\section*{Formatos de archivos usados en espectrometría de masas y proteómica}
-\addcontentsline{toc}{section}{Formatos de archivos usados en espectrometría de masas y proteómica}
+
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
+
+%\phantomsection
+\section{Formatos de archivos usados en espectrometría de masas y proteómica}
+%\addcontentsline{toc}{section}{Formatos de archivos usados en espectrometría de masas y proteómica}
 %\label{cap1:sec:Formatos en Proteómica}
 
 En el proceso de análisis de datos que sigue a la adquisición 

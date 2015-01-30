@@ -1,10 +1,10 @@
 
-Introduccion/Introduccion.aux:6 PTM[n](acr)a@4
-Introduccion/Introduccion.aux:7 PAGE[n](acr)a@4
-Introduccion/Introduccion.aux:8 HPLC[n](acr)a@4
-Introduccion/Introduccion.aux:18 ESI[n](acr)a@7
-Introduccion/Introduccion.aux:19 SLD[n](acr)a@7
-Introduccion/Introduccion.aux:21 MALDI[n](acr)a@7
+Introduccion/Introduccion.aux:8 PTM[n](acr)a@4
+Introduccion/Introduccion.aux:9 PAGE[n](acr)a@4
+Introduccion/Introduccion.aux:10 HPLC[n](acr)a@4
+Introduccion/Introduccion.aux:16 ESI[n](acr)a@5
+Introduccion/Introduccion.aux:17 SLD[n](acr)a@5
+Introduccion/Introduccion.aux:19 MALDI[n](acr)a@6
 Introduccion/Introduccion.aux:32 TOF[n](acr)a@9
 Introduccion/Introduccion.aux:33 FAB[n](acr)a@9
 Introduccion/Introduccion.aux:34 FD[n](acr)a@9
@@ -14,9 +14,9 @@ Introduccion/Introduccion.aux:39 QTRAP[n](acr)a@10
 Introduccion/Introduccion.aux:43 QIT[n](acr)a@12
 Introduccion/Introduccion.aux:44 LTQ[n](acr)a@12
 Introduccion/Introduccion.aux:45 LIT[n](acr)a@12
-Introduccion/Introduccion.aux:47 FTICR[n](acr)a@13
+Introduccion/Introduccion.aux:47 FTICR[n](acr)a@12
 Introduccion/Introduccion.aux:52 FWHM[n](acr)a@15
-Introduccion/Introduccion.aux:58 MSMS[n](acr)a@17
+Introduccion/Introduccion.aux:56 MSMS[n](acr)a@16
 Introduccion/Introduccion.aux:59 DDA[n](acr)a@17
 Introduccion/Introduccion.aux:63 CID[n](acr)a@18
 Introduccion/Introduccion.aux:67 ETD[n](acr)a@19

@@ -1,11 +1,11 @@
-\GlossTeXEntry{acrMALDI@{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{7}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrMALDI@{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{6}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPTM@{PTM}{PTM}{\emph{Post-Translational Modification}, Modificación Post-Traduccional}{}{acr}{a}{\GlossTeXPage{n}{4}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPAGE@{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida}{}{acr}{a}{\GlossTeXPage{n}{4}}|GlossTeXNull}{0}
 \GlossTeXEntry{acr1DPAGE@{1DPAGE}{1D-PAGE }{\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida Monodimiensional}{}{acr}{a}{\GlossTeXPage{n}{21}}|GlossTeXNull}{0}
 \GlossTeXEntry{acr2DPAGE@{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida Bidimiensional}{}{acr}{a}{\GlossTeXPage{n}{21}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrHPLC@{HPLC}{HPLC}{\emph{High Performance Liquid Chromatography}, Cromatografía Líquida de Alto Rendimiento}{}{acr}{a}{\GlossTeXPage{n}{4}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrESI@{ESI}{ESI}{\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}{}{acr}{a}{\GlossTeXPage{n}{7}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrSLD@{SLD}{SLD}{\emph{Soft Laser Desorption}, Desorción Suave por Láser}{}{acr}{a}{\GlossTeXPage{n}{7}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrESI@{ESI}{ESI}{\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}{}{acr}{a}{\GlossTeXPage{n}{5}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrSLD@{SLD}{SLD}{\emph{Soft Laser Desorption}, Desorción Suave por Láser}{}{acr}{a}{\GlossTeXPage{n}{5}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFAB@{FAB}{FAB}{\emph{Fast Atom Bombardment}, Bombardeo Rápido Atómico}{}{acr}{a}{\GlossTeXPage{n}{9}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFD@{FD}{FD}{\emph{Field Desorption}, Desorción en Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{9}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPD@{PD}{PD}{\emph{Plasma Desorption}, Desorción por Plasma}{}{acr}{a}{\GlossTeXPage{n}{9}}|GlossTeXNull}{0}
@@ -15,8 +15,8 @@
 \GlossTeXEntry{acrQIT@{QIT}{QIT}{\emph{Quadrupole Ion Trap}, Trampa Iónica Tridimensional}{}{acr}{a}{\GlossTeXPage{n}{12}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrLTQ@{LTQ}{LTQ}{\emph{Linear Trap Quadrupole}, Trampa Iónica Cuadrupolar}{}{acr}{a}{\GlossTeXPage{n}{12}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrLIT@{LIT}{LIT}{\emph{Linear Ion Trap}, Trampa Iónica Lineal}{}{acr}{a}{\GlossTeXPage{n}{12}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrFTICR@{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{13}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrMSMS@{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{17}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrFTICR@{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{12}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrMSMS@{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}{}{acr}{a}{\GlossTeXPage{n}{16}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrDDA@{DDA}{DDA}{\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos}{}{acr}{a}{\GlossTeXPage{n}{17}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrCID@{CID}{CID}{\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}{}{acr}{a}{\GlossTeXPage{n}{18}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrETD@{ETD}{ETD}{\emph{Electron Transfer Dissociation}, Disociación por Transferencia Electrónica}{}{acr}{a}{\GlossTeXPage{n}{19}}|GlossTeXNull}{0}
