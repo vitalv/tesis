@@ -28,11 +28,11 @@
 
 %Acronimos de Vital, Proteómica, MS, etc...
 
-@entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}, Desorción-Ionización Láser Asistida por Matriz}
+@entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}}
 
-@entry{PTM, ,\emph{Post-Translational Modification}, Modificación Post-Traduccional}
+@entry{PTM, ,\emph{Post-Translational Modification}}
 
-@entry{PAGE, ,\emph{PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida}
+@entry{PAGE, ,\emph{PoliAcrylamide Gel Electrophoresis}}
 
 @entry{1DPAGE, 1D-PAGE ,\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida Monodimiensional}
 
@@ -40,45 +40,45 @@
 
 @entry{SDSPAGE, SDS-PAGE ,\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico}
 
-@entry{HPLC, ,\emph{High Performance Liquid Chromatography}, Cromatografía Líquida de Alto Rendimiento}
+@entry{HPLC, ,\emph{High Performance Liquid Chromatography}}
 
-@entry{ESI, ,\emph{Electro-Spray Ionization}, Ionización por Electro-Spray}
+@entry{ESI, ,\emph{Electro-Spray Ionization}}
 
-@entry{SLD, ,\emph{Soft Laser Desorption}, Desorción Suave por Láser}
+@entry{SLD, ,\emph{Soft Laser Desorption}}
 
-@entry{FAB, ,\emph{Fast Atom Bombardment}, Bombardeo Rápido Atómico}
+@entry{FAB, ,\emph{Fast Atom Bombardment}}
 
-@entry{FD, ,\emph{Field Desorption}, Desorción en Campo Eléctrico}
+@entry{FD, ,\emph{Field Desorption}}
 
-@entry{PD, ,\emph{Plasma Desorption}, Desorción por Plasma}
+@entry{PD, ,\emph{Plasma Desorption}}
 
-@entry{QTOF, ,\emph{Quadrupole Time Of Flight} }
+@entry{QTOF, ,\emph{Quadrupole-Time Of Flight} }
 
-@entry{QTRAP,QTrap,\emph{Quadrupole IonTrap} }
+@entry{QTRAP,QTrap,\emph{Quadrupole-Ion Trap} }
 
-@entry{TOF, ,\emph{Time Of Flight}, Tiempo de Vuelo}
+@entry{TOF, ,\emph{Time Of Flight}}
 
-@entry{QIT, ,\emph{Quadrupole Ion Trap}, Trampa Iónica Tridimensional}
+@entry{QIT, ,\emph{Quadrupole Ion Trap}}
 
-@entry{LTQ, ,\emph{Linear Trap Quadrupole}, Trampa Iónica Cuadrupolar}
+@entry{LTQ, ,\emph{Linear Trap Quadrupole}}
 
-@entry{LIT, ,\emph{Linear Ion Trap}, Trampa Iónica Lineal}
+@entry{LIT, ,\emph{Linear Ion Trap}}
 
 @entry{FTICR, ,\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}
 
-@entry{MSMS, MS/MS, \emph{Tandem Mass Spectrometry}, Espectrometría de Masas en Tandem}
+@entry{MSMS, MS/MS, \emph{Tandem Mass Spectrometry}}
 
 @entry{DDA, ,\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos}
 
 @entry{DIA, ,\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}
 
-@entry{CID, ,\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}
+@entry{CID, ,\emph{Collision Induced Dissociation}}
 
-@entry{ETD, ,\emph{Electron Transfer Dissociation}, Disociación por Transferencia Electrónica}
+@entry{ETD, ,\emph{Electron Transfer Dissociation}}
 
-@entry{ECD, ,\emph{Electron Capture Dissociation}, Disociación por Captura Electrónica}
+@entry{ECD, ,\emph{Electron Capture Dissociation}}
 
-@entry{HCD, ,\emph{Higher Energy Collision Dissociation}, Disociación por Colisión de Alta Energía}
+@entry{HCD, ,\emph{Higher Energy Collision Dissociation}}
 
 @entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alto Rendimiento en Fase Reversa}
 

@@ -30,7 +30,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
  con que se construye la vida, sí son visibles, a diferencia de los genes,
  a la selección natural.
  Por otra parte, el clásico dogma central de la Biología Molecular \textit{un gen, una proteína}
- caducó hace ya tiempo y hoy lo recordamos, más bien, como una sobresimplificación.
+ caducó hace ya tiempo y hoy lo recordamos, más bien, como una simplificación excesiva.
  Actualmente, el emergente campo de la Proteogenómica da cuenta de la intrincada 
  red de procesos regulatorios de transferencia de información entre el gen y la proteína.
  La Proteómica por su parte, le debe a la Genómica el reconocimiento y agradecimiento
@@ -42,7 +42,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
  función de la demanda en investigación. De la misma manera, la
  Proteómica Computacional, la parte de la Bioinformática mas cercana a
  la Proteómica, evoluciona para facilitar el análisis de los datos que
- los investigadores requieren, pero también se beneficia de la incesante,
+ los investigadores requieren, pero también se beneficia de la incesante y
  creciente capacidad de procesamiento en las computadoras actuales.  
 
 \end{resumen}
@@ -61,7 +61,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
 \label{cap1:sec:Proteómica. Conceptos generales}
 
 El concepto de Proteoma fue acuñado originalmente por Marc Wilkins en 
-1994 en analogía al concepto de Genoma. 
+1994 en analogía al concepto de Genoma \citep{Wasinger1995} 
 Si el Genoma es la dotación génica de una célula u organismo, 
 el Proteoma es entendido como \emph{el conjunto total de proteínas 
 expresadas por los genes de una célula, tejido u organismo}. 
@@ -71,12 +71,12 @@ Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
 estadío del desarrollo entre otros factores. Además existen niveles de complejidad
 adicional en el curso de información desde el gen a la proteína 
-como el \textit{splicing} alternativo y las \ac{PTM}.
+como el procesamiento alternativo de intrones y las Modificaciones Post-Traduccionales o \ac{PTM}.
 Por eso el término Proteoma puede diversificarse, para ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
 ambientales definidas por los nutrientes disponibles, posiblemente sometida a
- condiciones de estrés, etc...
+ condiciones de estrés, \textit{etc}.
 
 Proteómica es, por tanto, el estudio del Proteoma, independientemente
 del conjunto o subconjunto de proteínas objeto de estudio. 
@@ -84,7 +84,8 @@ Pero además Proteómica se refiere a las tecnologías utilizadas para ello.
 
 El establecimiento de la espectrometría de masas aplicada a moléculas
 biológicas a finales de los años 80 y el desarrollo de técnicas de 
-separación de péptidos y proteínas como \ac{PAGE} y \ac{HPLC}
+separación de proteínas y péptidos como la Electroforesis en Gel de Poliacrilamida,
+\mbox{\ac{PAGE}} y la Cromatografía Líquida de Alto Rendimiento, \ac{HPLC}
  permitieron que la Proteómica se 
 consolidara y extendiera como disciplina científica.
 
@@ -108,14 +109,15 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 %-------------------------------------------------------------------
 %\label{cap1:sec:Espectrometría de masas}
 
-El desarrollo de las técnicas de ionización \textit{suave} de macromoléculas
+El desarrollo de las técnicas de ionización suave de macromoléculas
 biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
 permitió sentar las bases de la Espectrometría de Masas aplicada a la 
-Proteómica. Las técnicas de \ac{ESI} \citep{Fenn1989a}
-y \ac{SLD} 
+Proteómica. Las técnicas de Ionización por ElectroSpray, \ac{ESI} \citep{Fenn1989a}
+y Desorción Suave por Láser, \ac{SLD} 
 \citep{Tanaka1988} permitieron que 
 las grandes y frágiles moléculas biológicas como las proteínas pudieran 
-ser ionizadas y volatilizadas para ser posteriormente introducidas en los espectrómetros de masas.
+ser ionizadas y volatilizadas relativamente intactas para ser posteriormente
+ introducidas en los espectrómetros de masas.
 
 Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
 independientemente habían surgido en distintas partes del mundo ideas
@@ -123,8 +125,8 @@ muy similares. Así, el desarrollo de \ac{SLD} que valió el Nobel a K. Tanaka,
 tuvo un precedente unos años antes.
 Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
 discutiblemente no galardonados) habían ideado una técnica similar que,
-en este caso, denominaron \ac{MALDI} 
- \citep{Karas1988} Aunque \ac{MALDI} no fue aplicado a la ionización 
+en este caso, denominaron Ionización mediante Desorción por Láser Asistida por Matriz, \ac{MALDI} 
+ \citep{Karas1988} Aunque \ac{MALDI} no fue aplicada a la ionización 
 de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
 éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
  de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
@@ -139,9 +141,9 @@ La unidad fundamental de masa usada en física y química, empleada en la
 medida de masas atómicas y moleculares, es la llamada \textit{Unidad de Masa Atómica}, \textbf{u}, o \textbf{uma}
 también denominada \textit{Dalton}, \textbf{Da}. 
 La escala de unidades de masa atómica es una escala relativa donde la referencia es el átomo de carbono.
-El valor de una \emph{uma} o \emph{dalton} se define como la doceava parte
+El valor de una \emph{u} o un \emph{dalton} se define como la doceava parte
 de la masa de un átomo neutro de \textsuperscript{12}C, el isótopo más frecuente de carbono.
-Así, la masa de un átomo de  \textsuperscript{12}C es de 12 u. Y 1 u es aproximadamente
+Así, la masa de un átomo de  \textsuperscript{12}C es de 12 u. Y una \emph{u} es aproximadamente
 equivalente a la masa de un átomo de hidrógeno o la masa de un protón.
 
 \begin{equation}
@@ -171,8 +173,8 @@ diferenciar entre las masas mono-isotopica y masa promedio
 La \emph{masa promedio} es equivalente a una media de las masas atómicas de todos
 los átomos de los elementos que componen el ion ponderados por abundancia
 isotópica.
-Mientras que la \emph{masa mono-isotópica} es qquella en la que se 
-considera que todos los átomos de C se encuentran en su forma \textsuperscript{12}C
+Mientras que la \emph{masa mono-isotópica} es aquella en la que se 
+considera que todos los átomos de C se encuentran en su forma \textsuperscript{12}C.
 
 
 %---------------------------------------------------------------------
@@ -205,7 +207,7 @@ de una muestra inicialmente muy compleja sean separados e introducidos
 gradualmente. Este acoplamiento requiere una interfaz, una 
 conexión física y funcional entre el sistema de cromatografía y el espectrómetro,
 que consiste generalmente en una columna capilar de caudal controlado.
-En ocasiones, como es en el caso del \ac{ESI}, el sistema
+En ocasiones, como es en el caso de \ac{ESI}, el sistema
 de entrada y la fuente de iones forman parte de un único componente.
 
 
@@ -213,16 +215,26 @@ de entrada y la fuente de iones forman parte de un único componente.
 
 Las macromoléculas biológicas, como proteínas y péptidos, no son 
 fácilmente volatilizadas.
-El desarrollo de las técnicas de ionización \textit{suave} permitió que
+El desarrollo de las técnicas de ionización suave permitió que
 péptidos y proteínas ionizados y relativamente intactos pudieran ser 
 introducidos, en fase gaseosa, en un sistema de vacío en los 
-espectrómetros de masas para ser analizados. La ionización \ac{ESI} y \ac{MALDI}
+espectrómetros de masas para ser analizados. La ionización \ac{ESI} y \mbox{\ac{MALDI}}
 son las más comunes en Proteómica aunque existen también otros métodos
 un poco menos utilizados.
 
 \begin{itemize}
 
-\item En \textbf{\ac{ESI}} el analito se encuentra en fase líquida en un solvente
+\item \textbf{\ac{MALDI}} (Figura~\ref{fig:maldi_y_esi} a) consiste en embeber la muestra en una matriz líquida, 
+que posteriormente se seca,
+con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
+láser UV. Al absorber la energía del láser las moléculas que conforman la
+matriz son ionizadas por adición de protones que son luego transferidos
+al analito. Generalmente la ionización \ac{MALDI}, por su carácter pulsante,
+se usa acoplada a analizadores de tipo Tiempo de Vuelo, \ac{TOF} que miden
+el tiempo que tardan los analitos ionizados en llegar al detector a través
+del vacío.
+
+\item En \textbf{\ac{ESI}} (Figura~\ref{fig:maldi_y_esi} b) el analito se encuentra en fase líquida en un solvente
  orgánico volátil como metanol o acetonitrilo. Esta solución
 es conducida a través de un capilar sometido a un campo eléctrico de forma
 que las micro-gotas en el ápice del capilar, una vez que la carga supera
@@ -233,29 +245,18 @@ en un proceso reiterativo, hasta el punto en que las moléculas de analito se rep
 suficiente para superar la tensión superficial y liberarse del solvente (explosión de Coulomb)
 quedando iones de analito en suspensión que son introducidos en un sistema vacío hacia el espectrómetro.
 
-\item \textbf{\ac{MALDI}} consiste en embeber la muestra en una matriz líquida, 
-que posteriormente se seca,
-con alta capacidad de absorber luz UV sobre la que inciden pulsos de luz 
-láser UV. Al absorber la energía del láser las moléculas que conforman la
-matriz son ionizadas por adición de protones que son luego transferidos
-al analito. Generalmente la ionización \ac{MALDI}, por su carácter pulsante,
-se usa acoplada a analizadores de tipo \ac{TOF} que miden
-el tiempo que tardan los analitos ionizados en llegar al detector a través
-del vacío.
-
-
-\item \ac{FAB} consiste en hacer incidir
+\item El Bombardeo Rápido Atómico, \ac{FAB} consiste en hacer incidir
 un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
 el analito provocando de esa forma su ionización.
 
-\item En la ionización por \ac{FD},
+\item En la Desorción por Campo Eléctrico, \ac{FD}
 la muestra se encuentra sometida a un campo eléctrico creado en una 
 superficie, generalmente un filamento de tungsteno, llamado \emph{emisor}.
  Al superar 
 un umbral de diferencia de potencial se produce la desorción e ionización
 del analito.
 
-\item \ac{PD} 
+\item La Desorción por Plasma, \ac{PD} 
 consiste en hacer uso de un isótopo radiactivo \textsuperscript{252}Cf que
 al sufrir su fisión espontánea produce dos partículas de alta energía
 con trayectorias opuestas, 
@@ -268,6 +269,7 @@ que impactan sobre la muestra provocando su desorción e ionización.
 \figura{Vectorial/maldi_y_esi}{width=.80\textwidth}{fig:maldi_y_esi}%
 {Ionización MALDI y ESI}
 
+\newpage
 
 \item \textbf{Analizador de masas}%ANALIZADORES DE MASAS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -276,9 +278,11 @@ se separan en base su relación entre la masa y carga (\mz).
 Es el elemento que se usa generalmente para definir el tipo de instrumento.
 Existen varios tipos,
 que pueden combinarse en los llamados espectrómetros híbridos. Así, 
-un analizador tipo \emph{cuadrupolo} puede encontrarse acoplado con un analizador
-de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un \ac{QTOF}
-o \ac{QTRAP} respectivamente.
+un analizador de tipo cuadrupolo puede encontrarse acoplado con un analizador
+de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un
+Cuadrupolo-Tiempo de Vuelo, \ac{QTOF}
+o Cuadrupolo-Trampa Iónica, \ac{QTRAP} \mbox{respectivamente}.
+Algunos de los analizadores de masas más comunes son los siguientes:
 
 
 \begin{itemize}
@@ -286,15 +290,15 @@ o \ac{QTRAP} respectivamente.
 \item Los \textbf{Analizadores de sector} (magnético o eléctrico)
 aceleran los iones de analito que al atravesar el sector son sometidos
 a un campo con fuerza ortogonal a la trayectoria del ion lo que provoca
-que se desvíen en función de su  relación \mz
+que se desvíen en función de su  relación \mz.
 
-\item \textbf{Analizadores} \ac{TOF}
+\item \textbf{Analizadores de Tiempo de Vuelo}, \ac{TOF}
 Este tipo de analizador
 usa un campo eléctrico para acelerar los iones de analito. La separación
 se produce por la diferencia en el tiempo que éstos invierten en 
 recorrer una distancia en el vacío en el interior del analizador, el
 llamado \textit{Tiempo de Vuelo}. La aceleración y por tanto
-el Tiempo de Vuelo es una función de la relación \mz de los iones
+el Tiempo de Vuelo es una función de la relación \mz  de los iones
 que impactan en el detector a diferentes tiempos. Para iones con la misma
 carga, la aceleración depende solo de la masa, los más ligeros 
 llegan al detector antes y los más pesados después.
@@ -311,15 +315,16 @@ se aplica también una corriente alterna de radiofrecuencia.
  que estabiliza (o desestabiliza) selectivamente los iones que pasan a través 
 y de esta forma solo los iones con ciertos valores \mz  podrán llegar a 
 impactar en el detector mientras que el resto son desviados y filtrados.
-Una conformación frecuente cosnsite utilizar tres cuadrupolos consecutivos.
-\textit{bla bla etapas de filtrado, mrm, bla bla}
+%Una conformación frecuente cosnsite utilizar tres cuadrupolos consecutivos.
+%\textit{bla bla etapas de filtrado, mrm, bla bla}
+%\textit{bla bla etapas de filtrado, mrm, bla bla}
 
 \item Las \textbf{Trampas Iónicas} funcionan bajo el mismo principio
 físico que los cuadrupolos, pero la conformación en forma de cámara de las
 trampas iónicas permite confinar y acumular los iones que luego son 
 liberados selectivamente.
 
-\subitem Las \ac{QIT}
+\subitem Las Trampas Iónicas Tridimensionales, \ac{QIT}
 constan de  dos electrodos metálicos de sección hiperbólica enfrentados 
 y un electrodo toroidal que conforman una cámara donde se acumulan los iones
 de analito. En el interior los iones orbitan
@@ -327,7 +332,7 @@ en el vacío. El ajuste de la radiofrecuencia permite filtrar selectivamente
 los iones, estabilizando aquellos con determinados valores \mz y desestabilizando
 el resto, que colisionan con el electrodo y no llegan al detector.
 
-\subitem Las \ac{LTQ} o \ac{LIT} consisten
+\subitem Las Trampas Iónicas Lineales, \ac{LTQ} o \ac{LIT} consisten
 en un sistema de cuadrupolo, que sitúa los iones en un eje radial, y
 dos electrodos terminales, uno en cada extremo, que confina los iones longitudinalmente.
 Con respecto a las trampas
@@ -337,7 +342,7 @@ como un cuadrupolo
 
 
 \subitem \emph{Orbitrap} es un tipo de trampa iónica, relativamente
-reciente, desarrollado a finales de los años 90 del s.XX (Referencia Makarov, pagina 333 del Manual)
+reciente, desarrollado a finales de los años 90 del s.XX \citep{Makarov2000}
 Consiste en un electrodo en un eje interno rodeado por un electrodo externo
 cilíndrico. Los iones son introducidos tangencialmente desde la fuente 
 de ionización y, al ajustar la diferencia de potencial, son atrapados en
@@ -405,7 +410,7 @@ otros.
 La \textit{resolución} es la capacidad para discernir señales que realmente 
 corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
 Esto es esencial para evitar la co-fragmentación, es decir, obtener 
-fragmentos de iones precursores diferentes con valores \mz similares o cuando
+fragmentos de iones precursores diferentes con valores \mz similares, o cuando
 se requiere conocer la distribución isotópica de un ion.
 La resolución se define como la diferencia entre las masas de dos picos
 adyacentes que están resueltos
@@ -417,18 +422,18 @@ R = \frac{M}{\Delta{M}}
 
 donde M es el valor entero más próximo de masa del primer pico y $\Delta${M}
 es el incremento de \mz a una determinada altura del pico. Frecuentemente
-se usa un 50\% de altura del pico, el parámetro en ese caso es \ac{FWHM}
-
+se usa un 50\% de altura del pico, el parámetro en ese caso es la Altura
+de Pico a Media Altura \ac{FWHM}.
 La resolución es un parámetro específico del espectrómetro de masas. Otros
 parámetros, relacionados aunque no específicos del instrumento son la exactitud
-y la precisión
+y la precisión.
 
 La \textit{exactitud} de la medida de la masa molecular 
 es la diferencia entre el valor \mz obtenido para un ion y su valor real.
 Se expresa generalmente en partes por millón (ppm) y representa el error 
 del valor \mz obtenido con respecto al valor verdadero.
 
-La \textit{precision} es una medida de la dispersión de una serie de 
+La \textit{precisión} es una medida de la dispersión de una serie de 
 mediciones obtenidas para un analito determinado (en condiciones
 experimentales equiparables) con respecto a un valor
 promedio de referencia. El parámetro que se emplea generalmente como medida
@@ -466,7 +471,7 @@ y el rendimiento que ofrece es, por tanto, limitado.
 \figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
 {Espectrometría de masas en Tandem. MS/MS}
 
-En \ac{MSMS} o MS\textsuperscript{2},
+En la Espectrometría de Masas en Tándem \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
 fragmentación adicional. (Figura~\ref{fig:tandem_ms})
@@ -490,7 +495,7 @@ para cada ion.
 A continuación, en función de la intensidad registrada en 
 MS\textsuperscript{1}, se seleccionan y aislan algunos de estos iones -\emph{precursores}-
  para ser fragmentados en péptidos más 
-pequeños -\emph{fragmentos}- en la cámara de colisión del espectrómetro.
+pequeños -\emph{fragmentos}- en el interior del espectrómetro.
 El espectro MS\textsuperscript{2} adquirido o espectro de fragmentación,
 registra los valores \mz e intensidades de los fragmentos de cada
 uno de los péptidos precursores aislados y fragmentados. 
@@ -543,7 +548,7 @@ mientras que en las trampas iónicas se generan igualmente \emph{b-} e \emph{y-}
 
 \subsubsection*{Técnicas de fragmentación}
 
-La \ac{CID} 
+La Disociación Inducida por Colisión, \ac{CID} 
 es uno de los métodos de fragmentación más frecuentemente utilizados en
 espectrometría de masas para Proteómica.
 Consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
@@ -556,7 +561,7 @@ series \emph{b-} e \emph{y-}
 
 %Sin embargo, existen también otros tipos de fragmentación. 
 
-En la \ac{ETD}, \citep{Syka2004}, los iones de analito
+En la Disociación por Transferencia de Electrones, \ac{ETD}, \citep{Syka2004}, los iones de analito
 con carga positiva interaccionan con aniones que les transfieren un 
 electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
 Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
@@ -567,7 +572,7 @@ que intenta identificar proteínas intactas, y también
 para experimentos orientados a la deteccion de péptidos con \ac{PTM}.
 
 
-En la \ac{ECD} \citep{Zubarev1998},
+En la Disociación por Captura de Electrones, \ac{ECD} \citep{Zubarev1998},
 como en \ac{ETD}, la fragmentación se produce por la interacción del analito
 con electrones que, en este caso, son suministrados por introducción directa.
  \ac{ECD} se usa generalmente en espectrómetros
@@ -576,7 +581,7 @@ tipo \ac{FTICR} y en trampas iónicas y genera abundantes fragmentos de series
 Al igual que ECD, es particularmente efectivo para el estudio de péptidos
 con \ac{PTM}
 
-Otro tipo de fragmentación es la \ac{HCD}
+Otro tipo de fragmentación es la Disociación por Colisión de Alta Energía, \ac{HCD}
 usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que \ac{CID}
 genera iones \emph{b-} e \emph{y-}, si bien, debido a la mayor energía de
 activación, los iones \emph{b-} sufren fragmentaciones adicionales generando
@@ -601,7 +606,7 @@ a la acción de una enzima proteasa
 que corta en puntos específicos de la secuencia y que las digiere en 
 un conjunto de péptidos. 
 Sin embargo, sabiendo que ciertos espectrómetros de masas tienen la capacidad de medir
-masas de proteínas intactas, podemos preguntarnos
+masas de proteínas intactas, podemos preguntarnos:
  
 \emph{¿por qué hacer una digestión que aumenta el grado de 
 complejidad de la muestra y que supone el problema añadido de la inferencia
@@ -617,7 +622,7 @@ técnicas. Las proteínas intactas pueden ser difíciles de manipular,
 algunas, como las proteínas de membrana son insolubles en condiciones en
 que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
-proporción a las proteínas. Además la sensibilidad de los espectrómetros
+proporción a las proteínas \citep{Hatt1997}. Además la sensibilidad de los espectrómetros
 es menor para proteínas intactas que para péptidos. La cantidad de 
 posibles formas en que una proteína es procesada, incluyendo \ac{PTM} 
 en sus péptidos, y variaciones conformacionales entre
@@ -663,8 +668,8 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 %\addcontentsline{toc}{section}{Proteómica en gel}
 %\label{cap1:sec:Proteómica en gel}
 
-La separación de proteínas por \acl{PAGE}, es una técnica, 
-o serie de técnicas con variantes, que consiste en separar
+La separación de proteínas por Electroforesis en Gel de Poliacrilamida, \ac{PAGE},
+es una técnica, o serie de técnicas con variantes, que consiste en separar
 proteínas presentes en una muestra inicial en base a propiedades
 fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
 En función del número de estas propiedades que se aprovechan para separar,
@@ -751,8 +756,10 @@ de las secuencias de péptidos trípticos teóricos.
 %\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
-La llamada proteómica \textit{shotgun} es la técnica de elección para la mayoría
-de estudios proteómicos a gran escala. El nombre \textit{shotgun} proviene 
+La Proteómica a gran escala, conocida generalmente por el término inglés
+\textit{shotgun}, es la técnica de elección para la mayoría
+de estudios proteómicos enfocados a obtener un alto rendimiento.
+El nombre \textit{shotgun} proviene 
 de una analogía con las técnicas clásicas de secuenciación genómica donde 
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
 ensambladas. En la proteómica \textit{shotgun} las proteínas son 
@@ -773,7 +780,7 @@ la proteína original. Implica varios pasos descritos a continuación.
 
 A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
 relativamente aislada, en la Proteómica de alto rendimiento o
-\textit{shotgun}, puesto que el objetivo es identificar el máximo número de 
+\mbox{\textit{shotgun}}, puesto que el objetivo es identificar el máximo número de 
 proteínas en un solo experimento, se parte de una muestra
 más compleja. Esto es importante porque, 
 sabiendo que a partir de cada proteína se generan múltiples
@@ -884,7 +891,7 @@ que son comparados directamente con los espectros empíricos adquiridos.
 
 
 \figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
-{Interpretación de espectros MS/MS. Identificación de novo}
+{Interpretación de espectros MS/MS. Identificación \textit{de novo}}
 
 
 \figura{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
@@ -901,7 +908,8 @@ que son comparados directamente con los espectros empíricos adquiridos.
 
 La búsqueda utilizando bases de datos de secuencias es el principal y más
  extendido método
-de asignación de una secuencia peptídica a un espectro MS/MS.
+de asignación de una secuencia peptídica a un espectro MS/MS 
+(Figura~\ref{fig:spectrum_interpretation_2}).
 Existen una gran variedad de herramientas computacionales para realizar
 esta tarea. 
 
