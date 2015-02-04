@@ -1675,8 +1675,10 @@ Y como ejemplo específico para el caso de Sequest:
 S = F_{SEQUEST}(Xcorr, \Delta C_{n}, SpRank) = c_{0} + c_{1}Xcorr, + c_{2}\Delta C_{n} + c_{3}SpRank\\
 \end{equation}
 
-En su versión original, el software requería una población de asignaciones
-correctas de referencia para estimar estas variables.
+Aunque en su versión original, el software requería una población de asignaciones
+correctas de referencia para estimar estas variables, posteriormente
+el algoritmo fue extendido para poder estimar los coeficientes de forma 
+dinámica a partir de los datos en cada experimento\citep{Ding2008,Ma2012}.
 
 PeptideProphet asume que la distribución de las puntuaciones
 recalculadas \textit{S} puede explicarse como una combinación, una 
@@ -1758,7 +1760,7 @@ esta información haciendo que las puntuaciones correspondientes a péptidos
 parámetros que describen la distribución \textit{Gamma} de PSM incorrectos.
 Esto permitó redefinir una versión semisupervisada del algoritmo \citep{Choi2008}
 en el sentido de que la clase (PSM correctos e incorrectos) pasa a ser
-conocida para algunas pero no todas las asignaciones
+conocida para algunas pero no todas las asignaciones.
 
 \textit{The Probability Ratio Method, Navarro et al}
 
