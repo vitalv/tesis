@@ -3,10 +3,10 @@
 %                         Introduccion
 %---------------------------------------------------------------------
 
-\chapter*{Introducción}
+\chapter{Introducción}
 %mirar problema con fancyheader y secciones no numeradas, pagina 21-22 del manual
 \fancyhead[RO,LE]{\sc{Introducción}}
-\addcontentsline{toc}{chapter}{Introducción}
+%\addcontentsline{toc}{chapter}{Introducción}
 %\cabeceraEspecial{Introducción}
 
 
@@ -61,7 +61,7 @@ Tradicionalmente, el gen se ha concebido como la unidad fundamental -el átomo- d
 \label{cap1:sec:Proteómica. Conceptos generales}
 
 El concepto de Proteoma fue acuñado originalmente por Marc Wilkins en 
-1994 en analogía al concepto de Genoma \citep{Wasinger1995} 
+los años 90 en analogía al concepto de Genoma \citep{Wasinger1995} 
 Si el Genoma es la dotación génica de una célula u organismo, 
 el Proteoma es entendido como \emph{el conjunto total de proteínas 
 expresadas por los genes de una célula, tejido u organismo}. 
@@ -307,6 +307,7 @@ se usan generalmente en combinación con ionización \ac{MALDI}, que introduce
 iones en el analizador en pulsos de láser.
 
 \item \textbf{Cuadrupolos}. Los analizadores de tipo Cuadrupolo 
+(Figura~\ref{fig:Analizadores de masas} a)
 reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
 en pares llamados polos con cargas opuestas.
 Sobre estos pares, además del potencial eléctrico de corriente continua,
@@ -324,7 +325,8 @@ físico que los cuadrupolos, pero la conformación en forma de cámara de las
 trampas iónicas permite confinar y acumular los iones que luego son 
 liberados selectivamente.
 
-\subitem Las Trampas Iónicas Tridimensionales, \ac{QIT}
+\subitem Las Trampas Iónicas Tridimensionales, \ac{QIT} 
+(Figura~\ref{fig:Analizadores de masas} c)
 constan de  dos electrodos metálicos de sección hiperbólica enfrentados 
 y un electrodo toroidal que conforman una cámara donde se acumulan los iones
 de analito. En el interior los iones orbitan
@@ -341,7 +343,9 @@ capacidad de acumulación de iones y de barrido. Además pueden funcionar
 como un cuadrupolo 
 
 
-\subitem \emph{Orbitrap} es un tipo de trampa iónica, relativamente
+\subitem \emph{Orbitrap}
+(Figura~\ref{fig:Analizadores de masas} b)
+ es un tipo de trampa iónica, relativamente
 reciente, desarrollado a finales de los años 90 del s.XX \citep{Makarov2000}
 Consiste en un electrodo en un eje interno rodeado por un electrodo externo
 cilíndrico. Los iones son introducidos tangencialmente desde la fuente 
@@ -352,7 +356,8 @@ de la frecuencia angular de la oscilacion de los iones en torno al
 electrodo longitudinal interno.
 
 
-\subitem Los analizadores de tipo \ac{FTICR} se basan en confinar los iones
+\subitem Los analizadores de tipo  Resonancia Ionica Ciclotrónica - Transformada de Fourier,
+\ac{FTICR} se basan en confinar los iones
 en un campo magnético homogéneo de forma que son sometidos a seguir una trayectoria
 circular. La Fuerza de Lorentz obliga a que un ion con un vector de velocidad
 ortogonal al campo magnético experimente una fuerza ortogonal al plano 
@@ -371,6 +376,11 @@ es entonces deconvolucionada mediante la transfomada de Fourier que
 
 \end{itemize}
 
+\figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
+{Analizadores de masas tipo Cuadrupolo, Trampa Iónica Tridimensional (QIT) y Orbitrap}
+
+
+
 \item \textbf{Detector}
 El detector es elemento final de un espectrómetro de masas. Registra la
 corriente producida por el haz de iones que incide sobre él convirtiéndola
@@ -388,9 +398,6 @@ multiplicación de 10\textsuperscript{6} o mayores
 
 \end{enumerate}
 
-
-\figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
-{Analizadores de masas tipo Cuadrupolo, Trampa Iónica Tridimensional (QIT) y Orbitrap}
 
 
 La \textit{sensibilidad}, \textit{resolución}, \textit{precisión} y 
@@ -511,7 +518,7 @@ fragmentaciones y etapas de análisis de masas consiguientes.
 A este método de adquisición de espectros de fragmentación, en el que
 los péptidos precursores son seleccionados para ser fragmentados en base 
 las intensidades en el espectro MS\textsuperscript{1} se denomina por eso
-\ac{DDA}
+Adquisición Dependiente de Datos, \ac{DDA}
 %En la fragmentación, la estructura del esqueleto peptídico se rompe en
 %los enlaces peptídicos, el punto de menor energía de la estructura
 
@@ -676,11 +683,13 @@ En función del número de estas propiedades que se aprovechan para separar,
  en mayor o menor grado, las proteínas de una muestra
 se distinguen básicamente dos tipos de \ac{PAGE}
 \begin{itemize}
-  \item \ac{1DPAGE}. En este tipo de geles las 
+  \item Electroforesis en Gel de PoliAcrilamida Monodimiensional, \ac{1DPAGE}. 
+  En este tipo de geles las 
   proteínas se separan en función de su peso molecular. La electroforesis
   hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
   mas lejos en el gel, sometido a una diferencia de potencial.
-  \item \ac{2DPAGE}. En este caso, las proteínas 
+  \item Electroforesis en Gel de PoliAcrilamida Bidimiensional, \ac{2DPAGE}.
+   En este caso, las proteínas 
   se separan en una primera dimensión en función de su punto isoeléctrico.
   Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
   situarse en un punto donde su carga neta se equilibra con la de su 
@@ -693,7 +702,7 @@ Otra clasificación posible de las técnicas PAGE puede establecerse en
 función de si se usan condiciones desnaturalizantes o no
 \begin{itemize}
   \item Geles desnaturalizantes.
-  SDS-PAGE
+   Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico, \ac{SDSPAGE}
   \item Condiciones nativas o no desnaturalizantes
   Blue Native
 \end{itemize}
@@ -775,7 +784,7 @@ la proteína original. Implica varios pasos descritos a continuación.
 
 
 %\phantomsection
-\subsection{Separación de péptidos y proteínas}
+\subsection{Separación de péptidos y proteínas sin gel}
 %\addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
 
 A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
@@ -798,9 +807,11 @@ por fraccionamientos sub-celulares correspondientes a distintos
 orgánulos.
 
 \medskip
+\subsubsection*{Cromatografía Líquida de Alto Rendimiento. HPLC}
 
-Pero el fraccionamiento más importante se hace a nivel de péptido, tras 
-la digestión de las proteinas, 
+
+Pero el fraccionamiento más importante se hace a nivel de péptido, trás 
+la digestión de las proteínas, 
 por \ac{HPLC}.
 El funcionamiento básico general en HPLC consiste en hacer pasar la muestra
 a través de una fase estacionaria en el interior de una columna mediante 
@@ -809,7 +820,7 @@ de la muestra se retrasan diferencialmente en función de sus interacciones
 químicas con la fase estacionaria a medida que atraviesan la columna. 
 La fase móvil suele ser una combinación, en proporciones variables,
 de un componente acuoso al que se añade un ácido (trifluoroacético o fórmico) 
-y un solvente orgánico (comúnmente acetonitrilo o metanol) 
+y un solvente orgánico (comúnmente acetonitrilo o metanol).
 Esta proporción en la composición de la fase móvil puede ser constante 
 (cromatografía isocrática) o variable, en gradiente de elución. 
 En un gradiente típico, al aumentar la proporción del solvente orgánico, 
@@ -827,15 +838,15 @@ característica identificativa.
 %\begin{itemize}
 %  \item Cromatografía líquida en fase reversa (RP-LC)
 El tipo más común de cromatografía usada en experimentos de proteómica
-es la que se conoce como \ac{RPHPLC}
+es la que se conoce como Cromatografía Líquida de Alto Rendimiento en Fase Reversa, \ac{RPHPLC}
 En ella los analitos de la muestra se separan en base a su carácter
 hidrofóbico. 
 La fase estacionaria, apolar, está compuesta por unas micro-esferas de 
 sílice cubiertas de cadenas alquilo con 18 átomos de C (C18).
 Un gradiente en que el solvente orgánico aumente gradualmente y en
-proporción inversa a la fase acuosa, provoca que los analitos
-mas polares eluyan primero integrados
-cuando la proporción de fase acuosa es más elevada mientras que los más 
+proporción inversa al componente acuoso, provoca que los analitos
+más polares eluyan primero integrados en la fracción acuosa cuando 
+hay una mayor proporción de ésta, mientras que los más 
 hidrofóbicos son retenidos durante más tiempo.
 %  \item Cromatografía de intercambio catiónico
 %\end{itemize}
@@ -848,9 +859,14 @@ análisis computacional de esos espectros cuyo objetivo final es la
 obtención de una lista de proteínas que presumiblemente se encuentran en 
 la muestra. Este análisis computacional, a su vez, consta de varios procesos 
 secuenciales, principalmente la 
-\hyperref[cap1:sec:Asignación Péptido-Espectro]{asignación de secuencias peptídicas a cada espectro},
-\hyperref[cap1:sec:Inferencia de proteínas a partir de péptidos]{la inferencia de las proteínas a partir de esos péptidos}
-y una \hyperref[cap1:sec:Evaluación estadística de los resultados]{evaluación estadística que aporta medidas de fiablidad a la identificación}
+\hyperref[cap1:sec:Asignación Péptido-Espectro]{asignación de secuencias peptídicas a cada espectro}
+(sección \ref{cap1:sec:Asignación Péptido-Espectro}),
+\hyperref[cap1:sec:Inferencia de proteínas a partir de péptidos]
+{la inferencia de las proteínas a partir de esos péptidos}
+(sección \ref{cap1:sec:Inferencia de proteínas a partir de péptidos})
+y una \hyperref[cap1:sec:Evaluación estadística de los resultados]
+{evaluación estadística que aporta medidas de fiablidad a la identificación}
+(sección \ref{cap1:sec:Evaluación estadística de los resultados}).
 
 
 %-------------------------------------------------------------------
@@ -868,10 +884,10 @@ generarse miles de espectros por hora. La interpretación manual, por lo
 tanto no es una opción práctica. Diversas aproximaciones computacionales
 y herramientas de \textit{software} se han desarrollado para facilitar 
 esta tarea de asignación de secuencias peptídicas a los espectros MS/MS. 
-A cada una de estas asignaciones compuestas por un par péptido-espectro 
-se les denomina generalmente \ac{PSM}
+A cada una de estas parejas péptido-espectro 
+se les denomina generalmente Asignación Péptido-Espectro, \ac{PSM}.
 
-Las estrategias utilizadas para la asignación de \ac{PSM} básicamente pueden
+Las estrategias utilizadas para la obtención de una lista de \ac{PSM} básicamente pueden
  clasificarse en tres tipos. La más extendida es la 
 \hyperref[cap1:subsec:búsqueda secuencia]{búsqueda utilizando bases de datos de secuencias},
 consistente en establecer una correlación entre
@@ -879,23 +895,19 @@ el espectro MS/MS obtenido empíricamente y espectros teóricos predichos
 a partir de secuencias. 
 Otra estrategia, usada en casos en que el genoma del 
 organismo objeto de estudio no está (o sólo parcialmente) secuenciado, es 
-\hyperref[cap1:subsec:búsqueda de novo]{la secuenciación 
+\hyperref[cap1:subsec:otras estrategias de asignación péptido-espectro]{la secuenciación 
 \textit{de novo}} en la que la secuencia se infiere directamente del espectro
 sin ayuda de una base de datos de referencia.
 El tercer tipo de aproximación, la 
-\hyperref[cap1:subsec:búsqueda espectral]{búsqueda basada en bibliotecas de 
+\hyperref[cap1:subsec:otras estrategias de asignación péptido-espectro]
+{búsqueda basada en bibliotecas de 
 espectros}, requiere una recopilación, lo más extensa posible, de
 espectros MS/MS adquiridos previamente y ya asignados a péptidos,
 que son comparados directamente con los espectros empíricos adquiridos.
 
 
-
-\figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
-{Interpretación de espectros MS/MS. Identificación \textit{de novo}}
-
-
 \figura{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
-{Interpretación de automática espectros MS/MS}
+{Interpretación automática de espectros MS/MS}
 
 
 %-------------------------------------------------------------------
@@ -909,8 +921,9 @@ que son comparados directamente con los espectros empíricos adquiridos.
 La búsqueda utilizando bases de datos de secuencias es el principal y más
  extendido método
 de asignación de una secuencia peptídica a un espectro MS/MS 
-(Figura~\ref{fig:spectrum_interpretation_2}).
-Existen una gran variedad de herramientas computacionales para realizar
+(figura~\ref{fig:spectrum_interpretation_2}).
+Existen una gran variedad de herramientas computacionales llamadas 
+motores de búsqueda diseñadas para realizar
 esta tarea. 
 
 Los 
@@ -920,13 +933,14 @@ se les suministra como entrada datos correspondientes a una lista de
 espectros MS/MS empíricos y una serie de
 parámetros que tener en cuenta para restringir la búsqueda. 
 El programa compara estos espectros reales registrados con espectros
-teóricos que se obtienen mediante la predicción de los valores \mz de los
-péptidos y fragmentos que se generan teóricamente conociendo el patrón
-de corte de la enzima proteolítica utilizada, las masas de cada aminoácido,
-y las secuencias de las proteínas en una base de datos de referencia.
+teóricos que es posible obtener gracias a diversas fuentes de información 
+disponible como el patrón de corte de la enzima proteolítica utilizada,
+los valores \mz de los fragmentos que se producirían a partir de los péptidos,
+la frecuencia estimada de cada tipo de fragmento y las secuencias de las
+proteínas en una base de datos de referencia.
 En el proceso, el espacio de búsqueda se acota mediante la selección
 de una lista de péptidos posibles, 
-(candidatos que cumplen unos criterios determinados), que han generado el 
+(candidatos que cumplen unos criterios determinados), que posiblemente han generado el 
 espectro MS/MS y a continuación se ordenan utilizando una puntuación 
 función del grado de similitud entre el espectro empírico y el teórico.
 
@@ -1113,7 +1127,7 @@ En primer lugar se crea un espectro empírico procesado (espectro X) en el que lo
 intensidad son elimnados y el resto de valores \mz son redondeados al valor
 entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
 usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr}
-es calculado como una funcion de correlación \emph{Corr(t)} (el producto 
+es calculado como una función de correlación \emph{Corr(t)} (el producto 
 entre los vectores X e Y, con Y desplazado \textit{t} unidades de masa 
 respecto a X a lo largo del eje \mz )
 \begin{equation}
@@ -1260,7 +1274,12 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 \subsubsection*{Identificación por secuenciación \textit{de novo}}
 \label{cap1:subsubsec:búsqueda de novo}
 
-La secuenciación \textit{de novo}, a diferencia de las otras aproximaciones
+\figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
+{Interpretación manual de espectros MS/MS. Secuenciación \textit{de novo}}
+
+
+La secuenciación \textit{de novo} (figura~\ref{fig:spectrum_interpretation_1}),
+a diferencia de las otras aproximaciones
 para interpretar espectros MS/MS, no requiere información adicional como
 las secuencias de las proteínas o espectros recopilados en experimentos previos.
 Por este motivo, las interpretación de espectros \textit{de novo} es útil
@@ -1272,6 +1291,8 @@ automatiza el proceso. Sin embargo su uso no se encuentra muy extendido
 ya que, para la gran cantidad de espectros obtenidos en un experimento 
 típico de \textit{shotgun}, el proceso es computacionalmente muy exhaustivo
 y requiere espectros MS/MS de gran calidad.
+
+
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
@@ -1367,9 +1388,9 @@ candidatos que pueden asignarse a cada espectro individual y, una vez selecciona
 el mejor candidato, la distribucion de todas esas mejores puntuaciones de 
 todos los \ac{PSM} en el conjunto del experimento.
 
-\subsubsection*{Distribuciones de Espectro Individual y Promedio}
+\subsection{Puntuaciones basadas en distribuciones de espectro individual y promedio}
 
-\emph{Distribución de espectro individual}
+\subsubsection*{Distribución de espectro individual}
 
 Generalmente los motores de búsqueda aportan varios tipos de puntuación para
 cada PSM. Un tipo de puntuaciones se refiere a la calidad de cada asignación 
@@ -1416,9 +1437,10 @@ Ambos parámetros estadísticos, el \emph{p-valor} y el \emph{e-valor},
 a diferencia del valor de puntuación original calculado por el motor de búsqueda,
 son independientes de la función de puntuación utilizada y por tanto 
 suponen una medida más general de la calidad de cada \ac{PSM} y son comparables
-en ensayos que usan distintos instrumentos, diferentes motores de búsqueda y parámetros.
+en ensayos que usan distintos instrumentos, diferentes motores de búsqueda y parámetros
+\citep{Nesvizhskii2010}.
 
-\textit{ O NO Exactamente, ambos p y e val son probab que el psm sea incorrecto
+\todo{ O NO Exactamente, ambos p y e val son probab que el psm sea incorrecto
 y la poblacion de psms incorrecta sí depende del experimento. Para eso está 
 el discriminant score y la prob de peptprophet que sí es una medida de que el psm sea correcto
 y es por tanto independiente del experimento. Ver ppt Interpreting }
@@ -1429,16 +1451,11 @@ como \textit{hyperscore} en el caso de \textit{X!Tandem} o \textit{ion score}
 en el caso de \textit{Mascot} también hacen uso de una distribución de
 espectro individual para calcular y proporcionar un \textit{e-valor} para cada PSM. 
 
-%SALVA:
-%Los E-value se incluyen en los resultados de
-%motores de búsqueda como Mascot, OMSSA o X!Tandem e indican el número de veces que se
-%espera observar el PSM con una cierta puntuación x por azar.
-
 
 \medskip{}
 
 
-\emph{Distribución promedio}
+\subsubsection*{Distribución promedio}
 
 En los experimento \textit{shotgun} generalmente se obtienen miles de espectros MS/MS.
 Las medidas estadísticas de las distribuciones de espectro individual
@@ -1446,14 +1463,14 @@ por tanto, no son suficientes.
 Incluso en el caso de que se requiera
 un \emph{p-valor} muy bajo, (lo que implicaría una confianza estadística muy alta
 para un \ac{PSM} en concreto) si se evalúan miles de espectros MS/MS podrían 
-ocurrir \ac{PSM} con \emph{p-valores} igualmente bajos solo por azar. Por este
+ocurrir \ac{PSM} con \mbox{\emph{p-valores}} igualmente bajos solo por azar. Por este
 motivo se utilizan estrategias de \emph{corrección de test múltiple} 
-(\emph{multiple test correction}) que re-ajustan los \emph{p-valores}.
+(\emph{multiple test correction}) que re-ajustan los \mbox{\emph{p-valores}}.
 Una aproximación muy utilizada, aunque produce resultados conservadores,
   es la corrección de Bonferroni(\citep), que simplemente
-divide el \emph{p-valor} por el número de veces que se repite el test.
-Así para un \ac{PSM} con \emph{p-valor} = 0,05 en un experimento en el que hay
-otros 10.000 \ac{PSM}, el \emph{p-valor} original habría de reajustarse a
+divide el \mbox{\emph{p-valor}} por el número de veces que se repite el test.
+Así para un \ac{PSM} con \mbox{\emph{p-valor} = 0,05} en un experimento en el que hay
+otros 10.000 \ac{PSM}, el \mbox{\emph{p-valor}} original habría de reajustarse a
 0,05/10.000 = 5·10\textsuperscript{-6}.
 
 Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
@@ -1472,7 +1489,7 @@ es decir, se puede realizar un análisis FDR global para un conjunto de
 
 
 
-\subsubsection*{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
+\subsection{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
 
 El tipo de evaluación estadística más ampliamente utilizada en experimentos
 de proteómica \textit{shotgun} es un tipo de corrección de test múltiples, 
@@ -1538,7 +1555,7 @@ tienen el mismo tamaño, el número de \ac{PSM} incorrectos o Falsos Positivos
 (N\textsubscript{inc}, aquellos espectros a los que se ha asignado
 incorrectamente una secuencia \textit{target})
 puede ser considerado equivalente al número de \ac{PSM} \emph{señuelo} 
-(N\textsubscript{d}, espectros a los que se ha asginado una secuencia \emph{señuelo})
+(N\textsubscript{d}, espectros a los que se ha asginado una secuencia \emph{señuelo}).
 Con esto se puede estimar la tasa FDR como
  N\textsubscript{d}/N\textsubscript{t},
 esto es, la proporción de \ac{PSM} \textit{señuelo}, N\textsubscript{d} como sustituto
@@ -1612,30 +1629,136 @@ Mencionar MAYU, explicar en que consiste un poquito por lo menos
 
 
 
-\subsubsection*{Modelos mixtos de probabilidad. Probabilidad de Error Posterior (PEP). PeptideProphet}
+\subsection{Modelos mixtos de probabilidad. \mbox{Probabilidad Posterior}}
 
 %Modelos mixtos de evaluación de la confianza estadística
 
 La estrategia de las bases de datos señuelo permite una estimación global
 de la tasa FDR pero no proporciona un valor de confianza estadística para 
 cada \ac{PSM} individual. % en el conjunto de todos los PSMs del experimento.
-Esto se puede calcular mediante la \emph{Probabilidad de Error Posterior, PEP},
-de un \ac{PSM}, que se define como la fracción
-estimada de \ac{PSM} correctos entre una colección de \ac{PSM} con puntuaciones 
-(o p-valores / e-valores) similares. %5.2 Nesviz review
-Este tipo de análisis, propuesto por \citep{Keller2002} e implementado 
-en la herramienta \emph{PeptideProphet}, se basa en asumir que la distribución
-promedio de las mejores puntuaciones de todos los \ac{PSM} del experimento es una combinación
-de distribuciones, un modelo mixto de probabilidad, que integra la 
-distribución de los \ac{PSM} incorrectos y la distribución de los \ac{PSM} correctos.
-(Figura~\ref{fig:single_spectrum_and_average_distributions})
 
-En un principio, este modelo mixto para el cálculo de las PEPs
-ajustaba un modelo paramétrico
-a la distribución de puntuaciones de los \ac{PSM} de forma no supervisada
-y no requería secuencias \textit{señuelo}
- %Salva
-Pero con la incorporación de \ac{PSM} \textit{señuelo}
+PeptideProphet \citep{Keller2002} es un algoritmo de post-procesamiento
+(empleado después de que el motor de búsqueda haya establecido una lista 
+de PSM), el primero en implementar este tipo de análisis,
+que permite estimar la confianza en los péptidos identificados 
+aportando un valor de probabilidad posterior.
+
+Resumidamente, PeptideProphet recalcula las puntuaciones y emplea un 
+método de Bayes empírico -un procedimiento de inferencia estadística en 
+que la distribución \textit{a priori} se estima a partir de los datos-
+para establecer un modelo mixto de probabilidad que integra las subpoblaciones
+de espectros correctamente asignados e incorrectamente asginados.
+
+Primero, PeptideProphet recalcula las puntuaciones. Mediante análisis
+discriminante, las distintas puntuaciones aportadas por un motor de búsqueda
+son combinadas en un solo valor que maximiza la separación de asignaciones 
+correctas e incorrectas.
+La puntuación discriminante \emph{S} resulta de una función combinación ponderada
+de las puntuaciones \textit{x\textsubscript{1}}, \textit{x\textsubscript{2}}, ..., \textit{x\textsubscript{s}}
+expresada de forma general:
+
+\begin{equation}
+\label{eq:discriminant_function_general}
+S = F(x_{1}, x_{2},...,x_{S}) = c_{0} + \sum_{i=1}^S \ c_{i}x_{i}
+\end{equation}
+
+donde la constante \textit{c\textsubscript{0}} y el peso de las variables 
+\textit{c\textsubscript{i}} son derivadas de forma
+que el la proporción de la variación entre clases (asignaciones correctas
+e incorrectas) se maximiza con respecto
+a la variación dentro de cada clase.
+
+Y como ejemplo específico para el caso de Sequest:
+
+\begin{equation}
+\label{eq:discriminant_function_sequest}
+S = F_{SEQUEST}(Xcorr, \Delta C_{n}, SpRank) = c_{0} + c_{1}Xcorr, + c_{2}\Delta C_{n} + c_{3}SpRank\\
+\end{equation}
+
+En su versión original, el software requería una población de asignaciones
+correctas de referencia para estimar estas variables.
+
+PeptideProphet asume que la distribución de las puntuaciones
+recalculadas \textit{S} puede explicarse como una combinación, una 
+distribución mixta, en la que las asignaciones realmente correctas siguen
+una distribución \textit{Normal}($\mu$, $\sigma$), y las asignaciones incorrectas,
+una distribución \textit{Gamma}($\alpha$, $\beta$, $\delta$). 
+(Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
+
+\figura{Vectorial/PeptideProphet_fit_2_a_dataset_of_D_scores}{width=1\textwidth}{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}%
+{Estimación de PeptideProphet de las distribuciones de PSM incorrectos y correctos}
+
+
+Pero además de la puntuación discriminante hay otros parámetros que 
+influyen en las distribuciones mencionadas de PSM incorrectos y PSM correctos.
+Concretamente se ha comprobado 
+que el número de extremos trípticos, \ac{NTT}, el número de puntos de 
+corte no efectuados, \ac{NMC} y el error en la masa del precursor, $\Delta$M,
+tienen individualemente distribuciones diferentes
+para las asignaciones correctas e incorrectas \citep{Choi2008} lo que aporta una 
+mejor definición de las distribuciones cuando son incorporados en un modelo mixto común.
+
+A continuación, PeptideProphet usa un algoritmo de Expectación-Maximización,
+\ac{EM} y el teorema de Bayes para estimar las distribuciones \textit{Normal}, de PSM
+correctos, y \textit{Gamma}, de PSM incorrectos; y calcular una probabilidad 
+para cada asignación individual.
+
+Para iniciar, el algoritmo require los parámetros $\pi_{0}$ (la proporción
+de asignaciones incorrectas en toda la población); $\mu$, $\sigma$, parámetros
+que definen la \textit{Normal}; y $\alpha$, $\beta$, $\delta$, que definen la \textit{Gamma}.
+
+En el primer paso -\textit{E}- se usa el teorema de Bayes para estimar la probabilidad
+condicionada de cada puntuación de ser correcta: 
+
+\begin{equation}
+\label{eq:bayes_prob}
+P(+|S) = \frac{P(S|+)P(+)}{P(S|+)P(+)\ +\ P(S|-)P(-)} 
+\end{equation}
+
+donde \textit{P(+|S)} es la probabilidad de que el PSM con puntuación S
+sea correcta, \textit{P(S|+)} y \textit{P(S|-)} son las probabilidades 
+condicionadas de una puntuación \textit{S} entre las distribuciones correctas e
+incorrectas; y \textit{P(+)} y \textit{P(-)} son las probabilidades
+\textit{a priori} de asignaciones correctas e incorrectas.
+(Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
+Esta probabilidad puede entenderse como la proporción de la la densidad de
+\textit{Gamma} escalada por $\pi_{0}$ con respecto a la suma de las densidades
+\textit{Gamma} y \textit{Normal} escaladas $\pi_{0}$ y 1 - $\pi_{0}$ 
+para una puntuación \textit{S}.
+O dicho con otras palabras, la probabilidad de que, teniendo una puntuación 
+\textit{S}, una asignación sea incorrecta con respecto a la probabilidad
+de tener esa puntuación. Este valor es la Probabilidad de Error Posterior, \textit{PEP}
+que coincide con la FDR local.
+
+Y en el siguiente paso -\textit{M}-, una vez calculadas las probabilidades 
+de cada PSM se recalculan los valores de los parámetros que describen las distribuciones.
+
+Los pasos \textit{E} y \textit{M} se suceden iterativamente hasta la 
+convergencia, el momento en que los parámetros estimados no difieren 
+en valor absoluto de un error predefinido suministrado, $\epsilon$.
+
+Además de proporcionar probabilidades para cada PSM, PeptideProphet 
+también calcula la FDR global. 
+Para un umbral de puntuación \textit{t}:
+
+\begin{equation}
+\label{eq:fdr_with_peptideprophet}
+FDR(t) = \frac{P(-)P(S>t\ |-)}{P(S>t\ |-)P(-)\ +\ P(S>t\ |+)P(+)} 
+\end{equation}
+
+y otros parámetros como \textit{p-valor} y la tasa de Falsos Positivos 
+\ac{FPR}. (Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
+
+En un principio, cuando fue implementado \citep{Keller2002}, este modelo mixto para el
+ cálculo de probabilidades no hacía uso de búsquedas realizadas usando
+la estrategia \textit{target-señuelo} pues no se había generalizado aún.
+Cuando comenzaron a emplearse este tipo de búsquedas PeptideProphet incorporó
+esta información haciendo que las puntuaciones correspondientes a péptidos
+\textit{señuelo} sólamente puedan contribuir a la estimación de los
+parámetros que describen la distribución \textit{Gamma} de PSM incorrectos.
+Esto permitó redefinir una versión semisupervisada del algoritmo \citep{Choi2008}
+en el sentido de que la clase (PSM correctos e incorrectos) pasa a ser
+conocida para algunas pero no todas las asignaciones
 
 \textit{The Probability Ratio Method, Navarro et al}
 

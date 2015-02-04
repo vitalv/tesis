@@ -34,11 +34,11 @@
 
 @entry{PAGE, ,\emph{PoliAcrylamide Gel Electrophoresis}}
 
-@entry{1DPAGE, 1D-PAGE ,\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida Monodimiensional}
+@entry{1DPAGE, 1D-PAGE ,\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}}
 
-@entry{2DPAGE, 2D-PAGE ,\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida Bidimiensional}
+@entry{2DPAGE, 2D-PAGE ,\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}}
 
-@entry{SDSPAGE, SDS-PAGE ,\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico}
+@entry{SDSPAGE, SDS-PAGE ,\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}}
 
 @entry{HPLC, ,\emph{High Performance Liquid Chromatography}}
 
@@ -64,13 +64,13 @@
 
 @entry{LIT, ,\emph{Linear Ion Trap}}
 
-@entry{FTICR, ,\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Ionica Ciclotrónica - Transformada de Fourier}
+@entry{FTICR, ,\emph{Fourier Transform Ion Cyclotron Resonance}}
 
 @entry{MSMS, MS/MS, \emph{Tandem Mass Spectrometry}}
 
-@entry{DDA, ,\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos}
+@entry{DDA, ,\emph{Data Dependent Acquisition} }
 
-@entry{DIA, ,\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}
+@entry{DIA, ,\emph{Data Independent Acquisition}}
 
 @entry{CID, ,\emph{Collision Induced Dissociation}}
 
@@ -80,14 +80,19 @@
 
 @entry{HCD, ,\emph{Higher Energy Collision Dissociation}}
 
-@entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alto Rendimiento en Fase Reversa}
+@entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}}
 
-@entry{PSM, ,\emph{Peptide-Spectrum Match}, Asignación Péptido-Espectro}
+@entry{PSM, ,\emph{Peptide-Spectrum Match}}
 
 @entry{FWHM, ,\emph{Full Width at Half Mass}}
 
+@entry{NTT, ,\emph{Number of Tryptic Termini}}
 
+@entry{NMC, ,\emph{Number of Missed Cleavages}}
 
+@entry{EM, ,\emph{Expectation-Maximization}}
+
+@entry{FPR, ,\emph{False Positive Rate}}
 
 
 

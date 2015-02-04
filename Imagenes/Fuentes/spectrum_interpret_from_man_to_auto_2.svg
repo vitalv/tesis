@@ -14,7 +14,7 @@
    id="svg6883"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="spectrum_interpret_from_man_to_auto_2.pdf">
+   sodipodi:docname="spectrum_interpret_from_man_to_auto_2.svg">
   <defs
      id="defs6885" />
   <sodipodi:namedview
@@ -25,16 +25,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="269.32915"
-     inkscape:cy="367.38224"
+     inkscape:cx="773.16834"
+     inkscape:cy="348.56405"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1301"
+     inkscape:window-width="1366"
      inkscape:window-height="744"
-     inkscape:window-x="65"
+     inkscape:window-x="1280"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2010,7 +2010,7 @@
        xml:space="preserve"
        style="font-size:11.99616051px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="-704.74536"
-       y="-654.73309"
+       y="-656.20355"
        id="text8133"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1.0293107,0.97152395,0,0,0)"><tspan
@@ -2018,7 +2018,7 @@
          sodipodi:role="line"
          id="tspan8135"
          x="-704.74536"
-         y="-654.73309">intensidad</tspan></text>
+         y="-656.20355">intensidad</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.86377716px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -2032,37 +2032,25 @@
          x="-157.81097"
          y="772.43945">m/z</tspan></text>
     <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="-545.82422"
-       y="-673.83685"
-       id="text8141"
-       sodipodi:linespacing="125%"
-       transform="matrix(0,-1.0000635,0.9999365,0,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan8143"
-         x="-545.82422"
-         y="-673.83685">espectro teórico</tspan></text>
-    <text
        transform="matrix(0,-1.0000635,0.9999365,0,0,0)"
        sodipodi:linespacing="125%"
        id="text8145"
-       y="-673.83685"
-       x="-794.63171"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       y="-677.53308"
+       x="-765.90564"
+       style="font-size:15.16482544px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="-673.83685"
-         x="-794.63171"
+         y="-677.53308"
+         x="-765.90564"
          id="tspan8147"
          sodipodi:role="line">espectro empírico</tspan></text>
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.70000052;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.70000076;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect7762"
-       width="598.6792"
-       height="32.176502"
-       x="-660.60852"
-       y="576.41418"
-       rx="17.108578"
+       width="626.9635"
+       height="40.390789"
+       x="-660.60858"
+       y="573.55707"
+       rx="17.916864"
        ry="0" />
     <text
        sodipodi:linespacing="125%"
@@ -2127,5 +2115,17 @@
          x="-212.14056"
          id="tspan6609"
          sodipodi:role="line">750</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.16482544px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-525.9209"
+       y="-676.10443"
+       id="text3376"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1.0000635,0.9999365,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3378"
+         x="-525.9209"
+         y="-676.10443">espectro teórico</tspan></text>
   </g>
 </svg>

@@ -147,9 +147,22 @@ constantes,guionado,Cascaras/bibliografia,config%
 
 \usepackage{fixltx2e} %para usar \textsubscript
 
-%\usepackage{titlesec}
+%titlesec customizes chapters, sections and subsections styles
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\bfseries\Large\slshape}
+{\filleft \Huge\textcolor{gray}\thechapter}
+{-2ex}
+{%\titlerule
+\vspace{2ex}%
+\filleft}
+[%\vspace{2ex}%
+%\titlerule
+]
+
+
 %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
-%\usepackage[Bjornstrup]{fncychap}
+%\usepackage[Sonny]{fncychap}
 %\ChNumVar{\fontsize{60}{62}\usefont{OT1}{ptm}{m}{n}\selectfont\textcolor{blue}}
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
