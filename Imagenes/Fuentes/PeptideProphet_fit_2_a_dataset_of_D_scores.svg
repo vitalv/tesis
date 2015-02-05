@@ -14,7 +14,7 @@
    id="svg3987"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="PeptideProphet_fit_2_a_dataset_of_D_scores.pdf">
+   sodipodi:docname="PeptideProphet_fit_2_a_dataset_of_D_scores.svg">
   <defs
      id="defs3989" />
   <sodipodi:namedview
@@ -24,15 +24,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="259.01013"
-     inkscape:cy="267.66631"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="480.7631"
+     inkscape:cy="112.79572"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1301"
+     inkscape:window-width="1366"
      inkscape:window-height="744"
-     inkscape:window-x="65"
+     inkscape:window-x="1280"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="true"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -659,7 +659,7 @@
        id="path4190"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:0.503;fill:#ff8d11;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.50300000000000000;fill:#ff8d11;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 254.86765,507.66685 c 63.26226,-11.72937 61.9651,-330.50046 96.25173,-331.09112 45.76038,-0.78832 26.71331,328.70917 171.09991,331.37487 z"
        id="path4700"
        inkscape:connector-curvature="0"
@@ -710,7 +710,7 @@
          x="356.36459"
          y="575.81232">Puntuación Discriminante</tspan></text>
     <path
-       style="fill:none;stroke:#666666;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 443.19045,510.05902 0,9.61882"
        id="path4898"
        inkscape:connector-curvature="0" />
@@ -725,7 +725,7 @@
        id="path4902"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#666666;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 268.36178,510.05902 0,9.61882"
        id="path4904"
        inkscape:connector-curvature="0" />
@@ -733,7 +733,7 @@
        inkscape:connector-curvature="0"
        id="path4906"
        d="m 355.77612,510.05902 0,9.61882"
-       style="fill:none;stroke:#666666;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 176.94784,509.50409 8.69591,0"
@@ -1466,5 +1466,22 @@
    id="tspan12163"
    style="font-size:65.00091553%;baseline-shift:sub">rojo</tspan></tspan></text>
     </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3199"
+       d="m 485.2633,510.05902 0,9.61882"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       transform="scale(1.0001131,0.99988692)"
+       sodipodi:linespacing="125%"
+       id="text3201"
+       y="542.29431"
+       x="481.78323"
+       style="font-size:14.42659283px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="542.29431"
+         x="481.78323"
+         id="tspan3203"
+         sodipodi:role="line">1</tspan></text>
   </g>
 </svg>

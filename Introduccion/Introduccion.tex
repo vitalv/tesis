@@ -1378,15 +1378,78 @@ Por otra parte, no a todos los espectros MS/MS generados se
 les asigna un péptido, y a su vez, de todo el conjunto de \ac{PSM} sólo
 una fracción son correctos, es decir el espectro corresponde realmente a
 la secuencia asignada. De hecho, en algunos experimentos realizados en instrumentos
-de baja resolución, los \ac{PSM} incorrectos pueden llegar a suponer la mayoría.
-
+de baja resolución, los \ac{PSM} incorrectos pueden llegar a suponer la mayoría \citep{Nesvizhskii2007a}.
 Por eso, el desarrollo de métodos de evaluación de la calidad, en términos
 de confianza estadística, es una tarea crucial para filtrar los resultados
-generados. Para hacer este tipo de análisis estadístico de los resultados
-es importante conocer la distribucion de puntuaciones de los péptidos 
-candidatos que pueden asignarse a cada espectro individual y, una vez seleccionado
-el mejor candidato, la distribucion de todas esas mejores puntuaciones de 
-todos los \ac{PSM} en el conjunto del experimento.
+generados. 
+%Para hacer este tipo de análisis estadístico de los resultados
+%es importante conocer la distribucion de puntuaciones de los péptidos 
+%candidatos que pueden asignarse a cada espectro individual y, una vez seleccionado
+%el mejor candidato, la distribucion de todas esas mejores puntuaciones de 
+%todos los \ac{PSM} en el conjunto del experimento.
+
+
+\subsection{Conceptos estadísticos básicos}
+
+El planteamiento general en el tratamiento estadístico en experimentos 
+de proteómica consiste en enfrentar dos hipótesis.
+La hipótesis nula (H\textsubscript{0}) indica que el péptido (o proteína)
+está incorrectamente identificado. La hipótesis alternativa (H\textsubscript{1})
+indica lo contrario, que la asignación es correcta. 
+Los tests estadísticos que se aplican enfrentan ambas hipótesis para aportar
+una medida de probabilidad estadística, generalmente la probabilidad
+de rechazar la hipótesis nula, es decir, de que la asignación sea correcta.
+(Figura~\ref{fig:tabla_contingencia_estadistica_basica}).
+La población que se estudia puede ser la puntuación de todos los candidatos
+enfrentados a un espectro, o en términos globales, para todo un experimento,
+las puntuaciones de todos los PSM.
+
+
+En la tabla de contingencia de la figura~\ref{fig:tabla_contingencia_estadistica_basica},
+U, V, T, y S corresponen a los Verdaderos Negativos, Falsos Positivos,
+Falsos Negativos y Verdaderos Positivos respectivamente.
+Con estos valores se pueden definir los conceptos de
+\begin{itemize}
+ \item\textit{sensibilidad} o Tasa de Verdaderos Positivos, \ac{TPR}. Es la proporción
+ de asignaciones consideradas correctas (por encima del umbral) entre el total de asignaciones correctas.
+ \begin{equation}
+  \label{eq:sensibilidad}
+  TPR = \frac{S}{T+S}
+ \end{equation}
+
+\item\textit{especificidad}. Es la proporción
+ de asignaciones consideradas incorrectas entre el total de asignaciones incorrectas.
+ \begin{equation}
+  \label{eq:especificidad}
+  especificidad = \frac{U}{U+V}
+ \end{equation}
+
+\item Tasa de Falsos Negativos, \ac{FNR}. Es la proporción
+ de asignaciones consideradas incorrectas entre el total de asignaciones correctas.
+ \begin{equation}
+  \label{eq:FNR}
+  FNR = 1 - sensibilidad = \frac{T}{T+S}
+ \end{equation}
+
+\item Tasa de Falsos Positivos, \ac{FPR}. Es la proporción
+ de asignaciones consideradas correctas entre el total de asignaciones incorrectas.
+ \begin{equation}
+  \label{eq:FPR}
+  FPR = 1 - especificidad = \frac{V}{U+V}
+ \end{equation}
+
+\item Tasa de Falsos Descubrimientos, \ac{FDR}. Es la proporción
+ de asignaciones consideradas incorrectas entre el total de asignaciones consideradas (por encima del umbral).
+ \begin{equation}
+  \label{eq:FDR}
+  FDR = \frac{S}{S+V}
+ \end{equation}
+
+
+\end{itemize}
+\figura{Vectorial/tabla_contingencia_estadistica_basica}{width=.99\textwidth}{fig:tabla_contingencia_estadistica_basica}%
+{Tabla de contingencia. Contraste de hipótesis}
+
 
 \subsection{Puntuaciones basadas en distribuciones de espectro individual y promedio}
 
@@ -1396,7 +1459,7 @@ Generalmente los motores de búsqueda aportan varios tipos de puntuación para
 cada PSM. Un tipo de puntuaciones se refiere a la calidad de cada asignación 
 en particular, evalúa el grado de similitud entre el espectro empírico y 
 el péptido asignado, el mejor de la lista de candidatos.
-(\emph{Xcorr} en Sequest, \emph{hyperscore} en X!Tandem o \emph{ionScore} en Mascot)
+(\emph{Xcorr} en Sequest, \emph{hyperscore} en X!Tandem o \emph{ionScore} en Mascot).
 Pero además, a veces, aportan una puntuación indicativa de la calidad del PSM en relación a otros,
 al segundo mejor candidato ($\Delta$\emph{Cn} de Sequest); o con respecto
 a una población del resto de candidatos que obtuvieron puntuaciones inferiores 

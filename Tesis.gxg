@@ -27,7 +27,10 @@ Introduccion/Introduccion.aux:89 2DPAGE[n](acr)a@21
 Introduccion/Introduccion.aux:91 SDSPAGE[n](acr)a@22
 Introduccion/Introduccion.aux:104 RPHPLC[n](acr)a@25
 Introduccion/Introduccion.aux:107 PSM[n](acr)a@26
-Introduccion/Introduccion.aux:188 NTT[n](acr)a@46
-Introduccion/Introduccion.aux:189 NMC[n](acr)a@46
-Introduccion/Introduccion.aux:190 EM[n](acr)a@46
-Introduccion/Introduccion.aux:197 FPR[n](acr)a@48
+Introduccion/Introduccion.aux:141 TPR[n](acr)a@38
+Introduccion/Introduccion.aux:144 FNR[n](acr)a@38
+Introduccion/Introduccion.aux:148 FPR[n](acr)a@39
+Introduccion/Introduccion.aux:150 FDR[n](acr)a@39
+Introduccion/Introduccion.aux:202 NTT[n](acr)a@48
+Introduccion/Introduccion.aux:203 NMC[n](acr)a@49
+Introduccion/Introduccion.aux:204 EM[n](acr)a@49

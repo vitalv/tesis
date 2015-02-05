@@ -10,7 +10,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{49}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
@@ -20,7 +20,11 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{FD}{FD}{\emph{Field Desorption}}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{39}}
+\GlossTeXNull{0}
+\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{38}}
+\GlossTeXNull{0}
+\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{39}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
@@ -38,9 +42,9 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{49}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{48}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -63,4 +67,6 @@
 \GlossTeXEntry{SLD}{SLD}{\emph{Soft Laser Desorption}}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
 \GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}}{}{acr}{a}{\GlossTeXPage{n}{8}}
+\GlossTeXNull{0}
+\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}

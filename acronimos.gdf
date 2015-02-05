@@ -94,7 +94,11 @@
 
 @entry{FPR, ,\emph{False Positive Rate}}
 
+@entry{TPR, ,\emph{True Positive Rate}}
 
+@entry{FNR, ,\emph{False Negative Rate}}
+
+@entry{FDR, ,\emph{False Discovery Rate}}
 
 
 
