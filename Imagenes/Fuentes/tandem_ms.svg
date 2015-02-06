@@ -13,9 +13,9 @@
    inkscape:version="0.48.5 r10040"
    version="1.1"
    id="svg4518"
-   height="236.41231"
-   width="402.43375"
-   sodipodi:docname="tandem_ms.pdf">
+   height="180.80055"
+   width="392.5"
+   sodipodi:docname="tandem_ms.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,15 +23,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.92300631"
-     inkscape:cx="396.21205"
-     inkscape:cy="192.85491"
+     inkscape:zoom="1.8460126"
+     inkscape:cx="273.98754"
+     inkscape:cy="63.923257"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
+     inkscape:window-width="1301"
      inkscape:window-height="744"
-     inkscape:window-x="1280"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -393,11 +393,11 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Capa 1"
-     transform="translate(-224.54227,-413.25336)">
+     transform="translate(-234.375,-427.83437)">
     <path
        inkscape:connector-curvature="0"
-       style="fill:#ffffff;fill-opacity:0.02739725;stroke:#ffffff;stroke-width:1.50000012;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 259.51043,414.04444 333.24867,0 c 24.36692,0 33.46693,-2.39472 33.46693,29.38132 l 0,176.62302 c 0,31.77614 -9.10001,28.79229 -33.46693,28.79229 l -333.24867,0 c -24.36694,0 -34.21816,2.98385 -34.21816,-28.79229 l 0,-176.62302 c 0,-31.77604 9.85122,-29.38132 34.21816,-29.38132 z"
+       style="fill:#ffffff;fill-opacity:0.02739725;stroke:#ffffff;stroke-width:1.29508042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 268.41485,428.53602 325.15688,0 c 23.77525,0 32.6543,-1.82954 32.6543,22.44696 l 0,134.93784 c 0,24.27658 -8.87905,21.99695 -32.6543,21.99695 l -325.15688,0 c -23.77527,0 -33.38729,2.27963 -33.38729,-21.99695 l 0,-134.93784 c 0,-24.2765 9.61202,-22.44696 33.38729,-22.44696 z"
        id="path5264-5"
        sodipodi:nodetypes="sssssssss" />
     <path

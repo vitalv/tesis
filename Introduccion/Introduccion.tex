@@ -107,7 +107,7 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 \section{Espectrometría de masas}
 %\addcontentsline{toc}{section}{Espectrometría de masas}
 %-------------------------------------------------------------------
-%\label{cap1:sec:Espectrometría de masas}
+\label{cap1:sec:Espectrometría de masas}
 
 El desarrollo de las técnicas de ionización suave de macromoléculas
 biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
@@ -424,7 +424,7 @@ R = \frac{M}{\Delta{M}}
 donde M es el valor entero más próximo de masa del primer pico y $\Delta${M}
 es el incremento de \mz a una determinada altura del pico. Frecuentemente
 se usa un 50\% de altura del pico, el parámetro en ese caso es la Altura
-de Pico a Media Altura \ac{FWHM}.
+de Pico a Media Altura, \ac{FWHM}.
 La resolución es un parámetro específico del espectrómetro de masas. Otros
 parámetros, relacionados aunque no específicos del instrumento son la exactitud
 y la precisión.
@@ -465,14 +465,14 @@ En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
 instrumento es suficientemente informativo y específico de la proteína original y 
 ésta puede ser identificada. Este es el principio de la técnica conocida
-como Huella Peptídica, descrita detalladamente en una sección posterior.
+como Huella Peptídica, descrita en la sección \ref{cap1:subsec:PMF}.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece es, por tanto, limitado. 
 
 \figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
 {Espectrometría de masas en Tandem. MS/MS}
 
-En la Espectrometría de Masas en Tándem \ac{MSMS} o MS\textsuperscript{2},
+En la Espectrometría de Masas en Tándem, \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
 fragmentación adicional. (Figura~\ref{fig:tandem_ms})
@@ -531,7 +531,7 @@ mientras que en las trampas iónicas se generan igualmente \emph{b-} e \emph{y-}
 \citep{Steen2004}
 
 
-\figura{Vectorial/Roepstorff_peptide_fragmentation}{width=.80\textwidth}{fig:peptide_fragmentation}%
+\figura{Vectorial/roepstorff_nomenclature}{width=.70\textwidth}{fig:peptide_fragmentation}%
 {Nomenclatura de Roepstorff para los fragmentos en MS/MS} 
 
 
@@ -720,6 +720,8 @@ conseguir con otro tipo de aproximaciones.
 
 %\phantomsection
 \subsection{Huella Peptídica}
+\label{cap1:subsec:PMF}
+
 %\addcontentsline{toc}{subsection}{Huella Peptídica}
 %The anchor of a bookmark and its parent's must not be the same. Added a new anchor
 
@@ -735,7 +737,8 @@ ellas que pueden tener masas muy similares. Por ese motivo,
  esta técnica requiere que la proteína se encuentre previamente aislada, 
  generalmente a partir de una \textit{mancha} o \textit{spot} proteico de \ac{2DPAGE}
 
-Generalmente la técnica de la Huella Peptídica se lleva a cabo por 
+Generalmente la técnica de la Huella Peptídica, conocida también por 
+el acrónimo PMF, \ac{PMF}, se lleva a cabo por 
 espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
 péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
 en una matriz \ac{MALDI}, donde son ionizados e introducidos en un analizador
@@ -1071,6 +1074,12 @@ Una aproximación sensata puede consistir en
 (disponiendo de recursos computacionales suficientes) realizar una búsqueda
 muy abierta y posteriormente refinarla. %\citep{Creasy2002}
 %Mirar 4.4.1 en NeszhviReview
+En ocasiones se puede hacer una búsqueda con una ventana de tolerancia
+amplia para la masa del precursor y posteriormente emplear ese parámetro
+en el post-procesamiento (PeptideProphet, sección \ref{cap1:subsec:PeptideProphet})
+de forma que se puede obtener un mayor rendimiento (en términos de
+identificaciones para una cierta tasa de error) comparado con una búsqueda
+para el mismo set de espectros con una ventana más restrictiva \citep{Ding2008, Nesvizhskii2010}.
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
@@ -1687,6 +1696,7 @@ Mencionar MAYU, explicar en que consiste un poquito por lo menos
 
 
 \subsection{Modelos mixtos de probabilidad. \mbox{Probabilidad Posterior}}
+\label{cap1:subsec:PeptideProphet}
 
 %Modelos mixtos de evaluación de la confianza estadística
 
@@ -1741,7 +1751,7 @@ PeptideProphet asume que la distribución de las puntuaciones
 recalculadas \textit{S} puede explicarse como una combinación, una 
 distribución mixta, en la que las asignaciones realmente correctas siguen
 una distribución \textit{Normal}($\mu$, $\sigma$), y las asignaciones incorrectas,
-una distribución \textit{Gamma}($\alpha$, $\beta$, $\delta$). 
+una distribución \textit{Gamma}($\alpha$, $\beta$, $\gamma$). 
 (Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
 
 \figura{Vectorial/PeptideProphet_fit_2_a_dataset_of_D_scores}{width=1\textwidth}{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}%
@@ -1749,22 +1759,22 @@ una distribución \textit{Gamma}($\alpha$, $\beta$, $\delta$).
 
 
 Pero además de la puntuación discriminante hay otros parámetros que 
-influyen en las distribuciones mencionadas de PSM incorrectos y PSM correctos.
-Concretamente se ha comprobado 
-que el número de extremos trípticos, \ac{NTT}, el número de puntos de 
+contribuyen a la separación de las poblaciones de PSM incorrectos y PSM correctos.
+Concretamente  
+el número de extremos trípticos, \ac{NTT}, el número de puntos de 
 corte no efectuados, \ac{NMC} y el error en la masa del precursor, $\Delta$M,
 tienen individualemente distribuciones diferentes
 para las asignaciones correctas e incorrectas \citep{Choi2008} lo que aporta una 
 mejor definición de las distribuciones cuando son incorporados en un modelo mixto común.
 
-A continuación, PeptideProphet usa un algoritmo de Expectación-Maximización,
+A continuación, PeptideProphet usa un algoritmo de Esperanza-Maximización,
 \ac{EM} y el teorema de Bayes para estimar las distribuciones \textit{Normal}, de PSM
 correctos, y \textit{Gamma}, de PSM incorrectos; y calcular una probabilidad 
 para cada asignación individual.
 
 Para iniciar, el algoritmo require los parámetros $\pi_{0}$ (la proporción
 de asignaciones incorrectas en toda la población); $\mu$, $\sigma$, parámetros
-que definen la \textit{Normal}; y $\alpha$, $\beta$, $\delta$, que definen la \textit{Gamma}.
+que definen la \textit{Normal}; y $\alpha$, $\beta$, $\gamma$, que definen la \textit{Gamma}.
 
 En el primer paso -\textit{E}- se usa el teorema de Bayes para estimar la probabilidad
 condicionada de cada puntuación de ser correcta: 

@@ -80,6 +80,8 @@
 
 @entry{HCD, ,\emph{Higher Energy Collision Dissociation}}
 
+@entry{PMF, ,\emph{Peptide Mass Fingerprint}}
+
 @entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}}
 
 @entry{PSM, ,\emph{Peptide-Spectrum Match}}
