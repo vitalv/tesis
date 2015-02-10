@@ -105,7 +105,7 @@
      \interlinepenalty \@M
      \normalfont
      \ifnum \c@secnumdepth >-2\relax
-       %\huge\bfseries \partname\nobreakspace\thepart %Comento esto para que no ponga "Parte I" 
+       %\huge\bfseries \partname\nobreakspace\thepart %Esto es lo que escribe "Parte I"
        \par
        \vskip 20\p@
      \fi
@@ -117,19 +117,7 @@
 % Versión "con estrella" del comando part. Se pone el título y la
 % descripción.
 \def\@spart#1{%
-
-    %VITAL: esta parte me permite añadir al toc el título de la parte, sin número romano ni nada
-    %para evitar que la parte el capitulo 2 esté bajo la parte III (parte II es objetivos y no lleva ningun capitulo) 
-    \renewcommand\thepart{}
-    \ifnum \c@secnumdepth >-2\relax      
-      \refstepcounter{part}%
-      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
-    \else
-      \addcontentsline{toc}{part}{#1}%
-    \fi
-    \markboth{}{}%
-    %%%%%VITAL (hasta aqui)
-    
+    \addcontentsline{toc}{part}{#1}%Vital: Esto añade OBJETIVOS a mi TOC sin numero romano a nivel de Parte
     {\centering
      \interlinepenalty \@M
      \normalfont
