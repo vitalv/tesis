@@ -1,36 +1,36 @@
 
 
-\GlossTeXEntry{1DPAGE}{1D-PAGE }{\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{20}}
+\GlossTeXEntry{1DPAGE}{1D-PAGE }{\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{20}}
+\GlossTeXEntry{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{17}}
+\GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
-\GlossTeXEntry{DDA}{DDA}{\emph{Data Dependent Acquisition} }{}{acr}{a}{\GlossTeXPage{n}{16}}
+\GlossTeXEntry{DDA}{DDA}{\emph{Data Dependent Acquisition} }{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
-\GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{18}}
+\GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{17}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{47}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{43}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
-\GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{17}}
+\GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FAB}{FAB}{\emph{Fast Atom Bombardment}}{}{acr}{a}{\GlossTeXPage{n}{9}}
+\GlossTeXEntry{FAB}{FAB}{\emph{Fast Atom Bombardment}}{}{acr}{a}{\GlossTeXPage{n}{8}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FD}{FD}{\emph{Field Desorption}}{}{acr}{a}{\GlossTeXPage{n}{9}}
+\GlossTeXEntry{FD}{FD}{\emph{Field Desorption}}{}{acr}{a}{\GlossTeXPage{n}{8}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{35}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}}{}{acr}{a}{\GlossTeXPage{n}{12}}
+\GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}}{}{acr}{a}{\GlossTeXPage{n}{11}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{14}}
+\GlossTeXEntry{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
-\GlossTeXEntry{HCD}{HCD}{\emph{Higher Energy Collision Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{18}}
+\GlossTeXEntry{HCD}{HCD}{\emph{Higher Energy Collision Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{17}}
 \GlossTeXNull{0}
 \GlossTeXEntry{HPLC}{HPLC}{\emph{High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -38,37 +38,37 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{LTQ}{LTQ}{\emph{Linear Trap Quadrupole}}{}{acr}{a}{\GlossTeXPage{n}{11}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}}{}{acr}{a}{\GlossTeXPage{n}{6}}
+\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}}{}{acr}{a}{\GlossTeXPage{n}{15}}
+\GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{43}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{43}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PD}{PD}{\emph{Plasma Desorption}}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}}{}{acr}{a}{\GlossTeXPage{n}{22}}
+\GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}}{}{acr}{a}{\GlossTeXPage{n}{20}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PSM}{PSM}{\emph{Peptide-Spectrum Match}}{}{acr}{a}{\GlossTeXPage{n}{25}}
+\GlossTeXEntry{PSM}{PSM}{\emph{Peptide-Spectrum Match}}{}{acr}{a}{\GlossTeXPage{n}{23}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PTM}{PTM}{\emph{Post-Translational Modification}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
-\GlossTeXEntry{QIT}{QIT}{\emph{Quadrupole Ion Trap}}{}{acr}{a}{\GlossTeXPage{n}{11}}
+\GlossTeXEntry{QIT}{QIT}{\emph{Quadrupole Ion Trap}}{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
-\GlossTeXEntry{QTOF}{QTOF}{\emph{Quadrupole-Time Of Flight} }{}{acr}{a}{\GlossTeXPage{n}{9}}
+\GlossTeXEntry{QTOF}{QTOF}{\emph{Quadrupole-Time Of Flight} }{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
-\GlossTeXEntry{QTRAP}{QTrap}{\emph{Quadrupole-Ion Trap} }{}{acr}{a}{\GlossTeXPage{n}{9}}
+\GlossTeXEntry{QTRAP}{QTrap}{\emph{Quadrupole-Ion Trap} }{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
-\GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{24}}
+\GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{22}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SDSPAGE}{SDS-PAGE }{\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{21}}
+\GlossTeXEntry{SDSPAGE}{SDS-PAGE }{\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
 \GlossTeXEntry{SLD}{SLD}{\emph{Soft Laser Desorption}}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
 \GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}}{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}

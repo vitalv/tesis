@@ -81,6 +81,9 @@ constantes,guionado,Cascaras/bibliografia,config%
 %            Preámbulo del documento. Configuraciones varias
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+\usepackage{extsizes} %para poder poner 9pt en book
+
+
 % Define  el  tipo  de  compilación que  estamos  haciendo.   Contiene
 % definiciones  de  constantes que  cambian  el  comportamiento de  la
 % compilación. Debe incluirse antes del paquete TeXiS/TeXiS.sty
@@ -151,7 +154,9 @@ constantes,guionado,Cascaras/bibliografia,config%
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
 {\bfseries\Large\slshape}
-{\filleft \Huge\textcolor{gray}\thechapter}
+{\filleft}
+%{\filleft \Huge\textcolor{gray}\thechapter}
+%{-2ex}
 {-2ex}
 {%\titlerule
 \vspace{2ex}%
