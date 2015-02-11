@@ -1350,10 +1350,13 @@ Interpretation of shotgun proteomic data: the protein inference problem}
 \todo{Y mirar también ProteinProphet}
 
 En un experimento de proteómica \textit{shotgun}, desde el momento de la digestión
-de las proteínas en péptidos aparece el problema de la trazabilidad en el 
+de las proteínas, todo el análisis subsiguiente se realiza a nivel de
+péptidos y por tanto aparece el problema de la trazabilidad en el 
 sentido inverso, es decir inferir la presencia de la proteína originaria
 de los péptidos que son identificados a partir de los espectros.
-%Esta trazabilidad
+Los motivos que complican la inferencia de las proteínas son principalmente dos, 
+el agrupamiento dirigido de péptidos en sus correspondientes proteínas, 
+lo que provoca una amplificación de las tasas de eror (\ref~\figura{fig:protein_inference_non_random_peptide_grouping})
 
 %\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
 %{Etapas en un experimento de Proteómica \textit{Shotgun}}
@@ -1891,18 +1894,6 @@ cromatográfica permite reconstruir un pe
 
 
 
-
-
-%-------------------------------------------------------------------
-%-------------------------------------------------------------------
-
-%\phantomsection
-\section{\textit{Candida albicans} como organismo modelo}
-%\addcontentsline{toc}{section}{Candida albicans como organismo modelo}
-\label{cap1:sec:Candida albicans como organismo modelo}
-
-
-
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
 
@@ -1996,29 +1987,25 @@ de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
 
 
 
-%-------------------------------------------------------------------
-%\section*{\NotasBibliograficas}
-%-------------------------------------------------------------------
-%\TocNotasBibliograficas
-
-%Citamos algo para que aparezca en la bibliografía\ldots
-%\citep{ldesc2e}
-
-%\medskip
-
-%Y también ponemos el acr
 
 %-------------------------------------------------------------------
-%\section*{\ProximoCapitulo}
 %-------------------------------------------------------------------
-%\TocProximoCapitulo
+
+%\phantomsection
+\section{\textit{Candida albicans} como organismo modelo}
+%\addcontentsline{toc}{section}{Candida albicans como organismo modelo}
+\label{cap1:sec:Candida albicans como organismo modelo}
 
 
 
-% Variable local para emacs, para  que encuentre el fichero maestro de
-% compilación y funcionen mejor algunas teclas rápidas de AucTeX
-%%%
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "../Tesis.tex"
-%%% End:
+
+
+
+
+
+
+
+
+
+
+
