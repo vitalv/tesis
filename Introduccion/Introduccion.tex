@@ -1821,19 +1821,62 @@ Interpretation of shotgun proteomic data: the protein inference problem}
 
 En un experimento de Proteómica \textit{shotgun}, desde el momento de la digestión
 de las proteínas, todo el análisis subsiguiente se realiza a nivel de
-péptidos. Esto, que permite que la estrategia de \textit{shotgun} pueda
+péptidos. Esto, que permite que la estrategia \textit{shotgun} pueda
 obtener un alto rendimiento en la identificación de péptidos, sin embargo
 provoca una dificultad adicional para ensamblar una lista de proteínas
 que presumiblemente se encuentran en la muestra analizada.
 
-y por tanto aparece el problema de la trazabilidad en el 
-sentido inverso, es decir inferir la presencia de la proteína originaria
-de los péptidos que son identificados a partir de los espectros.
+
+
+Uno de los principales motivos que complican la inferencia de las proteínas 
+se refiere a la pérdida de la correspondencia péptido-proteína como consecuencia 
+fundamentalmente de la detección de péptidos compartidos o \textit{degenerados}
+cuyas secuencias están en diferentes proteínas. Esta dificultad, descrita
+como \textit{el problema de la inferencia de proteínas} en \citep{Nesvizhskii2005},
+a su vez se deriva de varios posibles escenarios. En algunos casos
+el procesamiento alternativo de intrones provoca la existencia de isoformas
+de una porteína en la muestra. De éstas, sólo algunas tienen en su 
+secuencia péptidos trípticos exclusivos que permitan, en caso de 
+ser detectados, concluir su presencia fehacientemente. 
+En otros casos, proteínas diferentes procedentes
+de una familia de genes (parálogos) poseen una alta homología de secuencia.
+Frecuentemente, a pesar de detectar un cierto número de péptidos, no se 
+puede indicar la presencia de ninguna de las proteínas de la familia en particular.
+
+En función de la presencia de estos péptidos compartidos y de péptidos 
+exclusivos de cada proteína se han descrito métodos y nomenclaturas
+adecuadas para definir como \textit{identificada} una proteína o lista de proteínas
+\citep{Nesvizhskii2005}
+
+Un principio básico que ha sido muy utilizado es el de la llamada navaja
+de Occam \citep{Nesvizhskii2003} consiste en presentar el menor número 
+posible de proteínas que pueda explicar todos los péptidos observados y,
+en el caso de que varias proteínas estén representadas por varios péptidos
+compartidos (ninguno de ellos exclusivo de una proteína), presentar las
+proteínas en un grupo como una sola entrada de la lista.
+
+
+Otra de las dificultades en la inferencia de proteínas es el fenómeno
+consistente en el agrupamiento dirigido de péptidos en sus correspondientes 
+proteínas, lo que provoca una amplificación de las tasas de eror. Como
+se observa en la figura \ref{fig:protein_inference_non_random_peptide_grouping},
+mientras que las identificaciones de péptidos correctas tienden a agruparse
+en un número pequeño de proteínas, los péptidos incorrectos, puesto que 
+proceden de asignaciones aleatorias a entradas en la base de datos, suponen
+una proteína errónea por cada péptido.
+
+
+
+
+
+
+
+
 Los motivos que complican la inferencia de las proteínas son principalmente  
 el agrupamiento dirigido de péptidos en sus correspondientes proteínas, 
 lo que provoca una amplificación de las tasas de eror (\ref{fig:protein_inference_non_random_peptide_grouping}),
 y también la pérdida de la correspondencia péptido-proteína, como consecuencia fundamentalmente
-de péptidos compartidos o \textit{degenerados} cuyas secuencias están 
+de la detección de péptidos compartidos o \textit{degenerados} cuyas secuencias están 
 en diferentes proteínas. 
 
 %\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
