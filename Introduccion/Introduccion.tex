@@ -570,7 +570,7 @@ electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{
 Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
 y para péptidos largos e incluso para proteínas enteras. Además produce
 una fragmentación en la que las cadenas laterales y \ac{PTM} quedan intactas.
-Estas cualidades hacen ETD interesante para proteómica \emph{top-down},
+Estas cualidades hacen ETD interesante para Proteómica \emph{top-down},
 que intenta identificar proteínas intactas, y también
 para experimentos orientados a la deteccion de péptidos con \ac{PTM}.
 
@@ -641,7 +641,7 @@ secuencias a partir de proteínas intactas y con ello identificarlas.
 Este es el objetivo de la llamada Proteómica \textit{top-down} (de 
 arriba a abajo)
 
-Sin embargo la proteómica \textit{bottom-up} (\textit{de abajo a arriba}),
+Sin embargo la Proteómica \textit{bottom-up} (\textit{de abajo a arriba}),
 en la que se infiere la presencia de proteínas a partir de sus péptidos,
 es la técnica más extendida.
 
@@ -703,14 +703,14 @@ función de si se usan condiciones desnaturalizantes o no
   Blue Native
 \end{itemize}
 
-La proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
+La Proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
 en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
 el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
 o que el número de proteínas identificables a partir de un gel difícilmente
 pueda superar el millar. Sin embargo, este tipo de estudios sigue 
 teniendo un nicho en la Proteómica actual \citep{Rogowska-Wrzesinska2013}.
 Notablemente, permite la visualización, identificación y cuantificación 
-de proteínas intactas. La particular capacidad de la proteómica en gel para
+de proteínas intactas. La particular capacidad de la Proteómica en gel para
 separar proteínas con pequeños cambios en sus puntos isoeléctricos, \emph{pI},
 permite discernir entre isoformas de proteínas, o versiones de la misma 
 proteína con \ac{PTM}, lo que difícilmente se puede
@@ -747,7 +747,7 @@ en una matriz \ac{MALDI}, donde son ionizados e introducidos en un analizador
 \ac{TOF}
 Una vez obtenido el espectro patrón de masas peptídicas, el proceso 
 de análisis consiguiente es similar al que se hace en la
-proteómica de alto rendimiento o \textit{shotgun}. Como se describe en las
+Proteómica a gran escala o \textit{shotgun}. Como se describe en las
 secciones siguientes, la identificación
 del péptido responsable del espectro se realiza utilizando un motor de búsqueda, 
 que compara los valores de \mz del espectro 
@@ -770,7 +770,7 @@ de estudios proteómicos enfocados a obtener un alto rendimiento.
 El nombre \textit{shotgun} proviene 
 de una analogía con las técnicas clásicas de secuenciación genómica donde 
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
-ensambladas. En la proteómica \textit{shotgun} las proteínas son 
+ensambladas. En la Proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
 la proteína original. Implica varios pasos descritos a continuación.
 
@@ -836,7 +836,7 @@ característica identificativa.
 
 %\begin{itemize}
 %  \item Cromatografía líquida en fase reversa (RP-LC)
-El tipo más común de cromatografía usada en experimentos de proteómica
+El tipo más común de cromatografía usada en experimentos de Proteómica
 es la que se conoce como Cromatografía Líquida de Alto Rendimiento en Fase Reversa, \ac{RPHPLC}
 En ella los analitos de la muestra se separan en base a su carácter
 hidrofóbico. 
@@ -853,7 +853,7 @@ hidrofóbicos son retenidos durante más tiempo.
 \bigskip{}
 
 A continuación, tras la adquisición experimental de los espectros, el paso
-siguiente en un experimento de proteómica \textit{shotgun} implica el
+siguiente en un experimento de Proteómica \textit{shotgun} implica el
 análisis computacional de esos espectros cuyo objetivo final es la 
 obtención de una lista de proteínas que presumiblemente se encuentran en 
 la muestra. Este análisis computacional, a su vez, consta de varios procesos 
@@ -873,12 +873,12 @@ y una \hyperref[cap1:sec:Evaluación estadística de los resultados]
 
 %\phantomsection
 \section{Asignación Péptido-Espectro}
-%NOTA: esto no es una subseccion de proteómica a gran escala porque puede ser igual para proteomica en gel, ya tal
+%NOTA: esto no es una subseccion de Proteómica a gran escala porque puede ser igual para proteomica en gel, ya tal
 \label{cap1:sec:Asignación Péptido-Espectro}
 %\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 
 
-En un experimento típico de proteómica \textit{shotgun} pueden 
+En un experimento típico de Proteómica \textit{shotgun} pueden 
 generarse miles de espectros por hora. La interpretación manual, por lo
 tanto no es una opción práctica. Diversas aproximaciones computacionales
 y herramientas de \textit{software} se han desarrollado para facilitar 
@@ -1338,50 +1338,14 @@ of post-translationally or chemically modified peptides-
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
 
-
 %\phantomsection
-\section{Inferencia de proteínas a partir de péptidos}
-%\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
-\label{cap1:sec:Inferencia de proteínas a partir de péptidos}
-
-\todo{Mirar paper de Aebersold:
-Interpretation of shotgun proteomic data: the protein inference problem}
-
-\todo{Y mirar también ProteinProphet}
-
-En un experimento de proteómica \textit{shotgun}, desde el momento de la digestión
-de las proteínas, todo el análisis subsiguiente se realiza a nivel de
-péptidos y por tanto aparece el problema de la trazabilidad en el 
-sentido inverso, es decir inferir la presencia de la proteína originaria
-de los péptidos que son identificados a partir de los espectros.
-Los motivos que complican la inferencia de las proteínas son principalmente  
-el agrupamiento dirigido de péptidos en sus correspondientes proteínas, 
-lo que provoca una amplificación de las tasas de eror (\ref~\figura{fig:protein_inference_non_random_peptide_grouping}),
-y también la pérdida de la trazabilidad, como consecuencia fundamentalmente
-de péptidos compartidos o \textit{degenerados} cuyas secuencias están 
-en diferentes proteínas. 
-
-%\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
-%{Etapas en un experimento de Proteómica \textit{Shotgun}}
-
-\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
-{Agrupamiento no aleatorio de péptidos en proteínas}
-
-
-\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
-
-
-%-------------------------------------------------------------------
-%-------------------------------------------------------------------
-
-%\phantomsection
-\section{Evaluación estadística de los resultados}
+\section{Evaluación estadística de las asignaciones PSM}
 %\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
 \label{cap1:sec:Evaluación estadística de los resultados}
 %Esta parte de las distribuciones antes la tenia justo antes de las 
 %funciones de puntuación , porque ahí hablo también de estas distribuciones
 
-Frecuentemente en un solo experimento de proteómica \textit{shotgun}
+Frecuentemente en un solo experimento de Proteómica \textit{shotgun}
 se generan decenas de miles de espectros MS/MS. El procesamiento
 bioinformático automatizado de estos datos es por tanto un aspecto 
 fundamental para la interpretación de los resultados.
@@ -1403,7 +1367,7 @@ generados.
 \subsection{Conceptos estadísticos básicos}
 
 El planteamiento general en el tratamiento estadístico en experimentos 
-de proteómica consiste en enfrentar dos hipótesis.
+de Proteómica consiste en enfrentar dos hipótesis.
 La hipótesis nula (H\textsubscript{0}) indica que el péptido (o proteína)
 está incorrectamente identificado. La hipótesis alternativa (H\textsubscript{1})
 indica lo contrario, que la asignación es correcta. 
@@ -1453,7 +1417,7 @@ Con estos valores se pueden definir los conceptos de
  de asignaciones consideradas incorrectas entre el total de asignaciones consideradas (por encima del umbral).
  \begin{equation}
   \label{eq:FDR}
-  FDR = \frac{S}{S+V}
+  FDR = \frac{V}{S+V}
  \end{equation}
 
 
@@ -1566,7 +1530,7 @@ es decir, se puede realizar un análisis FDR global para un conjunto de
 \subsection{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
 
 El tipo de evaluación estadística más ampliamente utilizada en experimentos
-de proteómica \textit{shotgun} es un tipo de corrección de test múltiples, 
+de Proteómica \textit{shotgun} es un tipo de corrección de test múltiples, 
 la \emph{Tasa de Falsos Descubrimientos (FDR, False Discovery Rate)} \citep{Benjamini1995}.
 Básicamente, el concepto de tasa FDR se refiere a la proporción de \ac{PSM} incorrectos
 que se aceptan en todo el conjunto de \ac{PSM} de un experimento para un umbral
@@ -1840,6 +1804,51 @@ conocida para algunas pero no todas las asignaciones.
 \textit{The Probability Ratio Method, Navarro et al}
 
 
+
+%-------------------------------------------------------------------
+%-------------------------------------------------------------------
+
+
+%\phantomsection
+\section{Inferencia de proteínas a partir de péptidos}
+%\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
+\label{cap1:sec:Inferencia de proteínas a partir de péptidos}
+
+\todo{Mirar paper de Aebersold:
+Interpretation of shotgun proteomic data: the protein inference problem}
+
+\todo{Y mirar también ProteinProphet}
+
+En un experimento de Proteómica \textit{shotgun}, desde el momento de la digestión
+de las proteínas, todo el análisis subsiguiente se realiza a nivel de
+péptidos. Esto, que permite que la estrategia de \textit{shotgun} pueda
+obtener un alto rendimiento en la identificación de péptidos, sin embargo
+provoca una dificultad adicional para ensamblar una lista de proteínas
+que presumiblemente se encuentran en la muestra analizada.
+
+y por tanto aparece el problema de la trazabilidad en el 
+sentido inverso, es decir inferir la presencia de la proteína originaria
+de los péptidos que son identificados a partir de los espectros.
+Los motivos que complican la inferencia de las proteínas son principalmente  
+el agrupamiento dirigido de péptidos en sus correspondientes proteínas, 
+lo que provoca una amplificación de las tasas de eror (\ref{fig:protein_inference_non_random_peptide_grouping}),
+y también la pérdida de la correspondencia péptido-proteína, como consecuencia fundamentalmente
+de péptidos compartidos o \textit{degenerados} cuyas secuencias están 
+en diferentes proteínas. 
+
+%\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+%{Etapas en un experimento de Proteómica \textit{Shotgun}}
+
+\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+{Agrupamiento no aleatorio de péptidos en proteínas}
+
+
+\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
+
+
+
+
+
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
 
@@ -1850,22 +1859,22 @@ conocida para algunas pero no todas las asignaciones.
 
 \todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
 
-La proteómica \textit{shotgun}, cuyo objetivo es detectar
+La Proteómica \textit{shotgun}, cuyo objetivo es detectar
 la mayor cantidad posible de proteínas en una muestra, se denomina
-en ocasiones por ello, proteómica \textit{de descubrimiento}. 
-En esto, esencialmente, la \emph{proteómica dirigida} se distingue de las 
+en ocasiones por ello, Proteómica \textit{de descubrimiento}. 
+En esto, esencialmente, la \emph{Proteómica dirigida} se distingue de las 
 técnicas de \textit{shotgun}, en el objetivo. Esta metodología no pretende identificar
 una gran cantidad de proteínas diferentes en la muestra, sino que intenta 
 identificar y, opcionalmente también cuantificar, una proteína o un grupo
 de proteínas de interés seleccionadas \textit{a priori}.
-De ahí el nombre proteómica \textit{dirigida}. 
+De ahí el nombre Proteómica \textit{dirigida}. 
 
-La técnica que se utiliza para llevar a cabo experimentos de proteómica
+La técnica que se utiliza para llevar a cabo experimentos de Proteómica
 dirigida se denomina \textit{SRM, Selected Reaction Monitoring} o también,
 frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}.
 
 
-La proteómica dirigida, basada en técnicas SRM, está actualmente 
+La Proteómica dirigida, basada en técnicas SRM, está actualmente 
 emergiendo y popularizándose como un complemento ideal de las técnicas 
 de \textit{shotgun}. 
 
@@ -1877,7 +1886,7 @@ que se quiere comparar.
 
 Originalmente desarrollada para detectar y cuantificar
 pequeñas moléculas como metabolitos o drogas (Referencia), las
-primeras aplicaciones de SRM al campo de la proteómica comenzaron en 
+primeras aplicaciones de SRM al campo de la Proteómica comenzaron en 
 2003 \citep{Gerber2003}, 2004 \citep{Kuhn2004}.
 
 El principio fundamental en el que se basa la técnica SRM consiste en
@@ -1901,9 +1910,9 @@ cromatográfica permite reconstruir un pe
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Repositorios publicos de proteómica shotgun y dirigida}
-%\addcontentsline{toc}{section}{Repositorios publicos de proteómica shotgun y dirigida}
-\label{cap1:sec:Repositorios publicos de proteómica shotgun y dirigida}
+\section{Repositorios publicos de Proteómica shotgun y dirigida}
+%\addcontentsline{toc}{section}{Repositorios publicos de Proteómica shotgun y dirigida}
+\label{cap1:sec:Repositorios publicos de Proteómica shotgun y dirigida}
 
 
 
@@ -1911,8 +1920,8 @@ cromatográfica permite reconstruir un pe
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Formatos de archivos usados en espectrometría de masas y proteómica}
-%\addcontentsline{toc}{section}{Formatos de archivos usados en espectrometría de masas y proteómica}
+\section{Formatos de archivos usados en espectrometría de masas y Proteómica}
+%\addcontentsline{toc}{section}{Formatos de archivos usados en espectrometría de masas y Proteómica}
 %\label{cap1:sec:Formatos en Proteómica}
 
 En el proceso de análisis de datos que sigue a la adquisición 
@@ -1940,7 +1949,7 @@ En una clasificacion más precisa, el software puede clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
 
 \figura{Vectorial/formats}{width=.99\textwidth}{fig:formats_in_proteomics}%
-{Visión general de formatos comunmente usados en cada etapa de un experimento de proteómica}
+{Visión general de formatos comunmente usados en cada etapa de un experimento de Proteómica}
 
 
 \begin{itemize}
@@ -1982,7 +1991,7 @@ de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
 
 \item \emph{Formatos que almacenan secuencias}
 
-\item \emph{Formatos específicos para proteómica dirigida}
+\item \emph{Formatos específicos para Proteómica dirigida}
 
 
 \end{itemize}
