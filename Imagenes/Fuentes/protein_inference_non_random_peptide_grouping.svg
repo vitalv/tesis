@@ -191,14 +191,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
+     inkscape:window-width="1313"
      inkscape:window-height="744"
      id="namedview27010"
      showgrid="false"
-     inkscape:zoom="0.81688504"
-     inkscape:cx="-5.746283"
-     inkscape:cy="225.5655"
-     inkscape:window-x="1280"
+     inkscape:zoom="1.1552499"
+     inkscape:cx="332.27885"
+     inkscape:cy="204.34555"
+     inkscape:window-x="53"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg27008"
@@ -817,7 +817,7 @@
        id="tspan4096"
        y="368.68137"
        x="405.87042"
-       sodipodi:role="line">(2 de 5 proteínas detectadas erróneamente)</tspan></text>
+       sodipodi:role="line">(2 de 5 proteínas erróneas)</tspan></text>
   <path
      style="fill:#cccccc;stroke:#4d4d4d;stroke-width:0.30586725px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
      d="m 247.31281,335.71733 17.95883,0 0,-4.77429 11.59237,8.55806 -11.59237,8.42838 0,-4.6446 -17.95883,0 0,-7.56755"

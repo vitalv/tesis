@@ -27,10 +27,11 @@
 \GlossTeXEntry{acrRPHPLC@{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{22}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPSM@{PSM}{PSM}{\emph{Peptide-Spectrum Match}}{}{acr}{a}{\GlossTeXPage{n}{23}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFWHM@{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{13}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNTT@{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNMC@{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNTT@{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{42}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNMC@{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{42}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrEM@{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFPR@{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrTPR@{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrFNR@{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrFDR@{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{35}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrTPR@{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{33}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrFNR@{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{33}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrFDR@{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNSP@{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{46}}|GlossTeXNull}{0}

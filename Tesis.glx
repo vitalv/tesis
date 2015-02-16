@@ -20,9 +20,9 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{FD}{FD}{\emph{Field Desorption}}{}{acr}{a}{\GlossTeXPage{n}{8}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{35}}
+\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
+\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{33}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
@@ -42,9 +42,11 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{42}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXNull{0}
+\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{42}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -70,5 +72,5 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}}{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{34}}
+\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{33}}
 \GlossTeXNull{0}

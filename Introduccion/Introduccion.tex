@@ -1814,10 +1814,10 @@ conocida para algunas pero no todas las asignaciones.
 %\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
 \label{cap1:sec:Inferencia de proteínas a partir de péptidos}
 
-\todo{Mirar paper de Aebersold:
-Interpretation of shotgun proteomic data: the protein inference problem}
+%\todo{Mirar paper de Aebersold:
+%Interpretation of shotgun proteomic data: the protein inference problem}
 
-\todo{Y mirar también ProteinProphet}
+%\todo{Y mirar también ProteinProphet}
 
 En un experimento de Proteómica \textit{shotgun}, desde el momento de la digestión
 de las proteínas, todo el análisis subsiguiente se realiza a nivel de
@@ -1837,7 +1837,7 @@ a su vez se deriva de varios posibles escenarios. En algunos casos
 el procesamiento alternativo de intrones provoca la existencia de isoformas
 de una porteína en la muestra. De éstas, sólo algunas tienen en su 
 secuencia péptidos trípticos exclusivos que permitan, en caso de 
-ser detectados, concluir su presencia fehacientemente. 
+ser detectados, concluir la presencia de la proteína fehacientemente. 
 En otros casos, proteínas diferentes procedentes
 de una familia de genes (parálogos) poseen una alta homología de secuencia.
 Frecuentemente, a pesar de detectar un cierto número de péptidos, no se 
@@ -1848,13 +1848,15 @@ exclusivos de cada proteína se han descrito métodos y nomenclaturas
 adecuadas para definir como \textit{identificada} una proteína o lista de proteínas
 \citep{Nesvizhskii2005}
 
+\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+{Agrupamiento no aleatorio de péptidos en proteínas}
+
 Un principio básico que ha sido muy utilizado es el de la llamada navaja
 de Occam \citep{Nesvizhskii2003} consiste en presentar el menor número 
 posible de proteínas que pueda explicar todos los péptidos observados y,
 en el caso de que varias proteínas estén representadas por varios péptidos
 compartidos (ninguno de ellos exclusivo de una proteína), presentar las
 proteínas en un grupo como una sola entrada de la lista.
-
 
 Otra de las dificultades en la inferencia de proteínas es el fenómeno
 consistente en el agrupamiento dirigido de péptidos en sus correspondientes 
@@ -1865,6 +1867,52 @@ en un número pequeño de proteínas, los péptidos incorrectos, puesto que
 proceden de asignaciones aleatorias a entradas en la base de datos, suponen
 una proteína errónea por cada péptido.
 
+Para combinar los péptidos en las proteínas originarias se pueden realizar
+varias aproximaciones. La más sencilla consiste en seleccionar de todos 
+sus PSM el de mejor puntuación o probabilidad y usarlo como puntuación
+de la proteína. Sobre este método básico se puede añadir además reglas
+como que al menos dos péptidos que superen un cierto umbral de puntuación
+deben contribuir a la inferencia de la proteína. A menudo se emplean 
+variaciones de este método, fijando distintos umbrales y criterios, sin
+embargo una aproximación estadística puede ser más interesante,
+utilizando las probabilidades a nivel de PSM para combinarlas y obtener
+una probabilidad a nivel de proteína.
+La herramienta ProteinProphet \citep{Nesvizhskii2003} implementa este tipo
+de análisis. ProteinProphet refina las probabilidades de cada PSM previamente
+a combinarlas para tener en cuenta el problema del agrupamiento dirigido
+de péptidos en proteínas descrito, especialmente importante en proteínas
+representadas por un solo péptido. Este reajuste inicial consiste en tener
+en cuenta el número de péptidos hermanos, \ac{NSP} de forma que se
+penalizan las probabilidades de péptidos cuando sólo uno aporta evidencia
+para una proteína mientras que las probablidades se reajustan aumentándose
+en casos en que muchos péptidos hermanos aporten evidencia a la presencia de la proteína. 
+El reajuste teniendo en cuenta el parámetro \ac{NSP} se realiza con una
+aproximación de Bayes empírica análoga a los modelos de PeptideProphet
+que estima las distribuciones de NSP entre las poblaciones de péptidos 
+correcta e incorrecta:
+
+\begin{equation}
+\label{eq:ProteinProphet}
+\begin{split}
+NSP_{i} &= \sum_{j\not=i}p_{j}\\
+p'_{i} &= \frac{p_{i}\ f_{1}(NSP_{i})}{p_{i}\ f_{1}(NSP_{i})+(1-p_{i})\ f_{0}(NSP_{i})}\\
+\\
+P(prot) &= 1 - \prod_{i}(1 - p')
+\end{split}
+\end{equation}
+
+donde \textit{f\textsubscript{0}(NSP)} y \textit{f\textsubscript{1}(NSP)}
+son las distribuciones NSP entre los peptidos incorrectos y correctos.
+
+
+
+%\phantomsection
+\section{Herramientas adicionales de post-procesamiento y validación a nivel de péptido y proteína}
+%\addcontentsline{toc}{section}{Inferencia de proteínas a partir de péptidos}
+\label{cap1:sec:Herramientas adicionales de post-procesamiento}
+
+Pequeña seccion. Hablar aquí de i-Prophet y Mayu
+Y quizá también TPP?
 
 
 
@@ -1872,18 +1920,14 @@ una proteína errónea por cada péptido.
 
 
 
-Los motivos que complican la inferencia de las proteínas son principalmente  
-el agrupamiento dirigido de péptidos en sus correspondientes proteínas, 
-lo que provoca una amplificación de las tasas de eror (\ref{fig:protein_inference_non_random_peptide_grouping}),
-y también la pérdida de la correspondencia péptido-proteína, como consecuencia fundamentalmente
-de la detección de péptidos compartidos o \textit{degenerados} cuyas secuencias están 
-en diferentes proteínas. 
+
+
+
+
+
 
 %\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
 %{Etapas en un experimento de Proteómica \textit{Shotgun}}
-
-\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
-{Agrupamiento no aleatorio de péptidos en proteínas}
 
 
 \textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
