@@ -104,6 +104,18 @@
 
 @entry{NSP, ,\emph{Number of Sibling Peptides}}
 
+@entry{NSS, ,\emph{Number of Sibling Searches}}
+
+@entry{NRS, ,\emph{Number of Replicate Spectra}}
+
+@entry{NSE, ,\emph{Number of Sibling Experiments}}
+
+@entry{NSI, ,\emph{Number of Sibling Ions}}
+
+@entry{NSM, ,\emph{Number of Sibling Modifications}}
+
+
+
 
 
 

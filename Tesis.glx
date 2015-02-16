@@ -44,7 +44,17 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{42}}
 \GlossTeXNull{0}
+\GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXNull{0}
+\GlossTeXEntry{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXNull{0}
+\GlossTeXEntry{NSI}{NSI}{\emph{Number of Sibling Ions}}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXNull{0}
+\GlossTeXEntry{NSM}{NSM}{\emph{Number of Sibling Modifications}}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXNull{0}
 \GlossTeXEntry{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{46}}
+\GlossTeXNull{0}
+\GlossTeXEntry{NSS}{NSS}{\emph{Number of Sibling Searches}}{}{acr}{a}{\GlossTeXPage{n}{47}}
 \GlossTeXNull{0}
 \GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{42}}
 \GlossTeXNull{0}
