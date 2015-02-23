@@ -1478,10 +1478,10 @@ suponen una medida más general de la calidad de cada \ac{PSM} y son comparables
 en ensayos que usan distintos instrumentos, diferentes motores de búsqueda y parámetros
 \citep{Nesvizhskii2010}.
 
-\todo{ O NO Exactamente, ambos p y e val son probab que el psm sea incorrecto
-y la poblacion de psms incorrecta sí depende del experimento. Para eso está 
-el discriminant score y la prob de peptprophet que sí es una medida de que el psm sea correcto
-y es por tanto independiente del experimento. Ver ppt Interpreting }
+%\todo{ O NO Exactamente, ambos p y e val son probab que el psm sea incorrecto
+%y la poblacion de psms incorrecta sí depende del experimento. Para eso está 
+%el discriminant score y la prob de peptprophet que sí es una medida de que el psm sea correcto
+%y es por tanto independiente del experimento. Ver ppt Interpreting }
 
 
 Algunos motores de búsqueda, además de su función de puntuación propia,
@@ -1511,11 +1511,14 @@ Así para un \ac{PSM} con \mbox{\emph{p-valor} = 0,05} en un experimento en el qu
 otros 10.000 \ac{PSM}, el \mbox{\emph{p-valor}} original habría de reajustarse a
 0,05/10.000 = 5·10\textsuperscript{-6}.
 
+\figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
+{Distribuciones de Espectro Individual y Promedio}
+
 Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
 son distribuciones de las mejores puntuaciones
 de todos los \ac{PSM} de un experimento y permiten por tanto estimar otros parámetros
 estadísticos adicionales a nivel global, como la Tasa de Falsos Descubrimientos, FDR
-y la Probabilidad de Error Posterior, PEP.
+y la probabilidad de un PSM en particular en el contexto global del experimento.
 
 \medskip
 
@@ -1654,15 +1657,13 @@ de poblaciones de \ac{PSM} \textit{target} y \ac{PSM} \textit{decoy} y corrige
 el efecto de competición de las búsquedas en bases de datos concatenadas.
 
 
-\figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
-{Distribuciones de Espectro Individual y Promedio}
 
 
-\textit{
-IMPORTANTE:
-Mencionar MAYU, explicar en que consiste un poquito por lo menos
-(Y quiza tambien Percolator
-}
+%\textit{
+%IMPORTANTE:
+%Mencionar MAYU, explicar en que consiste un poquito por lo menos
+%(Y quiza tambien Percolator
+%}
 
 
 
@@ -1703,7 +1704,7 @@ S = F(x_{1}, x_{2},...,x_{S}) = c_{0} + \sum_{i=1}^S \ c_{i}x_{i}
 
 donde la constante \textit{c\textsubscript{0}} y el peso de las variables 
 \textit{c\textsubscript{i}} son derivadas de forma
-que el la proporción de la variación entre clases (asignaciones correctas
+que la proporción de la variación entre clases (asignaciones correctas
 e incorrectas) se maximiza con respecto
 a la variación dentro de cada clase.
 
@@ -1735,7 +1736,7 @@ contribuyen a la separación de las poblaciones de PSM incorrectos y PSM correcto
 Concretamente  
 el número de extremos trípticos, \ac{NTT}, el número de puntos de 
 corte no efectuados, \ac{NMC} y el error en la masa del precursor, $\Delta$M,
-tienen individualemente distribuciones diferentes
+tienen individualmente distribuciones diferentes
 para las asignaciones correctas e incorrectas \citep{Choi2008} lo que aporta una 
 mejor definición de las distribuciones cuando son incorporados en un modelo mixto común.
 
@@ -1925,6 +1926,7 @@ Por otra parte, frecuentmente interesa desde el punto de vista experimental,
 alcanzar una cobertura lo más amplia posible del proteoma objeto de estudio
 utilizando para ello una aproximación combinada con varios motores de búsqueda.
 
+%iProphet
 La herramienta de \textit{software} iProphet \citep{Shteynberg2011} fue
 desarrollada para resolver este tipo de necesidades, implementando una
 modelización más completa de todas las fuentes de información en un 
@@ -1947,6 +1949,25 @@ de un péptido si es encontrado en distintos estados de carga; y por último
 el número de instancias modificadas, \ac{NSM}, que actúa de forma similar
 a NSI, aumenta la probabilidad si se encuentra una instancia modificada
 y sin modificar de un péptido. 
+
+%MAYU:
+Por otra parte, las herramientas hasta ahora descritas para el control de 
+la tasa de errores, ya sea mediante la estrategia de búsqueda en bases 
+de datos señuelo o bien con el control estadístico que aportan los modelos 
+mixtos de probabilidad (PeptideProphet), permiten controlar la tasa FDR
+a nivel de PSM. Sin embargo obtener los valores de FDR a nivel de proteína
+implica un nivel adicional de complejidad. Dado que una proteína se 
+considera identificada cuando contiene un conjunto de PSM que a su vez
+pueden ser correctos o no, el error, como muestra la figura 
+\ref{fig:protein_inference_non_random_peptide_grouping}, se propaga
+de forma especialmente acusada en experimentos que generan grandes conjuntos
+de datos (decenas de miles de espectros) \citep{Reiter2009}. 
+Por eso la estimación de FDR a nivel de proteína ha de tener en cuenta que
+los PSM falsos positivos y los PSM verdaderos positivos tienen distribuciones
+diferentes. Mientras que los primeros apuntarán aleatoriamente a entradas
+de toda la base de datos, los segundos solo corresponden al subconjunto de
+proteínas presentes en la muestra. Esto hace que en la práctica las tasas
+de error para proteínas sean mayores que para PSM.
 
 
 %~ \begin{itemize}
