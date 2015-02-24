@@ -64,19 +64,34 @@ presentación de una lista de proteínas.
 
 Con la incorporación del formato mzIdentML como fuente de resultados,
 Proteopathogen ha adquirido la capacidad de crecer de manera robusta y 
-fiable. La base de datos relacional implementada ad hoc para recoger
+fiable. La base de datos relacional implementada \textit{ad hoc} para recoger
 el contenido de los archivos, así como los programas desarrollados para
 transferir los datos permiten que nuevos resultados, siempre que sean 
 aportados en este formato, sean incluidos en Proteopathogen con facilidad.
 
-En cuanto al futuro de la aplicación, es importante destacar que el 
+En cuanto al futuro de la herramienta informática, es importante destacar que el 
 desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
 que mzIdentML sea sustituido por otro, sí es cierto que
 pronto verá una versión actualizada. En ese escenario, los programas
 que transfieren el contenido a la base de datos deberán ser remodelados.
 Con la
 
-Otro tipo de posible mejora en la aplicación podría consistir en 
+Otro tipo de posible mejora en la aplicación podría consistir en implementar
+un nuevo modo de leer los archivos mzIdentML. Esta posibilidad vendría
+motivada por la creciente capacidad de adquisición
+de datos de los espectrómetros de masas y las mejoras en el análisis bioinformático
+subsiguiente, que se traduce en archivos de resultados que llegan a tener un gran tamaño para
+arhivos de texto (hasta el orden de gigabytes). El modo en que Proteopathogen
+lee los archivos consiste en una representación en memoria de toda la
+jerarquía xml. Esto, que es muy efectivo para localizar los distintos 
+elementos referenciados en el contenido, puede ser difícil (requerir
+computadores con gran memoria de trabajo, RAM) 
+o incluso imposible en algunos casos
+
+
+
+
+
 
 
 Por otra parte, PeptideAtlas
