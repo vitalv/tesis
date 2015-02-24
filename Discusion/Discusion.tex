@@ -17,63 +17,73 @@
 %-------------------------------------------------------------------
 \label{cap1:sec:Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
 
-El abordaje de experimentos proteómicos usando Candida albicans como organismo
+El abordaje de experimentos proteómicos usando \textit{Candida albicans} como organismo
 modelo para el estudio de infecciones fúngicas del tipo de las candidiasis
 ha permitido profundizar en algunos de los aspectos más básicos
-de su biología pero también algunos procesos y mecanismos clínicamente relevantes.
+de su biología y también en algunos procesos y mecanismos interesantes
+desde el punto de vista clínico.
 Así, se han abordado estudios que intentan identificar la mayor cantidad
 de proteínas posibles en extractos celulares totales, también ensayos
-enfocados al estudio de subproteomas como el implicado en la transición
-levadura a hifa, proteínas de la superficie celular o secretadas 
-implicadas en la formación de 
+que estudian subproteomas como el implicado en la transición
+levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas, o
+a las implicadas en la formación de biopelículas entre otros aspectos.
 Esta heterogenidad de diseños experimentales también existe en la 
-forma en que el análisis continúa después de LC-MS/MS. 
-Los datos son analizados bioinformáticamente utilizando distintos distintos 
-motores de búsqueda, distintos metodos de validación, flujos de análisis
+forma en que el análisis continúa trás la adquisición de espectros por LC-MS/MS. 
+Los datos son analizados bioinformáticamente utilizando distintos  
+motores de búsqueda, distintos métodos de validación, flujos de análisis
 diferentes en definitiva. Además, hasta hace relativamente poco tiempo, los primeros
 años del siglo XXI, la presencia de resultados de proteómica
 en repositorios públicos era muy escasa, casi nula, y en ocasiones poco fiable.
 
+En este contexto las bases de datos y estándares desarrollados en Proteómica
+tienen un papel esencial para analizar, compartir y difundir resultados.
+Las herramientas aquí descritas contribuyen a estos objetivos
 
+La base de datos y herramienta Proteopathogen es la primera aplicación
+\textit{on line} descrita para recoger y analizar resultados de Proteómica 
+centrados en el estudio de hongos patógenos usando principalmente el modelo
+de \textit{Candida albicans}
+
+Durante algunos años Proteopathogen ha recogido datos experimentales de
+experimentos de \textit{Candida albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
+y otras especies como Aspergillus fumigatus \citep{Rosana y Cía}
+facilitando la visualización y el análisis de los resultados a los usuarios
+del laboratorio, pero también su examen por parte de los revisores de las
+revistas científicas del campo de la Proteómica.
+
+En ese tiempo, la Iniciativa de Estandarización del Proyecto Proteoma 
+Humano \ac{HUPO-PSI} ha desarrollado y promovido el uso de estándares en Proteómica,
+formatos que faciliten el intercambio, re-análisis y comparación de 
+protocolos experimentales, datos y resultados entre distintos laboratorios. 
+En este sentido Proteopathogen se ha beneficiado de la aparición del 
+estándar mzIdentML \citep{Jones2012}, el formato ideado y posteriormente
+adoptado por la comunidad, para recoger la información
+relacionada con la identificación de péptidos y proteínas, es decir
+el análisis bioinformático desde la asignación de los PSM hasta la 
+presentación de una lista de proteínas.
+
+Con la incorporación del formato mzIdentML como fuente de resultados,
+Proteopathogen ha adquirido la capacidad de crecer de manera robusta y 
+fiable. La base de datos relacional implementada ad hoc para recoger
+el contenido de los archivos, así como los programas desarrollados para
+transferir los datos permiten que nuevos resultados, siempre que sean 
+aportados en este formato, sean incluidos en Proteopathogen con facilidad.
+
+En cuanto al futuro de la aplicación, es importante destacar que el 
+desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
+que mzIdentML sea sustituido por otro, sí es cierto que
+pronto verá una versión actualizada. En ese escenario, los programas
+que transfieren el contenido a la base de datos deberán ser remodelados.
+Con la
+
+Otro tipo de posible mejora en la aplicación podría consistir en 
+
+
+Por otra parte, PeptideAtlas
 
  
 
 
 
 
-Primero, contexto, background
 
-Addressing proteomic studies involving the way Candida
-interacts with immune cells is thus essential in order to
-improve our comprehension of the process of infection and
-represents the primary step of investigation that could lead
-to future development of diagnosis methods, vaccines and
-antifungal drugs
-
-
-Segundo. Sin embargo, a pesar de la importancia clinica y de los
-estudios proteómicos
-
-Los repositorios públicos de resultados de identificaciones de
-de proteínas en experimentos relacionados con Candida eran muy escasos
-y diseminados.
-
-Tercero. En ese contexto, para resolver este tipo de escasez/ausencia
-se desarrollaron Proteopathogen y el PeptideAtlas
-
-
-Proteopathogen represents, up to date, the
-first public web-based repository for proteomics data related
-to studies involving C. albicans pathogenicity and its inter-
-action with immune system cells in the host. Moreover, it
-enables a framework for public access and submission of
-this type of data and it is intended to be more actively
-populated in the near future, including data from different
-pathogenic fungi and mammalian cells, becoming a refer-
-ence database in its field. Unlike other protein identification
-databases, Proteopathogen is focused to a specific topic but,
-at the same time, includes a wide range of data including
-descriptions of the experimental contexts, information on
-proteins such as GO and pathway annotations, structural
-information and detailed MS parameters. Therefore,
-Proteopathogen will contribute to save time and facilitate
