@@ -116,7 +116,13 @@
 
 @entry{HUPO-PSI, ,\emph{Human Proteome Organization - Proteomics Standards Initiative}}
 
+@entry{TPP, , \emph{Trans Proteomics Pipeline}}
 
+@entry{PRIDE, ,\emph{Protein Identifications Database}}
 
+@entry{HPP, ,\emph{Human Proteome Project}}
 
+@entry{BD-HPP, ,\emph{Biology/Disease - Human Proteome Project}}
+
+@entry{C-HPP, ,\emph{Chromosome-Centric - Human Proteome Project}}
 
