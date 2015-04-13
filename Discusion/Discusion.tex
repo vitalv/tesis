@@ -12,7 +12,7 @@
 
 
 \phantomsection 
-\section*{Desarrollo de una aplicación web para datos de proteómica a gran escala de \textit{Candida albicans}}
+\section*{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
 \addcontentsline{toc}{section}{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
 %-------------------------------------------------------------------
 \label{cap1:sec:Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
@@ -27,7 +27,8 @@ de proteínas posibles en extractos celulares totales, también ensayos
 que estudian subproteomas como el implicado en la transición
 levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas, o
 a las implicadas en la formación de biopelículas entre otros aspectos.
-Esta heterogenidad de diseños experimentales también existe en la 
+Esta heterogenidad existente en los diseños experimentales también 
+se puede observar en la 
 forma en que el análisis continúa trás la adquisición de espectros por LC-MS/MS. 
 Los datos son analizados bioinformáticamente utilizando distintos  
 motores de búsqueda, distintos métodos de validación, flujos de análisis
@@ -39,14 +40,14 @@ En este contexto las bases de datos y estándares desarrollados en Proteómica
 tienen un papel esencial para analizar, compartir y difundir resultados.
 Las herramientas aquí descritas contribuyen a estos objetivos
 
-La base de datos y herramienta Proteopathogen es la primera aplicación
+La base de datos y herramienta web Proteopathogen es la primera aplicación
 \textit{on line} descrita para recoger y analizar resultados de Proteómica 
 centrados en el estudio de hongos patógenos usando principalmente el modelo
-de \textit{Candida albicans}
+de \textit{Candida albicans}.
 
 Durante algunos años Proteopathogen ha recogido datos experimentales de
 experimentos de \textit{Candida albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
-y otras especies como Aspergillus fumigatus \citep{Rosana2010}
+y otras especies como Aspergillus fumigatus \citep{}
 facilitando la visualización y el análisis de los resultados a los usuarios
 del laboratorio, pero también su examen por parte de los revisores de las
 revistas científicas del campo de la Proteómica.
@@ -62,38 +63,63 @@ relacionada con la identificación de péptidos y proteínas, es decir
 el análisis bioinformático desde la asignación de los PSM hasta la 
 presentación de una lista de proteínas.
 
-Con la incorporación del formato mzIdentML como fuente de resultados,
+Proteopathogen emplea el lenguaje de programación interpretado Ruby.
+A diferencia de lenguajes compilados (Java, C/C++) que se usan frecuentemente
+en otras herramientas para la visualización de contenidos en formatos de proteómica \citep{},
+esto posibilita una manera muy rápida y flexible de implementar un sistema de
+extracción de la información de archivos XML. La plataforma de desarrollo
+web Rails, también basada en Ruby, además cuenta con un gran soporte 
+por parte de la comunidad informática y se está convirtiendo en una de 
+las tecnologías de referencia elegida por los programadores de aplicaciones web. 
+ 
+Con la adopción del formato mzIdentML (version 1.1.0) como fuente de resultados,
 Proteopathogen ha adquirido la capacidad de crecer de manera robusta y 
-fiable. La base de datos relacional implementada \textit{ad hoc} para recoger
-el contenido de los archivos, así como los programas desarrollados para
-transferir los datos permiten que nuevos resultados, siempre que sean 
-aportados en este formato, sean incluidos en Proteopathogen con facilidad.
+fiable. Por una parte, usar un único tipo de formato, estándar, como fuente
+de datos ha permitido desarrollar un \textit{software} estable que extrae
+la información independientemente de cómo se hayan obtenido los resultados.
+Pero además, el uso de este estándar permite
+realizar validaciones, un control de calidad, tanto de la estructura, 
+sintaxis y orden de los elementos XML (validación semántica) de los 
+archivos, como del contenido mínimo (validación MIAPE) usando para ello 
+algunas herramientas como la creada por HUPO-PSI, mzidValidator \citep{Ghali2013}.
 
-En cuanto al futuro de la herramienta informática, es importante destacar que el 
+La base de datos relacional implementada \textit{ad hoc} para recoger
+el contenido de los archivos constituye la base fundamental de la aplicación.
+y permite que Proteopathogen, sea el primer recurso \textit{on-line} descrito
+que recoge y permite visualizar resultados de múltiples experimentos y sus 
+correspondientes resultados mzIdentML y no sólo cada uno de ellos individualmente.
+
+En cuanto al futuro de esta herramienta bioinformática, es importante destacar que el 
 desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
 que mzIdentML sea sustituido por otro, sí es cierto que
-pronto verá una versión actualizada. En ese escenario, los programas
-que transfieren el contenido a la base de datos deberán ser remodelados.
-Con la
+pronto verá una versión actualizada (1.2.0). En ese escenario, los programas
+que transfieren el contenido a la base de datos deberán ser adaptados, aunque
+previsiblemente los cambios no provocarán incompatibilidades y serán más bien
+aditivos añadiendo algun nuevo tipo de información. Para ello, la flexibilidad
+que proporciona el uso de Ruby on Rails permitirá que los cambios desde el
+periodo de pruebas hasta la producción en el servidor puedan implementarse rápidamente y con seguridad.
 
 Otro tipo de posible mejora en la aplicación podría consistir en implementar
 un nuevo modo de leer los archivos mzIdentML. Esta posibilidad vendría
 motivada por la creciente capacidad de adquisición
-de datos de los espectrómetros de masas y las mejoras en el análisis bioinformático
-subsiguiente, que se traduce en archivos de resultados que llegan a tener un gran tamaño para
-arhivos de texto (hasta el orden de gigabytes). El modo en que Proteopathogen
-lee los archivos consiste en una representación en memoria de toda la
-jerarquía xml. Esto, que es muy efectivo para localizar los distintos 
-elementos referenciados en el contenido, puede ser difícil (requerir
+de datos de los espectrómetros de masas y las mejoras en el análisis 
+bioinformático subsiguiente, que se traduce en archivos de resultados 
+que llegan a tener un gran tamaño para arhivos de texto (hasta el orden
+de gigabytes). El modo en que Proteopathogen lee los archivos consiste 
+en una representación en memoria de toda la jerarquía xml
+(\textit{parser DOM}). Esto, que es muy efectivo para localizar los distintos 
+elementos referenciados en el contenido y guardarlos en cada tabla
+ correspondiente de la base de datos, puede convertirse en una tarea difícil (requerir
 computadores con gran memoria de trabajo, RAM) 
 o incluso imposible en algunos casos. Por este motivo puede ser interesante
-explorar otro tipo de implementaciones de lectura de archivos xml, como 
-es 
+explorar otro tipo de implementaciones de lectura de archivos xml (\textit{parser SAX})
 
 
+\section*{Desarrollo de un PeptideAtlas de Candida albicans}
+\addcontentsline{toc}{section}{Desarrollo de un PeptideAtlas Candida albicans}
 
 
-Por otra parte, PeptideAtlas
+PeptideAtlas
 
  
 
