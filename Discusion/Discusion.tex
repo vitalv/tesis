@@ -113,13 +113,60 @@ elementos referenciados en el contenido y guardarlos en cada tabla
 computadores con gran memoria de trabajo, RAM) 
 o incluso imposible en algunos casos. Por este motivo puede ser interesante
 explorar otro tipo de implementaciones de lectura de archivos xml (\textit{parser SAX})
+que permitan leer la información contenida en archivos de gran tamaño.
 
 
 \section*{Desarrollo de un PeptideAtlas de Candida albicans}
 \addcontentsline{toc}{section}{Desarrollo de un PeptideAtlas Candida albicans}
 
 
-PeptideAtlas
+El proyecto PeptideAtlas, desde su inicio hace casi una década \citep{Desiere2006},
+ha animado a la comunidad proteómica a contribuir con sus experimentos y
+resultados de LC-MS/MS. 
+La particularidad de PeptideAtlas reside en que, a diferencia de otros
+grandes repositorios públicos de proteómica como PRIDE, todos los resultados
+son analizados mediante un flujo de trabajo homogéneo, proporcionado por 
+las herramientas de \textit{software} agrupadas en \ac{TPP}. 
+Así, el proyecto se ha convertido en un gran 
+compendio de atlas de diferentes especies caracterizados por una reconocida 
+calidad y fiabilidad en las identificaciones de péptidos y proteínas.
+
+La creación del PeptideAtlas de \textit{Candida albicans} supuso la 
+incorporación por primera vez de un modelo de hongo patógeno en el proyecto PeptideAtlas
+y la primera recopilación de resultados de proteómica que alcanzó una gran 
+escala para este organismo. En su primera versión \citep{Vialas2013}, se 
+alcanzó una cobertura del proteoma sin precedentes en resultados 
+experimentales agrupados en un atlas para \textit{Candida albicans}. Casi
+22.000 péptidos correspondientes a más de 2500 proteínas suponían una 
+cobertura de más del 40\% del proteoma predicho. 
+
+Pero PeptideAtlas permite que los resultados sean reanalizados cuando
+se obtienen nuevos resultados de LC-MS/MS o cuando se desarrollan nuevas
+mejoras en los motores de búsqueda o en el \textit{software} de ánalisis. 
+Así, trás el PeptideAtlas original se obtuvieron nuevos resultados
+experimentales, bien específicamente destinados a la ampliación de la
+cobertura del proteoma mediante fraccionamientos extensivos a varios niveles:
+subcelular (centrifugaciones), proteína (SDS-PAGE) y péptido (OFF-GEL);
+o bien procedentes de trabajos destinados al estudio de proteínas de la
+pared celular \citep{} o secretadas mediante vesículas \citep{Gil-Bona2014}.
+Además en ese tiempo apareció un nuevo ensamblaje de la secuencia de
+ \mbox{\textit{C. albicans}} que por primera vez incluía secuencias específicas 
+de alelo. \citep{Muzzey2013}.
+En este contexto, con los nuevos sets de datos y la nueva información de 
+secuencia disponible, el PeptideAtlas original ha sido reanalizado, 
+en conjunto con los sets de datos que formaban la primera versión, y empleando
+tres motores de búsqueda (Sequest, OMSSA y Comet) para finalmente obtener
+una cobertura de dos terceras partes del proteoma predicho de \textit{C.albicans}.
+Más de 71.000 péptidos asignados a 4174 secuencias de proteínas (para un 
+FDR de 0.10\% a nivel de PSM) suponen
+exactamente 66.17\% del proteoma, y con respecto a la versión inicial,
+un incremento de 3 veces el número de péptidos y 1.6 veces el de proteínas.
+
+Con este notable incremento, este PeptideAtlas continúa 
+siendo el recurso público de datos proteómicos de \textit{C. albicans}
+mas exhaustivo.
+
+
 
  
 

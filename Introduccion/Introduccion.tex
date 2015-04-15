@@ -63,7 +63,7 @@ Theodosius Dobzhansky
 \label{cap1:sec:Proteómica. Conceptos generales}
 
 El concepto de Proteoma fue acuñado originalmente por Marc Wilkins en 
-los años 90 en analogía al concepto de Genoma \citep{Wasinger1995} 
+los años 90 en analogía al concepto de Genoma \citep{Wasinger1995}.
 Si el Genoma es la dotación génica de una célula u organismo, 
 el Proteoma es entendido como \emph{el conjunto total de proteínas 
 expresadas por los genes de una célula, tejido u organismo}. 
@@ -240,26 +240,31 @@ en un proceso reiterativo, hasta el punto en que las moléculas de analito se rep
 suficiente para superar la tensión superficial y liberarse (explosión de Coulomb)
 quedando en suspensión y siendo así introducidos en un sistema vacío hacia el espectrómetro.
 
-\item El Bombardeo Rápido Atómico, \ac{FAB} consiste en hacer incidir
-un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
-el analito provocando de esa forma su ionización.
+%\item El Bombardeo Rápido Atómico, \ac{FAB} consiste en hacer incidir
+%un haz de alta energía de átomos de un gas inerte (Argón o Xenón) sobre
+%el analito provocando de esa forma su ionización.
 
-\item En la Desorción por Campo Eléctrico, \ac{FD}
-la muestra se encuentra sometida a un campo eléctrico creado en una 
-superficie, generalmente un filamento de tungsteno, llamado \emph{emisor}.
- Al superar 
-un umbral de diferencia de potencial se produce la desorción e ionización
-del analito.
+%\item En la Desorción por Campo Eléctrico, \ac{FD}
+%la muestra se encuentra sometida a un campo eléctrico creado en una 
+%superficie, generalmente un filamento de tungsteno, llamado \emph{emisor}.
+% Al superar 
+%un umbral de diferencia de potencial se produce la desorción e ionización
+%del analito.
 
-\item La Desorción por Plasma, \ac{PD} 
-consiste en hacer uso de un isótopo radiactivo \textsuperscript{252}Cf que
-al sufrir su fisión espontánea produce dos partículas de alta energía
-con trayectorias opuestas, 
-(generalmente \textsuperscript{144}Cs y y \textsuperscript{108}Tc)
-que impactan sobre la muestra provocando su desorción e ionización.
+%\item La Desorción por Plasma, \ac{PD} 
+%consiste en hacer uso de un isótopo radiactivo \textsuperscript{252}Cf que
+%al sufrir su fisión espontánea produce dos partículas de alta energía
+%con trayectorias opuestas, 
+%(generalmente \textsuperscript{144}Cs y y \textsuperscript{108}Tc)
+%que impactan sobre la muestra provocando su desorción e ionización.
 
 
 \end{itemize}
+
+Otros tipos de ionización menos comunes son el Bombardeo Rápido Atómico,
+\ac{FAB}, la Desorción por Campo Eléctrico, \ac {FD},  y la Desorción por
+Plasma, \ac{PD}.
+
 
 \figura{Vectorial/maldi_y_esi}{width=.80\textwidth}{fig:maldi_y_esi}%
 {Ionización MALDI y ESI}
@@ -477,7 +482,7 @@ y el rendimiento que ofrece es, por tanto, limitado.
 En la Espectrometría de Masas en Tándem, \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
 ionizados y dentro del espectrómetro, son sometidos a una 
-fragmentación adicional. (Figura~\ref{fig:tandem_ms})
+fragmentación adicional. (Figura~\ref{fig:tandem_ms}).
 %\begin{itemize}
 %\item En la \emph{Disociación Inducida por Colisión}, CID
 %\end{itemize}
@@ -562,35 +567,48 @@ en energía vibracional lo que provoca la ruptura del esqueleto peptídico.
 La fragmentación tipo CID genera una elevada proporción de iones de las 
 series \emph{b-} e \emph{y-}
 
-%Sin embargo, existen también otros tipos de fragmentación. 
+%%Sin embargo, existen también otros tipos de fragmentación. 
+%%Atencion, con el siguiente parrafito resumo ETD, ECD y HCD :
 
-En la Disociación por Transferencia de Electrones, \ac{ETD}, \citep{Syka2004}, los iones de analito
+Otros tipos de fragmentación son la Disociación por Transferencia de
+Electrones, \ac{ETD}, \citep{Syka2004}, en la que los iones de analito
 con carga positiva interaccionan con aniones que les transfieren un 
-electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
-Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
-y para péptidos largos e incluso para proteínas enteras. Además produce
-una fragmentación en la que las cadenas laterales y \ac{PTM} quedan intactas.
-Estas cualidades hacen ETD interesante para Proteómica \emph{top-down},
-que intenta identificar proteínas intactas, y también
-para experimentos orientados a la deteccion de péptidos con \ac{PTM}.
-
-
-En la Disociación por Captura de Electrones, \ac{ECD} \citep{Zubarev1998},
-como en \ac{ETD}, la fragmentación se produce por la interacción del analito
-con electrones que, en este caso, son suministrados por introducción directa.
- \ac{ECD} se usa generalmente en espectrómetros
-tipo \ac{FTICR} y en trampas iónicas y genera abundantes fragmentos de series
-\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}.
-Al igual que ECD, es particularmente efectivo para el estudio de péptidos
-con \ac{PTM}
-
-Otro tipo de fragmentación es la Disociación por Colisión de Alta Energía, \ac{HCD}
-usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que \ac{CID}
-genera iones \emph{b-} e \emph{y-}, si bien, debido a la mayor energía de
+electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-};
+la Disociación por Captura de Electrones, \ac{ECD} \citep{Zubarev1998},
+consistente la interacción del analito con electrones suministrados 
+directamente; y, por último, la Disociación por Colisión de Alta Energía, \ac{HCD}
+usado en analizadores tipo Orbitrap \citep{Olsen2007}, y que al igual que 
+CID genera iones \emph{b-} e \emph{y-}, si bien, debido a la mayor energía de
 activación, los iones \emph{b-} sufren fragmentaciones adicionales generando
-iones \emph{a-} y otras especies de menor tamaño. Este tipo de espectros
-de fragmentación son más informativos, pero a cambio, requieren analizadores de alta
-precisión.
+iones \emph{a-} y otras especies de menor tamaño.
+
+%En la Disociación por Transferencia de Electrones, \ac{ETD}, \citep{Syka2004}, los iones de analito
+%con carga positiva interaccionan con aniones que les transfieren un 
+%electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-}.
+%Esta técnica funciona bien para iones de analito con carga \emph{z > 2}
+%y para péptidos largos e incluso para proteínas enteras. Además produce
+%una fragmentación en la que las cadenas laterales y \ac{PTM} quedan intactas.
+%Estas cualidades hacen ETD interesante para Proteómica \emph{top-down},
+%que intenta identificar proteínas intactas, y también
+%para experimentos orientados a la deteccion de péptidos con \ac{PTM}.
+
+
+%En la Disociación por Captura de Electrones, \ac{ECD} \citep{Zubarev1998},
+%como en \ac{ETD}, la fragmentación se produce por la interacción del analito
+%con electrones que, en este caso, son suministrados por introducción directa.
+% \ac{ECD} se usa generalmente en espectrómetros
+%tipo \ac{FTICR} y en trampas iónicas y genera abundantes fragmentos de series
+%\emph{c-}, \emph{z-} y, aunque en menor medida, también de la serie \emph{b-}.
+%Al igual que ECD, es particularmente efectivo para el estudio de péptidos
+%con \ac{PTM}
+
+%Otro tipo de fragmentación es la Disociación por Colisión de Alta Energía, \ac{HCD}
+%usado en analizadores tipo Orbitrap \citep{Olsen2007}. Al igual que \ac{CID}
+%genera iones \emph{b-} e \emph{y-}, si bien, debido a la mayor energía de
+%activación, los iones \emph{b-} sufren fragmentaciones adicionales generando
+%iones \emph{a-} y otras especies de menor tamaño. Este tipo de espectros
+%de fragmentación son más informativos, pero a cambio, requieren analizadores de alta
+%precisión.
 
 
 %-------------------------------------------------------------------
@@ -626,24 +644,25 @@ algunas, como las proteínas de membrana son insolubles en condiciones en
 que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
 proporción a las proteínas \citep{Hatt1997}. Además la sensibilidad de los espectrómetros
-es menor para proteínas intactas que para péptidos. La cantidad de 
-posibles formas en que una proteína es procesada, incluyendo \ac{PTM} 
-en sus péptidos, y variaciones conformacionales entre
-otras, hace que la combinación de isoformas posibles y sus masas sean 
-imposibles de discernir por MS. Por otra parte, para identificar a la
-proteína originaria se requiere información de la secuencia y para esto
-los espectrómetros son mas eficientes si se analizan secuencias de un 
-tamaño limitado en número de aminoácidos.
+es menor para proteínas intactas que para péptidos. 
+%La cantidad de 
+%posibles formas en que una proteína es procesada, incluyendo \ac{PTM} 
+%en sus péptidos, y variaciones conformacionales entre
+%otras, hace que la combinación de isoformas posibles y sus masas sean 
+%imposibles de discernir por MS. Por otra parte, para identificar a la
+%proteína originaria se requiere información de la secuencia y para esto
+%los espectrómetros son mas eficientes si se analizan secuencias de un 
+%tamaño limitado en número de aminoácidos.
 
-A pesar de estas limitaciones los espectrómetros sí permiten inferir, 
-al menos parcialmente,
-secuencias a partir de proteínas intactas y con ello identificarlas.
-Este es el objetivo de la llamada Proteómica \textit{top-down} (de 
-arriba a abajo)
-
-Sin embargo la Proteómica \textit{bottom-up} (\textit{de abajo a arriba}),
-en la que se infiere la presencia de proteínas a partir de sus péptidos,
-es la técnica más extendida.
+%~ A pesar de estas limitaciones los espectrómetros sí permiten inferir, 
+%~ al menos parcialmente,
+%~ secuencias a partir de proteínas intactas y con ello identificarlas.
+%~ Este es el objetivo de la llamada Proteómica \textit{top-down} (de 
+%~ arriba a abajo)
+%~ 
+%~ Sin embargo la Proteómica \textit{bottom-up} (\textit{de abajo a arriba}),
+%~ en la que se infiere la presencia de proteínas a partir de sus péptidos,
+%~ es la técnica más extendida.
 
 La digestión consiste en la rotura de proteínas en 
 péptidos por acción de una enzima proteolítica. Tradicionalmente se ha utilizado
@@ -678,30 +697,45 @@ fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
 En función del número de estas propiedades que se aprovechan para separar,
  en mayor o menor grado, las proteínas de una muestra
 se distinguen básicamente dos tipos de \ac{PAGE}
-\begin{itemize}
-  \item Electroforesis en Gel de PoliAcrilamida Monodimiensional, \ac{1DPAGE}. 
-  En este tipo de geles las 
-  proteínas se separan en función de su peso molecular. La electroforesis
-  hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
-  mas lejos en el gel, sometido a una diferencia de potencial.
-  \item Electroforesis en Gel de PoliAcrilamida Bidimiensional, \ac{2DPAGE}.
-   En este caso, las proteínas 
-  se separan en una primera dimensión en función de su punto isoeléctrico.
-  Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
-  situarse en un punto donde su carga neta se equilibra con la de su 
-  entorno. A continuación la tira se coloca en la cabecera de un gel y se
-  aplica la segunda dimensión, de modo que se las proteínas se someten a
-  una separación adicional, en este caso por peso molecular, al igual que en un gel 1D.
-\end{itemize}
+
+En la Electroforesis en Gel de PoliAcrilamida Monodimiensional, \ac{1DPAGE},
+proteínas se separan en función de su peso molecular, las más pequeñas
+se separan más en el gel. 
+En la Electroforesis en Gel de PoliAcrilamida Bidimiensional, \ac{2DPAGE},
+las proteínas se separan en una primera dimensión (sobre una tira con un
+gradiente de pH inmobilizado) en función de su punto isoeléctrico para
+posteriormente, aplicar la segunda dimensión, equivalente a 1DPAGE.
+
+
+%~ \begin{itemize}
+  %~ \item Electroforesis en Gel de PoliAcrilamida Monodimiensional, \ac{1DPAGE}. 
+  %~ En este tipo de geles las 
+  %~ proteínas se separan en función de su peso molecular. La electroforesis
+  %~ hace que las proteínas mas pequeñas, de menor peso molecular, se desplacen
+  %~ mas lejos en el gel, sometido a una diferencia de potencial.
+  %~ \item Electroforesis en Gel de PoliAcrilamida Bidimiensional, \ac{2DPAGE}.
+   %~ En este caso, las proteínas 
+  %~ se separan en una primera dimensión en función de su punto isoeléctrico.
+  %~ Las proteínas se desplazan sobre una tira con un gradiente de pH hasta
+  %~ situarse en un punto donde su carga neta se equilibra con la de su 
+  %~ entorno. A continuación la tira se coloca en la cabecera de un gel y se
+  %~ aplica la segunda dimensión, de modo que se las proteínas se someten a
+  %~ una separación adicional, en este caso por peso molecular, al igual que en un gel 1D.
+%~ \end{itemize}
 
 Otra clasificación posible de las técnicas PAGE puede establecerse en
-función de si se usan condiciones desnaturalizantes o no
-\begin{itemize}
-  \item Geles desnaturalizantes.
-   Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico, \ac{SDSPAGE}
-  \item Condiciones nativas o no desnaturalizantes
-  Blue Native
-\end{itemize}
+función de si se usan condiciones desnaturalizantes o no. 
+Entre las técnicas que usan geles desnaturalizantes probablemente la más
+empleada sea la Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico, \ac{SDSPAGE}.
+Y entre las que usan condiciones nativas o no desnaturalizantes, la llamada Blue Native, 
+empleada para estudiar proteínas agrupadas en complejos.
+
+%\begin{itemize}
+%  \item Geles desnaturalizantes.
+%   Electroforesis en Gel de PoliAcrilamida con DodecilSulfato Sódico, \ac{SDSPAGE}
+%  \item Condiciones nativas o no desnaturalizantes
+%  Blue Native
+%\end{itemize}
 
 La Proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
 en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
@@ -772,7 +806,8 @@ de una analogía con las técnicas clásicas de secuenciación genómica donde
 el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
 ensambladas. En la Proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
-la proteína original. Implica varios pasos descritos a continuación.
+la proteína original. Implica varios pasos descritos en las siguientes 
+secciones.
 
 \figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
 {Etapas en un experimento de Proteómica \textit{Shotgun}}
@@ -801,8 +836,8 @@ realiza una cromatografía que permite separar los péptidos para que
 sean ionizados y lleguen al analizador de masas gradualmente.
 
 Opcionalmente esta separación puede comenzar a nivel de proteína por
-electroforesis en un gel \ac{1DPAGE}, o por ejemplo,
-por fraccionamientos sub-celulares correspondientes a distintos 
+electroforesis en un gel \ac{1DPAGE}, o incluso a un nivel estructural 
+superior, por ejemplo, por fraccionamientos sub-celulares correspondientes a distintos 
 orgánulos.
 
 \medskip
@@ -850,9 +885,15 @@ hidrofóbicos son retenidos durante más tiempo.
 %  \item Cromatografía de intercambio catiónico
 %\end{itemize}
 
-\bigskip{}
+%\bigskip{}
 
-A continuación, tras la adquisición experimental de los espectros, el paso
+A continuación, una vez producida la separación cromatográfica, los
+péptidos son ionizados e introducidos en el espectrometro de masas.
+En ocasiones, como el caso de la ionización ESI, el sistema de entrada
+y la fuente de iones forman parte de un único componente que se encuentra 
+acoplado (\textit{on-line}) al espectrómetro de masas.
+
+Tras la adquisición experimental de los espectros, el paso
 siguiente en un experimento de Proteómica \textit{shotgun} implica el
 análisis computacional de esos espectros cuyo objetivo final es la 
 obtención de una lista de proteínas que presumiblemente se encuentran en 
@@ -1302,37 +1343,37 @@ y requiere espectros MS/MS de gran calidad.
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
 
-\phantomsection
-\subsubsection*{Búsqueda mediante etiquetas de secuencia}
-\label{cap1:subsubsec:Búsqueda mediante etiquetas de secuencia}
-
-\textit{Mirar Hybrid approaches (3.4) en Nesvizhskii review,
-también -Computational and Statistical Analysis of Protein Mass Spectrometry Data- 
-de MacCoss}
-
-\textit{
-Tag-based methods occupy an appealing middle ground between database search
-and de novo methods. Here, the basic idea is to use de novo analysis to 
-identify a collection of subpeptides (tags) that are hypothesized to occur
-in the sequence, and then extract candidates from a database that contain
-the tags. Tag-based methods can be quite fast, and retain the ability to
-partially identify spectra for which the corresponding peptide is not in
-the database
-}
-
-\textit{
-Nesviz: -Hybrid approaches are particularly useful for the identification
-of post-translationally or chemically modified peptides-
-}
+%~ \phantomsection
+%~ \subsubsection*{Búsqueda mediante etiquetas de secuencia}
+%~ \label{cap1:subsubsec:Búsqueda mediante etiquetas de secuencia}
+%~ 
+%~ \textit{Mirar Hybrid approaches (3.4) en Nesvizhskii review,
+%~ también -Computational and Statistical Analysis of Protein Mass Spectrometry Data- 
+%~ de MacCoss}
+%~ 
+%~ \textit{
+%~ Tag-based methods occupy an appealing middle ground between database search
+%~ and de novo methods. Here, the basic idea is to use de novo analysis to 
+%~ identify a collection of subpeptides (tags) that are hypothesized to occur
+%~ in the sequence, and then extract candidates from a database that contain
+%~ the tags. Tag-based methods can be quite fast, and retain the ability to
+%~ partially identify spectra for which the corresponding peptide is not in
+%~ the database
+%~ }
+%~ 
+%~ \textit{
+%~ Nesviz: -Hybrid approaches are particularly useful for the identification
+%~ of post-translationally or chemically modified peptides-
+%~ }
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
 
-\phantomsection
-\subsubsection*{Búsquedas tolerantes y multi-etapa}
-\label{cap1:subsec:Búsquedas tolerantes y multi-etapa}
-
-\textit{Mirar Strategies for more comprehensive... (4) en Nesvizhskii review}
+%~ \phantomsection
+%~ \subsubsection*{Búsquedas tolerantes y multi-etapa}
+%~ \label{cap1:subsec:Búsquedas tolerantes y multi-etapa}
+%~ 
+%~ \textit{Mirar Strategies for more comprehensive... (4) en Nesvizhskii review}
 
 
 %-------------------------------------------------------------------
@@ -2102,13 +2143,16 @@ que la comunidad bioinformática ha desarrollado en respuesta a las necesidades
 de compartir, inspeccionar y generar ficheros sin las restricciones que imponen
 las licencias; y \textit{software} privativo desarrollado \textit{ad hoc} por las 
 compañías fabricantes de espectrómetros de masas para sus instrumentos.
+En este sentido la iniciativa HUPO-PSI ha adquirido un papel muy importante
+en la elaboración y difusión de formatos abiertos que puedan servir de 
+estándar para toda la comunidad
 
-La iniciativa HUPO-PSI tiene un papel muy importante en la elaboración
-y adopción de formatos abiertos que puedan servir de estándar para toda
-la comunidad. En esta tarea de estandarización están implicados representantes
-de las compañías fabricantes de equipos, editores de revistas, y desarrolladores
-de código del ámbito académico para revisar y proporcionar formatos que 
-recojan toda la información necesaria (MIAPE)
+%La iniciativa HUPO-PSI tiene un papel muy importante en la elaboración
+%y adopción de formatos abiertos que puedan servir de estándar para toda
+%la comunidad. En esta tarea de estandarización están implicados representantes
+%de las compañías fabricantes de equipos, editores de revistas, y desarrolladores
+%de código del ámbito académico para revisar y proporcionar formatos que 
+%recojan toda la información necesaria (MIAPE)
 
 En una clasificacion más precisa, el software puede clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
@@ -2121,36 +2165,84 @@ de la etapa del análisis al que sirven de ayuda.
 
 \item \emph{Formatos que recogen la salida de los espectrómetros de masas}
 
-Este es un tipo de formatos muy diverso. Depende básicamente, de la forma
-en que el instrumento registra los espectros.
+%~ Los datos perfil permiten ver la forma de los picos del espectro de masas. %Copiado de TSQ_Series_Hardware_es.pdf
+%~ Cada unidad de masa atómica se divide en muchos intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+%~ La intensidad de la corriente iónica se determina en cada uno de los %Copiado de TSQ_Series_Hardware_es.pdf
+%~ intervalos de muestreo. Este tipo de datos muestra la intensidad en  %Copiado de TSQ_Series_Hardware_es.pdf
+%~ cada uno de los intervalos de muestreo con las intensidades %Copiado de TSQ_Series_Hardware_es.pdf
+%~ conectadas por una línea continua. %Copiado de TSQ_Series_Hardware_es.pdf
+%En otras ocasiones, con el 
+%objetivo de ahorrar espacio, solo se registra la señal cuando se supera un
+%cierto umbral de intensidad que discierne la señal real del ruido. Este tipo de
+%espectros es similar a los adquiridos en modo continuo pero los valles
+%entre picos no quedan registrados.
 
-Cuando la frecuencia en que %ver File Formats commonly used in MS . Deutsch E
-se escanea cada fragmento es superior a la resolución del instrumento la 
-señal se registra como picos con una forma y anchura precisas. Este tipo 
-de adquisición es el \emph{modo continuo o perfil}. 
-Los datos perfil permiten ver la forma de los picos del espectro de masas. %Copiado de TSQ_Series_Hardware_es.pdf
-Cada unidad de masa atómica se divide en muchos intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
-La intensidad de la corriente iónica se determina en cada uno de los %Copiado de TSQ_Series_Hardware_es.pdf
-intervalos de muestreo. Este tipo de datos muestra la intensidad en  %Copiado de TSQ_Series_Hardware_es.pdf
-cada uno de los intervalos de muestreo con las intensidades %Copiado de TSQ_Series_Hardware_es.pdf
-conectadas por una línea continua. %Copiado de TSQ_Series_Hardware_es.pdf
-En otras ocasiones, con el 
-objetivo de ahorrar espacio, solo se registra la señal cuando se supera un
-cierto umbral de intensidad que discierne la señal real del ruido. Este tipo de
-espectros es similar a los adquiridos en modo continuo pero los valles
-entre picos no quedan registrados.
+Este es un tipo de formatos muy diverso. 
+Depende básicamente, de la forma %a lo mejor puedo recortar esto 
+Cuando la frecuencia en que %ver File Formats commonly used in MS . Deutsch E %a lo mejor puedo recortar esto
+se escanea cada fragmento es superior a la resolución del instrumento la %a lo mejor puedo recortar esto
+señal se registra como picos con una forma y anchura precisas. Este tipo %a lo mejor puedo recortar esto
+de adquisición es el \emph{modo continuo o perfil}. %a lo mejor puedo recortar esto
+Los instrumentos registran los espectros en modo continuo de forma predeterminada,%a lo mejor puedo recortar esto
+pero frecuentemente son sometidos %a lo mejor puedo recortar esto
+a un procesamiento por un algoritmo que extrae los picos detectados como %a lo mejor puedo recortar esto
+parejas de valores \mz e intensidad. Esto se denomina adquisición de %a lo mejor puedo recortar esto
+\emph{datos centroide} %a lo mejor puedo recortar esto
+%~ muestran el espectro de masas como un gráfico de barras y suman las %Copiado de TSQ_Series_Hardware_es.pdf
+%~ intensidades de cada conjunto de varios intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+%~ Esta suma se muestra frente al centrado integral de masa de los intervalos %Copiado de TSQ_Series_Hardware_es.pdf
+%~ de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
 
-Los instrumentos registran los espectros en modo continuo de forma predeterminada,
-pero frecuentemente son sometidos
-a un procesamiento por un algoritmo que extrae los picos detectados como 
-parejas de valores \mz e intensidad. Estos son los datos centroide, 
-muestran el espectro de masas como un gráfico de barras y suman las %Copiado de TSQ_Series_Hardware_es.pdf
-intensidades de cada conjunto de varios intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
-Esta suma se muestra frente al centrado integral de masa de los intervalos %Copiado de TSQ_Series_Hardware_es.pdf
-de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
+Entre los formatos desarrollados por los fabricantes podemos encontrar
+aquellos para los que toda la información de los espectros se encuentra 
+en un solo archivo, aquellos para los que la información se divide en un 
+par de archivos y aquellos con múltiples archivos para cada adquisición de espectros.
+Así, para los instrumentos Thermo Scientific el formato es del primer tipo, 
+toda la información es codificada en archivos con extensión .RAW (datos perfil 
+o centroide a elección). Los instrumentos AB-Sciex en su mayoría
+(excepto los TOF-TOF) pueden generar archivos del segundo tipo, en pares
+donde un archivo con extension \textit{.wiff} contiene los metadatos
+y un archivo \textit{.wiff.scan} contiene los espectros. Por último, para
+algunos instrumentos de Waters y Agilent, se obtienen múltiples archivos
+agrupados en carpetas con extensión \textit{.d} o \textit{.raw}.
 
+Sin embargo, el hecho de que estos formatos sean codificados en binario
+junto con la disponibilidad de las librerías de lectura
+proporcionadas por los fabricantes restringida únicamente al sistema operativo
+MS Windows frenó el desarrollo de nuevas herramientas de lectura y 
+manipulación de este tipo de archivos.
+En ese contexto, aparecieron los primeros formatos de texto (XML) para codificar
+toda la información de salida de MS, mzXML \citep{Pedrioli2006} y mzData \citep{}
+que posteriormente fueron unificados en el estándar HUPO-PSI mzML \citep{Deutsch2010d}.
+
+Por último, una solución intermedia, ideada previamente a la aparición
+de los formatos basados en XML descritos, es la creación de ficheros
+de texto simples con una simple lista de los picos obtenidos para cada ión
+precursor y sus fragmentos. Los formatos de archivo con extensión \textit{.pkl}
+\textit{.dta} o \textit{.ms2} contienen espectros independientes en cada
+fichero, los \textit{.MGF} pueden contener múltiples espectros en un solo fichero.
 
 \item \emph{Formatos que recogen el resultado de las búsquedas}
+
+Este tipo de formatos se encuentra generalmente muy ligado al \textit{software}
+empleado para generar los resultados, es decir el motor de búsqueda.
+Sequest, comenzó usando los formatos \textit{.out} y \textit{.SQT} pero
+posteriormente ha desarrollado los \textit{.SRF} y \textit{.MSF}.
+X!Tandem y OMSSA generan archivos basados en XML \textit{.tandem} y    
+\textit{.omx} respectivamente.
+
+Para independizar el motor de búsqueda usado del formato obtenido se 
+creó el formato \textit{.pepXML} que además permite el análisis
+por las herramientas de \ac{TPP}. \textit{pepXML}, cuya unidad de 
+información básica es el PSM, es el formato que lee y escribe
+PeptideProphet, para ProteinProphet, se creó \textit{.protXML}, que 
+contiene la lista de proteínas y sus péptidos asignados.
+
+Sin embargo de nuevo \textit{pepXML} y \textit{protXML}, 
+aunque muy populares, también estaban ligados al flujo de análisis de TPP.
+Y de nuevo HUPO-PSI ideó un nuevo formato estándar para recoger toda 
+información derivada del resultado de búsquedas y análisis
+independientemente de su origen, el mzIdentML \citep{Jones2012}.
 
 \item \emph{Formatos que almacenan bibliotecas de espectros}
 
