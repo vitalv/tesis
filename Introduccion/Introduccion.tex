@@ -1300,11 +1300,12 @@ de masa permitida) y determinar así cual es la mejor coincidencia.
 
 Al igual que en el caso de los motores de búsqueda basados en secuencia, 
 existe un tipo específico de \textit{software} que permite crear 
-bibliotecas de espectros y realizar búsquedas usándolas como SpectraST (Referencia), Bibliospec( )
+bibliotecas de espectros y realizar búsquedas usándolas como SpectraST
+\citep{Lam2007}, Bibliospec \citep{} o X!Hunter, \citep{}
 
 Este tipo de aproximación supera a la búsqueda basada en secuencia en 
 términos de velocidad, tasa de error y sensibilidad en la identificación
-de péptidos (Referencia)
+de péptidos (Lam2007)
 Además, a los resultados obtenidos también se les puede aplicar los 
 modelos de validación estadística desarrollados para las búsquedas 
 basadas en secuencia.
@@ -1320,8 +1321,8 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 \subsubsection*{Identificación por secuenciación \textit{de novo}}
 \label{cap1:subsubsec:búsqueda de novo}
 
-\figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
-{Interpretación manual de espectros MS/MS. Secuenciación \textit{de novo}}
+%~ \figura{Vectorial/spectrum_interpret_from_man_to_auto_1}{width=.77\textwidth}{fig:spectrum_interpretation_1}%
+%~ {Interpretación manual de espectros MS/MS. Secuenciación \textit{de novo}}
 
 
 La secuenciación \textit{de novo} (figura~\ref{fig:spectrum_interpretation_1}),
@@ -2157,8 +2158,8 @@ estándar para toda la comunidad
 En una clasificacion más precisa, el software puede clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
 
-\figura{Vectorial/formats}{width=.99\textwidth}{fig:formats_in_proteomics}%
-{Visión general de formatos comunmente usados en cada etapa de un experimento de Proteómica}
+\figura{Vectorial/formats}{width=.80\textwidth}{fig:formats_in_proteomics}%
+{Visión general de formatos comúmente usados en cada etapa de un experimento de Proteómica}
 
 
 \begin{itemize}
@@ -2238,17 +2239,49 @@ información básica es el PSM, es el formato que lee y escribe
 PeptideProphet, para ProteinProphet, se creó \textit{.protXML}, que 
 contiene la lista de proteínas y sus péptidos asignados.
 
-Sin embargo de nuevo \textit{pepXML} y \textit{protXML}, 
+Sin embargo, de nuevo \textit{pepXML} y \textit{protXML}, 
 aunque muy populares, también estaban ligados al flujo de análisis de TPP.
-Y de nuevo HUPO-PSI ideó un nuevo formato estándar para recoger toda 
+Y de nuevo, HUPO-PSI ideó un nuevo formato estándar para recoger toda 
 información derivada del resultado de búsquedas y análisis
 independientemente de su origen, el mzIdentML \citep{Jones2012}.
+Además, HUPO-PSI también ha desarrollado mzTab, una versión alternativa
+simplificada que no se basa en XML sino en texto separado por tabulador.
+ 
 
 \item \emph{Formatos que almacenan bibliotecas de espectros}
 
+Los motores de búsqueda que usan bibliotecas de espectros, como SpectraST
+(parte de TPP) \citep{Lam2007} requieren generalmente un formato 
+que contenga espectros consenso, una combinación de los espectros y el péptido
+que se les ha asignado, así como otras anotaciones y metadatos.
+El Instituto Nacional para Estándares y Tecnología americano, \ac{NIST}
+distribuye bibliotecas de espectros en formato \textit{.msp}. SpectraST
+produce el formato \textit{.splib}; y X!Hunter y Bibliospec \textit{ASL}
+y \textit{.blib} respectivamente.
+
+
 \item \emph{Formatos que almacenan secuencias}
 
+Los motores de búsqueda basados en secuencia requieren que se les 
+suministren secuencias de cada proteína (y también, para cada una de ellas
+su correspondiente secuencia señuelo). Para ello el tipo de formato más
+usado es el celebérrimo FASTA. Sin embargo no es el único, HUPO-PSI
+ha creado el formato PEFF, que mejora a FASTA añadiendo reglas sobre 
+cómo ha de expresarse la cabecera de cada secuencia. Esta sintaxis definida
+facilita la tarea al \textit{software} que lee los ficheros.
+
 \item \emph{Formatos específicos para Proteómica dirigida}
+
+En Proteómica dirigida, podemos encontrar dos tipos de formatos. 
+Entre los que se usan como fuente de entrada de información,
+para indicar al espectrómetro las listas de transiciones, 
+es decir, que precursores y fragmentos ha de monitorizar, los más 
+empleados son .\textit{sky}, empleado por el programa Skyline; y el 
+estándar HUPO-PSI \textit{TraML} \citep{Deutsch2012a}.
+Para los resultados de análisis por SRM, el programa Skyline usa 
+su propio formato, \textit{.skyd}, basado en XML y otros programas
+como mProphet \citep{Reiter2011a} usan sus propios formatos de texto 
+separado por tabulador.
 
 
 \end{itemize}
@@ -2275,10 +2308,6 @@ provocando infecciones, candidiasis, de gravedad variable, desde afecciones
 mucocutáneas leves hasta infecciones sitémicas severas que pueden incluso llegar a ser letales.
 
 
-\figura{Vectorial/candida_vs_macrophage}{width=.99\textwidth}{fig:candida_vs_macrophage}%
-{Status de equilibrio entre las células de \textit{Candida albicans}
- y células del sistema inmune en las mucosas}
-
 Los principales factores de virulencia con los que cuenta \textit{Candida albicans}
 para proliferar y diseminarse causando infecciones son su capacidad
 de cambiar su morfología de una forma levaduriforme a una forma hifal,
@@ -2287,12 +2316,18 @@ penetrar e invadir tejidos; y su capacidad de adhesión gracias a la acción
 de proteínas adhesinas \citep{Calderone2001}
 
 
-
 Desde el punto de vista de la Proteómica, se han realizado muy diversos
 estudios usando Candida 
 Estudios basados en 2D-PAGE para investigar las diferencias en el proteoma
 de la forma de levadura y la forma de hifa
 
+
+YUJUUU: COMPLETAR ESTO VALEEE!!?
+
+
+\figura{Vectorial/candida_vs_macrophage}{width=.89\textwidth}{fig:candida_vs_macrophage}%
+{Status de equilibrio entre las células de \textit{Candida albicans}
+ y células del sistema inmune en las mucosas}
 
 
 
