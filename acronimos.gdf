@@ -86,6 +86,8 @@
 
 @entry{PSM, ,\emph{Peptide-Spectrum Match}}
 
+@entry{OMSSA, ,\emph{Open Mass Spectrometry Search Algorithm}}
+
 @entry{FWHM, ,\emph{Full Width at Half Mass}}
 
 @entry{NTT, ,\emph{Number of Tryptic Termini}}

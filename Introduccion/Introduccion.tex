@@ -1032,72 +1032,81 @@ así, para equipos de alta resolución tipo Orbitrap o FTICR se puede ajustar
 a valores inferiores a 1 Da.
 }
 
-\medskip
+\end{itemize}
+
+%~ \medskip
 
 Otros parámetros que se proporcionan al \textit{software} y que afectan 
 notablemente a la creación de la lista de candidatos y por tanto también
-al coste computacional son:
+al coste computacional son, la selección de masa mono-isotópica o masa
+promedio (es decir, considerar que todos los átomos de C se encuentran en 
+su forma \textsuperscript{12}C o bien que exista una proporción variable de
+isótopos \textsuperscript{13}C); el número de puntos de corte no efectuados
+permitidos dentro de la secuencia del precursor;  la existencia de 
+modificaciones post-traduccionales y otras modificaciones permitidas 
+(variables o fijas) que ocurren en el proceso experimental; 
+y la selección del tipo de iones fragmento a buscar.
 
-\item {
-Masa mono-isotópica o Masa promedio.
-A partir de un espectro MS se obtiene el valor \mz y con ello
-la masa del péptido. 
-Este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
-aquella en la que se considera que todos los átomos de C se encuentran 
-en su forma \textsuperscript{12}C
-o bien, puede considerarse que existe una proporción variable de isótopos 
-\textsuperscript{13}C, y calcularse una masa promedio. Generalmente
-para espectros de alta resolución la masa del péptido calculada suele
-acercarse más al valor mono-isotópico, mientras que para instrumentos 
-de baja resolución suele elegirse el valor de masa promedio.
-}
+%~ \item {
+%~ Masa mono-isotópica o Masa promedio.
+%~ A partir de un espectro MS se obtiene el valor \mz y con ello
+%~ la masa del péptido. 
+%~ Este valor de masa del péptido puede aproximarse más a la masa mono-isotópica,
+%~ aquella en la que se considera que todos los átomos de C se encuentran 
+%~ en su forma \textsuperscript{12}C
+%~ o bien, puede considerarse que existe una proporción variable de isótopos 
+%~ \textsuperscript{13}C, y calcularse una masa promedio. Generalmente
+%~ para espectros de alta resolución la masa del péptido calculada suele
+%~ acercarse más al valor mono-isotópico, mientras que para instrumentos 
+%~ de baja resolución suele elegirse el valor de masa promedio.
+%~ }
 
-\item {
-El número de puntos de corte no efectuado permitidos dentro de la 
-secuencia del precursor. La eficiencia de las enzimas proteolíticas 
-no es del 100\%, por tanto, este parámetro hace que el motor de búsqueda
-tenga también en cuenta péptidos con K y/o R en su secuencia (en el caso
-de una digestión con tripsina)
-}
+%~ \item {
+%~ El número de puntos de corte no efectuado permitidos dentro de la 
+%~ secuencia del precursor. La eficiencia de las enzimas proteolíticas 
+%~ no es del 100\%, por tanto, este parámetro hace que el motor de búsqueda
+%~ tenga también en cuenta péptidos con K y/o R en su secuencia (en el caso
+%~ de una digestión con tripsina)
+%~ }
 
-\item{
-Modificaciones post-traduccionales y otras modificaciones permitidas 
-que ocurren en el proceso experimental.
-Algunas modificaciones ocurren como consecuencia de la manipulación 
-experimental, como la carbamidometilación en las cisteínas (C), un 
-artefacto que se produce (por reducción y alquilación por acción de 
-Iodoacetamida) en todas las C para evitar la formación de puentes di-sulfuro. 
-Otro tipo de modificaciones son las \ac{PTM} que ocurren
-en la célula naturalmente y que suponen transformaciones estructurales y/o funcionales
-en las proteínas, como las fosforilaciones que implican un desplazamiento 
-en masa promedio de 79.979 Da sobre residuos de serina (S), treonina (T) o tirosina(Y);
-o las glicosilaciones que implican la adición de oligosacáridos sobre grupos
-amino de asparagina (N) o glutamina (Q) (N-glicosilación); o hidroxilo (O-glicosilación) 
-en serinas (S) o treoninas (T)
-Además puede considerarse que las modificaciones ocurren siempre en todos
-los residuos objetivo de la modificación o bien de forma variable para que el
-motor de búsqueda considere también la masa del aminoácido sin modificación.
-}
+%~ \item{
+%~ Modificaciones post-traduccionales y otras modificaciones permitidas 
+%~ que ocurren en el proceso experimental.
+%~ Algunas modificaciones ocurren como consecuencia de la manipulación 
+%~ experimental, como la carbamidometilación en las cisteínas (C), un 
+%~ artefacto que se produce (por reducción y alquilación por acción de 
+%~ Iodoacetamida) en todas las C para evitar la formación de puentes di-sulfuro. 
+%~ Otro tipo de modificaciones son las \ac{PTM} que ocurren
+%~ en la célula naturalmente y que suponen transformaciones estructurales y/o funcionales
+%~ en las proteínas, como las fosforilaciones que implican un desplazamiento 
+%~ en masa promedio de 79.979 Da sobre residuos de serina (S), treonina (T) o tirosina(Y);
+%~ o las glicosilaciones que implican la adición de oligosacáridos sobre grupos
+%~ amino de asparagina (N) o glutamina (Q) (N-glicosilación); o hidroxilo (O-glicosilación) 
+%~ en serinas (S) o treoninas (T)
+%~ Además puede considerarse que las modificaciones ocurren siempre en todos
+%~ los residuos objetivo de la modificación o bien de forma variable para que el
+%~ motor de búsqueda considere también la masa del aminoácido sin modificación.
+%~ }
 
-\item{
-Tipo de iones fragmento permitidos. 
-Los espectros de fragmentación teóricos son calculados a partir de las 
-secuencias de péptidos (trípticos) obtenidos de la base de datos de referencia. 
-Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
-abundantes sino que, en función del tipo de fragmentación,
-se generan más fragmentos de un tipo o de otro. 
-Así, en instrumentos de tipo cuadrupolo o híbridos \ac{QTOF},
-la fragmentación genera abundantes iones de la serie \emph{y-}, en las
-trampas iónicas además se producen igualmente abundantes iones \emph{b-}.
+%~ \item{
+%~ Tipo de iones fragmento permitidos. 
+%~ Los espectros de fragmentación teóricos son calculados a partir de las 
+%~ secuencias de péptidos (trípticos) obtenidos de la base de datos de referencia. 
+%~ Pero los tipos de fragmentos en un espectro MS/MS no son igualmente 
+%~ abundantes sino que, en función del tipo de fragmentación,
+%~ se generan más fragmentos de un tipo o de otro. 
+%~ Así, en instrumentos de tipo cuadrupolo o híbridos \ac{QTOF},
+%~ la fragmentación genera abundantes iones de la serie \emph{y-}, en las
+%~ trampas iónicas además se producen igualmente abundantes iones \emph{b-}.
 
 %Así, en instrumentos de tipo Trampa Iónica, Triple Cuadrupolo o
 %híbridos Cuadrupolo-TOF la fragmentación genera abundantes iones de la
 %series \emph{y-}, y \emph{b-}
 
-} 
+%~ } 
 
 
-\end{itemize}
+%~ \end{itemize}
 
 El establecimiento de estos valores tiene consecuencias muy notables en los
 resultados de identificación de péptidos y en consecuencia de proteínas.
@@ -1196,12 +1205,35 @@ del mejor candidato y el del segundo mejor candidato.
 Ambos valores son por tanto indicativos de la calidad de cada \ac{PSM} que será
 mejor cuanto más altas sean ambas puntuaciones.
 
+%COMET%%%%
+Una adaptación no comercial, de código abierto, del algoritmo original
+de \mbox{SEQUEST} es el motor de búsqueda Comet \citep{Eng2013}, que introduce
+la novedad de perimitir paralelizar el proceso de búsqueda para poder
+ser ejecutado en procesadores multi-núcleo.
+
+%VER COMET EN : Keller 2005 A uniform proteomics MS/MS analysis platform utilizing open XML file formats
+
+%~ The score function within COMET is effectively the scalar dot product
+%~ between two unit vectors representing the input spectrum and fragment 
+%~ ion masses calculated from candidate sequences in the sequence database 
+%~ (Field et al, 2002). The vectors are composed of approximately 1 Da mass
+%~ bins (1.0005 for monoisotopic masses) to optimize the binning due to
+%~ the periodicity in peptide isotopic masses (Parker et al, 2004). This 
+%~ dot product score function allows for very fast calculations, as the 
+%~ score is computed based on the simple summation of intensity values that 
+%~ are accessed via a direct lookup of the mass index. However, in order to 
+%~ be more sensitive than simply summing up matched peaks, as a regular dot 
+%~ product effectively accomplishes, the input spectrum is preprocessed 
+%~ such that intensities are modified as follows:
+
 %X!TANDEM%%%
 Otro motor de búsqueda frecuentemente utilizado es \emph{X!Tandem} \citep{Fenyo2003},
 que calcula una puntuación llamada \emph{hyperscore}. Ésta también se basa
 en contar el número de picos compartidos entre los espectros teórico y empírico,
 pero en este caso, en la versión original del software, se tiene en cuenta si los iones coincidentes pertenecen
 a las series \emph{b-} e \emph{y-}.
+
+
 
 \begin{equation}
 \label{eq:xtandem_hyperscore}
@@ -1211,22 +1243,40 @@ hyperscore &= (by-Score) \cdot N_{y}!\ \cdot N_{b}!
 \end{split}
 \end{equation}
 
-
+\textit{EEEEHHH: }
 \textit{ Buscar que mejora era lo del k-score}
+Opcionalmente, X! Tandem puede ser modificado con la puntuación-k 
+\citep{MacLean2006}, un producto escalar similar al implementado en 
+Comet con una manipulación previa de las intensidades de los iones de
+los espectros teóricos candidatos.
+
+%OMSSA%%%
+El motor de búsqueda \ac{OMSSA} \citep{Geer}, al igual que X!Tandem, es 
+de código abierto. %Mirar libro MS data analysis in proteomics
+En OMSSA, la puntuación es un reflejo del número de coincidencias entre
+iones del espectro experimental y el teórico sin tener en cuenta si los
+iones son de tipo \emph{b-} o \emph{y-}.
+
+Tanto X!Tandem como OMSSA proporcionan una medida adicional además de
+su propio método de puntuación, el \textit{e-valor}, que da idea de la
+calidad de la asignación ya que puede interpretarse como el número
+esperado de péptidos con puntuación igual o superior a la del mejor
+péptido candidato.
 
 
 %MASCOT%%%
 \emph{Mascot} es quizá el más popular de los motores de búsqueda a 
-pesar de que el algoritmo de correlación que usa nunca fue publicado.
-El programa calcula una 
+pesar de ser comercial y de que el algoritmo de correlación que usa 
+nunca fue publicado. El programa calcula una 
 puntuación expresada en términos probabilísticos llamada \emph{ion score} 
 que indica la probabilidad de que un número de coincidencias de picos
 hayan ocurrido aleatoriamente dado el número total de picos en el espectro
 y dada una distribución calculada de los valores \mz predichos para los candidatos 
 
 
-%COMET ?!
-\textit{COMET ?! Ya que se usa en PeptideAtlas2... nombrarlo al menos??}
+
+%%COMET ?!
+%\textit{COMET ?! Ya que se usa en PeptideAtlas2... nombrarlo al menos??}
 %the probability of that number of matches occurring by chance given the
 %number of peaks in the searched spectrum and the cumulative distribution of
 %m/z values of predicted ions for all candidate peptides in the database. At the

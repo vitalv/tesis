@@ -11,12 +11,6 @@
 %\cabeceraEspecial{Discusion}
 
 
-\phantomsection 
-\section*{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
-\addcontentsline{toc}{section}{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
-%-------------------------------------------------------------------
-\label{cap1:sec:Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
-
 El abordaje de experimentos proteómicos usando \textit{Candida albicans} como organismo
 modelo para el estudio de infecciones fúngicas del tipo de las candidiasis
 ha permitido profundizar en algunos de los aspectos más básicos
@@ -29,7 +23,7 @@ levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas
 a las implicadas en la formación de biopelículas entre otros aspectos.
 Esta heterogenidad existente en los diseños experimentales también 
 se puede observar en la 
-forma en que el análisis continúa trás la adquisición de espectros por LC-MS/MS. 
+forma en que el análisis continúa trás la adquisición de espectros de masas por LC-MS/MS. 
 Los datos son analizados bioinformáticamente utilizando distintos  
 motores de búsqueda, distintos métodos de validación, flujos de análisis
 diferentes en definitiva. Además, hasta hace relativamente poco tiempo, los primeros
@@ -38,12 +32,20 @@ en repositorios públicos era muy escasa, casi nula, y en ocasiones poco fiable.
 
 En este contexto las bases de datos y estándares desarrollados en Proteómica
 tienen un papel esencial para analizar, compartir y difundir resultados.
-Las herramientas aquí descritas contribuyen a estos objetivos
+Las herramientas aquí descritas contribuyen a estos objetivos.
+
+
+\phantomsection 
+\section*{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
+\addcontentsline{toc}{section}{Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
+%-------------------------------------------------------------------
+\label{cap1:sec:Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
+
 
 La base de datos y herramienta web Proteopathogen es la primera aplicación
 \textit{on line} descrita para recoger y analizar resultados de Proteómica 
 centrados en el estudio de hongos patógenos usando principalmente el modelo
-de \textit{Candida albicans}.
+de \mbox{\textit{Candida albicans}}.
 
 Durante algunos años Proteopathogen ha recogido datos experimentales de
 experimentos de \textit{Candida albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
@@ -57,7 +59,7 @@ Humano \ac{HUPOPSI} ha desarrollado y promovido el uso de estándares en Proteómi
 formatos que faciliten el intercambio, re-análisis y comparación de 
 protocolos experimentales, datos y resultados entre distintos laboratorios. 
 En este sentido Proteopathogen se ha beneficiado de la aparición del 
-estándar mzIdentML \citep{Jones2012}, el formato ideado y posteriormente
+estándar mzIdentML \citep{Jones2012}, el formato creado por HUPO-PSI y posteriormente
 adoptado por la comunidad, para recoger la información
 relacionada con la identificación de péptidos y proteínas, es decir
 el análisis bioinformático desde la asignación de los PSM hasta la 
@@ -65,7 +67,8 @@ presentación de una lista de proteínas.
 
 Proteopathogen emplea el lenguaje de programación interpretado Ruby.
 A diferencia de lenguajes compilados (Java, C/C++) que se usan frecuentemente
-en otras herramientas para la visualización de contenidos en formatos de proteómica \citep{},
+en otras herramientas para la visualización de contenidos en formatos de proteómica 
+\citep{Griss2012, Barsnes2011},
 esto posibilita una manera muy rápida y flexible de implementar un sistema de
 extracción de la información de archivos XML. La plataforma de desarrollo
 web Rails, también basada en Ruby, además cuenta con un gran soporte 
@@ -85,7 +88,7 @@ algunas herramientas como la creada por HUPO-PSI, mzidValidator \citep{Ghali2013
 
 La base de datos relacional implementada \textit{ad hoc} para recoger
 el contenido de los archivos constituye la base fundamental de la aplicación.
-y permite que Proteopathogen, sea el primer recurso \textit{on-line} descrito
+y permite que Proteopathogen sea el primer recurso \textit{on-line} descrito
 que recoge y permite visualizar resultados de múltiples experimentos y sus 
 correspondientes resultados mzIdentML y no sólo cada uno de ellos individualmente.
 
@@ -94,8 +97,8 @@ desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
 que mzIdentML sea sustituido por otro, sí es cierto que
 pronto verá una versión actualizada (1.2.0). En ese escenario, los programas
 que transfieren el contenido a la base de datos deberán ser adaptados, aunque
-previsiblemente los cambios no provocarán incompatibilidades y serán más bien
-aditivos añadiendo algun nuevo tipo de información. Para ello, la flexibilidad
+previsiblemente los cambios no provocarán incompatibilidades sino que serán
+fundamentalmente aditivos añadiendo algún nuevo tipo de información. Para ello, la flexibilidad
 que proporciona el uso de Ruby on Rails permitirá que los cambios desde el
 periodo de pruebas hasta la producción en el servidor puedan implementarse rápidamente y con seguridad.
 
@@ -104,7 +107,7 @@ un nuevo modo de leer los archivos mzIdentML. Esta posibilidad vendría
 motivada por la creciente capacidad de adquisición
 de datos de los espectrómetros de masas y las mejoras en el análisis 
 bioinformático subsiguiente, que se traduce en archivos de resultados 
-que llegan a tener un gran tamaño para arhivos de texto (hasta el orden
+que llegan a tener un gran tamaño para archivos de texto (hasta el orden
 de gigabytes). El modo en que Proteopathogen lee los archivos consiste 
 en una representación en memoria de toda la jerarquía xml
 (\textit{parser DOM}). Esto, que es muy efectivo para localizar los distintos 
@@ -135,12 +138,12 @@ La creación del PeptideAtlas de \textit{Candida albicans} supuso la
 incorporación por primera vez de un modelo de hongo patógeno en el proyecto PeptideAtlas
 y la primera recopilación de resultados de proteómica que alcanzó una gran 
 escala para este organismo. En su primera versión \citep{Vialas2013}, se 
-alcanzó una cobertura del proteoma sin precedentes en resultados 
-experimentales agrupados en un atlas para \textit{Candida albicans}. Casi
-22.000 péptidos correspondientes a más de 2500 proteínas suponían una 
+alcanzó una cobertura del proteoma sin precedentes para resultados
+experimentales agrupados en un solo proyecto, un PeptideAtlas para \textit{Candida albicans}. 
+Casi 22.000 péptidos correspondientes a más de 2500 proteínas suponían una 
 cobertura de más del 40\% del proteoma predicho. 
 
-Pero PeptideAtlas permite que los resultados sean reanalizados cuando
+Pero PeptideAtlas permite que los resultados sean reprocesados cuando
 se obtienen nuevos resultados de LC-MS/MS o cuando se desarrollan nuevas
 mejoras en los motores de búsqueda o en el \textit{software} de ánalisis. 
 Así, trás el PeptideAtlas original se obtuvieron nuevos resultados
