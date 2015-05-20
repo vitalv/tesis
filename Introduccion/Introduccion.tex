@@ -529,7 +529,7 @@ donde se produce la ruptura, en las denominadas
 series \emph{x}, \emph{y} y \emph{z} si la carga del ion permanece en el
 extremo carboxilo-terminal y las series \emph{a}, \emph{b} y \emph{c} si la 
 carga permanece en el extremo amino-terminal. Además se añade un sub-índice
-que indica el número de residuos en el fragmento (Figura~\ref{fig:peptide_fragmentation})
+que indica el número de residuos en el fragmento (Figura~\ref{fig:peptide_fragmentation}).
 Generalmente, los iones más abundantes e informativos son los \emph{b-} e \emph{y-},
  generados por la fragmentación en el enlace peptídico entre aminoácidos, 
 el punto de menor energía de la estructura.
@@ -1243,8 +1243,6 @@ hyperscore &= (by-Score) \cdot N_{y}!\ \cdot N_{b}!
 \end{split}
 \end{equation}
 
-\textit{EEEEHHH: }
-\textit{ Buscar que mejora era lo del k-score}
 Opcionalmente, X! Tandem puede ser modificado con la puntuación-k 
 \citep{MacLean2006}, un producto escalar similar al implementado en 
 Comet con una manipulación previa de las intensidades de los iones de
@@ -1265,7 +1263,7 @@ péptido candidato.
 
 
 %MASCOT%%%
-\emph{Mascot} es quizá el más popular de los motores de búsqueda a 
+Por último, \emph{Mascot} es quizás el más popular de los motores de búsqueda a 
 pesar de ser comercial y de que el algoritmo de correlación que usa 
 nunca fue publicado. El programa calcula una 
 puntuación expresada en términos probabilísticos llamada \emph{ion score} 
@@ -1556,7 +1554,7 @@ El \emph{e-valor} también se usa frecuentemente como medida de calidad
 en aproximaciones de espectro individual. Esá relacionado con el \emph{p-valor}
 pero se interpreta como el número esperado de péptidos con puntuación
 igual o superior a la del mejor péptido candidato. 
-X!Tandem calcula un \emph{e-valor} obtenido a partir de la distribución
+X!Tandem calcula un \emph{e-valor} obtenido empíricamente a partir de la distribución
 de espectro individual para cada PSM (Figura~\ref{fig:evalue_estimation})
 
 \figura{Vectorial/evalue_estimation}{width=.95\textwidth}{fig:evalue_estimation}%
@@ -1597,7 +1595,7 @@ ocurrir \ac{PSM} con \mbox{\emph{p-valores}} igualmente bajos solo por azar. Por
 motivo se utilizan estrategias de \emph{corrección de test múltiple} 
 (\emph{multiple test correction}) que re-ajustan los \mbox{\emph{p-valores}}.
 Una aproximación muy utilizada, aunque produce resultados conservadores,
-  es la corrección de Bonferroni(\citep), que simplemente
+  es la corrección de Bonferroni \citep{Abdi2007}, que simplemente
 divide el \mbox{\emph{p-valor}} por el número de veces que se repite el test.
 Así para un \ac{PSM} con \mbox{\emph{p-valor} = 0,05} en un experimento en el que hay
 otros 10.000 \ac{PSM}, el \mbox{\emph{p-valor}} original habría de reajustarse a
