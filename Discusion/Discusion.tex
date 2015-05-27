@@ -82,15 +82,18 @@ de datos ha permitido desarrollar un \textit{software} estable que extrae
 la información independientemente de cómo se hayan obtenido los resultados.
 Pero además, el uso de este estándar permite
 realizar validaciones, un control de calidad, tanto de la estructura, 
-sintaxis y orden de los elementos XML (validación semántica) de los 
-archivos, como del contenido mínimo (validación MIAPE) usando para ello 
+sintaxis y orden de los elementos XML de los 
+archivos (validación semántica), como del contenido mínimo (validación MIAPE) usando para ello 
 algunas herramientas como la creada por HUPO-PSI, mzidValidator \citep{Ghali2013}.
 
 La base de datos relacional implementada \textit{ad hoc} para recoger
-el contenido de los archivos constituye la base fundamental de la aplicación.
+el contenido de los archivos constituye la base fundamental de la aplicación
 y permite que Proteopathogen sea el primer recurso \textit{on-line} descrito
-que recoge y permite visualizar resultados de múltiples experimentos y sus 
-correspondientes resultados mzIdentML y no sólo cada uno de ellos individualmente.
+que recoge y permite visualizar resultados, individualmente para cada
+archivo mzIdentML o en conjunto, procedentes de múltiples experimentos en el
+campo de los hongos patógenos usando principalmente el modelo de \textit{C. albicans}.
+%~ permitiendo además visualizar los resultados mzIdentML en conjunto
+%~ y no sólo cada uno de los experimentos individualmente.
 
 En cuanto al futuro de esta herramienta bioinformática, es importante destacar que el 
 desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
@@ -99,7 +102,8 @@ pronto verá una versión actualizada (1.2.0). En ese escenario, los programas
 que transfieren el contenido a la base de datos deberán ser adaptados, aunque
 previsiblemente los cambios no provocarán incompatibilidades sino que serán
 fundamentalmente aditivos añadiendo algún nuevo tipo de información. Para ello, la flexibilidad
-que proporciona el uso de Ruby on Rails permitirá que los cambios desde el
+que proporciona el uso del lenguaje de programación Ruby y el entorno
+de desarrollo web Rails permitirá que los cambios desde el
 periodo de pruebas hasta la producción en el servidor puedan implementarse rápidamente y con seguridad.
 
 Otro tipo de posible mejora en la aplicación podría consistir en implementar
@@ -115,7 +119,7 @@ elementos referenciados en el contenido y guardarlos en cada tabla
  correspondiente de la base de datos, puede convertirse en una tarea difícil (requerir
 computadores con gran memoria de trabajo, RAM) 
 o incluso imposible en algunos casos. Por este motivo puede ser interesante
-explorar otro tipo de implementaciones de lectura de archivos xml (\textit{parser SAX})
+explorar otro tipo de implementaciones de lectura de archivos XML (\textit{parser SAX})
 que permitan leer la información contenida en archivos de gran tamaño.
 
 
@@ -168,6 +172,12 @@ un incremento de 3 veces el número de péptidos y 1.6 veces el de proteínas.
 Con este notable incremento, este PeptideAtlas continúa 
 siendo el recurso público de datos proteómicos de \textit{C. albicans}
 mas exhaustivo.
+
+Además de describir una lista de proteínas que representa un 66\% del proteoma
+predicho en \ac{CGD}, el PeptideAtlas de \textit{C. albicans}
+proporciona evidencia empírica sólida de la existencia de la proteína
+para dos terceras partes de los genes que en CGD se denominan \textit{uncharacterized}
+por carecer de un producto proteico caracterizado.
 
 
 
