@@ -13,20 +13,11 @@
 %
 % La etiqueta es el  nombre del acrónimo (equivalente a la etiqueta en
 % BibTeX) que luego se utiliza para "referenciarlo" en el texto.
-
 % Para  que  la  generación   en  Release  con  el  Makefile  funcione
 % correctamente, necesitarás  al menos tener  referenciado un acrónimo
 % dentro del  texto.  Si  no quieres usar  acrónimos, o de  momento no
 % tienes ninguno  referenciado, basta con que no  definas la constante
 % \acronimosEnRelease en config.tex
-
-@entry{CVS, , \emph{Control Version System}, Sistema de Control de Versiones}
-
-@entry{GPL, , \emph{General Public License}, Licencia Pública General de GNU}
-
-@entry{PC2, PC$^2$, \emph{Programming Contest Control}}
-
-%Acronimos de Vital, Proteómica, MS, etc...
 
 @entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}}
 
@@ -128,6 +119,6 @@
 
 @entry{CHPP,C-HPP,\emph{Chromosome Centric  Human Proteome Project}}
 
-
 @entry{NIST, ,\emph{National Institute for Standards and Technology}}
 
+@entry{CGD, ,\emph{Candida Genome Database}}
