@@ -33,6 +33,10 @@
 
 @entry{HPLC, ,\emph{High Performance Liquid Chromatography}}
 
+@entry{MudPIT, ,\emph{Multidimensional Protein Identification Technology}}
+
+@entry{SCX, ,\emph{Strong Cation Exchange}}
+
 @entry{ESI, ,\emph{Electro-Spray Ionization}}
 
 @entry{SLD, ,\emph{Soft Laser Desorption}}

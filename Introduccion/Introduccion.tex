@@ -153,24 +153,25 @@ equivalente a la masa de un átomo de hidrógeno o la masa de un protón.
 \begin{split}
 1 Da &= 1 u = 1/12 \cdot \left(\frac{12g\ \ce{^{12}C}}{mol\ \ce{^{12}C}}\right)\\
 \textup{}\\
-1 Da &= 1 u = 1/12 \cdot \left(\frac{6.0221\times10^{23} atomos\ \ce{^{12}C}}{mol\ \ce{^{12}C}}\right)\\
+1 Da &= 1 u = 1/12 \cdot \left(\frac{6.0221\times10^{23} \acute atomos \ce{^{12}C}}{mol\ \ce{^{12}C}}\right)\\
 \textup{}\\
-1 Da &= 1 u = 1.66054\times10^{-24}g/atomo\ \ce{^{12}C} = 1.66054\times10^{-24}kg/ atomo\ \ce{^{12}C}
+1 Da &= 1 u = 1.66054\times10^{-24}g/ \acute atomo\ \ce{^{12}C} = 1.66054\times10^{-27}kg/ \acute atomo\ \ce{^{12}C}
 \end{split}
 \end{equation}
 
+\medskip{}
 
-Sin embargo los analizadores (espectrómetros) de masas no miden la masa 
+Sin embargo los analizadores de masas no miden la masa 
 de los analitos ionizados sino la relación entre masa y carga \mz , donde
 \emph{m} es la masa molecular del analito y \emph{z} un múltiplo entero del número de 
 cargas del ion. La unidad empleada para medir esta relación es el \textit{Thomson},
-\textbf{Th}. Un thomsom equivale a 1 Da / e.
+\textbf{Th}. Un thomsom equivale a 1 Da / e, donde e es la carga elemental.
 En general, para iones monocargados y solo en ese caso, la masa en Da
 es equivalente a su valor en thomsons.
 
 Además, en espectrometría de masas es interesante medir la masa exacta de los isótopos
 de los elementos que componen las moléculas. En este sentido es importante
-diferenciar entre las masas mono-isotopica y masa promedio
+diferenciar entre las masas mono-isotópica y masa promedio
 
 La \emph{masa promedio} es equivalente a una media de las masas atómicas de todos
 los átomos de los elementos que componen el ion ponderados por abundancia
@@ -274,12 +275,12 @@ Plasma, \ac{PD}.
 \item \textbf{Analizador de masas}. El analizador de masas es la parte del instrumento en la que los iones
 se separan en base su relación entre la masa y carga (\mz). 
 Es el elemento que se usa generalmente para definir el tipo de instrumento.
-Existen varios tipos
-que pueden combinarse en los llamados espectrómetros híbridos. Así, 
+Existen varios tipos,
+y además pueden combinarse en los llamados espectrómetros híbridos. Así, 
 un analizador de tipo cuadrupolo puede encontrarse acoplado con un analizador
 de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un
 Cuadrupolo-Tiempo de Vuelo, \ac{QTOF}
-o Cuadrupolo-Trampa Iónica, \ac{QTRAP} \mbox{respectivamente}.
+o Cuadrupolo-Trampa Iónica, \ac{QTRAP} respectivamente.
 Algunos de los analizadores de masas más comunes son los siguientes:
 
 
@@ -409,7 +410,7 @@ el péptido que origina el espectro.
 
 La \textit{sensibilidad} de un espectrómetro de masas es la 
 capacidad para detectar masas muy pequeñas. Puede llegar a ser de hasta
-unas pocas partes por millon (ppm) en el caso de instrumentos de alta
+unas pocas partes por millón (ppm) en el caso de instrumentos de alta
 precisión como \ac{LTQ}-Orbitrap, pero requiere un ajuste óptimo de múltiples
 parámetros como la calibración del instrumento o la temperatura entre
 otros.
@@ -420,7 +421,7 @@ corresponden a diferentes iones dentro de una ventana o margen de valores \mz .
 Esto es esencial para evitar la co-fragmentación, es decir, obtener 
 fragmentos de iones precursores diferentes con valores \mz similares, o cuando
 se requiere conocer la distribución isotópica de un ion.
-La resolución se define como la diferencia entre las masas de dos picos
+La resolución, R,  se define como la diferencia entre las masas de dos picos
 adyacentes que están resueltos
 
 \begin{equation}
@@ -696,14 +697,14 @@ proteínas presentes en una muestra inicial en base a propiedades
 fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
 En función del número de estas propiedades que se aprovechan para separar,
  en mayor o menor grado, las proteínas de una muestra
-se distinguen básicamente dos tipos de \ac{PAGE}
+se distinguen básicamente dos tipos de \ac{PAGE}:
 
 En la Electroforesis en Gel de PoliAcrilamida Monodimiensional, \ac{1DPAGE},
-proteínas se separan en función de su peso molecular, las más pequeñas
-se separan más en el gel. 
+las proteínas se separan en función de su peso molecular, las más pequeñas
+avanzan más en el gel. 
 En la Electroforesis en Gel de PoliAcrilamida Bidimiensional, \ac{2DPAGE},
-las proteínas se separan en una primera dimensión (sobre una tira con un
-gradiente de pH inmobilizado) en función de su punto isoeléctrico para
+\citep{Klose1975,OFarrell1975}, las proteínas se separan en una primera dimensión (sobre una tira con un
+gradiente de pH inmovilizado) en función de su punto isoeléctrico para
 posteriormente, aplicar la segunda dimensión, equivalente a 1DPAGE.
 
 
@@ -739,9 +740,12 @@ empleada para estudiar proteínas agrupadas en complejos.
 
 La Proteómica en gel ha sido (y continúa siendo) una técnica muy empleada 
 en laboratorios de todo el mundo. Tiene algunas limitaciones, como 
-el hecho de que proteínas de bajo peso molecular no son fácilmente observables, 
-o que el número de proteínas identificables a partir de un gel difícilmente
-pueda superar el millar. Sin embargo, este tipo de estudios sigue 
+el hecho de que proteínas de bajo peso molecular o muy hidrofóbicas 
+no son fácilmente observables \citep{Gygi2000}, 
+o una limitación en el número de proteínas identificables a partir de un gel
+que dificilmente puede superar el millar \citep{Klose1995}.
+
+Sin embargo, este tipo de estudios sigue 
 teniendo un nicho en la Proteómica actual \citep{Rogowska-Wrzesinska2013}.
 Notablemente, permite la visualización, identificación y cuantificación 
 de proteínas intactas. La particular capacidad de la Proteómica en gel para
@@ -770,11 +774,12 @@ de forma que el espectro que generan puede ser utilizado para identificarla.
 Sin embargo, a pesar de esta especificidad, la enorme variedad de
 proteínas implica una mayor aún variedad de posibles péptidos generados a partir de 
 ellas que pueden tener masas muy similares. Por ese motivo,
- esta técnica requiere que la proteína se encuentre previamente aislada, 
+para obtener una huella peptídica se requiere que la proteína se encuentre previamente aislada, 
  generalmente a partir de una \textit{mancha} o \textit{spot} proteico de \ac{2DPAGE}
 
-Generalmente la técnica de la Huella Peptídica, conocida también por 
-el acrónimo PMF, \ac{PMF}, se lleva a cabo por 
+La técnica de la Huella de Masas Peptídicas, \ac{PMF}, desarrollado a principios
+de los años 90 por varios grupos independientemente \citep{Pappin1993,Henzel1993,Mann1993}
+se lleva a cabo generalmente por 
 espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
 péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
 en una matriz \ac{MALDI}, donde son ionizados e introducidos en un analizador
@@ -872,7 +877,7 @@ característica identificativa.
 %\begin{itemize}
 %  \item Cromatografía líquida en fase reversa (RP-LC)
 El tipo más común de cromatografía usada en experimentos de Proteómica
-es la que se conoce como Cromatografía Líquida de Alto Rendimiento en Fase Reversa, \ac{RPHPLC}
+es la que se conoce como Cromatografía Líquida de Alto Rendimiento en Fase Reversa, \ac{RPHPLC}.
 En ella los analitos de la muestra se separan en base a su carácter
 hidrofóbico. 
 La fase estacionaria, apolar, está compuesta por unas micro-esferas de 
@@ -883,12 +888,18 @@ más polares eluyan primero integrados en la fracción acuosa cuando
 hay una mayor proporción de ésta, mientras que los más 
 hidrofóbicos son retenidos durante más tiempo.
 %  \item Cromatografía de intercambio catiónico
+Además, la cromatografía, usando una terminología similar a la usada para la separación
+de proteínas en gel, también puede ser multi-dimensional.
+La Tecnología Multidimensional de Identificación de Proteínas \ac{MudPIT}
+\citep{Wolters2001} integra una primera dimensión de separación usando 
+una columna de intercambio catiónico \ac{SCX} y segunda dimensión consistente 
+en una cromatografía en Fase Reversa.
 %\end{itemize}
 
 %\bigskip{}
 
 A continuación, una vez producida la separación cromatográfica, los
-péptidos son ionizados e introducidos en el espectrometro de masas.
+péptidos son ionizados e introducidos en el espectrómetro de masas.
 En ocasiones, como el caso de la ionización ESI, el sistema de entrada
 y la fuente de iones forman parte de un único componente que se encuentra 
 acoplado (\textit{on-line}) al espectrómetro de masas.
