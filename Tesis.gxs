@@ -37,7 +37,7 @@
 \GlossTeXEntry{acrTPR@{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{30}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFNR@{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{31}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFDR@{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{31}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNSP@{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{44}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNSP@{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNSS@{NSS}{NSS}{\emph{Number of Sibling Searches}}{}{acr}{a}{\GlossTeXPage{n}{45}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNRS@{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{45}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNSE@{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{45}}|GlossTeXNull}{0}

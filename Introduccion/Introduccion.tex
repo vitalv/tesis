@@ -1535,9 +1535,9 @@ Generalmente los motores de búsqueda aportan varios tipos de puntuación para
 cada PSM. Un tipo de puntuaciones se refiere a la calidad de cada asignación 
 en particular, evalúa el grado de similitud entre el espectro empírico y 
 el péptido asignado, el mejor de la lista de candidatos.
-(\emph{Xcorr} en Sequest, \emph{hyperscore} en X!Tandem o \emph{ionScore} en Mascot).
+(\emph{Xcorr} en SEQUEST, \emph{hyperscore} en X!Tandem o \emph{ionScore} en Mascot).
 Pero además, a veces, aportan una puntuación indicativa de la calidad del PSM en relación a otros,
-al segundo mejor candidato ($\Delta$\emph{Cn} de Sequest); o con respecto
+al segundo mejor candidato ($\Delta$\emph{Cn} de SEQUEST); o con respecto
 a una población del resto de candidatos que obtuvieron puntuaciones inferiores 
 utilizando los parámetros estadísticos \emph{e-valor} y \emph{p-valor}.
 
@@ -1596,13 +1596,13 @@ espectro individual para calcular y proporcionar un \textit{e-valor} para cada P
 
 \subsubsection*{Distribución promedio}
 
-En los experimento \textit{shotgun} generalmente se obtienen miles de espectros MS/MS.
+En los experimentos \textit{shotgun} generalmente se obtienen miles de espectros MS/MS.
 Las medidas estadísticas de las distribuciones de espectro individual
 por tanto, no son suficientes.
 Incluso en el caso de que se requiera
 un \emph{p-valor} muy bajo, (lo que implicaría una confianza estadística muy alta
 para un \ac{PSM} en concreto) si se evalúan miles de espectros MS/MS podrían 
-ocurrir \ac{PSM} con \mbox{\emph{p-valores}} igualmente bajos solo por azar. Por este
+ocurrir \ac{PSM} con \mbox{\emph{p-valores}} igualmente bajos sólo por azar. Por este
 motivo se utilizan estrategias de \emph{corrección de test múltiple} 
 (\emph{multiple test correction}) que re-ajustan los \mbox{\emph{p-valores}}.
 Una aproximación muy utilizada, aunque produce resultados conservadores,
@@ -1643,12 +1643,11 @@ de puntuación (o de parámetro estadístico como el \emph{p-valor}) fijado.
 Para la estimación de la tasa FDR (Figura~\ref{fig:single_spectrum_and_average_distributions}),
 la estrategia utilizada consiste
 esencialmente en utilizar una base de datos llamada \emph{señuelo} 
-o \emph{decoy} \citep{Elias2007}.
+o \emph{decoy} (Figura~\ref{fig:target_and_decoy_dbs}) \citep{Elias2007}.
 Es una aproximación sencilla pero efectiva que requiere que los espectros MS/MS
 sean comparados con espectros teóricos derivados de secuencias \emph{señuelo},
 que pueden ser generadas de varias formas pero que, en cualquier
-caso, son secuencias que no existen, no corresponden a ninguna proteína
-(Figura~\ref{fig:target_and_decoy_dbs}) 
+caso, son secuencias que no existen, no corresponden a ninguna proteína.
 La asignación de espectros MS/MS a
 estas secuencias \emph{señuelo} permite %es % permiten %por tanto
 recrear una hipótesis nula. Se puede tener la certeza de que los resultados 
@@ -1748,7 +1747,7 @@ Pero esto implica que a algunos espectros se les puede asignar una secuencia
 señuelo con una puntuación mayor a la que se obtiene al asignarles la
 secuencia \textit{target} correcta. En tal caso se produce un aumento 
 de N\textsubscript{d} y una consiguiente reducción del
-número de \ac{PSM} correcto y por tanto un incremento de FDR
+número de \ac{PSM} correcto y por tanto un incremento de FDR.
 
 
 Otra forma de mejorar la estimación de FDR es un algoritmo refinado \citep{Navarro2009a}
@@ -1809,14 +1808,14 @@ que la proporción de la variación entre clases (asignaciones correctas
 e incorrectas) se maximiza con respecto
 a la variación dentro de cada clase.
 
-Y como ejemplo específico para el caso de Sequest:
+Y como ejemplo específico para el caso de SEQUEST:
 
 \begin{equation}
 \label{eq:discriminant_function_sequest}
 S = F_{SEQUEST}(Xcorr, \Delta C_{n}, SpRank) = c_{0} + c_{1}Xcorr, + c_{2}\Delta C_{n} + c_{3}SpRank\\
 \end{equation}
 
-Aunque en su versión original, el software requería una población de asignaciones
+Aunque en su versión original, el \textit{software} requería una población de asignaciones
 correctas de referencia para estimar estas variables, posteriormente
 el algoritmo fue extendido para poder estimar los coeficientes de forma 
 dinámica a partir de los datos en cada experimento\citep{Ding2008,Ma2012}.
@@ -1862,13 +1861,13 @@ donde \textit{P(+|S)} es la probabilidad de que el PSM con puntuación S
 sea correcta, \textit{P(S|+)} y \textit{P(S|-)} son las probabilidades 
 condicionadas de una puntuación \textit{S} entre las distribuciones correctas e
 incorrectas; y \textit{P(+)} y \textit{P(-)} son las probabilidades
-\textit{a priori} de asignaciones correctas e incorrectas.
+\textit{a priori} de asignaciones correctas e incorrectas
 (Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
 Esta probabilidad puede entenderse como la proporción de la la densidad de
 \textit{Gamma} escalada por $\pi_{0}$ con respecto a la suma de las densidades
 \textit{Gamma} y \textit{Normal} escaladas $\pi_{0}$ y 1 - $\pi_{0}$ 
 para una puntuación \textit{S}.
-O dicho con otras palabras, la probabilidad de que, teniendo una puntuación 
+O dicho de otra manera, la probabilidad de que, teniendo una puntuación 
 \textit{S}, una asignación sea incorrecta con respecto a la probabilidad
 de tener esa puntuación. Este valor es la Probabilidad de Error Posterior, \textit{PEP}
 que coincide con la FDR local.
@@ -1903,7 +1902,7 @@ Esto permitó redefinir una versión semisupervisada del algoritmo \citep{Choi2008
 en el sentido de que la clase (PSM correctos e incorrectos) pasa a ser
 conocida para algunas pero no todas las asignaciones.
 
-\textit{The Probability Ratio Method, Navarro et al}
+%\textit{The Probability Ratio Method, Navarro et al}
 
 
 
@@ -1948,7 +1947,7 @@ puede indicar la presencia de ninguna de las proteínas de la familia en particul
 En función de la presencia de estos péptidos compartidos y de péptidos 
 exclusivos de cada proteína se han descrito métodos y nomenclaturas
 adecuadas para definir como \textit{identificada} una proteína o lista de proteínas
-\citep{Nesvizhskii2005}
+\citep{Nesvizhskii2005, Prieto2012}
 
 %\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
 
@@ -2286,7 +2285,7 @@ fichero, los \textit{.MGF} pueden contener múltiples espectros en un solo ficher
 
 Este tipo de formatos se encuentra generalmente muy ligado al \textit{software}
 empleado para generar los resultados, es decir el motor de búsqueda.
-Sequest, comenzó usando los formatos \textit{.out} y \textit{.SQT} pero
+SEQUEST, comenzó usando los formatos \textit{.out} y \textit{.SQT} pero
 posteriormente ha desarrollado los \textit{.SRF} y \textit{.MSF}.
 X!Tandem y OMSSA generan archivos basados en XML \textit{.tandem} y    
 \textit{.omx} respectivamente.
