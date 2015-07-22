@@ -19,6 +19,10 @@
 % tienes ninguno  referenciado, basta con que no  definas la constante
 % \acronimosEnRelease en config.tex
 
+@entry{GO, ,\emph{Gene Ontology}}
+
+@entry{KEGG, ,\emph{Kyoto Encyclopedia of Genes and Genomes}}
+
 @entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}}
 
 @entry{PTM, ,\emph{Post-Translational Modification}}
