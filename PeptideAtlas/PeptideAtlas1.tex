@@ -5,16 +5,437 @@
 %---------------------------------------------------------------------
 
 
-\chapter*{A \textit{Candida albicans} PeptideAtlas}
-\addcontentsline{toc}{chapter}{A \textit{Candida albicans} PeptideAtlas}
-%\cabeceraEspecial{A \textit{Candida albicans} PeptideAtlas}
+\chapter*{A \textit{\textit{Candida albicans}} PeptideAtlas}
+\addcontentsline{toc}{chapter}{A \textit{\textit{Candida albicans}} PeptideAtlas}
+%\cabeceraEspecial{A \textit{\textit{Candida albicans}} PeptideAtlas}
+
+\renewcommand{\headrulewidth}{0pt}
+\cabeceraEspecial{A \textit{\textit{Candida albicans}} PeptideAtlas}
 
 \subsubsection*{Vital Vialas, Zhi Sun, Carla Ver\'onica Loureiro y Penha, Montserrat Carrascal, Joaqu\'in Abi\'an, Luc\'ia Monteoliva, Eric W. Deutsch, Ruedi Aebersold, Robert L. Moritz, Concha Gil}
 \subsubsection*{Journal of Proteomics 2014, 97, 62-68}
 
-
+\newpage
 
 
 %\includepdf[pages=-,scale=.8,pagecommand={}]{PeptideAtlas/Vialas_2013_PeptideAtlas_JProteomics.pdf}
-\includepdf[pages=-,pagecommand={}]{PeptideAtlas/Vialas_2013_PeptideAtlas_JProteomics.pdf}
+%\includepdf[pages=-,pagecommand={}]{PeptideAtlas/Vialas_2013_PeptideAtlas_JProteomics.pdf}
 
+
+
+\chapter*{Abstract}
+\textit{Candida albicans} public proteomic datasets, though growing
+ steadily in the last few years, still have a very limited presence in
+ online repositories. We report here the creation of a \textit{C. albicans} PeptideAtlas
+ comprising near 22,000 distinct peptides at a 0.24\% False Discovery
+ Rate (FDR) that account for over 2500 canonical proteins at a 1.2\% FDR.
+ Based on data from 16 experiments, we attained coverage of 41\% of the 
+ \textit{C. albicans} open reading frame sequences (ORFs) in the database used 
+ for the searches. This PeptideAtlas provides several useful features, 
+ including comprehensive protein and peptide-centered search 
+ capabilities and visualization tools that establish a solid basis for 
+ the study of basic biological mechanisms key to virulence and 
+ pathogenesis such as dimorphism, adherence, and apoptosis. 
+ Further, it is a valuable resource for the selection of candidate 
+ proteotypic peptides for targeted proteomic experiments via Selected
+ Reaction Monitoring (SRM) or SWATH-MS
+
+\section*{Biological Significance}
+This \textit{C. albicans} PeptideAtlas resolves the previous absence of fungal 
+pathogens in the PeptideAtlas project. It represents the most extensive
+characterization of the proteome of this fungus that exists up to the 
+current date, including evidence for uncharacterized ORFs. Through its 
+web interface, PeptideAtlas supports the study of interesting proteins 
+related to basic biological mechanisms key to virulence such as 
+apoptosis, dimorphism and adherence. It also provides a valuable 
+resource to select candidate proteotypic peptides for future (SRM) 
+targeted proteomic experiments. 
+This article is part of a Special Issue entitled: Trends in Microbial Proteomics.
+
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+\textit{Candida albicans} is a fungus of great clinical importance. In
+addition to asymptomatically colonizing mucous membranes
+as a commensal in a large percentage of the population, it
+may cause severe opportunistic infections in specific cases
+such as patients with weakened immune defenses, a common
+circumstance in cancer and AIDS patients. \textit{C. albicans} infections
+are also a threat to patients in post-surgical situations and
+intensive care unit stays. In this respect, invasive candidiasis
+remains nowadays one of the major types of nosocomial
+infections and a challenge in terms of economical and health
+costs \citep{Wisplinghoff2004, Moran2010, Tong2008}.
+From the perspective of proteomics, recent studies
+have provided new insights into the \textit{C. albicans} biology and
+suggested new clinical biomarker candidates for diagnosis and
+prognosis of invasive candidiasis \citep{Pitarch2006, Pitarch2006a
+Fernandez-Arenas2007, Pitarch2011}.
+
+However, the clinical relevance of this organism is not
+reflected in the number of large-scale publicly available proteo-
+mics resources. Up to the current date, the PRIDE \citep{Vizcaino2013} database
+includes only 15 experiments accounting for 1786 identified
+proteins. The more \textit{C. albicans}-focused Proteopathogen database
+\citep{Vialas2009b} comprises several hundred protein identifications including
+data from gel based proteomics, and other major proteomic
+online resources such as the Global Proteome Machine Database 
+(GPMDB \citep{Craig2004}) or Tranche \citep{Smith2011} contain no \textit{C. albicans} data
+whatsoever.
+
+As for the genomic data, according to Candida Genome
+Database (CGD), currently the most comprehensively annotated
+\textit{C. albicans} sequence repository \citep{Costanzo2006a}, the \textit{C. albicans} genome
+contains 6215 ORFs (as of May 28, 2013), out of which 1497 are
+annotated as verified, i.e. representing genes for which there is
+empirical evidence that the ORF actually encodes a functionally
+characterized protein. In contrast, 4566 ORFs are termed
+uncharacterized, indicating that there exists no conclusive evidence 
+for the existence of a protein product. This data implies
+that most part of the predicted proteome, over 70\% of the ORFs, is
+still unknown or has not been properly annotated yet. An
+extensive characterization of the \textit{C. albicans} proteome will
+therefore be of great value to increase our knowledge in proteins
+involved in mechanisms of virulence and infection and, thus
+serves as a basis to design strategies for diagnosis, vaccination
+and treatment of invasive candidiasis.
+
+Since its inception, the PeptideAtlas project \citep{Desiere2006} has 
+encouraged mass spectrometry data submission by the community and
+has thus grown to a large compilation of atlases of different
+species including human tissue and body fluid specific builds
+(brain, plasma \citep{Farrah2011} and urine), microbial builds (\textit{Halobacterium} \citep{Van2008a},
+\textit{Mycobacterium tuberculosis} \citep{Schubert2013}, \textit{Streptococcus} \citep{Lange2008},
+\textit{Leptospira}, \textit{Plasmodium} \citep{Lindner2013}, \textit{Saccharomyces} \citep{King2006}
+and \textit{Schizosaccharomyces} \citep{Gunaratne2013b});
+invertebrate builds (\textit{Caenorhabditis elegans}, \textit{Drosophila} \citep{Loevenich2009} and
+\textit{Apis mellifera} \citep{Chan2011}); and a pig and a bovine milk \citep{Bislev2012} builds. The
+PeptideAtlas project, as a multi-species compendium of
+proteomes, is continuously increasing its biological diversity.
+The recent  \textit{Schizosaccharomyces pombe} atlas \citep{Gunaratne2013b} attains a large
+coverage of its proteome by ad hoc extensive fractionation and
+high-resolution LC-MS/MS, and contributes in the sense that
+some of the fission yeast biological processes have a high degree
+of conservation with the corresponding pathways in mammalian
+cells. The incorporation of \textit{C. albicans} resolves the previous
+absence of fungal pathogens in the PeptideAtlas and their under
+representation in any public proteomic data repository.
+
+Furthermore, the proven utility of PeptideAtlas as a resource
+for selecting proteotypic peptides for Selected Reaction Monitoring (SRM)
+ \citep{Deutsch2008} or SWATH-MS \citep{Gillet2012} will enable a starting point
+for future targeted proteomics workflows in \textit{C. albicans}.
+
+
+
+
+\section*{Materials and methods}
+\addcontentsline{toc}{section}{Materials and methods}
+
+\subsection*{Empirical data compilation}
+
+Large amounts of mass spectrometry data corresponding to
+many and diverse measurements of the \textit{C. albicans} proteome
+initially intended for different purposes were assembled in order
+to build the PeptideAtlas. A range of proteomic methods,
+protocols and different biological conditions were used to
+generate the data as shown in Table 1. These include membrane
+protein extractions \citep{Cabezon2009}, morphological yeast to hypha transition
+experiments \citep{Monteoliva2010} and phosphoprotein enrichment treatments.
+The combination of these diverse datasets resulted in an
+unprecedented overall coverage of the \textit{C. albicans} proteome.
+Protein samples were obtained as previously described in \citep{Monteoliva2010}.
+Briefly, cells of the clinical isolate SC5314 were grown in YPD
+medium for standard growth, whereas hyphal form growth was
+induced using either Lee medium pH 6.7 or heat-inactivated
+fetal bovine serum. Protein extracts were then obtained by
+mechanical cell disruption using either glass beads in the MSK
+cell homogenizer or the Fast-Prep cell breaker. Protein digests
+were obtained by trypsinization and separated via HPLC. All
+spectra acquisition runs were performed by LC-MS/MS in a data-
+dependent manner in different instruments and setups. Table 1
+provides an overview of the experiments along with the
+instruments used for the mass spectrometry and the corresponding
+ number of raw spectra data files that were acquired.
+ 
+
+
+\begin{table}[t]
+\renewcommand{\arraystretch}{1.5}
+\footnotesize
+\centering
+\begin{tabular}{l p{4cm} p{2cm} c c }
+\hline
+\#Exp & Sample \newline{} (as named in the web interface) & Labeling/treatment & Instrument type & \#raw files\\
+\hline
+1 & Calb\_acidic\_subproteome & - & LTQ & 3\\
+2 & Calb\_memb & - & LTQ & 8\\
+3 & SILAC\_phos\_OrbitrapVelos\_1 & SILAC. IMAC+TiO2 & OrbitrapVelos & 3\\
+4 & SILAC\_phos\_OrbitrapVelos\_2 & SILAC. IMAC+TiO2 & OrbitrapVelos & 3\\
+5 & SILAC\_phos\_OrbitrapVelos\_3 & SILAC. IMAC+TiO2 & OrbitrapVelos & 3\\
+6 & SILAC\_phos\_OrbitrapVelos\_4 & SILAC. IMAC+TiO2 & OrbitrapVelos & 3\\
+7 & SILAC\_phos\_OrbitrapXL\_1A & SILAC. IMAC & OrbitrapXL & 11\\
+8 & SILAC\_phos\_OrbitrapXL\_1A\_TiO2 & SILAC. IMAC+TiO2 & OrbitrapXL & 5\\
+9 & SILAC\_phos\_OrbitrapXL\_1B & SILAC. IMAC & OrbitrapXL & 6\\
+10 & SILAC\_phos\_OrbitrapXL\_1B\_TiO2 & SILAC. IMAC+TiO2 & OrbitrapXL & 6\\
+11 & SILAC\_phos\_OrbitrapXL\_2 & SILAC. IMAC & OrbitrapXL & 6\\
+12 & SILAC\_phos\_OrbitrapXL\_3 & SILAC. IMAC & OrbitrapXL & 6\\
+13 & SILAC\_phos\_OrbitrapXL\_4 & SILAC. IMAC & OrbitrapXL & 5\\
+14 & Calb\_extract\_3TOF & - & Triple TOF & 2\\
+15 & Hyphal\_extract\_OrbitrapVelos & - & Orbitrap Velos & 4\\
+16 & Yeast\_extract\_OrbitrapVelos & - & Orbitrap Velos & 4\\
+\end{tabular}
+\caption*{Table 1.List of experiments collected to construct the \textit{C. albicans} PeptideAtlas.}
+\end{table}
+\addcontentsline{lot}{table}{PeptideAtlas1. Table 1}
+
+
+ 
+
+In addition, raw MS data from unpublished, SILAC labeled
+and phosphoprotein enriched samples generated from studies
+focused on Candida interaction with host immune cells and from
+experiments studying the hyphal and yeast-form proteomes,
+were added to the collection.
+
+
+
+\subsection*{Peptide and protein identification}
+
+PeptideAtlas ensures consistency and quality of the stored data
+by processing the raw spectra sets by the Trans-Proteomic
+Pipeline (TPP) \citep{Deutsch2010c}, a suite of software tools for processing
+shotgun proteomic datasets. The TPP tools are run in a well-
+established sequential pipeline spanning steps from creating
+ appropriate standard files to be used as input by the
+search engine to statistical validation of protein inference
+and calculation of the False Discovery Rate (FDR).
+
+The collected raw spectra files in different proprietary file
+formats were converted to the standard format for mass
+spectrometry output data mzML \citep{Martens2011}, searched using X!Tandem
+\citep{Craig2004} with the K-score algorithm plug-in \citep{MacLean2006} and the output search
+results were converted to the search engine-independent
+pepXML format \citep{Keller2005}.
+
+The target fasta sequence file used for the search was
+obtained from the Candida Genome Database (CGD) \citep{Costanzo2006a} (Assembly 21)
+
+Common contaminants from the common Repository of
+Adventitious Proteins (cRAP) were appended. Then for each of
+these sequences, counterpart reversed decoy sequences were
+appended.
+
+PeptideProphet \citep{Keller2002} was then run on the search results to
+model the distributions of correctly and incorrectly assigned
+Peptide-to-Spectrum Matches (PSMs). It then assigns probabilities
+of being correct for each PSM, yielding a sensitive and flexible
+approach to report results in a comparable manner. Next,
+iProphet \citep{Shteynberg2011} was used to combine additional sources of evidence
+including multiple identifications of the same peptide across
+spectra, experiments, and charge and modification states,
+allowing a more precise integration of evidence supporting the
+identification of each unique peptide sequence. ProteinProphet
+\citep{Nesvizhskii2003} was then run to refine iProphet probabilities by adding the
+information at the protein level, like the number of sibling
+peptides within a protein and to compute final protein level
+probabilities. The prophet tools together combine multiple layers
+of evidence and refine the model iteratively to achieve an optimal
+analysis of the data. Finally MAYU \citep{Reiter2009} estimated FDR at different
+levels for each contributing experiment and for the entire dataset
+based on the PSMs to decoy proteins.
+
+This process followed the pipeline first implemented in the
+construction of the human plasma PeptideAtlas described in
+\citep{Farrah2011} and successfully applied to other builds such as the
+bovine milk and mammary gland PeptideAtlas \citep{Bislev2012}.
+
+
+\subsection*{Construction of the PeptideAtlas}
+
+The PeptideAtlas building process calculates the cumulative
+number of identified peptide and proteins across the experiments,
+ gathers information on protein to genome location
+mappings and estimates the peptides' Empirical Suitability
+Score and Predicted Suitability Score (ESS and PSS). The genomic
+mappings, since \textit{C. albicans} is not present in the Ensembl database,
+ which is the default PeptideAtlas uses to that purpose, were
+extracted from the generic feature file 
+C albicans SC5314 versionA21 s02m05r10 features.gff
+obtained from CGD.
+
+An overview of how the different experiments contribute,
+in terms of the number of identified spectra and peptides, to
+the atlas build is depicted in Fig. 1.
+
+Besides, and due to the particularly rich number of identifications
+ in experiments aimed at the detection of phosphorylated proteins
+  (experiments \#3 to \#13), a similarly processed
+version of the PeptideAtlas was created including in this case
+PTMProphet results which provide, alongside each modified
+residue, the probability that the post-translational modification
+is truly detected at that site.
+
+
+
+
+
+\section*{Results and discussion}
+\addcontentsline{toc}{section}{Results and discussion}
+
+\subsection*{Assessment of proteome coverage and functional enrichment analysis}
+
+The assembled proteomic datasets (Table 1) were subject to
+uniform data processing in order to build the \textit{C. albicans}
+PeptideAtlas. The PSM assignment and protein inference
+processes were conducted by means of the consistent and
+robust pipeline TPP. The prophet tools integrate various levels
+of information and report identification results in statistical
+terms so that spectrum assignments, peptide to protein
+mappings and protein groups are statistically validated, leading
+to an overall improved sensitivity for a defined FDR level. As a
+result the generated \textit{C. albicans} PeptideAtlas comprises 21,938
+peptides identified at a 0.24\% FDR allocated to 2562 proteins at a
+1.2\% FDR, that is, a coverage of 41.3\% of the 6209 \textit{C. albicans}
+translated ORF sequences from the fasta database used for
+searches. While the presented instance of the \textit{C. albicans}
+PeptideAtlas has reached unprecedented coverage, it does
+not represent a final representation of the respective proteome.
+Like other PeptideAtlas instances for other species, the
+\textit{C. albicans} atlas will be expanded upon submission and
+processing of new MS data generated in ongoing projects.
+
+To determine the biological functions encompassed by the
+covered part of the proteome in this PeptideAtlas a Gene
+Ontology (GO) annotation enrichment analysis was carried out
+for the list of all detected \textit{C. albicans} canonical proteins, 
+excluding decoy hits, using the biological process ontology and
+Genecodis software \citep{Tabas-Madrid2012}. Predictably, it generated a diverse array
+of clusters heterogeneously annotated, among which the
+largest in number of proteins are associated with the GO
+terms oxidation-reduction process, cellular response to drug, pathogenesis
+ and hyphal growth respectively (Fig. 2). The enrichment in
+some very generic GO terms such as oxidation-reduction process,
+cellular response to drug and translation supports the hypothesis
+that the diversity of experiments assembled to build the atlas
+provides a representative, unbiased subset of the \textit{C. albicans}
+proteome. In contrast, the more precise groups resulting from
+the analysis related to pathogenesis, hyphal growth and fungal-type
+cell wall organization are consistent with the large contribution to
+the atlas by the experiment aimed at identifying proteins from
+cells in hyphal form and by the profusion of these sort of
+annotations in the source database.
+
+As for the set of proteins present in the fasta database used
+for the searches that are not covered in the PeptideAtlas, they
+were subject to a similar analysis and were found to be enriched
+in annotations related to the transmembrane transport GO term
+(Fig. 2). These proteins are not easily observed by LC-MS/MS
+techniques as previously reported \citep{Gunaratne2013b}. Also, we observed
+enrichment in regulation of transcription, DNA-dependent in the
+undetected part of the proteome. Given the short life span and
+low abundance of many transcription factors it is plausible that
+they were not detected in the collected datasets and their under
+representation in proteomic data has also been reported in other
+proteomic studies and in PeptideAtlas instances from other
+species [20,38,39]\citep{Gunaratne2013b,Ding2013,Simicevic2013}. 
+The low number of protein groups significant-
+ly associated with GO annotations in the undiscovered set is
+understandably due to the fact that 2460 out of 3665 of the
+undetected protein sequences, roughly two thirds, correspond to
+unnamed ORFs, meaning, that little is known about their
+biological function.
+
+In addition to the groups of functionally characterized proteins,
+ this PeptideAtlas offers solid empirical evidence for the
+existence of 1564 proteins, showing a ProteinProphet probability
+score greater than 0.9, corresponding to uncharacterized ORFs in
+the CGD database (i.e., one-third of all 4566 uncharacterized ORFs).
+
+
+\subsection*{Proteins of interest. Case of use}
+
+From the clinical angle, the characterization of the C albicans
+proteome is focused on particular subproteomes, including
+cell surface constituents, and the set of proteins involved in
+the yeast-to-hypha transition. The cell wall, as the outermost
+cell structure represents the contact surface with host cells
+and therefore gathers many antigens, virulence factors and
+Pathogen Associated Molecular Patterns (PAMPs) \citep{Vialas2012}. Proteins
+involved in hyphal growth are also relevant in pathogenesis,
+in the sense that hyphae have been proven as key for
+invasiveness whereas the switch back to yeast form plays a
+role in dissemination \citep{Saville2003}.
+
+Within these groups, a selected set of proteins of interest
+present in the atlas, are the adhesins from the ALS family with
+a role in invasiveness Als2p and Als3p; those required for cell
+wall biogenesis and organization glycosidases Phr1p, Phr2p
+and Utr2p; mannosyltransferases Pmt1p, Pmt4 and Pmt6;
+those involved in the cell-wall glucan metabolism Mp65p and
+Ecm33p, and the hyphal cell wall constituents Hwp1, Csp37p
+and Rbt1p.
+
+Other relevant proteins in the atlas are the ones related to
+apoptosis, since those would make an ideal target for the
+treatment of invasive candidiasis. Among those, the atlas
+contains Mca1p, Bcy1p, Ras1p and three unnamed ORFs with
+orthologous in other species showing roles in the apoptotic
+process (orf19.713, orf19.967 and orf19.7365).
+
+For any particular proteins of interest, the PeptideAtlas
+web interface provides tools to explore the data. A user can
+browse through a set of protein and peptide-centric views as
+illustrated in Fig. 3 for the specific case of Bgl2p, a cell wall
+glucosyltransferase. Its corresponding observed peptides are
+highlighted in the protein sequence and sorted by the
+Empirical Suitability Score (ESS), which represents the proportion
+ of the number of samples in which the peptide is
+observed with regard to the number of samples in which the
+original protein is observed. This parameter, in combination
+with others, such as a number of protein mappings, genome
+location and amino acid composition will help the user to
+select candidate proteotypic peptides for a targeted proteomics
+ (SRM, Selected Reaction Monitoring) experiment.
+
+Concerning those cases where a selected protein of
+interest is not observed in the selected build, the PeptideAtlas
+also provides the Predicted Suitability Score (PSS), a value
+resulting from the combination of different observability
+prediction algorithms based upon physico-chemical properties
+ derived from the amino acid composition and previous
+training datasets as described in \citep{Mallick2007}.
+
+The build that assembles the phosphoprotein enrichment
+experiments may be of great potential interest to study biological
+processes such as signal transduction, since it encompasses a
+number of kinases and phosphatases. A total of 421 different
+phosphopeptides were detected and allocated to 210 phosphoproteins.
+ The largest number of phosphorylation sites occurs in S,
+410 phosphopeptides contain, at least, one phosphorylation in S;
+79 phosphopeptides contain, at least, one phosphorylation in T;
+and 10 phosphopeptides contain one phosphorylation in Y.
+
+
+\section*{Conclusions}
+\addcontentsline{toc}{section}{Conclusions}
+
+This C albicans PeptideAtlas build provides empirical identification
+ evidence for 21,938 unique peptides including 421
+phosphopeptides at a 0.24\% peptide-level FDR that account for a
+high-confidence set (as defined in [14]) of 2562 canonical proteins
+at a 1.2\% protein-level FDR representing thus a significant
+advance in the proteomic characterization of \textit{C. albicans}.
+Through the web interface, an important set of tools are
+made available to the scientific community, enabling a solid
+foundation to study different basic biological processes like
+dimorphism, signal transduction, apoptosis and the interaction
+with the human host. Furthermore, its value as a resource for
+proteotypic peptide selection is of great potential interest for
+future SRM experiments.
+The current version of the PeptideAtlas can be found
+at: 
+https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/buildDetails?atlas\_build\_id=323
+and the version including PTM results at:\newline{}
+https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/buildDetails?atlas\_build\_id=324
