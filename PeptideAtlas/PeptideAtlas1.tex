@@ -8,9 +8,12 @@
 \chapter*{A \textit{\textit{Candida albicans}} PeptideAtlas}
 \addcontentsline{toc}{chapter}{A \textit{\textit{Candida albicans}} PeptideAtlas}
 %\cabeceraEspecial{A \textit{\textit{Candida albicans}} PeptideAtlas}
+\addcontentsline{lof}{chapter}{A \textit{\textit{Candida albicans}} PeptideAtlas}
+\addcontentsline{lot}{chapter}{A \textit{\textit{Candida albicans}} PeptideAtlas}
+
 
 \renewcommand{\headrulewidth}{0pt}
-\cabeceraEspecial{A \textit{\textit{Candida albicans}} PeptideAtlas}
+\cabeceraEspecial{A \textit{Candida albicans} PeptideAtlas}
 
 \subsubsection*{Vital Vialas, Zhi Sun, Carla Ver\'onica Loureiro y Penha, Montserrat Carrascal, Joaqu\'in Abi\'an, Luc\'ia Monteoliva, Eric W. Deutsch, Ruedi Aebersold, Robert L. Moritz, Concha Gil}
 \subsubsection*{Journal of Proteomics 2014, 97, 62-68}
@@ -40,7 +43,7 @@
  proteotypic peptides for targeted proteomic experiments via Selected
  Reaction Monitoring (SRM) or SWATH-MS
 
-\section*{Biological Significance}
+\subsection*{Biological Significance}
 This \textit{C. albicans} PeptideAtlas resolves the previous absence of fungal 
 pathogens in the PeptideAtlas project. It represents the most extensive
 characterization of the proteome of this fungus that exists up to the 
@@ -51,6 +54,8 @@ apoptosis, dimorphism and adherence. It also provides a valuable
 resource to select candidate proteotypic peptides for future (SRM) 
 targeted proteomic experiments. 
 This article is part of a Special Issue entitled: Trends in Microbial Proteomics.
+
+\newpage
 
 
 \section*{Introduction}
@@ -188,7 +193,7 @@ instruments used for the mass spectrometry and the corresponding
 \end{tabular}
 \caption*{Table 1.List of experiments collected to construct the \textit{C. albicans} PeptideAtlas.}
 \end{table}
-\addcontentsline{lot}{table}{PeptideAtlas1. Table 1}
+\addcontentsline{lot}{table}{Table 1}
 
 
  
@@ -288,7 +293,25 @@ is truly detected at that site.
 
 The assembled proteomic datasets (Table 1) were subject to
 uniform data processing in order to build the \textit{C. albicans}
-PeptideAtlas. The PSM assignment and protein inference
+PeptideAtlas. 
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=0.80\textwidth]%
+				 {Imagenes/Vectorial/PeptideAtlas1_Figure1}
+\caption*{Figure 1. Histogram showing the cumulative number of distinct
+peptides in the \textit{C. albicans} PeptideAtlas. Each bar represents a
+different experiment that has contributed to the build. Bar
+width is proportional to the number of high confidence PSMs.
+Height of the blue section of the bar represents the number of
+distinct peptides in each experiment and total height of the bar
+(red plus blue sections) indicates the cumulative number of
+peptides. The order of experiments is the same as in Table 1.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{Figure 1}
+
+The PSM assignment and protein inference
 processes were conducted by means of the consistent and
 robust pipeline TPP. The prophet tools integrate various levels
 of information and report identification results in statistical
@@ -305,6 +328,9 @@ not represent a final representation of the respective proteome.
 Like other PeptideAtlas instances for other species, the
 \textit{C. albicans} atlas will be expanded upon submission and
 processing of new MS data generated in ongoing projects.
+
+
+
 
 To determine the biological functions encompassed by the
 covered part of the proteome in this PeptideAtlas a Gene
@@ -327,6 +353,21 @@ the atlas by the experiment aimed at identifying proteins from
 cells in hyphal form and by the profusion of these sort of
 annotations in the source database.
 
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=0.90\textwidth]%
+				 {Imagenes/Vectorial/PeptideAtlas1_Figure2}
+\caption*{Figure 2. Gene Ontology annotation enrichment analysis for 
+both the covered and undetected proteome subsets. All shown GO
+annotations correspond to the biological process ontology and 
+were found significant for a p-value cut-off below 0.01.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{Figure 2}
+
+
+
 As for the set of proteins present in the fasta database used
 for the searches that are not covered in the PeptideAtlas, they
 were subject to a similar analysis and were found to be enriched
@@ -339,13 +380,15 @@ low abundance of many transcription factors it is plausible that
 they were not detected in the collected datasets and their under
 representation in proteomic data has also been reported in other
 proteomic studies and in PeptideAtlas instances from other
-species [20,38,39]\citep{Gunaratne2013b,Ding2013,Simicevic2013}. 
+species \citep{Gunaratne2013b,Ding2013,Simicevic2013}. 
 The low number of protein groups significant-
 ly associated with GO annotations in the undiscovered set is
 understandably due to the fact that 2460 out of 3665 of the
 undetected protein sequences, roughly two thirds, correspond to
 unnamed ORFs, meaning, that little is known about their
 biological function.
+
+
 
 In addition to the groups of functionally characterized proteins,
  this PeptideAtlas offers solid empirical evidence for the
@@ -355,6 +398,7 @@ the CGD database (i.e., one-third of all 4566 uncharacterized ORFs).
 
 
 \subsection*{Proteins of interest. Case of use}
+
 
 From the clinical angle, the characterization of the C albicans
 proteome is focused on particular subproteomes, including
@@ -384,6 +428,7 @@ contains Mca1p, Bcy1p, Ras1p and three unnamed ORFs with
 orthologous in other species showing roles in the apoptotic
 process (orf19.713, orf19.967 and orf19.7365).
 
+
 For any particular proteins of interest, the PeptideAtlas
 web interface provides tools to explore the data. A user can
 browse through a set of protein and peptide-centric views as
@@ -399,6 +444,9 @@ location and amino acid composition will help the user to
 select candidate proteotypic peptides for a targeted proteomics
  (SRM, Selected Reaction Monitoring) experiment.
 
+
+
+
 Concerning those cases where a selected protein of
 interest is not observed in the selected build, the PeptideAtlas
 also provides the Predicted Suitability Score (PSS), a value
@@ -406,6 +454,22 @@ resulting from the combination of different observability
 prediction algorithms based upon physico-chemical properties
  derived from the amino acid composition and previous
 training datasets as described in \citep{Mallick2007}.
+
+ \begin{figure}[H]
+\begin{center}
+ \includegraphics[width=0.99\textwidth]%
+				 {Imagenes/Vectorial/PeptideAtlas1_Figure3}
+\caption*{Figure 3. Protein- and peptide-centric views for Bgl2p are
+depicted. Distinct observed peptides are ranked by the BestProb
+parameter (representing the PeptideProphet probability). 
+Of those, most probably, some will also be present in the following
+Predicted Highly Observable Peptides table were peptides are ranked 
+by PSS, a combination of different prediction algorithms. For
+all observed peptides, spectra from the different experiments are also available.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{Figure 3} 
+
 
 The build that assembles the phosphoprotein enrichment
 experiments may be of great potential interest to study biological
@@ -418,10 +482,14 @@ phosphopeptides were detected and allocated to 210 phosphoproteins.
 and 10 phosphopeptides contain one phosphorylation in Y.
 
 
+
+
+
+
 \section*{Conclusions}
 \addcontentsline{toc}{section}{Conclusions}
 
-This C albicans PeptideAtlas build provides empirical identification
+This \textit{C. albicans} PeptideAtlas build provides empirical identification
  evidence for 21,938 unique peptides including 421
 phosphopeptides at a 0.24\% peptide-level FDR that account for a
 high-confidence set (as defined in [14]) of 2562 canonical proteins

@@ -9,6 +9,9 @@
 %\addcontentsline{toc}{chapter}{Introducción}
 %\cabeceraEspecial{Introducción}
 
+\addcontentsline{lof}{chapter}{Introducción}
+
+
 
 \begin{FraseCelebre}
 \begin{Frase}
@@ -194,8 +197,10 @@ de moléculas (ionizadas). Consta básicamente de cuatro partes o secciones:
 
 \bigskip{}
 
-\figura{Vectorial/esquema_espectrometro_masas}{width=.99\textwidth}{fig:esquema_espectrometro_masas}%
-{Esquema de un espectrómetro de masas}
+\figuraEx{Vectorial/esquema_espectrometro_masas}{width=.99\textwidth}{fig:esquema_espectrometro_masas}%
+{Esquema de un espectrómetro de masas. En ocasiones el caso de ESI, el sistema de entrada y la fuente 
+de ionización forman parte de un único componente. Todos los componentes se encuentran
+en el interior de un sistema de vacío }{Esquema de un espectrómetro de masas}
 
 
 
@@ -377,8 +382,9 @@ es entonces deconvolucionada mediante la transfomada de Fourier que
 
 \end{itemize}
 
-\figura{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
-{Analizadores de masas tipo Cuadrupolo, Trampa Iónica Tridimensional (QIT) y Orbitrap}
+\figuraEx{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
+{Algunos de los analizadores de masas más comunes son los de tipo
+ Cuadrupolo (a), Orbitrap (b) y Trampa Iónica Tridimensional (c)}{Analizadores de masas}
 
 
 
@@ -477,8 +483,11 @@ como Huella Peptídica, descrita en la sección \ref{cap1:subsec:PMF}.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece es, por tanto, limitado. 
 
-\figura{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
-{Espectrometría de masas en Tandem. MS/MS}
+\figuraEx{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
+{En la espectrometría de masas en Tándem se seleccionan péptidos%
+precursores, generalmente los de mayor intensidad en el espectro MS\textsuperscript{1}, para%
+ser fragmentados y generar el espectro MS/MS o MS\textsuperscript{2}}%
+{Espectrometría de masas en Tándem. MS/MS}
 
 En la Espectrometría de Masas en Tándem, \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
@@ -814,8 +823,13 @@ fragmentadas en péptidos a partir de los cuales se infiere finalmente
 la proteína original. Implica varios pasos descritos en las siguientes 
 secciones.
 
-\figura{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
-{Etapas en un experimento de Proteómica \textit{Shotgun}}
+\figuraEx{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+{Etapas en un experimento de Proteómica \textit{Shotgun}. En primer lugar
+la muestra de proteínas es digerida en péptidos. A continuación éstos
+son separados mediante cromatografía. A medida que eluyen, los péptidos
+separados, son introducidos en el espectrómetro de masas que genera
+un espectro de fragmentación MS/MS. Por último el motor de búsqueda
+compara los espectros empíricos con espectros teóricos asignando una puntuación.}{Etapas en un experimento de Proteómica \textit{Shotgun}}
 
 
 %-------------------------------------------------------------------
@@ -957,7 +971,11 @@ espectros MS/MS adquiridos previamente y ya asignados a péptidos,
 que son comparados directamente con los espectros empíricos adquiridos.
 
 
-\figura{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
+\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.75\textwidth}{fig:spectrum_interpretation_2}%
+{Interpretación automática de espectros MS/MS. Gracias a la información
+disponible sobre la presencia de los diferentes tipos de iones
+se puede elaborar una lista de péptidos candidatos que han generado
+el espectro empírico y para cada uno de ellos comparar y evaluar su similitud.}
 {Interpretación automática de espectros MS/MS}
 
 
@@ -1170,9 +1188,11 @@ espectro teórico para cada uno. A continuación
 se establece el grado de similitud de cada espectro adquirido con los espectros teóricos
 de cada uno de los péptidos candidatos, es decir, se evalúa la calidad de cada PSM.
 
-\figura{Vectorial/spectrum_identification}{width=.99\textwidth}{fig:spectrum_identification}%
-{Estrategia básica de identificación. Selección de péptidos candidatos. 
-Correlación espectro MS/MS - secuencia aminoacídica}
+\figuraEx{Vectorial/spectrum_identification}{width=.99\textwidth}{fig:spectrum_identification}%
+{Estrategia básica de identificación. Para el conjunto seleccionado de péptidos candidatos
+se establece una correlación entre el espectro MS/MS empírico y el espectro generado teóricamente
+por cada uno de los candidatos.}
+{Estrategia básica de identificación}
 
 
 Los motores de búsqueda realizan esta comparación de diferentes maneras,
@@ -1523,7 +1543,11 @@ Con estos valores se pueden definir los conceptos de
 
 
 \end{itemize}
-\figura{Vectorial/tabla_contingencia_estadistica_basica}{width=.99\textwidth}{fig:tabla_contingencia_estadistica_basica}%
+\figuraEx{Vectorial/tabla_contingencia_estadistica_basica}{width=.99\textwidth}{fig:tabla_contingencia_estadistica_basica}%
+{Tabla de contingencia. Contraste de hipótesis. La estrategia general
+consiste en realizar tests que permitan rechazar la hipótesis nula y por
+tanto tener un criterio estadístico para aceptar la hipótesis alternativa,
+es decir, afirmar que la asignación es correcta.}
 {Tabla de contingencia. Contraste de hipótesis}
 
 
@@ -1568,7 +1592,11 @@ igual o superior a la del mejor péptido candidato.
 X!Tandem calcula un \emph{e-valor} obtenido empíricamente a partir de la distribución
 de espectro individual para cada PSM (Figura~\ref{fig:evalue_estimation})
 
-\figura{Vectorial/evalue_estimation}{width=.95\textwidth}{fig:evalue_estimation}%
+\figuraEx{Vectorial/evalue_estimation}{width=.95\textwidth}{fig:evalue_estimation}%
+{Para estimar el e-valor, X!Tandem  convierte a escala logarítmica la 
+distribución de espectro individual utilizando su puntuación (\textit{hyperscore}) y 
+a continuación, interpola, en la recta ajustada, (que representa el número de asignaciones
+aleatorias esperadas) el valor que correspondería a la mejor puntuación obtenida.}
 {Estimación del e-valor}
 
 
@@ -1612,7 +1640,13 @@ Así para un \ac{PSM} con \mbox{\emph{p-valor} = 0,05} en un experimento en el qu
 otros 10.000 \ac{PSM}, el \mbox{\emph{p-valor}} original habría de reajustarse a
 0,05/10.000 = 5·10\textsuperscript{-6}.
 
-\figura{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
+\figuraEx{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
+{La distribución de espectro individual es la distribución de las puntuaciones
+de todos los péptidos candidatos comparados con el espectro empírico. La
+distribución promedio, es la distribución de las puntuaciones de los mejores candidatos 
+para el total de todos los espectros empíricos. Ésta se puede considerar una población
+mixta compuesta por una mezcla de subpoblación de asignaciones incorrectas y otra subpoblación
+de asignaciones correctas.}
 {Distribuciones de Espectro Individual y Promedio}
 
 Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
@@ -1661,7 +1695,12 @@ use esta base de datos concatenada (\emph{target-decoy}) del doble de tamaño que
 base de datos de secuencias \emph{target} y otra a continuación utilizando
 la de secuencias \emph{señuelo}.
 
-\figura{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
+\figuraEx{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
+{Una estrategia comúnmente empleada en la construcción de bases de datos
+señuelo consiste en barajar la secuencia aminoacídica, péptido a péptido 
+(para así conservar el tamaño medio de los péptidos), de cada una de las 
+proteínas en la base de datos original, para obtener así una base de datos
+señuelo, y a continuación concatenarlas.}
 {Construcción de una base de datos señuelo}
 
 %VER Target-Decoy Search Strategy for Mass Spectrometry-Based Proteomics Elias, Gygi 2010 M Mol Bio
@@ -1952,7 +1991,12 @@ adecuadas para definir como \textit{identificada} una proteína o lista de proteí
 %\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
 
 
-\figura{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+\figuraEx{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+{Agrupamiento no aleatorio de péptidos en proteínas. Los péptidos
+correctamente asignados generalmente se agrupan formando parte de una proteína,
+sin embargo esto no ocurre para las asignaciones incorrectas, cada PSM incorrecto 
+corresponde a una proteína diferente y se traduce por tanto en una identificación de proteína errónea.
+(1 PSM incorrecto, 1 proteína incorrecta). }
 {Agrupamiento no aleatorio de péptidos en proteínas}
 
 Un principio básico que ha sido muy utilizado es el de la llamada navaja
@@ -2146,12 +2190,14 @@ cromatográfica permite reconstruir un pe
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Repositorios públicos de Proteómica a gran escala y dirigida}
+\section{Repositorios públicos de Proteómica online}
 %\addcontentsline{toc}{section}{Repositorios publicos de Proteómica shotgun y dirigida}
-\label{cap1:sec:Repositorios publicos de Proteómica shotgun y dirigida}
+\label{cap1:sec:Repositorios publicos de Proteomica online}
 
 Los resultados generados en experimentos de Proteómica han de ser 
-convenientemente mostrados y compartidos con la comunidad científica
+convenientemente mostrados y compartidos con la comunidad científica.
+Algunos de los repositorios más populares que almacenan y permiten visualzar
+resultados de experimentos de Proteómica son PRIDE y PeptideAtlas.
 
 \subsection{PRIDE}
 \label{PRIDE}

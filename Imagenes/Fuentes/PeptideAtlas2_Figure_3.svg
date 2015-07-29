@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="62.063549mm"
+   height="79.425377mm"
+   viewBox="0 0 219.91021 281.4285"
+   id="svg4488"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="PeptideAtlas2_Figure_3.svg"
+   inkscape:export-filename="/home/vital/CandidaPeptideAtlas2015/PaperCandidaPeptideAtlas2/Figures/Figura3_alt.png"
+   inkscape:export-xdpi="248"
+   inkscape:export-ydpi="248">
+  <defs
+     id="defs4490" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="-243.04542"
+     inkscape:cy="153.01055"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1680"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4493">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-372.90203,-168.79081)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.1170001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4313"
+       width="218.3474"
+       height="279.4285"
+       x="373.68344"
+       y="169.79082" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       id="path4207"
+       sodipodi:cx="482.85715"
+       sodipodi:cy="280.45068"
+       sodipodi:rx="101.53967"
+       sodipodi:ry="101.53667"
+       d="m 410.81566,352.00504 a 101.53967,101.53667 0 0 1 -3.17095,-139.76813 101.53967,101.53667 0 0 1 139.41727,-10.44802 101.53967,101.53667 0 0 1 17.69733,138.67952 l -81.90216,-60.01773 z"
+       sodipodi:start="2.359572"
+       sodipodi:end="0.63241459" />
+    <path
+       sodipodi:end="2.3602221"
+       sodipodi:start="2.1912443"
+       d="M 423.82201,363.06275 A 101.53967,101.53667 0 0 1 410.76916,351.9582 l 72.08799,-71.50752 z"
+       sodipodi:ry="101.53667"
+       sodipodi:rx="101.53967"
+       sodipodi:cy="280.45068"
+       sodipodi:cx="482.85715"
+       id="path4209"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#008000;fill-opacity:1;stroke:none"
+       id="path4211"
+       sodipodi:cx="482.85715"
+       sodipodi:cy="280.45068"
+       sodipodi:rx="101.53967"
+       sodipodi:ry="101.53667"
+       d="M 564.7594,340.46829 A 101.53967,101.53667 0 0 1 423.76321,363.0207 l 59.09394,-82.57002 z"
+       sodipodi:start="0.6324131"
+       sodipodi:end="2.1919563" />
+    <path
+       sodipodi:end="5.2908609"
+       sodipodi:start="2.3605693"
+       d="M 413.37726,348.82355 A 97.358498,97.355675 0 0 1 407.07033,218.75639 97.358498,97.355675 0 0 1 535.75091,198.7687 l -53.23028,81.51582 z"
+       sodipodi:ry="97.355675"
+       sodipodi:rx="97.358498"
+       sodipodi:cy="280.28452"
+       sodipodi:cx="482.52063"
+       id="path4221"
+       style="fill:none;fill-opacity:1;stroke:#ffb380;stroke-width:2.1170001;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.95433792"
+       sodipodi:type="arc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4223"
+       y="243.96344"
+       x="396.59787"
+       style="font-style:normal;font-weight:bold;font-size:7.18806314px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#f4ab85;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       transform="scale(1.0000147,0.9999853)"><tspan
+         y="243.96344"
+         x="396.59787"
+         id="tspan4225"
+         sodipodi:role="line">Share of uncharacterized</tspan><tspan
+         id="tspan4227"
+         y="252.94852"
+         x="396.59787"
+         sodipodi:role="line">ORFs in CGD with high</tspan><tspan
+         id="tspan4229"
+         y="261.93359"
+         x="396.59787"
+         sodipodi:role="line">confident identification </tspan><tspan
+         id="tspan4231"
+         y="270.91867"
+         x="396.59787"
+         sodipodi:role="line"
+         style="word-spacing:-1.83685279px;fill:#f4ab85;fill-opacity:1">in PeptideAtlas: 63%</tspan></text>
+    <text
+       transform="scale(1.0000147,0.9999853)"
+       sodipodi:linespacing="125%"
+       id="text4233"
+       y="353.05716"
+       x="413.49609"
+       style="font-style:normal;font-weight:bold;font-size:6.24529505px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-size:9.75330257px;letter-spacing:-0.47658876px;fill:#b3b3b3"
+         y="353.05716"
+         x="413.49609"
+         id="tspan4235"
+         sodipodi:role="line">Dubious</tspan></text>
+    <path
+       sodipodi:end="1.6888627"
+       sodipodi:start="0.63522699"
+       d="m 561.45977,338.61303 a 98.16729,98.073463 0 0 1 -90.58183,39.19781 l 11.56334,-97.3907 z"
+       sodipodi:ry="98.073463"
+       sodipodi:rx="98.16729"
+       sodipodi:cy="280.42014"
+       sodipodi:cx="482.44128"
+       id="path4239"
+       style="fill:none;fill-opacity:1;stroke:#ffb380;stroke-width:2.16599989;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc" />
+    <text
+       transform="scale(1.0000147,0.9999853)"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:bold;font-size:6.53260183px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none"
+       x="462.46725"
+       y="224.77043"
+       id="text4213"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:10.20199013px;fill:#cccccc"
+         sodipodi:role="line"
+         id="tspan4215"
+         x="462.46725"
+         y="224.77043">Uncharacterized</tspan></text>
+    <text
+       transform="scale(1.0000147,0.9999853)"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:bold;font-size:6.03840685px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#ffb380;fill-opacity:1;stroke:none"
+       x="478.2019"
+       y="327.85608"
+       id="text4241"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4243"
+         x="478.2019"
+         y="327.85608"
+         style="letter-spacing:-0.11463708px;word-spacing:-0.22927417px;fill:#ffb380;fill-opacity:1"
+         dx="-0.22927417">Share of verified</tspan><tspan
+         sodipodi:role="line"
+         x="478.2019"
+         y="335.4581"
+         id="tspan4245"
+         style="letter-spacing:-0.11463708px;word-spacing:-0.22927417px;fill:#ffb380;fill-opacity:1">ORFs in CGD with high</tspan><tspan
+         sodipodi:role="line"
+         x="478.2019"
+         y="343.06015"
+         id="tspan4247"
+         style="letter-spacing:-0.11463708px;word-spacing:-0.22927417px;fill:#ffb380;fill-opacity:1">confident identification </tspan><tspan
+         style="letter-spacing:-0.11463708px;word-spacing:-0.22927417px;fill:#ffb380;fill-opacity:1"
+         sodipodi:role="line"
+         x="478.2019"
+         y="350.66217"
+         id="tspan4249">in PeptideAtlas: 76%</tspan></text>
+    <rect
+       y="419.46466"
+       x="385.78552"
+       height="8.3449326"
+       width="8.3449326"
+       id="rect4255"
+       style="fill:#0000ff;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:bold;font-size:7.50588131px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="398.85245"
+       y="425.88925"
+       id="text4257"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4259"
+         x="398.85245"
+         y="425.88925"
+         style="letter-spacing:-0.19857869px;word-spacing:-0.4964467px">4528 ORFs, 72,81%</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4265"
+       y="425.88925"
+       x="497.91428"
+       style="font-style:normal;font-weight:bold;font-size:7.50588131px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="425.88925"
+         x="497.91428"
+         id="tspan4267"
+         sodipodi:role="line"
+         style="letter-spacing:-0.19857869px;word-spacing:-0.4964467px">1542 ORFs, 24,75%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:bold;font-size:7.50588131px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="448.69351"
+       y="441.6861"
+       id="text4273"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4275"
+         x="448.69351"
+         y="441.6861"
+         style="letter-spacing:-0.19857869px;word-spacing:-0.4964467px">152 ORFs, 2,44%</tspan></text>
+    <text
+       sodipodi:linespacing="95.999998%"
+       id="text4277"
+       y="397.79489"
+       x="384.05826"
+       style="font-style:normal;font-weight:normal;font-size:14.04458427px;line-height:95.99999785%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="397.79489"
+         x="384.05826"
+         id="tspan4279"
+         sodipodi:role="line">Protein coding genes in </tspan><tspan
+         id="tspan4281"
+         y="411.37421"
+         x="384.05826"
+         sodipodi:role="line">Candida Genome Database</tspan></text>
+    <rect
+       style="fill:#008000;fill-opacity:1;stroke:none"
+       id="rect4309"
+       width="8.3449326"
+       height="8.3449326"
+       x="485.86444"
+       y="419.46466" />
+    <rect
+       y="435.26151"
+       x="436.68646"
+       height="8.3449326"
+       width="8.3449326"
+       id="rect4311"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <text
+       transform="scale(1.0000147,0.9999853)"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:bold;font-size:7.15247631px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none"
+       x="445.21451"
+       y="368.26437"
+       id="text4217"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:11.17005062px;letter-spacing:0.69502544px;word-spacing:0.00992893px;fill:#cccccc"
+         sodipodi:role="line"
+         id="tspan4219"
+         x="445.21451"
+         y="368.26437">Verified</tspan></text>
+  </g>
+</svg>

@@ -8,6 +8,9 @@
 \chapter*{Proteopathogen2: A database and web tool to store and display  proteomics identification results in the mzIdentML standard}
 \addcontentsline{toc}{chapter}{Proteopathogen2: A database and web tool to store and display  proteomics identification results in the mzIdentML standard}
 %\fancyhf{} % clear all header and footer fields
+\addcontentsline{lof}{chapter}{Proteopathogen2: A database and web tool to store and display  proteomics identification results in the mzIdentML standard}
+\addcontentsline{lot}{chapter}{Proteopathogen2: A database and web tool to store and display  proteomics identification results in the mzIdentML standard}
+
 
 
 \renewcommand{\headrulewidth}{0pt}
@@ -148,7 +151,7 @@ Type of dataset & Number of \newline{} MS output files & Instrument & PeptideAtl
 \end{tabular}
 \caption*{Table 1. Summary of experiments, MS output files, instrument and PeptideAtlas datasets.}
 \end{table}
-\addcontentsline{lot}{table}{Proteopathogen2. Table 1}
+\addcontentsline{lot}{table}{Table 1}
 
 
 Consistently with the PeptideAtlas project principles, the
@@ -211,7 +214,7 @@ Figure shows the one-to-many relationship between the
 <SpectrumIdentificationItem> elements.}
 \end{center}
 \end{figure}
-\addcontentsline{lof}{figure}{Proteopathogen2. Figure 1}
+\addcontentsline{lof}{figure}{Figure 1}
 
 
 Precisely, a stringent FDR cut-off at the PSM level set at
@@ -234,9 +237,23 @@ the list of every peptide to spectrum assignment; or the protein detection
 showing the list of peptides grouped into the inferred original
 proteins (Fig. 2).
 
-\begin{figure}[t]
+
+Notably, the information Proteopathogen displays will
+depend on how complete the original mzIdentML files are.
+For instance, for files including the optional <Fragmentation>
+element under <SpectrumIdentificationItem>, Proteopathogen
+will display an annotated and interactive MS/MS spectrum. In
+addition, the optional <cvParam> and <userParam> elements,
+that describe and annotate with controlled vocabularies
+and user-defined information respectively different elements
+throughout the file, might be more or less profuse depending
+on the software that created them.
+
+
+
+\begin{figure}[H]
 \begin{center}
- \includegraphics[width=0.80\textwidth]%
+ \includegraphics[width=0.99\textwidth]%
 				 {Imagenes/Vectorial/proteopathogen2_figure2}
 \caption*{Figure 2. Information displayed in the web interface. 
 Proteopathogen displays two main sets of information for the selected
@@ -249,18 +266,9 @@ the complete list of the inferred proteins for the selected mzIdentML
 file with links to Candida Genome Database (CGD}
 \end{center}
 \end{figure}
-\addcontentsline{lof}{figure}{Proteopathogen2. Figure 2}
+\addcontentsline{lof}{figure}{Figure 2}
 
-Notably, the information Proteopathogen displays will
-depend on how complete the original mzIdentML files are.
-For instance, for files including the optional <Fragmentation>
-element under <SpectrumIdentificationItem>, Proteopathogen
-will display an annotated and interactive MS/MS spectrum. In
-addition, the optional <cvParam> and <userParam> elements,
-that describe and annotate with controlled vocabularies
-and user-defined information respectively different elements
-throughout the file, might be more or less profuse depending
-on the software that created them.
+
 
 In addition to browsing through the contents of the stored
 mzIdentML files, Proteopathogen implements a query system
