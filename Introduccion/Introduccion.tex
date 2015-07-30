@@ -1866,8 +1866,16 @@ una distribución \textit{Normal}($\mu$, $\sigma$), y las asignaciones incorrecta
 una distribución \textit{Gamma}($\alpha$, $\beta$, $\gamma$). 
 (Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
 
-\figura{Vectorial/PeptideProphet_fit_2_a_dataset_of_D_scores}{width=1\textwidth}{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}%
-{Estimación de PeptideProphet de las distribuciones de PSM incorrectos y correctos}
+\figuraEx{Vectorial/PeptideProphet_fit_2_a_dataset_of_D_scores}{width=1\textwidth}{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}%
+{PeptideProphet considera la distribución promedio de PSMs como una mezcla
+de una subpoblación de PSM correctos (distribución Normal, en verde) 
+y otra de PSM incorrectos (distribución Gamma, en rojo). Una vez inferidas
+estas distribuciones mediante el algoritmo \textit{EM}, la probabilidad
+de un PSM en particular puede calcularse mediante el teorema de Bayes
+como la probabilidad de tener una puntuación siendo correcto con respecto
+a la probabilidad de tener esa puntuación. }
+{Modelo mixto de probabilidad. PeptideProphet}
+
 
 
 Pero además de la puntuación discriminante hay otros parámetros que 
@@ -2262,8 +2270,10 @@ estándar para toda la comunidad
 En una clasificacion más precisa, el software puede clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
 
-\figura{Vectorial/formats}{width=.80\textwidth}{fig:formats_in_proteomics}%
-{Visión general de formatos comúmente usados en cada etapa de un experimento de Proteómica}
+\figuraEx{Vectorial/formats}{width=.80\textwidth}{fig:formats_in_proteomics}%
+{Visión general de formatos comúmente usados en cada etapa de un experimento de Proteómica.
+Los formatos adoptados como estándar por HUPO-PSI contienen el símbolo $\Psi$}
+{Formatos de archivos en Proteómica}
 
 
 \begin{itemize}
@@ -2317,7 +2327,7 @@ proporcionadas por los fabricantes restringida únicamente al sistema operativo
 MS Windows frenó el desarrollo de nuevas herramientas de lectura y 
 manipulación de este tipo de archivos.
 En ese contexto, aparecieron los primeros formatos de texto (XML) para codificar
-toda la información de salida de MS, mzXML \citep{Pedrioli2006} y mzData \citep{}
+toda la información de salida de MS, mzXML \citep{Pedrioli2004} y mzData 
 que posteriormente fueron unificados en el estándar HUPO-PSI mzML \citep{Deutsch2010d}.
 
 Por último, una solución intermedia, ideada previamente a la aparición
@@ -2450,10 +2460,12 @@ y también estudios sobre la resistencia a antifúngicos \citep{Hoehamer2010}.
 
 
 
-\figura{Vectorial/candida_vs_macrophage}{width=.89\textwidth}{fig:candida_vs_macrophage}%
-{Status de equilibrio entre las células de \textit{Candida albicans}
- y células del sistema inmune en las mucosas}
-
+\figuraEx{Vectorial/candida_vs_macrophage}{width=.89\textwidth}{fig:candida_vs_macrophage}%
+{La población comensal de células de \textit{Candida albicans}
+ y células del sistema inmune como macrófagos, presentes en las mucosas
+ de los tractos gastrointestinal y genito-urinario se encuentran en un 
+ \textit{status} de equilibrio en condiciones normales.}
+{Equilibrio entre \textit{Candida albicans} y células del sistema inmune}
 
 
 
