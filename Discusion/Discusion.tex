@@ -34,6 +34,7 @@ En este contexto las bases de datos y estándares desarrollados en Proteómica
 tienen un papel esencial para analizar, compartir y difundir resultados.
 Las herramientas aquí descritas contribuyen a estos objetivos.
 
+\pagebreak{}
 
 \phantomsection 
 \section*{Desarrollo de una aplicación web para datos de proteómica a gran escala de \textit{Candida albicans}}
@@ -49,7 +50,8 @@ de \mbox{\textit{Candida albicans}}.
 
 Durante algunos años Proteopathogen ha recogido datos experimentales de
 experimentos de \textit{Candida albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
-y otras especies como Aspergillus fumigatus \citep{}
+y otras especies de hongos patógenos como \textit{Aspergillus fumigatus} \citep{} y
+también del hospedador (\textit{Mus musculus}),
 facilitando la visualización y el análisis de los resultados a los usuarios
 del laboratorio, pero también su examen por parte de los revisores de las
 revistas científicas del campo de la Proteómica.
@@ -123,7 +125,13 @@ explorar otro tipo de implementaciones de lectura de archivos XML (\textit{parse
 que permitan leer la información contenida en archivos de gran tamaño.
 
 
-\section*{Desarrollo de un PeptideAtlas de Candida albicans}
+
+
+\pagebreak
+
+
+\phantomsection{}
+\section*{Desarrollo de un PeptideAtlas de \textit{Candida albicans}}
 \addcontentsline{toc}{section}{Desarrollo de un PeptideAtlas Candida albicans}
 
 
@@ -155,14 +163,14 @@ experimentales, bien específicamente destinados a la ampliación de la
 cobertura del proteoma mediante fraccionamientos extensivos a varios niveles:
 subcelular (centrifugaciones), proteína (SDS-PAGE) y péptido (OFF-GEL);
 o bien procedentes de trabajos destinados al estudio de proteínas de la
-pared celular \citep{} o secretadas mediante vesículas \citep{Gil-Bona2014}.
+pared celular \citep{Gil-Bona2015} o secretadas mediante vesículas \citep{Gil-Bona2015a}.
 Además en ese tiempo apareció un nuevo ensamblaje de la secuencia de
  \mbox{\textit{C. albicans}} que por primera vez incluía secuencias específicas 
 de alelo. \citep{Muzzey2013}.
 En este contexto, con los nuevos sets de datos y la nueva información de 
 secuencia disponible, el PeptideAtlas original ha sido reanalizado, 
 en conjunto con los sets de datos que formaban la primera versión, y empleando
-tres motores de búsqueda (Sequest, OMSSA y Comet) para finalmente obtener
+tres motores de búsqueda (SEQUEST, OMSSA y Comet) para finalmente obtener
 una cobertura de dos terceras partes del proteoma predicho de \textit{C.albicans}.
 Más de 71.000 péptidos asignados a 4174 secuencias de proteínas (para un 
 FDR de 0.10\% a nivel de PSM) suponen
@@ -177,6 +185,26 @@ predicho en \ac{CGD}, el PeptideAtlas de \textit{C. albicans} supone una
 novedad y un gran valor añadido al proporcionar evidencia empírica sólida de 
 la existencia de proteínas para dos terceras partes de los genes que en
 CGD se denominan \textit{uncharacterized} por carecer de un producto proteico caracterizado.
+
+Además este PeptideAtlas es el gran primer repositorio \textit{online} 
+de Proteómica de \textit{C. albicans} que permite mantener la 
+trazabilidad desde la identificación de péptidos y proteínas
+hasta el alelo orignal.
+
+Una aplicación de gran utilidad que permite la interfaz web consiste en
+facilitar la selección de péptidos proteotípicos candidatos para ensayos de Proteómica
+dirigida (SRM/MRM). Para ello, en la web se sugieren péptidos con una
+única localización genómica, lo que permite asegurar que sean exclusivos
+de una sola proteína y no compartidos. Además, los péptidos se ordenan por un índice
+de observabilidad que indica la probabilidad de que una proteína sea
+detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}.
+
+
+
+
+
+%ademas lo de las secuencias de alelo
+%y ademas lo de selecionar candidatos proteotypic para srm
 
 Por último, y para favorecer la comunicación e interconexión entre ambos
 recursos, CGD y PeptideAtlas, se ha contactado con los desarrolladores 

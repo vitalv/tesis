@@ -74,7 +74,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{39}}
+\GlossTeXEntry{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PSM}{PSM}{\emph{Peptide-Spectrum Match}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
@@ -88,7 +88,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{18}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SCX}{SCX}{\emph{Strong Cation Exchange}}{}{acr}{a}{\GlossTeXPage{n}{18}}
+\GlossTeXEntry{SCX}{SCX}{\emph{Strong Cation Exchange}}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
 \GlossTeXEntry{SDSPAGE}{SDS-PAGE }{\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
@@ -98,5 +98,5 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{25}}
+\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{26}}
 \GlossTeXNull{0}
