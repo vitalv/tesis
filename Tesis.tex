@@ -36,7 +36,8 @@
 
 
 %\documentclass[11pt,a4paper,twoside]{book}
-\documentclass[9pt,b5paper,twoside]{book}
+
+\documentclass[8pt,b5paper,twoside]{book}
 
 %
 % Definimos  el   comando  \compilaCapitulo,  que   luego  se  utiliza
@@ -81,7 +82,11 @@ constantes,guionado,Cascaras/bibliografia,config%
 %            Preámbulo del documento. Configuraciones varias
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+%\usepackage{relsize}%para poder reducir un poco 9pt. 8pt es demasiado pequeño
+
 \usepackage{extsizes} %para poder poner 9pt en book
+
+%\usepackage[document]{ragged2e} %para right align \begin{flushright} (titulos partes)
 
 
 % Define  el  tipo  de  compilación que  estamos  haciendo.   Contiene
@@ -177,6 +182,9 @@ constantes,guionado,Cascaras/bibliografia,config%
 %                        Documento
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \begin{document}
+
+%\relsize{-0.9}
+
 
 % Incluimos el  fichero de definición de guionado  de algunas palabras
 % que LaTeX no ha dividido como debería
