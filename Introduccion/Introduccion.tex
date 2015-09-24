@@ -1224,25 +1224,27 @@ En primer lugar se crea un espectro empírico procesado (espectro X) en el que lo
 intensidad son elimnados y el resto de valores \mz son redondeados al valor
 entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
 usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr}
-es calculado como una función de correlación \emph{Corr(t)} (el producto 
+es calculado usando la función de correlación \emph{Corr(t)} (el producto 
 entre los vectores X e Y, con Y desplazado \textit{t} unidades de masa 
-respecto a X a lo largo del eje \mz )
+respecto a X a lo largo del eje \mz ) (a)
 \begin{equation}
 \label{eq:sequest_corr}
 \begin{split}
-Corr(t) = \sum_{i} \ x_{i} \ y_{i+t}\\
-Xcorr = Corr(0)\ - < Corr(t) >_{i}
+a)\ Corr(t) = \sum_{i} \ x_{i} \ y_{i+t}\\
+b)\ Xcorr = Corr(0)\ - < Corr(t) >_{t}
 \end{split}
 \end{equation}
+donde x\textsubscript{i} e y\textsubscript{i} representan los picos del espectro procesado
+y el espectro teórico respectivamente.
 Básicamente, \emph{Xcorr} contabiliza el número de fragmentos coincidentes
 entre el espectro empírico (procesado) y el espectro teórico permitiendo
 pequeños desplazamientos. %Además la puntuación se corrige sustrayendo el valor 
 %medio de \textit{Corr(t)}, que representa una estimación del número de
 %coincidencias aleatorias.
-Además la puntuación se corrige teniendo en cuenta una estimación del número
-de coincidencias entre picos aleatorias.
+Además la puntuación se corrige sustrayendo el valor medio de \emph{Corr(t)} en torno a t = 0, que
+representa una estimación de las coincidencias aleatorias entre picos (b).
 SEQUEST también proporciona un valor de puntuación adicional, 
-$\Delta$\emph{Cn} , que indica la diferencia entre el valor \emph{Xcorr}
+$\Delta$\emph{Cn}, que indica la diferencia entre el valor \emph{Xcorr}
 del mejor candidato y el del segundo mejor candidato.
 Ambos valores son por tanto indicativos de la calidad de cada \ac{PSM} que será
 mejor cuanto más altas sean ambas puntuaciones.
@@ -1291,7 +1293,7 @@ Comet con una manipulación previa de las intensidades de los iones de
 los espectros teóricos candidatos.
 
 %OMSSA%%%
-El motor de búsqueda \ac{OMSSA} \citep{Geer}, al igual que X!Tandem, es 
+El motor de búsqueda \ac{OMSSA} \citep{Geer2004}, al igual que X!Tandem, es 
 de código abierto. %Mirar libro MS data analysis in proteomics
 En OMSSA, la puntuación es un reflejo del número de coincidencias entre
 iones del espectro experimental y el teórico sin tener en cuenta si los
@@ -1391,11 +1393,11 @@ de masa permitida) y determinar así cual es la mejor coincidencia.
 Al igual que en el caso de los motores de búsqueda basados en secuencia, 
 existe un tipo específico de \textit{software} que permite crear 
 bibliotecas de espectros y realizar búsquedas usándolas como SpectraST
-\citep{Lam2007}, Bibliospec \citep{} o X!Hunter, \citep{}
+\citep{Lam2007}.
 
 Este tipo de aproximación supera a la búsqueda basada en secuencia en 
 términos de velocidad, tasa de error y sensibilidad en la identificación
-de péptidos (Lam2007)
+de péptidos \citep{Lam2007}
 Además, a los resultados obtenidos también se les puede aplicar los 
 modelos de validación estadística desarrollados para las búsquedas 
 basadas en secuencia.
@@ -1699,11 +1701,12 @@ recrear una hipótesis nula. Se puede tener la certeza de que los resultados
 de identificaciones correspondientes a secuencias \emph{señuelo}, claramente 
 etiquetadas en el fichero fasta, son identificaciones incorrectas.
 A continuación, para hacer las búsquedas, se puede añadir a la base de 
-datos de secuencias reales (secuencias \emph{target})
+datos de secuencias \emph{reales} (secuencias \emph{target})
 un número equivalente de secuencias \emph{señuelo} y hacer que el motor de búsqueda
-use esta base de datos concatenada (\emph{target-decoy}) del doble de tamaño que la original.
- O bien se pueden realizar dos búsquedas consecutivas, una utilizando la
-base de datos de secuencias \emph{target} y otra a continuación utilizando
+use esta base de datos concatenada (\emph{secuencias \emph{reales} - secuencias \emph{señuelo}})
+del doble de tamaño que la original.
+O bien se pueden realizar dos búsquedas consecutivas, una utilizando la
+base de datos de secuencias \emph{reales} y otra a continuación utilizando
 la de secuencias \emph{señuelo}.
 
 \figuraEx{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
@@ -1730,7 +1733,7 @@ Otra opción es, en lugar de generar nuevas secuencias para cada proteína,
 crear péptidos \textit{señuelo} de cada proteína dado el patrón de corte
 conocido de la enzima proteolítica utilizada. Esta opción tiene la ventaja
 de que los péptidos creados serán el mismo número y tendrán exactamente 
-las mismas masas que las secuencias reales.
+las mismas masas que las secuencias \emph{reales}.
 
 
 %El objetivo de la creación  
@@ -1738,20 +1741,20 @@ las mismas masas que las secuencias reales.
 Una vez establecida esta hipótesis nula, la estrategia asume una idea básica central:
 la frecuencia con que los espectros MS/MS son asignados a secuencias 
 \emph{señuelo} sigue la misma distribución que la frecuencia con que los
-espectros son asignados incorrectamente a secuencias \emph{target}. 
+espectros son asignados incorrectamente a secuencias \emph{reales}. 
 
 Así, de forma general y dado que las bases de datos de secuencias 
-\textit{target} y \textit{señuelo}
+\emph{reales} y \textit{señuelo}
 tienen el mismo tamaño, el número de \ac{PSM} incorrectos o Falsos Positivos
 (N\textsubscript{inc}, aquellos espectros a los que se ha asignado
-incorrectamente una secuencia \textit{target})
+incorrectamente una secuencia \emph{real})
 puede ser considerado equivalente al número de \ac{PSM} \emph{señuelo} 
 (N\textsubscript{d}, espectros a los que se ha asginado una secuencia \emph{señuelo}).
 Con esto se puede estimar la tasa FDR como
  N\textsubscript{d}/N\textsubscript{t},
 esto es, la proporción de \ac{PSM} \textit{señuelo}, N\textsubscript{d} como sustituto
 conocido de N\textsubscript{inc}, 
-entre el total de secuencias \textit{target} con puntuaciones superiores
+entre el total de secuencias \emph{reales} con puntuaciones superiores
 al umbral fijado, N\textsubscript{t}. 
 En ocasiones, cuando las búsquedas se hacen sobre la base de datos concatenada,
 para tener en cuenta que el tamaño es el doble que la original,
