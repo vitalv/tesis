@@ -23,16 +23,49 @@
 %\end{FraseCelebre}
 
 \subsubsection*{Introduction}
-High throughput Proteomics, also called Shotgun Proteomics,
-based on protein separation through 
-electrophoresis and peptide separation through chromatography, followed
-by tandem mass spectrometry, is a core technology for modern Proteomics.
-In Proteomics experiments, following the experimental procedures that
-lead to spectra acquisition, results are obtained when peptides are 
-identified and the originating proteins present in the samples are inferred.
-In order to do that, search engines use different strategies and then
-results are statistically assessed through methods such as the False
-Discovery Rate, FDR or other more complex statistical models.
+The concept of Proteomics, a term coined in analogy to Genomics,
+was first used by Marc Wilkins in the mid 90s to describe
+the total set of proteins being expressed by the genes of a cell,
+tissue or organism.
+Earlier, in the late 80s, the development of soft ionizations techniques, 
+such as Electrospray Ionization (ESI) and Soft Laser Desorption (SLD)
+enabled the ability to ionize large bio-molecules such as proteins while
+keeping them relatively intact. This settled the foundation upon which
+Mass Spectrometry was applied to what would later become modern Proteomics.
+
+In \textit{shotgun} Proteomics, the first step of the experiment usually
+consists of a digestion of the sample proteins into peptides by means of
+a proteolytic enzyme such as trypsin. This greatly increases performance
+in terms of the number of proteins that can be detected in a single 
+LC-MS/MS run compared to gel-based approaches, but comes at the cost 
+of a great complexity at the peptide level and the protein inference problem. 
+
+Peptides are then separated by liquid chromatography (LC), then ionized
+and eventually enter the mass spectrometer where they are separated
+as a function of their mass-to-charge (\mz) ratio, recorded in the MS1 spectrum.
+In tandem mass spectrometry (MS/MS)
+peptides with higher intensities are selected to be fragmented so 
+MS/MS spectra, a collection of \mz values and intensities of the precursor and product ions, are produced.
+
+Once the empirical spectra are acquired, the computational analysis starts.
+The most efficient peptide identification method is based on searching 
+the acquired spectra against protein sequence databases. This is what
+search engines do. Basically, a score measuring the degree of similarity 
+between the empirical spectrum and a theoretically derived spectrum (corresponding to a known 
+sequence) is given to pairs of spectrum - peptide sequence named PSMs (Peptide to Spectrum Match)
+
+To assess confidence in peptide identification statistic measures such
+as p-values and e-values are given to PSMs. But in the context of a large
+experiment generating thousands of MS/MS spectra, further filtering or additional
+statistical procedures may be applied.
+
+The False Discovery Rate
+Probability PeptideProphet
+
+Then there is the protein inference problem: 2 problems
+addressed by ProteinProphet non-random peptide-to-protein grouping which explodes FDR levels
+and peptide degeneracy, that is, conserved sequences in different proteins
+
 
 \subsubsection*{Objectives}
 The presence of proteomic data related to the fungal opportunistic 

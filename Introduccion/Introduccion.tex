@@ -2084,8 +2084,9 @@ son las distribuciones NSP entre los peptidos incorrectos y correctos.
 Algunas herramientas bioinformáticas de post-procesamiento de resultados
 de identificaciones como PeptideProphet y ProteinProphet han demostrado
 ser de gran utilidad proporcionando un medio de calcular probabilidades
-y tasas de error de forma muy precisa. Sin embargo, la modelización que
-emplean a veces resulta demasiado excesiva, especialmente en casos de 
+y tasas de error de forma muy precisa. 
+Sin embargo, la modelización que
+emplean a veces no resulta muy eficiente, especialmente en casos de 
 listas de espectros e identificaciones muy grandes \citep{Reiter2009}.
 
 Por otra parte, frecuentmente interesa desde el punto de vista experimental,
@@ -2094,8 +2095,8 @@ utilizando para ello una aproximación combinada con varios motores de búsqueda.
 
 %iProphet
 La herramienta de \textit{software} iProphet \citep{Shteynberg2011} fue
-desarrollada para resolver este tipo de necesidades, implementando una
-modelización más completa de todas las fuentes de información en un 
+desarrollada para resolver este tipo de necesidades, implementando un
+modelo más completa de todas las fuentes de información en un 
 experimento de Proteómica \textit{shotgun}. Si PeptideProphet aporta
 probabilidades a nivel de PSM, esta extensión refina las probabilidades
 aportándolas a nivel de secuencia peptídica única, es decir combina todas
