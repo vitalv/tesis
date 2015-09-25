@@ -21,6 +21,7 @@
 
 %\end{Fuente}
 %\end{FraseCelebre}
+%\subsection*{Desarrollo de herramientas bioinformáticas para Proteómica de alto rendimiento}
 
 \subsubsection*{Introduction}
 The concept of Proteomics, a term coined in analogy to Genomics,
@@ -42,7 +43,7 @@ of a great complexity at the peptide level and the protein inference problem.
 
 Peptides are then separated by liquid chromatography (LC), then ionized
 and eventually enter the mass spectrometer where they are separated
-as a function of their mass-to-charge (\mz) ratio, recorded in the MS1 spectrum.
+as a function of their mass-to-charge (\mz) ratio, recorded in the MS\textsuperscript{1} spectrum.
 In tandem mass spectrometry (MS/MS)
 peptides with higher intensities are selected to be fragmented so 
 MS/MS spectra, a collection of \mz values and intensities of the precursor and product ions, are produced.
@@ -54,17 +55,45 @@ search engines do. Basically, a score measuring the degree of similarity
 between the empirical spectrum and a theoretically derived spectrum (corresponding to a known 
 sequence) is given to pairs of spectrum - peptide sequence named PSMs (Peptide to Spectrum Match)
 
-To assess confidence in peptide identification statistic measures such
+To assess confidence in peptide identification, statistic measures such
 as p-values and e-values are given to PSMs. But in the context of a large
 experiment generating thousands of MS/MS spectra, further filtering or additional
 statistical procedures may be applied.
 
-The False Discovery Rate
-Probability PeptideProphet
+The estimation of the False Discovery Rate is a simple yet effective procedure. By comparing the 
+spectra to artificially generated sequences, called decoys, a reference populaton 
+of incorrect matches is created and is assumed to be equivalent to the populaton
+of incorrect matches to real sequences (false positives).
 
-Then there is the protein inference problem: 2 problems
-addressed by ProteinProphet non-random peptide-to-protein grouping which explodes FDR levels
-and peptide degeneracy, that is, conserved sequences in different proteins
+Other post-processing method to evaluate confidence in identifications of MS/MS spectra 
+is probability mixture modelling, implemented in tools such as PeptideProphet. It 
+first creates a discriminant, search engine-independent score and then generates
+the distribution of all best matches to the total amount of MS/MS in the experiment.
+This distribution is assumed to be a mixture of the correctly assigned and incorrectly assigned
+PSMs. Then, using curve-fitting and the Expectation-Maximization algorithm, the correct
+and incorrect distributions can be inferred. And finally, using bayesian statistics
+a probability of being correct is computed for each PSM.
+
+Then there is the protein inference problem which has two main aspects.
+On the one hand there is the non-random grouping of peptides into proteins, 
+which propagates error affecting FDR levels. And on the other hand there is 
+peptide degeneracy, that is, conserved sequences in different proteins.
+Different software tools deal with these issues in different approaches. 
+ProteinProphet, used for a large parte of the results in this thesis, recomputes
+PSM probabilities rewarding those corresponding to \emph{sibling} peptides, 
+and giving weights depending on sequence uniqueness/degeneracy. 
+In this way, a minimal list of proteins that explains all observed peptides
+is provided along with the corresponding protein-level probability values.
+
+Fundamental to modern Proteomics is also data sharing and dissemination. 
+Public on-line repositories, like PRIDE and PeptideAtlas play a key role in 
+this sense. Unlike PRIDE, PeptideAtlas, reprocesses all MS/MS spectra through
+its specific Trans Proteomic Pipeline to ensure data uniformity and quality.
+In addition, the Proteomics Standard Initiative has developed standard data formats 
+to promote sharing and re-analysis of experimental data. In particular,
+MzIdentML, the standard for peptide and protein identification,
+ is used as input data format for Proteopathogen, developed in this thesis.
+
 
 
 \subsubsection*{Objectives}
@@ -72,31 +101,69 @@ The presence of proteomic data related to the fungal opportunistic
 pathogen \textit{Candida albicans} on online public repositories was
 until recently very sparse, sometimes originated from low resolution
 instruments and therfore not very robust.
-In this context, the development databases and the adoption
+In this context, the development of databases and the adoption
 of standard formats in Proteomics have an essential role in the analysis,
 sharing and dissemination of results. The software tools presented here 
 contribute to these objectives.
 
 \subsubsection*{Results}
-The database and web tool Proteopathogen was the first described software 
+The database and web tool Proteopathogen was, in its original version
+\citep{Vialas2009b},
+the first described software tool
 that combined Proteomics experiments results with specific information 
 relevant to the study of \textit{C.albicans} proteins such as GO (Gene Ontology)
-terms and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways annotations.
-Following a first version where the results were collected
-in a tab separated text format dependant on the software used to generate 
-them \citep{Vialas2009b}, the software was adapted to make use of
-the standard format for protein and peptide identifications, mzIdentML, as its source of data
-\citep{Vialas2015}. Proteopathogen is up to date an online tool to allow
+terms and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways annotations,
+all available through a rich web interface.
+The Proteomics Standard Initiative promoted format for peptide and protein
+identifications MzIdentML had not been released yet, so Proteopathogen
+collected results in tab separated text formats dependant on the software
+that was used to generate them.
+
+Following the first version, the software was adapted to make use of
+mzIdentML, as its source of data
+\citep{Vialas2015} and the database was populated with quality data from PeptideAtlas.
+
+Proteopathogen has become a versatile online tool to allow
 visualization and analysis of Proteomics experiments results by the wet-lab 
 users but also enabling revision by reviewers of the journals of the field.
 
-At the same time, the development of a \textit{Candida albicans} PeptideAtlas
-means the most exhaustive proteome characterization up to the current date.
+
+
+With the development of a \textit{Candida albicans} PeptideAtlas, for the
+first time a fungal pathogen has been included in the global PeptideAtlas project.
+In its original build \citep{Vialas2013}, the \textit{C. albicans} PeptideAtlas provides identification
+results for over 2500 proteins at 1.2\%FDR, which represent a coverage of 41\% of
+the predicted proteome. Then two 
+experiments, consisting of an extensive subcellular fractionation and an off-gel
+peptide-level fractionation from different growing conditions, were specifically
+designed to increase proteome coverage. These, together with two additional datasets
+on the surface, and the vesicles and secreted proteomes were reprocessed along with
+the datasets in the previous build to generate a new version of the PeptideAtlas.
+In addition, for the first time in a large-scale \textit{C.albicans} project
+a database with allele-specific sequences was used. 
+
+This reprocessing, combining results from three different search engines,
+effectively means the most exhaustive \textit{C. albicans}
+proteome characterization up to the current date.
 It describes over 71000 detected peptides assigned to 4174 proteins, which
-represent 66\% of the predicted proteome. Is is, in addition, the first 
-model of a fungal pathogen present in the global PeptideAtlas project and
-benefits from the robustness and confidence that TPP (Trans Proteomics Pipeline)
-enables.
+represent 66\% of the predicted proteome. 
+
+
+
+\subsubsection*{Conclusions}
+
+The Proteopathogen database and web application has been proven to be a
+valuable, greatly useful tool to view and analyze proteomics experiments 
+results using \textit{Candida albicans} as a model for the study of fungal pathogens.
+
+With the adoption of the mzIdentML standard as input data format for new experiments
+in Proteopathogen, a solid foundation is established to ensure continuity and easing
+incoroporation of new results.
+
+The created \textit{C. albicans} PeptideAtlas means the most comprehensive 
+characterization of this organisms that exists up to current date, and it is
+moreover, the most robust and complete resource publicly available.
+
 
 \endinput
 % Variable local para emacs, para  que encuentre el fichero maestro de

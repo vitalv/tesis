@@ -24,17 +24,81 @@
 
 
 \subsubsection*{Introducción}
-La Proteómica a Gran Escala, también llamada de Alto Rendimiento, basada
-en la separación de proteínas (mediante electroforesis) y de
-péptidos (mediante cromatografía) seguida de espectrometría de masas en 
-tándem, es la técnica fundamental de la Proteómica moderna.
-En los experimentos de Proteómica, a continuación de la parte experimental
-que conduce a la adquisición de los espectros, los resultados se obtienen
-mediante la identificación de los péptidos y la inferencia de las proteínas originarias
-presentes en las muestras. Para ello, los distintos motores de búsqueda
-emplean diferentes estrategias y a continuación generalmente se evalúan
-estadísticamente los resultados mediante métodos como la Tasa de Falsos
-Descubrimientos, FDR o modelos estadísticos más complejos.
+
+El concepto de Proteómica, acuñado en analogía a Genómica, fue usado por 
+primera vez por Marc Wilkins a mediados de los años 90 para describir al
+\textit{conjunto total de proteínas que se expresan por los genes de una 
+célula, tejido u organismo}. Anteriormente, a finales de los 80,
+el desarrollo de las técnicas de ionización suave, como la Ionización por 
+Electrospray (ESI) o la Ionización Suave por Láser (SLD), permitieron
+ionizar grandes bio-moléculas como son las proteínas manteniéndolas 
+relativamente intactas. Esto sentó las bases de la Espectrometría de Masas
+aplicada a la Proteómica.
+
+En la Proteómica de alto rendimiento o \textit{shotgun}, el primer paso del
+experimento normalmente consiste en la digestión de las proteínas de la
+muestra en péptidos por acción de una enzima proteolítica como la tripsina.
+Esto incrementa notablmente el rendimiento en términos de número de proteínas
+que pueden ser detectadas en un solo experimento comparado con los experimentos
+basados en gel. Sin embargo, tiene el coste asociado de provocar una gran
+complejidad de la mezcla de péptidos y el problema añadido de la inferencia de las proteínas oiginarias.
+
+Los péptidos son separados por cromatografía líquida (LC), e ionizados para
+entrar a continuación en el espectrómetro de masas donde son separados en función de
+la proporción entre su masa y su carga (\mz) y esos valores registrados en un 
+espectro MS\textsuperscript{1}. En la espectrometría de masas en tándem (MS/MS), los 
+péptidos con mayor intensidad son seleccionados para ser fragmentados de modo que
+se generan espectros MS/MS, colecciones de valores \mz y de intensidad para cada
+precursor y sus fragmentos.
+
+Una vez adquiridos los espectros empíricos comienza el análisis computacional. El
+método de identificación de péptidos más efectivo se basa en buscar o enfrentar los espectros adquiridos
+contra una base de datos de secuencias de proteínas. Esto es lo que hacen los llamados
+motores de búsqueda. En esencia, a cada par espectro-péptido (PSM), se le otorga
+una puntuación que mide el grado de similitud entre el espectro empírico adquirido 
+y espectros teóricos generados (correspondientes a secuencias conocidas).
+
+Para evaluar la seguridad en la identificación de los péptidos, se pueden proporcionar
+estadísticos como los p-valores y e-valores para cada PSM. Pero en el contexto de un experimento
+en el que se generan miles de espectros MS/MS, se pueden aplicar procedimientos estadísticos adicionales.
+
+La estimación de la tasa de Falsos Positivos (FDR) es un método senciollo pero efectivo.
+Comparando los espectros adquiridos con espectros teóricos derivados de secuencias generadas
+artificialmente, llamadas señuelos, se puede construir una población errónea de referencia.
+La tasa FDR se calcula asumiendo que esa población es equivalente a la de asignaciones PSMs erróneas.
+
+Otros métodos de post-procesamiento para evaluar la calidad de las asignaciones PSM son los 
+modelos mixtos de probabilidad, implementados en herramientas como PeptideProphet. En
+primer lugar se crea una puntuación discriminante, independiente del motor de búsqueda, y se genera 
+la distribución de los mejores péptidos candidatos (aquellos mejor puntuación) para todos
+los espectros del experimento. El modelo mixto de probabilidad asume que esta distribución
+es una mezcla de la población de PSMs correcto y la población de PSMs incorrectos. Entonces
+usando un algoritmo de Esperanza-Maximización se obtiene y se ajusta la curva que define ambas
+poblaciones. Finalmente, usando probabilidad bayesiana, se obtiene el valor de la probabilidad
+de ser correcto para cada PSM.
+
+En cuanto al problema de la inferencia de las proteínas hay dos aspectos fundamentales.
+Por una parte está el agrupamiento no-aleatorio de péptidos en proteínas provoca que el error
+de asignaciones incorrectas se propague afectando las tasas FDR. Pero además, también 
+contribuye al problema el hecho de
+que existan secuencias de péptidos comunes, conservados, en diferentes proteínas.
+Las distintas herramientas informáticas tratan estos asuntos con diferentes aproximaciones.
+ProteinProphet, usado para una gran parte de los resultados de esta tesis, recalcula las 
+probabilidades de cada PSM premiando aquellos que corresponden a péptidos que tienen
+\textit{hermanos} (péptidos identificados pertenecientes a una misma proteína) y viceversa.
+Además se hace una ponderación usando pesos para tener en cuenta si el péptido es degenerado o
+único. Finalmente se obtiene una lista mínima de las proteínas que pueden explicar 
+todos los péptidos identificados y un valor correspondiente de probabilidad para cada una.
+
+Otro aspecto fundamental en la Proteómica moderna es la diseminación de los resultados experimentales.
+Respositorios públicos \textit{on-line} como PRIDE o PeptideAtlas juegan un papel esencial en esto.
+A diferencia de PRIDE, PeptideAtlas reprocesa todos los espectros mediante su conjunto de 
+herramientas informáticas Trans Proteomics Pipeline para asegurar uniformidad y calidad en 
+los datos que almacena. Además la Iniciativa de Estandarización en Proteómica (PSI) ha 
+desarrollado formatos estándar para promocionar el intercambio y reanálisis de datos. 
+Particularmente MzIdentML, el estándar para almacenar identificaciones de péptidos y proteínas,
+es usado como formato de entrada en Proteopathogen, una herramienta descrita en esta tesis.
+
 
 \subsubsection*{Objetivos}
 La presencia de resultados de experimentos de Proteómica en repositorios
@@ -47,6 +111,7 @@ resultados. Las herramientas informáticas descritas en esta tesis contribuyen
 a esos objetivos.
 
 \subsubsection*{Resultados}
+
 La base de datos y herramienta web Proteopathogen es la primera aplicación
 online descrita que combinaba resultados de experimentos de Proteómica
 con información específica relevante para el estudio de proteínas de
@@ -54,26 +119,57 @@ con información específica relevante para el estudio de proteínas de
 o las rutas de la Enciclopedia de Genes y Genomas de Kyoto, KEGG 
 (\textit{Kyoto Encyclopedia of Genes and Genomes}) en
 las que estan implicadas. 
-Trás una primera versión en que los resultados de los experimentos se recogían
-en formatos de texto separado por tabulador dependientes de la herramienta
-de \textit{software} que hubiera generado los resultados \citep{Vialas2009b},
-la aplicación y la base de datos ha sido totalmente remodelada para 
+El formato de identificaciones de péptidos y proteínas MzIdentML promovido 
+la Iniciativa de Estandarización en Proteómica aún no había sido creado de modo
+que Proteopathogen recopilaba los resultados en formatos de texto separado por tabulador
+dependientes del programa utilizado para generar los resultados.
+
+Trás una primera versión  \citep{Vialas2009b},
+la aplicación ha sido totalmente remodelada para 
 adaptarse al formato estándar de identificaciones mzIdentML \citep{Vialas2015}
-como fuente de información.
-Proteopathogen es actualmente una herramienta \textit{online} que facilita
+como fuente de información y la base de datos ha sido poblada con datos 
+de calidad procedentes del PeptideAtlas de \textit{C. albicans}.
+
+Proteopathogen es una útil herramienta \textit{online} que facilita
 la visualización y análisis de los resultados de experimentos de Proteómica
 tanto por los usuarios del laboratorio como por parte de los revisores
 de las revistas donde los estudios son publicados.
 
-Paralelamente, el desarrollo de un PeptideAtlas para \textit{Candida albicans}
-ha supuesto la mayor caracterización de su proteoma disponible hasta la fecha
-describiendo más de 71000 péptidos detectados y asignados a 4174 proteínas 
-lo que supone un 66\% del proteoma predicho. 
-Es además el primer proteoma de un modelo de hongo patógeno en el proyecto
-global PeptideAtlas y cuenta con la robustez y fiabilidad en las identificaciones
-que proporciona el flujo de análisis TPP (\textit{Trans Proteomics Pipeline}).
+Con el desarrollo del PeptideAtlas de \textit{C. albicans}, por primera vez
+se incluyó un modelo de hongo patógeno en el proyecto global PeptideAtlas.
+En su primera versión \citep{Vialas2013}, este PeptideAtlas proporcionó
+resultados de identificación para más de 2500 proteínas para un FDR de 1.2\%,
+lo que representa una cobertura del 41\% del proteoma predicho.
+Posteriormente, dos experimentos, consistentes en un fraccionamiento subcelular
+exahustivo y en un fraccionamiento \textit{off-gel} a nivel de péptido procedente de distintas
+condiciones de crecimiento, fueron diseñados \textit{ad hoc} para incrementar la
+cobertura del proteoma. Éstos, junto con resultados de dos experimentos sobre
+el proteoma de la superficie y el proteoma de vesiculas y secretado,
+fueron reprocesados junto con los experimentos de la versión original, para obtener un nuevo PeptideAtlas.
+Este reprocesamiento, además, incluye resultados de tres motores de búsqueda diferentes y 
+por primera vez en un proyecto a gran escala de \textit{C. albicans}, una base de datos con 
+secuencias específicas de alelo.
+
+El resultado es la caracterización más completa del proteoma de \textit{C. albicans} existente
+hasta la fecha actual. Describe más de 71000 péptidos asignados a 4174 proteínas, lo 
+que representa el 66\% del proteoma predicho.
 
 
+\subsubsection*{Conclusiones}
+
+La base de datos y aplicación web Proteopathogen
+ha demostrado ser una herramienta de gran utilidad para la visualización
+y análisis de resultados de proteómica en experimentos que usan 
+\textit{Candida albicans} como organismo modelo de estudio de hongos patógenos.
+
+La adopción del estándar mzIdentML como formato de origen para
+incorporar nuevos datos en Proteopathogen asegura la estabilidad y futuro
+de este proyecto facilitando la incorporación de resultados procedentes 
+de nuevos experimentos.
+
+El PeptideAtlas de \textit{Candida albicans} desarrollado
+supone la caracterización más exahustiva del proteoma de este organismo.
+y es el recurso más completo y fiable disponible públicamente.
 
 
 \endinput
