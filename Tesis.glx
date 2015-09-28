@@ -10,6 +10,8 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{DDA}{DDA}{\emph{Data Dependent Acquisition} }{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
+\GlossTeXEntry{DIA}{DIA}{\emph{Data Independent Acquisition}}{}{acr}{a}{\GlossTeXPage{n}{39}}
+\GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
 \GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{33}}
@@ -48,7 +50,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{MudPIT}{MudPIT}{\emph{Multidimensional Protein Identification Technology}}{}{acr}{a}{\GlossTeXPage{n}{18}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}}{}{acr}{a}{\GlossTeXPage{n}{44}}
 \GlossTeXNull{0}
 \GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{33}}
 \GlossTeXNull{0}
@@ -96,7 +98,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{40}}
+\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
 \GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{26}}
 \GlossTeXNull{0}

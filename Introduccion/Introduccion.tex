@@ -131,7 +131,7 @@ permitió sentar las bases de la Espectrometría de Masas aplicada a la
 Proteómica. Las técnicas de Ionización por ElectroSpray, \ac{ESI} \citep{Fenn1989a}
 y Desorción Suave por Láser, \ac{SLD} 
 \citep{Tanaka1988} permitieron que 
-las grandes y frágiles moléculas biológicas como las proteínas pudieran 
+las grandes y lábiles moléculas biológicas como las proteínas pudieran 
 ser ionizadas y volatilizadas relativamente intactas para ser posteriormente
  introducidas en los espectrómetros de masas.
 
@@ -1473,11 +1473,12 @@ y requiere espectros MS/MS de gran calidad.
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Evaluación estadística de las identificaciones de péptidos y proteínas}
-%\addcontentsline{toc}{section}{Evaluación estadística de los resultados}
-\label{cap1:sec:Evaluación estadística de los resultados}
+\section{Evaluación estadística de resultados de identificaciones de péptidos y proteínas}
+%\addcontentsline{toc}{section}{Evaluación estadística de identificaciones}
+%\label{cap1:sec:Evaluación estadística de los resultados}
 %Esta parte de las distribuciones antes la tenia justo antes de las 
 %funciones de puntuación , porque ahí hablo también de estas distribuciones
+
 
 Frecuentemente en un solo experimento de Proteómica \textit{shotgun}
 se generan decenas de miles de espectros MS/MS. El procesamiento
@@ -1924,13 +1925,16 @@ condicionadas de una puntuación \textit{S} entre las distribuciones correctas e
 incorrectas; y \textit{P(+)} y \textit{P(-)} son las probabilidades
 \textit{a priori} de asignaciones correctas e incorrectas
 (Figura~\ref{fig:PeptideProphet_fit_2_a_dataset_of_D_scores}).
-Esta probabilidad puede entenderse como la proporción de la la densidad de
-\textit{Gamma} escalada por $\pi_{0}$ con respecto a la suma de las densidades
-\textit{Gamma} y \textit{Normal} escaladas $\pi_{0}$ y 1 - $\pi_{0}$ 
-para una puntuación \textit{S}.
-O dicho de otra manera, la probabilidad de que, teniendo una puntuación 
-\textit{S}, una asignación sea incorrecta con respecto a la probabilidad
-de tener esa puntuación. Este valor es la Probabilidad de Error Posterior, \textit{PEP}
+Esta probabilidad puede entenderse como %la proporción de la la densidad de
+%\textit{Gamma} escalada por $\pi_{0}$ con respecto a la suma de las densidades
+%\textit{Gamma} y \textit{Normal} escaladas $\pi_{0}$ y 1 - $\pi_{0}$ 
+%para una puntuación \textit{S}.
+%O dicho de otra manera,
+la probabilidad de que, teniendo una puntuación 
+\textit{S}, una asignación sea correcta con respecto a la probabilidad
+de tener esa puntuación. 
+De la misma manera se puede calcular la probabilidad de ser incorrecta. En ese caso,  
+el valor es la Probabilidad de Error Posterior, \textit{PEP}
 que coincide con la FDR local.
 
 Y en el siguiente paso -\textit{M}-, una vez calculadas las probabilidades 
@@ -1954,14 +1958,14 @@ y otros parámetros como \textit{p-valor} y la tasa de Falsos Positivos
 
 En un principio, cuando fue implementado \citep{Keller2002}, este modelo mixto para el
  cálculo de probabilidades no hacía uso de búsquedas realizadas usando
-la estrategia \textit{target-señuelo} pues no se había generalizado aún.
+la estrategia de las secuencias \textit{señuelo} pues no se había generalizado aún.
 Cuando comenzaron a emplearse este tipo de búsquedas PeptideProphet incorporó
 esta información haciendo que las puntuaciones correspondientes a péptidos
 \textit{señuelo} sólamente puedan contribuir a la estimación de los
 parámetros que describen la distribución \textit{Gamma} de PSM incorrectos.
 Esto permitó redefinir una versión semisupervisada del algoritmo \citep{Choi2008}
-en el sentido de que la clase (PSM correctos e incorrectos) pasa a ser
-conocida para algunas pero no todas las asignaciones.
+en el sentido de que la clase (PSM correctos o incorrectos) pasa a ser un parámetro
+conocido para algunas pero no todas las asignaciones.
 
 %\textit{The Probability Ratio Method, Navarro et al}
 
@@ -1994,7 +1998,7 @@ Uno de los principales motivos que complican la inferencia de las proteínas
 se refiere a la pérdida de la correspondencia péptido-proteína como consecuencia 
 fundamentalmente de la detección de péptidos compartidos o \textit{degenerados}
 cuyas secuencias están en diferentes proteínas. Esta dificultad, descrita
-como \textit{el problema de la inferencia de proteínas} en \citep{Nesvizhskii2005},
+como parte del \textit{problema de la inferencia de proteínas} en \citep{Nesvizhskii2005},
 a su vez se deriva de varios posibles escenarios. En algunos casos
 el procesamiento alternativo de intrones provoca la existencia de isoformas
 de una porteína en la muestra. De éstas, sólo algunas tienen en su 
@@ -2003,7 +2007,7 @@ ser detectados, concluir la presencia de la proteína fehacientemente.
 En otros casos, proteínas diferentes procedentes
 de una familia de genes (parálogos) poseen una alta homología de secuencia.
 Frecuentemente, a pesar de detectar un cierto número de péptidos, no se 
-puede indicar la presencia de ninguna de las proteínas de la familia en particular.
+puede asumir la presencia de ninguna de las proteínas de la familia en particular.
 
 En función de la presencia de estos péptidos compartidos y de péptidos 
 exclusivos de cada proteína se han descrito métodos y nomenclaturas
@@ -2048,11 +2052,21 @@ embargo una aproximación estadística puede ser más interesante,
 utilizando las probabilidades a nivel de PSM para combinarlas y obtener
 una probabilidad a nivel de proteína.
 La herramienta ProteinProphet \citep{Nesvizhskii2003} implementa este tipo
-de análisis. ProteinProphet refina las probabilidades de cada PSM previamente
+de análisis. 
+De forma general se puede calcular la probabilidad de una proteína P
+como 1 menos las probabilidades de ser incorrectos de cada uno (\textit{p\textsubscript{i}})
+ de sus péptidos:
+
+\begin{equation}
+\label{eq:ProteinProphet1}
+P(prot) = 1 - \prod_{i}(1 - p_{i})\\
+\end{equation}
+
+Pero ProteinProphet refina las probabilidades de cada PSM previamente
 a combinarlas para tener en cuenta el problema del agrupamiento dirigido
 de péptidos en proteínas descrito, especialmente importante en proteínas
 representadas por un solo péptido. Este reajuste inicial consiste en tener
-en cuenta el número de péptidos hermanos, \ac{NSP} de forma que se
+en cuenta el número de péptidos hermanos, \ac{NSP}, de forma que se
 penalizan las probabilidades de péptidos cuando sólo uno aporta evidencia
 para una proteína mientras que las probablidades se reajustan aumentándose
 en casos en que muchos péptidos hermanos aporten evidencia a la presencia de la proteína. 
@@ -2062,19 +2076,24 @@ que estima las distribuciones de NSP entre las poblaciones de péptidos
 correcta e incorrecta:
 
 \begin{equation}
-\label{eq:ProteinProphet}
+\label{eq:ProteinProphet2}
 \begin{split}
 NSP_{i} &= \sum_{j\not=i}p_{j}\\
 p'_{i} &= \frac{p_{i}\ f_{1}(NSP_{i})}{p_{i}\ f_{1}(NSP_{i})+(1-p_{i})\ f_{0}(NSP_{i})}\\
 \\
-P(prot) &= 1 - \prod_{i}(1 - p')
+P(prot) &= 1 - \prod_{i}(1 - w_{i}^{n} p_{i}')
 \end{split}
 \end{equation}
 
 donde \textit{f\textsubscript{0}(NSP)} y \textit{f\textsubscript{1}(NSP)}
-son las distribuciones NSP entre los peptidos incorrectos y correctos.
+son las distribuciones NSP entre los peptidos incorrectos y correctos, p$'$\textsubscript{i} 
+es la probabilidad ajustada para el péptido \textit{i}, y w\textsubscript{i}\textsuperscript{n} el peso del péptido i en la proteína n.
 
-
+Pero además de reajustar las probabilidades de los PSM teniendo en cuenta
+el agrupamiento no aleatorio de péptidos en proteínas, ProteinProphet también
+considera la existencia de péptidos presentes en más de una proteína. Para ello otorga
+pesos de forma que la contribución de un péptido cuya secuencia está presente
+en varias proteínas 
 
 %\phantomsection
 \section{Herramientas adicionales de post-procesamiento y validación a nivel de péptido y proteína}
@@ -2160,7 +2179,7 @@ de error para proteínas sean mayores que para PSM.
 %\addcontentsline{toc}{section}{Proteómica dirigida. SRM/MRM}
 \label{cap1:sec:Proteomica dirigida. SRM/MRM}
 
-\todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
+%\todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
 
 La Proteómica \textit{shotgun}, cuyo objetivo es detectar
 la mayor cantidad posible de proteínas en una muestra, se denomina
@@ -2170,25 +2189,26 @@ técnicas de \textit{shotgun}, en el objetivo. Esta metodología no pretende ident
 una gran cantidad de proteínas diferentes en la muestra, sino que intenta 
 identificar y, opcionalmente también cuantificar, una proteína o un grupo
 de proteínas de interés seleccionadas \textit{a priori}.
-De ahí el nombre Proteómica \textit{dirigida}. 
+De ahí el nombre Proteómica \textit{dirigida}. A diferencia de
+las técnicas \textit{shotgun} donde los \textit{n} precursores más abundantes
+son seleccionados para ser fragmentados en una adquisición dependiente 
+de datos (DDA), en la Proteómica dirigida la adquisición es independiente de los datos
+\ac{DIA}
 
 La técnica que se utiliza para llevar a cabo experimentos de Proteómica
 dirigida se denomina \textit{SRM, Selected Reaction Monitoring} o también,
 frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}.
 
-
-La Proteómica dirigida, basada en técnicas SRM, está actualmente 
+La Proteómica dirigida, basada en técnicas SRM, desde hace unos años está 
 emergiendo y popularizándose como un complemento ideal de las técnicas 
-de \textit{shotgun}. 
-
-Básicamente, SRM proporciona unas propiedades muy interesantes en
+de \textit{shotgun}. Las técnicas SRM proporcionas unas propiedades muy interesantes en
 experimentos en que se requiere que un grupo de proteínas, por ejemplo biomarcadores o
 proteínas constituyentes de una red o ruta particular, sean detectadas
 y cuantificadas de una forma precisa y reproducible en diferentes muestras
 que se quiere comparar.
 
 Originalmente desarrollada para detectar y cuantificar
-pequeñas moléculas como metabolitos o drogas (Referencia), las
+pequeñas moléculas como metabolitos o fármacos, las
 primeras aplicaciones de SRM al campo de la Proteómica comenzaron en 
 2003 \citep{Gerber2003}, 2004 \citep{Kuhn2004}.
 
@@ -2196,13 +2216,27 @@ El principio fundamental en el que se basa la técnica SRM consiste en
 aprovechar la capacidad de espectrómetros de masas de tipo triple cuadrupolo
 para actuar como filtros de masas de analitos a dos niveles consecutivos, 
 el de un péptido precursor, y el de los fragmentos que se generan tras ser éste
-fragmentado. Este doble filtro es, idealmente, muy representativo del
-péptido, y por extensión, de la proteína originaria.
+fragmentado. Los péptidos son monitorizados usando \textit{transiciones}, conjuntos
+de valores \mz de un precursor y valores \mz de productos correspondientes.
+Este doble filtro es, idealmente, muy específico del
+péptido, y por extensión, de la proteína originaria. Por eso es esencial utilizar
+péptidos \textit{proteotípicos}, aquellos cuya
+secuencia del péptido es única y específica de la proteína a la que pertenece.
+
 
 La señal que se genera en el instrumento al medir la cantidad
 de estos fragmentos, junto con la información del tiempo de retención
-cromatográfica permite reconstruir un pe
+cromatográfica permite reconstruir un pico de elución en el que
+se puede observar que los fragmentos co-eluyen en el tiempo de retención
+del péptido monitorizado. (Figura\ref{fig:esquema_srm})
 
+Sin embargo, en ocasiones a pesar de usar péptidos proteotípicos y comprobar
+que los fragmentos coeluyen, puede ocurrir que las señales correspondan a otro
+péptido distinto al que se está monitorizando. Para aumentar la confianza
+en la identificación se puede disparar un espectro MS/MS a partir del péptido
+monitorizado y confirmar su identidad (MIDAS, \textit{MRM Initiated Detection And Sequencing})
+También se pueden añadir a la muestra versiones sintéticos de los péptidos que se monitorizan,
+con un marcaje isotópico que permitan ubicar el tiempo de retención exacto.
 
 \figura{Vectorial/esquema_srm}{width=.99\textwidth}{fig:esquema_srm}%
 {Adquisición y reconstrucción de la señal en un experimento SRM} 
