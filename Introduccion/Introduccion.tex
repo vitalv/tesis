@@ -179,7 +179,7 @@ Sin embargo los analizadores de masas no miden la masa
 de los analitos ionizados sino la relación entre masa y carga \mz , donde
 \emph{m} es la masa molecular del analito y \emph{z} un múltiplo entero del número de 
 cargas del ion. La unidad empleada para medir esta relación es el \textit{Thomson},
-\textbf{Th}. Un thomsom equivale a 1 Da / e, donde e es la carga elemental.
+\textbf{Th}. Un thomson equivale a 1 Da / e, donde e es la carga elemental.
 En general, para iones monocargados y solo en ese caso, la masa en Da
 es equivalente a su valor en thomsons.
 
@@ -278,7 +278,7 @@ quedando en suspensión y siendo así introducidos en un sistema vacío hacia el es
 
 \end{itemize}
 
-Otros tipos de ionización menos comunes son el Bombardeo Rápido Atómico,
+Otros tipos de ionización menos empleados en Proteómica son el Bombardeo Rápido Atómico,
 \ac{FAB}, la Desorción por Campo Eléctrico, \ac {FD},  y la Desorción por
 Plasma, \ac{PD}.
 
@@ -297,15 +297,15 @@ un analizador de tipo cuadrupolo puede encontrarse acoplado con un analizador
 de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un
 Cuadrupolo-Tiempo de Vuelo, \ac{QTOF}
 o Cuadrupolo-Trampa Iónica, \ac{QTRAP} respectivamente.
-Algunos de los analizadores de masas más comunes son los siguientes:
+Algunos de los analizadores de masas más empleados en Proteómica son los siguientes:
 
 
 \begin{itemize}
 
-\item Los \textbf{Analizadores de sector} (magnético o eléctrico)
-aceleran los iones de analito que al atravesar el sector son sometidos
-a un campo con fuerza ortogonal a la trayectoria del ion lo que provoca
-que se desvíen en función de su  relación \mz.
+%\item Los \textbf{Analizadores de sector} (magnético o eléctrico)
+%aceleran los iones de analito que al atravesar el sector son sometidos
+%a un campo con fuerza ortogonal a la trayectoria del ion lo que provoca
+%que se desvíen en función de su  relación \mz.
 
 \item \textbf{Analizadores de Tiempo de Vuelo}, \ac{TOF}
 Este tipo de analizador
@@ -367,7 +367,7 @@ cilíndrico. Los iones son introducidos tangencialmente desde la fuente
 de ionización y, al ajustar la diferencia de potencial, son atrapados en
 órbitas elípticas longitudinales, en las que la atracción hacia el eje interno 
 es compensada por la fuerza centrífuga. La relación \mz se determina a partir 
-de la frecuencia angular de la oscilacion de los iones en torno al 
+de la frecuencia angular de la oscilación de los iones en torno al 
 electrodo longitudinal interno.
 
 
@@ -479,11 +479,13 @@ Los péptidos, separados en el espectrómetro de masas en base a su
 relación \mz , generan señales cuyas intensidades son registradas en el 
 detector e interpretadas como un espectro. 
 El objetivo básico en Proteómica consiste en la elección del mejor
-péptido candidato, y por extensión la inferencia de la proteína originaria, 
-responsable de los espectros obtenidos.  La aproximación general, en esencia,
-consiste en estimar el grado de similitud entre los valores \mz empíricos 
-obtenidos en el espectro y los valores \mz calculados que teóricamente
-se producen a partir de una digestión predicha computacionalmente de las
+péptido de una lista de posibles candidatos que ha generado el espectro,
+y por extensión la inferencia de la proteína originaria.
+Tras la adquisición de los espectros, el análisis informático
+consiste, en esencia, en estimar el grado de similitud entre %los valores \mz empíricos 
+%obtenidos en el espectro y los valores \mz calculados que teóricamente
+%se producen a partir de una digestión predicha computacionalmente de las
+el espectro empírico obtenido y espectros teóricos derivados de 
 secuencias en una base de datos de referencia.
 
 En ocasiones, cuando la proteína original se encuentra relativamente
@@ -582,7 +584,8 @@ es uno de los métodos de fragmentación más frecuentemente utilizados en
 espectrometría de masas para Proteómica.
 Consiste en hacer colisionar a las moléculas de analito con átomos o moléculas
 de gases nobles, químicamente inertes. Argón o Xenón 
-son generalmente usados en triples cuadrupolos y Helio en las trampas iónicas.
+son generalmente usados en triples cuadrupolos y Helio en las 
+trampas iónicas \citep{Burlingame1996}.
 La colisión provoca que parte de la energía cinética del ion sea transformada
 en energía vibracional lo que provoca la ruptura del esqueleto peptídico.
 La fragmentación tipo CID genera una elevada proporción de iones de las 
@@ -644,7 +647,7 @@ iones \emph{a-} y otras especies de menor tamaño.
 Tras la obtención de una muestra de proteínas, ya sea una mezcla compleja
 o una proteína más o menos aislada y purificada, el primer
 paso en un experimento de Proteómica consiste en someter a las proteínas
-a la acción de una enzima proteasa
+a la acción de una enzima proteolítica
 que corta en puntos específicos de la secuencia y que las digiere en 
 un conjunto de péptidos. 
 Sin embargo, sabiendo que ciertos espectrómetros de masas tienen la capacidad de medir
@@ -798,7 +801,7 @@ para obtener una huella peptídica se requiere que la proteína se encuentre previ
  generalmente a partir de una \textit{mancha} o \textit{spot} proteico de \ac{2DPAGE}
 
 La técnica de la Huella de Masas Peptídicas, \ac{PMF}, desarrollado a principios
-de los años 90 por varios grupos independientemente \citep{Pappin1993,Henzel1993,Mann1993}
+de los años 90 por varios grupos independientemente \citep{Pappin1993,Henzel1993,Mann1993a}
 se lleva a cabo generalmente por 
 espectrometría de masas MALDI-TOF(TOF). Esto significa que, una vez obtenidos los
 péptidos correspondientes a la proteína del \textit{spot}, éstos se sitúan
@@ -806,7 +809,7 @@ en una matriz \ac{MALDI}, donde son ionizados e introducidos en un analizador
 \ac{TOF}.
 Una vez obtenido el espectro patrón de masas peptídicas, el proceso 
 de análisis consiguiente es similar al que se hace en la
-Proteómica a gran escala o \textit{shotgun}. Como se describe en las
+Proteómica \textit{shotgun}. Como se describe en las
 secciones siguientes, la identificación
 del péptido responsable del espectro se realiza utilizando un motor de búsqueda, 
 que compara los valores de \mz del espectro 
@@ -819,16 +822,18 @@ de las secuencias de péptidos trípticos teóricos.
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Proteómica a gran escala o de alto rendimiento}
+\section{Proteómica \textit{shotgun}}
 %\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
-La Proteómica a gran escala, conocida generalmente por el término inglés
-\textit{shotgun}, es la técnica de elección para la mayoría
+La Proteómica \textit{shotgun} (el término inglés, que podría traducirse
+somo \textit{perdigonada} o \textit{escopetazo} se encuentra muy establecido)
+es la técnica de elección para la mayoría
 de estudios proteómicos enfocados a obtener un alto rendimiento.
 El nombre \textit{shotgun} proviene 
 de una analogía con las técnicas clásicas de secuenciación genómica donde 
-el ADN es fragmentado en secuencias más pequeñas que posteriormente son 
+el ADN es fragmentado en puntos no focalizados indiscriminadamente
+en secuencias más pequeñas que posteriormente son 
 ensambladas. En la Proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
 la proteína original. Implica varios pasos descritos en las siguientes 
@@ -874,7 +879,7 @@ orgánulos.
 \subsubsection*{Cromatografía Líquida de Alto Rendimiento. HPLC}
 
 
-Pero el fraccionamiento más importante se hace a nivel de péptido, trás 
+Pero el fraccionamiento más importante se hace a nivel de péptido, tras 
 la digestión de las proteínas, 
 por \ac{HPLC}.
 El funcionamiento básico general en HPLC consiste en hacer pasar la muestra
@@ -1417,7 +1422,7 @@ Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 %~ {Interpretación manual de espectros MS/MS. Secuenciación \textit{de novo}}
 
 
-La secuenciación \textit{de novo} (figura~\ref{fig:spectrum_interpretation_1}),
+La secuenciación \textit{de novo} %(figura~\ref{fig:spectrum_interpretation_1}),
 a diferencia de las otras aproximaciones
 para interpretar espectros MS/MS, no requiere información adicional como
 las secuencias de las proteínas o espectros recopilados en experimentos previos.
@@ -1475,7 +1480,7 @@ y requiere espectros MS/MS de gran calidad.
 %\phantomsection
 \section{Evaluación estadística de resultados de identificaciones de péptidos y proteínas}
 %\addcontentsline{toc}{section}{Evaluación estadística de identificaciones}
-%\label{cap1:sec:Evaluación estadística de los resultados}
+\label{cap1:sec:Evaluación estadística de los resultados}
 %Esta parte de las distribuciones antes la tenia justo antes de las 
 %funciones de puntuación , porque ahí hablo también de estas distribuciones
 
@@ -2307,7 +2312,7 @@ las licencias; y \textit{software} privativo desarrollado \textit{ad hoc} por la
 compañías fabricantes de espectrómetros de masas para sus instrumentos.
 En este sentido la iniciativa HUPO-PSI ha adquirido un papel muy importante
 en la elaboración y difusión de formatos abiertos que puedan servir de 
-estándar para toda la comunidad
+estándar para toda la comunidad.
 
 %La iniciativa HUPO-PSI tiene un papel muy importante en la elaboración
 %y adopción de formatos abiertos que puedan servir de estándar para toda
@@ -2316,7 +2321,7 @@ estándar para toda la comunidad
 %de código del ámbito académico para revisar y proporcionar formatos que 
 %recojan toda la información necesaria (MIAPE)
 
-En una clasificacion más precisa, el software puede clasificarse en función
+En una clasificacion más precisa, estos formatos pueden clasificarse en función
 de la etapa del análisis al que sirven de ayuda.
 
 \figuraEx{Vectorial/formats}{width=.75\textwidth}{fig:formats_in_proteomics}%
@@ -2342,16 +2347,16 @@ Los formatos adoptados como estándar por HUPO-PSI contienen el símbolo $\Psi$}
 %entre picos no quedan registrados.
 
 Este es un tipo de formatos muy diverso. 
-Depende básicamente, de la forma en que se detectan y recogen los espectros.%a lo mejor puedo recortar esto 
+Depende básicamente, de la forma en que se detectan y recogen los espectros. %a lo mejor puedo recortar esto 
 Cuando la frecuencia en que %ver File Formats commonly used in MS . Deutsch E %a lo mejor puedo recortar esto
 se escanea cada fragmento es superior a la resolución del instrumento la %a lo mejor puedo recortar esto
 señal se registra como picos con una forma y anchura precisas. Este tipo %a lo mejor puedo recortar esto
 de adquisición es el \emph{modo continuo o perfil}. %a lo mejor puedo recortar esto
-Los instrumentos registran los espectros en modo continuo de forma predeterminada,%a lo mejor puedo recortar esto
+Los instrumentos registran los espectros en modo continuo de forma predeterminada, %a lo mejor puedo recortar esto
 pero frecuentemente son sometidos %a lo mejor puedo recortar esto
 a un procesamiento por un algoritmo que extrae los picos detectados como %a lo mejor puedo recortar esto
 parejas de valores \mz e intensidad. Esto se denomina adquisición de %a lo mejor puedo recortar esto
-\emph{datos centroide} %a lo mejor puedo recortar esto
+\emph{datos centroide}. %a lo mejor puedo recortar esto
 %~ muestran el espectro de masas como un gráfico de barras y suman las %Copiado de TSQ_Series_Hardware_es.pdf
 %~ intensidades de cada conjunto de varios intervalos de muestreo. %Copiado de TSQ_Series_Hardware_es.pdf
 %~ Esta suma se muestra frente al centrado integral de masa de los intervalos %Copiado de TSQ_Series_Hardware_es.pdf
@@ -2361,7 +2366,7 @@ Entre los formatos desarrollados por los fabricantes podemos encontrar
 aquellos para los que toda la información de los espectros se encuentra 
 en un solo archivo, aquellos para los que la información se divide en un 
 par de archivos y aquellos con múltiples archivos para cada adquisición de espectros.
-Así, para los instrumentos Thermo Scientific el formato es del primer tipo, 
+Así, para los instrumentos \textit{Thermo Scientific} el formato es del primer tipo, 
 toda la información es codificada en archivos con extensión .RAW (datos perfil 
 o centroide a elección). Los instrumentos AB-Sciex en su mayoría
 (excepto los TOF-TOF) pueden generar archivos del segundo tipo, en pares
