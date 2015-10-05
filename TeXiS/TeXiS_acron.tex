@@ -40,10 +40,12 @@
 %---------------------------------------------------------------------
 
 
+
 % Redefinimos a español  el título de la lista  de acrónimos (Babel no
 % lo hace por nosotros esta vez)
 
 \def\listacronymname{Lista de acrónimos}
+
 
 % Para el glosario:
 % \def\glosarryname{Glosario}
@@ -61,10 +63,16 @@
    \addcontentsline{toc}{chapter}{\listacronymname}
 \fi
 
+%
+
+
+
 
 % Generamos la lista de acrónimos (en realidad el índice asociado a la
 % lista "acr" de GlossTeX)
 
+\cabeceraEspecial
+\fancyhead
 \printglosstex(acr)
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
