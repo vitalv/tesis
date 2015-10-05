@@ -2061,7 +2061,8 @@ utilizando las probabilidades a nivel de PSM para combinarlas y obtener
 una probabilidad a nivel de proteína.
 La herramienta ProteinProphet \citep{Nesvizhskii2003} implementa este tipo
 de análisis. 
-De forma general se puede calcular la probabilidad de una proteína P
+
+De forma general se podría calcular la probabilidad de una proteína P
 como 1 menos las probabilidades de ser incorrectos de cada uno (\textit{p\textsubscript{i}})
  de sus péptidos:
 
@@ -2078,6 +2079,7 @@ en cuenta el número de péptidos hermanos, \ac{NSP}, de forma que se
 penalizan las probabilidades de péptidos cuando sólo uno aporta evidencia
 para una proteína mientras que las probablidades se reajustan aumentándose
 en casos en que muchos péptidos hermanos aporten evidencia a la presencia de la proteína. 
+
 El reajuste teniendo en cuenta el parámetro \ac{NSP} se realiza con una
 aproximación de Bayes empírica análoga a los modelos de PeptideProphet
 que estima las distribuciones de NSP entre las poblaciones de péptidos 
