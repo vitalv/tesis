@@ -11,15 +11,14 @@
 %\cabeceraEspecial{Discusion}
 
 
-El abordaje de experimentos proteómicos usando \textit{Candida albicans} como organismo
+Estudios proteómicos llevados a cabo usando \textit{Candida albicans} como organismo
 modelo para el estudio de infecciones fúngicas del tipo de las candidiasis
-ha permitido profundizar en algunos de los aspectos más básicos
+han permitido profundizar en algunos de los aspectos más básicos
 de su biología y también en algunos procesos y mecanismos interesantes
 desde el punto de vista clínico.
-Así, se han abordado estudios que intentan identificar la mayor cantidad
-de proteínas posibles en extractos celulares totales, también ensayos
-que estudian subproteomas como el implicado en la transición
-levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas, o
+Así, se han realizado estudios que intentan identificar la mayor cantidad
+de proteínas posibles en extractos celulares totales, estudios de la 
+transición levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas, o
 a las implicadas en la formación de biopelículas entre otros aspectos.
 Esta heterogenidad existente en los diseños experimentales también 
 se puede observar en la 
@@ -42,14 +41,25 @@ Las herramientas aquí descritas contribuyen a estos objetivos.
 %-------------------------------------------------------------------
 \label{cap1:sec:Desarrollo de una aplicación web para datos de proteómica a gran escala de Candida albicans}
 
-
+\bigskip{}
 La base de datos y herramienta web Proteopathogen es la primera aplicación
 \textit{on line} descrita para recoger y analizar resultados de Proteómica 
 centrados en el estudio de hongos patógenos usando principalmente el modelo
-de \mbox{\textit{Candida albicans}}.
+de \mbox{\textit{C. albicans}}.
 
-Durante algunos años Proteopathogen ha recogido datos experimentales de
-experimentos de \textit{Candida albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
+En el momento del desarrollo de Proteopathogen existían repositorios públicos
+\textit{online} de proteómica, algunos para experimentos basados en gel como World 2-D PAGE \citep{Hoogland2008}, 
+o Proteome 2D-PAGE Database \citep{Pleissner2004} y otros más globales como 
+\mbox{PRIDE} \citep{Martens2005} o PeptideAtlas \citep{Desiere2006}. Y también existían recursos
+específicos para hongos como BioBase MycoPathPD \citep{Csank2002} o Candida Genome Database \citep{Arnaud2005}.
+Sin embargo no existía un recurso específico para datos experimentales de proteómica
+relacionados con el estudio de hongos patógenos. Proteopathogen en este contexto, 
+fue diseñado para cumplir esta función, recopilar y analizar identificaciones
+en el contexto de estudios proteómicos de interacción hongo patógeno - hospedador, usando
+principalmente el modelo de \textit {C. albicans}.
+
+Así, durante algunos años Proteopathogen ha recogido resultados de identificaciones de
+estudios de \textit{C. albicans} \citep{Cabezon2009, Monteoliva2010, Vialas2012} 
 y otras especies de hongos patógenos como \textit{Aspergillus fumigatus} y
 también del hospedador (\textit{Mus musculus}),
 facilitando la visualización y el análisis de los resultados a los usuarios
@@ -82,6 +92,11 @@ Proteopathogen ha adquirido la capacidad de crecer de manera robusta y
 fiable. Por una parte, usar un único tipo de formato, estándar, como fuente
 de datos ha permitido desarrollar un \textit{software} estable que extrae
 la información independientemente de cómo se hayan obtenido los resultados.
+De esta manera, datos originados en distintos experimentos en los que se empleen
+diferentes procedimientos experimentales y análisis computacionales podrán
+ser incorporados a Proteopathogen siempre que se obtengan archivos de resultados
+en el formato mzIdentML.
+
 Pero además, el uso de este estándar permite
 realizar validaciones, un control de calidad, tanto de la estructura, 
 sintaxis y orden de los elementos XML de los 
@@ -127,7 +142,7 @@ que permitan leer la información contenida en archivos de gran tamaño.
 
 
 
-\pagebreak
+%\pagebreak
 
 
 \phantomsection{}
@@ -146,27 +161,36 @@ Así, el proyecto se ha convertido en un gran
 compendio de atlas de diferentes especies caracterizados por una reconocida 
 calidad y fiabilidad en las identificaciones de péptidos y proteínas.
 
-La creación del PeptideAtlas de \textit{Candida albicans} supuso la 
+La creación del PeptideAtlas de \textit{C. albicans} supuso la 
 incorporación por primera vez de un modelo de hongo patógeno en el proyecto PeptideAtlas
 y la primera recopilación de resultados de proteómica que alcanzó una gran 
 escala para este organismo. En su primera versión \citep{Vialas2013}, se 
 alcanzó una cobertura del proteoma sin precedentes para resultados
-experimentales agrupados en un solo proyecto, un PeptideAtlas para \mbox{\textit{Candida albicans}.}
+experimentales agrupados en un solo proyecto, un PeptideAtlas para \mbox{\textit{C. albicans}.}
 Casi 22.000 péptidos correspondientes a más de 2500 proteínas suponían una 
 cobertura de más del 40\% del proteoma predicho. 
 
 Pero PeptideAtlas permite y promueve que los espectros sean reprocesados cuando
-se obtienen nuevos resultados de LC-MS/MS o cuando se desarrollan nuevas
+se obtienen nuevos resultados de LC-MS/MS, cuando aparecen nuevas bases de datos de secuencias,
+o cuando se desarrollan nuevas
 mejoras en los motores de búsqueda o en el \textit{software} de ánalisis. 
+
+Por otra parte, otras especies de hongos presentes en el proyecto global PeptideAtlas
+contaban con versiones que alcanzaban coberturas mayores de sus respectivos proteomas,
+como el PeptideAtlas de \textit{Schizosaccharomyces pombe} (71\%) \citep{Gunaratne2013b}
+o el PeptideAtlas de \textit{Saccharomyces cerevisiae} descrito en King \textit{et al}., 2006 (66\%)
+%\citep{King2006}
+
 Así, trás el PeptideAtlas original se obtuvieron nuevos resultados
 experimentales. Algunos de ellos fueron específicamente destinados a la ampliación de la
 cobertura del proteoma mediante fraccionamientos extensivos a varios niveles:
-subcelular (centrifugaciones), proteína (SDS-PAGE) y péptido (OFF-GEL);
+subcelular (mediante centrifugacion), proteína (SDS-PAGE) y péptido (OFF-GEL);
 mientras que otros eran procedentes de trabajos destinados al estudio de proteínas de la
 pared celular \citep{Gil-Bona2015} o secretadas al medio extracelular \citep{Gil-Bona2015a}.
+
 Además en ese tiempo apareció un nuevo ensamblaje de la secuencia de
  \mbox{\textit{C. albicans}} que por primera vez incluía secuencias específicas 
-de alelo. \citep{Muzzey2013}.
+de alelo \citep{Muzzey2013}.
 En este contexto, con los nuevos sets de datos y la nueva información de 
 secuencia disponible, el PeptideAtlas original ha sido reanalizado, 
 en conjunto con los sets de datos que formaban la primera versión, y empleando

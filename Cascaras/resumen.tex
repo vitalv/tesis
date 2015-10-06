@@ -28,27 +28,29 @@
 
 \subsubsection*{Introducción}
 
-El concepto de Proteómica, acuñado en analogía a Genómica, fue usado por 
+El concepto de Proteómica, acuñado en analogía al de Genómica, fue usado por 
 primera vez por Marc Wilkins a mediados de los años 90 para describir al
 \textit{conjunto total de proteínas que se expresan por los genes de una 
 célula, tejido u organismo}. Anteriormente, a finales de los 80,
-el desarrollo de las técnicas de ionización suave, como la Ionización por 
-Electrospray (ESI) o la Ionización Suave por Láser (SLD), permitieron
-ionizar grandes bio-moléculas como son las proteínas manteniéndolas 
-relativamente intactas. Esto sentó las bases de la Espectrometría de Masas
+el desarrollo de las técnicas de ionización suave, como la \textit{Ionización por 
+Electrospray}, ESI (\textit{Electrospray Ionization}) o la \textit{Desorción Suave 
+por Láser}, SLD (\textit{Soft Laser Desorption}), permitieron
+ionizar grandes biomoléculas como las proteínas manteniéndolas 
+relativamente intactas. Esto sentó las bases de la espectrometría de masas
 aplicada a la Proteómica.
 
-En la Proteómica \textit{shotgun}, el primer paso del
+En la Proteómica \textit{shotgun} (el término inglés, que podría traducirse como
+\textit{perdigonada} o \textit{escopetazo} está muy asentado), el primer paso del
 experimento normalmente consiste en la digestión de las proteínas de la
 muestra en péptidos por acción de una enzima proteolítica como la tripsina.
 Esto incrementa notablmente el rendimiento en términos de número de proteínas
 que pueden ser detectadas en un solo experimento comparado con los experimentos
 basados en gel. Sin embargo, tiene el coste asociado de provocar una gran
-complejidad de la mezcla de péptidos y el problema añadido de la inferencia de las proteínas oiginarias.
+complejidad de la mezcla de péptidos y el problema añadido de la inferencia de las proteínas originarias.
 
 Los péptidos son separados por cromatografía líquida (LC), e ionizados para
 entrar a continuación en el espectrómetro de masas donde son separados en función de
-la proporción entre su masa y su carga (\mz) y esos valores registrados en un 
+la proporción entre su masa y su carga (\textit{m/z}) y los valores obtenidos son registrados en un 
 espectro MS\textsuperscript{1}. En la espectrometría de masas en tándem (MS/MS), los 
 péptidos con mayor intensidad son seleccionados para ser fragmentados de modo que
 se generan espectros MS/MS, colecciones de valores \mz y de intensidad para cada
@@ -65,13 +67,15 @@ Para evaluar la seguridad en la identificación de los péptidos, se pueden propor
 estadísticos como los p-valores y e-valores para cada PSM. Pero en el contexto de un experimento
 en el que se generan miles de espectros MS/MS, se pueden aplicar procedimientos estadísticos adicionales.
 
-La estimación de la tasa de Falsos Positivos (FDR) es un método senciollo pero efectivo.
+La estimación de la \textit{Tasa de Falsos Descubrimientos}, FDR (\textit{False Discovery Rate})
+es un método sencillo pero efectivo.
 Comparando los espectros adquiridos con espectros teóricos derivados de secuencias generadas
 artificialmente, llamadas señuelos, se puede construir una población errónea de referencia.
-La tasa FDR se calcula asumiendo que esa población es equivalente a la de asignaciones PSMs erróneas.
+La tasa FDR se calcula asumiendo que esa población es equivalente a la de asignaciones PSMs
+a secuencias reales pero erróneas.
 
 Otros métodos de post-procesamiento para evaluar la calidad de las asignaciones PSM son los 
-modelos mixtos de probabilidad, implementados en herramientas como PeptideProphet. En
+modelos mixtos de probabilidad, implementados en herramientas como \mbox{PeptideProphet}. En
 primer lugar se crea una puntuación discriminante, independiente del motor de búsqueda, y se genera 
 la distribución de los mejores péptidos candidatos (aquellos mejor puntuación) para todos
 los espectros del experimento. El modelo mixto de probabilidad asume que esta distribución
@@ -94,10 +98,12 @@ Además se hace una ponderación usando pesos para tener en cuenta si el péptido e
 todos los péptidos identificados y un valor correspondiente de probabilidad para cada una.
 
 Otro aspecto fundamental en la Proteómica moderna es la diseminación de los resultados experimentales.
-Respositorios públicos \textit{on-line} como PRIDE o PeptideAtlas juegan un papel esencial en esto.
+Respositorios públicos \textit{online} como PRIDE (\textit{Protein Identifications Database})
+o PeptideAtlas juegan un papel esencial en esto.
 A diferencia de PRIDE, PeptideAtlas reprocesa todos los espectros mediante su conjunto de 
 herramientas informáticas Trans Proteomics Pipeline para asegurar uniformidad y calidad en 
-los datos que almacena. Además la Iniciativa de Estandarización en Proteómica (PSI) ha 
+los datos que almacena. Además la \textit{Iniciativa de Estandarización en Proteómica}, 
+PSI(\textit{Proteomics Standards Initiative}) ha 
 desarrollado formatos estándar para promocionar el intercambio y reanálisis de datos. 
 Particularmente MzIdentML, el estándar para almacenar identificaciones de péptidos y proteínas,
 es usado como formato de entrada en Proteopathogen, una herramienta descrita en esta tesis.
@@ -116,14 +122,14 @@ a esos objetivos.
 \subsubsection*{Resultados}
 
 La base de datos y herramienta web Proteopathogen es la primera aplicación
-online descrita que combinaba resultados de experimentos de Proteómica
+\textit{online} descrita que combinaba resultados de experimentos de Proteómica
 con información específica relevante para el estudio de proteínas de
-\textit{C. albicans} como términos de la ontología génica GO (\textit{Gene Ontology})
-o las rutas de la Enciclopedia de Genes y Genomas de Kyoto, KEGG 
+\textit{C. albicans} como términos de la \textit{Ontología Génica}, GO (\textit{Gene Ontology})
+o las rutas de la \textit{Enciclopedia de Genes y Genomas de Kyoto}, KEGG 
 (\textit{Kyoto Encyclopedia of Genes and Genomes}) en
 las que estan implicadas. 
-El formato de identificaciones de péptidos y proteínas MzIdentML promovido 
-la Iniciativa de Estandarización en Proteómica aún no había sido creado de modo
+El formato de identificaciones de péptidos y proteínas MzIdentML promovido por la iniciativa
+PSI aún no había sido creado de modo
 que Proteopathogen recopilaba los resultados en formatos de texto separado por tabulador
 dependientes del programa utilizado para generar los resultados.
 
@@ -161,17 +167,18 @@ que representa el 66\% del proteoma predicho.
 \subsubsection*{Conclusiones}
 
 La base de datos y aplicación web Proteopathogen
-ha demostrado ser una herramienta de gran utilidad para la visualización
+es una herramienta de gran utilidad para la visualización
 y análisis de resultados de proteómica en experimentos que usan 
-\textit{Candida albicans} como organismo modelo de estudio de hongos patógenos.
+\textit{C. albicans} como organismo modelo de estudio de hongos patógenos.
 
 La adopción del estándar mzIdentML como formato de origen para
 incorporar nuevos datos en Proteopathogen asegura la estabilidad y futuro
 de este proyecto facilitando la incorporación de resultados procedentes 
 de nuevos experimentos.
 
-El PeptideAtlas de \textit{Candida albicans} desarrollado
-supone la caracterización más exahustiva del proteoma de este organismo.
+El PeptideAtlas de \textit{C. albicans} desarrollado, alcanza una cobertura
+de dos terceras partes del proteoma predicho para este organismo, supone
+la caracterización más exahustiva existente,
 y es el recurso más completo y fiable disponible públicamente.
 
 

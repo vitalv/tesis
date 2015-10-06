@@ -17,13 +17,19 @@
   para recoger, almacenar y analizar resultados de identificación de 
   péptidos y proteínas procedentes de experimentos de proteómica
   relacionados con el estudio de la interacción hospedador-patógeno usando
-  el modelo de \mbox{\textit{Candida albicans}}
+  el modelo de hongo patógeno \mbox{\textit{Candida albicans}}
   \item Adopción del formato estándar de identificaciones de péptidos y proteínas mzIdentML
-  como fuente de datos para la base de datos y aplicación web Proteopathogen (v 2.0)
-  \item Recopilación de resultados de espectrometría de masas y  %no resultados de identificaciones, sino los espectros
-  creación de un \mbox{PeptideAtlas}, o Atlas Peptidico, de \mbox{\textit{Candida albicans}}
-  \item Reanálisis de los datos existentes en el PeptideAtlas original
-  usando una nueva base de datos con secuencias específicas de alelo, un
-  procesamiento multi-algoritmo y resultados de nuevos experimentos diseñados \textit{ad hoc}
-  para incrementar la cobertura del proteoma.
+  como fuente única de información para la base de datos y aplicación web \mbox{Proteopathogen} (v 2.0) para
+  que la inserción de los datos sea independiente del desarrollo experimental, del motor de búsqueda
+  y del \textit{software} de análisis empleado.
+  \item Creación de un atlas peptídico o PeptideAtlas para \textit{C. albicans}
+  \begin{itemize}
+    \item Recopilación de resultados de espectrometría de masas   %no resultados de identificaciones, sino los espectros
+    y creación de una primera versión de \mbox{PeptideAtlas} empleando el flujo
+    de trabajo proporcionado por las herramientas que conforman TPP (\textit{Trans Proteomic Pipeline})
+    \item Reanálisis de los datos existentes en el PeptideAtlas original
+    incorporando al flujo de trabajo TPP una nueva base de datos con secuencias específicas de alelo, un
+    procesamiento multi-algoritmo y resultados de nuevos experimentos diseñados \textit{ad hoc}
+    para incrementar la cobertura del proteoma.
+  \end{itemize}
 \end{itemize}

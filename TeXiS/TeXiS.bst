@@ -243,7 +243,7 @@ FUNCTION {format.names}
                 'skip$
               if$
               t "others" =
-                { " et~al." * }
+                { " \textit{et~al}." * }
                 { " and " * t * }
               if$
             }
@@ -276,7 +276,7 @@ FUNCTION {format.names.ed}
                 'skip$
               if$
               t "others" =
-                { " et~al." * }
+                { " \textit{et~al}." * }
                 { " and " * t * }
               if$
             }
@@ -883,11 +883,11 @@ FUNCTION {format.lab.names}
   s #1 "{vv~}{ll}" format.name$
   s num.names$ duplicate$
   #2 >
-    { pop$ " et~al." * }
+    { pop$ " \textit{et~al}." * }
     { #2 <
         'skip$
         { s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
-            { " et~al." * }
+            { " \textit{et~al}." * }
             { " and " * s #2 "{vv~}{ll}" format.name$ * }
           if$
         }
