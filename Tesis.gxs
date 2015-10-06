@@ -33,19 +33,19 @@
 \GlossTeXEntry{acrFWHM@{FWHM}{FWHM}{\emph{Full Width at Half Mass}}{}{acr}{a}{\GlossTeXPage{n}{10}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNTT@{NTT}{NTT}{\emph{Number of Tryptic Termini}}{}{acr}{a}{\GlossTeXPage{n}{32}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNMC@{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{32}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrEM@{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{32}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrEM@{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{33}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFPR@{FPR}{FPR}{\emph{False Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{25}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrTPR@{TPR}{TPR}{\emph{True Positive Rate}}{}{acr}{a}{\GlossTeXPage{n}{25}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFNR@{FNR}{FNR}{\emph{False Negative Rate}}{}{acr}{a}{\GlossTeXPage{n}{25}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrFDR@{FDR}{FDR}{\emph{False Discovery Rate}}{}{acr}{a}{\GlossTeXPage{n}{25}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNSP@{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{36}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNSS@{NSS}{NSS}{\emph{Number of Sibling Searches}}{}{acr}{a}{\GlossTeXPage{n}{37}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNRS@{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{37}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNSE@{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{37}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNSI@{NSI}{NSI}{\emph{Number of Sibling Ions}}{}{acr}{a}{\GlossTeXPage{n}{37}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNSM@{NSM}{NSM}{\emph{Number of Sibling Modifications}}{}{acr}{a}{\GlossTeXPage{n}{37}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrHUPOPSI@{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}}{}{acr}{a}{\GlossTeXPage{n}{116}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNRS@{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{38}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNSE@{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{38}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNSI@{NSI}{NSI}{\emph{Number of Sibling Ions}}{}{acr}{a}{\GlossTeXPage{n}{38}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNSM@{NSM}{NSM}{\emph{Number of Sibling Modifications}}{}{acr}{a}{\GlossTeXPage{n}{38}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrHUPOPSI@{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}}{}{acr}{a}{\GlossTeXPage{n}{118}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrTPP@{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{40}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPRIDE@{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{40}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrNIST@{NIST}{NIST}{\emph{National Institute for Standards and Technology}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrCGD@{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{118}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrCGD@{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{120}}|GlossTeXNull}{0}

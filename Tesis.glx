@@ -4,7 +4,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{118}}
+\GlossTeXEntry{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{120}}
 \GlossTeXNull{0}
 \GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
@@ -14,7 +14,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}}{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{32}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}}{}{acr}{a}{\GlossTeXPage{n}{33}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electro-Spray Ionization}}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -38,7 +38,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{HPLC}{HPLC}{\emph{High Performance Liquid Chromatography}}{}{acr}{a}{\GlossTeXPage{n}{3}}
 \GlossTeXNull{0}
-\GlossTeXEntry{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}}{}{acr}{a}{\GlossTeXPage{n}{116}}
+\GlossTeXEntry{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}}{}{acr}{a}{\GlossTeXPage{n}{118}}
 \GlossTeXNull{0}
 \GlossTeXEntry{LIT}{LIT}{\emph{Linear Ion Trap}}{}{acr}{a}{\GlossTeXPage{n}{8}}
 \GlossTeXNull{0}
@@ -54,13 +54,13 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}}{}{acr}{a}{\GlossTeXPage{n}{32}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{NSE}{NSE}{\emph{Number of Sibling Experiments}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSI}{NSI}{\emph{Number of Sibling Ions}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{NSI}{NSI}{\emph{Number of Sibling Ions}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSM}{NSM}{\emph{Number of Sibling Modifications}}{}{acr}{a}{\GlossTeXPage{n}{37}}
+\GlossTeXEntry{NSM}{NSM}{\emph{Number of Sibling Modifications}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
 \GlossTeXEntry{NSP}{NSP}{\emph{Number of Sibling Peptides}}{}{acr}{a}{\GlossTeXPage{n}{36}}
 \GlossTeXNull{0}
