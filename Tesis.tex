@@ -186,12 +186,13 @@ constantes,guionado,Cascaras/bibliografia,config%
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \begin{document}
 
-
+%Para que el formato dle numero de pagina en la pagina inicial de cada capitulo
+%sea el mismo que en el resto del documento
 \fancypagestyle{plain}{%
   \fancyhf{}%
   \fancyfoot[C]{\small \thepage }
-  %\renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-  %\renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+%  %\renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
 }
 
 %\fancyfoot[C]{\small \thepage }
