@@ -39,6 +39,7 @@
 
 \documentclass[8pt,b5paper,twoside]{book}
 
+
 %
 % Definimos  el   comando  \compilaCapitulo,  que   luego  se  utiliza
 % (opcionalmente) en config.tex. Quedaría  mejor si también se definiera
@@ -184,6 +185,17 @@ constantes,guionado,Cascaras/bibliografia,config%
 %                        Documento
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \begin{document}
+
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\small \thepage }
+  %\renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+  %\renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+}
+
+\fancyfoot[C]{\small \thepage }
+
 
 %\relsize{-0.9}
 
