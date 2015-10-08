@@ -130,6 +130,20 @@ campo de los hongos patógenos usando principalmente el modelo de \textit{C. albi
 %~ y no sólo cada uno de los experimentos individualmente.
 
 \medskip
+Inicialmente, la base de datos ha sido poblada con los resultados de identificaciones
+del PeptideAtlas descrito en Vialas \textit{et al.} 2013. Para ello, los 
+archivos pepXML y protXML característicos del flujo de trabajo TPP 
+se han combinado y convertido, por medio de una herramienta de \textit{software}
+Ruby creada \textit{ad hoc}, en ficheros mzIdentML. 
+Y éstos, han sido validados (validación semántica y validación MIAPE)
+usando mzidValidator \citep{Ghali2013}. 
+De esta manera, Proteopathogen cuenta desde el inicio con datos de contrastada
+robustez y fiabilidad y además se ha establecido una rutina de inserción de nuevos
+resultados generados mediante TPP (formatos pepXML y protXML).
+
+
+
+\medskip
 
 En cuanto al futuro de esta herramienta bioinformática, es importante destacar que el 
 desarrollo de nuevos formatos estándar es continuo. Si bien no es probable
@@ -284,7 +298,7 @@ Por último, y para favorecer la comunicación e interconexión entre ambos
 recursos, CGD y PeptideAtlas, se ha contactado con los desarrolladores 
 e impulsores de CGD proporcionádoles un formato de enlace para que, a través
 de la información en la pestaña \textit{proteína} en CGD, se pueda
-acceder a los datos correspondientes a la identificación por MS en PeptideAtlas
+acceder a los datos correspondientes a la identificación en PeptideAtlas
 para aquellas proteínas para las que existan estos datos.
 
 
