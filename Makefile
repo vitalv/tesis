@@ -41,6 +41,8 @@ FICHEROS_GLOSARIO = acronimos.gdf
 # 
 pdflatex:
 	pdflatex $(NOMBRE_LATEX)
+	sed -i -e 's/\\textit{Candida albicans}/Candida albicans/g' library.bib
+	sed -i -e 's/Candida albicans/\\textit{Candida albicans}/g' library.bib
 	-bibtex $(NOMBRE_LATEX)
 	-glosstex $(NOMBRE_LATEX) $(FICHEROS_GLOSARIO)
 	-makeindex $(NOMBRE_LATEX).gxs -o $(NOMBRE_LATEX).glx -s glosstex.ist
