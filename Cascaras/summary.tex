@@ -32,9 +32,9 @@ Earlier, in the late 80s, the development of soft ionizations techniques,
 such as Electrospray Ionization (ESI) and Soft Laser Desorption (SLD)
 enabled the ability to ionize large bio-molecules such as proteins while
 keeping them relatively intact. This settled the foundation upon which
-Mass Spectrometry was applied to what would later become modern Proteomics.
+Mass Spectrometry was applied to what would later become modern proteomics.
 
-In \textit{shotgun} Proteomics, the first step of the experiment usually
+In \textit{shotgun} proteomics, the first step of the experiment usually
 consists of a digestion of the sample proteins into peptides by means of
 a proteolytic enzyme such as trypsin. This greatly increases performance
 in terms of the number of proteins that can be detected in a single 
@@ -85,7 +85,7 @@ and giving weights depending on sequence uniqueness/degeneracy.
 In this way, a minimal list of proteins that explains all observed peptides
 is provided along with the corresponding protein-level probability values.
 
-Fundamental to modern Proteomics is also data sharing and dissemination. 
+Fundamental to modern proteomics is also data sharing and dissemination. 
 Public on-line repositories, like PRIDE and PeptideAtlas play a key role in 
 this sense. Unlike PRIDE, PeptideAtlas, reprocesses all MS/MS spectra through
 its specific Trans Proteomic Pipeline to ensure data uniformity and quality.
@@ -98,11 +98,11 @@ MzIdentML, the standard for peptide and protein identification,
 
 \subsubsection*{Objectives}
 The presence of proteomic data related to the fungal opportunistic 
-pathogen \textit{C. albicans} on online public repositories was
+pathogen \textit{C. albicans} in online public repositories was
 until recently very sparse, sometimes originated from low resolution
-instruments and therfore not very robust.
+instruments and therefore seldom reliable.
 In this context, the development of databases and the adoption
-of standard formats in Proteomics have an essential role in the analysis,
+of standard formats in proteomics have an essential role in the analysis,
 sharing and dissemination of results. The software tools presented here 
 contribute to these objectives.
 
@@ -110,7 +110,7 @@ contribute to these objectives.
 The database and web tool Proteopathogen was, in its original version
 \citep{Vialas2009b},
 the first described software tool
-that combined Proteomics experiments results with specific information 
+that combined proteomics experiments results with specific information 
 relevant to the study of \textit{C.albicans} proteins such as GO (Gene Ontology)
 terms and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways annotations,
 all available through a rich web interface.
@@ -124,7 +124,7 @@ mzIdentML, as its source of data
 \citep{Vialas2015} and the database was populated with quality data from PeptideAtlas.
 
 Proteopathogen has become a versatile online tool to allow
-visualization and analysis of Proteomics experiments results by the wet-lab 
+visualization and analysis of proteomics experiments results by the wet-lab 
 users but also enabling revision by reviewers of the journals of the field.
 
 
@@ -162,18 +162,26 @@ may access the corresponding identification data in PeptideAtlas.
 
 \subsubsection*{Conclusions}
 
-The Proteopathogen database and web application has been proven to be a
+The developed database and web application called Proteopathogen has been proven to be a
 valuable, greatly useful tool to view and analyze proteomics experiments 
 results using \textit{C. albicans} as a model for the study of fungal pathogens.
 
 With the adoption of the mzIdentML standard as input data format for new experiments
 in Proteopathogen, a solid foundation is established to ensure continuity and easing
-incoroporation of new results.
+the incoroporation of new results using this format which is independent of the
+experimental and computational procedures that may have generated the results
 
-The created \textit{C. albicans} PeptideAtlas means the most comprehensive 
-characterization of this organisms that exists up to current date, and it is
-moreover, the most robust and complete resource publicly available.
+The created \textit{C. albicans} PeptideAtlas has established for the first time
+a large-scale characterization of the proteome for a model of fungal pathogen
+in the PeptideAtlas global project.
 
+This \textit{C. albicans} PeptideAtlas describes 71310 peptides and 4174 proteins
+(for a 0.10\% FDR at PSM level), means the most exhaustive proteome characterization
+for this organism (66\%) and it currently is the most complete and reliable resource available.
+
+Furthermore, the \textit{C. albicans} PeptideAtlas describes 2860 proteins
+for which their corresponding ORFs are termed \textit{uncharacterized} because
+they lack a known protein product, that is 63\% of them.
 
 \endinput
 % Variable local para emacs, para  que encuentre el fichero maestro de
