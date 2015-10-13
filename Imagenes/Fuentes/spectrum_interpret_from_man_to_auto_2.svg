@@ -13,8 +13,11 @@
    height="739.76001"
    id="svg6883"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="spectrum_interpret_from_man_to_auto_2.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="spectrum_interpret_from_man_to_auto_2.svg"
+   inkscape:export-filename="/home/vital/tesis/Imagenes/Bitmap/spectrum_interpret_from_man_to_auto_2.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs6885" />
   <sodipodi:namedview
@@ -22,20 +25,20 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="773.16834"
-     inkscape:cy="348.56405"
+     inkscape:cx="471.73977"
+     inkscape:cy="345.70691"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
-     inkscape:window-x="1280"
-     inkscape:window-y="24"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -49,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,15 +61,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(726.52664,-107.92228)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.70000017;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect5406"
-       width="695.23639"
-       height="738.06378"
-       x="-725.67664"
-       y="108.76849"
-       rx="17.108578"
-       ry="17.108578" />
     <text
        xml:space="preserve"
        style="font-size:17px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
