@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="tabla_contingencia_estadistica_basica.svg">
+   sodipodi:docname="tabla_contingencia_estadistica_basica.svg"
+   inkscape:export-filename="/home/vital/tesis/Imagenes/Bitmap/tabla_contingencia_estadistica_basica.png"
+   inkscape:export-xdpi="296"
+   inkscape:export-ydpi="296">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -22,11 +25,11 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="293.86058"
-     inkscape:cy="51.673791"
+     inkscape:cx="46.717723"
+     inkscape:cy="48.816648"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -560,7 +563,7 @@
            height="128.57143"
            x="320"
            y="-165.71429" /></flowRegion><flowPara
-         id="flowPara4308"></flowPara></flowRoot>    <text
+         id="flowPara4308" /></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text4310"
        y="42.610931"

@@ -12,7 +12,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="296.5"
    inkscape:export-xdpi="296.5"
-   inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/Q_QIT_OT.png"
+   inkscape:export-filename="/home/vital/tesis/Imagenes/Bitmap/Q_QIT_OT.png"
    sodipodi:docname="Q_QIT_OT.svg"
    inkscape:version="0.91 r13725"
    version="1.1"
@@ -24,18 +24,18 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1501322"
-     inkscape:cx="328.54355"
-     inkscape:cy="197.92543"
+     inkscape:cx="145.08638"
+     inkscape:cy="196.1865"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="726"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -717,7 +717,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -726,21 +726,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-11.314541,-61.71133)">
-    <g
-       id="g3364">
-      <rect
-         inkscape:export-ydpi="296.5"
-         inkscape:export-xdpi="296.5"
-         inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/Q_QIT_OT.png"
-         ry="2.7405071"
-         rx="3.6556575"
-         y="61.71133"
-         x="11.314541"
-         height="432.46686"
-         width="696.47284"
-         id="rect7640"
-         style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    </g>
     <path
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7534);fill-opacity:1;stroke:#4d4d4d;stroke-width:1.70000017000000003;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"

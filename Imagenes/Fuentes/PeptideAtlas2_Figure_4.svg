@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="PeptideAtlas2_Figure_4.svg">
+   sodipodi:docname="PeptideAtlas2_Figure_4.svg"
+   inkscape:export-filename="/home/vital/tesis/Imagenes/Bitmap/PeptideAtlas2_Figure_4.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,16 +28,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="23.208167"
-     inkscape:cy="183.04905"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="16.110034"
+     inkscape:cy="422.5733"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="1008"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -57,26 +60,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-323.47714,-584.30157)">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.36340436;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5691"
-       width="307.17944"
-       height="732.89374"
-       x="9.9817019"
-       y="90.915337"
-       rx="14.7673"
-       ry="18.902901" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.39437389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5350"
-       width="418.46259"
-       height="452.3089"
-       x="323.47714"
-       y="584.30157"
-       rx="0"
-       ry="0"
-       inkscape:export-xdpi="248"
-       inkscape:export-ydpi="248" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.59097338px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

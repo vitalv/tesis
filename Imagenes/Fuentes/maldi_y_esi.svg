@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="maldi_y_esi.svg"
-   inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
+   inkscape:export-filename="/home/vital/tesis/Imagenes/Bitmap/maldi_y_esi.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
   <defs
@@ -1342,18 +1342,18 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.9850745"
-     inkscape:cx="106.6759"
-     inkscape:cy="56.245619"
+     inkscape:zoom="1.0580217"
+     inkscape:cx="283.49237"
+     inkscape:cy="207.6497"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="1008"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -1370,7 +1370,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1379,18 +1379,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-95,-221.96875)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.96725839"
-       id="rect4073"
-       width="561.33856"
-       height="501.27005"
-       x="95.475571"
-       y="222.43816"
-       ry="16.179724"
-       inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150"
-       rx="17.293627" />
     <rect
        ry="2.0662122"
        y="645.62274"
