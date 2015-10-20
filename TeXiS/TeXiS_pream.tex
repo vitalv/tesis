@@ -217,6 +217,9 @@
 % No conviene  quitarlo, porque con  casi toda seguridad, al  menos la
 % bibliografía utilizará el comando.
 
+
+
+
 \usepackage{url}
 
 % El documento está  pensado para ser compilado o  bien con pdflatex o
@@ -704,6 +707,21 @@
 % las cabeceras.
 \usepackage{titlesec}
 
+%titlesec customizes chapters, sections and subsections styles
+%\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\bfseries\Large\slshape}
+{\filleft}
+%{\filleft \Huge\textcolor{gray}\thechapter}
+%{-2ex}
+{-2ex}
+{%\titlerule
+\vspace{2ex}%
+\filleft}
+[%\vspace{2ex}%
+%\titlerule
+]
+
 
 % Cambio del título de los capítulos (sacado de
 % http://aristarco.dnsalias.org/book/export/html/13)
@@ -732,6 +750,9 @@
 %%% End:
 
 
+
+
+
 % Paquete que incluyo para poder insertar pdfs (de los papers) dentro de los capitulos
 \usepackage{pdfpages}
 
@@ -743,8 +764,49 @@
 \usepackage{nicefrac}
 
 
-
-
 %\usepackage[top=1.2in, bottom=1in, left=1in, right=1in]{geometry}
 
 %\usepackage{showframe}
+
+
+
+%\usepackage{relsize}%para poder reducir un poco 9pt. 8pt es demasiado pequeño
+
+\usepackage{extsizes} %para poder poner 9pt en book
+
+%\usepackage[document]{ragged2e} %para right align \begin{flushright} (titulos partes)
+
+
+
+
+%font
+%helvetica:
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+%rm:
+%\renewcommand*{\familydefault}{\rmdefault}
+
+%Interlineado
+\renewcommand{\baselinestretch}{1.4}
+
+%Incluir paquetes para ecuacioncitas
+\usepackage[latin1]{inputenc}
+\usepackage{amssymb, amsmath, amsbsy} % simbolitos
+\usepackage{upgreek} % para poner letras griegas sin cursiva
+\usepackage{cancel} % para tachar.
+%\usepackage{mathdots} % para el comando \iddots
+%\usepackage{mathrsfs} % para formato de letra
+
+\usepackage{mhchem} %para moleculas, isotopos, etc...
+
+\usepackage{fixltx2e} %para usar \textsubscript
+
+
+
+
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+%\usepackage[Sonny]{fncychap}
+%\ChNumVar{\fontsize{60}{62}\usefont{OT1}{ptm}{m}{n}\selectfont\textcolor{blue}}
+
+\usepackage{caption}
+\usepackage{float}
