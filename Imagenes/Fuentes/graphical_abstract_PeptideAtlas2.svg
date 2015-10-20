@@ -926,9 +926,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="1045.517"
-     inkscape:cy="351.09574"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1063.7418"
+     inkscape:cy="682.29676"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -958,15 +958,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(142.94437,205.79056)">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.97000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect9672"
-       width="1753.625"
-       height="581.84772"
-       x="-139.40106"
-       y="-202.24725"
-       rx="0.048407599"
-       ry="0.048407599" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.80593616;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect5228"
@@ -2474,7 +2465,7 @@
       </g>
     </g>
     <g
-       transform="matrix(1.1656204,0,0,1.1656452,102.3299,-646.03463)"
+       transform="matrix(1.1656204,0,0,1.1656452,93.303996,-646.03463)"
        id="g6290">
       <path
          sodipodi:nodetypes="cccccc"
@@ -2786,7 +2777,7 @@
       </g>
     </g>
     <g
-       transform="matrix(1.1656204,0,0,1.1656452,90.527891,-657.79712)"
+       transform="matrix(1.1656204,0,0,1.1656452,89.253348,-657.79712)"
        id="g6382">
       <rect
          ry="0.041528586"
@@ -2818,39 +2809,39 @@
     <text
        sodipodi:linespacing="125%"
        id="text6388"
-       y="-36.34251"
-       x="776.59058"
-       style="font-style:normal;font-weight:normal;font-size:21.23291206px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       y="-38.994171"
+       x="791.84991"
+       style="font-style:normal;font-weight:normal;font-size:18.23118591px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        transform="scale(0.9999894,1.0000106)"><tspan
-         y="-36.34251"
-         x="776.59058"
+         y="-38.994171"
+         x="791.84991"
          id="tspan6390"
          sodipodi:role="line">secreted proteome</tspan><tspan
          id="tspan6392"
-         y="-9.8013697"
-         x="776.59058"
+         y="-16.205189"
+         x="791.84991"
          sodipodi:role="line">(Gil-Bona <tspan
    id="tspan6394"
-   style="font-style:italic">et al.</tspan>)</tspan></text>
+   style="font-style:italic">et al. </tspan>2015)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:22.25672531px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="776.46521"
-       y="286.23758"
+       style="font-style:normal;font-weight:normal;font-size:17.29362869px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="788.6098"
+       y="288.04504"
        id="text6396"
        sodipodi:linespacing="125%"
        transform="scale(0.9999894,1.0000106)"><tspan
          sodipodi:role="line"
          id="tspan6398"
-         x="776.46521"
-         y="286.23758">surface proteome</tspan><tspan
+         x="788.6098"
+         y="288.04504">surface proteome</tspan><tspan
          sodipodi:role="line"
-         x="776.46521"
-         y="314.05847"
+         x="788.6098"
+         y="309.66208"
          id="tspan6400">(Gil-Bona <tspan
    style="font-style:italic"
-   id="tspan5468"> et al. </tspan>b)</tspan></text>
+   id="tspan5468"> et al. </tspan>2015b)</tspan></text>
     <g
        id="g6826"
        transform="matrix(1.1656204,0,0,1.1656452,-226.03268,-1496.4105)">
@@ -2908,7 +2899,7 @@
        ry="0.048407596"
        rx="0.048407596"
        y="-87.974037"
-       x="770.32397"
+       x="781.43567"
        height="433.26926"
        width="215.31717"
        id="rect6428"
@@ -2917,23 +2908,23 @@
        transform="scale(0.97561823,1.0249911)"
        sodipodi:linespacing="125%"
        id="text6430"
-       y="-123.51422"
-       x="774.04529"
-       style="font-style:normal;font-weight:normal;font-size:20.44429588px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       y="-121.66753"
+       x="799.32031"
+       style="font-style:normal;font-weight:normal;font-size:18.98348618px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="-123.51422"
-         x="774.04529"
+         y="-121.66753"
+         x="799.32031"
          id="tspan6432"
          sodipodi:role="line">additional compiled</tspan><tspan
          id="tspan6434"
-         y="-97.958855"
-         x="774.04529"
+         y="-97.938171"
+         x="799.32031"
          sodipodi:role="line"><tspan
    id="tspan6436"
    style="font-style:italic">C. albicans </tspan>MS datasets</tspan></text>
     <g
        id="g6438"
-       transform="matrix(1.1656204,0,0,-1.1656452,90.527891,933.85811)">
+       transform="matrix(1.1656204,0,0,-1.1656452,89.253348,921.27342)">
       <rect
          style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:#cccccc;stroke-width:1.24956882;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect6440"
@@ -2961,44 +2952,41 @@
          d="m -50.714286,607.2302 -20.422828,-35.37337 40.845653,-10e-6 z"
          inkscape:transform-center-y="5.8955622" />
     </g>
-    <g
-       id="g4773"
-       transform="matrix(1.1656204,0,0,1.1656452,-151.74116,-24.436597)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text6410"
-         y="-18.490076"
-         x="1027.4438"
-         style="font-style:normal;font-weight:normal;font-size:16.00137901px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           id="tspan6412"
-           y="-18.490076"
-           x="1027.4438"
-           sodipodi:role="line"
-           style="letter-spacing:-0.2px;word-spacing:-0.2px"><tspan
-             style="font-style:italic;letter-spacing:-0.2px;word-spacing:-0.2px"
-             id="tspan6414">C. albicans</tspan></tspan><tspan
-           y="1.5116477"
-           x="1027.4438"
-           sodipodi:role="line"
-           style="letter-spacing:-0.2px;word-spacing:-0.2px"
-           id="tspan6416">PeptideAtlas</tspan><tspan
-           y="21.513371"
-           x="1027.4438"
-           sodipodi:role="line"
-           id="tspan6418">(Vialas<tspan
-   id="tspan6420"
-   style="font-style:italic"> et al.</tspan>)</tspan></text>
-      <rect
-         ry="0.041528586"
-         rx="0.041529469"
-         y="-54.523766"
-         x="1001.9655"
-         height="112.05071"
-         width="155.8485"
-         id="rect6444"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:0.81743985;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.78484917px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1022.5862"
+       y="-39.333282"
+       id="text6410"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9999894,1.0000106)"><tspan
+         style="letter-spacing:-0.22229147px;word-spacing:-0.22229147px"
+         sodipodi:role="line"
+         x="1022.5862"
+         y="-39.333282"
+         id="tspan6412"><tspan
+           id="tspan6414"
+           style="font-style:italic;letter-spacing:-0.22229147px;word-spacing:-0.22229147px">C. albicans</tspan></tspan><tspan
+         id="tspan6416"
+         style="letter-spacing:-0.22229147px;word-spacing:-0.22229147px"
+         sodipodi:role="line"
+         x="1022.5862"
+         y="-17.102221">PeptideAtlas</tspan><tspan
+         id="tspan6418"
+         sodipodi:role="line"
+         x="1022.5862"
+         y="5.1288404">(Vialas<tspan
+   style="font-style:italic"
+   id="tspan6420"> et al.</tspan> 2014)</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:0.95283473;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6444"
+       width="181.66019"
+       height="130.61137"
+       x="1016.1703"
+       y="-87.991966"
+       rx="0.048407596"
+       ry="0.048407596" />
     <text
        transform="scale(0.99067036,1.0094175)"
        xml:space="preserve"
