@@ -96,6 +96,8 @@ resource with unprecedented proteome coverage.
 
 \begin{table}[t]
 \renewcommand{\arraystretch}{1.5}
+\caption*{Table 1.Overview of the new datasets that were reprocessed together with the datasets from the previous version of the PeptideAtlas to produce the
+new build.}
 \footnotesize
 \centering
 \begin{tabular}{p{2cm} p{1cm} p{2cm} p{1cm} p{2cm} c }
@@ -108,8 +110,7 @@ Calb\_ves\_secretome & PASS00408 & \citep{Gil-Bona2015a} & LTQ \newline Orbitrap
 Calb\_surfome & PASS00446 & \citep{Gil-Bona2015} & LTQ \newline Orbitrap \newline Velos & Yest form: x3 \newline serum-induced hyphae: x3 \newline I.serum-induced hyphae: x2 \newline Lee-induced hyphae: x4 & 14\\
 
 \end{tabular}
-\caption*{Table 1.Overview of the new datasets that were reprocessed together with the datasets from the previous version of the PeptideAtlas to produce the
-new build.}
+
 \end{table}
 \addcontentsline{lot}{table}{Table 1}
 
@@ -507,6 +508,7 @@ with different sequences for which both protein products have been identified th
 differentiating peptides.
 
 \begin{table}[t]
+\caption*{Table 2. Distribution of the canonical proteins in PeptideAtlas by genomic origin.}
 \renewcommand{\arraystretch}{2}
 \footnotesize
 \centering
@@ -515,19 +517,20 @@ differentiating peptides.
 Allele A  & Allele B & Sequences A and B & mtDNA \\
 \hline
 59 canonical & 59 canonical & different & -\\
-subsumed or \newline possibly distinguished & 354 canonical & different & -\\
+subsumed or \newline possibly \mbox{distinguished} & 354 canonical & different & -\\
 - & 3 canonical from MTL \newline exist only in B & - & -\\
 - & - & - & 11 canonical \\
-2070 canonical \newline (chosen as representative) & identical & identical & - \\
+2070 canonical \newline (chosen as \mbox{representative}) & identical & identical & - \\
 1205 canonical & indistinguishable & different & - \\
 413 canonical & subsumed or \newline possibly distinguished & different & - \\
-
+\hline
 \end{tabular}
-\caption*{Table 2. Distribution of the canonical proteins in PeptideAtlas by genomic origin. In the
-PeptideAtlas terminology, subsumed refers to proteins whose peptides are also present in another
-canonical protein which has additional independent peptide evidence; possibly distinguished
+\medskip
+\caption*{In the
+PeptideAtlas terminology, \emph{subsumed} refers to proteins whose peptides are also present in another
+canonical protein which has additional independent peptide evidence; \emph{possibly distinguished}
 means a weak peptide evidence that could possibly distinguish the protein from the canonical
-identification (these are conservatively excluded from the canonical list); and indistinguishable
+identification (these are conservatively excluded from the canonical list); and \emph{indistinguishable}
 refers to proteins having different sequence but with peptide evidence only in the common parts.}
 \end{table}
 \addcontentsline{lot}{table}{Table 2}
