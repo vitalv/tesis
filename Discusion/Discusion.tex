@@ -10,6 +10,9 @@
 \addcontentsline{toc}{chapter}{Discusión}
 %\cabeceraEspecial{Discusion}
 
+\addcontentsline{lof}{chapter}{Discusión}
+
+
 
 Estudios proteómicos llevados a cabo usando \textit{C. albicans} como organismo
 modelo para el estudio de infecciones fúngicas 
@@ -99,7 +102,7 @@ las tecnologías de referencia elegida por los programadores de aplicaciones web.
 
 \medskip
 
-Con la adopción del formato mzIdentML (version 1.1.0) como fuente de resultados,
+Con la adopción del formato mzIdentML (versión 1.1.0) como fuente de resultados,
 Proteopathogen ha adquirido la capacidad de crecer de manera robusta y 
 fiable. Por una parte, usar un único tipo de formato (a diferencia
 de lo que ocurre en la versión original de Proteopathogen), estándar, como fuente
@@ -110,7 +113,30 @@ diferentes procedimientos experimentales y análisis computacionales podrán
 ser incorporados a Proteopathogen siempre que se obtengan archivos de resultados
 en el formato mzIdentML.
 
-\medskip
+%\figuraEx{Vectorial/proteopathogen2_home_page}{width=.90\textwidth}{fig:proteopathogen2_home}
+%{Página de inicio de Proteopathogen2, la nueva versión de Proteopathogen adaptada al estándar mzIdentML. Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015}
+
+
+%\figuraEx{Vectorial/proteopathogen2_home_page}{width=.99\textwidth}{fig:proteopathogen2_home}%
+%{Página de inicio de Proteopathogen2, %
+%la nueva versión de Proteopathogen adaptada al estándar mzIdentML.%
+%Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015.}
+%{Página de inicio de Proteopathogen 2}
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=0.99\textwidth]%
+				 {Imagenes/Vectorial/proteopathogen2_home_page}
+\caption*{Página de inicio de Proteopathogen2, %
+la nueva versión de Proteopathogen adaptada al estándar mzIdentML.%
+Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015
+en \href{http://proteopathogen2.dacya.ucm.es}{http://proteopathogen2.dacya.ucm.es}}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{Página de inicio de Proteopathogen 2}
+
+
+
 
 Pero además, el uso de este estándar permite
 realizar validaciones, un control de calidad, tanto de la estructura, 
@@ -250,6 +276,7 @@ un incremento de 3 veces el número de péptidos y 1.6 veces el de proteínas.
 
 \medskip
 
+
 Con este notable incremento, este PeptideAtlas continúa 
 siendo el recurso público de datos proteómicos de \textit{C. albicans}
 mas exhaustivo. Pero además de describir una lista de proteínas que 
@@ -261,12 +288,17 @@ CGD se denominan \textit{uncharacterized} por carecer de un producto génico cara
 
 \medskip
 
+
+
 Además este PeptideAtlas es el primer gran repositorio \textit{online} 
 de Proteómica de \textit{C. albicans} que permite mantener la 
 trazabilidad desde la identificación de péptidos y proteínas
 hasta el alelo orignal.
 
+
 \medskip
+
+
 
 Una aplicación de gran utilidad que permite la interfaz web consiste en
 facilitar la selección de péptidos proteotípicos candidatos para ser
@@ -276,6 +308,25 @@ dirigida (SRM/MRM). Para ello, en la web se sugieren péptidos con una
 de una sola proteína y no compartidos. Además, los péptidos se ordenan por un índice
 de observabilidad que indica la probabilidad de que una proteína sea
 detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}.
+(Ver Figura \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas})
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=0.90\textwidth]%
+				 {Imagenes/Vectorial/PeptideAtlasMP65}
+\caption*{Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesion,
+\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
+El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
+es detectada lo sea por medio de ese péptido y no otro.
+Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score})%
+que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
+Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
+Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM/MRM.}
+
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{Información básica para Mp65p y péptidos observados en PeptideAtlas}
+
 
 \medskip
 
