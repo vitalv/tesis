@@ -19,114 +19,114 @@
 % tienes ninguno  referenciado, basta con que no  definas la constante
 % \acronimosEnRelease en config.tex
 
-@entry{GO, ,\emph{Gene Ontology}}
+@entry{GO, ,\emph{Gene Ontology}, Ontología Génica}
 
-@entry{KEGG, ,\emph{Kyoto Encyclopedia of Genes and Genomes}}
+@entry{KEGG, ,\emph{Kyoto Encyclopedia of Genes and Genomes}, Enciclopedia de Genes y Genomas de Kyoto}
 
-@entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}}
+@entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}, Ionización mediante Desorción por Láser Asistida por Matriz}
 
-@entry{PTM, ,\emph{Post-Translational Modification}}
+@entry{PTM, ,\emph{Post-Translational Modification}, Modificación Post-Traduccional}
 
-@entry{PAGE, ,\emph{PoliAcrylamide Gel Electrophoresis}}
+@entry{PAGE, ,\emph{Poliacrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida}
 
-@entry{1DPAGE, 1D-PAGE ,\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}}
+@entry{1DPAGE, 1D-PAGE ,\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Monodimiensional}
 
-@entry{2DPAGE, 2D-PAGE ,\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}}
+@entry{2DPAGE, 2D-PAGE ,\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Bidimiensional}
 
-@entry{SDSPAGE, SDS-PAGE ,\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}}
+@entry{SDSPAGE, SDS-PAGE ,\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida con Dodecilsulfato Sódico}
 
-@entry{HPLC, ,\emph{High Performance Liquid Chromatography}}
+@entry{HPLC, ,\emph{High Performance Liquid Chromatography}, Cromatografía Líquida de Alta Eficacia}
 
-@entry{MudPIT, ,\emph{Multidimensional Protein Identification Technology}}
+@entry{MudPIT, ,\emph{Multidimensional Protein Identification Technology}, Tecnología Multidimensional de Identificación de Proteínas}
 
-@entry{SCX, ,\emph{Strong Cation Exchange}}
+@entry{SCX, ,\emph{Strong Cation Exchange}, Intercambio Catiónico Fuerte}
 
-@entry{ESI, ,\emph{Electrospray Ionization}}
+@entry{ESI, ,\emph{Electrospray Ionization}, Ionización por Electrospray}
 
-@entry{SLD, ,\emph{Soft Laser Desorption}}
+@entry{SLD, ,\emph{Soft Laser Desorption}, Desorción Suave por Láser}
 
-@entry{FAB, ,\emph{Fast Atom Bombardment}}
+@entry{FAB, ,\emph{Fast Atom Bombardment}, Bombardeo con Átomos Rápidos}
 
-@entry{FD, ,\emph{Field Desorption}}
+@entry{FD, ,\emph{Field Desorption}, Desorción por Campo Eléctrico}
 
-@entry{PD, ,\emph{Plasma Desorption}}
+@entry{PD, ,\emph{Plasma Desorption}, Desorción por Plasma}
 
-@entry{QTOF, ,\emph{Quadrupole-Time Of Flight} }
+@entry{QTOF, ,\emph{Quadrupole-Time Of Flight}, Cuadrupolo-Tiempo de Vuelo }
 
-@entry{QTRAP,QTrap,\emph{Quadrupole-Ion Trap} }
+@entry{QTRAP,QTrap,\emph{Quadrupole-Ion Trap}, Cuadrupolo-Trampa Iónica }
 
-@entry{TOF, ,\emph{Time Of Flight}}
+@entry{TOF, ,\emph{Time Of Flight}, Tiempo de Vuelo}
 
-@entry{QIT, ,\emph{Quadrupole Ion Trap}}
+@entry{QIT, ,\emph{Quadrupole Ion Trap}, Trampa Iónica Cuadrupolar}
 
-@entry{LTQ, ,\emph{Linear Trap Quadrupole}}
+@entry{LTQ, ,\emph{Linear Trap Quadrupole}, Cuadrupolo de confinamiento lineal}
 
-@entry{LIT, ,\emph{Linear Ion Trap}}
+@entry{LIT, ,\emph{Linear Ion Trap}, Trampa Iónica Lineal}
 
-@entry{FTICR, ,\emph{Fourier Transform Ion Cyclotron Resonance}}
+@entry{FTICR, ,\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Iónica Ciclotrónica - Transformada de Fourier}
 
-@entry{MSMS, MS/MS, \emph{Tandem Mass Spectrometry}}
+@entry{MSMS, MS/MS, \emph{Tandem Mass Spectrometry}, Espectrometría de masas en tándem}
 
-@entry{DDA, ,\emph{Data Dependent Acquisition} }
+@entry{DDA, ,\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos }
 
-@entry{DIA, ,\emph{Data Independent Acquisition}}
+@entry{DIA, ,\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}
 
-@entry{CID, ,\emph{Collision Induced Dissociation}}
+@entry{CID, ,\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}
 
-@entry{ETD, ,\emph{Electron Transfer Dissociation}}
+@entry{ETD, ,\emph{Electron Transfer Dissociation}, Disociación por Transferencia de Electrones}
 
-@entry{ECD, ,\emph{Electron Capture Dissociation}}
+@entry{ECD, ,\emph{Electron Capture Dissociation}, Disociación por Captura de Electrones}
 
-@entry{HCD, ,\emph{Higher Energy Collision Dissociation}}
+@entry{HCD, ,\emph{Higher Energy Collision Dissociation}, Disociación por Colisión de Alta Energía}
 
-@entry{PMF, ,\emph{Peptide Mass Fingerprint}}
+@entry{PMF, ,\emph{Peptide Mass Fingerprint}, Huella de Masas Peptídicas}
 
-@entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}}
+@entry{RPHPLC,RP-HPLC,\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alta Eficacia en Fase Reversa}
 
-@entry{PSM, ,\emph{Peptide-Spectrum Match}}
+@entry{PSM, ,\emph{Peptide-Spectrum Match}, Asignación Péptido-Espectro}
 
-@entry{OMSSA, ,\emph{Open Mass Spectrometry Search Algorithm}}
+@entry{OMSSA, ,\emph{Open Mass Spectrometry Search Algorithm}, Algoritmo Abierto de Búsqueda de Espectrometría de Masas }
 
-@entry{FWHM, ,\emph{Full Width at Half Mass}}
+@entry{FWHM, ,\emph{Full Width at Half Mass}, Ancho de Pico a Media Altura}
 
-@entry{NTT, ,\emph{Number of Tryptic Termini}}
+@entry{NTT, ,\emph{Number of Tryptic Termini}, Número de Extremos Trípticos}
 
-@entry{NMC, ,\emph{Number of Missed Cleavages}}
+@entry{NMC, ,\emph{Number of Missed Cleavages}, Número de puntos de corte no efectuados}
 
-@entry{EM, ,\emph{Expectation-Maximization}}
+@entry{EM, ,\emph{Expectation-Maximization}, Esperanza-Maximización}
 
-@entry{FPR, ,\emph{False Positive Rate}}
+@entry{FPR, ,\emph{False Positive Rate}, Tasa de Falsos Positivos}
 
-@entry{TPR, ,\emph{True Positive Rate}}
+@entry{TPR, ,\emph{True Positive Rate}, Tasa de Verdaderos Positivos}
 
-@entry{FNR, ,\emph{False Negative Rate}}
+@entry{FNR, ,\emph{False Negative Rate}, Tasa de Falsos Negativos}
 
-@entry{FDR, ,\emph{False Discovery Rate}}
+@entry{FDR, ,\emph{False Discovery Rate}, Tasa de Falsos Descubrimientos}
 
-@entry{NSP, ,\emph{Number of Sibling Peptides}}
+@entry{NSP, ,\emph{Number of Sibling Peptides}, Número de Péptidos Hermanos}
 
-@entry{NSS, ,\emph{Number of Sibling Searches}}
+@entry{NSS, ,\emph{Number of Sibling Searches}, Número de Búsquedas Hermanas}
 
-@entry{NRS, ,\emph{Number of Replicate Spectra}}
+@entry{NRS, ,\emph{Number of Replicate Spectra}, Número de Espectros Réplica}
 
-@entry{NSE, ,\emph{Number of Sibling Experiments}}
+@entry{NSE, ,\emph{Number of Sibling Experiments}, Número de Experimentos Hermanos}
 
-@entry{NSI, ,\emph{Number of Sibling Ions}}
+@entry{NSI, ,\emph{Number of Sibling Ions}, Número de Iones Hermanos}
 
-@entry{NSM, ,\emph{Number of Sibling Modifications}}
+@entry{NSM, ,\emph{Number of Sibling Modifications}, Numero de Modificaciones Hermanas}
 
-@entry{HUPOPSI,HUPO-PSI,\emph{Human Proteome Organization - Proteomics Standards Initiative}}
+@entry{HUPOPSI,HUPO-PSI,\emph{Human Proteome Organization - Proteomics Standards Initiative}, Iniciativa de Estandarización en Proteómica del Proyecto Proteoma Humano}
 
 @entry{TPP, , \emph{Trans Proteomics Pipeline}}
 
 @entry{PRIDE, ,\emph{Protein Identifications Database}}
 
-@entry{HPP, ,\emph{Human Proteome Project}}
+@entry{HPP, ,\emph{Human Proteome Project}, Proyecto Proteoma Humano}
 
 @entry{BDHPP,BD-HPP,\emph{Biology Disease Human Proteome Project}}
 
 @entry{CHPP,C-HPP,\emph{Chromosome Centric  Human Proteome Project}}
 
-@entry{NIST, ,\emph{National Institute for Standards and Technology}}
+@entry{NIST, ,\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}
 
 @entry{CGD, ,\emph{Candida Genome Database}}
