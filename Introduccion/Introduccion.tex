@@ -90,7 +90,7 @@ Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
 estadío del desarrollo entre otros factores. Además existen niveles de complejidad
 adicional en el curso de información desde el gen a la proteína 
-como el procesamiento alternativo de intrones y las modificaciones \ac{PTM}.
+como el procesamiento alternativo de intrones y las modificaciones post-traduccionales \ac{PTM}.
 Por eso el término \emph{proteoma} puede diversificarse, para ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
@@ -129,7 +129,7 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 \label{cap1:sec:Espectrometría de masas}
 
 El desarrollo de las técnicas de ionización suave de macromoléculas
-biológicas a finales de los años 80, además de valer el Nobel a los químicos John Fenn y Koichi Tanaka, 
+biológicas a finales de los años 80, además de valer el premio Nobel a los químicos John Fenn y Koichi Tanaka, 
 permitió sentar las bases de la espectrometría de masas aplicada a la 
 proteómica. Las técnicas de ionización \ac{ESI} \citep{Fenn1989a}
 y \ac{SLD} 
@@ -145,10 +145,10 @@ tuvo un precedente unos años antes.
 Franz Hillenkamp y Michael Karas en Frankfurt, Alemania (éstos 
 discutiblemente no galardonados) habían ideado una técnica similar que,
 en este caso, denominaron \ac{MALDI} 
- \citep{Karas1988}. Aunque \ac{MALDI} no fue aplicada a la ionización 
-de proteínas hasta la publicación del trabajo de Tanaka, actualmente 
+\citep{Karas1988}. Aunque la ionización \ac{MALDI} no fue aplicada a 
+proteínas hasta la publicación del trabajo de Tanaka, actualmente 
 éste es el acrónimo que se ha impuesto para referirse a la técnica y es,
- de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
+de hecho, una técnica muy extendida en laboratorios de espectrometría de masas.
 
 %---------------------------------------------------------------------
 %---------------------------------------------------------------------
@@ -188,7 +188,7 @@ es equivalente a su valor en thomsons.
 
 Además, en espectrometría de masas es interesante medir la masa exacta de los isótopos
 de los elementos que componen las moléculas. En este sentido es importante
-diferenciar entre las masas mono-isotópica y masa promedio
+diferenciar entre las masas mono-isotópica y masa promedio.
 
 La \emph{masa promedio} es equivalente a una media de las masas atómicas de todos
 los átomos de los elementos que componen el ion ponderados por abundancia
@@ -322,7 +322,7 @@ Por su carácter dependiente de la dimensión tiempo, los analizadores \ac{TOF}
 se usan generalmente en combinación con ionización \ac{MALDI}, que introduce
 iones en el analizador en pulsos de láser.
 
-\item \textbf{Cuadrupolos}. Los analizadores de tipo Cuadrupolo 
+\item \textbf{Cuadrupolos}. Los analizadores de tipo cuadrupolo 
 (Figura~\ref{fig:Analizadores de masas} a)
 reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
 en pares llamados polos con cargas opuestas.
@@ -396,7 +396,7 @@ es entonces deconvolucionada mediante la transfomada de Fourier que
 
 \figuraEx{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
 {Algunos de los analizadores de masas más comunes son los de tipo
- Cuadrupolo (a), Orbitrap (b) y Trampa Iónica Cuadrupolar (c)}{Analizadores de masas}
+ cuadrupolo (a), Orbitrap (b) y trampa iónica cuadrupolar (c)}{Analizadores de masas}
 
 
 
@@ -406,11 +406,8 @@ corriente producida por el haz de iones que incide sobre él convirtiéndola
 en una señal eléctrica medible. Los detectores más utilizados en 
 espectrometría de masas son los \emph{multiplicadores de electrones}.
 Este tipo de detector utiliza la energía cinética de los iones que inciden sobre una 
-placa que tiene su superficie recubierta por óxidos de tierras raras; al 
-chocar los iones contra la placa, ésta emite una corriente de electrones 
-que son acelerados hacia una segunda placa, de la que vuelven a arrancar 
-electrones que son acelerados hacia una tercera placa y así sucesivamente
-para conseguir la amplificación de la señal. 
+placa sobre la que se provoca una segunda descarga de electrones que inciden en otra placa
+de forma que se produce una reacción en cadena para conseguir la amplificación de la señal. 
 %En principio, pueden utilizarse tantas placas como se quiera, aunque 
 %generalmente se utilizan entre 10 y 16. Por medio de este detector, se 
 %consiguen amplificaciones dela corriente iónica con factores de 
@@ -429,7 +426,7 @@ el péptido que origina el espectro.
 La \textit{sensibilidad} de un espectrómetro de masas es la 
 capacidad para detectar masas muy pequeñas. Puede llegar a ser de hasta
 unas pocas partes por millón (ppm) en el caso de instrumentos de alta
-precisión como \ac{LTQ}-Orbitrap, pero requiere un ajuste óptimo de múltiples
+precisión como el \ac{LTQ}-Orbitrap, pero requiere un ajuste óptimo de múltiples
 parámetros como la calibración del instrumento o la temperatura entre
 otros.
 
@@ -446,7 +443,6 @@ adyacentes que están resueltos
 \label{eq:resolucion}
 R = \frac{M}{\Delta{M}}
 \end{equation}
-
 donde M es el valor entero más próximo de masa del primer pico y $\Delta${M}
 es el incremento de \mz a una determinada altura del pico. Frecuentemente
 se usa un 50\% de altura del pico, en ese caso el parámetro es el denominado \ac{FWHM}.
@@ -492,7 +488,7 @@ En ocasiones, cuando la proteína original se encuentra relativamente
 aislada, el espectro que generan los péptidos que se detectan en el 
 instrumento es suficientemente informativo y específico de la proteína original y 
 ésta puede ser identificada. Este es el principio de la técnica conocida
-como Huella Peptídica, descrita en la sección \ref{cap1:subsec:PMF}.
+como huella de masas peptídicas, descrita en la sección \ref{cap1:subsec:PMF}.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece es, por tanto, limitado. 
 
@@ -535,7 +531,7 @@ contiene la información necesaria para deducir la secuencia aminoacídica
 del péptido que lo origina.
 
 En algunos análisis puede ser necesario realizar fragmentaciones adicionales
-que permitan un mayor aún poder de resolución. Estos análisis
+que permitan un poder de resolución mayor aún. Estos análisis
 se conocen como MS\textsuperscript{n}, donde \emph{n} es el número de 
 fragmentaciones y etapas de análisis de masas consiguientes.
 
@@ -589,12 +585,12 @@ trampas iónicas \citep{Burlingame1996}.
 La colisión provoca que parte de la energía cinética del ion sea transformada
 en energía vibracional lo que provoca la ruptura del esqueleto peptídico.
 La fragmentación tipo CID genera una elevada proporción de iones de las 
-series \emph{b-} e \emph{y-}
+series \emph{b-} e \emph{y-}.
 
 %%Sin embargo, existen también otros tipos de fragmentación. 
 %%Atencion, con el siguiente parrafito resumo ETD, ECD y HCD :
 
-Otros tipos de fragmentación son \ac{ETD}, \citep{Syka2004}, en la que los iones de analito
+Otros tipos de fragmentación son \ac{ETD} \citep{Syka2004} en la que los iones de analito
 con carga positiva interaccionan con aniones que les transfieren un 
 electrón produciendo una fragmentación con presencia de iones \emph{c-} y \emph{z-};
 la disociación \ac{ECD} \citep{Zubarev1998},
@@ -662,12 +658,13 @@ o dicho de otra manera
 péptidos para luego inferir las proteínas originales?}
 
 La respuesta a estas preguntas, revisada en \citep{Steen2004}, tiene que ver, sobre todo, con limitaciones
-técnicas. Las proteínas intactas pueden ser difíciles de manipular,
+técnicas. El principal motivo es que la sensibilidad de los espectrómetros
+es menor para proteínas intactas que para péptidos.
+Pero además, las proteínas intactas pueden ser difíciles de manipular,
 algunas, como las proteínas de membrana son insolubles en condiciones en
 que otras sí lo son. Muchos detergentes comúnmente usados interfieren en
 MS ya que son fácilmente ionizables y se encuentran en gran cantidad en 
-proporción a las proteínas \citep{Hatt1997}. Además la sensibilidad de los espectrómetros
-es menor para proteínas intactas que para péptidos. 
+proporción a las proteínas \citep{Hatt1997}.
 %La cantidad de 
 %posibles formas en que una proteína es procesada, incluyendo \ac{PTM} 
 %en sus péptidos, y variaciones conformacionales entre
@@ -769,11 +766,11 @@ que dificilmente puede superar el millar \citep{Klose1995}.
 
 Sin embargo, este tipo de estudios sigue 
 teniendo un nicho en la proteómica actual \citep{Rogowska-Wrzesinska2013}.
-Notablemente, permite la visualización, identificación y cuantificación 
+Una ventaja notable es que permite la visualización, identificación y cuantificación 
 de proteínas intactas. La particular capacidad de la proteómica en gel para
 separar proteínas con pequeños cambios en sus puntos isoeléctricos, \emph{pI},
 permite discernir entre isoformas de proteínas, o versiones de la misma 
-proteína con \ac{PTM}, lo que difícilmente se puede
+proteína con \ac{PTM}, lo es difícil de 
 conseguir con otro tipo de aproximaciones.
 
 
