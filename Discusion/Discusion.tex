@@ -14,18 +14,17 @@
 
 
 
-Estudios proteómicos llevados a cabo usando \textit{C. albicans} como organismo
+Estudios proteómicos llevados a cabo utilizando \textit{C. albicans} como organismo
 modelo para el estudio de infecciones fúngicas 
 han permitido profundizar en algunos de los aspectos más básicos
 de su biología y también en algunos procesos y mecanismos interesantes
-desde el punto de vista clínico.
+desde el punto de vista de la patogenicidad.
 Así, se han realizado estudios que intentan identificar el mayor número
 de proteínas posibles en extractos celulares totales, estudios de la 
 transición levadura a hifa, enfocados a las proteínas de la superficie celular y secretadas, o
 a las implicadas en la formación de biopelículas entre otros aspectos.
-Esta heterogenidad existente en los diseños experimentales también 
-se puede observar en la 
-forma en que el análisis continúa trás la adquisición de espectros de masas por LC-MS/MS. 
+Esta heterogenidad en los diseños experimentales también 
+existe en el análisis que continúa trás la adquisición de espectros de masas por LC-MS/MS. 
 Los datos son analizados bioinformáticamente utilizando distintos  
 motores de búsqueda, distintos métodos de validación, flujos de análisis
 diferentes en definitiva. Además, hasta hace relativamente poco tiempo, los primeros
@@ -109,7 +108,8 @@ de lo que ocurre en la versión original de Proteopathogen), estándar, como fuent
 de datos ha permitido desarrollar un \textit{software} estable que extrae
 la información independientemente de cómo se hayan obtenido los resultados.
 De esta manera, datos originados en distintos experimentos en los que se empleen
-diferentes procedimientos experimentales y análisis computacionales podrán
+procedimientos experimentales, espectrómetros de masas y
+análisis computacionales diferentes podrán
 ser incorporados a Proteopathogen siempre que se obtengan archivos de resultados
 en el formato mzIdentML.
 
@@ -123,17 +123,24 @@ en el formato mzIdentML.
 %Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015.}
 %{Página de inicio de Proteopathogen 2}
 
-\begin{figure}[t]
-\begin{center}
- \includegraphics[width=0.99\textwidth]%
-				 {Imagenes/Vectorial/proteopathogen2_home_page}
-\caption*{Figura 1. Página de inicio de Proteopathogen2, %
-la nueva versión de Proteopathogen adaptada al estándar mzIdentML.%
+%\begin{figure}[t]
+%\begin{center}
+% \includegraphics[width=0.99\textwidth]%
+%				 {Imagenes/Vectorial/proteopathogen2_home_page}
+%\caption*{Figura 1. Página de inicio de Proteopathogen2, %
+%la nueva versión de Proteopathogen adaptada al estándar mzIdentML.%
+%Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015
+%en \href{http://proteopathogen2.dacya.ucm.es}{http://proteopathogen2.dacya.ucm.es}}
+%\end{center}
+%\end{figure}
+%\addcontentsline{lof}{figure}{Figura 1. Página de inicio de Proteopathogen 2}
+
+
+\figuraEx{Vectorial/proteopathogen2_home_page}{width=.99\textwidth}{fig:proteopathogen2_home_page}%
+{Página de inicio de Proteopathogen2, la nueva versión de Proteopathogen adaptada al estándar mzIdentML.
 Proteopathogen2 está disponible públicamente \textit{online} desde comienzos de 2015
 en \href{http://proteopathogen2.dacya.ucm.es}{http://proteopathogen2.dacya.ucm.es}}
-\end{center}
-\end{figure}
-\addcontentsline{lof}{figure}{Figura 1. Página de inicio de Proteopathogen 2}
+{Página de inicio de Proteopathogen2}
 
 
 
@@ -158,14 +165,15 @@ campo de los hongos patógenos usando principalmente el modelo de \textit{C. albi
 \medskip
 Inicialmente, la base de datos ha sido poblada con los resultados de identificaciones
 del PeptideAtlas descrito en Vialas \textit{et al.} 2013. Para ello, los 
-archivos pepXML y protXML característicos del flujo de trabajo TPP 
+archivos pepXML y protXML característicos del flujo de trabajo TPP (que
+integra principalmente las herramientas PeptideProphet y ProteinProphet),
 se han combinado y convertido, por medio de una herramienta de \textit{software}
 Ruby creada \textit{ad hoc}, en ficheros mzIdentML. 
 Y éstos, han sido validados (validación semántica y validación MIAPE)
 usando mzidValidator \citep{Ghali2013}. 
 De esta manera, Proteopathogen cuenta desde el inicio con datos de contrastada
 robustez y fiabilidad y además se ha establecido una rutina de inserción de nuevos
-resultados generados mediante TPP (formatos pepXML y protXML).
+resultados generados mediante el flujo de trabajo TPP (formatos pepXML y protXML).
 
 
 
@@ -247,7 +255,7 @@ mejoras en los motores de búsqueda o en el \textit{software} de ánalisis.
 Por otra parte, otras especies de hongos presentes en el proyecto global PeptideAtlas
 contaban con versiones que alcanzaban coberturas mayores de sus respectivos proteomas,
 como el PeptideAtlas de \textit{Schizosaccharomyces pombe} (71\%) \citep{Gunaratne2013b}
-o el PeptideAtlas de \textit{Saccharomyces cerevisiae} descrito en King \textit{et al}., 2006 (66\%)
+o el PeptideAtlas de \textit{Saccharomyces cerevisiae} descrito en King \textit{et al}., 2006 (66\%).
 %\citep{King2006}
 
 \medskip
@@ -259,12 +267,13 @@ experimentales. Algunos de ellos fueron específicamente destinados a la ampliaci
 cobertura del proteoma mediante fraccionamientos extensivos a varios niveles:
 subcelular (mediante centrifugacion), proteína (SDS-PAGE) y péptido (OFF-GEL);
 mientras que otros eran procedentes de trabajos destinados al estudio de proteínas de la
-pared celular \citep{Gil-Bona2015} o secretadas al medio extracelular \citep{Gil-Bona2015a}.
+pared celular \citep{Gil-Bona2015} o proteínas secretadas (mediante vesículas o por la vía clásica de secreción)
+al medio extracelular \citep{Gil-Bona2015a}.
 
 \medskip
 
 
-Además en ese tiempo apareció un nuevo ensamblaje de la secuencia de
+Además, en ese tiempo apareció un nuevo ensamblaje de la secuencia de
  \mbox{\textit{C. albicans}} que por primera vez incluía secuencias específicas 
 de alelo \citep{Muzzey2013}.
 En este contexto, con los resultados de los nuevos experimentos y la nueva información de 
@@ -273,18 +282,50 @@ en conjunto con los resultados de los experimentos que formaban la primera versi
 tres motores de búsqueda (SEQUEST, OMSSA y Comet) para finalmente obtener
 una cobertura de dos terceras partes del proteoma predicho de \mbox{\textit{C. albicans}}.
 Más de 71.000 péptidos asignados a 4174 secuencias de proteínas (para un 
-FDR de 0.10\% a nivel de PSM) suponen
-exactamente 66.17\% del proteoma, y con respecto a la versión inicial,
-un incremento de 3 veces el número de péptidos y 1.6 veces el de proteínas.
+FDR de 0,10\% a nivel de PSM) suponen
+exactamente 66,17\% del proteoma, y con respecto a la versión inicial,
+un incremento de 3 veces el número de péptidos y 1,6 veces el de proteínas.
 
 \medskip
 
 
-Con este notable incremento, este PeptideAtlas continúa 
-siendo el recurso público de datos proteómicos de \textit{C. albicans}
-mas exhaustivo. Pero además de describir una lista de proteínas que 
+
+
+El uso de una base de datos con secuencias específicas de alelo ha permitido
+integrar esta información por primera vez en un proyecto de proteómica 
+a gran escala de \textit{C. albicans}, de forma que se puede mantener la trazabilidad
+desde el péptido detectado hasta el alelo originario de la proteína. 
+Esta información, podría potencialmente ser utilizada para elegir péptidos proteotípicos
+que, en un ensayo SRM, puedan discernir isoformas específicas de alelo.
+
+%\medskip
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[width=0.90\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
+\caption*{Figura 2.2: Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
+\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
+El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
+es detectada lo sea por medio de ese péptido y no otro.
+Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
+que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
+Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
+Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM o MRM.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{2.2. Información básica para Mp65p y péptidos observados en PeptideAtlas}
+
+
+Con estas notables mejoras, en sentido cuantitativo en referencia al número total de identificaciones,
+y en sentido cualitativo, en cuanto a la incorporación de información de los alelos originales, 
+este PeptideAtlas continúa siendo el recurso público de datos proteómicos de \textit{C. albicans}
+más completo. 
+
+\medskip
+
+Pero además de describir una lista de proteínas que 
 representa un 66\% del proteoma
-predicho en \ac{CGD}, el PeptideAtlas de \textit{C. albicans} supone una
+predicho en \ac{CGD}, la base de datos de secuencias de referencia para \textit{C. albicans}, 
+este PeptideAtlas supone una
 novedad y un gran valor añadido al proporcionar evidencia empírica sólida de 
 la existencia de proteínas para dos terceras partes de los genes que en
 CGD se denominan \textit{uncharacterized} por carecer de un producto génico caracterizado.
@@ -293,37 +334,23 @@ CGD se denominan \textit{uncharacterized} por carecer de un producto génico cara
 
 
 
-Además este PeptideAtlas es el primer gran repositorio \textit{online} 
-de Proteómica de \textit{C. albicans} que permite mantener la 
-trazabilidad desde la identificación de péptidos y proteínas
-hasta el alelo orignal.
+%Además este PeptideAtlas es el primer gran repositorio \textit{online} 
+%de Proteómica de \textit{C. albicans} que permite mantener la 
+%trazabilidad desde la identificación de péptidos y proteínas
+%hasta el alelo orignal.
 
 %\medskip
-\begin{figure}[H]
-\begin{center}
- \includegraphics[width=0.90\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
-\caption*{Figura 2. Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
-\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
-El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
-es detectada lo sea por medio de ese péptido y no otro.
-Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
-que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
-Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
-Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM/MRM.}
-\end{center}
-\end{figure}
-\addcontentsline{lof}{figure}{Figura 2. Información básica para Mp65p y péptidos observados en PeptideAtlas}
-
 
 Una aplicación de gran utilidad que permite la interfaz web consiste en
 facilitar la selección de péptidos proteotípicos candidatos para ser
-monitorizados en ensayos de Proteómica
-dirigida (SRM/MRM). Para ello, en la web se sugieren péptidos con una
-única localización genómica, lo que permite asegurar que sean exclusivos
+monitorizados en ensayos de proteómica
+dirigida (SRM o MRM). Para ello, en la interfaz web se sugieren péptidos con una
+única localización genómica (única incluso a nivel de alelo para aquellos
+casos en que existan péptidos diferenciadores), lo que permite asegurar que sean exclusivos
 de una sola proteína y no compartidos. Además, los péptidos se ordenan por un índice
 de observabilidad que indica la probabilidad de que una proteína sea
 detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}.
-(Ver Figura 2 \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas})
+(Ver Figura 2.2 \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas})
 
 
 \medskip
@@ -349,6 +376,27 @@ e impulsores de CGD proporcionándoles un formato de enlace para que, a través
 de la información en la pestaña \textit{proteína} en CGD, se pueda
 acceder a los datos correspondientes a la identificación en PeptideAtlas
 para aquellas proteínas para las que existan estos datos.
+
+
+\medskip
+
+En definitiva, las herramientas bioinformáticas descritas en esta tesis contribuyen
+a ampliar y mejorar el catálogo existente de péptidos y proteínas detectadas en estudios
+de proteómica que utilizan el modelo de \textit{C. albicans} bajo distintas condiciones.
+Estas herramientas descritas, Proteopathogen y PeptideAtlas, ocupan nichos diferentes
+pero complementarios en este objetivo.
+
+PeptideAtlas cuenta con su propio flujo de análisis y validación estadística de los resultados
+y proporciona una base de datos y una interfaz web para visualizar los resultados de identificaciones.
+Es actualmente el catálogo más completo del proteoma de \textit{C. albicans},
+cuenta con una contrastada robustez y fiabilidad y forma parte de un proyecto global de reconocido prestigio.
+
+Proteopathogen, una base de datos y aplicacion web basada en el estándar mzIdentML,
+es versátil y completamente independiente
+del procesamiento experimental y computacional que origina los resultados.
+Permite integrar rápidamente resultados de identificaciones de orígenes diversos 
+independientemente del post-procesamiento y análisis estadístico empleado ya sea
+el proporcionado por el flujo de trabajo TPP característico de PeptideAtlas u otro.%y %al estar alojada en un servidor accesible
 
 
 
