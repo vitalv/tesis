@@ -47,5 +47,7 @@
 \GlossTeXEntry{acrHUPOPSI@{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}, Iniciativa de Estandarización en Proteómica del Proyecto Proteoma Humano}{}{acr}{a}{\GlossTeXPage{n}{126}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrTPP@{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{43}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrPRIDE@{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{42}}|GlossTeXNull}{0}
-\GlossTeXEntry{acrNIST@{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{45}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrNIST@{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{46}}|GlossTeXNull}{0}
 \GlossTeXEntry{acrCGD@{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{132}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrSRM@{SRM}{SRM}{\emph{Selected Reaction Monitoring}, Monitorización de Reacción Seleccionada}{}{acr}{a}{\GlossTeXPage{n}{41}}|GlossTeXNull}{0}
+\GlossTeXEntry{acrMRM@{MRM}{MRM}{\emph{Multiple Reaction Monitoring}, Monitorización de Reacción Múltiple}{}{acr}{a}{\GlossTeXPage{n}{41}}|GlossTeXNull}{0}

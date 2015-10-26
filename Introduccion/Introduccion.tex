@@ -500,7 +500,7 @@ y el rendimiento que ofrece es, por tanto, limitado.
 {En la espectrometría de masas en tándem se seleccionan péptidos precursores,
  generalmente los de mayor intensidad en el espectro MS\textsuperscript{1}, para %
 ser fragmentados y generar el espectro MS/MS o MS\textsuperscript{2}}%
-{Espectrometría de masas en Tándem. MS/MS}
+{Espectrometría de masas en tándem. MS/MS}
 
 En espectrometría \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
@@ -822,7 +822,7 @@ de las secuencias de péptidos trípticos teóricos.
 
 %\phantomsection
 \section{Proteómica \textit{shotgun}}
-%\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{Shotgun}}
+%\addcontentsline{toc}{section}{Proteómica de alto rendimiento \textit{shotgun}}
 \label{cap1:sec:Proteómica shotgun}
 
 La proteómica \textit{shotgun} (el término inglés se encuentra muy establecido)
@@ -838,12 +838,12 @@ la proteína original. Implica varios pasos descritos en las siguientes
 secciones.
 
 \figuraEx{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
-{Etapas en un experimento de proteómica \textit{Shotgun}. En primer lugar
+{Etapas en un experimento de proteómica \textit{shotgun}. En primer lugar
 la muestra de proteínas es digerida en péptidos. A continuación éstos
 son separados mediante cromatografía. A medida que eluyen, los péptidos
 separados, son introducidos en el espectrómetro de masas que genera
 un espectro de fragmentación MS/MS. Por último el motor de búsqueda
-compara los espectros empíricos con espectros teóricos asignando una puntuación.}{Etapas en un experimento de proteómica \textit{Shotgun}}
+compara los espectros empíricos con espectros teóricos asignando una puntuación.}{Etapas en un experimento de proteómica \textit{shotgun}}
 
 
 %-------------------------------------------------------------------
@@ -938,8 +938,8 @@ análisis computacional de esos espectros cuyo objetivo final es la
 obtención de una lista de proteínas que presumiblemente se encuentran en 
 la muestra. Este análisis computacional, a su vez, consta de varios procesos 
 secuenciales, principalmente la 
-\hyperref[cap1:sec:Asignación Péptido-Espectro]{asignación de secuencias peptídicas a cada espectro}
-(sección \ref{cap1:sec:Asignación Péptido-Espectro}),
+\hyperref[cap1:sec:Asignación péptido-espectro]{asignación de secuencias peptídicas a cada espectro}
+(sección \ref{cap1:sec:Asignación péptido-espectro}),
 \hyperref[cap1:sec:Inferencia de proteínas a partir de péptidos]
 {la inferencia de las proteínas a partir de esos péptidos}
 (sección \ref{cap1:sec:Inferencia de proteínas a partir de péptidos})
@@ -952,9 +952,9 @@ y una \hyperref[cap1:sec:Evaluación estadística de los resultados]
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Asignación Péptido-Espectro}
+\section{Asignación péptido-espectro}
 %NOTA: esto no es una subseccion de Proteómica a gran escala porque puede ser igual para proteomica en gel, ya tal
-\label{cap1:sec:Asignación Péptido-Espectro}
+\label{cap1:sec:Asignación péptido-espectro}
 %\addcontentsline{toc}{section}{Asignación Péptido-Espectro}
 
 
@@ -1407,7 +1407,7 @@ basadas en secuencia.
 
 Sin embargo, en contrapartida, sólo es posible detectar aquellos péptidos
 que hayan sido previamente identificados y que se encuentren en la 
-biblioteca de espectros
+biblioteca de espectros.
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
@@ -1664,7 +1664,7 @@ distribución promedio, es la distribución de las puntuaciones de los mejores can
 para el total de todos los espectros empíricos. Ésta se puede considerar una población
 mixta compuesta por una mezcla de subpoblación de asignaciones incorrectas y otra subpoblación
 de asignaciones correctas.}
-{Distribuciones de Espectro Individual y Promedio}
+{Distribuciones de espectro individual y promedio}
 
 Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
 son distribuciones de las mejores puntuaciones
@@ -1825,7 +1825,7 @@ el efecto de competición de las búsquedas en bases de datos concatenadas.
 
 
 
-\subsection{Modelos mixtos de probabilidad. \mbox{Probabilidad Posterior}}
+\subsection{Modelos mixtos de probabilidad. \mbox{Probabilidad posterior}}
 \label{cap1:subsec:PeptideProphet}
 
 %Modelos mixtos de evaluación de la confianza estadística
@@ -2181,9 +2181,9 @@ de error para proteínas sean mayores que para PSM.
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Proteómica dirigida. SRM/MRM}
+\section{Proteómica dirigida. SRM}
 %\addcontentsline{toc}{section}{Proteómica dirigida. SRM/MRM}
-\label{cap1:sec:Proteomica dirigida. SRM/MRM}
+\label{cap1:sec:Proteomica dirigida. SRM}
 
 %\todo{Mirar paper Picotti & Aebersold SRM proteomics: worfkflows y pitfalls como referencia para las secciones}
 
@@ -2202,12 +2202,12 @@ de datos (DDA), en la proteómica dirigida la adquisición es denominada
 \ac{DIA}
 
 La técnica que se utiliza para llevar a cabo experimentos de proteómica
-dirigida se denomina \textit{SRM, Selected Reaction Monitoring} o también,
-frecuentemente utilizado como sinónimo, \textit{MRM, Multiple Reaction Monitoring}.
+dirigida se denomina \ac{SRM} o también,
+frecuentemente utilizado como sinónimo, \ac{MRM}.
 
 La proteómica dirigida, basada en técnicas SRM, desde hace unos años está 
 emergiendo y popularizándose como un complemento ideal de las técnicas 
-de \textit{shotgun}. Las técnicas SRM proporcionas unas propiedades muy interesantes en
+de \textit{shotgun}. Las técnicas SRM proporcionan unas propiedades muy interesantes en
 experimentos en que se requiere que un grupo de proteínas, por ejemplo biomarcadores o
 proteínas constituyentes de una red o ruta particular, sean detectadas
 y cuantificadas de una forma precisa y reproducible en diferentes muestras
@@ -2253,7 +2253,7 @@ con un marcaje isotópico que permitan ubicar el tiempo de retención exacto.
 %-------------------------------------------------------------------
 
 %\phantomsection
-\section{Repositorios públicos de proteómica online}
+\section{Repositorios públicos de proteómica \textit{online}}
 %\addcontentsline{toc}{section}{Repositorios publicos de Proteómica shotgun y dirigida}
 \label{cap1:sec:Repositorios publicos de Proteomica online}
 
