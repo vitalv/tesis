@@ -1,20 +1,20 @@
 
 
-\GlossTeXEntry{1DPAGE}{1D-PAGE }{\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Monodimiensional}{}{acr}{a}{\GlossTeXPage{n}{16}}
+\GlossTeXEntry{1DPAGE}{1D-PAGE }{\emph{Monodimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Monodimiensional}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
-\GlossTeXEntry{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Bidimiensional}{}{acr}{a}{\GlossTeXPage{n}{16}}
+\GlossTeXEntry{2DPAGE}{2D-PAGE }{\emph{Bidimensional PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida Bidimiensional}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
-\GlossTeXEntry{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{138}}
+\GlossTeXEntry{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{132}}
 \GlossTeXNull{0}
 \GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
 \GlossTeXEntry{DDA}{DDA}{\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos }{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
-\GlossTeXEntry{DIA}{DIA}{\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{DIA}{DIA}{\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}, Disociación por Captura de Electrones}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{36}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{35}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electrospray Ionization}, Ionización por Electrospray}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -24,11 +24,11 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{FD}{FD}{\emph{Field Desorption}, Desorción por Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}, Tasa de Falsos Descubrimientos}{}{acr}{a}{\GlossTeXPage{n}{28}}
+\GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}, Tasa de Falsos Descubrimientos}{}{acr}{a}{\GlossTeXPage{n}{27}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}, Tasa de Falsos Negativos}{}{acr}{a}{\GlossTeXPage{n}{28}}
+\GlossTeXEntry{FNR}{FNR}{\emph{False Negative Rate}, Tasa de Falsos Negativos}{}{acr}{a}{\GlossTeXPage{n}{27}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}, Tasa de Falsos Positivos}{}{acr}{a}{\GlossTeXPage{n}{28}}
+\GlossTeXEntry{FPR}{FPR}{\emph{False Positive Rate}, Tasa de Falsos Positivos}{}{acr}{a}{\GlossTeXPage{n}{27}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FTICR}{FTICR}{\emph{Fourier Transform Ion Cyclotron Resonance}, Resonancia Iónica Ciclotrónica - Transformada de Fourier}{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
@@ -38,71 +38,71 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{HPLC}{HPLC}{\emph{High Performance Liquid Chromatography}, Cromatografía Líquida de Alta Eficacia}{}{acr}{a}{\GlossTeXPage{n}{3}}
 \GlossTeXNull{0}
-\GlossTeXEntry{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}, Iniciativa de Estandarización en Proteómica del Proyecto Proteoma Humano}{}{acr}{a}{\GlossTeXPage{n}{132}}
+\GlossTeXEntry{HUPOPSI}{HUPO-PSI}{\emph{Human Proteome Organization - Proteomics Standards Initiative}, Iniciativa de Estandarización en Proteómica del Proyecto Proteoma Humano}{}{acr}{a}{\GlossTeXPage{n}{126}}
 \GlossTeXNull{0}
-\GlossTeXEntry{LIT}{LIT}{\emph{Linear Ion Trap}, Trampa Iónica Lineal}{}{acr}{a}{\GlossTeXPage{n}{9}}
+\GlossTeXEntry{LIT}{LIT}{\emph{Linear Ion Trap}, Trampa Iónica Lineal}{}{acr}{a}{\GlossTeXPage{n}{10}}
 \GlossTeXNull{0}
 \GlossTeXEntry{LTQ}{LTQ}{\emph{Linear Trap Quadrupole}, Cuadrupolo de confinamiento lineal}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
 \GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Ionización mediante Desorción por Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MRM}{MRM}{\emph{Multiple Reaction Monitoring}, Monitorización de Reacción Múltiple}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{MRM}{MRM}{\emph{Multiple Reaction Monitoring}, Monitorización de Reacción Múltiple}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
 \GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de masas en tándem}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MudPIT}{MudPIT}{\emph{Multidimensional Protein Identification Technology}, Tecnología Multidimensional de Identificación de Proteínas}{}{acr}{a}{\GlossTeXPage{n}{20}}
+\GlossTeXEntry{MudPIT}{MudPIT}{\emph{Multidimensional Protein Identification Technology}, Tecnología Multidimensional de Identificación de Proteínas}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{48}}
+\GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{46}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}, Número de puntos de corte no efectuados}{}{acr}{a}{\GlossTeXPage{n}{36}}
+\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}, Número de puntos de corte no efectuados}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}, Número de Espectros Réplica}{}{acr}{a}{\GlossTeXPage{n}{42}}
+\GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}, Número de Espectros Réplica}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSE}{NSE}{\emph{Number of Sibling Experiments}, Número de Experimentos Hermanos}{}{acr}{a}{\GlossTeXPage{n}{42}}
+\GlossTeXEntry{NSE}{NSE}{\emph{Number of Sibling Experiments}, Número de Experimentos Hermanos}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSI}{NSI}{\emph{Number of Sibling Ions}, Número de Iones Hermanos}{}{acr}{a}{\GlossTeXPage{n}{42}}
+\GlossTeXEntry{NSI}{NSI}{\emph{Number of Sibling Ions}, Número de Iones Hermanos}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSM}{NSM}{\emph{Number of Sibling Modifications}, Numero de Modificaciones Hermanas}{}{acr}{a}{\GlossTeXPage{n}{42}}
+\GlossTeXEntry{NSM}{NSM}{\emph{Number of Sibling Modifications}, Numero de Modificaciones Hermanas}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSP}{NSP}{\emph{Number of Sibling Peptides}, Número de Péptidos Hermanos}{}{acr}{a}{\GlossTeXPage{n}{40}}
+\GlossTeXEntry{NSP}{NSP}{\emph{Number of Sibling Peptides}, Número de Péptidos Hermanos}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NSS}{NSS}{\emph{Number of Sibling Searches}, Número de Búsquedas Hermanas}{}{acr}{a}{\GlossTeXPage{n}{42}}
+\GlossTeXEntry{NSS}{NSS}{\emph{Number of Sibling Searches}, Número de Búsquedas Hermanas}{}{acr}{a}{\GlossTeXPage{n}{40}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}, Número de Extremos Trípticos}{}{acr}{a}{\GlossTeXPage{n}{36}}
+\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}, Número de Extremos Trípticos}{}{acr}{a}{\GlossTeXPage{n}{34}}
 \GlossTeXNull{0}
-\GlossTeXEntry{OMSSA}{OMSSA}{\emph{Open Mass Spectrometry Search Algorithm}, Algoritmo Abierto de Búsqueda de Espectrometría de Masas }{}{acr}{a}{\GlossTeXPage{n}{25}}
+\GlossTeXEntry{OMSSA}{OMSSA}{\emph{Open Mass Spectrometry Search Algorithm}, Algoritmo Abierto de Búsqueda de Espectrometría de Masas }{}{acr}{a}{\GlossTeXPage{n}{24}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{Poliacrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida}{}{acr}{a}{\GlossTeXPage{n}{3}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PD}{PD}{\emph{Plasma Desorption}, Desorción por Plasma}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}, Huella de Masas Peptídicas}{}{acr}{a}{\GlossTeXPage{n}{17}}
+\GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}, Huella de Masas Peptídicas}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{45}}
+\GlossTeXEntry{PRIDE}{PRIDE}{\emph{Protein Identifications Database}}{}{acr}{a}{\GlossTeXPage{n}{42}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PSM}{PSM}{\emph{Peptide-Spectrum Match}, Asignación Péptido-Espectro}{}{acr}{a}{\GlossTeXPage{n}{20}}
+\GlossTeXEntry{PSM}{PSM}{\emph{Peptide-Spectrum Match}, Asignación Péptido-Espectro}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PTM}{PTM}{\emph{Post-Translational Modification}, Modificación Post-Traduccional}{}{acr}{a}{\GlossTeXPage{n}{3}}
 \GlossTeXNull{0}
 \GlossTeXEntry{QIT}{QIT}{\emph{Quadrupole Ion Trap}, Trampa Iónica Cuadrupolar}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{QTOF}{QTOF}{\emph{Quadrupole-Time Of Flight}, Cuadrupolo-Tiempo de Vuelo }{}{acr}{a}{\GlossTeXPage{n}{8}}
+\GlossTeXEntry{QTOF}{QTOF}{\emph{Quadrupole-Time Of Flight}, Cuadrupolo-Tiempo de Vuelo }{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{QTRAP}{QTrap}{\emph{Quadrupole-Ion Trap}, Cuadrupolo-Trampa Iónica }{}{acr}{a}{\GlossTeXPage{n}{8}}
+\GlossTeXEntry{QTRAP}{QTrap}{\emph{Quadrupole-Ion Trap}, Cuadrupolo-Trampa Iónica }{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alta Eficacia en Fase Reversa}{}{acr}{a}{\GlossTeXPage{n}{19}}
+\GlossTeXEntry{RPHPLC}{RP-HPLC}{\emph{Reverse Phase High Performance Liquid Chromatography}, Cromatografía Líquida de Alta Eficacia en Fase Reversa}{}{acr}{a}{\GlossTeXPage{n}{18}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SCX}{SCX}{\emph{Strong Cation Exchange}, Intercambio Catiónico Fuerte}{}{acr}{a}{\GlossTeXPage{n}{20}}
+\GlossTeXEntry{SCX}{SCX}{\emph{Strong Cation Exchange}, Intercambio Catiónico Fuerte}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SDSPAGE}{SDS-PAGE }{\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida con Dodecilsulfato Sódico}{}{acr}{a}{\GlossTeXPage{n}{16}}
+\GlossTeXEntry{SDSPAGE}{SDS-PAGE }{\emph{Sodium Dodecyl Sulfate  PoliAcrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida con Dodecilsulfato Sódico}{}{acr}{a}{\GlossTeXPage{n}{15}}
 \GlossTeXNull{0}
 \GlossTeXEntry{SLD}{SLD}{\emph{Soft Laser Desorption}, Desorción Suave por Láser}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
-\GlossTeXEntry{SRM}{SRM}{\emph{Selected Reaction Monitoring}, Monitorización de Reacción Seleccionada}{}{acr}{a}{\GlossTeXPage{n}{43}}
+\GlossTeXEntry{SRM}{SRM}{\emph{Selected Reaction Monitoring}, Monitorización de Reacción Seleccionada}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}, Tiempo de Vuelo}{}{acr}{a}{\GlossTeXPage{n}{8}}
+\GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}, Tiempo de Vuelo}{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{45}}
+\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{43}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}, Tasa de Verdaderos Positivos}{}{acr}{a}{\GlossTeXPage{n}{28}}
+\GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}, Tasa de Verdaderos Positivos}{}{acr}{a}{\GlossTeXPage{n}{26}}
 \GlossTeXNull{0}
