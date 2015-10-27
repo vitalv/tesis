@@ -296,8 +296,20 @@ throughout the file, might be more or less profuse depending
 on the software that created them.
 
 
+In addition to browsing through the contents of the stored
+mzIdentML files, Proteopathogen implements a query system
+yielding global results. That is, for a specific queried protein
+ name, as found in the <ProteinDetectionHypothesis> name
+attribute, the search results display all the distinct peptide
+sequences found mapped into the protein sequence, regardless
+ of the experiment in which they were identified, and the
+supporting spectra for each peptide sequence, while keeping
+track of the original <SpectrumIdentification> and mzIdentML
+file. A peptide sequence may also be searched, obtaining, when
+found, the corresponding protein, or group of proteins, and the
+set of supporting spectra, again in global scope.
 
-\begin{figure}[H]
+\begin{figure}[t]
 \begin{center}
  \includegraphics[width=0.90\textwidth]%
 				 {Imagenes/Vectorial/proteopathogen2_figure2}
@@ -313,21 +325,6 @@ file with links to Candida Genome Database (CGD}
 \end{center}
 \end{figure}
 \addcontentsline{lof}{figure}{Figure 2}
-
-
-
-In addition to browsing through the contents of the stored
-mzIdentML files, Proteopathogen implements a query system
-yielding global results. That is, for a specific queried protein
- name, as found in the <ProteinDetectionHypothesis> name
-attribute, the search results display all the distinct peptide
-sequences found mapped into the protein sequence, regardless
- of the experiment in which they were identified, and the
-supporting spectra for each peptide sequence, while keeping
-track of the original <SpectrumIdentification> and mzIdentML
-file. A peptide sequence may also be searched, obtaining, when
-found, the corresponding protein, or group of proteins, and the
-set of supporting spectra, again in global scope.
 
 The use of the Ruby scripting language, unlike other compiled
  languages (Java, C/C++) that are commonly used in other

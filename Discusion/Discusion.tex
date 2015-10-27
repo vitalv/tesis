@@ -289,8 +289,6 @@ un incremento de 3 veces el número de péptidos y 1,6 veces el de proteínas.
 \medskip
 
 
-
-
 El uso de una base de datos con secuencias específicas de alelo ha permitido
 integrar esta información por primera vez en un proyecto de proteómica 
 a gran escala de \textit{C. albicans}, de forma que se puede mantener la trazabilidad
@@ -298,22 +296,7 @@ desde el péptido detectado hasta el alelo originario de la proteína.
 Esta información, podría potencialmente ser utilizada para elegir péptidos proteotípicos
 que, en un ensayo SRM, puedan discernir isoformas específicas de alelo.
 
-%\medskip
-\begin{figure}[H]
-\begin{center}
- \includegraphics[width=0.90\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
-\caption*{Figura 2.2: Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
-\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
-El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
-es detectada lo sea por medio de ese péptido y no otro.
-Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
-que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
-Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
-Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM o MRM.}
-\end{center}
-\end{figure}
-\addcontentsline{lof}{figure}{2.2. Información básica para Mp65p y péptidos observados en PeptideAtlas}
-
+\medskip
 
 Con estas notables mejoras, en sentido cuantitativo en referencia al número total de identificaciones,
 y en sentido cualitativo, en cuanto a la incorporación de información de los alelos originales, 
@@ -333,7 +316,6 @@ CGD se denominan \textit{uncharacterized} por carecer de un producto génico cara
 \medskip
 
 
-
 %Además este PeptideAtlas es el primer gran repositorio \textit{online} 
 %de Proteómica de \textit{C. albicans} que permite mantener la 
 %trazabilidad desde la identificación de péptidos y proteínas
@@ -349,8 +331,25 @@ dirigida (SRM o MRM). Para ello, en la interfaz web se sugieren péptidos con una
 casos en que existan péptidos diferenciadores), lo que permite asegurar que sean exclusivos
 de una sola proteína y no compartidos. Además, los péptidos se ordenan por un índice
 de observabilidad que indica la probabilidad de que una proteína sea
-detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}.
+detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}
 (Ver Figura 2.2. \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas})
+
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[width=0.90\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
+\caption*{Figura 2.2: Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
+\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
+El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
+es detectada lo sea por medio de ese péptido y no otro.
+Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
+que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
+Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
+Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM o MRM.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{2.2. Información básica para Mp65p \newline y péptidos observados en \mbox{PeptideAtlas}}
+
+
 
 
 \medskip
