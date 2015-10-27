@@ -1709,13 +1709,13 @@ recrear una hipótesis nula. Se puede tener la certeza de que los resultados
 de identificaciones correspondientes a secuencias \emph{señuelo}, claramente 
 etiquetadas en el fichero fasta, son identificaciones incorrectas.
 A continuación, para hacer las búsquedas, se puede añadir a la base de 
-datos de secuencias \emph{reales} (secuencias \emph{target})
-un número equivalente de secuencias \emph{señuelo} y hacer que el motor de búsqueda
-use esta base de datos concatenada (\emph{secuencias \emph{reales} - secuencias \emph{señuelo}})
+datos de secuencias reales (secuencias \emph{target})
+un número equivalente de secuencias señuelo y hacer que el motor de búsqueda
+use esta base de datos concatenada (secuencias reales - secuencias señuelo)
 del doble de tamaño que la original.
 O bien se pueden realizar dos búsquedas consecutivas, una utilizando la
-base de datos de secuencias \emph{reales} y otra a continuación utilizando
-la de secuencias \emph{señuelo}.
+base de datos de secuencias reales y otra a continuación utilizando
+la de secuencias señuelo.
 
 \figuraEx{Vectorial/target_and_decoy_dbs}{width=.99\textwidth}{fig:target_and_decoy_dbs}%
 {Una estrategia comúnmente empleada en la construcción de bases de datos
@@ -1771,15 +1771,15 @@ la tasa FDR también puede calcularse como
 
 Esta estimación general puede tener variantes.
 En el caso de que se realicen dos búsquedas independientes, una sobre
-la base de datos \textit{target} y a continuación sobre la equivalente \textit{señuelo},
+la base de datos de secuencias reales y a continuación sobre la equivalente de secuencias señuelo,
 la estimación de FDR como 
 N\textsubscript{d}/N\textsubscript{t}
 resulta conservadora ya que N\textsubscript{d} puede considerarse una sobre-estimación
 de N\textsubscript{inc}. Esto se debe a que toda la población de espectros
-se compara con las secuencias \textit{señuelo} a pesar de que algunos de los
-espectros podrían asignarse correctamente a una secuencia \textit{target}.
+se compara con las secuencias señuelo a pesar de que algunos de los
+espectros podrían asignarse correctamente a una secuencia real.
 Además, la mayoría de las funciones de puntuación tienden a otorgar
-puntuaciones más altas a \ac{PSM} \textit{señuelo} que a \ac{PSM} \textit{target}
+puntuaciones más altas a \ac{PSM} señuelo que a \ac{PSM} reales
 incorrectos %\citep{Navarro2009a}
 por lo que la distribución de puntuaciones
 \textit{señuelo} no es un reflejo preciso de la distribución de puntuaciones
@@ -1789,24 +1789,24 @@ previa de la fracción N\textsubscript{inc} dentro de N\textsubscript{t}
 considerando que la mayoría de los \ac{PSM} con puntuaciones bajas son 
 probablemente incorrectos \citep{Kall2008}
 Así se puede incluir en la tasa FDR un factor de corrección definido
-por el porcentaje estimado de \ac{PSM} \textit{target} incorrectos (PIT): Si en 
+por el porcentaje estimado de \ac{PSM} reales pero incorrectos (PIT): Si en 
 N\textsubscript{t} el 80\% de los \ac{PSM} son incorrectos, la tasa FDR 
 calculada como N\textsubscript{d}/N\textsubscript{t} se multiplica por 0.8
-para obtener un valor FDR más preciso (Por cada 100 \ac{PSM} \textit{señuelo}
-en el conjunto de \ac{PSM} aceptado se estiman 80 \ac{PSM} \textit{target} incorrectos) 
+para obtener un valor FDR más preciso (Por cada 100 \ac{PSM} señuelo
+en el conjunto de \ac{PSM} aceptado se estiman 80 \ac{PSM} reales incorrectos) 
 
 
 Las búsquedas utilizando una base de datos concatenada 
-\textit{target-decoy} son menos sensibles al efecto de sobre-estimación de 
+secuencias reales - secuencias señuelo son menos sensibles al efecto de sobre-estimación de 
 N\textsubscript{d}, sin embargo también producen un resultado FDR conservador.
 En este caso ya no se compara todo el conjunto de espectros con las 
-secuencias \textit{target} y \textit{señuelo} por separado sino simultáneamente
+secuencias reales y señuelo por separado sino simultáneamente
 lo que produce un efecto de competición.
-Se puede considerar que las secuencias \textit{target} y \textit{señuelo}
+Se puede considerar que las secuencias reales y señuelo
 compiten por el espectro.
 Pero esto implica que a algunos espectros se les puede asignar una secuencia
 señuelo con una puntuación mayor a la que se obtiene al asignarles la
-secuencia \textit{target} correcta. En tal caso se produce un aumento 
+secuencia real correcta. En tal caso se produce un aumento 
 de N\textsubscript{d} y una consiguiente reducción del
 número de \ac{PSM} correcto y por tanto un incremento de FDR.
 
@@ -1814,7 +1814,7 @@ número de \ac{PSM} correcto y por tanto un incremento de FDR.
 Otra forma de mejorar la estimación de FDR es un algoritmo refinado \citep{Navarro2009a}
 que consiste en una búsqueda en bases de datos separadas
 teniendo en cuenta en conjunto las distribuciones
-de poblaciones de \ac{PSM} \textit{target} y \ac{PSM} \textit{decoy} y corrige
+de poblaciones de \ac{PSM} reales y \ac{PSM} señuelo y corrige
 el efecto de competición de las búsquedas en bases de datos concatenadas.
 
 
