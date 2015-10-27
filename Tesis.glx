@@ -6,7 +6,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{CGD}{CGD}{\emph{Candida Genome Database}}{}{acr}{a}{\GlossTeXPage{n}{132}}
 \GlossTeXNull{0}
-\GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}{}{acr}{a}{\GlossTeXPage{n}{13}}
+\GlossTeXEntry{CID}{CID}{\emph{Collision Induced Dissociation}, Disociación Inducida por Colisión}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
 \GlossTeXEntry{DDA}{DDA}{\emph{Data Dependent Acquisition}, Adquisición Dependiente de Datos }{}{acr}{a}{\GlossTeXPage{n}{13}}
 \GlossTeXNull{0}
@@ -14,15 +14,15 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}, Disociación por Captura de Electrones}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{34}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{35}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electrospray Ionization}, Ionización por Electrospray}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ETD}{ETD}{\emph{Electron Transfer Dissociation}, Disociación por Transferencia de Electrones}{}{acr}{a}{\GlossTeXPage{n}{14}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FAB}{FAB}{\emph{Fast Atom Bombardment}, Bombardeo con Átomos Rápidos}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{FAB}{FAB}{\emph{Fast Atom Bombardment}, Bombardeo con Átomos Rápidos}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
-\GlossTeXEntry{FD}{FD}{\emph{Field Desorption}, Desorción por Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{FD}{FD}{\emph{Field Desorption}, Desorción por Campo Eléctrico}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
 \GlossTeXEntry{FDR}{FDR}{\emph{False Discovery Rate}, Tasa de Falsos Descubrimientos}{}{acr}{a}{\GlossTeXPage{n}{27}}
 \GlossTeXNull{0}
@@ -44,13 +44,13 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{LTQ}{LTQ}{\emph{Linear Trap Quadrupole}, Cuadrupolo de confinamiento lineal}{}{acr}{a}{\GlossTeXPage{n}{9}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Ionización mediante Desorción por Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{4}}
+\GlossTeXEntry{MALDI}{MALDI}{\emph{Matrix Assisted Laser Desorption Ionization}, Ionización mediante Desorción por Láser Asistida por Matriz}{}{acr}{a}{\GlossTeXPage{n}{5}}
 \GlossTeXNull{0}
 \GlossTeXEntry{MRM}{MRM}{\emph{Multiple Reaction Monitoring}, Monitorización de Reacción Múltiple}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
 \GlossTeXEntry{MSMS}{MS/MS}{\emph{Tandem Mass Spectrometry}, Espectrometría de masas en tándem}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
-\GlossTeXEntry{MudPIT}{MudPIT}{\emph{Multidimensional Protein Identification Technology}, Tecnología Multidimensional de Identificación de Proteínas}{}{acr}{a}{\GlossTeXPage{n}{18}}
+\GlossTeXEntry{MudPIT}{MudPIT}{\emph{Multidimensional Protein Identification Technology}, Tecnología Multidimensional de Identificación de Proteínas}{}{acr}{a}{\GlossTeXPage{n}{19}}
 \GlossTeXNull{0}
 \GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{46}}
 \GlossTeXNull{0}
@@ -74,7 +74,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{PAGE}{PAGE}{\emph{Poliacrylamide Gel Electrophoresis}, Electroforesis en Gel de Poliacrilamida}{}{acr}{a}{\GlossTeXPage{n}{3}}
 \GlossTeXNull{0}
-\GlossTeXEntry{PD}{PD}{\emph{Plasma Desorption}, Desorción por Plasma}{}{acr}{a}{\GlossTeXPage{n}{7}}
+\GlossTeXEntry{PD}{PD}{\emph{Plasma Desorption}, Desorción por Plasma}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
 \GlossTeXEntry{PMF}{PMF}{\emph{Peptide Mass Fingerprint}, Huella de Masas Peptídicas}{}{acr}{a}{\GlossTeXPage{n}{16}}
 \GlossTeXNull{0}

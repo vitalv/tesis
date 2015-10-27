@@ -127,18 +127,19 @@ biológica desde la unidad de información, es decir, el gen, hasta la
 %\addcontentsline{toc}{section}{Espectrometría de masas}
 %-------------------------------------------------------------------
 \label{cap1:sec:Espectrometría de masas}
+El desarrollo, a finales de los años 70 del siglo pasado, de las técnicas de ionización suave 
+como la desorción \ac{FD}, la desorción \ac{PD} y la ionización \ac{FAB} permitió por primera vez que las
+grandes y lábiles moléculas biológicas como péptidos y proteínas pudieran ser ionizadas y 
+volatilizadas relativamente intactas para ser a continuación introducidas en los espectrómetros
+de masas.
+Posteriormente, a finales de los 80, el desarrollo de la ionización \ac{ESI} \citep{Fenn1989a}
+y \ac{SLD} \citep{Tanaka1988}, además de valer el premio Nobel a los químicos John Fenn y Koichi Tanaka, 
+permitió sentar definitivamente las bases de la espectrometría de masas aplicada a la 
+proteómica. 
+ 
 
-El desarrollo de las técnicas de ionización suave de macromoléculas
-biológicas a finales de los años 80, además de valer el premio Nobel a los químicos John Fenn y Koichi Tanaka, 
-permitió sentar las bases de la espectrometría de masas aplicada a la 
-proteómica. Las técnicas de ionización \ac{ESI} \citep{Fenn1989a}
-y \ac{SLD} 
-\citep{Tanaka1988} permitieron que 
-las grandes y lábiles moléculas biológicas como las proteínas pudieran 
-ser ionizadas y volatilizadas relativamente intactas para ser posteriormente
- introducidas en los espectrómetros de masas.
 
-Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
+ Como ocurre en muchas otras ocasiones en la ciencia, de forma paralela e
 independientemente habían surgido en distintas partes del mundo ideas
 muy similares. Así, el desarrollo de \ac{SLD} que valió el Nobel a K. Tanaka,
 tuvo un precedente unos años antes.
@@ -296,7 +297,7 @@ Es el elemento que se usa generalmente para definir el tipo de instrumento.
 Existen varios tipos,
 y además pueden combinarse en los llamados espectrómetros híbridos. Así, 
 un analizador de tipo cuadrupolo puede encontrarse acoplado con un analizador
-de \emph{tiempo de vuelo} o una \emph{trampa iónica} para formar un \ac{QTOF}
+de tiempo de vuelo o una trampa iónica para formar un \ac{QTOF}
 o \ac{QTRAP} respectivamente.
 Algunos de los analizadores de masas más empleados en proteómica son los siguientes:
 
@@ -318,19 +319,21 @@ el Tiempo de Vuelo es una función de la relación \mz  de los iones
 que impactan en el detector a diferentes tiempos. %Para iones con la misma
 %carga, la aceleración depende solo de la masa, los más ligeros 
 %llegan al detector antes y los más pesados después.
-Por su carácter dependiente de la dimensión tiempo, los analizadores \ac{TOF}
+Los analizadores \ac{TOF} separan todo el paquete de iones ionizados en una
+escala dependiente del tiempo y por tanto
 se usan generalmente en combinación con ionización \ac{MALDI}, que introduce
-iones en el analizador en pulsos de láser.
+iones en el analizador en pulsos de láser en un régimen discontinuo controlado.
 
 \item \textbf{Cuadrupolos}. Los analizadores de tipo cuadrupolo 
 (Figura~\ref{fig:Analizadores de masas} a)
-reciben su nombre porque constan de cuatro varillas metálicas enfrentadas
+reciben su nombre porque constan de cuatro varillas metálicas de sección
+hiperbólica en su cara interna enfrentadas
 en pares llamados polos con cargas opuestas.
 Sobre estos pares, además del potencial eléctrico de corriente continua,
 se aplica también una corriente alterna de radiofrecuencia.
- Esta conformación permite crear un campo eléctrico oscilante controlado
- que estabiliza (o desestabiliza) selectivamente los iones que pasan a través 
-y de esta forma solo los iones con ciertos valores \mz  podrán llegar a 
+Esta conformación permite crear un campo eléctrico oscilante controlado
+que desvía selectivamente los iones que pasan a través 
+y de esta forma solo los iones en un estrecho margen de valores \mz  podrán llegar a 
 impactar en el detector mientras que el resto son desviados y filtrados.
 %Una conformación frecuente cosnsite utilizar tres cuadrupolos consecutivos.
 %\textit{bla bla etapas de filtrado, mrm, bla bla}
@@ -341,22 +344,22 @@ físico que los cuadrupolos, pero la conformación en forma de cámara de las
 trampas iónicas permite confinar y acumular los iones que luego son 
 liberados selectivamente.
 
-\subitem Las trampas iónicas \ac{QIT} 
+\subitem Las trampa iónica \ac{QIT}, descrita por el Nobel Wolfgang Paul en 1960,
 (Figura~\ref{fig:Analizadores de masas} c)
-constan de  dos electrodos metálicos de sección hiperbólica enfrentados 
+consta de  dos electrodos metálicos de sección hiperbólica enfrentados 
 y un electrodo toroidal que conforman una cámara donde se acumulan los iones
 de analito. En el interior los iones orbitan
 en el vacío. El ajuste de la radiofrecuencia permite filtrar selectivamente
 los iones, estabilizando aquellos con determinados valores \mz y desestabilizando
-el resto, que colisionan con el electrodo y no llegan al detector.
+el resto, que colisionan con el electrodo y no llegan al detector \citep{Louris1987}.
 
 \subitem Las trampas iónicas \ac{LTQ} o \ac{LIT} consisten
 en un sistema de cuadrupolo, que sitúa los iones en un eje radial, y
 dos electrodos terminales, uno en cada extremo, que confina los iones longitudinalmente.
-%Con respecto a las trampas
-%iónicas tipo QIT, las trampas iónicas lineales \ac{LTQ} tienen una mayor 
-%capacidad de acumulación de iones y de barrido. Además pueden funcionar
-%como un cuadrupolo 
+Con respecto a las trampas
+iónicas tipo QIT, las trampas iónicas \ac{LTQ} tienen una mayor 
+capacidad de acumulación de iones y de barrido. Además pueden funcionar
+como un cuadrupolo convencional.
 
 
 \subitem \emph{Orbitrap}
@@ -407,7 +410,7 @@ en una señal eléctrica medible. Los detectores más utilizados en
 espectrometría de masas son los \emph{multiplicadores de electrones}.
 Este tipo de detector utiliza la energía cinética de los iones que inciden sobre una 
 placa sobre la que se provoca una segunda descarga de electrones que inciden en otra placa
-de forma que se produce una reacción en cadena para conseguir la amplificación de la señal. 
+y así sucesivamente de forma que se produce una reacción en cadena para conseguir la amplificación de la señal. 
 %En principio, pueden utilizarse tantas placas como se quiera, aunque 
 %generalmente se utilizan entre 10 y 16. Por medio de este detector, se 
 %consiguen amplificaciones dela corriente iónica con factores de 
