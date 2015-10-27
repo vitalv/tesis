@@ -472,7 +472,7 @@ FUNCTION {format.vol.num.pages}
   bolden
   number empty$
     'skip$
-    { "(" number * ")" * *
+    { " (" number * ")" * *
       volume empty$
         { "there's a number but no volume in " cite$ * warning$ }
         'skip$

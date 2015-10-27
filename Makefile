@@ -43,6 +43,19 @@ pdflatex:
 	pdflatex $(NOMBRE_LATEX)
 	sed -i -e 's/\\textit{Candida albicans}/Candida albicans/g' library.bib
 	sed -i -e 's/Candida albicans/\\textit{Candida albicans}/g' library.bib
+
+	sed -i -e 's/\\textit{Apis mellifera}/Apis mellifera/g' library.bib
+	sed -i -e 's/Apis mellifera/\\textit{Apis mellifera}/g' library.bib
+
+	sed -i -e 's/\\textit{S. pombe}/S. pombe/g' library.bib
+	sed -i -e 's/S. pombe/\\textit{S. pombe}/g' library.bib	
+
+	sed -i -e 's/\\textit{Saccharomyces cerevisiae}/Saccharomyces cerevisiae/g' library.bib
+	sed -i -e 's/Saccharomyces cerevisiae/\\textit{Saccharomyces cerevisiae}/g' library.bib	
+
+	sed -i -e 's/\\textit{Drosophila melanogaster}/Drosophila melanogaster/g' library.bib
+	sed -i -e 's/Drosophila melanogaster/\\textit{Drosophila melanogaster}/g' library.bib	
+
 	-bibtex $(NOMBRE_LATEX)
 	-glosstex $(NOMBRE_LATEX) $(FICHEROS_GLOSARIO)
 	-makeindex $(NOMBRE_LATEX).gxs -o $(NOMBRE_LATEX).glx -s glosstex.ist

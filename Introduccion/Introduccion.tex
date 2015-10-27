@@ -353,6 +353,10 @@ en el vacío. El ajuste de la radiofrecuencia permite filtrar selectivamente
 los iones, estabilizando aquellos con determinados valores \mz y desestabilizando
 el resto, que colisionan con el electrodo y no llegan al detector \citep{Louris1987}.
 
+\figuraEx{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
+{Algunos de los analizadores de masas más comunes son los de tipo
+ cuadrupolo (a), Orbitrap (b) y trampa iónica cuadrupolar (c)}{Analizadores de masas}
+
 \subitem Las trampas iónicas \ac{LTQ} o \ac{LIT} consisten
 en un sistema de cuadrupolo, que sitúa los iones en un eje radial, y
 dos electrodos terminales, uno en cada extremo, que confina los iones longitudinalmente.
@@ -365,7 +369,7 @@ como un cuadrupolo convencional.
 \subitem \emph{Orbitrap}
 (Figura~\ref{fig:Analizadores de masas} b)
  es un tipo de trampa iónica, relativamente
-reciente, desarrollado a finales de los años 90 del s.XX \citep{Makarov2000}
+reciente, desarrollado a finales de los años 90 del s.XX \citep{Makarov2000}.
 Consiste en un electrodo en un eje interno rodeado por un electrodo externo
 cilíndrico. Los iones son introducidos tangencialmente desde la fuente 
 de ionización y, al ajustar la diferencia de potencial, son atrapados en
@@ -397,9 +401,6 @@ es entonces deconvolucionada mediante la transfomada de Fourier que
 
 \end{itemize}
 
-\figuraEx{Vectorial/Q_QIT_OT}{width=.99\textwidth}{fig:Analizadores de masas}%
-{Algunos de los analizadores de masas más comunes son los de tipo
- cuadrupolo (a), Orbitrap (b) y trampa iónica cuadrupolar (c)}{Analizadores de masas}
 
 
 
@@ -449,9 +450,9 @@ R = \frac{M}{\Delta{M}}
 donde M es el valor entero más próximo de masa del primer pico y $\Delta${M}
 es el incremento de \mz a una determinada altura del pico. Frecuentemente
 se usa un 50\% de altura del pico, en ese caso el parámetro es el denominado \ac{FWHM}.
-La resolución es un parámetro específico del espectrómetro de masas. Otros
-parámetros, relacionados aunque no específicos del instrumento son la exactitud
-y la precisión.
+%La resolución es un parámetro específico de cada analizador de masas. Otros
+%parámetros, relacionados aunque no específicos del instrumento son la exactitud
+%y la precisión.
 
 La \textit{exactitud} de la medida de la masa molecular 
 es la diferencia entre el valor \mz obtenido para un ion y su valor real.
@@ -462,7 +463,7 @@ La \textit{precisión} es una medida de la dispersión de una serie de
 mediciones obtenidas para un analito determinado (en condiciones
 experimentales equiparables) con respecto a un valor
 promedio de referencia. El parámetro que se emplea generalmente como medida
-de precisión es la desviación estándar $\sigma$, equivalente a la raíz
+de precisión es la desviación estándar {\large$\sigma$}, equivalente a la raíz
 cuadrada de la varianza.
 
 
@@ -501,9 +502,9 @@ y el rendimiento que ofrece es, por tanto, limitado.
 ser fragmentados y generar el espectro MS/MS o MS\textsuperscript{2}}%
 {Espectrometría de masas en tándem. MS/MS}
 
-En espectrometría \ac{MSMS} o MS\textsuperscript{2},
+En la espectrometría de masas \ac{MSMS} o MS\textsuperscript{2},
  los péptidos, una vez
-ionizados y dentro del espectrómetro, son sometidos a una 
+ionizados y en el interior del analizador, son sometidos a una 
 fragmentación adicional. (Figura~\ref{fig:tandem_ms}).
 %\begin{itemize}
 %\item En la \emph{Disociación Inducida por Colisión}, CID
@@ -523,9 +524,9 @@ introducidos en el espectrómetro y registra los llamados espectros
 MS\textsuperscript{1}, valores \mz y sus correspondientes intensidades
 para cada ion.
 A continuación, en función de la intensidad registrada en 
-MS\textsuperscript{1}, se seleccionan y aislan algunos de estos iones -\emph{precursores}-
+MS\textsuperscript{1}, se seleccionan y aislan algunos de estos iones, \emph{precursores},
  para ser fragmentados en péptidos más 
-pequeños -\emph{fragmentos}- en el interior del espectrómetro.
+pequeños, \emph{fragmentos}, en el interior del analizador.
 El espectro MS\textsuperscript{2} adquirido o espectro de fragmentación,
 registra los valores \mz e intensidades de los fragmentos de cada
 uno de los péptidos precursores aislados y fragmentados. 
@@ -557,7 +558,7 @@ Generalmente, los iones más abundantes e informativos son los \emph{b-} e \emph{
 el punto de menor energía de la estructura.
 En analizadores tipo cuadrupolo o \ac{QTOF} predominan los iones \emph{y-},
 mientras que en las trampas iónicas se generan igualmente \emph{b-} e \emph{y-}
-\citep{Steen2004}
+\citep{Steen2004}.
 
 
 \figura{Vectorial/roepstorff_nomenclature}{width=.70\textwidth}{fig:peptide_fragmentation}%
@@ -713,7 +714,7 @@ una baja frecuencia de R y K que no generen péptidos del tamaño adecuado.
 %\addcontentsline{toc}{section}{Proteómica en gel}
 %\label{cap1:sec:Proteómica en gel}
 
-La separación de proteínas por electroforesis en gel de poliacrilamida, \ac{PAGE},
+La separación de proteínas por electroforesis \ac{PAGE}
 es una técnica, o serie de técnicas con variantes, que consiste en separar
 proteínas presentes en una muestra inicial en base a propiedades
 fisico-químicas diferenciadoras como su carga, tamaño y/o su punto isoeléctrico.
@@ -787,7 +788,7 @@ conseguir con otro tipo de aproximaciones.
 %\addcontentsline{toc}{subsection}{Huella Peptídica}
 %The anchor of a bookmark and its parent's must not be the same. Added a new anchor
 
-La huella de masas peptídica de una proteína se refiere al hecho de que el 
+La huella de masas peptídicas de una proteína se refiere al hecho de que el 
 patrón de fragmentación de una proteína en los péptidos que la constituyen
 utilizando una enzima proteolítica determinada, es muy específico de la
 proteína originaria (siempre y cuando se conozca el patrón de corte de la 
@@ -830,7 +831,7 @@ es la técnica de elección para la mayoría
 de estudios proteómicos enfocados a obtener un alto rendimiento.
 El nombre \textit{shotgun} proviene 
 de una analogía con las técnicas clásicas de secuenciación genómica donde 
-el ADN es fragmentado en puntos no focalizados indiscriminadamente
+el ADN es fragmentado en puntos no focalizados, indiscriminadamente,
 en secuencias más pequeñas que posteriormente son 
 ensambladas. En la proteómica \textit{shotgun} las proteínas son 
 fragmentadas en péptidos a partir de los cuales se infiere finalmente 
@@ -840,7 +841,8 @@ secciones.
 \figuraEx{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
 {Etapas en un experimento de proteómica \textit{shotgun}. En primer lugar
 la muestra de proteínas es digerida en péptidos. A continuación éstos
-son separados mediante cromatografía. A medida que eluyen, los péptidos
+son separados mediante algún tipo cromatografía, frecuentemente HPLC.
+A medida que eluyen, los péptidos
 separados, son introducidos en el espectrómetro de masas que genera
 un espectro de fragmentación MS/MS. Por último el motor de búsqueda
 compara los espectros empíricos con espectros teóricos asignando una puntuación.}{Etapas en un experimento de proteómica \textit{shotgun}}
@@ -920,7 +922,7 @@ Además, la cromatografía, usando una terminología similar a la usada para la sep
 de proteínas en gel, también puede ser multi-dimensional.
 La tecnología denominada \ac{MudPIT}
 \citep{Wolters2001} integra una primera dimensión de separación usando 
-una columna \ac{SCX} y segunda dimensión consistente 
+una columna \ac{SCX} y una segunda dimensión consistente 
 en una cromatografía en fase reversa.
 %\end{itemize}
 
@@ -985,13 +987,6 @@ espectros MS/MS adquiridos previamente y ya asignados a péptidos,
 que son comparados directamente con los espectros empíricos adquiridos.
 
 
-\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.70\textwidth}{fig:spectrum_interpretation_2}%
-{Interpretación automática de espectros MS/MS. Gracias a la información
-disponible sobre la presencia de los diferentes tipos de iones
-se puede elaborar una lista de péptidos candidatos que han generado
-el espectro empírico y para cada uno de ellos comparar y evaluar su similitud.}
-{Interpretación automática de espectros MS/MS}
-
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
@@ -1008,6 +1003,15 @@ de asignación de una secuencia peptídica a un espectro MS/MS
 Existen una gran variedad de herramientas computacionales llamadas 
 motores de búsqueda diseñadas para realizar
 esta tarea. 
+
+
+\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.70\textwidth}{fig:spectrum_interpretation_2}%
+{Interpretación automática de espectros MS/MS. Gracias a la información
+disponible sobre la presencia de los diferentes tipos de iones
+se puede elaborar una lista de péptidos candidatos que han generado
+el espectro empírico y para cada uno de ellos comparar y evaluar su similitud.}
+{Interpretación automática de espectros MS/MS}
+
 
 Los 
 \hyperref[cap1:subsubsec:motores de búsqueda]{motores de búsqueda}
@@ -1068,7 +1072,7 @@ proteasas contaminantes presentes en la muestra)
 El establecimiento de un rango o ventana
 de tolerancia de masas, tanto a nivel de péptido precursor como a nivel
 de fragmentos, permite excluir aquellos péptidos y fragmentos que se encuentren
-fuera de dicho rango. Solo los espectros teóricos de aquellos péptidos que 
+fuera de dicho rango. Sólo los espectros teóricos de aquellos péptidos que 
 cumplen este requisito son comparados con el espectro empírico y  puntuados en base a su similitud.
 La elección de esta tolerancia depende del tipo de espectrómetro utilizado, 
 así, para equipos de alta resolución tipo Orbitrap o FTICR se puede ajustar
@@ -1174,7 +1178,7 @@ amplia para la masa del precursor y posteriormente emplear ese parámetro
 en el post-procesamiento (PeptideProphet, sección \ref{cap1:subsec:PeptideProphet})
 de forma que se puede obtener un mayor rendimiento (en términos de
 identificaciones para una cierta tasa de error) comparado con una búsqueda
-para el mismo set de espectros con una ventana más restrictiva \citep{Ding2008, Nesvizhskii2010}.
+para el mismo conjunto de espectros con una ventana más restrictiva \citep{Ding2008, Nesvizhskii2010}.
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
