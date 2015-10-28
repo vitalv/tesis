@@ -34,20 +34,20 @@ primera vez por Marc Wilkins a mediados de los años 90 para describir al
 célula, tejido u organismo}. Anteriormente, a finales de los 80,
 el desarrollo de las técnicas de ionización suave, como la \textit{Ionización por 
 Electrospray}, ESI (\textit{Electrospray Ionization}) o la \textit{Desorción Suave 
-por Láser}, SLD (\textit{Soft Laser Desorption}), permitieron
-ionizar grandes biomoléculas como las proteínas manteniéndolas 
+por Láser}, SLD (\textit{Soft Laser Desorption}), permitió
+ionizar grandes biomoléculas como los péptidos y proteínas manteniéndolas 
 relativamente intactas. Esto sentó las bases de la espectrometría de masas
 aplicada a la proteómica.
 
 En la proteómica \textit{shotgun} (el término inglés está muy asentado), el primer paso del
-experimento normalmente consiste en la digestión de las proteínas de la
+experimento generalmente consiste en la digestión de las proteínas de la
 muestra en péptidos por acción de una enzima proteolítica como la tripsina.
 Esto incrementa notablmente el rendimiento en términos de número de proteínas
-que pueden ser identificadas en un solo experimento comparado con los experimentos
+que pueden ser identificadas en un sólo experimento comparado con los experimentos
 basados en gel. Sin embargo, tiene el coste asociado de provocar una gran
 complejidad de la mezcla de péptidos y el problema añadido de la inferencia de las proteínas originarias.
 
-Los péptidos son separados por cromatografía líquida (LC), e ionizados para
+Los péptidos son separados por cromatografía líquida e ionizados para
 entrar a continuación en el espectrómetro de masas donde son separados en función de
 la proporción entre su masa y su carga (\textit{m/z}) y los valores obtenidos son registrados en un 
 espectro MS\textsuperscript{1}. En la espectrometría de masas en tándem (MS/MS), los 
@@ -62,7 +62,7 @@ motores de búsqueda. En esencia, a cada par espectro-péptido (PSM), se le otorga
 una puntuación que mide el grado de similitud entre el espectro empírico adquirido 
 y espectros teóricos generados (correspondientes a secuencias conocidas).
 
-Para evaluar la seguridad en la identificación de los péptidos, se pueden proporcionar
+Para evaluar la fiabilidad de la identificación de los péptidos, se pueden proporcionar
 parámetros estadísticos como los p-valores y e-valores para cada PSM. Pero en el contexto de un experimento
 en el que se generan miles de espectros MS/MS, se pueden aplicar procedimientos estadísticos adicionales.
 
@@ -84,8 +84,8 @@ poblaciones. Finalmente, usando probabilidad bayesiana, se obtiene la probabilid
 de ser correcto para cada PSM.
 
 En cuanto al problema de la inferencia de las proteínas hay dos aspectos fundamentales.
-Por una parte está el agrupamiento no-aleatorio de péptidos en proteínas provoca que el error
-de asignaciones incorrectas se propague afectando las tasas FDR. Pero además, también 
+Por una parte el agrupamiento no-aleatorio de péptidos en proteínas provoca que el error
+de asignaciones incorrectas se propague afectando a las tasas FDR. Pero además, también 
 contribuye al problema el hecho de
 que existan secuencias de péptidos comunes, conservados, en diferentes proteínas.
 Las distintas herramientas informáticas tratan estos asuntos con diferentes aproximaciones.
@@ -129,7 +129,7 @@ o las rutas de la \textit{Enciclopedia de Genes y Genomas de Kyoto}, KEGG
 las que estan implicadas. 
 El formato de identificaciones de péptidos y proteínas MzIdentML promovido por la iniciativa
 PSI aún no había sido creado de modo
-que Proteopathogen recopilaba los resultados en formatos de texto separado por tabulador
+que Proteopathogen recopilaba los resultados en formatos de texto plano
 dependientes del programa utilizado para generar los resultados.
 
 Tras una primera versión  \citep{Vialas2009b},
@@ -143,7 +143,9 @@ experimental y computacional con el que los resultados son generados.
 Proteopathogen es una útil herramienta \textit{online} que facilita
 la visualización y análisis de los resultados de experimentos de Proteómica
 tanto por los usuarios del laboratorio como por parte de los revisores
-de las revistas donde los estudios son publicados.
+de las revistas donde los estudios son publicados. Además permite
+incorporar nuevos resultados con independencia del procesamiento experimental
+y computacional que los ha generado.
 
 Con el desarrollo del PeptideAtlas de \textit{C. albicans}, por primera vez
 se incluyó un modelo de hongo patógeno en el proyecto global PeptideAtlas.
@@ -168,18 +170,24 @@ Además, a través de su interfaz web, el PeptideAtlas proporciona una herramienta
 para ayudar en la selección de péptidos proteotípicos candidatos para
 ser monitorizados, el primer paso, esencial, en el diseño de ensayos de proteómica dirigida.
 
-Por último, y para favorecer la comunicación e interconexión entre los
-recursos CGD y PeptideAtlas, se ha contactado con los desarrolladores 
-e impulsores de CGD proporcionándoles un formato de enlace para que, a través
-de la información en la pestaña \textit{proteína} en CGD, se pueda acceder a los datos
-de evidencia de identificación en PeptideAtlas para las proteínas para las que exista esta información.
+Ambas herramientas descritas en esta tesis, Proteopathogen y PeptideAtlas,
+ocupan nichos diferentes pero complementarios en el objetivo de ampliar y mejorar
+el catálogo existente de péptidos y proteínas detectadas en estudios de proteómica que 
+utilizan el modelo de hongo patógeno \textit{C. albicans}. PeptideAtlas
+proporciona un flujo de análisis y validación estadística además de una base de datos
+e interfaz web con la mayor cobertura disponible del proteoma de \textit{C. albicans}.
+Y Proteopathogen es una base de datos y herramienta web basada en el estándar mzIdentML
+, versátil y completamente independiente del post-procesamiento y análisis estadístico
+utilizado.
+
+
 
 \subsubsection*{Conclusiones}
 
-La base de datos y aplicación web desarrollada, denominada Proteopathogen,
-es una herramienta pública \textit{online} de gran utilidad para la visualización
-y análisis de resultados de proteómica en estudios que usan 
-\textit{C. albicans} como organismo modelo de hongos patógenos.
+Se ha desarrollado una base de datos y aplicación web denominada Proteopathogen,
+una herramienta pública online de gran utilidad para la visualización y análisis de re-
+sultados de proteómica en estudios que utilizan \textit{C. albicans} como organismo modelo de
+hongos patógenos.
 
 Con la adopción del estándar mzIdentML como formato de origen para
 incorporar nuevos datos en Proteopathogen se asegura la estabilidad y futuro
@@ -191,10 +199,10 @@ Se ha creado un PeptideAtlas de \textit{C. albicans} estableciendo
 por primera vez una caracterización a gran escala del proteoma
 de un modelo de hongo patógeno en el proyecto global PeptideAtlas.
 
-Este PeptideAtlas de \textit{C. albicans} describe 71310 péptidos y 4174
-proteínas (para un FDR de 0,10\% a nivel de PSM),
-supone la caracterización más exahustiva del proteoma de este organismo (66\%)
-y es el recurso más completo y fiable disponible públicamente.
+El PeptideAtlas de \textit{C. albicans} describe 71310 péptidos y 4174 proteínas (para un FDR
+de 0,10 \% a nivel de PSM), supone la caracterización más exahustiva del proteoma
+de este organismo (66 \%), proporciona información sobre los alelos originales y es el
+recurso más completo y fiable disponible públicamente.
 
 En el PeptideAtlas de \textit{C. albicans} se describen 2860 proteínas
 para las que sus correspondientes ORFs se denominan
