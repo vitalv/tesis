@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="graphical_abstract_Proteopathogen1.svg">
+   sodipodi:docname="graphical_abstract_Proteopathogen1.svg"
+   inkscape:export-filename="/home/vital/Escritorio/graphical_abstract_Proteopathogen1.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs4">
     <linearGradient
@@ -1349,8 +1352,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.75924429"
-     inkscape:cx="274.7258"
-     inkscape:cy="306.94427"
+     inkscape:cx="227.33073"
+     inkscape:cy="304.31007"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1371,7 +1374,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
