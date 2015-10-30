@@ -15,7 +15,6 @@
 \addcontentsline{lof}{chapter}{Introducción}
 
 
-
 %~ \begin{FraseCelebre}
 %~ \begin{Frase}
  %~ I spend a lot of time on this task. I should write a program automating it!
@@ -80,22 +79,22 @@
 \label{cap1:sec:Proteómica. Conceptos generales}
 
 El concepto de proteoma fue acuñado originalmente por Marc Wilkins en 
-los años 90 en analogía al concepto de Genoma \citep{Wasinger1995}.
+los años 90 en analogía al concepto de genoma \citep{Wasinger1995}.
 Si el genoma es la dotación génica de una célula u organismo, 
 el proteoma es entendido como \emph{el conjunto total de proteínas 
 expresadas por los genes de una célula, tejido u organismo}. 
-Sin embargo, mientras que el Genoma es el mismo en todas las 
+Sin embargo, mientras que el genoma es el mismo en todas las 
 células del organismo, el proteoma es un concepto más variable. 
 Los genes se expresan en función de las condiciones en que se encuentra
 la célula, según el orgánulo, el tejido, y
 estadío del desarrollo entre otros factores. Además existen niveles de complejidad
 adicional en el curso de información desde el gen a la proteína 
 como el procesamiento alternativo de intrones y las modificaciones post-traduccionales \ac{PTM}.
-Por eso el término \emph{proteoma} puede diversificarse, para ajustarse a definiciones mas específicas.
+Por eso el término \emph{proteoma} es más flexible y puede ajustarse a definiciones mas específicas.
 Así, podemos hablar del proteoma (o fosfo-proteoma, por ejemplo) de un orgánulo
 celular, como la mitocondria, en un tejido concreto, en unas condiciones
 ambientales definidas por los nutrientes disponibles, posiblemente sometida a
- condiciones de estrés, \textit{etc}.
+condiciones de estrés, \textit{etc}.
 
 Proteómica es, por tanto, el estudio del proteoma, independientemente
 del conjunto o subconjunto de proteínas objeto de estudio. 
@@ -857,7 +856,7 @@ compara los espectros empíricos con espectros teóricos asignando una puntuación.
 \subsection{Separación de péptidos y proteínas sin gel}
 %\addcontentsline{toc}{subsection}{Separación multidimensional de péptidos}
 
-A diferencia de la técnica de la Huella Peptídica donde cada proteína se encuentra
+A diferencia de la técnica de la huella de masaas peptídicas donde cada proteína se encuentra
 relativamente aislada, en la proteómica de alto rendimiento o
 \mbox{\textit{shotgun}}, puesto que el objetivo es identificar el máximo número de 
 proteínas en un solo experimento, se parte de una muestra
@@ -873,7 +872,7 @@ sean ionizados y lleguen al analizador de masas gradualmente.
 
 Opcionalmente esta separación puede comenzar a nivel de proteína por
 electroforesis en un gel \ac{1DPAGE}, o incluso a un nivel estructural 
-superior, por ejemplo, por fraccionamientos sub-celulares correspondientes a distintos 
+superior, por ejemplo, por fraccionamientos subcelulares correspondientes a distintos 
 orgánulos.
 
 \medskip
@@ -895,8 +894,8 @@ Esta proporción en la composición de la fase móvil puede ser constante
 (cromatografía isocrática) o variable, en gradiente de elución. 
 En un gradiente típico, al aumentar la proporción del solvente orgánico, 
 los analitos de la muestra irán progresivamente teniendo mayor afinidad 
-por la fase móvil y se separan de la fase estacionaria. El \textit{Tiempo
-de Retención} o \textit{Tiempo de Elución} es el tiempo que necesita un
+por la fase móvil y se separan de la fase estacionaria. El tiempo
+de retención o tiempo de elución es el tiempo que necesita un
 analito para atravesar la columna. Siempre que las condiciones cromatográficas
 permanezcan invariables el tiempo de retención de un analito es una
 característica identificativa.
@@ -1006,11 +1005,17 @@ motores de búsqueda diseñadas para realizar
 esta tarea. 
 
 
-\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.70\textwidth}{fig:spectrum_interpretation_2}%
-{Interpretación automática de espectros MS/MS. Gracias a la información
-disponible sobre la presencia de los diferentes tipos de iones
-se puede elaborar una lista de péptidos candidatos que han generado
-el espectro empírico y para cada uno de ellos comparar y evaluar su similitud.}
+\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
+{Interpretación automática de espectros MS/MS. 
+En primer lugar se elabora una lista de péptidos candidatos que presumiblemente han generado
+el espectro. Para ello el espacio de búsqueda en la base de datos de secuencias se puede
+acotar conociendo el tipo de enzima proteolítica utilizada o la tolerancia (diferencia
+entre masa experimental y teórica) permitida entre otros parámetros suministrados al motor de búsqueda.
+Conociendo además una probabilidad estimada de que cada tipo de ión se encuentre en un espectro MS/MS
+se puede crear un espectro teórico para cada uno de los péptidos candidatos de la lista elaborada.
+Y cada uno de los espectros teóricos es comparado con el espectro empírico, se obtienen todos los 
+iones coincidentes y se asigna una puntuación. Finalmente, en base a la puntuación, se obtiene
+una lista de los mejores péptidos candidatos para cada espectro.}
 {Interpretación automática de espectros MS/MS}
 
 
@@ -1066,7 +1071,7 @@ de búsqueda debe realizar y, por tanto, el tiempo empleado para ello. Sin
 embargo, al restringir el tipo de enzima, se imposibilita la identificación
 de péptidos con rupturas inespecíficas (por ejemplo el procesamiento post-
 traduccional que provoca la liberación del péptido señal o por 
-proteasas contaminantes presentes en la muestra)
+proteasas contaminantes presentes en la muestra).
 }
 
 \item{
@@ -1229,7 +1234,7 @@ uno de los programas más utilizados. Para cada espectro adquirido, SEQUEST
 calcula de manera independiente la puntuación de correlación (\emph{cross-correlation Score, Xcorr})
 para todos los candidatos con los que es comparado.
 En primer lugar se crea un espectro empírico procesado (espectro X) en el que los picos de baja 
-intensidad son elimnados y el resto de valores \mz son redondeados al valor
+intensidad son eliminados y el resto de valores \mz son redondeados al valor
 entero más próximo. Para cada candidato se crea un espectro teórico (espectro Y)
 usando unas reglas de fragmentación simplificadas. Entonces el valor \emph{Xcorr}
 es calculado usando la función de correlación \emph{Corr(t)} (el producto 
@@ -1679,7 +1684,6 @@ de todos los \ac{PSM} de un experimento y permiten por tanto estimar otros parám
 estadísticos adicionales a nivel global, como la Tasa de Falsos Descubrimientos, FDR
 y la probabilidad de un PSM en particular en el contexto global del experimento.
 
-\medskip
 
 Es importante destacar que las aproximaciones que usan distribuciones de
 espectro individual son compatibles con las que usan distribuciones promedio,
@@ -1687,7 +1691,7 @@ es decir, se puede realizar un análisis FDR global para un conjunto de
 \ac{PSM} que han sido ordenados por \textit{p-valores} o \textit{e-valores} obtenidos individualmente.
 
 
-
+\newpage
 
 \subsection{Bases de datos señuelo y Tasa de Falsos Descubrimientos (FDR)}
 
@@ -1847,7 +1851,7 @@ de PSM), el primero en implementar este tipo de análisis,
 que permite estimar la confianza en los péptidos identificados 
 aportando un valor de probabilidad posterior.
 
-Resumidamente, PeptideProphet recalcula las puntuaciones y emplea un 
+Brevemente, PeptideProphet recalcula las puntuaciones y emplea un 
 método de Bayes empírico -un procedimiento de inferencia estadística en 
 que la distribución \textit{a priori} se estima a partir de los datos-
 para establecer un modelo mixto de probabilidad que integra las subpoblaciones
@@ -2220,6 +2224,16 @@ proteínas constituyentes de una red o ruta particular, sean detectadas
 y cuantificadas de una forma precisa y reproducible en diferentes muestras
 que se quiere comparar.
 
+\figuraEx{Vectorial/esquema_srm}{width=.99\textwidth}{fig:esquema_srm}%
+{Adquisición y reconstrucción de la señal en un experimento SRM.
+Las técnicas \ac{SRM} se efectúan en instrumentos de tipo triple cuadrupolo.
+El péptido monitorizado es seleccionado en el primer cuadrupolo, filtrando el resto 
+de masas. A continuación es fragmentado en el segundo cuadrupolo y en el último
+cuadrupolo se monitorizan los fragmentos. La señal es registrada como un pico
+de elución en el que las señales de cada fragmento idealmente han de coeluir, 
+confirmando que corresponden al mismo péptido precursor.}
+{Adquisición y reconstrucción de la señal en un experimento SRM.} 
+
 Originalmente desarrollada para detectar y cuantificar
 pequeñas moléculas como metabolitos o fármacos, las
 primeras aplicaciones de SRM al campo de la proteómica comenzaron en 
@@ -2230,7 +2244,7 @@ aprovechar la capacidad de espectrómetros de masas de tipo triple cuadrupolo
 para actuar como filtros de masas de analitos a dos niveles consecutivos, 
 el de un péptido precursor, y el de los fragmentos que se generan tras ser éste
 fragmentado. Los péptidos son monitorizados usando \textit{transiciones}, conjuntos
-de valores \mz de un precursor y valores \mz de productos correspondientes.
+de valores \mz de un precursor y valores \mz de sus fragmentos correspondientes.
 Este doble filtro es, idealmente, muy específico del
 péptido, y por extensión, de la proteína originaria. Por eso es esencial utilizar
 péptidos \textit{proteotípicos}, aquellos cuya
@@ -2251,8 +2265,7 @@ monitorizado y confirmar su identidad (MIDAS, \textit{MRM Initiated Detection An
 También se pueden añadir a la muestra versiones sintéticos de los péptidos que se monitorizan,
 con un marcaje isotópico que permitan ubicar el tiempo de retención exacto.
 
-\figura{Vectorial/esquema_srm}{width=.99\textwidth}{fig:esquema_srm}%
-{Adquisición y reconstrucción de la señal en un experimento SRM} 
+
 
 
 
@@ -2482,13 +2495,16 @@ oportunista implica que, en ocasiones, propiciadas generalmente por un
 sistema inmune debilitado en el hospedador, puede proliferar y diseminarse
 provocando infecciones, candidiasis, de gravedad variable, desde afecciones 
 mucocutáneas leves hasta infecciones sistémicas severas que pueden incluso llegar a ser letales.
-En Estados Unidos especies del género \textit{Candida} suponen la cuarta
-causa más común de infecciones nosocomiales con tasas de mortalidad de hasta
-el 50\% en el caso de infecciones sistémicas \citep{Pfaller2010}.
+%En Estados Unidos especies del género \textit{Candida} suponen la cuarta
+%causa más común de infecciones nosocomiales con tasas de mortalidad de hasta
+%el 50\% en el caso de infecciones sistémicas \citep{Pfaller2010}.
 %Mayer Hube 2013 C. albicans pathogenicity mechanisms:
+
 Los principales factores de virulencia con los que cuenta \textit{C. albicans}
 para proliferar y diseminarse causando infecciones son su polimorfismo,
-su capacidad de producir adhesinas e invasinas, y la formación de biopelículas \citep{Mayer2013}. 
+su capacidad de producir adhesinas e invasinas, %
+la secreción de enzimas hidrolíticas %
+y la formación de biopelículas \citep{Mayer2013}. 
 
 El polimorfismo consiste en la capacidad
 de transformar su morfología. Las morfologías más comunes 
@@ -2497,20 +2513,18 @@ son la clásica forma ovalada levaduriforme,
 adecuada para la diseminación a través de los vasos sanguíneos, y los
 filamentos o hifas que permiten penetrar e invadir tejidos \citep{Berman2002, Jacobsen2012}.
 
-\figuraEx{Vectorial/candida_vs_macrophage}{width=.80\textwidth}{fig:candida_vs_macrophage}%
-{La población comensal de células de \textit{C. albicans}
- y células del sistema inmune como macrófagos, presentes en las mucosas
- de los tractos gastrointestinal y genito-urinario se encuentran en un 
- \textit{status} de equilibrio en condiciones normales.}
-{Equilibrio entre \textit{Candida albicans} y células del sistema inmune}
-
-
 
 La producción de adhesinas, proteínas especializadas en la adhesión
 a la superficies abióticas o de otras células es otro importante factor de virulencia.
 Las aglutininas de la familia ALS que incluyen proteinas con anclaje GPI
-como Als3 \citep{Phan2007, DeGroot2013} y otras como la también anclada mediante GPI y asociada
-a hifas Hwp1 \citep{Sundstrom2002} son algunas de las adhesinas más estudiadas.
+como Als3p \citep{Phan2007, DeGroot2013} y otras como la también anclada mediante GPI y asociada
+a hifas Hwp1p \citep{Sundstrom2002} son algunas de las adhesinas más estudiadas.
+
+A continuación de la adhesión a la superficie celular del hospedador, la secreción de enzimas hidrolíticas
+como proteasas (como las de la familia SAP), fosfolipasas y lipasas tiene un papel importante 
+en la virulencia. Se ha descrito que pueden facilitar la penetración en las células \citep{Wachtler2012} 
+e incluso podrían mejorar la eficacia en la adquisición de nutrientes extracelulares \citep{Naglik2003}
+
 
 La formación de biopelículas sobre sustratos abióticos como catéteres o
 prótesis dentales o sobre la superficie celular en mucosas también supone
@@ -2518,15 +2532,54 @@ un factor de virulencia crítico. Se ha descrito que biopelículas maduras
 adquieren una mayor resistencia a antifúngicos y a la acción del sistema
 inmune del hospedador en comparación con células planctónicas \citep{Fanning2012}.
 
-
+\figuraEx{Vectorial/candida_vs_macrophage}{width=.80\textwidth}{fig:candida_vs_macrophage}%
+{La población comensal de células de \textit{C. albicans}
+ y células del sistema inmune como macrófagos, presentes en las mucosas
+ de los tractos gastrointestinal y genito-urinario se encuentran en un 
+ \textit{status} de equilibrio en condiciones normales.}
+{Equilibrio entre \textit{Candida albicans} y células del sistema inmune}
 %Otros factores de virulencia son Mirar Mayer Hube 2013 C. albicans pathogenicity mechanisms
 
 Desde el punto de vista de la proteómica, se han realizado muy diversos
-estudios usando el modelo de \textit{C. albicans}. En este sentido
-los ensayos proteómicos se han enfocado principalmente en el estudio
-de los rasgos patógenos. Existen trabajos enfocados al estudio del proteoma 
-de la pared celular \citep{Castillo2008}, estudios de proteómica de los factores de 
-virulencia \citep{Pitarch2006}, de la respuesta serológica \citep{Pitarch2009}
-y también estudios sobre la resistencia a antifúngicos \citep{Hoehamer2010}.
+estudios usando el modelo de \textit{C. albicans}. Existen
+estudios proteómicos de la interacción con el hospedador, tanto desde el enfoque de
+\textit{C. albicans} \citep{Fernandez-Arenas2007}, como desde el enfoque de células
+del sistema inmune del hospedador como macrófagos \citep{Reales-Calderon2014, Reales-Calderon2013};
+estudios del proteoma de la superficie celular y proteínas secretadas \citep{Gil-Bona2015, Gil-Bona2015a},
+del proteoma de la membrana plasmática \citep{Cabezon2009}, de la pared celular \citep{Pitarch2002, Castillo2008} 
+o del proteoma implicado en la transición dimórfica levadura-hifa \citep{Monteoliva2010}.
+También se han realizado aproximaciones proteómicas para la búsqueda de biomarcadores
+de diagnóstico y pronóstico de candidiasis \citep{Pitarch2006b, Pitarch2011}.
+
+Sin embargo, a pesar de la extensa variedad de estudios proteómicos abordados, la presencia
+de resultados en respositorios públicos \textit{online} era hasta hace relativamente poco tiempo
+escasa y en ocasiones poco fiable. Las herramientas bioinformáticas descritas en esta tesis
+contribuyen a mejorar y ampliar el catálogo existente de resultados de estudios proteómicos
+que utilizan {C. albicans} en diferentes condiciones.
+
+
+%En este sentido
+%los ensayos proteómicos se han enfocado principalmente en el estudio
+%de los rasgos patógenos. Existen trabajos enfocados al estudio del proteoma 
+%de la pared celular \citep{Castillo2008}, estudios de proteómica de los factores de 
+%virulencia \citep{Pitarch2006}, de la respuesta serológica \citep{Pitarch2009}
+%y también estudios sobre la resistencia a antifúngicos \citep{Hoehamer2010}.
+
+
+%Candida Genome database
+\subsection{Candida Genome Database, CGD. Base de datos del genoma de Candida}
+\label{CGD}
+La base de datos \ac{CGD}, creada en la universidad de Stanford, California
+es el recurso de referencia empleado por la comunidad científica para obtener información y secuencias de {Candida spp.} \citep{Inglis2012}.
+
+El ensamblaje de su secuencia genómica descrito en \citet{Muzzey2013} fue el
+primer ensamblaje diploide, con información de alelos, descrito y recogido en CGD.
+
+Las secuencias de proteínas traducidas a partir de dicho ensamblaje se han usado para
+construir las bases de datos empleadas en estudios proteómicos descritos en esta tesis como \citet{Vialas2015a}.
+
+Además las herramientas de enriquecimiento y mapeo de anotaciones de términos GO, GO Term Finder y
+GO Slim Mapper, accesibles a través de CGD, han sido extensamente empleadas en \citet{Vialas2013} y \citet{Vialas2015a}.
+
 
 

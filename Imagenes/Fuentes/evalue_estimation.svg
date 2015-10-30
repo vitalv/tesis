@@ -197,8 +197,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="386.73021"
-     inkscape:cy="170.21071"
+     inkscape:cx="341.05785"
+     inkscape:cy="299.78905"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -219,7 +219,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -734,81 +734,81 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-style:normal;font-weight:normal;font-size:12.59044933px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="458.13446"
-       y="383.13892"
+       y="383.13898"
        id="text14268"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan14270"
          x="458.13446"
-         y="383.13892">Construir la distribución</tspan><tspan
+         y="383.13898">Construir la distribución</tspan><tspan
          sodipodi:role="line"
          x="458.13446"
-         y="398.87698"
+         y="398.87704"
          id="tspan14274">de espectro individual.</tspan><tspan
          sodipodi:role="line"
          x="458.13446"
-         y="414.61505"
+         y="414.61511"
          id="tspan14272" /></text>
     <text
        sodipodi:linespacing="125%"
        id="text14276"
-       y="524.87299"
+       y="463.70093"
        x="458.49103"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-style:normal;font-weight:normal;font-size:12.59044933px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          id="tspan14280"
-         y="524.87299"
+         y="463.70093"
          x="458.49103"
-         sodipodi:role="line">transformando el número de</tspan><tspan
-         y="540.61102"
+         sodipodi:role="line">Transformar el número de</tspan><tspan
+         y="479.43896"
          x="458.49103"
          sodipodi:role="line"
          id="tspan14286">asignaciones a escala logarítmica</tspan><tspan
          id="tspan14282"
-         y="556.34912"
+         y="495.17706"
          x="458.49103"
          sodipodi:role="line" /></text>
     <text
        xml:space="preserve"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:-0.22px;word-spacing:-0.18000001px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-style:normal;font-weight:normal;font-size:12.59044933px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.22px;word-spacing:-0.18000001px;fill:#000000;fill-opacity:1;stroke:none"
        x="458.073"
-       y="613.44421"
+       y="543.75879"
        id="text14288"
        sodipodi:linespacing="125%"><tspan
          id="tspan14292"
          sodipodi:role="line"
          x="458.073"
-         y="613.44421">ajustar una recta indicativa del</tspan><tspan
+         y="543.75879">Ajustar una recta indicativa del</tspan><tspan
          sodipodi:role="line"
          x="458.073"
-         y="629.18225"
+         y="559.49683"
          id="tspan14298">número de asignaciones incorrectas</tspan><tspan
          sodipodi:role="line"
          x="458.073"
-         y="644.92035"
+         y="575.23492"
          id="tspan14294" /></text>
     <text
        sodipodi:linespacing="125%"
        id="text14300"
-       y="697.06036"
+       y="623.81659"
        x="457.79492"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-style:normal;font-weight:normal;font-size:12.59044933px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          id="tspan14306"
-         y="697.06036"
+         y="623.81659"
          x="457.79492"
-         sodipodi:role="line">interpolar usando la recta ajustada</tspan><tspan
-         y="712.7984"
+         sodipodi:role="line">Interpolar usando la recta ajustada</tspan><tspan
+         y="639.55463"
          x="457.79492"
          sodipodi:role="line"
          id="tspan14313">el valor de asignaciones que </tspan><tspan
-         y="728.5365"
+         y="655.29272"
          x="457.79492"
          sodipodi:role="line"
          id="tspan14315">corresponde a la puntuación</tspan><tspan
-         y="744.27454"
+         y="671.03076"
          x="457.79492"
          sodipodi:role="line"
          id="tspan14342">del mejor candidato</tspan></text>
@@ -1490,96 +1490,32 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="460.72385"
-       y="781.6391"
+       y="736.18225"
        id="text8346"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan8348"
          x="460.72385"
-         y="781.6391"
-         style="font-size:13px;font-style:italic;font-weight:bold;-inkscape-font-specification:Sans Bold Italic">e-valor: <tspan
+         y="736.18225"
+         style="font-style:italic;font-weight:bold;font-size:13px;-inkscape-font-specification:'Sans Bold Italic'">e-valor: <tspan
    style="font-style:normal;font-weight:normal;-inkscape-font-specification:Sans"
    id="tspan9090">Número esperado</tspan></tspan><tspan
          sodipodi:role="line"
          x="460.72385"
-         y="797.8891"
-         style="font-size:13px;font-style:normal;font-weight:normal;-inkscape-font-specification:Sans"
+         y="752.43225"
+         style="font-style:normal;font-weight:normal;font-size:13px;-inkscape-font-specification:Sans"
          id="tspan9086">de asignaciones aleatorias</tspan><tspan
          sodipodi:role="line"
          x="460.72385"
-         y="814.1391"
-         style="font-size:13px;font-style:normal;font-weight:normal;-inkscape-font-specification:Sans"
+         y="768.68225"
+         style="font-style:normal;font-weight:normal;font-size:13px;-inkscape-font-specification:Sans"
          id="tspan9088">que pueden ocurrir para el </tspan><tspan
          sodipodi:role="line"
          x="460.72385"
-         y="830.3891"
-         style="font-size:13px;font-style:normal;font-weight:normal;-inkscape-font-specification:Sans"
+         y="784.93225"
+         style="font-style:normal;font-weight:normal;font-size:13px;-inkscape-font-specification:Sans"
          id="tspan9106">valor de puntuación obtenido</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="458.49103"
-       y="435.79767"
-       id="text9108"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan9112"
-         sodipodi:role="line"
-         x="458.49103"
-         y="435.79767">El número de asignaciones</tspan><tspan
-         sodipodi:role="line"
-         x="458.49103"
-         y="451.53574"
-         id="tspan9118">decae exponencialmente</tspan><tspan
-         sodipodi:role="line"
-         x="458.49103"
-         y="467.2738"
-         id="tspan9114" /></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text9120"
-       y="487.95227"
-       x="458.49103"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       xml:space="preserve"><tspan
-         id="tspan9124"
-         y="487.95227"
-         x="458.49103"
-         sodipodi:role="line">luego,</tspan><tspan
-         id="tspan9126"
-         y="503.69031"
-         x="458.49103"
-         sodipodi:role="line" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="458.49103"
-       y="577.02759"
-       id="text9130"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="458.49103"
-         y="577.02759"
-         id="tspan9132">se puede</tspan><tspan
-         sodipodi:role="line"
-         x="458.49103"
-         y="592.76562"
-         id="tspan9134" /></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text9136"
-       y="663.08441"
-       x="458.49103"
-       style="font-size:12.59044933px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       xml:space="preserve"><tspan
-         id="tspan9138"
-         y="663.08441"
-         x="458.49103"
-         sodipodi:role="line">e</tspan><tspan
-         id="tspan9140"
-         y="678.82245"
-         x="458.49103"
-         sodipodi:role="line" /></text>
   </g>
 </svg>
