@@ -2075,10 +2075,14 @@ De forma general se podría calcular la probabilidad de una proteína P
 como 1 menos las probabilidades de ser incorrectos de cada uno (\textit{p\textsubscript{i}})
  de sus péptidos:
 
+%\medskip %para A4
+
 \begin{equation}
 \label{eq:ProteinProphet1}
 P(prot) = 1 - \prod_{i}(1 - p_{i})\\
 \end{equation}
+
+%\medskip %para A4
 
 Pero ProteinProphet refina las probabilidades de cada PSM previamente
 a combinarlas para tener en cuenta el problema del agrupamiento dirigido
@@ -2093,6 +2097,8 @@ El reajuste teniendo en cuenta el \ac{NSP} se realiza con una
 aproximación de Bayes empírica análoga a los modelos de PeptideProphet
 que estima las distribuciones de NSP entre las poblaciones de péptidos 
 correcta e incorrecta:
+
+%\medskip %para A4
 
 \begin{equation}
 \label{eq:ProteinProphet2}
@@ -2313,8 +2319,11 @@ forma parte del proyecto desde 2012.
 \label{GPMDB}
 El sistema \ac{GPMDB} \citep{Craig2004} almacena resultados
 de experimentos de proteómica, recogidos de otros repositorios públicos, en forma de ficheros XML indexados
-en una base de datos mediante un sistema que denominan XIAPE (\textit{Xml 
-Information About a Proteomics Experiment})
+en una base de datos mediante un sistema denominado XIAPE (\textit{Xml 
+Information About a Proteomics Experiment}).
+Parte de los resultados del PeptideAtlas de \textit{C. albicans} descritos
+en esta tesis son accesibles \href{http://www.thegpm.org/dsotw_2014.html#201406151}{desde GPMDB}
+(\href{http://www.thegpm.org/dsotw_2014.html#201406151}{http://www.thegpm.org/dsotw\_2014.html\#201406151}).
 
 %-------------------------------------------------------------------
 %-------------------------------------------------------------------
