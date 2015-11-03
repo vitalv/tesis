@@ -829,3 +829,9 @@
  %left=20mm,
  %top=20mm,
 % }
+
+%EN A4 me queda un margen exterior muy ancho. Pongo esto para desplazar todo el textblock hacia afuera:
+\newlength{\textblockoffset}
+\setlength{\textblockoffset}{12mm}
+\addtolength{\hoffset}{\textblockoffset}
+\addtolength{\evensidemargin}{-2.0\textblockoffset}
