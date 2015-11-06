@@ -35,7 +35,7 @@
 %Parece ser que tiene que ser before the document declaration
 
 
-%documentclass[10pt,a4paper,twoside]{book}
+%\documentclass[9pt,a4paper,twoside]{book}
 
 \documentclass[8pt,b5paper,twoside]{book}
 
@@ -122,14 +122,15 @@ constantes,guionado,Cascaras/bibliografia,config%
 \definecolor{smokyblack}{rgb}{0.06, 0.05, 0.03}
 \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
 \hypersetup{
-%  pdfborder = {0 0 0}
-    colorlinks,
-    citecolor=smokyblack,
-    linkcolor=smokyblack,
-    %linkbordercolor=blue,
-    %pdfborderstyle={/S/U/W 1}, %borderstyle will be underline of width 1pt
-    filecolor=coolblack,
-    urlcolor=coolblack
+	pdfborder = {0 0 0},
+    %colorlinks=false,
+    %allbordercolors = {0 0 0},
+	%citecolor=smokyblack,
+    %linkcolor=black,
+    %linkbordercolor=black,
+    %pdfborderstyle={/S/U/W 1} %borderstyle will be underline of width 1pt
+	%filecolor=coolblack,
+	%urlcolor=coolblack
 }
 
 
@@ -163,6 +164,8 @@ constantes,guionado,Cascaras/bibliografia,config%
 \frontmatter
 
 \include{Cascaras/cover}
+
+\include{Cascaras/certificado}
 
 \include{Cascaras/dedicatoria}
 

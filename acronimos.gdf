@@ -21,6 +21,8 @@
 
 @entry{GO, ,\emph{Gene Ontology}, Ontología Génica}
 
+@entry{GPMDB, ,\emph{Global Proteome Machine Database}}
+
 @entry{KEGG, ,\emph{Kyoto Encyclopedia of Genes and Genomes}, Enciclopedia de Genes y Genomas de Kyoto}
 
 @entry{MALDI, ,\emph{Matrix Assisted Laser Desorption Ionization}, Ionización mediante Desorción por Láser Asistida por Matriz}

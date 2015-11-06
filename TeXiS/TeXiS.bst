@@ -244,7 +244,7 @@ FUNCTION {format.names}
               if$
               t "others" =
                 { " \textit{et~al}." * }
-                { " and " * t * }
+                { " y " * t * }
               if$
             }
           if$
@@ -277,7 +277,7 @@ FUNCTION {format.names.ed}
               if$
               t "others" =
                 { " \textit{et~al}." * }
-                { " and " * t * }
+                { " y " * t * }
               if$
             }
           if$
@@ -888,7 +888,7 @@ FUNCTION {format.lab.names}
         'skip$
         { s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
             { " \textit{et~al}." * }
-            { " and " * s #2 "{vv~}{ll}" format.name$ * }
+            { " y " * s #2 "{vv~}{ll}" format.name$ * }
           if$
         }
       if$

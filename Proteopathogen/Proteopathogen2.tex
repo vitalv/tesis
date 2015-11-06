@@ -46,11 +46,11 @@ The Proteopathogen database was the first proteomics online resource
 focused on experiments related to \textit{Candida albicans}
  and other fungal pathogens and their interaction with the host. 
  Since then, the HUPO-PSI standards were implemented and settled, and 
- the first large scale \textit{C. albicans} proteomics resource appeared 
- as a \textit{C. albicans} PeptideAltas. This has enabled the remodeling
+ the first large scale \textit{\mbox{C. albicans}} proteomics resource appeared 
+ as a \textit{\mbox{C. albicans}} PeptideAltas. This has enabled the remodeling
  of Proteopathogen to take advantage and benefit from the use of the 
  HUPO-PSI adopted format for peptide and protein identification mzIdentML 
- and continue offering a centralized resource for \textit{C. albicans}, 
+ and continue offering a centralized resource for \textit{\mbox{C. albicans}}, 
  other fungal pathogens and different cell lines proteomics data.
 
 \newpage{}
@@ -60,8 +60,8 @@ focused on experiments related to \textit{Candida albicans}
 
 The opportunist pathogenic fungus \textit{Candida albicans}, under
 usual circumstances, is a harmless resident commensal in
-human mucous membranes of a large percentage of the popu-
-lation. However, taking advantage of weakened host immune
+human mucous membranes of a large percentage of the population.
+However, taking advantage of weakened host immune
 defenses, for instance in immunocompromised cancer or
 AIDS patients, it may switch to its pathogenic status, over-
 proliferating and becoming thus the main etiological agent
@@ -81,7 +81,7 @@ However, until recently, the resulting proteomics identification
  datasets were sparse and disseminated. The
 Proteopathogen database \citep{Vialas2009b} was the first public online 
 proteomics data repository specifically focused on experiments
-aimed at the study of \textit{C. albicans} and other fungal species
+aimed at the study of \textit{\mbox{C. albicans}} and other fungal species
 pathogenic traits. Since no standard format for peptide and
 protein identification results was available, Proteopathogen
 was developed to compile and display identification lists in
@@ -109,9 +109,9 @@ standard for identification results, incorporating it as the input
 data format and using it as inspiration for information display.
 
 More recently, the most comprehensive, up to the current date, 
-online \textit{C. albicans} proteomics data repository was
+online \textit{\mbox{C. albicans}} proteomics data repository was
 developed and integrated in PeptideAtlas \citep{Vialas2013}. These publicly
-available \textit{C. albicans} results have been used to establish a new
+available \textit{\mbox{C. albicans}} results have been used to establish a new
 version of Proteopathogen with a solid foundation.
 
 In this background, we present here a revisited Proteopathogen
@@ -119,7 +119,7 @@ In this background, we present here a revisited Proteopathogen
 display peptide and protein identification data based upon
 the mzIdentML format. It is the first online database specifically
  developed to map and store the contents of files in
-mzIdentML, it has been initially populated with the \textit{C. albicans}
+mzIdentML, it has been initially populated with the \textit{\mbox{C. albicans}}
 PeptideAtlas identification results and it is publicly accessible
 at \href{http://proteopathogen2.dacya.ucm.es}{http://proteopathogen2.dacya.ucm.es}
 
@@ -296,10 +296,22 @@ throughout the file, might be more or less profuse depending
 on the software that created them.
 
 
+In addition to browsing through the contents of the stored
+mzIdentML files, Proteopathogen implements a query system
+yielding global results. That is, for a specific queried protein
+ name, as found in the <ProteinDetectionHypothesis> name
+attribute, the search results display all the distinct peptide
+sequences found mapped into the protein sequence, regardless
+ of the experiment in which they were identified, and the
+supporting spectra for each peptide sequence, while keeping
+track of the original <SpectrumIdentification> and mzIdentML
+file. A peptide sequence may also be searched, obtaining, when
+found, the corresponding protein, or group of proteins, and the
+set of supporting spectra, again in global scope.
 
-\begin{figure}[H]
+\begin{figure}[t]
 \begin{center}
- \includegraphics[width=0.90\textwidth]%
+ \includegraphics[width=0.86\textwidth]%
 				 {Imagenes/Vectorial/proteopathogen2_figure2}
 \caption*{Figure 2. Information displayed in the web interface. 
 Proteopathogen displays two main sets of information for the selected
@@ -313,21 +325,6 @@ file with links to Candida Genome Database (CGD}
 \end{center}
 \end{figure}
 \addcontentsline{lof}{figure}{Figure 2}
-
-
-
-In addition to browsing through the contents of the stored
-mzIdentML files, Proteopathogen implements a query system
-yielding global results. That is, for a specific queried protein
- name, as found in the <ProteinDetectionHypothesis> name
-attribute, the search results display all the distinct peptide
-sequences found mapped into the protein sequence, regardless
- of the experiment in which they were identified, and the
-supporting spectra for each peptide sequence, while keeping
-track of the original <SpectrumIdentification> and mzIdentML
-file. A peptide sequence may also be searched, obtaining, when
-found, the corresponding protein, or group of proteins, and the
-set of supporting spectra, again in global scope.
 
 The use of the Ruby scripting language, unlike other compiled
  languages (Java, C/C++) that are commonly used in other
@@ -353,7 +350,7 @@ interest.
 
 Proteopathogen will greatly benefit from the adoption of
 mzIdentML as input data format. Any proteomics experiment
-on \textit{C. albicans}, or any fungal pathogen-host interaction, as long
+on \textit{\mbox{C. albicans}}, or any fungal pathogen-host interaction, as long
 as they are provided in valid (semantically valid and MIAPE-
 compliant) mzIdentML (version 1.1.0), will be welcome to be
 integrated in the database. To that purpose, users provided
@@ -371,15 +368,37 @@ The Proteopathogen web application and database has been
 completely rebuilt to accommodate and display \textit{C. albicans}, or
 any fungal pathogen for that matter, proteomics identification
 results in the HUPO-PSI adopted format for peptide and protein
- identification mzIdentML. This makes it the first public
+identification mzIdentML. This makes it the first public
 online database specifically designed to store the information
- contained in these types of files and display its contents
+contained in these types of files and display its contents
 following an analogous structure.
 
 
-\section*{References}
+%\phantomsection{}
+\section*{Acknowledgements}
+This work has been financially supported by project
+BIO2012-31767 Ministerio de Economía y Competitividad,
+Spain, PROPMT (S2010/BMD-2414) from the Comunidad
+Autónoma de Madrid, REIPI, Spanish Network for the
+Research in Infectious Diseases (RD12/0015/0004), and PRB2
+(PT13/0001/0004) from the ISCIII. VV held a research contract
+associated to project BIO2012-31767. The authors are grate-
+ful to Daniel Tabas-Madrid and Alberto Pascual Montano from
+CNB-CSIC for outstanding support and assistance in setting
+up the web application.
 
-\begin{itemize}
+
+\subsubsection*{Supplementary data}
+Supplementary data associated with this article can be found,
+in the online version, at doi:10.1016/j.euprot.2015.04.002 \href{http://dx.doi.org/10.1016/j.jprot.2015.10.019}{http://dx.doi.org/10.1016/j.jprot.2015.10.019}
+
+
+
+\phantomsection{}
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{itemize}[leftmargin=*]
 
 \item[]{
 Cabezón, V., Llama-Palacios, A., Nombela, C., Monteoliva, L., and Gil, C. (2009), Analysis of

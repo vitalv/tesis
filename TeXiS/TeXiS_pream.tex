@@ -776,6 +776,7 @@
 
 %\usepackage[document]{ragged2e} %para right align \begin{flushright} (titulos partes)
 
+\usepackage{setspace} %para poder ajustar \baselinestretch en algunas partes. como en la discusion para que ocupe más
 
 
 
@@ -787,7 +788,7 @@
 %\renewcommand*{\familydefault}{\rmdefault}
 
 %Interlineado
-\renewcommand{\baselinestretch}{1.4}
+\renewcommand{\baselinestretch}{1.2}
 
 %Incluir paquetes para ecuacioncitas
 \usepackage[latin1]{inputenc}
@@ -810,3 +811,34 @@
 
 \usepackage{caption}
 \usepackage{float}
+
+
+
+
+%me permite quitar el espacio a la izq de cada item en la bibliografia de los capitulos poniendo \setitemize[0]{leftmargin**}
+\usepackage{enumitem}
+
+
+
+%para cambiar el margen externo, que en a4 es too large
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% outer=40mm,
+ %total={170mm,257mm},
+ %left=20mm,
+ %top=20mm,
+% }
+
+%EN A4 me queda un margen exterior muy ancho. Pongo esto para desplazar todo el textblock hacia afuera:
+%\newlength{\textblockoffset}
+%\setlength{\textblockoffset}{12mm}
+%\addtolength{\hoffset}{\textblockoffset}
+%\addtolength{\evensidemargin}{-2.0\textblockoffset}
+
+
+%EN B5 también pero menos
+\newlength{\textblockoffset}
+\setlength{\textblockoffset}{6mm}
+\addtolength{\hoffset}{\textblockoffset}
+\addtolength{\evensidemargin}{-2.0\textblockoffset}
