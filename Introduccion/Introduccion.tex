@@ -300,7 +300,7 @@ de tiempo de vuelo o una trampa iónica para formar un \ac{QTOF}
 o \ac{QTRAP} respectivamente.
 Algunos de los analizadores de masas más empleados en proteómica son los siguientes:
 
-\medskip%para A4
+%\medskip%para A4
 
 \begin{itemize}
 
@@ -496,7 +496,7 @@ como huella de masas peptídicas, descrita en la sección \ref{cap1:subsec:PMF}.
 Sin embargo, esta técnica requiere que la proteína se encuentre aislada
 y el rendimiento que ofrece es, por tanto, limitado. 
 
-\figuraEx{Vectorial/tandem_ms}{width=.99\textwidth}{fig:tandem_ms}%
+\figuraEx{Vectorial/tandem_ms}{width=.95\textwidth}{fig:tandem_ms}%
 {En la espectrometría de masas en tándem se seleccionan péptidos precursores,
  generalmente los de mayor intensidad en el espectro MS\textsuperscript{1}, para %
 ser fragmentados y generar el espectro MS/MS o MS\textsuperscript{2}}%
@@ -561,7 +561,7 @@ mientras que en las trampas iónicas se generan igualmente \emph{b-} e \emph{y-}
 \citep{Steen2004}.
 
 
-\figura{Vectorial/roepstorff_nomenclature}{width=.70\textwidth}{fig:peptide_fragmentation}%
+\figura{Vectorial/roepstorff_nomenclature}{width=.65\textwidth}{fig:peptide_fragmentation}%
 {Nomenclatura de Roepstorff para los fragmentos en MS/MS} 
 
 
@@ -838,7 +838,7 @@ fragmentadas en péptidos a partir de los cuales se infiere finalmente
 la proteína original. Implica varios pasos descritos en las siguientes 
 secciones.
 
-\figuraEx{Vectorial/overview_of_shotgun_proteomics}{width=.99\textwidth}{fig:overview_of_shotgun_proteomics}%
+\figuraEx{Vectorial/overview_of_shotgun_proteomics}{width=.90\textwidth}{fig:overview_of_shotgun_proteomics}%
 {Etapas en un experimento de proteómica \textit{shotgun}. En primer lugar
 la muestra de proteínas es digerida en péptidos. A continuación éstos
 son separados mediante algún tipo cromatografía, frecuentemente HPLC.
@@ -1005,7 +1005,7 @@ motores de búsqueda diseñadas para realizar
 esta tarea. 
 
 
-\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.80\textwidth}{fig:spectrum_interpretation_2}%
+\figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.66\textwidth}{fig:spectrum_interpretation_2}%
 {Interpretación automática de espectros MS/MS. 
 En primer lugar se elabora una lista de péptidos candidatos que presumiblemente han generado
 el espectro. Para ello el espacio de búsqueda en la base de datos de secuencias se puede
@@ -1547,6 +1547,8 @@ Con estos valores se pueden definir los conceptos de
   TPR = \frac{S}{T+S}
  \end{equation}
 
+\newpage %B5
+
 \item\textit{especificidad}. Es la proporción
  de asignaciones consideradas incorrectas entre el total de asignaciones incorrectas.
  \begin{equation}
@@ -1650,7 +1652,14 @@ en el caso de \textit{Mascot} también hacen uso de una distribución de
 espectro individual para calcular y proporcionar un \textit{e-valor} para cada PSM. 
 
 
-\medskip{}
+\figuraEx{Vectorial/single_spectrum_and_average_distributions}{width=0.99\textwidth}{fig:single_spectrum_and_average_distributions}%
+{La distribución de espectro individual es la distribución de las puntuaciones
+de todos los péptidos candidatos comparados con el espectro empírico. La
+distribución promedio, es la distribución de las puntuaciones de los mejores candidatos 
+para el total de todos los espectros empíricos. Ésta se puede considerar una población
+mixta compuesta por una mezcla una de subpoblación de asignaciones incorrectas y otra subpoblación
+de asignaciones correctas.}
+{Distribuciones de espectro individual y promedio}
 
 
 \subsubsection*{Distribución promedio}
@@ -1671,14 +1680,6 @@ Así para un \ac{PSM} con \mbox{\emph{p-valor} = 0,05} en un experimento en el qu
 otros 10.000 \ac{PSM}, el \mbox{\emph{p-valor}} original habría de reajustarse a
 0,05/10.000 = 5·10\textsuperscript{-6}.
 
-\figuraEx{Vectorial/single_spectrum_and_average_distributions}{width=1\textwidth}{fig:single_spectrum_and_average_distributions}%
-{La distribución de espectro individual es la distribución de las puntuaciones
-de todos los péptidos candidatos comparados con el espectro empírico. La
-distribución promedio, es la distribución de las puntuaciones de los mejores candidatos 
-para el total de todos los espectros empíricos. Ésta se puede considerar una población
-mixta compuesta por una mezcla de subpoblación de asignaciones incorrectas y otra subpoblación
-de asignaciones correctas.}
-{Distribuciones de espectro individual y promedio}
 
 Las distribuciones promedio, como muestra la Figura~\ref{fig:single_spectrum_and_average_distributions}, 
 son distribuciones de las mejores puntuaciones
@@ -2034,7 +2035,7 @@ adecuadas para definir como \textit{identificada} una proteína o lista de proteí
 %\textit{Citar aquí PAnalyzer Gorka y cía, los distintos tipos de grupos}
 
 
-\figuraEx{Vectorial/protein_inference_non_random_peptide_grouping}{width=.99\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
+\figuraEx{Vectorial/protein_inference_non_random_peptide_grouping}{width=.90\textwidth}{fig:protein_inference_non_random_peptide_grouping}%
 {Agrupamiento no aleatorio de péptidos en proteínas. Los péptidos
 correctamente asignados generalmente se agrupan formando parte de una proteína,
 sin embargo esto no ocurre para las asignaciones incorrectas, cada PSM incorrecto 
@@ -2323,6 +2324,7 @@ en una base de datos mediante un sistema denominado XIAPE (\textit{Xml
 Information About a Proteomics Experiment}).
 Parte de los resultados del PeptideAtlas de \textit{\mbox{C. albicans}} descritos
 en esta tesis son accesibles \href{http://www.thegpm.org/dsotw_2014.html#201406151}{desde GPMDB}
+\newline
 (\href{http://www.thegpm.org/dsotw_2014.html#201406151}{http://www.thegpm.org/dsotw\_2014.html\#201406151}).
 
 %-------------------------------------------------------------------
