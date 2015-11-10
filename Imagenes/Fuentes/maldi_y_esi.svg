@@ -963,17 +963,6 @@
        y1="986.34052"
        x2="-1353.8505"
        y2="886.18768" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4703"
-       id="radialGradient4244"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,1.0009749,642.61305,20.671954)"
-       cx="526.1723"
-       cy="605.25934"
-       fx="526.1723"
-       fy="605.25934"
-       r="57.096523" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6855"
@@ -1288,26 +1277,6 @@
        y2="817.98242" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient7584"
-       id="linearGradient7349"
-       x1="521.48621"
-       y1="579.11664"
-       x2="523.28412"
-       y2="682.96375"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(346.46301,0)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient7355"
-       id="linearGradient7351"
-       x1="502.85208"
-       y1="582.84393"
-       x2="557.26178"
-       y2="676.09436"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(346.46301,0)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient7355"
        id="linearGradient7404"
        x1="230.40993"
@@ -1344,9 +1313,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0580217"
-     inkscape:cx="283.49237"
-     inkscape:cy="207.6497"
+     inkscape:zoom="0.37406716"
+     inkscape:cx="760.62997"
+     inkscape:cy="270.34286"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1440,28 +1409,6 @@
        inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150" />
-    <path
-       style="fill:#ff8080;stroke:#000000;stroke-width:1.0955621px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1097.9724,557.07394 138.7597,0 0,138.89485 -138.3392,0 69.5901,-69.65784 z"
-       id="path4774"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4784"
-       d="m 1111.6888,569.36916 114.193,0 0,114.30438 -113.847,0 57.2696,-57.32538 z"
-       style="fill:url(#radialGradient4244);fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
-    <path
-       sodipodi:nodetypes="cscssscc"
-       inkscape:connector-curvature="0"
-       id="path5389"
-       d="m 833.45488,666.517 c -9.48515,0 -14.73374,-11.66569 -17.12121,-25.54333 l -8.65514,-50.30992 c 12.6996,-24.48674 20.25362,-28.01298 31.87468,-28.07658 l 115.72782,-0.6334 c 9.48503,-0.052 16.57193,11.39233 16.57193,25.54336 l 0,68.74206 c -1.92834,15.39505 -15.72913,22.44356 -22.85657,25.91022"
-       style="fill:url(#linearGradient7351);fill-opacity:1;stroke:#4d4d4d;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.4143858;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 541.09816,603.5274 0,-85.94187 -107.22121,0"
@@ -1774,29 +1721,29 @@
     <text
        sodipodi:linespacing="125%"
        id="text5578"
-       y="561.39203"
-       x="129.04683"
-       style="font-size:15.35142708px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="571.91919"
+       x="122.28043"
+       style="font-style:normal;font-weight:normal;font-size:18.76083565px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"
        transform="scale(0.99951324,1.000487)"
        inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150"><tspan
-         y="561.39203"
-         x="129.04683"
+         y="571.91919"
+         x="122.28043"
          id="tspan5580"
          sodipodi:role="line"
-         style="font-size:12px">Columna</tspan><tspan
-         y="576.39203"
-         x="129.04683"
+         style="font-size:14.66508865px">Columna</tspan><tspan
+         y="590.25055"
+         x="122.28043"
          sodipodi:role="line"
          id="tspan5582"
-         style="font-size:12px">cromatográfica</tspan></text>
+         style="font-size:14.66508865px">cromatográfica</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16.47941017px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="483.27164"
-       y="691.84833"
+       style="font-style:normal;font-weight:normal;font-size:19.17562294px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="483.1633"
+       y="689.36633"
        id="text5584"
        sodipodi:linespacing="125%"
        transform="scale(0.99951324,1.000487)"
@@ -1805,14 +1752,14 @@
        inkscape:export-ydpi="150"><tspan
          sodipodi:role="line"
          id="tspan5586"
-         x="483.27164"
-         y="691.84833"
-         style="font-size:12px">Espectrómetro</tspan><tspan
+         x="483.1633"
+         y="689.36633"
+         style="font-size:13.96333218px">Espectrómetro</tspan><tspan
          id="tspan5588"
          sodipodi:role="line"
-         x="483.27164"
-         y="706.84833"
-         style="font-size:12px">de masas</tspan></text>
+         x="483.1633"
+         y="704.36633"
+         style="font-size:13.96333218px">de masas</tspan></text>
     <path
        style="fill:url(#linearGradient6483);fill-opacity:1;stroke:none"
        d="m 402.28628,611.53787 c 0,16.52519 -8.93288,31.69425 -21.11298,30.40456 -11.86126,-1.25593 -22.4185,-11.96751 -24.11389,-30.30794 3.72866,-20.11891 11.575,-30.6944 23.82348,-30.6944 12.24847,0 21.40339,14.07259 21.40339,30.59778 z"
@@ -2310,9 +2257,9 @@
        sodipodi:type="arc" />
     <text
        xml:space="preserve"
-       style="font-size:14.31579304px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="206.01173"
-       y="422.10992"
+       style="font-style:normal;font-weight:normal;font-size:16.1787281px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="237.1469"
+       y="422.0878"
        id="text4263"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
@@ -2321,14 +2268,14 @@
        transform="scale(0.99946199,1.0005383)"><tspan
          sodipodi:role="line"
          id="tspan4265"
-         x="206.01173"
-         y="422.10992"
-         style="font-size:12px">Matriz</tspan></text>
+         x="237.1469"
+         y="422.0878"
+         style="font-size:13.56157684px">Matriz</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12.1329298px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="480.88107"
-       y="300.7312"
+       style="font-style:normal;font-weight:normal;font-size:13.71180534px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="487.26257"
+       y="311.36417"
        id="text4267"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
@@ -2337,14 +2284,14 @@
        transform="scale(0.99946199,1.0005383)"><tspan
          sodipodi:role="line"
          id="tspan4269"
-         x="480.88107"
-         y="300.7312"
-         style="font-size:12px">Analito ionizado</tspan></text>
+         x="487.26257"
+         y="311.36417"
+         style="font-size:13.56157684px">Analito ionizado</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:15.10534382px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="205.38666"
-       y="313.14075"
+       style="font-style:normal;font-weight:normal;font-size:17.07102394px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="205.2334"
+       y="298.93832"
        id="text4271"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/vital/TeXiS/Imagenes/Bitmap/maldi_y_esi.png"
@@ -2353,9 +2300,9 @@
        transform="scale(0.99946199,1.0005383)"><tspan
          sodipodi:role="line"
          id="tspan4273"
-         x="205.38666"
-         y="313.14075"
-         style="font-size:12px">Pulso láser</tspan></text>
+         x="205.2334"
+         y="298.93832"
+         style="font-size:13.56157684px">Pulso láser</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:31.71176338px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -2664,11 +2611,6 @@
          style="fill:url(#radialGradient4315);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          sodipodi:type="arc" />
     </g>
-    <path
-       id="path5391"
-       d="m 822.24056,578.75857 121.82617,0 c 9.48512,0 17.12117,11.39233 17.12117,25.54335 l 0,53.47655 c 0,14.15104 -7.63605,25.54336 -17.12117,25.54336 l -121.82617,0 c -9.48514,0 -17.12119,-11.39232 -17.12119,-25.54336 l 0,-53.47655 c 0,-14.15102 7.63605,-25.54335 17.12119,-25.54335 z"
-       style="fill:url(#linearGradient7349);fill-opacity:1;stroke:#4d4d4d;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path5367"
