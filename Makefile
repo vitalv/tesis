@@ -47,8 +47,8 @@ pdflatex:
 	sed -i -e 's/\\textit{Apis mellifera}/Apis mellifera/g' library.bib
 	sed -i -e 's/Apis mellifera/\\textit{Apis mellifera}/g' library.bib
 
-	sed -i -e 's/\\textit{S. pombe}/S. pombe/g' library.bib
-	sed -i -e 's/S. pombe/\\textit{S. pombe}/g' library.bib	
+	sed -i -e 's/\\textit{Schizosaccharomyces pombe}/Schizosaccharomyces pombe/g' library.bib
+	sed -i -e 's/Schizosaccharomyces pombe/\\textit{Schizosaccharomyces pombe}/g' library.bib	
 
 	sed -i -e 's/\\textit{Saccharomyces cerevisiae}/Saccharomyces cerevisiae/g' library.bib
 	sed -i -e 's/Saccharomyces cerevisiae/\\textit{Saccharomyces cerevisiae}/g' library.bib	
