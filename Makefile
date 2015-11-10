@@ -56,6 +56,9 @@ pdflatex:
 	sed -i -e 's/\\textit{Drosophila melanogaster}/Drosophila melanogaster/g' library.bib
 	sed -i -e 's/Drosophila melanogaster/\\textit{Drosophila melanogaster}/g' library.bib	
 
+	sed -i -e 's/\\textit{Mycobacterium tuberculosis}/Mycobacterium tuberculosis/g' library.bib
+	sed -i -e 's/Mycobacterium tuberculosis/\\textit{Mycobacterium tuberculosis}/g' library.bib	
+
 	-bibtex $(NOMBRE_LATEX)
 	-glosstex $(NOMBRE_LATEX) $(FICHEROS_GLOSARIO)
 	-makeindex $(NOMBRE_LATEX).gxs -o $(NOMBRE_LATEX).glx -s glosstex.ist
