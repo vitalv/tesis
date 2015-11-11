@@ -11,7 +11,7 @@
 
 \partTitle{
  %\begin{flushright}
-  \sc{Desarrollo de una aplicación web para recoger, visualizar y analizar resultados de estudios de proteómica de \mbox{\textit{Candida albicans}}}
+  \sc{Desarrollo de una aplicación web para recoger, visualizar y analizar resultados de estudios de proteómica de \textit{Candida albicans}}
  %\end{flushright}
 }
 
@@ -65,6 +65,81 @@ xkcd, Randall Munroe
 
 %\partBackText{}
 
-\makepart
+%\makepart
 
+
+
+
+
+
+
+
+
+
+
+\part%
+[\sc{Desarrollo de una aplicación web para recoger, visualizar \\%
+y analizar resultados de estudios de proteómica \\%
+de \textit{Candida albicans}}]%
+{\partTitleVal}\partDesc{}
+
+
+\makeatletter
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{empty}% Cambiado; antes era plain pero
+% no queremos número de página...
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vspace*{2cm}% Cambiado; en vez de \vfil, un espacio fijo de
+                    % dos centímetros, para que el título no cambie de
+                    % posición dependiendo de la longitud de la descripción.
+  \secdef\@part\@spart}
+
+% Versión "sin estrella" del comando part. Se mete en el toc y se pone
+% "Parte I"; después viene el título y descripción.
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >-2\relax
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    \markboth{}{}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >-2\relax
+       %\huge\bfseries \partname\nobreakspace\thepart %Esto es lo que escribe "Parte I"
+       \par
+       \vskip 20\p@
+     \fi
+     \huge \bfseries #2\par}
+    % Si hay descripción de la parte, la ponemos después de 2 centímetros
+    {\vspace*{2cm}\noindent\partDescVal}%
+    \@endpart}
+
+
+
+\def\@endpart{\vfil\newpage
+              \if@twoside
+               \if@openright
+                \null
+                \thispagestyle{empty}%
+                {\partBackTextVal}
+                \newpage
+               \fi
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+\makeatother
 
