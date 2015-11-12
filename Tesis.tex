@@ -4,9 +4,9 @@
 %
 %----------------------------------------------------------------------
 %
-% Este fichero contiene el "documento maestro" del documento. Lo ˙nico
+% Este fichero contiene el "documento maestro" del documento. Lo √∫nico
 % que hace es configurar el entorno LaTeX e incluir los ficheros .tex
-% que contienen cada secciÛn.
+% que contienen cada secci√≥n.
 %
 %----------------------------------------------------------------------
 %
@@ -14,22 +14,22 @@
 %
 %       TeXiS/* : ficheros de la plantilla TeXiS.
 %       Cascaras/* : ficheros con las partes del documento que no
-%          son capÌtulos ni apÈndices (portada, agradecimientos, etc.)
-%       Capitulos/*.tex : capÌtulos de la tesis
-%       Apendices/*.tex: apÈndices de la tesis
+%          son cap√≠tulos ni ap√©ndices (portada, agradecimientos, etc.)
+%       Capitulos/*.tex : cap√≠tulos de la tesis
+%       Apendices/*.tex: ap√©ndices de la tesis
 %       constantes.tex: constantes LaTeX
-%       config.tex : configuraciÛn de la "compilaciÛn" del documento
+%       config.tex : configuraci√≥n de la "compilaci√≥n" del documento
 %       guionado.tex : palabras con guiones
 %
-% Para la bibliografÌa, adem·s, se necesitan:
+% Para la bibliograf√≠a, adem√°s, se necesitan:
 %
-%       *.bib : ficheros con la informaciÛn de las referencias
+%       *.bib : ficheros con la informaci√≥n de las referencias
 %
 % ---------------------------------------------------------------------
 
 \pdfoptionpdfminorversion=7
 %Nota Vital: 
-%Esto de pdfminorversion es para quitar todos los warning que me aparecen en la compilaciÛn:
+%Esto de pdfminorversion es para quitar todos los warning que me aparecen en la compilaci√≥n:
 %pdfTeX warning: pdflatex (file ./Capitulos/Vialas_2013_PeptideAtlas_JProteomics
 %.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 %Parece ser que tiene que ser before the document declaration
@@ -42,25 +42,25 @@
 
 %
 % Definimos  el   comando  \compilaCapitulo,  que   luego  se  utiliza
-% (opcionalmente) en config.tex. QuedarÌa  mejor si tambiÈn se definiera
+% (opcionalmente) en config.tex. Quedar√≠a  mejor si tambi√©n se definiera
 % en  ese fichero,  pero por  el modo  en el  que funciona  eso  no es
-% posible. Puedes consultar la documentaciÛn de ese fichero para tener
-% m·s  informaciÛn. Definimos tambiÈn  \compilaApendice, que  tiene el
-% mismo  cometido, pero  que se  utiliza para  compilar  ˙nicamente un
-% apÈndice.
+% posible. Puedes consultar la documentaci√≥n de ese fichero para tener
+% m√°s  informaci√≥n. Definimos tambi√©n  \compilaApendice, que  tiene el
+% mismo  cometido, pero  que se  utiliza para  compilar  √∫nicamente un
+% ap√©ndice.
 %
 %
 % Si  queremos   compilar  solo   una  parte  del   documento  podemos
-% especificar mediante  \includeonly{...} quÈ ficheros  son los ˙nicos
-% que queremos  que se incluyan.  Esto  es ˙til por  ejemplo para sÛlo
-% compilar un capÌtulo.
+% especificar mediante  \includeonly{...} qu√© ficheros  son los √∫nicos
+% que queremos  que se incluyan.  Esto  es √∫til por  ejemplo para s√≥lo
+% compilar un cap√≠tulo.
 %
-% El problema es que todos aquellos  ficheros que NO estÈn en la lista
-% NO   se  incluir·n...  y   eso  tambiÈn   afecta  a   ficheros  de
+% El problema es que todos aquellos  ficheros que NO est√©n en la lista
+% NO   se  incluir√°n...  y   eso  tambi√©n   afecta  a   ficheros  de
 % la plantilla...
 %
 % Total,  que definimos  una constante  con los  ficheros  que siempre
-% vamos a querer compilar  (aquellos relacionados con configuraciÛn) y
+% vamos a querer compilar  (aquellos relacionados con configuraci√≥n) y
 % luego definimos \compilaCapitulo.
 \newcommand{\ficherosBasicosTeXiS}{%
 TeXiS/TeXiS_pream,TeXiS/TeXiS_cab,TeXiS/TeXiS_bib,TeXiS/TeXiS_cover,%
@@ -80,14 +80,14 @@ constantes,guionado,Cascaras/bibliografia,config%
 }
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-%            Pre·mbulo del documento. Configuraciones varias
+%            Pre√°mbulo del documento. Configuraciones varias
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-% Define  el  tipo  de  compilaciÛn que  estamos  haciendo.   Contiene
+% Define  el  tipo  de  compilaci√≥n que  estamos  haciendo.   Contiene
 % definiciones  de  constantes que  cambian  el  comportamiento de  la
-% compilaciÛn. Debe incluirse antes del paquete TeXiS/TeXiS.sty
+% compilaci√≥n. Debe incluirse antes del paquete TeXiS/TeXiS.sty
 \include{config}
 
 % Paquete de la plantilla
@@ -96,7 +96,7 @@ constantes,guionado,Cascaras/bibliografia,config%
 % Incluimos el fichero con comandos de constantes
 \include{constantes}
 
-% Sacamos en el log de la compilaciÛn el copyright
+% Sacamos en el log de la compilaci√≥n el copyright
 %\typeout{Copyright Marco Antonio and Pedro Pablo Gomez Martin}
 
 %
@@ -105,7 +105,7 @@ constantes,guionado,Cascaras/bibliografia,config%
 \ifpdf\hypersetup{%
     pdftitle = {\titulo},
     pdfsubject = {Memoria de Tesis Doctoral},
-    pdfkeywords = {Tesis, Bioinform·tica, ProteÛmica, Candida albicans},
+    pdfkeywords = {Tesis, Bioinform√°tica, Prote√≥mica, Candida albicans},
     pdfauthor = {\textcopyright\ \autor},
     pdfcreator = {\LaTeX\ con el paquete \flqq hyperref\frqq},
     pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision},
@@ -116,21 +116,19 @@ constantes,guionado,Cascaras/bibliografia,config%
 % hyperref makes cross-references and hyperlinks clickable
 
 
-\definecolor{charcoal}{rgb}{0.21, 0.27, 0.31}
-\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
-\definecolor{warmblack}{rgb}{0.0, 0.26, 0.26}
-\definecolor{smokyblack}{rgb}{0.06, 0.05, 0.03}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
 \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
 \hypersetup{
 	pdfborder = {0 0 0},
-    %colorlinks=false,
-    %allbordercolors = {0 0 0},
-	%citecolor=smokyblack,
-    %linkcolor=black,
+    %colorlinks=true,
+    allbordercolors = {0 0 0},
+	%citecolor=darkblue,
+    %linkcolor=darkblue,
     %linkbordercolor=black,
     %pdfborderstyle={/S/U/W 1} %borderstyle will be underline of width 1pt
 	%filecolor=coolblack,
-	%urlcolor=coolblack
+	%urlcolor=darkblue  
 }
 
 
@@ -155,12 +153,12 @@ constantes,guionado,Cascaras/bibliografia,config%
 %\relsize{-0.9}
 
 
-% Incluimos el  fichero de definiciÛn de guionado  de algunas palabras
-% que LaTeX no ha dividido como deberÌa
+% Incluimos el  fichero de definici√≥n de guionado  de algunas palabras
+% que LaTeX no ha dividido como deber√≠a
 \input{guionado}
 
-% Marcamos  el inicio  del  documento para  la  numeraciÛn de  p·ginas
-% (usando n˙meros romanos para esta primera fase).
+% Marcamos  el inicio  del  documento para  la  numeraci√≥n de  p√°ginas
+% (usando n√∫meros romanos para esta primera fase).
 \frontmatter
 
 \include{Cascaras/cover}
@@ -180,8 +178,8 @@ constantes,guionado,Cascaras/bibliografia,config%
 \include{TeXiS/TeXiS_toc}
 \fi
 
-% Marcamos el  comienzo de  los capÌtulos (para  la numeraciÛn  de las
-% p·ginas) y ponemos la cabecera normal
+% Marcamos el  comienzo de  los cap√≠tulos (para  la numeraci√≥n  de las
+% p√°ginas) y ponemos la cabecera normal
 \mainmatter
 
 %\restauraCabecera
@@ -210,34 +208,34 @@ constantes,guionado,Cascaras/bibliografia,config%
 \backmatter
 
 %
-% BibliografÌa
+% Bibliograf√≠a
 %
 
 \include{Cascaras/bibliografia}
 
 %
-% Õndice de palabras
+% √çndice de palabras
 %
 
-% SÛlo  la   generamos  si  est·   declarada  \generaindice.  Consulta
-% TeXiS.sty para m·s informaciÛn.
+% S√≥lo  la   generamos  si  est√°   declarada  \generaindice.  Consulta
+% TeXiS.sty para m√°s informaci√≥n.
 
-% En realidad, el soporte para la generaciÛn de Ìndices de palabras
-% en TeXiS no est· documentada en el manual, porque no ha sido usada
-% "en producciÛn". Por tanto, el fichero que genera el Ìndice
-% *no* se incluye aquÌ (est· comentado). Consulta la documentaciÛn
-% en TeXiS_pream.tex para m·s informaciÛn.
+% En realidad, el soporte para la generaci√≥n de √≠ndices de palabras
+% en TeXiS no est√° documentada en el manual, porque no ha sido usada
+% "en producci√≥n". Por tanto, el fichero que genera el √≠ndice
+% *no* se incluye aqu√≠ (est√° comentado). Consulta la documentaci√≥n
+% en TeXiS_pream.tex para m√°s informaci√≥n.
 \ifx\generaindice\undefined
 \else
 %\include{TeXiS/TeXiS_indice}
 \fi
 
 %
-% Lista de acrÛnimos
+% Lista de acr√≥nimos
 %
 
-% SÛlo  lo  generamos  si  est· declarada  \generaacronimos.  Consulta
-% TeXiS.sty para m·s informaciÛn.
+% S√≥lo  lo  generamos  si  est√° declarada  \generaacronimos.  Consulta
+% TeXiS.sty para m√°s informaci√≥n.
 
 
 \ifx\generaacronimos\undefined

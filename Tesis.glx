@@ -12,9 +12,9 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{DIA}{DIA}{\emph{Data Independent Acquisition}, Adquisición Independiente de Datos}{}{acr}{a}{\GlossTeXPage{n}{37}}
 \GlossTeXNull{0}
-\GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}, Disociación por Captura de Electrones}{}{acr}{a}{\GlossTeXPage{n}{13}}
+\GlossTeXEntry{ECD}{ECD}{\emph{Electron Capture Dissociation}, Disociación por Captura de Electrones}{}{acr}{a}{\GlossTeXPage{n}{12}}
 \GlossTeXNull{0}
-\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{31}}
+\GlossTeXEntry{EM}{EM}{\emph{Expectation-Maximization}, Esperanza-Maximización}{}{acr}{a}{\GlossTeXPage{n}{32}}
 \GlossTeXNull{0}
 \GlossTeXEntry{ESI}{ESI}{\emph{Electrospray Ionization}, Ionización por Electrospray}{}{acr}{a}{\GlossTeXPage{n}{4}}
 \GlossTeXNull{0}
@@ -56,7 +56,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{NIST}{NIST}{\emph{National Institute for Standards and Technology}, Instituto Nacional Americano de Estándares y Tecnología}{}{acr}{a}{\GlossTeXPage{n}{41}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}, Número de puntos de corte no efectuados}{}{acr}{a}{\GlossTeXPage{n}{31}}
+\GlossTeXEntry{NMC}{NMC}{\emph{Number of Missed Cleavages}, Número de puntos de corte no efectuados}{}{acr}{a}{\GlossTeXPage{n}{32}}
 \GlossTeXNull{0}
 \GlossTeXEntry{NRS}{NRS}{\emph{Number of Replicate Spectra}, Número de Espectros Réplica}{}{acr}{a}{\GlossTeXPage{n}{36}}
 \GlossTeXNull{0}
@@ -70,7 +70,7 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{NSS}{NSS}{\emph{Number of Sibling Searches}, Número de Búsquedas Hermanas}{}{acr}{a}{\GlossTeXPage{n}{36}}
 \GlossTeXNull{0}
-\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}, Número de Extremos Trípticos}{}{acr}{a}{\GlossTeXPage{n}{31}}
+\GlossTeXEntry{NTT}{NTT}{\emph{Number of Tryptic Termini}, Número de Extremos Trípticos}{}{acr}{a}{\GlossTeXPage{n}{32}}
 \GlossTeXNull{0}
 \GlossTeXEntry{OMSSA}{OMSSA}{\emph{Open Mass Spectrometry Search Algorithm}, Algoritmo Abierto de Búsqueda de Espectrometría de Masas }{}{acr}{a}{\GlossTeXPage{n}{22}}
 \GlossTeXNull{0}
@@ -102,9 +102,9 @@
 \GlossTeXNull{0}
 \GlossTeXEntry{SRM}{SRM}{\emph{Selected Reaction Monitoring}, Monitorización de Reacción Seleccionada}{}{acr}{a}{\GlossTeXPage{n}{37}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}, Tiempo de Vuelo}{}{acr}{a}{\GlossTeXPage{n}{8}}
+\GlossTeXEntry{TOF}{TOF}{\emph{Time Of Flight}, Tiempo de Vuelo}{}{acr}{a}{\GlossTeXPage{n}{7}}
 \GlossTeXNull{0}
-\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{39}}
+\GlossTeXEntry{TPP}{TPP}{\emph{Trans Proteomics Pipeline}}{}{acr}{a}{\GlossTeXPage{n}{38}}
 \GlossTeXNull{0}
 \GlossTeXEntry{TPR}{TPR}{\emph{True Positive Rate}, Tasa de Verdaderos Positivos}{}{acr}{a}{\GlossTeXPage{n}{24}}
 \GlossTeXNull{0}

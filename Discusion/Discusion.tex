@@ -13,7 +13,7 @@
 \addcontentsline{lof}{chapter}{Discusión}
 
 
-{\setstretch{1.5}
+{\setstretch{1.6}
 Estudios proteómicos llevados a cabo utilizando \textit{\mbox{C. albicans}} como organismo
 modelo para el estudio de infecciones fúngicas 
 han permitido profundizar en algunos de los aspectos más básicos
@@ -333,10 +333,26 @@ casos en que existan péptidos diferenciadores), lo que permite asegurar que sean
 de una sola proteína y no compartidos. Además, los péptidos se ordenan por un índice
 de observabilidad que indica la probabilidad de que una proteína sea
 detectada por medio de esos péptidos y no otros \citep{Deutsch2008a}
-(Ver Figura 2.2. \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas})
-
+(Ver Figura 2.2. \emph{Información básica para Mp65p y péptidos observados en PeptideAtlas}).
 
 \medskip
+
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[width=0.99\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
+\caption*{Figura 2.2: Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
+\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
+El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
+es detectada lo sea por medio de ese péptido y no otro.
+Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
+que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
+Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
+Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM o MRM.}
+\end{center}
+\end{figure}
+\addcontentsline{lof}{figure}{2.2. Información básica para Mp65p \newline y péptidos observados en \mbox{PeptideAtlas}}
+
+\newpage
 
 El PeptideAtlas creado proporciona una visión general representativa del proteoma
 de \textit{\mbox{C. albicans}} como demuestra la semejanza entre la distribución
@@ -351,28 +367,12 @@ Además, mejoras en los elementos del \textit{software} que integran el flujo
 de análisis, o en la base de datos de secuencias también contribuirán a motivar
 la construcción de futuras versiones de este PeptideAtlas.
 
-\begin{figure}[H]
-\begin{center}
- \includegraphics[width=0.95\textwidth]{Imagenes/Vectorial/PeptideAtlasMP65}
-\caption*{Figura 2.2: Información básica para Mp65p, una manoproteína de pared, inmunogénica, implicada en adhesión,
-\citep{LaValle2000, Sandini2011} y péptidos observados en PeptideAtlas. %
-El parámetro EOS (\emph{Empirical Observability Score}) estima cómo de probable es que si una proteína
-es detectada lo sea por medio de ese péptido y no otro.
-Los péptidos se presentan ordenados por el parámetro ESS (\emph{Empirical Suitability Score}) %
-que combina la información de la probabilidad del péptido, su observabilidad (EOS) y el número de veces que es detectado.
-Además se muestra si un péptido presenta sitios de corte no efectuado o si su secuencia es mapeable con múltiples sitios en el genoma.
-Toda esta información puede ser de gran utilidad para seleccionar péptidos proteotípicos candidatos para un ensayo de proteómica dirigida SRM o MRM.}
-\end{center}
-\end{figure}
-\addcontentsline{lof}{figure}{2.2. Información básica para Mp65p \newline y péptidos observados en \mbox{PeptideAtlas}}
-
 Por último, y para favorecer la comunicación e interconexión entre ambos
 recursos, CGD y PeptideAtlas, se ha contactado con los desarrolladores 
 e impulsores de CGD proporcionándoles un formato de enlace para que, a través
 de la información en la pestaña \textit{proteína} en CGD, se pueda
 acceder a los datos correspondientes a la identificación en PeptideAtlas
 para aquellas proteínas para las que existan estos datos.
-
 
 \medskip
 
