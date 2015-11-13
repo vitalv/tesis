@@ -252,7 +252,7 @@ interface.
 
 \begin{figure}[t]
 \begin{center}
- \includegraphics[width=0.70\textwidth]%
+ \includegraphics[width=0.80\textwidth]%
 				 {Imagenes/Vectorial/proteopathogen2_figure1}
 \caption*{Figure 1. mzIdentML to database mapping. The MySQL schema was 
 specifically designed to accommodate elements from the mzIdentML format.
@@ -263,6 +263,8 @@ Figure shows the one-to-many relationship between the
 \end{figure}
 \addcontentsline{lof}{figure}{Figure 1}
 
+\medskip 
+
 
 Precisely, a stringent FDR cut-off at the PSM level set at
 0.005, yields 21,883 peptides with 0.0024 FDR (peptide level)
@@ -270,6 +272,8 @@ and 2577 proteins with 0.0170 FDR (protein level) as computed
  with Mayu, a software specifically designed to estimate
 accurate protein level error rates in large datasets \citep{Reiter2009} (see
 supplemental Table 1).
+
+\medskip 
 
 The mzIdentML contents can be browsed for each file in
 Proteopathogen in a means inspired by the structure in the
@@ -280,7 +284,7 @@ can select either the spectrum identification information (corresponding
  to the <SpectrumIdentification> element) and view its
 related information, the search protocol, search database and
 the list of every peptide to spectrum assignment; or the protein detection
- (corresponding to the <ProteinDetection> element)
+ (corresponding to the \linebreak <ProteinDetection> element)
 showing the list of peptides grouped into the inferred original
 proteins (Fig. 2).
 
