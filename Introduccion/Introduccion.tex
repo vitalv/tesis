@@ -1012,15 +1012,15 @@ esta tarea.
 
 \figuraEx{Vectorial/spectrum_interpret_from_man_to_auto_2}{width=.66\textwidth}{fig:spectrum_interpretation_2}%
 {Interpretación automática de espectros MS/MS. 
-En primer lugar se elabora una lista de péptidos candidatos que presumiblemente han generado
-el espectro. Para ello el espacio de búsqueda en la base de datos de secuencias se puede
+En primer lugar se elabora una lista de péptidos candidatos que pueden ser potencialmente responsables
+del espectro adquirido. Para ello el espacio de búsqueda en la base de datos de secuencias se puede
 acotar conociendo el tipo de enzima proteolítica utilizada o la tolerancia (diferencia
 entre masa experimental y teórica) permitida entre otros parámetros suministrados al motor de búsqueda.
 Conociendo además una probabilidad estimada de que cada tipo de ión se encuentre en un espectro MS/MS
 se puede crear un espectro teórico para cada uno de los péptidos candidatos de la lista elaborada.
-Y cada uno de los espectros teóricos es comparado con el espectro empírico, se obtienen todos los 
+A continuación, cada uno de los espectros teóricos es comparado con el espectro empírico, se obtienen todos los 
 iones coincidentes y se asigna una puntuación. Finalmente, en base a la puntuación, se obtiene
-una lista de los mejores péptidos candidatos para cada espectro.}
+una lista de los mejores péptidos candidatos que presumiblemente han generado el espectro.}
 {Interpretación automática de espectros MS/MS}
 
 
@@ -1661,11 +1661,13 @@ espectro individual para calcular y proporcionar un \textit{e-valor} para cada P
 
 \figuraEx{Vectorial/single_spectrum_and_average_distributions}{width=0.99\textwidth}{fig:single_spectrum_and_average_distributions}%
 {La distribución de espectro individual es la distribución de las puntuaciones
-de todos los péptidos candidatos comparados con el espectro empírico. La
-distribución promedio, es la distribución de las puntuaciones de los mejores candidatos 
-para el total de todos los espectros empíricos. Ésta se puede considerar una población
-mixta compuesta por una mezcla una de subpoblación de asignaciones incorrectas y otra subpoblación
-de asignaciones correctas.}
+de todos los péptidos candidatos comparados con el espectro empírico y permite obtener
+los parámetros estadísticos e-valor y p-valor. 
+La distribución promedio es la de las puntuaciones de los mejores candidatos 
+para el total de todos los espectros adquiridos y permite obtener una evaluación
+estadística a nivel global, bien mediante la estimación de la tasa FDR o bien mediante
+modelos estadísticos más complejos como el implementado en la herramienta PeptideProphet (modelo
+mixto de probabilidad).}
 {Distribuciones de espectro individual y promedio}
 
 
