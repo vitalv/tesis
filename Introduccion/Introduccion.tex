@@ -2120,14 +2120,16 @@ P(prot) &= 1 - \prod_{i}(1 - w_{i}^{n} p_{i}')
 \end{equation}
 
 donde \textit{f\textsubscript{0}(NSP)} y \textit{f\textsubscript{1}(NSP)}
-son las distribuciones NSP entre los peptidos incorrectos y correctos, p$'$\textsubscript{i} 
+son las distribuciones NSP entre los péptidos incorrectos y correctos, p$'$\textsubscript{i} 
 es la probabilidad ajustada para el péptido \textit{i}, y w\textsubscript{i}\textsuperscript{n} el peso del péptido i en la proteína n.
+que permite ajustar la contribución de un péptido a su proteína en función de si la
+secuencia es exclusiva o está presente en varias proteínas.
 
-Pero además de reajustar las probabilidades de los PSM teniendo en cuenta
-el agrupamiento no aleatorio de péptidos en proteínas, ProteinProphet también
-considera la existencia de péptidos presentes en más de una proteína. Para ello otorga
-pesos de forma que la contribución de un péptido cuya secuencia está presente
-en varias proteínas 
+%Pero además de reajustar las probabilidades de los PSM teniendo en cuenta
+%el agrupamiento no aleatorio de péptidos en proteínas, ProteinProphet también
+%considera la existencia de péptidos presentes en más de una proteína. Para ello otorga
+%pesos de forma que la contribución de un péptido cuya secuencia está presente
+%en varias proteínas 
 
 %\phantomsection
 \section{Herramientas adicionales de post-procesamiento y validación a nivel de péptido y proteína}
